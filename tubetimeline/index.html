@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><title>London Underground Timeline</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<script language="JavaScript" type="text/javascript">
+maps=["l1865.png", "l1870.png", "l1875.png", "l1880.png", "l1885.png", "l1890.png",
+      "l1895.png", "l1900.png", "l1905.png", "l1910.png", "l1915.png",
+      "l1920.png", "l1925.png", "l1930.png", "l1935.png",
+      "l1940.png", "l1945.png", "l1950.png", "l1955.png", "l1960.png", "l1965.png",
+      "l1970.png", "l1975.png", "l1980.png", "l1985.png", "l1990.png", "l1995.png",
+      "l2000.png", "l2005.png", "l2010.png"];
+index=maps.length-1;
+function update() {
+	document["MAP"].src=maps[index];
+	document["MAP"].title=1865+5*index;
+	document["MAP"].alt=1865+5*index + " map";
+	document.getElementsByTagName('a')[0].href=("l" + (1865+5*index) + ".svg");
+}
+function nextmap() {
+	index=(index+1)%maps.length;
+	update();
+}
+function prevmap() {
+	index=(index+maps.length-1)%maps.length;
+	update();
+}
+document.onkeydown=function(keypress) {
+	if(keypress.which == 65) { prevmap(); }
+	if(keypress.which == 83) { nextmap(); }
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19998781-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body>
+<center>
+<a name="LINK" href="l2010.svg">
+<img name="MAP" src="l2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=1250px>
+</a>
+<p>
+<a href="javascript:prevmap()">previous (or press a)</a> --- 
+<a href="javascript:nextmap()">next (or press s)</a>
+<p>
+Based on weekday midday service at the end of the year in question.  Scale 30 pixels per km.
+<p>
+Please send any corrections or questions to threestationsquare at gmail dot com.
+<p>
+See also: 
+London - 
+<a href="/~arapp/ratptimeline">Paris</a> - 
+<a href="/~arapp/bvgtimeline">Berlin</a> - 
+<a href="/~arapp/mtimeline">Moskva</a> - 
+<a href="/~arapp/northamerica">North American cities</a>
+<p>
+<font size="1">Based on map data 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
+by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</font>
+</center>
+</body></html>
+
