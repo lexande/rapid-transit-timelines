@@ -28,6 +28,10 @@
   <defs
      id="defs6" />
   <path
+     d="M 3478.3946,3614.5324 3483,3629.5 l -4,40 -3,16 35,171 28,143 -8,25 -47,97"
+     id="path3617"
+     style="fill:none;stroke:#b0720c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
      d="m 2550.061,3408.7071 13.9393,32.2929 5.4,8.4 14.6,15 10.4203,6.5382 6.5797,44.0618"
      id="path3604-8"
      style="fill:none;stroke:#b0720c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
@@ -67,14 +71,6 @@
      d="m 2106,4231 c 1,4 6,17 6,17 l 53,18 59,22 151,122 26,47 132,105 15,21 7,18 35,248 16,101 -6,51 -20,82 -6,16 -5,25 5,47 2.5,20"
      id="path3608"
      style="fill:none;stroke:#b0720c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
-     d="m 3478.3946,3614.0324 -0.8149,14.5159 -3.0966,36.8382 L 3476,3685 l 35,171 28,143 -8,25 -47,97 -4,18.5 2.5,15.5 10.5,17 140.5,168 24,16.5"
-     id="path3617"
-     style="fill:none;stroke:#b0720c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
-     d="M 3241.2678,3430.5936 3373.5,3528.5 l 111,84.5 3,5.5 28,18 117,-20 112,-45 87,-35 4,-6 -19.5,-72.5 3.5,-13 20,-11"
-     id="path4043"
-     style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 3639,3098 -11,45 -26,33 -168,56 -46,59 -29,7 -230,29 -148.5,25 -233,35 -33,5 -77,-2 -130,-8"
      id="path3623"
@@ -172,10 +168,6 @@
      id="path6279"
      style="fill:none;stroke:#006000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 2315.5,4026.5 -52.5,-40.5 -206.5,256.5 -4,7.5"
-     id="path6285"
-     style="fill:none;stroke:#006000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
      d="m 2410,3238 22,12.5 25,26 -6,16 0,33 7,24.5 6,28.5 6,14.5 4.5,5 36.5,18.5 66,38.5 46.5,32.5 101.5,54.5 175,49 380,26 191.5,16"
      id="path6287"
      style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
@@ -200,13 +192,13 @@
      id="path3772"
      style="fill:none;stroke:#7ea3d5;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 2459.5,3295.5 23,0.5 1.5,27.5 -2,60 40.5,4 50,2.5 141.5,7 49.5,-7.5 8.5,52 11,59 120.5,-17 339.5,-52.5"
-     id="path6281"
-     style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
      d="m 1971.5,2800 -14.5,3.5 -7.5,9.5"
      id="path3821"
      style="fill:none;stroke:#7ea3d5;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 2312.5,4024 40,-50 111.5,-142.5 91.5,-144.5 10,-15.5 31.5,-60.5 23.5,-47.5 -8.5,-35.5 -30.5,-66 -9,-72 -50,-2.5 -40.5,-4 2,-60 -1.5,-27.5 -23,-0.5"
+     id="path6281-0"
+     style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 2300,3103 137.5,144.5 31,33 -1,43 11,0.5 -0.5,55 30,3"
      id="path5126"
@@ -361,4 +353,8 @@
      d="m 1784.3837,2708.44 -34.6483,73.5391 -10.9601,12.0209 -5.6569,-0.7071 -28.6378,-30.4056 -5.6568,-2.8285"
      id="path4371"
      style="fill:none;stroke:#eba119;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 2315.5,4026.5 -52.5,-40.5 -206.5,256.5 -4,7.5"
+     id="path6285-2"
+     style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
 </svg>
