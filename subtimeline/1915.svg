@@ -27,14 +27,6 @@
   </metadata>
   <defs
      id="defs6" />
-  <path
-     d="M 3478.3946,3614.5324 3483,3629.5 l -4,40 -3,16 35,171 28,143 -8,25 -47,97"
-     id="path3617"
-     style="fill:none;stroke:#b0720c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
-     d="m 2550.061,3408.7071 13.9393,32.2929 5.4,8.4 14.6,15 10.4203,6.5382 6.5797,44.0618"
-     id="path3604-8"
-     style="fill:none;stroke:#b0720c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <image
      xlink:href="nycosm.png"
      style="display:none"
@@ -43,6 +35,14 @@
      width="3584"
      y="0"
      x="1792" />
+  <path
+     d="M 3478.395,3614.032 3483,3629 l -1.5251,28.3327 1.5962,28.3744 6.4201,36.785 -3.7755,9.9762 L 3511,3856 l 28,143 -8,25 -47,97 -4,18.5 2.5,15.5 10.5,17 140.5,168 24,16.5"
+     id="path3617"
+     style="fill:none;stroke:#b0720c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 2550.061,3408.7071 13.9393,32.2929 5.4,8.4 14.6,15 10.4203,6.5382 6.5797,44.0618"
+     id="path3604-8"
+     style="fill:none;stroke:#b0720c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 2284,3103 16,-13 20,-23 50,-90 15,-20 165,71 224,91 32,12 14,16 93,43 154,115 72,55 320,239 21,17.5"
      id="path3619"
