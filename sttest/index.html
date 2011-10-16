@@ -1,17 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head><title>Madrid Rapid Transit Timeline</title>
+<head><title>New York City Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-maps=["md1920.png", "md1925.png", "md1930.png", "md1935.png", "md1940.png",
-      "md1945.png", "md1950.png", "md1955.png", "md1960.png", "md1965.png", "md1970.png", "md1975.png", 
-      "md1980.png", "md1985.png", "md1990.png", "md1995.png", "md2000.png", "md2005.png", "md2010.png"];
+maps=["1875.png", "1880.png", "1885.png", "1890.png", "1895.png", "1900.png", "1905.png", "1910.png",
+      "1915.png", "1920.png", "1925.png", "1930.png", "1935.png", "1940.png", "1945.png", "1950.png",
+      "1955.png", "1960.png", "1965.png", "1970.png", "1975.png", "1980.png", "1985.png", "1990.png",
+      "1995.png", "2000.png", "2005.png", "2010.png"];
 index=maps.length-1;
 function update() {
 	document["MAP"].src=maps[index];
-	document["MAP"].title=1920+5*index;
-	document["MAP"].alt=1920+5*index + " map";
-	document.getElementsByTagName('a')[0].href=("md" + (1920+5*index) + ".svg");
+	document["MAP"].title=1875+5*index;
+	document["MAP"].alt=1875+5*index + " map";
+	document.getElementsByTagName('a')[0].href=1875+5*index + ".svg";
 }
 function nextmap() {
 	index=(index+1)%maps.length;
@@ -38,8 +39,8 @@ document.onkeydown=function(keypress) {
 </script>
 </head><body>
 <center>
-<a name="LINK" href="md2010.svg">
-<img name="MAP" src="md2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid" width=1119px>
+<a name="LINK" href="2010.svg">
+<img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid" width=1169px>
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
@@ -51,15 +52,10 @@ Based on weekday midday service at the end of the year in question.  Scale 30 pi
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
-See also: 
-<a href="/~arapp/tubetimeline">London</a> - 
-<a href="/~arapp/ratptimeline">Paris</a> - 
-<a href="/~arapp/bvgtimeline">Berlin</a> - 
-Madrid -
-<a href="/~arapp/wientimeline">Wien</a> - 
-<a href="/~arapp/mtimeline">Moskva</a> - 
-<a href="/~arpap/sptimeline">Sankt-Peterburg</a> - 
-<a href="/~arapp/northamerica">North American cities</a>
+See also: New York -
+<a href="/~arapp/ltimeline">Chicago</a> -
+<a href="/~arapp/ttimeline">Boston</a> -
+<a href="/~arapp/northamerica">other cities</a>
 <p>
 <font size="1">Based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
