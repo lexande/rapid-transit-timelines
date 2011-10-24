@@ -27,12 +27,20 @@
   </metadata>
   <defs
      id="defs6" />
+  <image
+     xlink:href="nycosm.png"
+     style="fill:#501616;display:none"
+     id="image12"
+     height="5376"
+     width="3584"
+     y="0"
+     x="1792" />
   <path
      d="m 2459.5001,3295.5002 23,0.5 1.5,27.5 -1.7414,52.242"
      id="path6281"
      style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 2586.4745,3387.0003 -7.5898,-9.0025 -1.8846,-104.9976 -5.5,-5.5 -107,-6.5 -20,-16.5 -21,0.5 -13,-7"
+     d="m 2586.4745,3387.0003 -7.5898,-9.0025 -1.8846,-104.9976 -5.5,-5.5 -107,-6.5 -7.347,-0.3918 -32.403,-21.8582 -12.5,-8.5"
      id="path12738"
      style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
@@ -47,14 +55,6 @@
      d="m 2767.6832,3384.6213 8.8169,56.3792 6.5,28.5 4.5,27 211.5,-32.5 169.5,-25.5 55,-8.5 9.8655,-0.2916"
      id="path4559"
      style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <image
-     xlink:href="nycosm.png"
-     style="fill:#501616;display:none"
-     id="image12"
-     height="5376"
-     width="3584"
-     y="0"
-     x="1792" />
   <path
      d="m 2820,3147 93,43 154,115 72,55 320,239 21,16"
      id="path3619"
@@ -92,7 +92,7 @@
      id="path6156"
      style="fill:none;stroke:#7bd9f5;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 2410,3238 22,12.5 25,26 -6,16 0,33 7,24.5 6,28.5 6,14.5 4.5,5 36.5,18.5 66,38.5 46.5,32.5 101.5,54.5 175,49 380,26 191.5,16"
+     d="m 2408,3239.75 22.5,13 26.5,23.75 -6,16 0,33 7,24.5 6,28.5 6,14.5 4.5,5 36.5,18.5 66,38.5 46.5,32.5 101.5,54.5 175,49 380,26 191.5,16"
      id="path6287"
      style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
