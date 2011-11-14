@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><title>North American Rapid Transit Timelines</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<script language="JavaScript" type="text/javascript">
+index=13;
+function update() {
+        document["SUB"].src=("" + (1880+10*index) + ".png");
+        document["SUB"].title=1880+10*index;
+        document["SUB"].alt=1880+10*index + " map";
+
+        document["WMATA"].src=("w" + (1880+10*index) + ".png");
+        document["WMATA"].title=1880+10*index;
+        document["WMATA"].alt=1880+10*index + " map";
+
+        document["TTC"].src=("t" + (1880+10*index) + ".png");
+        document["TTC"].title=1880+10*index;
+        document["TTC"].alt=1880+10*index + " map";
+
+        document["STM"].src=("m" + (1880+10*index) + ".png");
+        document["STM"].title=1880+10*index;
+        document["STM"].alt=1880+10*index + " map";
+
+        document["L"].src=("c" + (1880+10*index) + ".png");
+        document["L"].title=1880+10*index;
+        document["L"].alt=1880+10*index + " map";
+
+        document["T"].src=("b" + (1880+10*index) + ".png");
+        document["T"].title=1880+10*index;
+        document["T"].alt=1880+10*index + " map";
+
+        document["SF"].src=("ba" + (1880+10*index) + ".png");
+        document["SF"].title=1880+10*index;
+        document["SF"].alt=1880+10*index + " map";
+
+        document["PH"].src=("ph" + (1880+10*index) + ".png");
+        document["PH"].title=1880+10*index;
+        document["PH"].alt=1880+10*index + " map";
+
+        document["MX"].src=("mx" + (1880+10*index) + ".png");
+        document["MX"].title=1880+10*index;
+        document["MX"].alt=1880+10*index + " map";
+
+        document["LA"].src=("la" + (1880+10*index) + ".png");
+        document["LA"].title=1880+10*index;
+        document["LA"].alt=1880+10*index + " map";
+}
+function nextmap() {
+	index=(index+1)%15;
+	update();
+}
+function prevmap() {
+	index=(index+15-1)%15;
+	update();
+}
+document.onkeydown=function(keypress) {
+	if(keypress.which == 65) { prevmap(); }
+	if(keypress.which == 83) { nextmap(); }
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19998781-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body>
+<center>
+<table cellpadding="0">
+ <tr>
+  <td>
+   <center><a href="/~arapp/subtimeline">New York<br>
+   <img name="SUB" src="2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=390px></a></center>
+  </td>
+  <td>
+   <center><a href="/~arapp/ltimeline">Chicago<br>
+   <img name="L" src="c2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=273px></a></center>
+  </td>
+  <td>
+   <center><a href="/~arapp/ttimeline">Boston<br>
+   <img name="T" src="b2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=235px></a></center>
+  </td>
+ </tr>
+</table>
+<table cellpadding="0">
+ <tr>
+  <td>
+   <center><a href="/~arapp/septatimeline">Philadelphia<br>
+   <img name="PH" src="ph2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=319px></a></center>
+  </td>
+  <td>
+   <center><a href="/~arapp/sftimeline">San Francisco<br>
+   <img name="SF" src="ba2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=561px></a></center>
+  </td>
+  <td>
+   <center><a href="/~arapp/latimeline">Los Angeles<br>
+   <img name="LA" src="la2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=304px></a></center>
+  </td>
+ </tr>
+</table>
+<table cellpadding="0">
+ <tr>
+  <td>
+   <center><a href="/~arapp/ttctimeline">Toronto<br>
+   <img name="TTC" src="t2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=248px></a></center>
+  </td>
+  <td>
+   <center><a href="/~arapp/stmtimeline">Montréal<br>
+   <img name="STM" src="m2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=171px></a></center>
+  </td>
+  <td>
+   <center><a href="/~arapp/mxtimeline">México<br>
+   <img name="MX" src="mx2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=290px></a></center>
+  </td>
+  <td>
+   <center><a href="/~arapp/wmatatimeline">Washington<br>
+   <img name="WMATA" src="w2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=391px></a></center>
+  </td>
+ </tr>
+</table>
+<p>
+<a href="javascript:prevmap()">previous (or press a)</a> --- 
+<a href="javascript:nextmap()">next (or press s)</a>
+<p>
+Based on weekday midday service at the end of the year in question.  Scale 10 pixels per km.
+<p>
+Please send any corrections or questions to threestationsquare at gmail dot com.
+<p>
+See also:
+<a href="/~arapp/tubetimeline">London</a> -
+<a href="/~arapp/ratptimeline">Paris</a> -
+<a href="/~arapp/bvgtimeline">Berlin</a> -
+<a href="/~arapp/madridtimeline">Madrid</a> - 
+<a href="/~arapp/wientimeline">Wien</a> -
+<a href="/~arapp/mtimeline">Moskva</a> - 
+<a href="/~arapp/sptimeline">Sankt-Peterburg</a>
+<p>
+<font size="1">Based on map data 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
+by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</font>
+</center>
+</body></html>
