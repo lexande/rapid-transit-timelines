@@ -3,13 +3,13 @@
 <head><title>Shanghai Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-maps=["s1995.png", "s2000.png", "s2005.png", "s2010.png"];
+maps=["sh1995.png", "sh2000.png", "sh2005.png", "sh2010.png"];
 index=maps.length-1;
 function update() {
 	document["MAP"].src=maps[index];
 	document["MAP"].title=1995+5*index;
 	document["MAP"].alt=1995+5*index + " map";
-	document.getElementsByTagName('a')[0].href=("s" + (1995+5*index) + ".svg");
+	document.getElementsByTagName('a')[0].href=("sh" + (1995+5*index) + ".svg");
 }
 function nextmap() {
 	index=(index+1)%maps.length;
@@ -36,8 +36,8 @@ document.onkeydown=function(keypress) {
 </script>
 </head><body>
 <center>
-<a name="LINK" href="s2010.svg">
-<img name="MAP" src="s2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid" width=1892px>
+<a name="LINK" href="sh2010.svg">
+<img name="MAP" src="sh2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid" width=1892px>
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
