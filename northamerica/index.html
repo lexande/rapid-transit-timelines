@@ -5,45 +5,45 @@
 <script language="JavaScript" type="text/javascript">
 index=13;
 function update() {
-        document["SUB"].src=("" + (1880+10*index) + ".png");
-        document["SUB"].title=1880+10*index;
-        document["SUB"].alt=1880+10*index + " map";
+        document["NYC"].src=("" + (1880+10*index) + ".png");
+        document["NYC"].title=1880+10*index;
+        document["NYC"].alt=1880+10*index + " map";
 
-        document["WMATA"].src=("w" + (1880+10*index) + ".png");
-        document["WMATA"].title=1880+10*index;
-        document["WMATA"].alt=1880+10*index + " map";
+        document["WAS"].src=("w" + (1880+10*index) + ".png");
+        document["WAS"].title=1880+10*index;
+        document["WAS"].alt=1880+10*index + " map";
 
-        document["TTC"].src=("t" + (1880+10*index) + ".png");
-        document["TTC"].title=1880+10*index;
-        document["TTC"].alt=1880+10*index + " map";
+        document["YTO"].src=("t" + (1880+10*index) + ".png");
+        document["YTO"].title=1880+10*index;
+        document["YTO"].alt=1880+10*index + " map";
 
-        document["STM"].src=("m" + (1880+10*index) + ".png");
-        document["STM"].title=1880+10*index;
-        document["STM"].alt=1880+10*index + " map";
+        document["YMQ"].src=("m" + (1880+10*index) + ".png");
+        document["YMQ"].title=1880+10*index;
+        document["YMQ"].alt=1880+10*index + " map";
 
-        document["L"].src=("c" + (1880+10*index) + ".png");
-        document["L"].title=1880+10*index;
-        document["L"].alt=1880+10*index + " map";
+        document["CHI"].src=("c" + (1880+10*index) + ".png");
+        document["CHI"].title=1880+10*index;
+        document["CHI"].alt=1880+10*index + " map";
 
-        document["T"].src=("b" + (1880+10*index) + ".png");
-        document["T"].title=1880+10*index;
-        document["T"].alt=1880+10*index + " map";
+        document["BOS"].src=("b" + (1880+10*index) + ".png");
+        document["BOS"].title=1880+10*index;
+        document["BOS"].alt=1880+10*index + " map";
 
-        document["SF"].src=("ba" + (1880+10*index) + ".png");
-        document["SF"].title=1880+10*index;
-        document["SF"].alt=1880+10*index + " map";
+        document["SFO"].src=("ba" + (1880+10*index) + ".png");
+        document["SFO"].title=1880+10*index;
+        document["SFO"].alt=1880+10*index + " map";
 
-        document["PH"].src=("ph" + (1880+10*index) + ".png");
-        document["PH"].title=1880+10*index;
-        document["PH"].alt=1880+10*index + " map";
+        document["PHL"].src=("ph" + (1880+10*index) + ".png");
+        document["PHL"].title=1880+10*index;
+        document["PHL"].alt=1880+10*index + " map";
 
-        document["MX"].src=("mx" + (1880+10*index) + ".png");
-        document["MX"].title=1880+10*index;
-        document["MX"].alt=1880+10*index + " map";
+        document["YVR"].src=("v" + (1880+10*index) + ".png");
+        document["YVR"].title=1880+10*index;
+        document["YVR"].alt=1880+10*index + " map";
 
-        document["LA"].src=("la" + (1880+10*index) + ".png");
-        document["LA"].title=1880+10*index;
-        document["LA"].alt=1880+10*index + " map";
+        document["LAX"].src=("la" + (1880+10*index) + ".png");
+        document["LAX"].title=1880+10*index;
+        document["LAX"].alt=1880+10*index + " map";
 }
 function nextmap() {
 	index=(index+1)%14;
@@ -74,15 +74,15 @@ document.onkeydown=function(keypress) {
  <tr>
   <td>
    <center><a href="/~arapp/subtimeline">New York<br>
-   <img name="SUB" src="2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=390px></a></center>
+   <img name="NYC" src="2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=390px></a></center>
   </td>
   <td>
    <center><a href="/~arapp/ltimeline">Chicago<br>
-   <img name="L" src="c2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=273px></a></center>
+   <img name="CHI" src="c2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=273px></a></center>
   </td>
   <td>
    <center><a href="/~arapp/ttimeline">Boston<br>
-   <img name="T" src="b2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=235px></a></center>
+   <img name="BOS" src="b2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=235px></a></center>
   </td>
  </tr>
 </table>
@@ -90,15 +90,15 @@ document.onkeydown=function(keypress) {
  <tr>
   <td>
    <center><a href="/~arapp/septatimeline">Philadelphia<br>
-   <img name="PH" src="ph2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=319px></a></center>
+   <img name="PHL" src="ph2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=319px></a></center>
   </td>
   <td>
    <center><a href="/~arapp/sftimeline">San Francisco<br>
-   <img name="SF" src="ba2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=561px></a></center>
+   <img name="SFO" src="ba2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=561px></a></center>
   </td>
   <td>
    <center><a href="/~arapp/latimeline">Los Angeles<br>
-   <img name="LA" src="la2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=304px></a></center>
+   <img name="LAX" src="la2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=304px></a></center>
   </td>
  </tr>
 </table>
@@ -106,20 +106,21 @@ document.onkeydown=function(keypress) {
  <tr>
   <td>
    <center><a href="/~arapp/ttctimeline">Toronto<br>
-   <img name="TTC" src="t2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=248px></a></center>
+   <img name="YTO" src="t2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=248px></a></center>
   </td>
   <td>
    <center><a href="/~arapp/stmtimeline">Montréal<br>
-   <img name="STM" src="m2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=171px></a></center>
-  </td>
-  <td>
-   <center><a href="/~arapp/mxtimeline">México<br>
-   <img name="MX" src="mx2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=290px></a></center>
+   <img name="YMQ" src="m2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=171px></a></center>
   </td>
   <td>
    <center><a href="/~arapp/wmatatimeline">Washington<br>
-   <img name="WMATA" src="w2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=391px></a></center>
+   <img name="WAS" src="w2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=391px></a></center>
   </td>
+  <td>
+   <center><a href="yvr">YVRancouver<br>
+   <img name="YVR" src="v2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=254px></a></center>
+  </td>
+
  </tr>
 </table>
 <p>
@@ -139,7 +140,7 @@ See also:
 <a href="/~arapp/mtimeline">Moskva</a> - 
 <a href="/~arapp/sptimeline">Sankt-Peterburg</a> - 
 North American cities - 
-<a href="/~arapp/sa">South American cities</a> - 
+<a href="/~arapp/latinamerica">Latin American cities</a> - 
 <a href="/~arapp/asia">Mainland Asian cities</a>
 <p>
 <font size="1">Based on map data 
