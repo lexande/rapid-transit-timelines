@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><title>European Rapid Transit Timelines</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<script language="JavaScript" type="text/javascript">
+index=13;
+function update() {
+        document["PAR"].src=("p" + (1880+10*index) + ".png");
+        document["PAR"].title=1880+10*index;
+        document["PAR"].alt=1880+10*index + " map";
+
+        document["BER"].src=("u" + (1880+10*index) + ".png");
+        document["BER"].title=1880+10*index;
+        document["BER"].alt=1880+10*index + " map";
+
+        document["VIE"].src=("wn" + (1880+10*index) + ".png");
+        document["VIE"].title=1880+10*index;
+        document["VIE"].alt=1880+10*index + " map";
+
+        document["MAD"].src=("md" + (1880+10*index) + ".png");
+        document["MAD"].title=1880+10*index;
+        document["MAD"].alt=1880+10*index + " map";
+
+        document["MOW"].src=("mw" + (1880+10*index) + ".png");
+        document["MOW"].title=1880+10*index;
+        document["MOW"].alt=1880+10*index + " map";
+
+        document["LED"].src=("sp" + (1880+10*index) + ".png");
+        document["LED"].title=1880+10*index;
+        document["LED"].alt=1880+10*index + " map";
+}
+function nextmap() {
+	index=(index+1)%14;
+	update();
+}
+function prevmap() {
+	index=(index+14-1)%14;
+	update();
+}
+document.onkeydown=function(keypress) {
+	if(keypress.which == 65) { prevmap(); }
+	if(keypress.which == 83) { nextmap(); }
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19998781-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body>
+<center>
+<table cellpadding="0">
+ <tr>
+  <td>
+   <center><a href="par">Paris<br>
+   <img name="PAR" src="p2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=190px></a></center>
+  </td>
+  <td>
+   <center><a href="ber">Berlin<br>
+   <img name="BER" src="u2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=268px></a></center>
+  </td>
+  <td>
+   <center><a href="vie">Wien<br>
+   <img name="VIE" src="wn2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=179px></a></center>
+  </td>
+ </tr>
+</table>
+<table>
+ <tr>
+  <td>
+   <center><a href="mad">Madrid<br>
+   <img name="MAD" src="md2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=374px></a></center>
+  </td>
+  <td>
+   <center><a href="mow">Moskva<br>
+   <img name="MOW" src="mw2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=303px></a></center>
+  </td>
+  <td>
+   <center><a href="led">Sankt-Peterburg<br>
+   <img name="LED" src="sp2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=152px></a></center>
+  </td>
+</table>
+<p>
+<a href="javascript:prevmap()">previous (or press a)</a> --- 
+<a href="javascript:nextmap()">next (or press s)</a>
+<p>
+Based on weekday midday service at the end of the year in question.  Scale 10 pixels per km.
+<p>
+Please send any corrections or questions to threestationsquare at gmail dot com.
+<p>
+See also:
+<a href="/~arapp/northamerica">North American cities</a> - 
+<a href="/~arapp/latinamerica">Latin American cities</a> - 
+European cities - 
+<a href="/~arapp/asia">Mainland Asian cities</a>
+<p>
+<font size="1">Based on map data 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
+by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</font>
+</center>
+</body></html>
