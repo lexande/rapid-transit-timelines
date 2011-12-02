@@ -24,6 +24,11 @@ function update() {
         document["CCS"].src=("cv" + (1920+10*index) + ".png");
         document["CCS"].title=1920+10*index;
         document["CCS"].alt=1920+10*index + " map";
+
+        document["MDE"].src=("me" + (1920+10*index) + ".png");
+        document["MDE"].title=1920+10*index;
+        document["MDE"].alt=1920+10*index + " map";
+
 }
 function nextmap() {
 	index=(index+1)%10;
@@ -64,6 +69,8 @@ document.onkeydown=function(keypress) {
    <center><a href="mex">México<br>
    <img name="MEX" src="mx2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=290px></a></center>
   </td>
+</table>
+<table>
   <td>
    <center><a href="sao">São Paulo<br>
    <img name="SAO" src="sa2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=337px></a></center>
@@ -71,6 +78,10 @@ document.onkeydown=function(keypress) {
   <td>
    <center><a href="ccs">Caracas<br>
    <img name="CCS" src="cv2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=243px></a></center>
+  </td>
+  <td>
+   <center><a href="ccs">Medellín<br>
+   <img name="MDE" src="me2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=102px></a></center>
   </td>
 </table>
 <p>
