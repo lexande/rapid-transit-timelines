@@ -21,6 +21,10 @@ function update() {
         document["GMP"].title=1975+5*index;
         document["GMP"].alt=1975+5*index + " map";
 
+        document["CAN"].src=("gz" + (1975+5*index) + ".png");
+        document["CAN"].title=1975+5*index;
+        document["CAN"].alt=1975+5*index + " map";
+
         document["SIN"].src=("sg" + (1975+5*index) + ".png");
         document["SIN"].title=1975+5*index;
         document["SIN"].alt=1975+5*index + " map";
@@ -72,6 +76,14 @@ document.onkeydown=function(keypress) {
    <center><a href="gmp">Seoul<br>
    <img name="GMP" src="se2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=501px></a></center>
   </td>
+  <td>
+   <center><a href="gmp">Guangzhou<br>
+   <img name="CAN" src="gz2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=390px></a></center>
+  </td>
+ </tr>
+</table>
+<table>
+ <tr>
   <td>
    <center><a href="sha">Shanghai<br>
    <img name="SHA" src="sh2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid" width=631px></a></center>
