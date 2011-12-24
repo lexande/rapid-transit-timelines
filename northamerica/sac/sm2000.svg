@@ -27,7 +27,7 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/sacosm.png"
+     xlink:href="../../experiments/streetmap/sacosm.png"
      style="display:none"
      id="image10"
      height="2639.1667"
@@ -35,7 +35,7 @@
      y="-39.166664"
      x="0" />
   <path
-     d="m 258,1220.5 20.5,7 10.5,12.5 0,17 -41,123 -8,47 5,50 48,201 212,873"
+     d="m 258,1220.5 20.5,7 10.51512,9.498 7.4095,2.6484"
      id="path2987"
      style="fill:none;stroke:#012a69;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
@@ -51,15 +51,25 @@
      id="path3761"
      style="fill:none;stroke:#012a69;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   <path
-     d="m 2913.5,642.5 -1340,852 -47,25 -50.5,21.5 -43,13 -36.5,8 -30,4.5 -66.5,1 -65,-7.5 -54,-12.5 -104.5,-36.5 -23.5,0 -6.5,-3 -18.5,-12.5 -259,-91 -474,-165.5 -14,-16 -21.5,-7.5"
+     d="M 2381.0338,981.05314 1573.5,1494.5 l -47,25 -50.5,21.5 -43,13 -36.5,8 -30,4.5 -66.5,1 -65,-7.5 -54,-12.5 -104.5,-36.5 -23.5,0 -6.5,-3 -18.5,-12.5 -259,-91 L 295,1239"
      id="path3763"
-     style="fill:none;stroke:#ffcb00;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
-     d="m 260.25,1216.25 -81.5,-26.75 -3,-6.25 12.5,-33.25 -2,-6 -73.5,-25.25 -2,-3.75 22.75,-64.75 13.25,-46.75 -2.5,-4.5 L 92,982"
-     id="path3765"
-     style="fill:none;stroke:#ffcb00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     d="m 144.5,999 17.25,6 0.75,5.75 -17.75,54 -18.25,54.75 1.5,4.25"
-     id="path3767"
-     style="fill:none;stroke:#ffcb00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#012a69;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <text
+     x="89.453125"
+     y="2497.9609"
+     id="text2990"
+     xml:space="preserve"
+     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+       x="89.453125"
+       y="2497.9609"
+       id="tspan2992">2000</tspan></text>
+  <text
+     x="89.453178"
+     y="206.96085"
+     id="text2994"
+     xml:space="preserve"
+     style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+       x="89.453178"
+       y="206.96085"
+       id="tspan2996">2000</tspan></text>
 </svg>
