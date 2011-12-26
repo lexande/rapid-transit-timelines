@@ -10,7 +10,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="2800"
-   height="1850"
+   height="2850"
    id="svg2">
   <metadata
      id="metadata8">
@@ -27,7 +27,7 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="streetmap/pitosm.png"
+     xlink:href="../../experiments/streetmap/pitosm.png"
      style="display:none"
      id="image10"
      height="2816"
@@ -102,4 +102,26 @@
      d="M 317.5,762 268,720.5 194,679.5 0,636"
      id="path3806"
      style="fill:none;stroke:#00a650;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     x="89.453178"
+     y="206.96085"
+     id="text3000"
+     xml:space="preserve"
+     style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+       x="89.453178"
+       y="206.96085"
+       id="tspan3002">2010</tspan></text>
+  <text
+     x="89.453125"
+     y="2747.9609"
+     id="text3004"
+     xml:space="preserve"
+     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+       x="89.453125"
+       y="2747.9609"
+       id="tspan3006">2010</tspan></text>
+  <path
+     d="m 1350.2392,1270.8828 0.94,4.2298 5.1697,1.4099 0.47,5.1697 -0.47,6.5797 27.2586,41.3578"
+     id="path3879"
+     style="fill:none;stroke:#fabc09;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
 </svg>
