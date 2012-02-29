@@ -1,15 +1,19 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<a href="javascript:prevmap()">previous (or press a)</a> ---
+<a href="javascript:nextmap()">next (or press s)</a>
+<p>
 <html>
 <head><title>Washington Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-maps=["w1980.png", "w1985.png", "w1990.png", "w1995.png", "w2000.png", "w2005.png", "w2010.png"];
+maps=["w1950.png", "w1955.png", "w1960.png", "w1965.png", "w1970.png", "w1975.png",
+      "w1980.png", "w1985.png", "w1990.png", "w1995.png", "w2000.png", "w2005.png", "w2010.png"];
 index=maps.length-1;
 function update() {
 	document["MAP"].src=maps[index];
-	document["MAP"].title=1980+5*index;
-	document["MAP"].alt=1980+5*index + " map";
-	document.getElementsByTagName('a')[0].href=("w" + (1980+5*index) + ".svg");
+	document["MAP"].title=1950+5*index;
+	document["MAP"].alt=1950+5*index + " map";
+	document.getElementsByTagName('a')[0].href=("w" + (1950+5*index) + ".svg");
 }
 function nextmap() {
 	index=(index+1)%maps.length;
