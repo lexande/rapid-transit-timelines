@@ -82,7 +82,7 @@
   <path
      d="m 3293.5,1510.5 35.5,-26 28,-34 21.5,-42.5 26.5,-10 14,-35.5 32.5,-109 26,-52 37,-65.5 16.5,-33 20.5,-49 9.6406,-26.9497"
      id="path7444"
-     style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#ff0080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 2195.5,3262 -0.5,-9.5 -11,0 -8,-14.5 0.5,-15 7,-34.5 16,-34.5 24.5,-51 11.5,-18.5 9.5,-15 -7,-4 33,-59.5 10.5,-20.5 25.5,-44.5 68,-105.5 -37,-23 22,-45.5 10,-24.5 74.5,-135 41.0285,-73.9487 28.9715,-54.0513 77,-140.5 34.5,-61"
      id="path6424"
@@ -91,14 +91,6 @@
      d="m 3143.5135,1670.2012 -13.8232,25.7035"
      id="path12003"
      style="fill:none;stroke:#7bd9f5;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
-     d="m 3298,1508 -20.5,16.5 -69.5,129 -7.5,8 -29.2719,-11.5067 -22.3544,11.3826 -21.0884,-10.9298"
-     id="path13467"
-     style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
-     d="m 2377.5,3069.5 8.0758,-12.4673 L 2413,2993.5 l 17.5,-57.5 19.4999,-73.5 40.5,-73.5 99,-178.5 91,-165.5 80,-145 91.5001,-164.5 100,-181.5 143.5,-260 23.9831,-42.3983 14.9891,8.0608"
-     id="path9814"
-     style="fill:none;stroke:#ff0080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 2191,3263.5 0,-7 -8.5,0 -11,-16.5 0.5,-16 7.5,-37.5 12,-35 12,-35.5 9,-31.5 19,-105 20,-151.5 11,-44 3.5,-24 8,-36 0.5,-44 31.5,-55.5 130.5,-236.5 79,-146 14.0785,-25.633"
      id="path6936"
@@ -116,10 +108,6 @@
        x="89.45269"
        y="206.96094"
        id="tspan3654">1900</tspan></text>
-  <path
-     d="M 3229,1685 3202.0396,1670.5864 3196.5,1659.5"
-     id="path2872"
-     style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <text
      x="89.45269"
      y="5273.9609"
@@ -217,4 +205,12 @@
      d="m 2602.5,2486.5 0.5,-2.25 -10.75,-6.25 -1.25,-4 503.25,-911 15.0037,-26.8657 6.8956,-4.7015 26.0149,2.5075 28.5224,17.5522"
      id="path3825"
      style="fill:none;stroke:#ffaaaa;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 3298,1508 -20.5,16.5 -69.5,129 -7.5,8"
+     id="path13467"
+     style="fill:none;stroke:#ff0080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 2377.5,3069.5 8.0758,-12.4673 L 2413,2993.5 l 17.5,-57.5 19.5,-73.5 40.5,-73.5 99,-178.5 91,-165.5 80,-145 91.5,-164.5 100,-181.5 143.5,-260 23.9831,-42.3983 14.9891,8.0608 14.5975,7.2988 22.6514,-11.5774 23.6581,9.3122 8.5572,-6.5437"
+     id="path9814"
+     style="fill:none;stroke:#ff0080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
 </svg>
