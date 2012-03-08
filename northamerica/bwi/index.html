@@ -3,23 +3,22 @@
 <head><title>Baltimore Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-maps=["bl1895.png", "bl1900.png", "bl1905.png", "bl1910.png", "bl1915.png", "bl1920.png", "bl1925.png", 
-      "bl1930.png", "bl1935.png", "bl1940.png", "bl1945.png", "bl1950.png", "bl1955.png", "bl1960.png",
-      "bl1965.png", "bl1970.png", "bl1975.png", "bl1980.png", "bl1985.png", "bl1990.png", "bl1995.png", 
-      "bl2000.png", "bl2005.png", "bl2010.png"];
-index=maps.length-1;
+start=1895;
+count=24;
+step=5;
+index=count-1;
 function update() {
-	document["MAP"].src=maps[index];
-	document["MAP"].title=1895+5*index;
-	document["MAP"].alt=1895+5*index + " map";
-	document.getElementsByTagName('a')[0].href=("bl" + (1895+5*index) + ".svg");
+	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[0].href=((start+step*index) + ".svg");
 }
 function nextmap() {
-	index=(index+1)%maps.length;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+maps.length-1)%maps.length;
+	index=(index+count-1)%count;
 	update();
 }
 document.onkeydown=function(keypress) {
@@ -42,8 +41,8 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous (or press a)</a> ---
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<a name="LINK" href="bl2010.svg">
-<img name="MAP" src="bl2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="2010.svg">
+<img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 

@@ -3,54 +3,23 @@
 <head><title>North American Rapid Transit Timelines</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-index=13;
+start=1880;
+count=14;
+step=10;
+index=count-1;
 function update() {
-        document["NYC"].src=("" + (1880+10*index) + ".png");
-        document["NYC"].title=1880+10*index;
-        document["NYC"].alt=1880+10*index + " map";
-
-        document["WAS"].src=("w" + (1880+10*index) + ".png");
-        document["WAS"].title=1880+10*index;
-        document["WAS"].alt=1880+10*index + " map";
-
-        document["YTO"].src=("t" + (1880+10*index) + ".png");
-        document["YTO"].title=1880+10*index;
-        document["YTO"].alt=1880+10*index + " map";
-
-        document["YMQ"].src=("m" + (1880+10*index) + ".png");
-        document["YMQ"].title=1880+10*index;
-        document["YMQ"].alt=1880+10*index + " map";
-
-        document["CHI"].src=("c" + (1880+10*index) + ".png");
-        document["CHI"].title=1880+10*index;
-        document["CHI"].alt=1880+10*index + " map";
-
-        document["BOS"].src=("b" + (1880+10*index) + ".png");
-        document["BOS"].title=1880+10*index;
-        document["BOS"].alt=1880+10*index + " map";
-
-        document["SFO"].src=("ba" + (1880+10*index) + ".png");
-        document["SFO"].title=1880+10*index;
-        document["SFO"].alt=1880+10*index + " map";
-
-        document["PHL"].src=("ph" + (1880+10*index) + ".png");
-        document["PHL"].title=1880+10*index;
-        document["PHL"].alt=1880+10*index + " map";
-
-        document["YVR"].src=("v" + (1880+10*index) + ".png");
-        document["YVR"].title=1880+10*index;
-        document["YVR"].alt=1880+10*index + " map";
-
-        document["LAX"].src=("la" + (1880+10*index) + ".png");
-        document["LAX"].title=1880+10*index;
-        document["LAX"].alt=1880+10*index + " map";
+        ["NYC","CHI","BOS","PHL","SFO","LAX","WAS","YTO","YMQ","YVR"].forEach(function(city) {
+	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
+	        document[city].title=start+step*index;
+        	document[city].alt=start+step*index + " map";
+	});
 }
 function nextmap() {
-	index=(index+1)%14;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+14-1)%14;
+	index=(index+count-1)%count;
 	update();
 }
 function toggleshow(x) {
@@ -80,25 +49,25 @@ document.onkeydown=function(keypress) {
 <!--<table cellpadding="0">-->
 <p>
 <span id="NYC" style="display: inline-block; vertical-align: middle"><a href="/~arapp/subtimeline">New York<br>
-  <img name="NYC" src="2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="NYC" src="nyc/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CHI" style="display: inline-block; vertical-align: middle"><a href="/~arapp/ltimeline">Chicago<br>
-  <img name="CHI" src="c2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="CHI" src="chi/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BOS" style="display: inline-block; vertical-align: middle"><a href="/~arapp/ttimeline">Boston<br>
-  <img name="BOS" src="b2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="BOS" src="bos/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PHL" style="display: inline-block; vertical-align: middle"><a href="phl">Philadelphia<br>
-  <img name="PHL" src="ph2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="PHL" src="phl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SFO" style="display: inline-block; vertical-align: middle"><a href="sfo">San Francisco<br>
-  <img name="SFO" src="ba2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="SFO" src="sfo/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="LAX" style="display: inline-block; vertical-align: middle"><a href="lax">Los Angeles<br>
-  <img name="LAX" src="la2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="LAX" src="lax/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="WAS" style="display: inline-block; vertical-align: middle"><a href="was">Washington<br>
-  <img name="WAS" src="w2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="WAS" src="was/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YTO" style="display: inline-block; vertical-align: middle"><a href="yto">Toronto<br>
-  <img name="YTO" src="t2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="YTO" src="yto/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YMQ" style="display: inline-block; vertical-align: middle"><a href="ymq">Montréal<br>
-  <img name="YMQ" src="m2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="YMQ" src="ymq/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YVR" style="display: inline-block; vertical-align: middle"><a href="yvr">Vancouver<br>
-  <img name="YVR" src="v2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="YVR" src="yvr/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
 <a href="javascript:nextmap()">next (or press s)</a>

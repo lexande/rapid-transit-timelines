@@ -3,20 +3,22 @@
 <head><title>San Diego Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-maps=["sd1985.png", "sd1990.png", "sd1995.png", "sd2000.png", "sd2005.png", "sd2010.png"];
-index=maps.length-1;
+start=1985;
+count=6;
+step=5;
+index=count-1;
 function update() {
-	document["MAP"].src=maps[index];
-	document["MAP"].title=1985+5*index;
-	document["MAP"].alt=1985+5*index + " map";
-	document.getElementsByTagName('a')[0].href=("sd" + (1985+5*index) + ".svg");
+	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[0].href=((start+step*index) + ".svg");
 }
 function nextmap() {
-	index=(index+1)%maps.length;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+maps.length-1)%maps.length;
+	index=(index+count-1)%count;
 	update();
 }
 document.onkeydown=function(keypress) {
@@ -39,8 +41,8 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous (or press a)</a> ---
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<a name="LINK" href="sd2010.svg">
-<img name="MAP" src="sd2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="2010.svg">
+<img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 

@@ -3,20 +3,22 @@
 <head><title>Rochester Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-maps=["rc1930.png", "rc1940.png", "rc1950.png", "rc1960.png"];
-index=0;
+start=1930;
+count=4;
+step=10;
+index=count-1;
 function update() {
-	document["MAP"].src=maps[index];
-	document["MAP"].title=1930+10*index;
-	document["MAP"].alt=1930+10*index + " map";
-	document.getElementsByTagName('a')[0].href=("rc" + (1930+10*index) + ".svg");
+	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[0].href=((start+step*index) + ".svg");
 }
 function nextmap() {
-	index=(index+1)%maps.length;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+maps.length-1)%maps.length;
+	index=(index+count-1)%count;
 	update();
 }
 document.onkeydown=function(keypress) {
@@ -39,8 +41,8 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous (or press a)</a> ---
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<a name="LINK" href="rc1930.svg">
-<img name="MAP" src="rc1930.png" title="1930" alt="1930 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="1960.svg">
+<img name="MAP" src="1960.png" title="1960" alt="1960 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
