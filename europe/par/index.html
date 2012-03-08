@@ -3,23 +3,22 @@
 <head><title>Paris Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-maps=["p1875.png", "p1880.png", "p1885.png", "p1890.png", "p1895.png", "p1900.png", "p1905.png",
-      "p1910.png", "p1915.png", "p1920.png", "p1925.png", "p1930.png", "p1935.png", "p1940.png",
-      "p1945.png", "p1950.png", "p1955.png", "p1960.png", "p1965.png", "p1970.png", "p1975.png", 
-      "p1980.png", "p1985.png", "p1990.png", "p1995.png", "p2000.png", "p2005.png", "p2010.png"];
-index=maps.length-1;
+start=1875;
+count=28;
+step=5;
+index=count-1;
 function update() {
-	document["MAP"].src=maps[index];
-	document["MAP"].title=1875+5*index;
-	document["MAP"].alt=1875+5*index + " map";
-	document.getElementsByTagName('a')[0].href=("p" + (1875+5*index) + ".svg");
+	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[0].href=((start+step*index) + ".svg");
 }
 function nextmap() {
-	index=(index+1)%maps.length;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+maps.length-1)%maps.length;
+	index=(index+count-1)%count;
 	update();
 }
 document.onkeydown=function(keypress) {
@@ -42,23 +41,20 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous (or press a)</a> ---
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<a name="LINK" href="p2010.svg">
-<img name="MAP" src="p2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="2010.svg">
+<img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<!--<a href="big.html">Higher-res, SVG-based version (won't work in IE)</a>
-<p>-->
 Based on weekday midday service at the end of the year in question.  Scale 30 pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
-See also: 
 <a href="/~arapp/subtimeline">New York</a> -
-Paris - 
-<a href="/~arapp/europe/vie">Wien</a> - 
+Paris -
+<a href="/~arapp/europe/vie">Wien</a> -
 <a href="/~arapp/europe">other cities</a>
 <p>
 <font size="1">Based on map data 

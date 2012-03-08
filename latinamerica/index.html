@@ -3,41 +3,30 @@
 <head><title>Latin American Rapid Transit Timelines</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-index=9;
+start=1920;
+count=10;
+step=10;
+index=count-1;
 function update() {
-        document["BUE"].src=("ba" + (1920+10*index) + ".png");
-        document["BUE"].title=1920+10*index;
-        document["BUE"].alt=1920+10*index + " map";
-
-        document["SAO"].src=("sa" + (1920+10*index) + ".png");
-        document["SAO"].title=1920+10*index;
-        document["SAO"].alt=1920+10*index + " map";
-
-        document["SCL"].src=("sc" + (1920+10*index) + ".png");
-        document["SCL"].title=1920+10*index;
-        document["SCL"].alt=1920+10*index + " map";
-
-        document["MEX"].src=("mx" + (1920+10*index) + ".png");
-        document["MEX"].title=1920+10*index;
-        document["MEX"].alt=1920+10*index + " map";
-
-        document["CCS"].src=("cv" + (1920+10*index) + ".png");
-        document["CCS"].title=1920+10*index;
-        document["CCS"].alt=1920+10*index + " map";
-
-        document["MDE"].src=("me" + (1920+10*index) + ".png");
-        document["MDE"].title=1920+10*index;
-        document["MDE"].alt=1920+10*index + " map";
-
+        ["BUE","SCL","MEX","SAO","CCS","MDE"].forEach(function(city) {
+	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
+	        document[city].title=start+step*index;
+        	document[city].alt=start+step*index + " map";
+	});
 }
 function nextmap() {
-	index=(index+1)%10;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+10-1)%10;
+	index=(index+count-1)%count;
 	update();
 }
+function toggleshow(x) {
+	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
+        else document.getElementById(x).style.display = 'inline-block';
+}
+
 document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
@@ -57,47 +46,40 @@ document.onkeydown=function(keypress) {
 <center>
 <a href="javascript:prevmap()">previous (or press a)</a> ---
 <a href="javascript:nextmap()">next (or press s)</a>
+<!--<table cellpadding="0">-->
 <p>
-<table cellpadding="0">
- <tr>
-  <td>
-   <center><a href="bue">Buenos Aires<br>
-   <img name="BUE" src="ba2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></center>
-  </td>
-  <td>
-   <center><a href="scl">Santiago<br>
-   <img name="SCL" src="sc2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></center>
-  </td>
-  <td>
-   <center><a href="mex">México<br>
-   <img name="MEX" src="mx2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></center>
-  </td>
-</table>
-<table>
-  <td>
-   <center><a href="sao">São Paulo<br>
-   <img name="SAO" src="sa2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></center>
-  </td>
-  <td>
-   <center><a href="ccs">Caracas<br>
-   <img name="CCS" src="cv2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></center>
-  </td>
-  <td>
-   <center><a href="mde">Medellín<br>
-   <img name="MDE" src="me2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></center>
-  </td>
-</table>
+<span id="BUE" style="display: inline-block; vertical-align: middle"><a href="bue">Buenos Aires<br>
+  <img name="BUE" src="bue/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SCL" style="display: inline-block; vertical-align: middle"><a href="scl">Santiago<br>
+  <img name="SCL" src="scl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="MEX" style="display: inline-block; vertical-align: middle"><a href="mex">México<br>
+  <img name="MEX" src="mex/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SAO" style="display: inline-block; vertical-align: middle"><a href="sao">São Paulo<br>
+  <img name="SAO" src="sao/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="CCS" style="display: inline-block; vertical-align: middle"><a href="ccs">Caracas<br>
+  <img name="CCS" src="ccs/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="MDE" style="display: inline-block; vertical-align: middle"><a href="mde">Medellín<br>
+  <img name="MDE" src="mde/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
 <a href="javascript:nextmap()">next (or press s)</a>
+<p>
+<!--<form>Cities to show: 
+<input type="checkbox" onclick="toggleshow('BUE')" checked>Buenos Aires</input>
+<input type="checkbox" onclick="toggleshow('SCL')" checked>Santiago</input>
+<input type="checkbox" onclick="toggleshow('MEX')" checked>México</input>
+<input type="checkbox" onclick="toggleshow('SAO')" checked>São Paulo</input>
+<input type="checkbox" onclick="toggleshow('CCS')" checked>Caracas</input>
+<input type="checkbox" onclick="toggleshow('MDE')" checked>Medellín</input>
+</form>-->
 <p>
 Based on weekday midday service at the end of the year in question.  Scale 10 pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 See also:
-<a href="/~arapp/northamerica">North American cities</a> - 
-Latin American cities - 
+<a href="/~arapp/northamericaamerica">North American cities</a> - 
+Latin American cities</a> - 
 <a href="/~arapp/europe">European cities</a> - 
 <a href="/~arapp/asia">Mainland Asian cities</a>
 <p>

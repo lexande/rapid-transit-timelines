@@ -3,23 +3,22 @@
 <head><title>Berlin Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-maps=["u1885.png", "u1890.png", "u1895.png", "u1900.png", "u1905.png", "u1910.png", "u1915.png",
-      "u1920.png", "u1925.png", "u1930.png", "u1935.png", "u1940.png", "u1945.png", "u1950.png",
-      "u1955.png", "u1960.png", "u1965.png", "u1970.png", "u1975.png", "u1980.png", "u1985.png", 
-      "u1990.png", "u1995.png", "u2000.png", "u2005.png", "u2010.png"];
-index=maps.length-1;
+start=1885;
+count=26;
+step=5;
+index=count-1;
 function update() {
-	document["MAP"].src=maps[index];
-	document["MAP"].title=1885+5*index;
-	document["MAP"].alt=1885+5*index + " map";
-	document.getElementsByTagName('a')[0].href=("u" + (1885+5*index) + ".svg");
+	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[0].href=((start+step*index) + ".svg");
 }
 function nextmap() {
-	index=(index+1)%maps.length;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+maps.length-1)%maps.length;
+	index=(index+count-1)%count;
 	update();
 }
 document.onkeydown=function(keypress) {
@@ -42,25 +41,20 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous (or press a)</a> ---
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<a name="LINK" href="u2010.svg">
-<img name="MAP" src="u2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="2010.svg">
+<img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<!--<a href="big.html">Higher-res, SVG-based version (won't work in IE)</a>
-<p>-->
 Based on weekday midday service at the end of the year in question.  Scale 30 pixels per km.
-<p>
-S-Bahn routes (dark green lines) before 1930 are uncertain.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
-See also: 
 <a href="/~arapp/subtimeline">New York</a> -
 <a href="/~arapp/europe/par">Paris</a> -
-<a href="/~arapp/europe/vie">Wien</a> - 
+<a href="/~arapp/europe/vie">Wien</a> -
 <a href="/~arapp/europe">other cities</a>
 <p>
 <font size="1">Based on map data 

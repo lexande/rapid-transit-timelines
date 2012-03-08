@@ -3,20 +3,22 @@
 <head><title>Hong Kong Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-maps=["hk1975.png", "hk1980.png", "hk1985.png", "hk1990.png", "hk1995.png", "hk2000.png", "hk2005.png", "hk2010.png"];
-index=maps.length-1;
+start=1975;
+count=8;
+step=5;
+index=count-1;
 function update() {
-	document["MAP"].src=maps[index];
-	document["MAP"].title=1975+5*index;
-	document["MAP"].alt=1975+5*index + " map";
-	document.getElementsByTagName('a')[0].href=("hk" + (1975+5*index) + ".svg");
+	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[0].href=((start+step*index) + ".svg");
 }
 function nextmap() {
-	index=(index+1)%maps.length;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+maps.length-1)%maps.length;
+	index=(index+count-1)%count;
 	update();
 }
 document.onkeydown=function(keypress) {
@@ -39,23 +41,20 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous (or press a)</a> ---
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<a name="LINK" href="hk2010.svg">
-<img name="MAP" src="hk2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="2010.svg">
+<img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<!--<a href="big.html">Higher-res, SVG-based version (won't work in IE)</a>
-<p>-->
 Based on weekday midday service at the end of the year in question.  Scale 30 pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
-See also: 
 <a href="/~arapp/subtimeline">New York</a> -
-<a href="/~arapp/asia/sel">Seoul</a> -
-<a href="/~arapp/asia/sha">Shanghai</a> -
+<a href="/~arapp/asia/sel">Seoul</a> - 
+<a href="/~arapp/asia/sha">Shanghai</a> - 
 <a href="/~arapp/asia">other cities</a>
 <p>
 <font size="1">Based on map data 
