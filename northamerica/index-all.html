@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><title>North American Rapid Transit Timelines</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<script language="JavaScript" type="text/javascript">
+start=1880;
+count=14;
+step=10;
+index=count-1;
+function update() {
+        ["NYC","CHI","BWI","BOS","PHL","SFO","LAX","ROC","WAS","YTO","SEA","YMQ",
+         "ATL","SAN","MIA","PIT","YVR","PDX","SAC","STL","DEN","DAL"].forEach(function(city) {
+	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
+	        document[city].title=start+step*index;
+        	document[city].alt=start+step*index + " map";
+	});
+}
+function nextmap() {
+	index=(index+1)%count;
+	update();
+}
+function prevmap() {
+	index=(index+count-1)%count;
+	update();
+}
+function toggleshow(x) {
+	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
+        else document.getElementById(x).style.display = 'inline-block';
+}
+
+document.onkeydown=function(keypress) {
+	if(keypress.which == 65) { prevmap(); }
+	if(keypress.which == 83) { nextmap(); }
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19998781-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body>
+<center>
+<a href="javascript:prevmap()">previous (or press a)</a> ---
+<a href="javascript:nextmap()">next (or press s)</a>
+<!--<table cellpadding="0">-->
+<p>
+<span id="NYC" style="display: inline-block; vertical-align: middle"><a href="/~arapp/subtimeline">New York<br>
+  <img name="NYC" src="nyc/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="CHI" style="display: inline-block; vertical-align: middle"><a href="/~arapp/ltimeline">Chicago<br>
+  <img name="CHI" src="chi/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="BWI" style="display: none; vertical-align: middle"><a href="bwi">Baltimore<br>
+  <img name="BWI" src="bwi/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="BOS" style="display: inline-block; vertical-align: middle"><a href="/~arapp/ttimeline">Boston<br>
+  <img name="BOS" src="bos/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PHL" style="display: inline-block; vertical-align: middle"><a href="phl">Philadelphia<br>
+  <img name="PHL" src="phl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SFO" style="display: inline-block; vertical-align: middle"><a href="sfo">San Francisco<br>
+  <img name="SFO" src="sfo/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="LAX" style="display: inline-block; vertical-align: middle"><a href="lax">Los Angeles<br>
+  <img name="LAX" src="lax/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="ROC" style="display: none; vertical-align: middle"><a href="roc">Rochester<br>
+  <img name="ROC" src="roc/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="WAS" style="display: inline-block; vertical-align: middle"><a href="was">Washington<br>
+  <img name="WAS" src="was/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="YTO" style="display: inline-block; vertical-align: middle"><a href="yto">Toronto<br>
+  <img name="YTO" src="yto/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SEA" style="display: none; vertical-align: middle"><a href="sea">Seattle<br>
+  <img name="SEA" src="sea/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="YMQ" style="display: inline-block; vertical-align: middle"><a href="ymq">Montréal<br>
+  <img name="YMQ" src="ymq/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="ATL" style="display: none; vertical-align: middle"><a href="atl">Atlanta<br>
+  <img name="ATL" src="atl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SAN" style="display: none; vertical-align: middle"><a href="san">San Diego<br>
+  <img name="SAN" src="san/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="MIA" style="display: none; vertical-align: middle"><a href="mia">Miami<br>
+  <img name="MIA" src="mia/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PIT" style="display: none; vertical-align: middle"><a href="pit">Pittsburgh<br>
+  <img name="PIT" src="pit/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="YVR" style="display: inline-block; vertical-align: middle"><a href="yvr">Vancouver<br>
+  <img name="YVR" src="yvr/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PDX" style="display: none; vertical-align: middle"><a href="pdx">Portland<br>
+  <img name="PDX" src="pdx/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SAC" style="display: none; vertical-align: middle"><a href="sac">Sacramento<br>
+  <img name="SAC" src="sac/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="STL" style="display: none; vertical-align: middle"><a href="stl">St. Louis<br>
+  <img name="STL" src="stl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="DEN" style="display: none; vertical-align: middle"><a href="den">Denver<br>
+  <img name="DEN" src="den/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="DAL" style="display: none; vertical-align: middle"><a href="dal">Dallas<br>
+  <img name="DAL" src="dal/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<p>
+<a href="javascript:prevmap()">previous (or press a)</a> --- 
+<a href="javascript:nextmap()">next (or press s)</a>
+<p>
+<form>Cities to show: 
+<input type="checkbox" onclick="toggleshow('NYC')" checked>New York</input>
+<input type="checkbox" onclick="toggleshow('CHI')" checked>Chicago</input>
+<input type="checkbox" onclick="toggleshow('BWI')" unchecked>Baltimore</input>
+<input type="checkbox" onclick="toggleshow('BOS')" checked>Boston</input>
+<input type="checkbox" onclick="toggleshow('PHL')" checked>Philadelphia</input>
+<input type="checkbox" onclick="toggleshow('SFO')" checked>San Francisco</input>
+<input type="checkbox" onclick="toggleshow('LAX')" checked>Los Angeles</input>
+<input type="checkbox" onclick="toggleshow('ROC')" unchecked>Rochester</input>
+<input type="checkbox" onclick="toggleshow('WAS')" checked>Washington</input>
+<input type="checkbox" onclick="toggleshow('YTO')" checked>Toronto</input>
+<input type="checkbox" onclick="toggleshow('SEA')" unchecked>Seattle</input>
+<input type="checkbox" onclick="toggleshow('YMQ')" checked>Montréal</input>
+<input type="checkbox" onclick="toggleshow('ATL')" unchecked>Atlanta</input>
+<input type="checkbox" onclick="toggleshow('SAN')" unchecked>San Diego</input>
+<input type="checkbox" onclick="toggleshow('MIA')" unchecked>Miami</input>
+<input type="checkbox" onclick="toggleshow('PIT')" unchecked>Pittsburgh</input>
+<input type="checkbox" onclick="toggleshow('YVR')" checked>Vancouver</input>
+<input type="checkbox" onclick="toggleshow('PDX')" unchecked>Portland</input>
+<input type="checkbox" onclick="toggleshow('SAC')" unchecked>Sacramento</input>
+<input type="checkbox" onclick="toggleshow('STL')" unchecked>St. Louis</input>
+<input type="checkbox" onclick="toggleshow('DEN')" unchecked>Denver</input>
+<input type="checkbox" onclick="toggleshow('DAL')" unchecked>Dallas</input>
+</form>
+<p>
+Based on weekday midday service at the end of the year in question.  Scale 10 pixels per km.
+<p>
+Please send any corrections or questions to threestationsquare at gmail dot com.
+<p>
+See also:
+North American cities - 
+<a href="/~arapp/latinamerica">Latin American cities</a> - 
+<a href="/~arapp/europe">European cities</a> - 
+<a href="/~arapp/asia">Mainland Asian cities</a>
+<p>
+<font size="1">Based on map data 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
+by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</font>
+</center>
+</body></html>
