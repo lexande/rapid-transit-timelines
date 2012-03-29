@@ -5,7 +5,7 @@ open BLANKMAP, ">", $ARGV[0] . ".svg" or die $!;
 
 $notpath=1;
 while (<MAP>) {
-	s/2010/$1/;
+	s/2010/$ARGV[0]/;
 	if (/<path/) { $notpath=0; }
 	if ($notpath) { print BLANKMAP $_; }
 	if (m!/>!) { $notpath=1; }
