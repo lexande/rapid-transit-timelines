@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head><title>Sacramento Rapid Transit Timeline</title>
+<head><title>NA Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
 start=1990;
@@ -11,7 +11,7 @@ function update() {
 	document["MAP"].src=(start+step*index) + ".png";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
-	document.getElementsByTagName('a')[0].href=((start+step*index) + ".svg");
+	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 }
 function nextmap() {
 	index=(index+1)%count;
