@@ -7,4 +7,7 @@ else
 fi
 COUNT=$(expr 1 + \( 2010 - $START \) / $STEP)
 sed -e"s/START/${START}/g; s/STEP/${STEP}/g; s/COUNT/${COUNT}/g; s/CITYNAME/$1/;" ~/timelines/boilerplate/car > index.html
+for i in *.svg; do
+	echo \<img src=\"`basename $i .svg`.png\" width=\"1\" height=\"1\" alt=\"\"\> >> index.html
+done
 cat ~/timelines/boilerplate/$2 >> index.html

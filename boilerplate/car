@@ -2,6 +2,16 @@
 <html>
 <head><title>CITYNAME Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<style type="text/css">
+div#preloader {
+	position: absolute;
+	left: -9999px;
+	top:  -9999px;
+}
+div#preloader img {
+	display: block;
+}
+</style>
 <script language="JavaScript" type="text/javascript">
 start=START;
 count=COUNT;
@@ -52,3 +62,4 @@ Based on weekday midday service at the end of the year in question.  Scale 30 pi
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
+<div id="preloader">
