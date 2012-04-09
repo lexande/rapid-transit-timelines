@@ -1,7 +1,7 @@
 /*
- * Buddy's Time plugin v2
+ * Buddy's Time plugin v3
  *
- * Copyright (C) 2006, Jon Manning <desplesda@desplesda.net>
+ * Copyright (C) 2012, Jon Manning <desplesda@desplesda.net>
  *		   and Alexander Rapp <alexander@alexander.co.tz>
  *
  * This program is free software; you can redistribute it and/or
@@ -57,8 +57,8 @@ static char* buddytime_get_localtime(char* buddytimezone) {
 
 	setenv("TZ",buddytimezone,1);
 	buddy_time = localtime(&current_time);
-	if (env_tz) { 
-		setenv("TZ",env_tz,1); 
+	if (env_tz) {
+		setenv("TZ",env_tz,1);
 	} else {
 		unsetenv("TZ");
 	}
@@ -67,15 +67,14 @@ static char* buddytime_get_localtime(char* buddytimezone) {
 	strftime (printedtime, 32, "%H:%M", buddy_time);
 	return printedtime;
 }
-  
 
-static void
-buddytime_add_time(PurpleConversation *conv)
+
+static void buddytime_add_time(PurpleConversation *conv)
 {
 	PidginConversation *gtkconv = PIDGIN_CONVERSATION(conv);
 	PidginWindow *convwin = pidgin_conv_get_window(gtkconv);
 	GtkWidget* remote_time;
-	
+
 	if (g_hash_table_lookup(conv->data, "buddytime-indicator")) {
 		// the widget's already in this conversation! don't add a new one
 		return;
@@ -83,7 +82,6 @@ buddytime_add_time(PurpleConversation *conv)
 
 	remote_time = gtk_menu_item_new_with_label ("");
 	//gtk_widget_set_sensitive(remote_time, FALSE);
-	
 
 	if(remote_time) {
 		purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Adding remote clock.\n");
@@ -96,16 +94,15 @@ buddytime_add_time(PurpleConversation *conv)
 	}
 }
 
-static void
-buddytime_remove_time(PurpleConversation *conv)
+static void buddytime_remove_time(PurpleConversation *conv)
 {
 	GtkWidget* time_widget;
-  
+
 	if (time_widget = g_hash_table_lookup(conv->data, "buddytime-indicator")) {
 		purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Removing remote clock.\n"); 
 		gtk_widget_destroy(time_widget);
 		//free(time_widget);
-	
+
 		// throw this in in case the conversation window isn't actually closing
 		// and it's just the plugin being unloaded
 		g_hash_table_remove(conv->data, "buddytime-indicator");
@@ -158,21 +155,21 @@ static void buddytime_update_clock(PurpleConversation* conv) {
 	}
 
 	time_widget = g_hash_table_lookup(conv->data, "buddytime-indicator");
-                                             
+
 	if (time_widget == NULL) {
 	  	// whoa, no widget here, maybe the plugin got loaded after the window was created
 	  	// create the widget and re-get it
   		buddytime_newconv_cb(conv, NULL);
 		time_widget = g_hash_table_lookup(conv->data, "buddytime-indicator");
-	} 
-  	
+	}
+
 	time_label = gtk_bin_get_child(GTK_BIN(time_widget));
-	
+
 	theirtime = buddytime_get_localtime(remote_timezone);
 
 	if (theirtime == NULL) {
 		gtk_label_set_text(GTK_LABEL (time_label), "");
-	} else {	
+	} else {
   	// Print it in nice grey
   	char *markup;
   	markup = g_markup_printf_escaped ("<span foreground=\"gray\"><b>%s</b></span>", theirtime);
@@ -180,11 +177,11 @@ static void buddytime_update_clock(PurpleConversation* conv) {
   	g_free (markup);
   	g_free (theirtime);
 	}
-} 
+}
 
 static void buddytime_update_conversation_from_window(PidginWindow* window, gpointer data) {
 	//purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Updating window %p\n", window);
-	buddytime_update_clock(pidgin_conv_window_get_active_conversation(window));	
+	buddytime_update_clock(pidgin_conv_window_get_active_conversation(window));
 }
 
 static void buddytime_update_all_clocks(void) {
@@ -198,7 +195,7 @@ static void buddytime_update_all_clocks(void) {
 	g_list_foreach(window_list, (GFunc)buddytime_update_conversation_from_window, NULL);
 }
 
-gboolean buddytime_update_time_cb(gpointer data1, gpointer data2) {
+static gboolean buddytime_update_time_cb(gpointer data1, gpointer data2) {
 	buddytime_update_all_clocks();
 	return TRUE;
 }
@@ -209,24 +206,24 @@ static void buddytime_switch_conv_cb(PurpleConversation *conv, gpointer data) {
 	// fix the time for the new clock
 
 
-	buddytime_update_clock(conv); 
-	
+	buddytime_update_clock(conv);
+
 	// hide the old widget and display the new
 	// buddytime_remove_time(conv);
 	// buddytime_add_time(conv);
 }
 
-void buddytime_setzone_cb(PurpleBlistNode* node, const char* timezone) {
+static void buddytime_setzone_cb(PurpleBlistNode* node, const char* timezone) {
 	// set the timezone for the selected blist node
-	//purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Setting timezone for %p to %s\n", node, timezone);   
+	//purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Setting timezone for %p to %s\n", node, timezone);
 	purple_blist_node_set_string (node, "timezone", timezone);
-	
+
 	// Update the buddy's time immediately
 	buddytime_update_all_clocks();
 
 }
 
-void buddytime_setzone_dialog(PurpleBlistNode* node, void* data) {
+static void buddytime_setzone_dialog(PurpleBlistNode* node, void* data) {
 	const char* current_timezone = purple_blist_node_get_string(node, "timezone");
 	purple_request_input(NULL, _("Set Buddy's Timezone"), NULL,
 					   _("Please enter the timezone "
@@ -236,16 +233,15 @@ void buddytime_setzone_dialog(PurpleBlistNode* node, void* data) {
 					   _("Cancel"), NULL, NULL, NULL, NULL, node);
 }
 
-void buddytime_menu_cb(PurpleBlistNode* node, GList **menu, void* data) {
+static void buddytime_menu_cb(PurpleBlistNode* node, GList **menu, void* data) {
 	PurpleMenuAction *action;
 
 	action = purple_menu_action_new(_("Set Timezone"), G_CALLBACK(buddytime_setzone_dialog), NULL, NULL);
-   
+
 	*menu = g_list_append(*menu, action);
 }
 
-static gboolean
-plugin_load(PurplePlugin *plugin)
+static gboolean plugin_load(PurplePlugin *plugin)
 {
 	purple_debug(PURPLE_DEBUG_INFO, "buddytime", "buddytime plugin loaded.\n");
 	purple_signal_connect(purple_blist_get_handle(), "blist-node-extended-menu", plugin,
@@ -257,17 +253,16 @@ plugin_load(PurplePlugin *plugin)
 	purple_signal_connect(purple_conversations_get_handle(), "deleting-conversation", plugin,
 											 PURPLE_CALLBACK(buddytime_remove_time), NULL);
 
-	// update the time every second or so										 
+	// update the time every second or so
 	timeout_handle = g_timeout_add(1000, (GSourceFunc)buddytime_update_time_cb, NULL);
-	
+
 	// and update any open windows now
 	buddytime_update_all_clocks();
-	
+
 	return TRUE;
 }
 
-static gboolean
-plugin_unload(PurplePlugin *plugin)
+static gboolean plugin_unload(PurplePlugin *plugin)
 {
 	// disconnect, unhook and destroy everything
 	purple_signal_disconnect(purple_blist_get_handle(), "blist-node-extended-menu", plugin,
@@ -278,12 +273,10 @@ plugin_unload(PurplePlugin *plugin)
   												PURPLE_CALLBACK(buddytime_switch_conv_cb));
 	purple_signal_disconnect(purple_conversations_get_handle(), "deleting-conversation", plugin,
   												PURPLE_CALLBACK(buddytime_remove_time));
-  
 	purple_debug(PURPLE_DEBUG_INFO, "buddytime", "buddytime plugin unloaded.\n");
 
-
 	g_source_remove(timeout_handle);
-	
+
 	// remove the clocks from all windows
 	GList* window_list;
 	window_list = pidgin_conv_windows_get_list();
@@ -323,8 +316,7 @@ static PurplePluginInfo info =
 	NULL
 };
 
-static void
-init_plugin(PurplePlugin *plugin)
+static void init_plugin(PurplePlugin *plugin)
 {
 }
 
