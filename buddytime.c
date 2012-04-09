@@ -20,34 +20,29 @@
  * 02111-1307, USA.
  */
 
-#ifndef GAIM_PLUGINS
-# define GAIM_PLUGINS
+#ifndef PURPLE_PLUGINS
+# define PURPLE_PLUGINS
 #endif
 
 #include <gdk/gdk.h>
 #include <gtk/gtkplug.h>
+#include <time.h>
 
 #include <config.h>
 #include <debug.h>
-#include <gaim-compat.h>
-#include <core.h>
-#include <gtkutils.h>
 #include <gtkplugin.h>
 #include <gtkconv.h>
 #include <gtkdialogs.h>
 #include <gtkprefs.h>
 #include <blist.h>
 #include <gtkblist.h>
+#include <request.h>
 #include <signals.h>
 #include <util.h>
 #include <version.h>
 #include <internal.h>
 #include <gtk/gtkstock.h>
-#include <request.h>
-#include <gtkgaim-compat.h>
 #include <conversation.h>
-#include <gtkconvwin.h>
-#include <time.h>
 #include "plugin.h"
 
 
@@ -75,10 +70,10 @@ static char* buddytime_get_localtime(char* buddytimezone) {
   
 
 static void
-buddytime_add_time(GaimConversation *conv)
+buddytime_add_time(PurpleConversation *conv)
 {
-	GaimGtkConversation *gtkconv = GAIM_GTK_CONVERSATION(conv);
-	GaimGtkWindow *convwin = gaim_gtkconv_get_window(gtkconv);
+	PidginConversation *gtkconv = PIDGIN_CONVERSATION(conv);
+	PidginWindow *convwin = pidgin_conv_get_window(gtkconv);
 	GtkWidget* remote_time;
 	
 	if (g_hash_table_lookup(conv->data, "buddytime-indicator")) {
@@ -91,7 +86,7 @@ buddytime_add_time(GaimConversation *conv)
 	
 
 	if(remote_time) {
-		gaim_debug(GAIM_DEBUG_MISC, "buddytime", "Adding remote clock.\n");
+		purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Adding remote clock.\n");
 		gtk_menu_item_set_right_justified(
 				GTK_MENU_ITEM(remote_time), TRUE);
 		gtk_widget_show_all(remote_time);
@@ -102,12 +97,12 @@ buddytime_add_time(GaimConversation *conv)
 }
 
 static void
-buddytime_remove_time(GaimConversation *conv)
+buddytime_remove_time(PurpleConversation *conv)
 {
 	GtkWidget* time_widget;
-
-	gaim_debug(GAIM_DEBUG_MISC, "buddytime", "Removing remote clock.\n");   
+  
 	if (time_widget = g_hash_table_lookup(conv->data, "buddytime-indicator")) {
+		purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Removing remote clock.\n"); 
 		gtk_widget_destroy(time_widget);
 		//free(time_widget);
 	
@@ -117,38 +112,43 @@ buddytime_remove_time(GaimConversation *conv)
 	}
 }
 
-static void buddytime_remove_time_from_window(GaimGtkWindow* window, gpointer data) {
-	gaim_debug(GAIM_DEBUG_MISC, "buddytime", "Removing clock from window %p\n", window);
-	buddytime_remove_time(gaim_gtk_conv_window_get_active_conversation(window));
+static void buddytime_remove_time_from_gtkconv(PidginConversation* gtkconv) {
+	g_list_foreach(gtkconv->convs, (GFunc)buddytime_remove_time, NULL);
 }
 
-static void buddytime_newconv_cb(GaimConversation *conv, gpointer data) {
-	GaimGtkConversation *gtkconv = GAIM_GTK_CONVERSATION(conv);
-	GaimGtkWindow *convwin = gaim_gtkconv_get_window(gtkconv);
-	gaim_debug(GAIM_DEBUG_MISC, "buddytime", "New conversation\n");
+static void buddytime_remove_time_from_window(PidginWindow* window, gpointer data) {
+	purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Removing clock from window %p\n", window);
+	GList* gtkconv_list = pidgin_conv_window_get_gtkconvs(window);
+	g_list_foreach(gtkconv_list, (GFunc)buddytime_remove_time_from_gtkconv, NULL);
+}
 
-	if ((conv != NULL) && (gaim_conversation_get_type(conv) == GAIM_CONV_TYPE_IM )) {
-		gaim_debug(GAIM_DEBUG_MISC, "buddytime", "Adding remote clock.\n");
+static void buddytime_newconv_cb(PurpleConversation *conv, gpointer data) {
+	PidginConversation *gtkconv = PIDGIN_CONVERSATION(conv);
+	PidginWindow *convwin = pidgin_conv_get_window(gtkconv);
+	purple_debug(PURPLE_DEBUG_MISC, "buddytime", "New conversation\n");
+
+	if ((conv != NULL) && (purple_conversation_get_type(conv) == PURPLE_CONV_TYPE_IM )) {
+		purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Adding remote clock.\n");
 		buddytime_remove_time_from_window(convwin, NULL);
 		buddytime_add_time(conv);
 	} else {
-		gaim_debug(GAIM_DEBUG_ERROR, "buddytime", "New conversation IS NULL\n");
+		purple_debug(PURPLE_DEBUG_ERROR, "buddytime", "New conversation IS NULL\n");
 	}
 }
 
-static void buddytime_update_clock(GaimConversation* conv) {
-	GaimAccount* acct = gaim_conversation_get_account(conv);
-	const char* name = gaim_conversation_get_name(conv);
-	GaimBuddy* buddy = gaim_find_buddy(acct, name);
-	GaimBlistNode* node = &(buddy->node);
-	char* remote_timezone = gaim_blist_node_get_string (node, "timezone");
+static void buddytime_update_clock(PurpleConversation* conv) {
+	PurpleAccount* acct = purple_conversation_get_account(conv);
+	const char* name = purple_conversation_get_name(conv);
+	PurpleBuddy* buddy = purple_find_buddy(acct, name);
+	PurpleBlistNode* node = &(buddy->node);
+	char* remote_timezone = purple_blist_node_get_string (node, "timezone");
 	GtkWidget* time_widget;
 	GtkWidget* time_label;
 	char* theirtime;
 
-	//gaim_debug(GAIM_DEBUG_MISC, "buddytime", "Updating conversation, this one is with %s\n",
+	//purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Updating conversation, this one is with %s\n",
 		//name);
-	//gaim_debug(GAIM_DEBUG_MISC, "buddytime", "This buddy's timezone is %s\n",
+	//purple_debug(PURPLE_DEBUG_MISC, "buddytime", "This buddy's timezone is %s\n",
 		//remote_timezone);
 
 	if (remote_timezone == NULL) {
@@ -182,19 +182,19 @@ static void buddytime_update_clock(GaimConversation* conv) {
 	}
 } 
 
-static void buddytime_update_conversation_from_window(GaimGtkWindow* window, gpointer data) {
-	//gaim_debug(GAIM_DEBUG_MISC, "buddytime", "Updating window %p\n", window);
-	buddytime_update_clock(gaim_gtk_conv_window_get_active_conversation(window));	
+static void buddytime_update_conversation_from_window(PidginWindow* window, gpointer data) {
+	//purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Updating window %p\n", window);
+	buddytime_update_clock(pidgin_conv_window_get_active_conversation(window));	
 }
 
 static void buddytime_update_all_clocks(void) {
 	// update all the conversation windows
-	GList* window_list;
-	GTimeVal current_time;
-	g_get_current_time(&current_time);
-	
-	//gaim_debug(GAIM_DEBUG_MISC, "buddytime", "Updating all clocks (time is %i secs)\n", current_time.tv_sec);
-	window_list = gaim_gtk_conv_windows_get_list();
+	GList* window_list = pidgin_conv_windows_get_list();
+
+	//GTimeVal current_time;
+	//g_get_current_time(&current_time);
+	//purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Updating all clocks (time is %i secs)\n", current_time.tv_sec);
+
 	g_list_foreach(window_list, (GFunc)buddytime_update_conversation_from_window, NULL);
 }
 
@@ -203,32 +203,32 @@ gboolean buddytime_update_time_cb(gpointer data1, gpointer data2) {
 	return TRUE;
 }
 
-gboolean buddytime_switch_conv_cb(GaimConversation *conv) {
+static void buddytime_switch_conv_cb(PurpleConversation *conv, gpointer data) {
 
-	gaim_debug(GAIM_DEBUG_MISC, "buddytime", "Switching conversation\n");
+	purple_debug_misc("buddytime", "Switching conversation\n");
 	// fix the time for the new clock
-	// buddytime_update_clock(conv);
+
+
+	buddytime_update_clock(conv); 
 	
 	// hide the old widget and display the new
-	buddytime_remove_time(conv);
-	buddytime_add_time(conv);
-	
-	return TRUE;
+	// buddytime_remove_time(conv);
+	// buddytime_add_time(conv);
 }
 
-void buddytime_setzone_cb(GaimBlistNode* node, const char* timezone) {
+void buddytime_setzone_cb(PurpleBlistNode* node, const char* timezone) {
 	// set the timezone for the selected blist node
-	//gaim_debug(GAIM_DEBUG_MISC, "buddytime", "Setting timezone for %p to %s\n", node, timezone);   
-	gaim_blist_node_set_string (node, "timezone", timezone);
+	//purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Setting timezone for %p to %s\n", node, timezone);   
+	purple_blist_node_set_string (node, "timezone", timezone);
 	
 	// Update the buddy's time immediately
 	buddytime_update_all_clocks();
 
 }
 
-void buddytime_setzone_dialog(GaimBlistNode* node, void* data) {
-	const char* current_timezone = gaim_blist_node_get_string(node, "timezone");
-	gaim_request_input(NULL, _("Set Buddy's Timezone"), NULL,
+void buddytime_setzone_dialog(PurpleBlistNode* node, void* data) {
+	const char* current_timezone = purple_blist_node_get_string(node, "timezone");
+	purple_request_input(NULL, _("Set Buddy's Timezone"), NULL,
 					   _("Please enter the timezone "
 					   "of this buddy in the Unix Area/City "
 					   "(e.g. America/New_York) format."), current_timezone, FALSE, FALSE, NULL,
@@ -236,26 +236,26 @@ void buddytime_setzone_dialog(GaimBlistNode* node, void* data) {
 					   _("Cancel"), NULL, NULL, NULL, NULL, node);
 }
 
-void buddytime_menu_cb(GaimBlistNode* node, GList **menu, void* data) {
-	GaimMenuAction *action;
+void buddytime_menu_cb(PurpleBlistNode* node, GList **menu, void* data) {
+	PurpleMenuAction *action;
 
-	action = gaim_menu_action_new(_("Set Timezone"), G_CALLBACK(buddytime_setzone_dialog), NULL, NULL);
+	action = purple_menu_action_new(_("Set Timezone"), G_CALLBACK(buddytime_setzone_dialog), NULL, NULL);
    
 	*menu = g_list_append(*menu, action);
 }
 
 static gboolean
-plugin_load(GaimPlugin *plugin)
+plugin_load(PurplePlugin *plugin)
 {
-	gaim_debug(GAIM_DEBUG_INFO, "buddytime", "buddytime plugin loaded.\n");
-	gaim_signal_connect(gaim_blist_get_handle(), "blist-node-extended-menu", plugin,
-                       GAIM_CALLBACK(buddytime_menu_cb), NULL);
-	gaim_signal_connect(gaim_conversations_get_handle(), "conversation-created", plugin,
-                       GAIM_CALLBACK(buddytime_newconv_cb), NULL);
-	gaim_signal_connect(gaim_conversations_get_handle(), "conversation-switched", plugin,
-											 GAIM_CALLBACK(buddytime_switch_conv_cb), NULL);
-	gaim_signal_connect(gaim_conversations_get_handle(), "deleting-conversation", plugin,
-											 GAIM_CALLBACK(buddytime_remove_time), NULL);
+	purple_debug(PURPLE_DEBUG_INFO, "buddytime", "buddytime plugin loaded.\n");
+	purple_signal_connect(purple_blist_get_handle(), "blist-node-extended-menu", plugin,
+                       PURPLE_CALLBACK(buddytime_menu_cb), NULL);
+	purple_signal_connect(purple_conversations_get_handle(), "conversation-created", plugin,
+                       PURPLE_CALLBACK(buddytime_newconv_cb), NULL);
+	purple_signal_connect(pidgin_conversations_get_handle(), "conversation-switched", plugin,
+											 PURPLE_CALLBACK(buddytime_switch_conv_cb), NULL);
+	purple_signal_connect(purple_conversations_get_handle(), "deleting-conversation", plugin,
+											 PURPLE_CALLBACK(buddytime_remove_time), NULL);
 
 	// update the time every second or so										 
 	timeout_handle = g_timeout_add(1000, (GSourceFunc)buddytime_update_time_cb, NULL);
@@ -267,41 +267,41 @@ plugin_load(GaimPlugin *plugin)
 }
 
 static gboolean
-plugin_unload(GaimPlugin *plugin)
+plugin_unload(PurplePlugin *plugin)
 {
 	// disconnect, unhook and destroy everything
-	gaim_signal_disconnect(gaim_blist_get_handle(), "blist-node-extended-menu", plugin,
-                          GAIM_CALLBACK(buddytime_menu_cb));
-	gaim_signal_disconnect(gaim_conversations_get_handle(), "conversation-created", plugin,
-  												GAIM_CALLBACK(buddytime_newconv_cb));
-	gaim_signal_disconnect(gaim_conversations_get_handle(), "conversation-switched", plugin,
-  												GAIM_CALLBACK(buddytime_switch_conv_cb));
-	gaim_signal_disconnect(gaim_conversations_get_handle(), "deleting-conversation", plugin,
-  												GAIM_CALLBACK(buddytime_remove_time));
+	purple_signal_disconnect(purple_blist_get_handle(), "blist-node-extended-menu", plugin,
+                          PURPLE_CALLBACK(buddytime_menu_cb));
+	purple_signal_disconnect(purple_conversations_get_handle(), "conversation-created", plugin,
+  												PURPLE_CALLBACK(buddytime_newconv_cb));
+	purple_signal_disconnect(pidgin_conversations_get_handle(), "conversation-switched", plugin,
+  												PURPLE_CALLBACK(buddytime_switch_conv_cb));
+	purple_signal_disconnect(purple_conversations_get_handle(), "deleting-conversation", plugin,
+  												PURPLE_CALLBACK(buddytime_remove_time));
   
-	gaim_debug(GAIM_DEBUG_INFO, "buddytime", "buddytime plugin unloaded.\n");
+	purple_debug(PURPLE_DEBUG_INFO, "buddytime", "buddytime plugin unloaded.\n");
 
 
 	g_source_remove(timeout_handle);
 	
 	// remove the clocks from all windows
 	GList* window_list;
-	window_list = gaim_gtk_conv_windows_get_list();
+	window_list = pidgin_conv_windows_get_list();
 	g_list_foreach(window_list, (GFunc)buddytime_remove_time_from_window, NULL);
 
 	return TRUE;
 }
 
-static GaimPluginInfo info =
+static PurplePluginInfo info =
 {
-	GAIM_PLUGIN_MAGIC,
-	GAIM_MAJOR_VERSION,
-	GAIM_MINOR_VERSION,
-	GAIM_PLUGIN_STANDARD,                             /**< type           */
+	PURPLE_PLUGIN_MAGIC,
+	PURPLE_MAJOR_VERSION,
+	PURPLE_MINOR_VERSION,
+	PURPLE_PLUGIN_STANDARD,                             /**< type           */
 	NULL,                                             /**< ui_requirement */
 	0,                                                /**< flags          */
 	NULL,                                             /**< dependencies   */
-	GAIM_PRIORITY_DEFAULT,                            /**< priority       */
+	PURPLE_PRIORITY_DEFAULT,                            /**< priority       */
 
 	"gtk-buddytime",                                  /**< id             */
 	"Buddy's Time",                                   /**< name           */
@@ -324,8 +324,8 @@ static GaimPluginInfo info =
 };
 
 static void
-init_plugin(GaimPlugin *plugin)
+init_plugin(PurplePlugin *plugin)
 {
 }
 
-GAIM_INIT_PLUGIN(buddytime, init_plugin, info)
+PURPLE_INIT_PLUGIN(buddytime, init_plugin, info)
