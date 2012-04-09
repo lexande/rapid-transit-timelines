@@ -20,10 +20,6 @@
  * 02111-1307, USA.
  */
 
-#ifndef PURPLE_PLUGINS
-# define PURPLE_PLUGINS
-#endif
-
 #include <gdk/gdk.h>
 #include <gtk/gtkplug.h>
 #include <time.h>
@@ -48,7 +44,7 @@
 
 guint timeout_handle; // the handle to the update-time timeout
 
-static char* buddytime_get_localtime(char* buddytimezone) {
+static char* buddytime_get_localtime(const char* buddytimezone) {
 	// returns a string containing the adjusted time
   	time_t current_time = time(NULL);
 	char* env_tz = getenv("TZ");
@@ -98,7 +94,7 @@ static void buddytime_remove_time(PurpleConversation *conv)
 {
 	GtkWidget* time_widget;
 
-	if (time_widget = g_hash_table_lookup(conv->data, "buddytime-indicator")) {
+	if ((time_widget = g_hash_table_lookup(conv->data, "buddytime-indicator"))) {
 		purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Removing remote clock.\n"); 
 		gtk_widget_destroy(time_widget);
 		//free(time_widget);
@@ -114,8 +110,8 @@ static void buddytime_remove_time_from_gtkconv(PidginConversation* gtkconv) {
 }
 
 static void buddytime_remove_time_from_window(PidginWindow* window, gpointer data) {
-	purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Removing clock from window %p\n", window);
 	GList* gtkconv_list = pidgin_conv_window_get_gtkconvs(window);
+	purple_debug(PURPLE_DEBUG_MISC, "buddytime", "Removing clock from window %p\n", window);
 	g_list_foreach(gtkconv_list, (GFunc)buddytime_remove_time_from_gtkconv, NULL);
 }
 
@@ -138,7 +134,7 @@ static void buddytime_update_clock(PurpleConversation* conv) {
 	const char* name = purple_conversation_get_name(conv);
 	PurpleBuddy* buddy = purple_find_buddy(acct, name);
 	PurpleBlistNode* node = &(buddy->node);
-	char* remote_timezone = purple_blist_node_get_string (node, "timezone");
+	const char* remote_timezone = purple_blist_node_get_string (node, "timezone");
 	GtkWidget* time_widget;
 	GtkWidget* time_label;
 	char* theirtime;
@@ -264,6 +260,10 @@ static gboolean plugin_load(PurplePlugin *plugin)
 
 static gboolean plugin_unload(PurplePlugin *plugin)
 {
+	// remove the clocks from all windows
+	GList* window_list = pidgin_conv_windows_get_list();
+	g_list_foreach(window_list, (GFunc)buddytime_remove_time_from_window, NULL);
+
 	// disconnect, unhook and destroy everything
 	purple_signal_disconnect(purple_blist_get_handle(), "blist-node-extended-menu", plugin,
                           PURPLE_CALLBACK(buddytime_menu_cb));
@@ -276,11 +276,6 @@ static gboolean plugin_unload(PurplePlugin *plugin)
 	purple_debug(PURPLE_DEBUG_INFO, "buddytime", "buddytime plugin unloaded.\n");
 
 	g_source_remove(timeout_handle);
-
-	// remove the clocks from all windows
-	GList* window_list;
-	window_list = pidgin_conv_windows_get_list();
-	g_list_foreach(window_list, (GFunc)buddytime_remove_time_from_window, NULL);
 
 	return TRUE;
 }
@@ -312,12 +307,10 @@ static PurplePluginInfo info =
 
 	NULL,                                             /**< ui_info        */
 	NULL,                                             /**< extra_info     */
-	NULL,
-	NULL
+	NULL, NULL, NULL, NULL, NULL, NULL
 };
 
-static void init_plugin(PurplePlugin *plugin)
-{
+static void init_plugin(PurplePlugin *plugin) {
 }
 
 PURPLE_INIT_PLUGIN(buddytime, init_plugin, info)
