@@ -8,7 +8,7 @@ count=10;
 step=10;
 index=count-1;
 function update() {
-        ["BUE","SCL","MEX","SAO","CCS","MDE"].forEach(function(city) {
+        ["BUE","SCL","MEX","SAO","RIO","CCS","MDE"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -49,12 +49,14 @@ document.onkeydown=function(keypress) {
 <p>
 <span id="BUE" style="display: inline-block; vertical-align: middle"><a href="bue">Buenos Aires<br>
   <img name="BUE" src="bue/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="SCL" style="display: inline-block; vertical-align: middle"><a href="scl">Santiago<br>
-  <img name="SCL" src="scl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MEX" style="display: inline-block; vertical-align: middle"><a href="mex">México<br>
   <img name="MEX" src="mex/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SAO" style="display: inline-block; vertical-align: middle"><a href="sao">São Paulo<br>
   <img name="SAO" src="sao/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SCL" style="display: inline-block; vertical-align: middle"><a href="scl">Santiago<br>
+  <img name="SCL" src="scl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="RIO" style="display: inline-block; vertical-align: middle"><a href="rio">Rio de Janeiro<br>
+  <img name="RIO" src="rio/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CCS" style="display: inline-block; vertical-align: middle"><a href="ccs">Caracas<br>
   <img name="CCS" src="ccs/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MDE" style="display: inline-block; vertical-align: middle"><a href="mde">Medellín<br>
@@ -65,9 +67,10 @@ document.onkeydown=function(keypress) {
 <p>
 <!--<form>Cities to show: 
 <input type="checkbox" onclick="toggleshow('BUE')" checked>Buenos Aires</input>
-<input type="checkbox" onclick="toggleshow('SCL')" checked>Santiago</input>
 <input type="checkbox" onclick="toggleshow('MEX')" checked>México</input>
 <input type="checkbox" onclick="toggleshow('SAO')" checked>São Paulo</input>
+<input type="checkbox" onclick="toggleshow('SCL')" checked>Santiago</input>
+<input type="checkbox" onclick="toggleshow('RIO')" checked>Rio de Janeiro</input>
 <input type="checkbox" onclick="toggleshow('CCS')" checked>Caracas</input>
 <input type="checkbox" onclick="toggleshow('MDE')" checked>Medellín</input>
 </form>-->
