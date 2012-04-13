@@ -8,6 +8,7 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="3350"
    height="3050"
@@ -20,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,26 +37,32 @@
      x="-4.4408921e-16" />
   <path
      d="m 2741.629,-222.1314 28.2132,111.36789 31.6779,89.589252 16.334,40.58739 7.9195,10.39433 6.4346,7.919488 21.2836,13.36415 11.8792,6.92955 24.2535,12.37421 15.839,6.92955 8.9094,1.97987 75.2352,-12.3742 36.1326,-5.93962 13.3642,7.91949 7.4245,5.93962 4.9497,13.36414 16.3339,158.8848 -0.4949,29.20313 -29.6981,100.97351 -20.2937,61.87103 -0.495,16.33395 0.495,17.32389 18.3138,109.88295 5.4447,26.23331 22.7685,35.63771 8.9094,14.35408 6.4346,22.76854 L 3047,846.5 l -7.5,36 -9,36.5 -9,43 0.5,17.5 5.5,16 4.5,7.5 21.5,33.5 3,7.5 0,9 -4,9 -66.5,134.5 -4,7.5 -10,9 -12,6 -11.5,1 -13,-1.5 -20,-12 -27.5,-16.5 -29,-15.5 -27.5,-9.5 -41.5,-10.5 -46.5,-22 -30,-16 -28,-12.5 -51.5,-16 -49,-11 -49.5,-6 -65,-8.5 -46,-4 -69,-5.5 -46,-2.5 -58.5,3 -45.5,4.5 -151,31 -186,36.5 -80,16.5 -37.5,12 -36.5,16.5 -186,106 -11.5397,8.4836 -30.4603,30.5164 -89,89.5 -182,180.5 -6.5,15 -2.5,23 1,30 6.5,88 15.5,201.5 3,45.5 -3.5,13.5 -48,92 -35.5,31.5 -46.5,45.5 -38.5,37.5 -19,18.5 -30.5,23.5 -30,23 -31.5,17 -25,15.5 -17.5,15.5 -13.5,19.5 -10,21 -8.5,35 -3.5,33.5 -4.5,39 -7,17.5 -12,18.5 -53.5,55 -15,10 -20,8.5 -59.5,1 -26.5,-0.5 -14,3.5 -11.5,8.5 -13,16.5 -24.06195,37.3593"
+     inkscape:connector-curvature="0"
      id="path3610"
      style="fill:none;stroke:#009ada;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="M 1129.5,1665.5 1103,1666"
+     inkscape:connector-curvature="0"
      id="path3598"
      style="fill:none;stroke:#d31345;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 1104.5,1666 -24.5,2.5 -40,1 -15,2 -35,9.5 -100.28615,25.3688 L 880,1710.5 l -8,7 -21,5 -78.44583,12.3443 L 761.5,1739 l -11.5,5 -100,6.5 -141,7"
+     inkscape:connector-curvature="0"
      id="path3600"
      style="fill:none;stroke:#d31345;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 2997,1175.5 1.5,12 6,8.5 82.5,41.5 25.5,16 26.5,21 24,25.5 21,19 21,14 39.4572,17.318 10.8499,3.85 46.1994,25.1996 85.0489,49.6994 27.6496,20.6497 45.8494,34.2995 11.1998,11.1999"
+     inkscape:connector-curvature="0"
      id="path2863"
      style="fill:none;stroke:#009ada;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 3005.5,1196 -11.5,1 -11.5,6"
+     inkscape:connector-curvature="0"
      id="path3637"
      style="fill:none;stroke:#009ada;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 3078.7023,681.18564 5.9397,-31.67796 4.9496,-32.17294 4.4548,-16.82892 8.4144,-12.3742 11.3843,-11.87924 15.839,-9.89937 73.2553,-30.19306 65.3358,-31.18299 49.4968,-25.24338 49.4968,-35.14275 47.517,-34.64777 20.7886,-12.37421 20.2937,-12.3742 16.334,-10.88931"
+     inkscape:connector-curvature="0"
      id="path3057"
      style="fill:none;stroke:#009ada;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <text
@@ -69,10 +76,12 @@
        id="tspan3641-3">Muni Modernization Proposal (1966)</tspan></text>
   <path
      d="M 1493.0592,1301.5577 1440.5,1355.5 1333,1462 l -57.5,58 -67.8333,66.1682 L 1169,1625.5 l -72,74.5 -69.5,72 -21,10.5 -22.50003,5 -14,6.5 -28.5,21.5 L 804.5,1938 l -35,29.5 -38,36.5 -25,25.5 -29.5,42.5 -23.5,31.5 -20.63943,26.5541 -41.01219,43.8406 -12.72793,30.4056 -23.33452,41.0122 -12.02082,28.2843 -1.41421,43.1335 -2.12132,79.1959"
+     inkscape:connector-curvature="0"
      id="path2818"
      style="fill:none;stroke:#d31345;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 202,1517 573,-32 119.5,-18.5 34,-20.5 501,-81"
+     inkscape:connector-curvature="0"
      id="path2998"
      style="fill:none;stroke:#d31345;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
 </svg>

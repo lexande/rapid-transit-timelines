@@ -1,27 +1,34 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head><title>London Underground Timeline</title>
+<head><title>London Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<style type="text/css">
+div#preloader {
+	position: absolute;
+	left: -9999px;
+	top:  -9999px;
+}
+div#preloader img {
+	display: block;
+}
+</style>
 <script language="JavaScript" type="text/javascript">
-maps=["l1865.png", "l1870.png", "l1875.png", "l1880.png", "l1885.png", "l1890.png",
-      "l1895.png", "l1900.png", "l1905.png", "l1910.png", "l1915.png",
-      "l1920.png", "l1925.png", "l1930.png", "l1935.png",
-      "l1940.png", "l1945.png", "l1950.png", "l1955.png", "l1960.png", "l1965.png",
-      "l1970.png", "l1975.png", "l1980.png", "l1985.png", "l1990.png", "l1995.png",
-      "l2000.png", "l2005.png", "l2010.png"];
-index=maps.length-1;
+start=1865;
+count=30;
+step=5;
+index=count-1;
 function update() {
-	document["MAP"].src=maps[index];
-	document["MAP"].title=1865+5*index;
-	document["MAP"].alt=1865+5*index + " map";
-	document.getElementsByTagName('a')[0].href=("l" + (1865+5*index) + ".svg");
+	document["MAP"].src=("l" + (start+step*index)) + ".png";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 }
 function nextmap() {
-	index=(index+1)%maps.length;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+maps.length-1)%maps.length;
+	index=(index+count-1)%count;
 	update();
 }
 document.onkeydown=function(keypress) {
@@ -41,8 +48,11 @@ document.onkeydown=function(keypress) {
 </script>
 </head><body>
 <center>
-<a name="LINK" href="l2010.svg">
-<img name="MAP" src="l2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid">
+<a href="javascript:prevmap()">previous (or press a)</a> ---
+<a href="javascript:nextmap()">next (or press s)</a>
+<p>
+<a name="LINK" href="2010.svg">
+<img name="MAP" src="l2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
@@ -52,7 +62,38 @@ Based on weekday midday service at the end of the year in question.  Scale 30 pi
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
-See also: 
+<div id="preloader">
+<img src="l1865.png" width="1" height="1" alt="">
+<img src="l1870.png" width="1" height="1" alt="">
+<img src="l1875.png" width="1" height="1" alt="">
+<img src="l1880.png" width="1" height="1" alt="">
+<img src="l1885.png" width="1" height="1" alt="">
+<img src="l1890.png" width="1" height="1" alt="">
+<img src="l1895.png" width="1" height="1" alt="">
+<img src="l1900.png" width="1" height="1" alt="">
+<img src="l1905.png" width="1" height="1" alt="">
+<img src="l1910.png" width="1" height="1" alt="">
+<img src="l1915.png" width="1" height="1" alt="">
+<img src="l1920.png" width="1" height="1" alt="">
+<img src="l1925.png" width="1" height="1" alt="">
+<img src="l1930.png" width="1" height="1" alt="">
+<img src="l1935.png" width="1" height="1" alt="">
+<img src="l1940.png" width="1" height="1" alt="">
+<img src="l1945.png" width="1" height="1" alt="">
+<img src="l1950.png" width="1" height="1" alt="">
+<img src="l1955.png" width="1" height="1" alt="">
+<img src="l1960.png" width="1" height="1" alt="">
+<img src="l1965.png" width="1" height="1" alt="">
+<img src="l1970.png" width="1" height="1" alt="">
+<img src="l1975.png" width="1" height="1" alt="">
+<img src="l1980.png" width="1" height="1" alt="">
+<img src="l1985.png" width="1" height="1" alt="">
+<img src="l1990.png" width="1" height="1" alt="">
+<img src="l1995.png" width="1" height="1" alt="">
+<img src="l2000.png" width="1" height="1" alt="">
+<img src="l2005.png" width="1" height="1" alt="">
+<img src="l2010.png" width="1" height="1" alt="">
+</div>
 <a href="/~arapp/subtimeline">New York</a> -
 <a href="/~arapp/europe/par">Paris</a> -
 <a href="/~arapp/europe/vie">Wien</a> -
@@ -63,4 +104,3 @@ See also:
 by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</font>
 </center>
 </body></html>
-
