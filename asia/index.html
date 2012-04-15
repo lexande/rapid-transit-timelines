@@ -3,12 +3,12 @@
 <head><title>Mainland Asian Rapid Transit Timelines</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-start=1975;
-count=8;
-step=5;
+start=1920;
+count=10;
+step=10;
 index=count-1;
 function update() {
-        ["HKG","BJS","SIN","SEL","CAN","SHA"].forEach(function(city) {
+        ["HKG","BOM","BJS","SIN","SEL","CAN","SHA"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -49,6 +49,8 @@ document.onkeydown=function(keypress) {
 <p>
 <span id="HKG" style="display: inline-block; vertical-align: middle"><a href="hkg">Hong Kong<br>
   <img name="HKG" src="hkg/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="BOM" style="display: inline-block; vertical-align: middle"><a href="bom">Mumbai<br>
+  <img name="BOM" src="bom/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BJS" style="display: inline-block; vertical-align: middle"><a href="bjs">Beijing<br>
   <img name="BJS" src="bjs/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SEL" style="display: inline-block; vertical-align: middle"><a href="sel">Seoul<br>
@@ -65,6 +67,7 @@ document.onkeydown=function(keypress) {
 <p>
 <!--<form>Cities to show: 
 <input type="checkbox" onclick="toggleshow('HKG')" checked>Hong Kong</input>
+<input type="checkbox" onclick="toggleshow('BOM')" checked>Mumbai</input>
 <input type="checkbox" onclick="toggleshow('BJS')" checked>Beijing</input>
 <input type="checkbox" onclick="toggleshow('SEL')" checked>Seoul</input>
 <input type="checkbox" onclick="toggleshow('SIN')" checked>Singapore</input>
@@ -78,8 +81,8 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 See also:
 <a href="/~arapp/northamerica">North American cities</a> - 
-<a href="/~arapp/latinamerica">Latin American cities</a> - 
 <a href="/~arapp/europe">European cities</a> - 
+<a href="/~arapp/latinamerica">Latin American cities</a> - 
 Mainland Asian cities
 <p>
 <font size="1">Based on map data 
