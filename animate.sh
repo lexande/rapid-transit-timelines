@@ -6,8 +6,8 @@ done
 cd anim
 rm -f 2015.svg 2020.svg
 sed -e's!</svg>!!' -i *.svg
-WIDTH=$(grep width 2010.svg | head -n1 | sed -e's/"$//; s/.*"//;')
-HEIGHT=$(grep height 2010.svg | head -n1 | sed -e's/"$//; s/.*"//;')
+WIDTH=$(grep width 2010.svg | head -n1 | sed -e's/"$//; s/.*"//; s/\..*//;')
+HEIGHT=$(grep height 2010.svg | head -n1 | sed -e's/"$//; s/.*"//; s/\..*//;')
 XPOS=$(expr $WIDTH - 2300)
 YPOS=$(expr $HEIGHT - 60)
 for i in *.svg; do
