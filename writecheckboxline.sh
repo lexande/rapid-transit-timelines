@@ -3,4 +3,4 @@
 NAME=$(grep Timeline $1/index.html | sed -e's/.*<title>\(.*\) Rapid Transit Timeline.*/\1/')
 UPPER=$(echo $1 | tr 'a-z' 'A-Z')
 
-echo "<input type=\"checkbox\" onclick=\"toggleshow('$UPPER')\" unchecked>$NAME</input>"
+echo "<input type=\"checkbox\" onclick=\"toggleshow('$UPPER')\" checked=\"unchecked\"><a href=\"$1\">$NAME</a>"
