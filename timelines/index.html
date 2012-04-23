@@ -35,27 +35,38 @@ document.onkeydown=function(keypress) {
 }
 
 window.onload=function() {
-	if(location.hash == "#northamerica") {
-		["NYC","CHI","BOS","PHL","SFO","LAX","YTO","YMQ","WAS","YVR"].forEach(function(city) {
-			document.getElementById(city + "checkbox").click();
-		});
-	} else if (location.hash == "#europe") {
-		["PAR","BER","VIE","BCN","MAD","MOW","LED","MUC","PRG"].forEach(function(city) {
-			document.getElementById(city + "checkbox").click();
-		});
-	} else if (location.hash == "#latinamerica") {
-		["BUE","MEX","SAO","SCL","RIO","CCS","MDE"].forEach(function(city) {
-			document.getElementById(city + "checkbox").click();
-		});
-	} else if (location.hash == "#asia") {
-		["HKG","BOM","BJS","SEL","SIN","SHA","CAN"].forEach(function(city) {
-			document.getElementById(city + "checkbox").click();
-		});
-	} else {
-		["NYC","PAR","BER","CHI","BOS","VIE","BCN","PHL","BUE","MAD","LAX","MOW"].forEach(function(city) {
-			document.getElementById(city + "checkbox").click();
-		});
-	}
+if(location.hash == "#northamerica") {
+	["NYC","CHI","BOS","PHL","SFO","LAX","YTO","YMQ","WAS","YVR"].forEach(function(city) {
+		document.getElementById(city + "checkbox").click();
+	});
+} else if (location.hash == "#europe") {
+	["PAR","BER","VIE","BCN","MAD","MOW","LED","MUC","PRG"].forEach(function(city) {
+		document.getElementById(city + "checkbox").click();
+	});
+} else if (location.hash == "#latinamerica") {
+	["BUE","MEX","SAO","SCL","RIO","CCS","MDE"].forEach(function(city) {
+		document.getElementById(city + "checkbox").click();
+	});
+} else if (location.hash == "#asia") {
+	["HKG","BOM","BJS","SEL","SIN","SHA","CAN"].forEach(function(city) {
+		document.getElementById(city + "checkbox").click();
+	});
+} else if (location.hash == "#americas") {
+	["NYC","CHI","BOS","PHL","SFO","LAX","YTO","YMQ","WAS","YVR","BUE","MEX","SAO","SCL","RIO",
+	 "CCS","MDE"].forEach(function(city) {
+		document.getElementById(city + "checkbox").click();
+	});
+} else if (location.hash == "#all") {
+	["NYC","PAR","BER","HKG","CHI","BOS","VIE","BCN","PHL","BUE","BOM","SFO","MAD","LAX","MOW",
+	 "YTO","LED","YMQ","MEX","BJS","MUC","PRG","SEL","SAO","SCL","WAS","RIO","CCS","YVR","SIN",
+	 "SHA","MDE","CAN"].forEach(function(city) {
+		document.getElementById(city + "checkbox").click();
+	});
+} else {
+	["NYC","PAR","BER","CHI","BOS","VIE","BCN","PHL","BUE","MAD","LAX","MOW"].forEach(function(city) {
+		document.getElementById(city + "checkbox").click();
+	});
+}
 }
 </script>
 <script type="text/javascript">
@@ -73,7 +84,7 @@ window.onload=function() {
 <a href="javascript:prevmap()">previous (or press a)</a> ---
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<span id="NYC" style="display: none; vertical-align: middle"><a href="nyc">New York<br>
+<span id="NYC" style="display: none; vertical-align: middle"><a href="../subtimeline">New York<br>
   <img name="NYC" src="nyc/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PAR" style="display: none; vertical-align: middle"><a href="par">Paris<br>
   <img name="PAR" src="par/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
@@ -81,9 +92,9 @@ window.onload=function() {
   <img name="BER" src="ber/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="HKG" style="display: none; vertical-align: middle"><a href="hkg">Hong Kong<br>
   <img name="HKG" src="hkg/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="CHI" style="display: none; vertical-align: middle"><a href="chi">Chicago<br>
+<span id="CHI" style="display: none; vertical-align: middle"><a href="../ltimeline">Chicago<br>
   <img name="CHI" src="chi/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="BOS" style="display: none; vertical-align: middle"><a href="bos">Boston<br>
+<span id="BOS" style="display: none; vertical-align: middle"><a href="../ttimeline">Boston<br>
   <img name="BOS" src="bos/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="VIE" style="display: none; vertical-align: middle"><a href="vie">Wien<br>
   <img name="VIE" src="vie/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
@@ -144,12 +155,12 @@ window.onload=function() {
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
 <form action="">Cities to show: 
-<input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" ><a href="nyc">New York</a>
+<input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" ><a href="../subtimeline">New York</a>
 <input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')" ><a href="par">Paris</a>
 <input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')" ><a href="ber">Berlin</a>
 <input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" ><a href="hkg">Hong Kong</a>
-<input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" ><a href="chi">Chicago</a>
-<input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" ><a href="bos">Boston</a>
+<input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" ><a href="../ltimeline">Chicago</a>
+<input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" ><a href="../ttimeline">Boston</a>
 <input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')" ><a href="vie">Wien</a>
 <input type="checkbox" id="BCNcheckbox" onclick="toggleshow('BCN')" ><a href="bcn">Barcelona</a>
 <input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" ><a href="phl">Philadelphia</a>
