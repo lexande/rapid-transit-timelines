@@ -23,7 +23,7 @@ for i in *.svg; do
        id="tspan3059">©CC-BY-SA Alexander Rapp based on data from OpenStreetMap        http://ugcs.net/~arapp/$1</tspan></text>
 </svg>
 EOF
-  ~/timelines/autopng.sh $i
+  ~/timelines/scripts/autopng.sh $i
   convert `basename $i .svg`.png $i.gif
 done
 gifsicle -l -d 100 --colors 256 *.svg.gif > ../$1/animated.gif
