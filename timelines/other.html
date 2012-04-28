@@ -8,7 +8,7 @@ count=10;
 step=10;
 index=count-1;
 function update() {
-        ["CAI","BUE","SCL","MEX","SAO","RIO","CCS","MDE"].forEach(function(city) {
+        ["CAI","BUE","SYD","SCL","MEX","SAO","RIO","CCS","MDE"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
