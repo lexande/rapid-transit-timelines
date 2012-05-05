@@ -3,12 +3,12 @@
 <head><title>Other Rapid Transit Timelines</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-start=1920;
-count=10;
+start=1910;
+count=11;
 step=10;
 index=count-1;
 function update() {
-        ["CAI","BUE","SYD","SCL","MEX","SAO","RIO","CCS","MDE"].forEach(function(city) {
+        ["CAI","BUE","MEL","SYD","SCL","MEX","SAO","RIO","CCS","MDE"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -56,6 +56,8 @@ Other cities
   <img name="CAI" src="cai/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BUE" style="display: inline-block; vertical-align: middle"><a href="bue">Buenos Aires<br>
   <img name="BUE" src="bue/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="MEL" style="display: inline-block; vertical-align: middle"><a href="mel">Melbourne<br>
+  <img name="MEL" src="mel/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SYD" style="display: inline-block; vertical-align: middle"><a href="syd">Sydney<br>
   <img name="SYD" src="syd/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MEX" style="display: inline-block; vertical-align: middle"><a href="mex">México<br>
