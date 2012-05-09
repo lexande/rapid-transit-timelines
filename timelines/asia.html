@@ -8,7 +8,7 @@ count=10;
 step=10;
 index=count-1;
 function update() {
-        ["HKG","BOM","BJS","SIN","SEL","CAN","SHA"].forEach(function(city) {
+        ["HKG","BOM","NGO","BJS","SIN","SEL","CAN","SHA"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -56,6 +56,8 @@ Asian cities -
   <img name="HKG" src="hkg/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BOM" style="display: inline-block; vertical-align: middle"><a href="bom">Mumbai<br>
   <img name="BOM" src="bom/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="NGO" style="display: inline-block; vertical-align: middle"><a href="ngo">Nagoya<br>
+  <img name="NGO" src="ngo/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BJS" style="display: inline-block; vertical-align: middle"><a href="bjs">Beijing<br>
   <img name="BJS" src="bjs/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SEL" style="display: inline-block; vertical-align: middle"><a href="sel">Seoul<br>
@@ -70,15 +72,16 @@ Asian cities -
 <a href="javascript:prevmap()">previous decade (or press a)</a> --- 
 <a href="javascript:nextmap()">next decade (or press s)</a>
 <p>
-<!--<form>Cities to show: 
-<input type="checkbox" onclick="toggleshow('HKG')" checked>Hong Kong</input>
-<input type="checkbox" onclick="toggleshow('BOM')" checked>Mumbai</input>
-<input type="checkbox" onclick="toggleshow('BJS')" checked>Beijing</input>
-<input type="checkbox" onclick="toggleshow('SEL')" checked>Seoul</input>
-<input type="checkbox" onclick="toggleshow('SIN')" checked>Singapore</input>
-<input type="checkbox" onclick="toggleshow('SHA')" checked>Shanghai</input>
-<input type="checkbox" onclick="toggleshow('CAN')" checked>Guangzhou</input>
-</form>-->
+<form>Cities to show: 
+<div style="display: inline-block"><input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="hkg">Hong Kong</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BOMcheckbox" onclick="toggleshow('BOM')" checked><a href="bom">Mumbai</a></div>
+<div style="display: inline-block"><input type="checkbox" id="NGOcheckbox" onclick="toggleshow('NGO')" checked><a href="ngo">Nagoya</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')" checked><a href="bjs">Beijing</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')" checked><a href="sel">Seoul</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SINcheckbox" onclick="toggleshow('SIN')" checked><a href="sin">Singapore</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" checked><a href="sha">Shanghai</a></div>
+<div style="display: inline-block"><input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')" checked><a href="can">Guangzhou</a></div>
+</form>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 pixels per km.
 <p>
