@@ -9,8 +9,8 @@ step=10;
 index=count-1;
 function update() {
         ["NYC","PAR","BER","HKG","CHI","BOS","VIE","BCN","PHL","BUE","BOM","SFO","MAD","LAX","MOW",
-         "YTO","LED","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SAO","SCL","WAS","RIO","CCS","YVR",
-	 "SIN","SHA","MDE","CAN"].forEach(function(city) {
+         "YTO","LED","YMQ","MEX","BJS","MUC","PRG","SEL","SAO","SCL","WAS","RIO","CCS","YVR",
+	 "SIN","SHA","MDE","CAN","NGO","SYD","MEL","CAI"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -40,15 +40,19 @@ if(location.hash == "#northamerica") {
 		document.getElementById(city + "checkbox").click();
 	});
 } else if (location.hash == "#europe") {
-	["PAR","BER","VIE","BCN","MAD","MOW","LED","KBP","MUC","PRG"].forEach(function(city) {
+	["PAR","BER","VIE","BCN","MAD","MOW","LED","MUC","PRG"].forEach(function(city) {
 		document.getElementById(city + "checkbox").click();
 	});
 } else if (location.hash == "#latinamerica") {
 	["BUE","MEX","SAO","SCL","RIO","CCS","MDE"].forEach(function(city) {
 		document.getElementById(city + "checkbox").click();
 	});
+} else if (location.hash == "#other") {
+        ["BUE","MEX","SAO","SCL","RIO","CCS","MDE","SYD","MEL","CAI"].forEach(function(city) {
+                document.getElementById(city + "checkbox").click();
+        });
 } else if (location.hash == "#asia") {
-	["HKG","BOM","BJS","SEL","SIN","SHA","CAN"].forEach(function(city) {
+	["HKG","BOM","BJS","SEL","SIN","SHA","CAN","NGO"].forEach(function(city) {
 		document.getElementById(city + "checkbox").click();
 	});
 } else if (location.hash == "#americas") {
@@ -58,8 +62,8 @@ if(location.hash == "#northamerica") {
 	});
 } else if (location.hash == "#all") {
 	["NYC","PAR","BER","HKG","CHI","BOS","VIE","BCN","PHL","BUE","BOM","SFO","MAD","LAX","MOW",
-	 "YTO","LED","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SAO","SCL","WAS","RIO","CCS","YVR",
-	 "SIN","SHA","MDE","CAN"].forEach(function(city) {
+	 "YTO","LED","YMQ","MEX","BJS","MUC","PRG","SEL","SAO","SCL","WAS","RIO","CCS","YVR",
+	 "SIN","SHA","MDE","CAN","NGO","CAI","SYD","MEL"].forEach(function(city) {
 		document.getElementById(city + "checkbox").click();
 	});
 } else {
@@ -98,26 +102,36 @@ if(location.hash == "#northamerica") {
   <img name="BOS" src="bos/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="VIE" style="display: none; vertical-align: middle"><a href="vie">Wien<br>
   <img name="VIE" src="vie/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="LAX" style="display: none; vertical-align: middle"><a href="lax">Los Angeles<br>
+  <img name="LAX" src="lax/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BCN" style="display: none; vertical-align: middle"><a href="bcn">Barcelona<br>
   <img name="BCN" src="bcn/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PHL" style="display: none; vertical-align: middle"><a href="phl">Philadelphia<br>
   <img name="PHL" src="phl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="CAI" style="display: none; vertical-align: middle"><a href="cai">Cairo<br>
+  <img name="CAI" src="cai/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BUE" style="display: none; vertical-align: middle"><a href="bue">Buenos Aires<br>
   <img name="BUE" src="bue/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BOM" style="display: none; vertical-align: middle"><a href="bom">Mumbai<br>
   <img name="BOM" src="bom/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SFO" style="display: none; vertical-align: middle"><a href="sfo">San Francisco<br>
   <img name="SFO" src="sfo/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="MEL" style="display: none; vertical-align: middle"><a href="mel">Melbourne<br>
+  <img name="MEL" src="mel/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MAD" style="display: none; vertical-align: middle"><a href="mad">Madrid<br>
   <img name="MAD" src="mad/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="LAX" style="display: none; vertical-align: middle"><a href="lax">Los Angeles<br>
-  <img name="LAX" src="lax/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SYD" style="display: none; vertical-align: middle"><a href="syd">Sydney<br>
+  <img name="SYD" src="syd/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MOW" style="display: none; vertical-align: middle"><a href="mow">Moskva<br>
   <img name="MOW" src="mow/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="WAS" style="display: none; vertical-align: middle"><a href="was">Washington<br>
+  <img name="WAS" src="was/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YTO" style="display: none; vertical-align: middle"><a href="yto">Toronto<br>
   <img name="YTO" src="yto/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="LED" style="display: none; vertical-align: middle"><a href="led">Sankt-Peterburg<br>
   <img name="LED" src="led/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="NGO" style="display: none; vertical-align: middle"><a href="ngo">Nagoya<br>
+  <img name="NGO" src="ngo/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YMQ" style="display: none; vertical-align: middle"><a href="ymq">Montréal<br>
   <img name="YMQ" src="ymq/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MEX" style="display: none; vertical-align: middle"><a href="mex">México<br>
@@ -134,8 +148,6 @@ if(location.hash == "#northamerica") {
   <img name="SAO" src="sao/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SCL" style="display: none; vertical-align: middle"><a href="scl">Santiago<br>
   <img name="SCL" src="scl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="WAS" style="display: none; vertical-align: middle"><a href="was">Washington<br>
-  <img name="WAS" src="was/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="RIO" style="display: none; vertical-align: middle"><a href="rio">Rio de Janeiro<br>
   <img name="RIO" src="rio/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CCS" style="display: none; vertical-align: middle"><a href="ccs">Caracas<br>
@@ -162,16 +174,21 @@ if(location.hash == "#northamerica") {
 <div style="display: inline-block"><input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" ><a href="../ltimeline">Chicago</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" ><a href="../ttimeline">Boston</a></div>
 <div style="display: inline-block"><input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')" ><a href="vie">Wien</a></div>
+<div style="display: inline-block"><input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')" ><a href="lax">Los Angeles</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BCNcheckbox" onclick="toggleshow('BCN')" ><a href="bcn">Barcelona</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" ><a href="phl">Philadelphia</a></div>
+<div style="display: inline-block"><input type="checkbox" id="CAIcheckbox" onclick="toggleshow('CAI')" ><a href="cai">Cairo</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')" ><a href="bue">Buenos Aires</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BOMcheckbox" onclick="toggleshow('BOM')" ><a href="bom">Mumbai</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" ><a href="sfo">San Francisco</a></div>
+<div style="display: inline-block"><input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" ><a href="mel">Melbourne</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MADcheckbox" onclick="toggleshow('MAD')" ><a href="mad">Madrid</a></div>
-<div style="display: inline-block"><input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')" ><a href="lax">Los Angeles</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')" ><a href="syd">Sydney</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MOWcheckbox" onclick="toggleshow('MOW')" ><a href="mow">Moskva</a></div>
+<div style="display: inline-block"><input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" ><a href="was">Washington</a></div>
 <div style="display: inline-block"><input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')" ><a href="yto">Toronto</a></div>
 <div style="display: inline-block"><input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')" ><a href="led">Sankt-Peterburg</a></div>
+<div style="display: inline-block"><input type="checkbox" id="NGOcheckbox" onclick="toggleshow('NGO')" ><a href="ngo">Nagoya</a></div>
 <div style="display: inline-block"><input type="checkbox" id="YMQcheckbox" onclick="toggleshow('YMQ')" ><a href="ymq">Montréal</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')" ><a href="mex">México</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')" ><a href="bjs">Beijing</a></div>
@@ -180,14 +197,13 @@ if(location.hash == "#northamerica") {
 <div style="display: inline-block"><input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')" ><a href="sel">Seoul</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SAOcheckbox" onclick="toggleshow('SAO')" ><a href="sao">São Paulo</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')" ><a href="scl">Santiago</a></div>
-<div style="display: inline-block"><input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" ><a href="was">Washington</a></div>
 <div style="display: inline-block"><input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')" ><a href="rio">Rio de Janeiro</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CCScheckbox" onclick="toggleshow('CCS')" ><a href="ccs">Caracas</a></div>
 <div style="display: inline-block"><input type="checkbox" id="YVRcheckbox" onclick="toggleshow('YVR')" ><a href="yvr">Vancouver</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SINcheckbox" onclick="toggleshow('SIN')" ><a href="sin">Singapore</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" ><a href="sha">Shanghai</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')" ><a href="mde">Medellín</a></div>
-
+<div style="display: inline-block"><input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')" ><a href="can">Guangzhou</a></div>
 </form>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 pixels per km.
