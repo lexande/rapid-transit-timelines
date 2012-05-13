@@ -28,14 +28,14 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/melosm.png"
-     x="-50"
-     y="-682.63623"
-     width="5866"
-     height="6132.6362"
+     style="display:none"
      id="image10"
-     style="display:none" />
+     height="6132.6362"
+     width="5866"
+     y="-682.63623"
+     x="-50" />
   <path
-     d="m 2305.3732,2676.4672 3.1014,4.5667 30.7966,52.2373 8.9661,12.4746 8.9661,8.9661 10.5254,6.6271 15.2034,0.7797 14.4237,-6.2373 37.0339,-17.5424 33.5255,-10.9152 110.7118,-40.1526 15.9313,-9.7112"
+     d="m 2305.3732,2676.4672 3.1014,4.5667 30.7966,52.2373 8.9661,12.4746 8.9661,8.9661 10.5254,6.6271 15.2034,0.7797 14.4237,-6.2373 37.0339,-17.5424 33.5255,-10.9152 110.7118,-40.1526"
      id="path3006"
      style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
@@ -87,9 +87,5 @@
   <path
      d="m 2108.0001,2453.5 -31,-14.5 -193,-37 -41,-1 -35,7 -33,13.5 -42.5,33"
      id="path3802"
-     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
-     d="m 2593,2678.5 12,-3.5 21.5,-1 126.5,19.5 25.5,-3.5 12,-6 13,-12.5 8.5,-16 7.5,-38.5 36,-274 0.5,-21.5 -4,-21.5 6.4802,-47.2128"
-     id="path3790"
      style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
 </svg>
