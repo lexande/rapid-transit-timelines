@@ -1,25 +1,34 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head><title>New York City Rapid Transit Timeline</title>
+<head><title>New York Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<style type="text/css">
+div#preloader {
+	position: absolute;
+	left: -9999px;
+	top:  -9999px;
+}
+div#preloader img {
+	display: block;
+}
+</style>
 <script language="JavaScript" type="text/javascript">
-maps=["1875.png", "1880.png", "1885.png", "1890.png", "1895.png", "1900.png", "1905.png", "1910.png",
-      "1915.png", "1920.png", "1925.png", "1930.png", "1935.png", "1940.png", "1945.png", "1950.png",
-      "1955.png", "1960.png", "1965.png", "1970.png", "1975.png", "1980.png", "1985.png", "1990.png",
-      "1995.png", "2000.png", "2005.png", "2010.png"];
-index=maps.length-1;
+start=1840;
+count=35;
+step=5;
+index=count-1;
 function update() {
-	document["MAP"].src=maps[index];
-	document["MAP"].title=1875+5*index;
-	document["MAP"].alt=1875+5*index + " map";
-	document.getElementsByTagName('a')[0].href=1875+5*index + ".svg";
+	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 }
 function nextmap() {
-	index=(index+1)%maps.length;
+	index=(index+1)%count;
 	update();
 }
 function prevmap() {
-	index=(index+maps.length-1)%maps.length;
+	index=(index+count-1)%count;
 	update();
 }
 document.onkeydown=function(keypress) {
@@ -49,18 +58,51 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<!--<a href="big.html">Higher-res, SVG-based version (won't work in IE)</a>
-<p>-->
-Based on weekday midday service at the end of the year in question.  Scale 30 pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).  Scale 30 pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
-See also: New York -
-<a href="/~arapp/ltimeline">Chicago</a> -
-<a href="/~arapp/ttimeline">Boston</a> -
-<a href="/~arapp/northamerica">more cities</a>
+<div id="preloader">
+<img src="1840.png" width="1" height="1" alt="">
+<img src="1845.png" width="1" height="1" alt="">
+<img src="1850.png" width="1" height="1" alt="">
+<img src="1855.png" width="1" height="1" alt="">
+<img src="1860.png" width="1" height="1" alt="">
+<img src="1865.png" width="1" height="1" alt="">
+<img src="1870.png" width="1" height="1" alt="">
+<img src="1875.png" width="1" height="1" alt="">
+<img src="1880.png" width="1" height="1" alt="">
+<img src="1885.png" width="1" height="1" alt="">
+<img src="1890.png" width="1" height="1" alt="">
+<img src="1895.png" width="1" height="1" alt="">
+<img src="1900.png" width="1" height="1" alt="">
+<img src="1905.png" width="1" height="1" alt="">
+<img src="1920.png" width="1" height="1" alt="">
+<img src="1925.png" width="1" height="1" alt="">
+<img src="1930.png" width="1" height="1" alt="">
+<img src="1935.png" width="1" height="1" alt="">
+<img src="1940.png" width="1" height="1" alt="">
+<img src="1945.png" width="1" height="1" alt="">
+<img src="1950.png" width="1" height="1" alt="">
+<img src="1955.png" width="1" height="1" alt="">
+<img src="1960.png" width="1" height="1" alt="">
+<img src="1965.png" width="1" height="1" alt="">
+<img src="1970.png" width="1" height="1" alt="">
+<img src="1975.png" width="1" height="1" alt="">
+<img src="1980.png" width="1" height="1" alt="">
+<img src="1985.png" width="1" height="1" alt="">
+<img src="1990.png" width="1" height="1" alt="">
+<img src="1995.png" width="1" height="1" alt="">
+<img src="2000.png" width="1" height="1" alt="">
+<img src="2005.png" width="1" height="1" alt="">
+<img src="2010.png" width="1" height="1" alt="">
+</div>
+See also: <a href="../../subtimeline">New York</a> - 
+<a href="../../ltimeline">Chicago</a> - 
+<a href="../../ttimeline">Boston</a> - 
+<a href="../northamerica.html">more cities</a>
 <p>
-<font size="1">Based on map data 
+<font size="1">By <a href="/~arapp/">Alexander Rapp</a> based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
 by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</font>
 </center>
