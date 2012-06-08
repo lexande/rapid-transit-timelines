@@ -3,9 +3,9 @@
 <head><title>European Rapid Transit Timelines</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-start=1880;
-count=14;
-step=10;
+start=1875;
+count=28;
+step=5;
 index=count-1;
 function update() {
         ["PAR","BER","VIE","BCN","MAD","PRG","MOW","LED","MUC"].forEach(function(city) {
@@ -49,8 +49,8 @@ European cities -
 <a href="asia.html">Asian cities</a> - 
 <a href="other.html">Other cities</a>
 <p>
-<a href="javascript:prevmap()">previous decade (or press a)</a> ---
-<a href="javascript:nextmap()">next decade (or press s)</a>
+<a href="javascript:prevmap()">previous time step (or press a)</a> ---
+<a href="javascript:nextmap()">next time step (or press s)</a>
 <p>
 <span id="PAR" style="display: inline-block; vertical-align: middle"><a href="par">Paris<br>
   <img name="PAR" src="par/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
@@ -71,8 +71,8 @@ European cities -
 <span id="PRG" style="display: inline-block; vertical-align: middle"><a href="prg">Praha<br>
   <img name="PRG" src="prg/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <p>
-<a href="javascript:prevmap()">previous decade (or press a)</a> --- 
-<a href="javascript:nextmap()">next decade (or press s)</a>
+<a href="javascript:prevmap()">previous time step (or press a)</a> --- 
+<a href="javascript:nextmap()">next time step (or press s)</a>
 <p>
 <!--<form>Cities to show: 
 <input type="checkbox" onclick="toggleshow('PAR')" checked>Paris</input>

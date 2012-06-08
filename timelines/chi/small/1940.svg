@@ -32,12 +32,12 @@
      style="fill:none;stroke:#676767;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <image
      xlink:href="chiosm.png"
-     x="0"
-     y="-0.0001953125"
-     width="3774"
-     height="5535.2002"
+     style="display:none"
      id="image2906"
-     style="display:none" />
+     height="5535.2002"
+     width="3774"
+     y="-0.0001953125"
+     x="0" />
   <path
      d="m 3278.1711,3443.7748 -1.4742,63.8828 3.4398,203.9336 1.9656,22.1133 3.9313,263.3937 4.9141,8.8453 62.4085,-0.9828 6.8797,4.9141 2.4571,149.3875 1.4742,79.1164 2.457,21.6219 3.9313,270.2734 2.457,106.6352 4.9141,7.3711 140.0507,-3.4399"
      id="path3610"
@@ -55,7 +55,7 @@
      id="path3590"
      style="fill:none;stroke:#00a950;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 2539.5875,133.68697 34.3984,85.01328 45.7008,108.60078 3.9313,26.04453 -2.4571,53.56328 0.4914,133.1711 21.1305,77.15078 36.3641,221.62422 10.5944,67.53967 4.6392,11.5767 25.5531,28.0102 17.1992,16.2164"
+     d="m 2539.588,133.68706 34.3984,85.01328 45.7008,108.60078 3.9313,26.04453 -2.4571,53.56328 0.4914,133.1711 21.1305,77.15078 36.3641,221.62422 10.5944,67.53967 4.6392,11.5767 25.5531,28.0102 17.1992,16.2164"
      id="path3721"
      style="fill:none;stroke:#412e88;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
@@ -160,4 +160,8 @@
      d="m 3156.581,3078.5 0,-50.0228 -3.313,-5.8898 -28.768,0.9126 -28.5,1"
      id="path2837"
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 3665.5,4779.5 -133,782.5"
+     id="path3769"
+     style="fill:none;stroke:#676767;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
 </svg>
