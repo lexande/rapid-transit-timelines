@@ -49,8 +49,8 @@ document.onkeydown=function(keypress) {
 <a href="asia.html">Asian cities</a> - 
 Other cities
 <p>
-<a href="javascript:prevmap()">previous decade (or press a)</a> ---
-<a href="javascript:nextmap()">next decade (or press s)</a>
+<a href="javascript:prevmap()">previous time step (or press a)</a> ---
+<a href="javascript:nextmap()">next time step (or press s)</a>
 <p>
 <span id="CAI" style="display: inline-block; vertical-align: middle"><a href="cai">Cairo<br>
   <img name="CAI" src="cai/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
@@ -73,20 +73,21 @@ Other cities
 <span id="MDE" style="display: inline-block; vertical-align: middle"><a href="mde">Medellín<br>
   <img name="MDE" src="mde/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <p>
-<a href="javascript:prevmap()">previous decade (or press a)</a> --- 
-<a href="javascript:nextmap()">next decade (or press s)</a>
+<a href="javascript:prevmap()">previous time step (or press a)</a> --- 
+<a href="javascript:nextmap()">next time step (or press s)</a>
 <p>
-<!--<form action="">Cities to show: 
-<div style="display: inline-block"><input type="checkbox" id="CAIcheckbox" onclick="toggleshow('CAI')" ><a href="cai">Cairo</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')" ><a href="bue">Buenos Aires</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')" ><a href="syd">Sydney</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')" ><a href="mex">México</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SAOcheckbox" onclick="toggleshow('SAO')" ><a href="sao">São Paulo</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')" ><a href="scl">Santiago</a></div>
-<div style="display: inline-block"><input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')" ><a href="rio">Rio de Janeiro</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CCScheckbox" onclick="toggleshow('CCS')" ><a href="ccs">Caracas</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')" ><a href="mde">Medellín</a></div>
-</form>-->
+<form action="">Cities to show: 
+<div style="display: inline-block"><input type="checkbox" id="CAIcheckbox" onclick="toggleshow('CAI')" checked><a href="cai">Cairo</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')" checked><a href="bue">Buenos Aires</a></div>
+<div style="display: inline-block"><input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked><a href="mel">Melbourne</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')" checked><a href="syd">Sydney</a></div>
+<div style="display: inline-block"><input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')" checked><a href="mex">México</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SAOcheckbox" onclick="toggleshow('SAO')" checked><a href="sao">São Paulo</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')" checked><a href="scl">Santiago</a></div>
+<div style="display: inline-block"><input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')" checked><a href="rio">Rio de Janeiro</a></div>
+<div style="display: inline-block"><input type="checkbox" id="CCScheckbox" onclick="toggleshow('CCS')" checked><a href="ccs">Caracas</a></div>
+<div style="display: inline-block"><input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')" checked><a href="mde">Medellín</a></div>
+</form>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 pixels per km.
 <p>
