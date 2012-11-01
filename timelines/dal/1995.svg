@@ -28,12 +28,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/dalosm.png"
-     style="display:none"
-     id="image10"
-     height="5674.6665"
-     width="4256"
+     x="100"
      y="0.0034960937"
-     x="100" />
+     width="4256"
+     height="5674.6665"
+     id="image10"
+     style="display:none" />
   <text
      x="89.453125"
      y="5572.6309"
@@ -42,7 +42,7 @@
      style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
        x="89.453125"
        y="5572.6309"
-       id="tspan2"></tspan></text>
+       id="tspan2">1995</tspan></text>
   <text
      x="89.453171"
      y="206.96083"
@@ -51,13 +51,5 @@
      style="font-size:143.99989319px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
        x="89.453171"
        y="206.96083"
-       id="tspan1">1990</tspan></text>
-  <path
-     d="m 101.44074,2696.0693 39.07347,56.356 20.28814,24.0452 22.54239,24.7966 18.78532,32.3108 18.03391,18.7853 12.77402,3.7571 9.01695,-6.0113 11.27119,-2.2543 38.32206,0.7514 15.77967,-7.5141 3.00565,-10.5198"
-     id="path2987"
-     style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
-     d="m 127.74019,2735.1428 6.0113,-12.0226 15.77967,-5.2599 6.0113,-6.0113 37.57065,-3.0056 15.77967,0"
-     id="path3757"
-     style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+       id="tspan1">1995</tspan></text>
 </svg>
