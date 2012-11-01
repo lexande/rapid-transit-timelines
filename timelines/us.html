@@ -9,7 +9,7 @@ step=5;
 index=count-1;
 function update() {
         ["NYC","CHI","BWI","BOS","PHL","SFO","LAX","ROC","WAS","SEA",
-         "ATL","SAN","MIA","PIT","BUF","PDX","SAC","SJC","JAX","STL",
+         "ATL","SAN","MIA","PIT","BUF","PDX","SAC","DET","SJC","JAX","STL",
          "DEN","DAL","MSP","SJU","CLT"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
@@ -83,6 +83,8 @@ document.onkeydown=function(keypress) {
   <img name="PDX" src="pdx/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SAC" style="display: inline-block; vertical-align: middle"><a href="sac">Sacramento<br>
   <img name="SAC" src="sac/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="DET" style="display: inline-block; vertical-align: middle"><a href="det">Detroit<br>
+  <img name="DET" src="det/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SJC" style="display: inline-block; vertical-align: middle"><a href="sjc">San Jose<br>
   <img name="SJC" src="sjc/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="JAX" style="display: inline-block; vertical-align: middle"><a href="jax">Jacksonville<br>
@@ -121,6 +123,7 @@ document.onkeydown=function(keypress) {
 <div style="display: inline-block"><input type="checkbox" id="BUFcheckbox" onclick="toggleshow('BUF')" checked><a href="buf">Buffalo</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="pdx">Portland</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SACcheckbox" onclick="toggleshow('SAC')" checked><a href="sac">Sacramento</a></div>
+<div style="display: inline-block"><input type="checkbox" id="DETcheckbox" onclick="toggleshow('DET')" checked><a href="det">Detroit</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SJCcheckbox" onclick="toggleshow('SJC')" checked><a href="sjc">San Jose</a></div>
 <div style="display: inline-block"><input type="checkbox" id="JAXcheckbox" onclick="toggleshow('JAX')" checked><a href="jax">Jacksonville</a></div>
 <div style="display: inline-block"><input type="checkbox" id="STLcheckbox" onclick="toggleshow('STL')" checked><a href="stl">Saint Louis</a></div>

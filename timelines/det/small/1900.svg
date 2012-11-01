@@ -8,10 +8,9 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="245"
-   height="245"
+   width="550"
+   height="450"
    id="svg2">
   <metadata
      id="metadata8">
@@ -21,7 +20,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -29,15 +28,19 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/detosm.png"
-     x="0"
-     y="-61.25"
-     width="245"
-     height="490"
+     style="display:none"
      id="image12"
-     style="display:none" />
-  <path
-     d="m 70,36 8.5,-5 3,-1.5 9,6 5,13 11.5,21 4,1.5 10,-6 5,-10.5 9,-6.5 13,-5.5 5.5,1.5 9,19 6.5,5.5 21.5,45 0,4.5 -11,7.5 -3.5,0.5 -12,-5.5 -8,-0.5 -31,17 -16.5,9 -2.5,5.5 9.5,25 0.5,9 -4.5,4.5 -42,16 -19,0 -3.5,-3 -5.5,-13 3,-5 15.5,-9 13.5,-10.5 3.5,-6.5 -1,-5 -24,-40.5 -2,-15 0,-35 1,-7.5 -3,-8.5 4,-11 4,-1 8,2.5 6,-2 z"
-     inkscape:connector-curvature="0"
-     id="path2818"
-     style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     height="490"
+     width="245"
+     y="143.75"
+     x="155" />
+  <text
+     x="89.453125"
+     y="206.96094"
+     id="text2984"
+     xml:space="preserve"
+     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
+       x="89.453125"
+       y="206.96094"
+       id="tspan2986">1900</tspan></text>
 </svg>
