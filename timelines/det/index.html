@@ -37,7 +37,7 @@ document.onkeydown=function(keypress) {
 }
 window.onload=function() {
 	inyear = parseInt(location.hash.substring(1));
-	if( start < inyear & inyear < start+step*count & !(inyear % step) ) {
+	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
 		index = (inyear-start)/step;
 		update();
 	}
