@@ -2,6 +2,16 @@
 <html>
 <head><title>Washington Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<style type="text/css">
+div#preloader {
+	position: absolute;
+	left: -9999px;
+	top:  -9999px;
+}
+div#preloader img {
+	display: block;
+}
+</style>
 <script language="JavaScript" type="text/javascript">
 start=1950;
 count=13;
@@ -11,7 +21,7 @@ function update() {
 	document["MAP"].src=(start+step*index) + ".png";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
-	document.getElementsByTagName('a')[0].href=((start+step*index) + ".svg");
+	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 }
 function nextmap() {
 	index=(index+1)%count;
@@ -24,6 +34,13 @@ function prevmap() {
 document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
+}
+window.onload=function() {
+	inyear = parseInt(location.hash.substring(1));
+	if( start < inyear & inyear < start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
 }
 </script>
 <script type="text/javascript">
@@ -52,6 +69,22 @@ Based on frequent midday service at the end of the year in question (<a href="..
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
+<div id="preloader">
+<img src="1950.png" width="1" height="1" alt="">
+<img src="1955.png" width="1" height="1" alt="">
+<img src="1960.png" width="1" height="1" alt="">
+<img src="1965.png" width="1" height="1" alt="">
+<img src="1970.png" width="1" height="1" alt="">
+<img src="1975.png" width="1" height="1" alt="">
+<img src="1980.png" width="1" height="1" alt="">
+<img src="1985.png" width="1" height="1" alt="">
+<img src="1990.png" width="1" height="1" alt="">
+<img src="1995.png" width="1" height="1" alt="">
+<img src="2000.png" width="1" height="1" alt="">
+<img src="2005.png" width="1" height="1" alt="">
+<img src="2010.png" width="1" height="1" alt="">
+<img src="2020.png" width="1" height="1" alt="">
+</div>
 See also: <a href="../../../subtimeline">New York</a> - 
 <a href="../../../ltimeline">Chicago</a> - 
 <a href="../../../ttimeline">Boston</a> - 
