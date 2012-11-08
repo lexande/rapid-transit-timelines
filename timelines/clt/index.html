@@ -15,7 +15,7 @@ div#preloader img {
 <script language="JavaScript" type="text/javascript">
 start=2010;
 count=1;
-step=5;
+step=10;
 index=count-1;
 function update() {
 	document["MAP"].src=(start+step*index) + ".png";
@@ -34,6 +34,13 @@ function prevmap() {
 document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
+}
+window.onload=function() {
+	inyear = parseInt(location.hash.substring(1));
+	if( start < inyear & inyear < start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
 }
 </script>
 <script type="text/javascript">

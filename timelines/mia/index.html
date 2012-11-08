@@ -35,6 +35,13 @@ document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
 }
+window.onload=function() {
+	inyear = parseInt(location.hash.substring(1));
+	if( start < inyear & inyear < start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];

@@ -35,6 +35,13 @@ document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
 }
+window.onload=function() {
+	inyear = parseInt(location.hash.substring(1));
+	if( start < inyear & inyear < start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -76,7 +83,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="2000.png" width="1" height="1" alt="">
 <img src="2005.png" width="1" height="1" alt="">
 <img src="2010.png" width="1" height="1" alt="">
-<img src="2020.png" width="1" height="1" alt="">
 </div>
 See also: <a href="../../subtimeline">New York</a> - 
 <a href="../../ltimeline">Chicago</a> - 
