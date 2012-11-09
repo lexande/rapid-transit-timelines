@@ -14,7 +14,7 @@ div#preloader img {
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1;
-count=15;
+count=16;
 step=1;
 index=count-1;
 function update() {
@@ -30,11 +30,15 @@ function update() {
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 }
 function nextmap() {
-	index=(index+1)%count;
+	if (index < count-1) {
+		index=(index+1);
+	}
 	update();
 }
 function prevmap() {
-	index=(index+count-1)%count;
+	if (index >= start) {
+		index=(index-1);
+	}
 	update();
 }
 document.onkeydown=function(keypress) {
@@ -57,8 +61,8 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous day (or press a)</a> ---
 <a href="javascript:nextmap()">next day (or press s)</a>
 <p>
-<a name="LINK" href="15.svg">
-<img name="MAP" src="15.png" title="Nov 9" alt="Nov 9 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="16.svg">
+<img name="MAP" src="16.png" title="Nov 10" alt="Nov 10 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous day (or press a)</a> --- 
@@ -84,6 +88,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="13.png" width="1" height="1" alt="">
 <img src="14.png" width="1" height="1" alt="">
 <img src="15.png" width="1" height="1" alt="">
+<img src="16.png" width="1" height="1" alt="">
 </div>
 Historical timelines: <a href="../../subtimeline">New York</a> - 
 <a href="../../ltimeline">Chicago</a> - 
