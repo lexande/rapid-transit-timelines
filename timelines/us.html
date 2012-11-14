@@ -10,7 +10,7 @@ index=count-1;
 function update() {
         ["NYC","CHI","BWI","BOS","LAX","PHL","SFO","CLE","ROC","WAS","SEA",
          "ATL","SAN","MIA","PIT","BUF","PDX","SAC","DET","SJC","JAX","STL",
-         "DEN","DAL","MSP","SJU","IND","CLT"].forEach(function(city) {
+         "DEN","LAS","DAL","MSP","SJU","IND","CLT"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -104,12 +104,14 @@ window.onload=function() {
   <img name="STL" src="stl/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="DEN" style="display: inline-block; vertical-align: middle"><a href="den">Denver<br>
   <img name="DEN" src="den/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="LAS" style="display: inline-block; vertical-align: middle"><a href="las">Las Vegas<br>
+  <img name="LAS" src="las/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="IND" style="display: inline-block; vertical-align: middle"><a href="ind">Indianapolis<br>
+  <img name="IND" src="ind/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MSP" style="display: inline-block; vertical-align: middle"><a href="msp">Minneapolis<br>
   <img name="MSP" src="msp/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SJU" style="display: inline-block; vertical-align: middle"><a href="sju">San Juan<br>
   <img name="SJU" src="sju/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="IND" style="display: inline-block; vertical-align: middle"><a href="ind">Indianapolis<br>
-  <img name="IND" src="ind/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CLT" style="display: inline-block; vertical-align: middle"><a href="clt">Charlotte<br>
   <img name="CLT" src="clt/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <p>
@@ -141,9 +143,10 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="DALcheckbox" onclick="toggleshow('DAL')" checked><a href="dal">Dallas</a></div>
 <div style="display: inline-block"><input type="checkbox" id="STLcheckbox" onclick="toggleshow('STL')" checked><a href="stl">Saint Louis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')" checked><a href="den">Denver</a></div>
+<div style="display: inline-block"><input type="checkbox" id="LAScheckbox" onclick="toggleshow('LAS')" checked><a href="las">Las Vegas</a></div>
+<div style="display: inline-block"><input type="checkbox" id="INDcheckbox" onclick="toggleshow('IND')" checked><a href="ind">Indianapolis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MSPcheckbox" onclick="toggleshow('MSP')" checked><a href="msp">Minneapolis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SJUcheckbox" onclick="toggleshow('SJU')" checked><a href="sju">San Juan</a></div>
-<div style="display: inline-block"><input type="checkbox" id="INDcheckbox" onclick="toggleshow('IND')" checked><a href="ind">Indianapolis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="clt">Charlotte</a></div>
 </form>
 <p>
