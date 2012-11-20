@@ -14,7 +14,7 @@ div#preloader img {
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1;
-count=19;
+count=20;
 step=1;
 index=count-1;
 function update() {
@@ -23,7 +23,10 @@ function update() {
         if (num < 7) { 
 		document["MAP"].title="Oct " + (num+25);
 		document["MAP"].alt="Oct " + (num+25) + " map";
-	} else {
+	} else if (num > 18) {
+                document["MAP"].title="Nov " + (num*7 - 120);
+                document["MAP"].alt="Nov " + (num*7 - 120) + " map";
+        } else {
 		document["MAP"].title="Nov " + (num-6);
 		document["MAP"].alt="Nov " + (num-6) + " map";
 	}
@@ -61,8 +64,8 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous day (or press a)</a> ---
 <a href="javascript:nextmap()">next day (or press s)</a>
 <p>
-<a name="LINK" href="19.svg">
-<img name="MAP" src="19.png" title="Nov 13" alt="Nov 13 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="20.svg">
+<img name="MAP" src="20.png" title="Nov 20" alt="Nov 20 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous day (or press a)</a> --- 
