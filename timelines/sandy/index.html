@@ -14,7 +14,7 @@ div#preloader img {
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1;
-count=22;
+count=26;
 step=1;
 index=count-1;
 function update() {
@@ -23,15 +23,15 @@ function update() {
         if (num < 7) { 
 		document["MAP"].title="Oct " + (num+25);
 		document["MAP"].alt="Oct " + (num+25) + " map";
-        } else if ( num < 19) {
+        } else if ( num < 20) {
 		document["MAP"].title="Nov " + (num-6);
 		document["MAP"].alt="Nov " + (num-6) + " map";
-        } else if (num < 22) {
-                document["MAP"].title="Nov " + (num*7 - 120);
-                document["MAP"].alt="Nov " + (num*7 - 120) + " map";
+        } else if (num < 23) {
+                document["MAP"].title="Nov " + (num*7 - 126);
+                document["MAP"].alt="Nov " + (num*7 - 126) + " map";
 	} else {
-                document["MAP"].title="Dec " + (num*7 - 150);
-                document["MAP"].alt="Dec " + (num*7 - 150) + " map";
+                document["MAP"].title="Dec " + (num*7 - 156);
+                document["MAP"].alt="Dec " + (num*7 - 156) + " map";
 	}
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 }
@@ -67,8 +67,8 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous day (or press a)</a> ---
 <a href="javascript:nextmap()">next day (or press s)</a>
 <p>
-<a name="LINK" href="22.svg">
-<img name="MAP" src="22.png" title="Dec 4" alt="Dec 4 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="26.svg">
+<img name="MAP" src="26.png" title="Dec 26" alt="Dec 26 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous day (or press a)</a> --- 
@@ -101,6 +101,10 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="20.png" width="1" height="1" alt="">
 <img src="21.png" width="1" height="1" alt="">
 <img src="22.png" width="1" height="1" alt="">
+<img src="23.png" width="1" height="1" alt="">
+<img src="24.png" width="1" height="1" alt="">
+<img src="25.png" width="1" height="1" alt="">
+<img src="26.png" width="1" height="1" alt="">
 </div>
 Historical timelines: <a href="../../subtimeline">New York</a> - 
 <a href="../../ltimeline">Chicago</a> - 
