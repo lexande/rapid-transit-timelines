@@ -14,7 +14,7 @@ div#preloader img {
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1;
-count=26;
+count=30;
 step=1;
 index=count-1;
 function update() {
@@ -29,9 +29,21 @@ function update() {
         } else if (num < 23) {
                 document["MAP"].title="Nov " + (num*7 - 126);
                 document["MAP"].alt="Nov " + (num*7 - 126) + " map";
-	} else {
+	} else if (num < 27 ) {
                 document["MAP"].title="Dec " + (num*7 - 156);
                 document["MAP"].alt="Dec " + (num*7 - 156) + " map";
+        } else if ( num == 27 ) {
+                document["MAP"].title="mid-January";
+                document["MAP"].alt="January map";
+	} else if ( num == 28 ) {
+                document["MAP"].title="mid-February";
+                document["MAP"].alt="February map";
+        } else if ( num == 28 ) {
+                document["MAP"].title="mid-March";
+                document["MAP"].alt="March map";
+        } else if ( num == 30 ) {
+                document["MAP"].title="mid-April";
+                document["MAP"].alt="April map";
 	}
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 }
@@ -67,8 +79,8 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous day (or press a)</a> ---
 <a href="javascript:nextmap()">next day (or press s)</a>
 <p>
-<a name="LINK" href="26.svg">
-<img name="MAP" src="26.png" title="Dec 26" alt="Dec 26 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="30.svg">
+<img name="MAP" src="30.png" title="mid-April" alt="April map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous day (or press a)</a> --- 
