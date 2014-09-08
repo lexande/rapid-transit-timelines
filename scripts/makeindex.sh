@@ -5,7 +5,7 @@ if [ -f $(expr $START + 5).svg ]; then
 else
 	STEP=10
 fi
-COUNT=$(expr 1 + \( 2010 - $START \) / $STEP)
+COUNT=$(expr 1 + \( 2015 - $START \) / $STEP)
 sed -e"s/START/${START}/g; s/STEP/${STEP}/g; s/COUNT/${COUNT}/g; s/CITYNAME/$1/;" ~/timelines/scripts/boilerplate/car > index.html
 for i in *.svg; do
 	echo \<img src=\"`basename $i .svg`.png\" width=\"1\" height=\"1\" alt=\"\"\> >> index.html

@@ -16,7 +16,7 @@ div#preloader img {
 start=START;
 count=COUNT;
 step=STEP;
-index=count-1;
+index=count-2;
 function update() {
 	document["MAP"].src=(start+step*index) + ".png";
 	document["MAP"].title=start+step*index;
@@ -37,7 +37,7 @@ document.onkeydown=function(keypress) {
 }
 window.onload=function() {
 	inyear = parseInt(location.hash.substring(1));
-	if( start < inyear & inyear < start+step*count & !(inyear % step) ) {
+	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
 		index = (inyear-start)/step;
 		update();
 	}

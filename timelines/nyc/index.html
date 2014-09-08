@@ -14,9 +14,9 @@ div#preloader img {
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1875;
-count=28;
+count=29;
 step=5;
-index=count-1;
+index=count-2;
 function update() {
 	document["MAP"].src=(start+step*index) + ".png";
 	document["MAP"].title=start+step*index;
@@ -36,11 +36,11 @@ document.onkeydown=function(keypress) {
 	if(keypress.which == 83) { nextmap(); }
 }
 window.onload=function() {
-        inyear = parseInt(location.hash.substring(1));
+	inyear = parseInt(location.hash.substring(1));
 	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
 		index = (inyear-start)/step;
 		update();
-        }
+	}
 }
 </script>
 <script type="text/javascript">
@@ -99,7 +99,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="2005.png" width="1" height="1" alt="">
 <img src="2010.png" width="1" height="1" alt="">
 <img src="2015.png" width="1" height="1" alt="">
-<img src="2020.png" width="1" height="1" alt="">
 </div>
 See also: New York - 
 <a href="/ltimeline">Chicago</a> - 
