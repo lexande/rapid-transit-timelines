@@ -9,7 +9,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   width="4256"
+   width="6400"
    height="5674.6699"
    id="svg2">
   <metadata
@@ -28,12 +28,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/dalosm.png"
-     x="100"
-     y="0.0034960937"
-     width="4256"
-     height="5674.6665"
+     style="display:none"
      id="image10"
-     style="display:none" />
+     height="5674.6665"
+     width="4256"
+     y="0.0034960937"
+     x="100" />
   <text
      x="89.453125"
      y="5572.6309"
@@ -52,4 +52,24 @@
        x="89.453171"
        y="206.96083"
        id="tspan1">1980</tspan></text>
+  <path
+     d="m 133.5001,2583.015 3.2678,4.7323 17.818,0.3536 2.8535,-5.0858 0.061,-6.8457 11,-5 16,-2 9.5,-8.5 8.5,-10.5 1,-13 -5,-17 -10.5,-11.5 -10.5,-3.5 -13.5,-2.5 -6.5,-8 0.5,-65.5 8,-7.5 18.5,-3 10.5,-7 8,-11 2,-15 -5.5,-15.5 -13,-11 -17,-5 -8.5,-5 -0.5,-31 4,-5.5 15.5,-2 16.5,-7.5 8,-8 2.5,-15.5 -3,-13 -5,-10.5 -13.5,-9 -21,-2.5 -4.5,-8 0,-28 4.5,-6.5 18,-0.5 12.5,-7 9,-14 3,-19.5 -6,-13.5 -14,-11 -20.9377,-5.663 -6.7627,-8.2656 2.2542,-133.0001 -4.5085,-6.0113 -40.5763,0.7515 -9.7683,3.0056 -11.2712,10.5198 -5.2599,18.7853 3.757,17.2825 11.2712,12.774 27.8023,5.2599 5.2599,6.7627 -0.3741,62.5871 -2.1214,5.6569 -5.6568,5.3033 -10.2531,1.4142 -12.0208,3.5355 -8.8388,8.1318 -6.0104,8.1317 -3.182,15.2028 3.5355,13.7886 10.2531,10.6066 8.8388,6.3639 14.8493,2.4749 6.3639,1.0607 1.4142,2.4749 -0.3535,94.3987 0.3535,85.2064 -0.7071,105.7124 0,94.7523"
+     id="path3054"
+     style="fill:none;stroke:#98012e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 135.5001,2329.1694 6,4 12,0.5 6.5,-4.5"
+     id="path3824"
+     style="fill:none;stroke:#98012e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 136.5001,2117.1694 7,-5.5 9.5,0.5 6,4.5"
+     id="path3826"
+     style="fill:none;stroke:#98012e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 135.0575,2432.9384 6.364,5.3033 10.9601,0.3535 4.9498,-4.5962"
+     id="path3828"
+     style="fill:none;stroke:#98012e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 135.5001,2219.6694 6,4.5 12.5,-0.5 6,-5.5"
+     id="path3830"
+     style="fill:none;stroke:#98012e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
 </svg>

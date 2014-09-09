@@ -9,7 +9,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   width="2400"
+   width="4400"
    height="3600"
    id="svg2">
   <metadata
@@ -28,56 +28,56 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/denosm.png"
-     x="100"
-     y="-31.25"
-     width="2075"
-     height="3631.25"
+     style="display:none"
      id="image10"
-     style="display:none" />
+     height="3631.25"
+     width="2075"
+     y="-31.25"
+     x="2100" />
   <path
-     d="m 1985,3492 -8,-94 -9,-26 0,-39 -2,-30 -12,-26 -1,-72 -13,-39 2,-58 -32,-125 -19,-29 -11,-49 -75,-155 -15,-21 -6,-31 -68,-155 -21,-28 -15,-48 -67,-155 -21,-31 -10,-34 -50,-108 -35,-88 -83,-188 -18,-29 -7,-38 -49,-142 -10,-18 -15,-16 -15,-40 -55,-100 -34,-45 -60,-13 -12,-17 -24,-29 -38,-18 -76,-6 -43,5 -29,6 -22,-4 -40,-13 -127,-77 -22,-21 -104,-122 -9,-11 -10,-5 -20,7 -12,-6 -8,-72 -15,-37 L 523,978 502,939 450,817 402,722 376,619 371.5,526.5 360,500 350.5,494 331,492.5 326.5,489 307,455.5 295.5,450 l -14,-1.5 -4.5,-5 0,-26 11.5,-20.5 19,-12.5 38,-22 8,-10 16.5,-26.5 17,-18 21.5,-41.5 10,-10"
+     d="m 3985,3492 -8,-94 -9,-26 0,-39 -2,-30 -12,-26 -1,-72 -13,-39 2,-58 -32,-125 -19,-29 -11,-49 -75,-155 -15,-21 -6,-31 -68,-155 -21,-28 -15,-48 -67,-155 -21,-31 -10,-34 -50,-108 -35,-88 -83,-188 -18,-29 -7,-38 -49,-142 -10,-18 -15,-16 -15,-40 -55,-100 -34,-45 -60,-13 -12,-17 -24,-29 -38,-18 -76,-6 -43,5 -29,6 -22,-4 -40,-13 -127,-77 -22,-21 -104,-122 -9,-11 -10,-5 -20,7 -12,-6 -8,-72 -15,-37 -17,-24 -21,-39 -52,-122 -48,-95 -26,-103 -4.5,-92.5 -11.5,-26.5 -9.5,-6 -19.5,-1.5 -4.5,-3.5 -19.5,-33.5 -11.5,-5.5 -14,-1.5 -4.5,-5 0,-26 11.5,-20.5 19,-12.5 38,-22 8,-10 16.5,-26.5 17,-18 21.5,-41.5 10,-10"
      id="path2987"
      style="fill:none;stroke:#a55e87;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 360,500 6.5,-6 62.5,2 9,-4 20.5,-15.5 4.5,-7.5 5.5,-14 14,-11.5 13,-1.5"
+     d="m 2360,500 6.5,-6 62.5,2 9,-4 20.5,-15.5 4.5,-7.5 5.5,-14 14,-11.5 13,-1.5"
      id="path3757"
      style="fill:none;stroke:#a55e87;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 491.5,442 8,0 7.5,7.5 7.5,-1 63.5,-64.5 3.5,-0.75 6,5.25 6.5,-0.5 52.5,-53.5 37.5,-35 74.5,-76 0.5,-17"
+     d="m 2491.5,442 8,0 7.5,7.5 7.5,-1 63.5,-64.5 3.5,-0.75 6,5.25 6.5,-0.5 52.5,-53.5 37.5,-35 74.5,-76 0.5,-17"
      id="path3759"
      style="fill:none;stroke:#a55e87;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   <path
-     d="M 581.75,383.25 572,373 l -6.75,1.5 -65.5,67.5"
+     d="M 2581.75,383.25 2572,373 l -6.75,1.5 -65.5,67.5"
      id="path3761"
      style="fill:none;stroke:#a55e87;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   <path
-     d="m 577.5,384 -0.25,-5.5"
+     d="m 2577.5,384 -0.25,-5.5"
      id="path3763"
      style="fill:none;stroke:#a55e87;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
   <path
-     d="m 564,1110 9,78 1.5,28.5 -2,38.5 -25.5,121 -60,306 -102,318 -59,269 -28,130 -13,38 -34,80 -39,90 -11,84 -24,200 -27,77"
+     d="m 2564,1110 9,78 1.5,28.5 -2,38.5 -25.5,121 -60,306 -102,318 -59,269 -28,130 -13,38 -34,80 -39,90 -11,84 -24,200 -27,77"
      id="path3765"
      style="fill:none;stroke:#a55e87;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 1519,2106 14.5,10 22,3 94,-8.5 46.5,-4.5 29.5,-12 175,-111 30,-20 24,-9.5 34.5,-9 31,-17.5 145.5,-113 80,-32 36,-21"
+     d="m 3519,2106 14.5,10 22,3 94,-8.5 46.5,-4.5 29.5,-12 175,-111 30,-20 24,-9.5 34.5,-9 31,-17.5 145.5,-113 80,-32 36,-21"
      id="path3767"
      style="fill:none;stroke:#a55e87;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <text
-     x="89.453178"
+     x="89.453133"
      y="206.96094"
      id="text2990"
      xml:space="preserve"
      style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453178"
+       x="89.453133"
        y="206.96094"
        id="tspan1">2010</tspan></text>
   <text
-     x="89.453125"
+     x="89.453133"
      y="3497.9609"
      id="text2994"
      xml:space="preserve"
      style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
+       x="89.453133"
        y="3497.9609"
        id="tspan2">2010</tspan></text>
 </svg>
