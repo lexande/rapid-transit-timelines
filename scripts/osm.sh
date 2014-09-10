@@ -2,8 +2,8 @@
 for i in `seq $1 $2`; do
 	mkdir $i; cd $i
 	for j in `seq $3 $4`; do
-	wget -c http://c.tile.openstreetmap.org/14/$i/$j.png
-	done; cd ..
+	echo http://c.tile.openstreetmap.org/14/$i/$j.png
+	done | xargs wget -c; cd ..
 done
 for i in `seq $1 $2`; do
 	montage -mode Concatenate -tile 1x`expr $4 - $3 + 1` $i/*.png $i.png
