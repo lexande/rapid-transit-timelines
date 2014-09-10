@@ -3,10 +3,10 @@
 <head><title>European Rapid Transit Timelines</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-start=1865;
-count=30;
+start=1840;
+count=36;
 step=5;
-index=count-1;
+index=count-2;
 function update() {
         ["LON","PAR","BER","VIE","BCN","MAD","PRG","MOW","LED","MUC"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
