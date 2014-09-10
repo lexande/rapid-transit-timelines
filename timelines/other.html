@@ -8,7 +8,7 @@ count=11;
 step=10;
 index=count-1;
 function update() {
-        ["CAI","BUE","MEL","SYD","SCL","MEX","SAO","RIO","CCS","MDE"].forEach(function(city) {
+        ["CAI","BUE","BOM","MEL","SYD","SCL","MEX","SAO","RIO","CCS"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -53,7 +53,7 @@ window.onload=function() {
 <center>
 <a href="northamerica.html">North American cities</a> -
 <a href="europe.html">European cities</a> -
-<a href="asia.html">Asian cities</a> - 
+<a href="asia.html">East Asian cities</a> - 
 Other cities
 <p>
 <a href="javascript:prevmap()">previous time step (or press a)</a> ---
@@ -63,6 +63,8 @@ Other cities
   <img name="CAI" src="cai/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BUE" style="display: inline-block; vertical-align: middle"><a href="bue">Buenos Aires<br>
   <img name="BUE" src="bue/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="BOM" style="display: inline-block; vertical-align: middle"><a href="bom">Mumbai<br>
+  <img name="BOM" src="bom/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MEL" style="display: inline-block; vertical-align: middle"><a href="mel">Melbourne<br>
   <img name="MEL" src="mel/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SYD" style="display: inline-block; vertical-align: middle"><a href="syd">Sydney<br>
@@ -77,8 +79,6 @@ Other cities
   <img name="RIO" src="rio/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CCS" style="display: inline-block; vertical-align: middle"><a href="ccs">Caracas<br>
   <img name="CCS" src="ccs/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="MDE" style="display: inline-block; vertical-align: middle"><a href="mde">Medellín<br>
-  <img name="MDE" src="mde/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:prevmap()">previous time step (or press a)</a> --- 
 <a href="javascript:nextmap()">next time step (or press s)</a>
@@ -86,6 +86,7 @@ Other cities
 <form action="">Cities to show: 
 <div style="display: inline-block"><input type="checkbox" id="CAIcheckbox" onclick="toggleshow('CAI')" checked><a href="cai">Cairo</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')" checked><a href="bue">Buenos Aires</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BOMcheckbox" onclick="toggleshow('BOM')" checked><a href="bom">Mumbai</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked><a href="mel">Melbourne</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')" checked><a href="syd">Sydney</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')" checked><a href="mex">México</a></div>
@@ -93,7 +94,6 @@ Other cities
 <div style="display: inline-block"><input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')" checked><a href="scl">Santiago</a></div>
 <div style="display: inline-block"><input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')" checked><a href="rio">Rio de Janeiro</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CCScheckbox" onclick="toggleshow('CCS')" checked><a href="ccs">Caracas</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')" checked><a href="mde">Medellín</a></div>
 </form>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 pixels per km.

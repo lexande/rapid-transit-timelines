@@ -1,14 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head><title>Asian Rapid Transit Timelines</title>
+<head><title>East Asian Rapid Transit Timelines</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-start=1920;
-count=10;
-step=10;
-index=count-1;
+start=1960;
+count=12;
+step=5;
+index=count-2;
 function update() {
-        ["HKG","BOM","NGO","BJS","SIN","SEL","CAN","SHA"].forEach(function(city) {
+        ["HKG","NGO","BJS","SIN","SEL","CAN","SHA"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -53,7 +53,7 @@ window.onload=function() {
 <center>
 <a href="northamerica.html">North American cities</a> -
 <a href="europe.html">European cities</a> -
-Asian cities - 
+East Asian cities - 
 <a href="other.html">Other cities</a>
 <p>
 <a href="javascript:prevmap()">previous time step (or press a)</a> ---
@@ -61,8 +61,6 @@ Asian cities -
 <p>
 <span id="HKG" style="display: inline-block; vertical-align: middle"><a href="hkg">Hong Kong<br>
   <img name="HKG" src="hkg/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="BOM" style="display: inline-block; vertical-align: middle"><a href="bom">Mumbai<br>
-  <img name="BOM" src="bom/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="NGO" style="display: inline-block; vertical-align: middle"><a href="ngo">Nagoya<br>
   <img name="NGO" src="ngo/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BJS" style="display: inline-block; vertical-align: middle"><a href="bjs">Beijing<br>
@@ -81,7 +79,6 @@ Asian cities -
 <p>
 <form>Cities to show: 
 <div style="display: inline-block"><input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="hkg">Hong Kong</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BOMcheckbox" onclick="toggleshow('BOM')" checked><a href="bom">Mumbai</a></div>
 <div style="display: inline-block"><input type="checkbox" id="NGOcheckbox" onclick="toggleshow('NGO')" checked><a href="ngo">Nagoya</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')" checked><a href="bjs">Beijing</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')" checked><a href="sel">Seoul</a></div>
