@@ -8,7 +8,7 @@ count=12;
 step=5;
 index=count-2;
 function update() {
-        ["HKG","NGO","BJS","SIN","SEL","CAN","SHA"].forEach(function(city) {
+        ["HKG","NGO","BJS","SIN","SEL","CAN","SHA","TPE"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -71,6 +71,8 @@ East Asian cities -
   <img name="SIN" src="sin/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SHA" style="display: inline-block; vertical-align: middle"><a href="sha">Shanghai<br>
   <img name="SHA" src="sha/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="TPE" style="display: inline-block; vertical-align: middle"><a href="tpe">Taipei<br>
+  <img name="TPE" src="tpe/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CAN" style="display: inline-block; vertical-align: middle"><a href="can">Guangzhou<br>
   <img name="CAN" src="can/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <p>
@@ -84,6 +86,7 @@ East Asian cities -
 <div style="display: inline-block"><input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')" checked><a href="sel">Seoul</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SINcheckbox" onclick="toggleshow('SIN')" checked><a href="sin">Singapore</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" checked><a href="sha">Shanghai</a></div>
+<div style="display: inline-block"><input type="checkbox" id="TPEcheckbox" onclick="toggleshow('TPE')" checked><a href="tpe">Taipei</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')" checked><a href="can">Guangzhou</a></div>
 </form>
 <p>
