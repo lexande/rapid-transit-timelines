@@ -4,9 +4,9 @@
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
 start=1875;
-count=28;
+count=29;
 step=5;
-index=count-1;
+index=count-2;
 function update() {
         ["NYC","CHI","BWI","BOS","LAX","PHL","SFO","CLE","ROC","WAS","SEA",
          "ATL","SAN","MIA","PIT","BUF","PDX","SAC","DET","SJC","JAX","STL",
@@ -114,6 +114,9 @@ window.onload=function() {
   <img name="SJU" src="sju/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CLT" style="display: inline-block; vertical-align: middle"><a href="clt">Charlotte<br>
   <img name="CLT" src="clt/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="ORF" style="display: inline-block; vertical-align: middle"><a href="orf">Norfolk<br>
+  <img name="ORF" src="orf/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+
 <p>
 <a href="javascript:prevmap()">previous time step (or press a)</a> --- 
 <a href="javascript:nextmap()">next time step (or press s)</a>
@@ -148,6 +151,7 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="MSPcheckbox" onclick="toggleshow('MSP')" checked><a href="msp">Minneapolis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SJUcheckbox" onclick="toggleshow('SJU')" checked><a href="sju">San Juan</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="clt">Charlotte</a></div>
+<div style="display: inline-block"><input type="checkbox" id="ORFcheckbox" onclick="toggleshow('ORF')" checked><a href="orf">Norfolk</a></div>
 </form>
 <p>
 Based on weekday midday service at the end of the year in question.  Scale 10 pixels per km.
