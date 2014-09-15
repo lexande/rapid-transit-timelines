@@ -3,14 +3,14 @@
 <head><title>Rapid Transit Timelines</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <script language="JavaScript" type="text/javascript">
-start=1880;
-count=14;
+start=1840;
+count=18;
 step=10;
 index=count-1;
 function update() {
-        ["NYC","PAR","BER","HKG","CHI","BOS","VIE","BCN","PHL","BUE","BOM","SFO","MAD","LAX","MOW",
-         "YTO","LED","YMQ","MEX","BJS","MUC","PRG","SEL","SAO","SCL","WAS","RIO","CCS","YVR",
-	 "SIN","SHA","MDE","CAN","NGO","SYD","MEL","CAI"].forEach(function(city) {
+        ["LON","NYC","PAR","BER","HKG","CHI","BOS","VIE","BCN","PHL","BUE","BOM","SFO","MAD",
+	 "LAX","MOW","YTO","LED","YMQ","MEX","BJS","MUC","PRG","SEL","SAO","SCL","WAS","RIO",
+	 "CCS","YVR","SIN","SHA","MDE","CAN","NGO","SYD","MEL","CAI"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -40,19 +40,19 @@ if(location.hash == "#northamerica") {
 		document.getElementById(city + "checkbox").click();
 	});
 } else if (location.hash == "#europe") {
-	["PAR","BER","VIE","BCN","MAD","MOW","LED","MUC","PRG"].forEach(function(city) {
+	["LON","PAR","BER","VIE","BCN","MAD","MOW","LED","MUC","PRG"].forEach(function(city) {
 		document.getElementById(city + "checkbox").click();
 	});
 } else if (location.hash == "#latinamerica") {
-	["BUE","MEX","SAO","SCL","RIO","CCS","MDE"].forEach(function(city) {
+	["BUE","MEX","SAO","SCL","RIO","CCS"].forEach(function(city) {
 		document.getElementById(city + "checkbox").click();
 	});
 } else if (location.hash == "#other") {
-        ["BUE","MEX","SAO","SCL","RIO","CCS","MDE","SYD","MEL","CAI"].forEach(function(city) {
+        ["BUE","BOM","MEX","SAO","SCL","RIO","CCS","SYD","MEL","CAI"].forEach(function(city) {
                 document.getElementById(city + "checkbox").click();
         });
 } else if (location.hash == "#asia") {
-	["HKG","BOM","BJS","SEL","SIN","SHA","CAN","NGO"].forEach(function(city) {
+	["HKG","BJS","SEL","SIN","SHA","CAN","NGO","TPE"].forEach(function(city) {
 		document.getElementById(city + "checkbox").click();
 	});
 } else if (location.hash == "#americas") {
@@ -61,13 +61,13 @@ if(location.hash == "#northamerica") {
 		document.getElementById(city + "checkbox").click();
 	});
 } else if (location.hash == "#all") {
-	["NYC","PAR","BER","HKG","CHI","BOS","VIE","BCN","PHL","BUE","BOM","SFO","MAD","LAX","MOW",
-	 "YTO","LED","YMQ","MEX","BJS","MUC","PRG","SEL","SAO","SCL","WAS","RIO","CCS","YVR",
-	 "SIN","SHA","MDE","CAN","NGO","CAI","SYD","MEL"].forEach(function(city) {
+	["LON","NYC","PAR","BER","HKG","CHI","BOS","VIE","BCN","PHL","BUE","BOM","SFO","MAD","LAX","MOW",
+	 "YTO","LED","YMQ","MEX","BJS","MUC","PRG","SEL","SAO","SCL","WAS","RIO","CCS","YVR","TPE",
+	 "SIN","SHA","CAN","NGO","CAI","SYD","MEL"].forEach(function(city) {
 		document.getElementById(city + "checkbox").click();
 	});
 } else {
-	["NYC","PAR","BER","CHI","BOS","VIE","BCN","PHL","BUE","MAD","LAX","MOW"].forEach(function(city) {
+	["LON","NYC","PAR","BER","CHI","BOS","VIE","BCN","PHL","BUE","MAD","LAX","MOW"].forEach(function(city) {
 		document.getElementById(city + "checkbox").click();
 	});
 }
@@ -88,6 +88,8 @@ if(location.hash == "#northamerica") {
 <a href="javascript:prevmap()">previous decade (or press a)</a> ---
 <a href="javascript:nextmap()">next decade (or press s)</a>
 <p>
+<span id="LON" style="display: none; vertical-align: middle"><a href="lon">London<br>
+  <img name="LON" src="lon/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="NYC" style="display: none; vertical-align: middle"><a href="../subtimeline">New York<br>
   <img name="NYC" src="nyc/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PAR" style="display: none; vertical-align: middle"><a href="par">Paris<br>
@@ -158,8 +160,8 @@ if(location.hash == "#northamerica") {
   <img name="SIN" src="sin/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SHA" style="display: none; vertical-align: middle"><a href="sha">Shanghai<br>
   <img name="SHA" src="sha/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="MDE" style="display: none; vertical-align: middle"><a href="mde">Medellín<br>
-  <img name="MDE" src="mde/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="TPE" style="display: none; vertical-align: middle"><a href="tpe">Taipei<br>
+  <img name="TPE" src="tpe/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CAN" style="display: none; vertical-align: middle"><a href="can">Guangzhou<br>
   <img name="CAN" src="can/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <p>
@@ -167,6 +169,7 @@ if(location.hash == "#northamerica") {
 <a href="javascript:nextmap()">next decade (or press s)</a>
 <p>
 <form action="">Cities to show: 
+<div style="display: inline-block"><input type="checkbox" id="LONcheckbox" onclick="toggleshow('LON')" ><a href="lon">London</a></div>
 <div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" ><a href="../subtimeline">New York</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')" ><a href="par">Paris</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')" ><a href="ber">Berlin</a></div>
@@ -202,7 +205,7 @@ if(location.hash == "#northamerica") {
 <div style="display: inline-block"><input type="checkbox" id="YVRcheckbox" onclick="toggleshow('YVR')" ><a href="yvr">Vancouver</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SINcheckbox" onclick="toggleshow('SIN')" ><a href="sin">Singapore</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" ><a href="sha">Shanghai</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')" ><a href="mde">Medellín</a></div>
+<div style="display: inline-block"><input type="checkbox" id="TPEcheckbox" onclick="toggleshow('TPE')" ><a href="tpe">Taipei</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')" ><a href="can">Guangzhou</a></div>
 </form>
 <p>
