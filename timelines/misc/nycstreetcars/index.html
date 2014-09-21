@@ -13,20 +13,15 @@ div#preloader img {
 }
 </style>
 <script language="JavaScript" type="text/javascript">
-start=2;
-count=48;
+start=1932;
+count=26;
+step=1;
 index=0;
-function yr(i) {
-	return ~~(i / 4) + 1945;
-}
-function qr(i) {
-        return 1+(i % 4);
-}
 function update() {
-	document["MAP"].src=yr(start+index) + "Q" + qr(start+index) + ".png";
-	document["MAP"].title=yr(start+index) + " Q" + qr(start+index);
-	document["MAP"].alt=yr(start+index) + " Q" + qr(start+index) + " map";
-	document.getElementsByTagName('a')[2].href=yr(start+index) + "Q" + qr(start+index) + ".svg";
+	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 }
 function nextmap() {
 	index=(index+1)%count;
@@ -39,6 +34,13 @@ function prevmap() {
 document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
+}
+window.onload=function() {
+	inyear = parseInt(location.hash.substring(1));
+	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
 }
 </script>
 <script type="text/javascript">
@@ -56,68 +58,43 @@ document.onkeydown=function(keypress) {
 <a href="javascript:prevmap()">previous (or press a)</a> ---
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-<a name="LINK" href="1945Q3.svg">
-<img name="MAP" src="1945Q3.png" title="1945 Q3" alt="1945 Q3 map"style="border-width: 1px; border-style: solid">
+<a name="LINK" href="1936.svg">
+<img name="MAP" src="1936.png" title="1936" alt="1936 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="javascript:prevmap()">previous (or press a)</a> --- 
 <a href="javascript:nextmap()">next (or press s)</a>
 <p>
-Based on service at the end of the quarter in question.  Please send any corrections or questions to threestationsquare at gmail dot com.
+Based on service at the end of the year in question.  Scale 30 pixels per km.
+<p>
+Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-rc="1945Q3.png" width="1" height="1" alt="">
-<img src="1945Q4.png" width="1" height="1" alt="">
-<img src="1946Q1.png" width="1" height="1" alt="">
-<img src="1946Q2.png" width="1" height="1" alt="">
-<img src="1946Q3.png" width="1" height="1" alt="">
-<img src="1946Q4.png" width="1" height="1" alt="">
-<img src="1947Q1.png" width="1" height="1" alt="">
-<img src="1947Q2.png" width="1" height="1" alt="">
-<img src="1947Q3.png" width="1" height="1" alt="">
-<img src="1947Q4.png" width="1" height="1" alt="">
-<img src="1948Q1.png" width="1" height="1" alt="">
-<img src="1948Q2.png" width="1" height="1" alt="">
-<img src="1948Q3.png" width="1" height="1" alt="">
-<img src="1948Q4.png" width="1" height="1" alt="">
-<img src="1949Q1.png" width="1" height="1" alt="">
-<img src="1949Q2.png" width="1" height="1" alt="">
-<img src="1949Q3.png" width="1" height="1" alt="">
-<img src="1949Q4.png" width="1" height="1" alt="">
-<img src="1950Q1.png" width="1" height="1" alt="">
-<img src="1950Q2.png" width="1" height="1" alt="">
-<img src="1950Q3.png" width="1" height="1" alt="">
-<img src="1950Q4.png" width="1" height="1" alt="">
-<img src="1951Q1.png" width="1" height="1" alt="">
-<img src="1951Q2.png" width="1" height="1" alt="">
-<img src="1951Q3.png" width="1" height="1" alt="">
-<img src="1951Q4.png" width="1" height="1" alt="">
-<img src="1952Q1.png" width="1" height="1" alt="">
-<img src="1952Q2.png" width="1" height="1" alt="">
-<img src="1952Q3.png" width="1" height="1" alt="">
-<img src="1952Q4.png" width="1" height="1" alt="">
-<img src="1953Q1.png" width="1" height="1" alt="">
-<img src="1953Q2.png" width="1" height="1" alt="">
-<img src="1953Q3.png" width="1" height="1" alt="">
-<img src="1953Q4.png" width="1" height="1" alt="">
-<img src="1954Q1.png" width="1" height="1" alt="">
-<img src="1954Q2.png" width="1" height="1" alt="">
-<img src="1954Q3.png" width="1" height="1" alt="">
-<img src="1954Q4.png" width="1" height="1" alt="">
-<img src="1955Q1.png" width="1" height="1" alt="">
-<img src="1955Q2.png" width="1" height="1" alt="">
-<img src="1955Q3.png" width="1" height="1" alt="">
-<img src="1955Q4.png" width="1" height="1" alt="">
-<img src="1956Q1.png" width="1" height="1" alt="">
-<img src="1956Q2.png" width="1" height="1" alt="">
-<img src="1956Q3.png" width="1" height="1" alt="">
-<img src="1956Q4.png" width="1" height="1" alt="">
-<img src="1957Q1.png" width="1" height="1" alt="">
-<img src="1957Q2.png" width="1" height="1" alt="">
+<img src="1936.png" width="1" height="1" alt="">
+<img src="1937.png" width="1" height="1" alt="">
+<img src="1938.png" width="1" height="1" alt="">
+<img src="1939.png" width="1" height="1" alt="">
+<img src="1940.png" width="1" height="1" alt="">
+<img src="1941.png" width="1" height="1" alt="">
+<img src="1942.png" width="1" height="1" alt="">
+<img src="1943.png" width="1" height="1" alt="">
+<img src="1944.png" width="1" height="1" alt="">
+<img src="1945.png" width="1" height="1" alt="">
+<img src="1946.png" width="1" height="1" alt="">
+<img src="1947.png" width="1" height="1" alt="">
+<img src="1948.png" width="1" height="1" alt="">
+<img src="1949.png" width="1" height="1" alt="">
+<img src="1950.png" width="1" height="1" alt="">
+<img src="1951.png" width="1" height="1" alt="">
+<img src="1952.png" width="1" height="1" alt="">
+<img src="1953.png" width="1" height="1" alt="">
+<img src="1954.png" width="1" height="1" alt="">
+<img src="1955.png" width="1" height="1" alt="">
+<img src="1956.png" width="1" height="1" alt="">
+<img src="1957.png" width="1" height="1" alt="">
 </div>
-See also:
-<a href="../..">historical rapid transit timelines</a> -
-<a href="..">miscellaneous timelines</a>
+See also: <a href="/timelines/">historical rapid transit timelines</a> - 
+<a href="/timelines/misc/">miscellaneous timelines</a>
 <p>
 <font size="1">By <a href="/">Alexander Rapp</a> based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
