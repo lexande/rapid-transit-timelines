@@ -52,7 +52,7 @@ function update() {
                 document["MAP"].alt="June map";
         }
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
-	location.hash=(start+step*index);
+	location.replace("#" + (start+step*index));
 }
 function nextmap() {
 	if (index < count-1) {
