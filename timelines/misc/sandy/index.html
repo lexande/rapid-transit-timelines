@@ -52,6 +52,7 @@ function update() {
                 document["MAP"].alt="June map";
         }
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
+	location.hash=(start+step*index);
 }
 function nextmap() {
 	if (index < count-1) {
@@ -68,6 +69,16 @@ function prevmap() {
 document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
+}
+function gotoyear(x) {
+	inyear = parseInt(x);
+	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
+}
+window.onload=function() {
+	gotoyear(location.hash.substring(1));
 }
 </script>
 <script type="text/javascript">
@@ -88,6 +99,39 @@ document.onkeydown=function(keypress) {
 <a name="LINK" href="1.svg">
 <img name="MAP" src="1.png" title="Oct 26" alt="Oct 26 map"style="border-width: 1px; border-style: solid">
 </a>
+<p>
+<a href="#1" onclick="gotoyear(1)">Oct 26</a>
+<a href="#2" onclick="gotoyear(2)">Oct 27</a>
+<a href="#3" onclick="gotoyear(3)">Oct 28</a>
+<a href="#4" onclick="gotoyear(4)">Oct 29</a>
+<a href="#5" onclick="gotoyear(5)">Oct 30</a>
+<a href="#6" onclick="gotoyear(6)">Oct 31</a>
+<a href="#7" onclick="gotoyear(7)">Nov 1</a>
+<a href="#8" onclick="gotoyear(8)">Nov 2</a>
+<a href="#9" onclick="gotoyear(9)">Nov 3</a>
+<a href="#10" onclick="gotoyear(10)">Nov 4</a>
+<a href="#11" onclick="gotoyear(11)">Nov 5</a>
+<a href="#12" onclick="gotoyear(12)">Nov 6</a>
+<a href="#13" onclick="gotoyear(13)">Nov 7</a>
+<a href="#14" onclick="gotoyear(14)">Nov 8</a>
+<a href="#15" onclick="gotoyear(15)">Nov 9</a>
+<a href="#16" onclick="gotoyear(16)">Nov 10</a>
+<a href="#17" onclick="gotoyear(17)">Nov 11</a>
+<a href="#18" onclick="gotoyear(18)">Nov 12</a>
+<a href="#19" onclick="gotoyear(19)">Nov 13</a>
+<a href="#20" onclick="gotoyear(20)">Nov 14</a>
+<a href="#21" onclick="gotoyear(21)">Nov 21</a>
+<a href="#22" onclick="gotoyear(22)">Nov 28</a>
+<a href="#23" onclick="gotoyear(23)">Dec 5</a>
+<a href="#24" onclick="gotoyear(24)">Dec 12</a>
+<a href="#25" onclick="gotoyear(25)">Dec 19</a>
+<a href="#26" onclick="gotoyear(26)">Dec 26</a>
+<a href="#27" onclick="gotoyear(27)">mid-Jan</a>
+<a href="#28" onclick="gotoyear(28)">mid-Feb</a>
+<a href="#29" onclick="gotoyear(29)">mid-Mar</a>
+<a href="#30" onclick="gotoyear(30)">mid-Apr</a>
+<a href="#31" onclick="gotoyear(31)">mid-May</a>
+<a href="#32" onclick="gotoyear(32)">mid-Jun</a>
 <p>
 <a href="javascript:prevmap()">previous day (or press a)</a> --- 
 <a href="javascript:nextmap()">next day (or press s)</a>

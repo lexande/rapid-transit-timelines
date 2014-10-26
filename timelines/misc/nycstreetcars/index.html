@@ -22,6 +22,7 @@ function update() {
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
+	location.hash=(start+step*index);
 }
 function nextmap() {
 	index=(index+1)%count;
@@ -35,12 +36,15 @@ document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
 }
-window.onload=function() {
-	inyear = parseInt(location.hash.substring(1));
+function gotoyear(x) {
+	inyear = parseInt(x);
 	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
 		index = (inyear-start)/step;
 		update();
 	}
+}
+window.onload=function() {
+	gotoyear(location.hash.substring(1));
 }
 </script>
 <script type="text/javascript">
@@ -62,10 +66,37 @@ window.onload=function() {
 <img name="MAP" src="1932.png" title="1932" alt="1932 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
+<a href="#1932" onclick="gotoyear(1932)">1932</a>
+<a href="#1933" onclick="gotoyear(1933)">1933</a>
+<a href="#1934" onclick="gotoyear(1934)">1934</a>
+<a href="#1935" onclick="gotoyear(1935)">1935</a>
+<a href="#1936" onclick="gotoyear(1936)">1936</a>
+<a href="#1937" onclick="gotoyear(1937)">1937</a>
+<a href="#1938" onclick="gotoyear(1938)">1938</a>
+<a href="#1939" onclick="gotoyear(1939)">1939</a>
+<a href="#1940" onclick="gotoyear(1940)">1940</a>
+<a href="#1941" onclick="gotoyear(1941)">1941</a>
+<a href="#1942" onclick="gotoyear(1942)">1942</a>
+<a href="#1943" onclick="gotoyear(1943)">1943</a>
+<a href="#1944" onclick="gotoyear(1944)">1944</a>
+<a href="#1945" onclick="gotoyear(1945)">1945</a>
+<a href="#1946" onclick="gotoyear(1946)">1946</a>
+<a href="#1947" onclick="gotoyear(1947)">1947</a>
+<a href="#1948" onclick="gotoyear(1948)">1948</a>
+<a href="#1949" onclick="gotoyear(1949)">1949</a>
+<a href="#1950" onclick="gotoyear(1950)">1950</a>
+<a href="#1951" onclick="gotoyear(1951)">1951</a>
+<a href="#1952" onclick="gotoyear(1952)">1952</a>
+<a href="#1953" onclick="gotoyear(1953)">1953</a>
+<a href="#1954" onclick="gotoyear(1954)">1954</a>
+<a href="#1955" onclick="gotoyear(1955)">1955</a>
+<a href="#1956" onclick="gotoyear(1956)">1956</a>
+<a href="#1957" onclick="gotoyear(1957)">1957</a>
+<p>
 <a href="javascript:prevmap()">one year earlier (or press a)</a> --- 
 <a href="javascript:nextmap()">one year later (or press s)</a>
 <p>
-Based on service at the end of the year in question.  Scale 30 pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).  Scale 30 pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
@@ -97,7 +128,8 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="1956.png" width="1" height="1" alt="">
 <img src="1957.png" width="1" height="1" alt="">
 </div>
-See also: <a href="/timelines/">historical rapid transit timelines</a> - 
+See also: <a href="/subtimeline">New York rapid transit timeline</a> -
+<a href="/timelines/">other rapid transit timelines</a> - 
 <a href="/timelines/misc/">miscellaneous timelines</a>
 <p>
 <font size="1">By <a href="/">Alexander Rapp</a> based on map data 

@@ -22,6 +22,7 @@ function update() {
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
+	location.hash=(start+step*index);
 }
 function nextmap() {
 	index=(index+1)%count;
@@ -35,12 +36,15 @@ document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
 }
-window.onload=function() {
-	inyear = parseInt(location.hash.substring(1));
+function gotoyear(x) {
+	inyear = parseInt(x);
 	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
 		index = (inyear-start)/step;
 		update();
 	}
+}
+window.onload=function() {
+	gotoyear(location.hash.substring(1));
 }
 </script>
 <script type="text/javascript">
@@ -61,6 +65,12 @@ window.onload=function() {
 <a name="LINK" href="2010.svg">
 <img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
 </a>
+<p>
+<a href="#1995" onclick="gotoyear(1995)">1995</a>
+<a href="#2000" onclick="gotoyear(2000)">2000</a>
+<a href="#2005" onclick="gotoyear(2005)">2005</a>
+<a href="#2010" onclick="gotoyear(2010)">2010</a>
+<a href="#2015" onclick="gotoyear(2015)">2015</a>
 <p>
 <a href="javascript:prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:nextmap()">five years later (or press s)</a>

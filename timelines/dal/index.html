@@ -13,8 +13,8 @@ div#preloader img {
 }
 </style>
 <script language="JavaScript" type="text/javascript">
-start=1975;
-count=9;
+start=1970;
+count=10;
 step=5;
 index=count-2;
 function update() {
@@ -22,6 +22,7 @@ function update() {
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
+	location.hash=(start+step*index);
 }
 function nextmap() {
 	index=(index+1)%count;
@@ -35,12 +36,15 @@ document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
 }
-window.onload=function() {
-	inyear = parseInt(location.hash.substring(1));
+function gotoyear(x) {
+	inyear = parseInt(x);
 	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
 		index = (inyear-start)/step;
 		update();
 	}
+}
+window.onload=function() {
+	gotoyear(location.hash.substring(1));
 }
 </script>
 <script type="text/javascript">
@@ -62,6 +66,17 @@ window.onload=function() {
 <img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
 </a>
 <p>
+<a href="#1970" onclick="gotoyear(1970)">1970</a>
+<a href="#1975" onclick="gotoyear(1975)">1975</a>
+<a href="#1980" onclick="gotoyear(1980)">1980</a>
+<a href="#1985" onclick="gotoyear(1985)">1985</a>
+<a href="#1990" onclick="gotoyear(1990)">1990</a>
+<a href="#1995" onclick="gotoyear(1995)">1995</a>
+<a href="#2000" onclick="gotoyear(2000)">2000</a>
+<a href="#2005" onclick="gotoyear(2005)">2005</a>
+<a href="#2010" onclick="gotoyear(2010)">2010</a>
+<a href="#2015" onclick="gotoyear(2015)">2015</a>
+<p>
 <a href="javascript:prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:nextmap()">five years later (or press s)</a>
 <p>
@@ -70,6 +85,7 @@ Based on frequent midday service at the end of the year in question (<a href="..
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
+<img src="1970.png" width="1" height="1" alt="">
 <img src="1975.png" width="1" height="1" alt="">
 <img src="1980.png" width="1" height="1" alt="">
 <img src="1985.png" width="1" height="1" alt="">

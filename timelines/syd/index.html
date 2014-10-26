@@ -22,6 +22,7 @@ function update() {
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
+	location.hash=(start+step*index);
 }
 function nextmap() {
 	index=(index+1)%count;
@@ -35,12 +36,15 @@ document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
 	if(keypress.which == 83) { nextmap(); }
 }
-window.onload=function() {
-	inyear = parseInt(location.hash.substring(1));
+function gotoyear(x) {
+	inyear = parseInt(x);
 	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
 		index = (inyear-start)/step;
 		update();
 	}
+}
+window.onload=function() {
+	gotoyear(location.hash.substring(1));
 }
 </script>
 <script type="text/javascript">
@@ -61,6 +65,16 @@ window.onload=function() {
 <a name="LINK" href="2010.svg">
 <img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
 </a>
+<p>
+<a href="#1930" onclick="gotoyear(1930)">1930</a>
+<a href="#1940" onclick="gotoyear(1940)">1940</a>
+<a href="#1950" onclick="gotoyear(1950)">1950</a>
+<a href="#1960" onclick="gotoyear(1960)">1960</a>
+<a href="#1970" onclick="gotoyear(1970)">1970</a>
+<a href="#1980" onclick="gotoyear(1980)">1980</a>
+<a href="#1990" onclick="gotoyear(1990)">1990</a>
+<a href="#2000" onclick="gotoyear(2000)">2000</a>
+<a href="#2010" onclick="gotoyear(2010)">2010</a>
 <p>
 <a href="javascript:prevmap()">ten years earlier (or press a)</a> --- 
 <a href="javascript:nextmap()">ten years later (or press s)</a>
