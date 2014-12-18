@@ -28,12 +28,24 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/melosm.png"
-     x="-50"
-     y="-682.63623"
-     width="5866"
-     height="6132.6362"
+     style="display:none"
      id="image10"
-     style="display:none" />
+     height="6132.6362"
+     width="5866"
+     y="-682.63623"
+     x="-50" />
+  <path
+     d="m 2478.4676,2723.7534 5.4447,-2.1314 26.1995,-9.5019"
+     id="path3006"
+     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 2370,2846 20,-21.5 60.4452,-68.3944 31.0901,-33.9687"
+     id="path3810"
+     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="M 2370.8764,2843.706 2361,2871.5 l -2,28 6.5,28.5 49.5,133 16.5,40 32,57 40,48.5 47,45 42,37 43,49"
+     id="path3812"
+     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <text
      x="89.453125"
      y="206.96094"

@@ -13,8 +13,8 @@ div#preloader img {
 }
 </style>
 <script language="JavaScript" type="text/javascript">
-start=1910;
-count=11;
+start=1880;
+count=14;
 step=10;
 index=count-1;
 function update() {
@@ -69,14 +69,14 @@ Other cities
 <a href="javascript:prevmap()">ten years earlier (or press a)</a> ---
 <a href="javascript:nextmap()">ten years later (or press s)</a>
 <p>
+<span id="MEL" style="display: inline-block; vertical-align: middle"><a href="mel">Melbourne<br>
+  <img name="MEL" src="mel/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CAI" style="display: inline-block; vertical-align: middle"><a href="cai">Cairo<br>
   <img name="CAI" src="cai/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BUE" style="display: inline-block; vertical-align: middle"><a href="bue">Buenos Aires<br>
   <img name="BUE" src="bue/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BOM" style="display: inline-block; vertical-align: middle"><a href="bom">Mumbai<br>
   <img name="BOM" src="bom/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
-<span id="MEL" style="display: inline-block; vertical-align: middle"><a href="mel">Melbourne<br>
-  <img name="MEL" src="mel/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SYD" style="display: inline-block; vertical-align: middle"><a href="syd">Sydney<br>
   <img name="SYD" src="syd/small/2010.png" title="2010" alt="2010 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MEX" style="display: inline-block; vertical-align: middle"><a href="mex">México<br>
@@ -94,10 +94,10 @@ Other cities
 <a href="javascript:nextmap()">ten years later (or press s)</a>
 <p>
 <form action="">Cities to show: 
+<div style="display: inline-block"><input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked><a href="mel">Melbourne</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CAIcheckbox" onclick="toggleshow('CAI')" checked><a href="cai">Cairo</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')" checked><a href="bue">Buenos Aires</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BOMcheckbox" onclick="toggleshow('BOM')" checked><a href="bom">Mumbai</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked><a href="mel">Melbourne</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')" checked><a href="syd">Sydney</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')" checked><a href="mex">México</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SAOcheckbox" onclick="toggleshow('SAO')" checked><a href="sao">São Paulo</a></div>
@@ -111,39 +111,9 @@ Based on frequent midday service at the end of the year in question (<a href="no
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="cai/small/1910.png" width="1" height="1" alt="">
-<img src="cai/small/1920.png" width="1" height="1" alt="">
-<img src="cai/small/1930.png" width="1" height="1" alt="">
-<img src="cai/small/1940.png" width="1" height="1" alt="">
-<img src="cai/small/1950.png" width="1" height="1" alt="">
-<img src="cai/small/1960.png" width="1" height="1" alt="">
-<img src="cai/small/1970.png" width="1" height="1" alt="">
-<img src="cai/small/1980.png" width="1" height="1" alt="">
-<img src="cai/small/1990.png" width="1" height="1" alt="">
-<img src="cai/small/2000.png" width="1" height="1" alt="">
-<img src="cai/small/2010.png" width="1" height="1" alt="">
-<img src="bue/small/1910.png" width="1" height="1" alt="">
-<img src="bue/small/1920.png" width="1" height="1" alt="">
-<img src="bue/small/1930.png" width="1" height="1" alt="">
-<img src="bue/small/1940.png" width="1" height="1" alt="">
-<img src="bue/small/1950.png" width="1" height="1" alt="">
-<img src="bue/small/1960.png" width="1" height="1" alt="">
-<img src="bue/small/1970.png" width="1" height="1" alt="">
-<img src="bue/small/1980.png" width="1" height="1" alt="">
-<img src="bue/small/1990.png" width="1" height="1" alt="">
-<img src="bue/small/2000.png" width="1" height="1" alt="">
-<img src="bue/small/2010.png" width="1" height="1" alt="">
-<img src="bom/small/1910.png" width="1" height="1" alt="">
-<img src="bom/small/1920.png" width="1" height="1" alt="">
-<img src="bom/small/1930.png" width="1" height="1" alt="">
-<img src="bom/small/1940.png" width="1" height="1" alt="">
-<img src="bom/small/1950.png" width="1" height="1" alt="">
-<img src="bom/small/1960.png" width="1" height="1" alt="">
-<img src="bom/small/1970.png" width="1" height="1" alt="">
-<img src="bom/small/1980.png" width="1" height="1" alt="">
-<img src="bom/small/1990.png" width="1" height="1" alt="">
-<img src="bom/small/2000.png" width="1" height="1" alt="">
-<img src="bom/small/2010.png" width="1" height="1" alt="">
+<img src="mel/small/1880.png" width="1" height="1" alt="">
+<img src="mel/small/1890.png" width="1" height="1" alt="">
+<img src="mel/small/1900.png" width="1" height="1" alt="">
 <img src="mel/small/1910.png" width="1" height="1" alt="">
 <img src="mel/small/1920.png" width="1" height="1" alt="">
 <img src="mel/small/1930.png" width="1" height="1" alt="">
@@ -155,6 +125,51 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="mel/small/1990.png" width="1" height="1" alt="">
 <img src="mel/small/2000.png" width="1" height="1" alt="">
 <img src="mel/small/2010.png" width="1" height="1" alt="">
+<img src="cai/small/1880.png" width="1" height="1" alt="">
+<img src="cai/small/1890.png" width="1" height="1" alt="">
+<img src="cai/small/1900.png" width="1" height="1" alt="">
+<img src="cai/small/1910.png" width="1" height="1" alt="">
+<img src="cai/small/1920.png" width="1" height="1" alt="">
+<img src="cai/small/1930.png" width="1" height="1" alt="">
+<img src="cai/small/1940.png" width="1" height="1" alt="">
+<img src="cai/small/1950.png" width="1" height="1" alt="">
+<img src="cai/small/1960.png" width="1" height="1" alt="">
+<img src="cai/small/1970.png" width="1" height="1" alt="">
+<img src="cai/small/1980.png" width="1" height="1" alt="">
+<img src="cai/small/1990.png" width="1" height="1" alt="">
+<img src="cai/small/2000.png" width="1" height="1" alt="">
+<img src="cai/small/2010.png" width="1" height="1" alt="">
+<img src="bue/small/1880.png" width="1" height="1" alt="">
+<img src="bue/small/1890.png" width="1" height="1" alt="">
+<img src="bue/small/1900.png" width="1" height="1" alt="">
+<img src="bue/small/1910.png" width="1" height="1" alt="">
+<img src="bue/small/1920.png" width="1" height="1" alt="">
+<img src="bue/small/1930.png" width="1" height="1" alt="">
+<img src="bue/small/1940.png" width="1" height="1" alt="">
+<img src="bue/small/1950.png" width="1" height="1" alt="">
+<img src="bue/small/1960.png" width="1" height="1" alt="">
+<img src="bue/small/1970.png" width="1" height="1" alt="">
+<img src="bue/small/1980.png" width="1" height="1" alt="">
+<img src="bue/small/1990.png" width="1" height="1" alt="">
+<img src="bue/small/2000.png" width="1" height="1" alt="">
+<img src="bue/small/2010.png" width="1" height="1" alt="">
+<img src="bom/small/1880.png" width="1" height="1" alt="">
+<img src="bom/small/1890.png" width="1" height="1" alt="">
+<img src="bom/small/1900.png" width="1" height="1" alt="">
+<img src="bom/small/1910.png" width="1" height="1" alt="">
+<img src="bom/small/1920.png" width="1" height="1" alt="">
+<img src="bom/small/1930.png" width="1" height="1" alt="">
+<img src="bom/small/1940.png" width="1" height="1" alt="">
+<img src="bom/small/1950.png" width="1" height="1" alt="">
+<img src="bom/small/1960.png" width="1" height="1" alt="">
+<img src="bom/small/1970.png" width="1" height="1" alt="">
+<img src="bom/small/1980.png" width="1" height="1" alt="">
+<img src="bom/small/1990.png" width="1" height="1" alt="">
+<img src="bom/small/2000.png" width="1" height="1" alt="">
+<img src="bom/small/2010.png" width="1" height="1" alt="">
+<img src="syd/small/1880.png" width="1" height="1" alt="">
+<img src="syd/small/1890.png" width="1" height="1" alt="">
+<img src="syd/small/1900.png" width="1" height="1" alt="">
 <img src="syd/small/1910.png" width="1" height="1" alt="">
 <img src="syd/small/1920.png" width="1" height="1" alt="">
 <img src="syd/small/1930.png" width="1" height="1" alt="">
@@ -166,6 +181,9 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="syd/small/1990.png" width="1" height="1" alt="">
 <img src="syd/small/2000.png" width="1" height="1" alt="">
 <img src="syd/small/2010.png" width="1" height="1" alt="">
+<img src="mex/small/1880.png" width="1" height="1" alt="">
+<img src="mex/small/1890.png" width="1" height="1" alt="">
+<img src="mex/small/1900.png" width="1" height="1" alt="">
 <img src="mex/small/1910.png" width="1" height="1" alt="">
 <img src="mex/small/1920.png" width="1" height="1" alt="">
 <img src="mex/small/1930.png" width="1" height="1" alt="">
@@ -177,6 +195,9 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="mex/small/1990.png" width="1" height="1" alt="">
 <img src="mex/small/2000.png" width="1" height="1" alt="">
 <img src="mex/small/2010.png" width="1" height="1" alt="">
+<img src="sao/small/1880.png" width="1" height="1" alt="">
+<img src="sao/small/1890.png" width="1" height="1" alt="">
+<img src="sao/small/1900.png" width="1" height="1" alt="">
 <img src="sao/small/1910.png" width="1" height="1" alt="">
 <img src="sao/small/1920.png" width="1" height="1" alt="">
 <img src="sao/small/1930.png" width="1" height="1" alt="">
@@ -188,6 +209,9 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="sao/small/1990.png" width="1" height="1" alt="">
 <img src="sao/small/2000.png" width="1" height="1" alt="">
 <img src="sao/small/2010.png" width="1" height="1" alt="">
+<img src="scl/small/1880.png" width="1" height="1" alt="">
+<img src="scl/small/1890.png" width="1" height="1" alt="">
+<img src="scl/small/1900.png" width="1" height="1" alt="">
 <img src="scl/small/1910.png" width="1" height="1" alt="">
 <img src="scl/small/1920.png" width="1" height="1" alt="">
 <img src="scl/small/1930.png" width="1" height="1" alt="">
@@ -199,6 +223,9 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="scl/small/1990.png" width="1" height="1" alt="">
 <img src="scl/small/2000.png" width="1" height="1" alt="">
 <img src="scl/small/2010.png" width="1" height="1" alt="">
+<img src="rio/small/1880.png" width="1" height="1" alt="">
+<img src="rio/small/1890.png" width="1" height="1" alt="">
+<img src="rio/small/1900.png" width="1" height="1" alt="">
 <img src="rio/small/1910.png" width="1" height="1" alt="">
 <img src="rio/small/1920.png" width="1" height="1" alt="">
 <img src="rio/small/1930.png" width="1" height="1" alt="">
@@ -210,6 +237,9 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="rio/small/1990.png" width="1" height="1" alt="">
 <img src="rio/small/2000.png" width="1" height="1" alt="">
 <img src="rio/small/2010.png" width="1" height="1" alt="">
+<img src="ccs/small/1880.png" width="1" height="1" alt="">
+<img src="ccs/small/1890.png" width="1" height="1" alt="">
+<img src="ccs/small/1900.png" width="1" height="1" alt="">
 <img src="ccs/small/1910.png" width="1" height="1" alt="">
 <img src="ccs/small/1920.png" width="1" height="1" alt="">
 <img src="ccs/small/1930.png" width="1" height="1" alt="">
