@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -20,7 +18,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3007,7 +3005,7 @@
            x="-136.718"
            y="8.5"
            id="tspan1237"
-           style="font-size:25px;fill:#000000;font-family:ArialMT">As of: end 2003</tspan>
+           style="font-size:25px;font-family:ArialMT;fill:#000000">As of: end 2003</tspan>
       </text>
     </g>
     <text
