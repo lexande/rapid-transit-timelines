@@ -1100,22 +1100,24 @@
          style="font-size:7px;fill:#000000;font-family:ArialMT">Hengyang</tspan>
     </text>
     <text
-       transform="translate(725.011,701.648)"
+       y="689.26697"
+       x="735.32855"
        id="text403">
       <tspan
-         x="-16.459999"
-         y="2"
+         x="718.86859"
+         y="691.26697"
          id="tspan405"
-         style="font-size:7px;fill:#000000;font-family:ArialMT">Shaoguan</tspan>
+         style="font-size:7px;font-family:ArialMT;fill:#000000">Shaoguan</tspan>
     </text>
     <text
-       transform="translate(727.319,734.164)"
+       y="725.72192"
+       x="750.01892"
        id="text407">
       <tspan
-         x="-18.598"
-         y="2"
+         x="731.42096"
+         y="727.72192"
          id="tspan409"
-         style="font-size:7px;fill:#000000;font-family:ArialMT">Guangzhou</tspan>
+         style="font-size:7px;font-family:ArialMT;fill:#000000">Guangzhou</tspan>
     </text>
     <text
        transform="translate(779.431,746.229)"
@@ -3054,13 +3056,14 @@
          style="font-size:7px;fill:#000000;font-family:ArialMT">Hotan</tspan>
     </text>
     <text
-       transform="translate(712.2,744.998)"
+       y="728.86487"
+       x="697.75458"
        id="text1259">
       <tspan
-         x="-13.276"
-         y="2"
+         x="684.47858"
+         y="730.86487"
          id="tspan1261"
-         style="font-size:7px;fill:#000000;font-family:ArialMT">Wuzhou</tspan>
+         style="font-size:7px;font-family:ArialMT;fill:#000000">Wuzhou</tspan>
     </text>
     <text
        transform="translate(634.258,714.172)"
@@ -5843,4 +5846,42 @@
          style="font-size:7px;fill:#000000;font-family:ArialMT">Huangshi</tspan>
     </text>
   </g>
+  <path
+     id="path6874-0-9"
+     d="m 728.44707,740.1478 c -1.989,0 -3.604,-1.613 -3.604,-3.604 0,-1.991 1.613,-3.604 3.604,-3.604 1.983,0 3.602,1.611 3.602,3.604 0,1.991 -1.617,3.604 -3.602,3.604 z"
+     style="fill:#ffffff" />
+  <text
+     id="text1305"
+     x="511.24402"
+     y="387.0004">
+    <tspan
+       id="tspan1307"
+       font-size="7"
+       y="389.0004"
+       x="497.12299"
+       style="font-size:7px;font-family:ArialMT;fill:#000000">Zhangye</tspan>
+  </text>
+  <path
+     id="path2055"
+     d="m 499.303,399.45038 c -1.988,0 -3.604,-1.612 -3.604,-3.602 0,-1.99 1.613,-3.604 3.604,-3.604 1.984,0 3.603,1.613 3.603,3.604 0,1.99 -1.614,3.602 -3.603,3.602 z"
+     style="fill:#ffffff" />
+  <path
+     id="path2057"
+     d="m 499.303,399.45038 c -1.988,0 -3.604,-1.612 -3.604,-3.602 0,-1.99 1.613,-3.604 3.604,-3.604 1.984,0 3.603,1.613 3.603,3.604 0,1.99 -1.614,3.602 -3.603,3.602 z"
+     style="fill-opacity:0;stroke:#000000;stroke-width:2" />
+  <path
+     id="path6876-9-4"
+     d="m 728.44707,740.1478 c -1.989,0 -3.604,-1.613 -3.604,-3.604 0,-1.991 1.613,-3.604 3.604,-3.604 1.983,0 3.602,1.611 3.602,3.604 0,1.991 -1.617,3.604 -3.602,3.604 z"
+     style="fill-opacity:0;stroke:#000000;stroke-width:2" />
+  <text
+     y="744.23492"
+     x="726.18854"
+     id="text425-7">
+    <tspan
+       style="font-size:7px;font-family:ArialMT;fill:#000000"
+       id="tspan427-4"
+       font-size="7"
+       y="746.23492"
+       x="707.59058">Zhaoqing</tspan>
+  </text>
 </svg>
