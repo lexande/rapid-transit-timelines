@@ -20,6 +20,8 @@ function toggleshow(x) {
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <center>
 <h3>Streetcar Scale Comparison</h3>
+<span id="ATL" style="display: inline-block; vertical-align: middle">Atlanta<br>
+  <img src="atl.png" title="Atlanta" alt="Atlanta map" style="border-width: 1px; border-style: solid"></span>
 <span id="BLK" style="display: inline-block; vertical-align: middle">Blackpool<br>
   <img src="blk.png" title="Blackpool" alt="Blackpool map" style="border-width: 1px; border-style: solid"></span>
 <span id="BOS" style="display: inline-block; vertical-align: middle">Boston<br>
@@ -64,6 +66,7 @@ function toggleshow(x) {
   <img src="tus.png" title="Tucson" alt="Tucson map" style="border-width: 1px; border-style: solid"></span>
 <p>
 <form action="">Cities to show:
+<div style="display: inline-block"><input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked>Atlanta</div>
 <div style="display: inline-block"><input type="checkbox" id="BLKcheckbox" onclick="toggleshow('BLK')" checked>Blackpool</div>
 <div style="display: inline-block"><input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked>Boston</div>
 <div style="display: inline-block"><input type="checkbox" id="CHCcheckbox" onclick="toggleshow('CHC')" checked>Christchurch</div>
