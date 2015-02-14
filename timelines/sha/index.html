@@ -22,7 +22,7 @@ function update() {
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
-	location.replace("#" + (start+step*index));
+        location.replace("#" + (start+step*index));
 }
 function nextmap() {
 	index=(index+1)%count;
@@ -44,6 +44,9 @@ function gotoyear(x) {
 	}
 }
 window.onload=function() {
+	gotoyear(location.hash.substring(1));
+}
+window.onhashchange=function() {
 	gotoyear(location.hash.substring(1));
 }
 </script>
