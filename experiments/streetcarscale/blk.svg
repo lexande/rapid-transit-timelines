@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,10 +6,10 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="797"
+   id="svg2"
    height="2391"
-   id="svg2">
+   width="797"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,7 +25,7 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="file:///home/alexander/timelines/experiments/streetcarscale/streetmap/blkosm.png"
+     xlink:href="streetmap/blkosm.png"
      x="0"
      y="0"
      width="797"
@@ -35,15 +33,15 @@
      id="image10"
      style="display:none" />
   <path
-     d="m 613,60 4,-4 12.5,-1 1.5,-2.5 -5,-12 -3,-1.5 -13,6 0.5,4 3.5,14 -2.5,25 0.5,8 -2,4.5 -69,49.5 -37,59.5"
+     style="fill:none;stroke:#69164e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3006"
-     style="fill:none;stroke:#69164e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 613,60 4,-4 12.5,-1 1.5,-2.5 -5,-12 -3,-1.5 -13,6 0.5,4 3.5,14 -2.5,25 0.5,8 -2,4.5 -69,49.5 -37,59.5" />
   <path
-     d="m 504,207.5 -63.5,106.5 -11,36 -12,24.5 -38,60 -36,36 -9,18.5 -1,14"
+     style="fill:none;stroke:#69164e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
      id="path3776"
-     style="fill:none;stroke:#69164e;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     d="m 504,207.5 -63.5,106.5 -11,36 -12,24.5 -38,60 -36,36 -9,18.5 -1,14" />
   <path
-     d="m 333.5,502.5 -0.5,48.5 -5.5,17.5 1,37.5 -4.5,55.5 5,30.5 2,24 7.5,31 0,16 -8,52.5 -11.5,12.5 -17.5,15.5 -4,11.5 6.5,59.5 -2.5,12 -5,6.5 -28.5,25 -5,9 -28.5,155.5 -29.5,122.5 0.5,22 -1.5,25.5 -9.5,100.5 -3,100.5 -8,17.5 3.5,103.5 -0.5,23.5 4,39 -1,16 -9,24 6,104.5 -3,24.5 5.5,48 -4.5,118.5 -10,102 -11.5,30.5 -1,72.5 7,115.5 13.5,11"
+     style="fill:none;stroke:#69164e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3778"
-     style="fill:none;stroke:#69164e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 333.5,502.5 -0.5,48.5 -5.5,17.5 1,37.5 -4.5,55.5 5,30.5 2,24 7.5,31 0,16 -8,52.5 -11.5,12.5 -17.5,15.5 -4,11.5 6.5,59.5 -2.5,12 -5,6.5 -28.5,25 -5,9 -28.5,155.5 -29.5,122.5 0.5,22 -1.5,25.5 -9.5,100.5 -3,100.5 -8,17.5 3.5,103.5 -0.5,23.5 4,39 -1,16 -9,24 6,104.5 -3,24.5 5.5,48 -4.5,118.5 -10,102 -11.5,30.5 -1,72.5 7,115.5 13.5,11" />
 </svg>
