@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head><title>Northeast US Regional Rail Timeline</title>
+<head><title>Northeast US Passenger Rail Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <style type="text/css">
 div#preloader {
@@ -38,7 +38,7 @@ document.onkeydown=function(keypress) {
 }
 function gotoyear(x) {
 	inyear = parseInt(x);
-	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
+	if( start <= inyear & inyear <= start+step*count & !((inyear-start) % step) ) {
 		index = (inyear-start)/step;
 		update();
 	}
