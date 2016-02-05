@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,10 +6,10 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
+   id="svg2"
+   height="120"
    width="180"
-   height="90"
-   id="svg2">
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,15 +25,19 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="file:///home/alexander/timelines/experiments/streetcarscale/streetmap/chcosm.png"
+     xlink:href="streetmap/chcosm.png"
      x="-90"
-     y="-158"
-     width="248"
+     y="-166"
+     width="247.99992"
      height="248"
      id="image10"
      style="display:none" />
   <path
-     d="m 28.5,64 85.5,0 17,-8 15.5,8.5 8,-0.5 L 154,47.5 153.5,45 154,30"
+     style="fill:none;stroke:#ac2a1d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path2987"
-     style="fill:none;stroke:#ac2a1d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 28.499967,56 85.499973,0 17,-8 15.49999,8.5 8,-0.5 -0.5,-16.5 -0.5,-2.5 0.5,-15 -125.146411,0.135621 -1.348297,1.078637 -1.078636,30.471509 3.505571,3.235912" />
+  <path
+     id="path4195"
+     d="m 100.04357,56.65202 -2.426932,3.235912 0.26966,23.190705 -0.539319,4.044891 2.426933,2.426934 45.842078,0.539318 11.59535,10.24706 -27.23559,-28.044577 0,-5.662847 16.71887,-9.438078"
+     style="fill:none;fill-rule:evenodd;stroke:#ac2a1d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
