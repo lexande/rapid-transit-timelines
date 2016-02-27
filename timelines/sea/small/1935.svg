@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,10 +6,10 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="1225"
-   height="3060"
-   id="svg2">
+   id="svg2"
+   height="3900"
+   width="2000"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -29,27 +27,27 @@
   <image
      xlink:href="../streetmap/seaosm.png"
      x="88"
-     y="3.8000488"
-     width="1137"
-     height="2956.2"
+     y="-520.60022"
+     width="2501.3999"
+     height="5230.2002"
      id="image10"
      style="display:none" />
   <text
-     x="89.453133"
-     y="206.96094"
+     style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text2995"
-     xml:space="preserve"
-     style="font-size:143.99990845px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453133"
+     y="206.96094"
+     x="89.453133"><tspan
+       id="tspan1"
        y="206.96094"
-       id="tspan1">1935</tspan></text>
+       x="89.453133">1935</tspan></text>
   <text
-     x="89.453125"
-     y="2957.9609"
-     id="text2999"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
-       y="2957.9609"
-       id="tspan2"></tspan></text>
+     id="text2999"
+     y="3797.9609"
+     x="89.453125"><tspan
+       id="tspan2"
+       y="3797.9609"
+       x="89.453125"></tspan></text>
 </svg>
