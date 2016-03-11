@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,10 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="4650"
-   height="3200"
-   id="svg2">
+   id="svg2"
+   viewBox="0, 2400, 8700, 5000"
+   width="8700"
+   height="5000"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,29 +26,29 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/saoosm.png"
-     style="display:none"
+     xlink:href=".././../streetmap/saoosm.png"
      id="image10"
-     height="3094"
-     width="4641"
-     y="0"
-     x="9" />
+     height="7425.6001"
+     width="11138.4"
+     y="-125.6001"
+     x="-200"
+     style="display:none" />
   <text
-     x="98.453201"
-     y="206.96089"
+     style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text3815"
-     xml:space="preserve"
-     style="font-size:143.99990845px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="98.453201"
-       y="206.96089"
-       id="tspan1">1930</tspan></text>
+     y="2606.96094"
+     x="89.453079"><tspan
+       id="tspan1"
+       y="2606.96094"
+       x="89.453079">1930</tspan></text>
   <text
-     x="89.453133"
-     y="3097.9609"
-     id="text3819"
+     style="font-style:normal;font-weight:normal;font-size:143.99989319px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-size:143.99989319px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453133"
-       y="3097.9609"
-       id="tspan2"></tspan></text>
+     id="text3819"
+     y="7297.9609"
+     x="89.453133"><tspan
+       id="tspan2"
+       y="7297.9609"
+       x="89.453133"></tspan></text>
 </svg>
