@@ -10,7 +10,7 @@ if [ -f $(expr $START + 1).svg ]; then
 elif [ -f $(expr $START + 5).svg ]; then
 	STEP=5
 	COUNT=$(expr 1 + \( 2015 - $START \) / 5)
-	INDEX="count-2"
+	INDEX="count-1"
 	SNAME="five years"
 else
 	STEP=10
