@@ -8,7 +8,6 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="1668"
    height="1668"
@@ -21,7 +20,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,17 +34,6 @@
      width="1668"
      y="0"
      x="0" />
-  <path
-     d="m 631.61845,1196.6367 40.76975,-22.9043 216.3747,-117.3798 25.4558,-7.071 121.9759,-10.6066 17.6777,-14.4957 8.1317,-1.0607 15.2028,12.3744 36.416,-2.4749 179.6052,-14.4957 22.9809,6.364 175.3625,-14.8493 32.1734,-1.7677"
-     inkscape:connector-curvature="0"
-     id="path3788"
-     style="fill:none;stroke:#00aedb;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
-     d="m 635.41182,1194.6148 -33.50532,18.0837 -108.40512,50.5891 -65.04307,32.0053 -34.07017,16.5189 -118.72942,40.2647 -58.84849,20.6486 -171.383324,48.5242"
-     inkscape:connector-curvature="0"
-     id="path3225"
-     style="fill:none;stroke:#00aedb;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-
   <text
      x="89.453178"
      y="206.96094"
@@ -54,5 +42,5 @@
      style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
        x="89.453178"
        y="206.96094"
-       id="tspan2994">1915</tspan></text>
+       id="tspan2994">1855</tspan></text>
 </svg>
