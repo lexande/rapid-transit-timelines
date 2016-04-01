@@ -6,10 +6,10 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="7050"
+   id="svg2"
    height="8600"
-   id="svg2">
+   width="7050"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -33,33 +33,37 @@
      id="image10"
      style="display:none" />
   <path
-     d="m 3761.363,3474.2746 8.3277,-3.3216 29.3297,-10.6371"
-     id="path3006"
-     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     d="m 3653.181,3596.273 20,-21.5 90.6173,-102.2287"
+     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3810"
-     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     d="m 3653.181,3596.273 20,-21.5 90.6173,-102.2287" />
   <path
-     d="m 3652.681,3596.273 -8.5,25.4999 -2,28 6.5,28.5 49.5,133.0001 16.5,40 32,57 40,48.5 47,45 42,37 43,49 5,7"
+     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3812"
-     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     d="m 3652.681,3596.273 -8.5,25.4999 -2,28 6.5,28.5 49.5,133.0001 16.5,40 32,57 40,48.5 47,45 42,37 43,49 5,7" />
   <text
-     x="89.453125"
-     y="206.96094"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text3820"
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453125"
+     y="206.96094"
+     x="89.453125"><tspan
+       id="tspan1"
        y="206.96094"
-       id="tspan1">1900</tspan></text>
+       x="89.453125">1900</tspan></text>
   <text
-     x="89.453125"
-     y="8497.9609"
-     id="text3824"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453125"
+     id="text3824"
+     y="8497.9609"
+     x="89.453125"><tspan
+       id="tspan2"
        y="8497.9609"
-       id="tspan2"></tspan></text>
+       x="89.453125"></tspan></text>
+  <path
+     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3006-4"
+     d="m 3585.5505,3422.7242 6.1051,8.583 30.7966,52.2373 8.9661,12.4746 8.9661,8.9661 10.5254,6.6271 15.2034,0.7797 14.4237,-6.2373 37.0339,-17.5424 33.5255,-10.9152 48.0219,-17.4164" />
+  <path
+     style="fill:none;stroke:#018dd2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3796"
+     d="m 3590.681,3429.2733 -30,-44 -34,-37 -32.5,-46.5 -3.653,-4.5075" />
 </svg>
