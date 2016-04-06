@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,10 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="2477"
-   height="3025"
-   id="svg2">
+   id="svg2"
+   height="5650"
+   viewBox="100, 0, 7550, 5650"
+   width="7550"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,29 +26,37 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/mucosm.png"
-     style="display:none"
+     xlink:href=".././../streetmap/mucosm.png"
      id="image10"
-     height="2927.3635"
-     width="2477"
-     y="-2.3635025"
-     x="0" />
+     height="5629.5449"
+     width="7656.1812"
+     y="20.455076"
+     x="0"
+     style="display:none" />
+  <path
+     style="fill:none;stroke:#4fae35;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3856"
+     d="m 2613.6809,3194.4091 87,38.5 17.5,7.5 65,10 133,9.5 132.5,20.5 73,12 82.5,2.5 128.117,11.1317 281.0178,33.8413" />
+  <path
+     style="fill:none;stroke:#4fae30;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+     id="path3866"
+     d="m 4075.1809,4012.9091 20,22 20.5,10.5 34.5,4.5 258.5,19.5 38,12.5 23.5,18 15.5,21 27.5,35.5 33.5,41 74.5,102.5" />
   <text
-     x="89.453125"
-     y="2922.9609"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text3874"
-     xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
-       y="2922.9609"
-       id="tspan3876"></tspan></text>
+     y="5547.9609"
+     x="189.453125"><tspan
+       id="tspan2"
+       y="5547.9609"
+       x="189.453125"></tspan></text>
   <text
-     x="89.453201"
-     y="206.96089"
-     id="text3878"
+     style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-size:143.99990845px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453201"
-       y="206.96089"
-       id="tspan3880">1970</tspan></text>
+     id="text3878"
+     y="206.96094"
+     x="189.453133"><tspan
+       id="tspan1"
+       y="206.96094"
+       x="189.453133">1970</tspan></text>
 </svg>
