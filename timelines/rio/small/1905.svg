@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,10 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="3109"
-   height="3109"
-   id="svg2">
+   id="svg2"
+   height="3100"
+   width="3100"
+   viewBox="4500, 2300, 3100, 3100"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,29 +26,37 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/rioosm.png"
-     style="display:none"
+     xlink:href=".././../streetmap/rioosm.png"
      id="image10"
-     height="3109"
-     width="3109"
-     y="100"
-     x="0" />
+     height="5596.2002"
+     width="7772.5"
+     y="-96.200073"
+     x="-172.5"
+     style="display:none" />
   <text
-     x="89.453178"
-     y="206.96085"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text3759"
-     xml:space="preserve"
-     style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453178"
-       y="206.96085"
-       id="tspan1">1905</tspan></text>
+     y="2506.96094"
+     x="4589.453133"><tspan
+       id="tspan1"
+       y="2506.96094"
+       x="4589.453133">1905</tspan></text>
   <text
-     x="89.453125"
-     y="3006.9609"
-     id="text3763"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
-       y="3006.9609"
-       id="tspan2"></tspan></text>
+     id="text3763"
+     y="5297.9609"
+     x="4589.453125"><tspan
+       id="tspan2"
+       y="5297.9609"
+       x="4589.453125"></tspan></text>
+  <path
+     id="path5400"
+     d="m 7255.645,4119.4543 -11.7517,39.2703 -12.1347,43.4826"
+     style="fill:none;fill-rule:evenodd;stroke:#ffd92c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path5402"
+     d="m 7232.2642,4199.6791 -3.0337,5.0562 -9.101,6.5729 -2.0224,12.1347 3.0337,8.5954 -2.0225,3.5392 -7.0785,2.5281 -7.0786,0.5056 -6.0673,-4.0449 -11.1235,-9.101 -10.1122,0.5056 -6.573,6.573 0.5057,20.73 4.0448,4.0449 10.1123,4.0449 5.0561,4.0449 -0.5056,6.0674 -6.0674,10.6178 -12.1346,4.5505 -3.0337,4.0449 -0.5056,13.6515 -9.6066,8.5954 -9.6066,-1.5169"
+     style="fill:none;fill-rule:evenodd;stroke:#ffd92c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
 </svg>

@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,10 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="3109"
-   height="3109"
-   id="svg2">
+   id="svg2"
+   height="3100"
+   width="3100"
+   viewBox="4500, 2300, 3100, 3100"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,29 +26,29 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/rioosm.png"
-     style="display:none"
+     xlink:href=".././../streetmap/rioosm.png"
      id="image10"
-     height="3109"
-     width="3109"
-     y="100"
-     x="0" />
+     height="5596.2002"
+     width="7772.5"
+     y="-96.200073"
+     x="-172.5"
+     style="display:none" />
   <text
-     x="89.453178"
-     y="206.96085"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text3759"
-     xml:space="preserve"
-     style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453178"
-       y="206.96085"
-       id="tspan1">1845</tspan></text>
+     y="2506.96094"
+     x="4589.453133"><tspan
+       id="tspan1"
+       y="2506.96094"
+       x="4589.453133">1845</tspan></text>
   <text
-     x="89.453125"
-     y="3006.9609"
-     id="text3763"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
-       y="3006.9609"
-       id="tspan2"></tspan></text>
+     id="text3763"
+     y="5297.9609"
+     x="4589.453125"><tspan
+       id="tspan2"
+       y="5297.9609"
+       x="4589.453125"></tspan></text>
 </svg>
