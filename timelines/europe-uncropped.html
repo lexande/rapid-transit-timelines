@@ -18,12 +18,12 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-        ["LON","PAR","VIE","BCN","MAD","KBP","MOW","LED"].forEach(function(city) {
+        ["LON","PAR","BCN","MAD","KBP","MOW","LED"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
 	});
-        ["BER","MUC"].forEach(function(city) {
+        ["BER","MUC","VIE"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/uncropped/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -81,7 +81,7 @@ European cities -
 <span id="BER" style="display: inline-block; vertical-align: middle"><a href="ber">Berlin<br>
   <img name="BER" src="ber/uncropped/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="VIE" style="display: inline-block; vertical-align: middle"><a href="vie">Wien<br>
-  <img name="VIE" src="vie/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="VIE" src="vie/uncropped/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BCN" style="display: inline-block; vertical-align: middle"><a href="bcn">Barcelona<br>
   <img name="BCN" src="bcn/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MAD" style="display: inline-block; vertical-align: middle"><a href="mad">Madrid<br>
@@ -224,42 +224,42 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="ber/uncropped/small/2005.png" width="1" height="1" alt="">
 <img src="ber/uncropped/small/2010.png" width="1" height="1" alt="">
 <img src="ber/uncropped/small/2015.png" width="1" height="1" alt="">
-<img src="vie/small/1840.png" width="1" height="1" alt="">
-<img src="vie/small/1845.png" width="1" height="1" alt="">
-<img src="vie/small/1850.png" width="1" height="1" alt="">
-<img src="vie/small/1855.png" width="1" height="1" alt="">
-<img src="vie/small/1860.png" width="1" height="1" alt="">
-<img src="vie/small/1865.png" width="1" height="1" alt="">
-<img src="vie/small/1870.png" width="1" height="1" alt="">
-<img src="vie/small/1875.png" width="1" height="1" alt="">
-<img src="vie/small/1880.png" width="1" height="1" alt="">
-<img src="vie/small/1885.png" width="1" height="1" alt="">
-<img src="vie/small/1890.png" width="1" height="1" alt="">
-<img src="vie/small/1895.png" width="1" height="1" alt="">
-<img src="vie/small/1900.png" width="1" height="1" alt="">
-<img src="vie/small/1905.png" width="1" height="1" alt="">
-<img src="vie/small/1910.png" width="1" height="1" alt="">
-<img src="vie/small/1915.png" width="1" height="1" alt="">
-<img src="vie/small/1920.png" width="1" height="1" alt="">
-<img src="vie/small/1925.png" width="1" height="1" alt="">
-<img src="vie/small/1930.png" width="1" height="1" alt="">
-<img src="vie/small/1935.png" width="1" height="1" alt="">
-<img src="vie/small/1940.png" width="1" height="1" alt="">
-<img src="vie/small/1945.png" width="1" height="1" alt="">
-<img src="vie/small/1950.png" width="1" height="1" alt="">
-<img src="vie/small/1955.png" width="1" height="1" alt="">
-<img src="vie/small/1960.png" width="1" height="1" alt="">
-<img src="vie/small/1965.png" width="1" height="1" alt="">
-<img src="vie/small/1970.png" width="1" height="1" alt="">
-<img src="vie/small/1975.png" width="1" height="1" alt="">
-<img src="vie/small/1980.png" width="1" height="1" alt="">
-<img src="vie/small/1985.png" width="1" height="1" alt="">
-<img src="vie/small/1990.png" width="1" height="1" alt="">
-<img src="vie/small/1995.png" width="1" height="1" alt="">
-<img src="vie/small/2000.png" width="1" height="1" alt="">
-<img src="vie/small/2005.png" width="1" height="1" alt="">
-<img src="vie/small/2010.png" width="1" height="1" alt="">
-<img src="vie/small/2015.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1840.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1845.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1850.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1855.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1860.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1865.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1870.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1875.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1880.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1885.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1890.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1895.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1900.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1905.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1910.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1915.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1920.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1925.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1930.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1935.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1940.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1945.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1950.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1955.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1960.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1965.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1970.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1975.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1980.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1985.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1990.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/1995.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/2000.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/2005.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/2010.png" width="1" height="1" alt="">
+<img src="vie/uncropped/small/2015.png" width="1" height="1" alt="">
 <img src="bcn/small/1840.png" width="1" height="1" alt="">
 <img src="bcn/small/1845.png" width="1" height="1" alt="">
 <img src="bcn/small/1850.png" width="1" height="1" alt="">

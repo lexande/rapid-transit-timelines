@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
+   id="svg2"
+   height="3100"
    width="2900"
-   height="2473"
-   id="svg2">
+   viewBox="0, 0, 2900, 3100"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -21,36 +19,36 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/vieosm.png"
-     style="display:none"
+     xlink:href=".././../streetmap/vieosm.png"
      id="image10"
-     height="2473"
-     width="2473"
+     height="4496.3628"
+     width="2922.636"
      y="0"
-     x="0" />
+     x="0"
+     style="display:none" />
   <text
-     x="89.453178"
-     y="206.96085"
+     style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     xml:space="preserve"
      id="text3818"
-     xml:space="preserve"
-     style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453178"
+     y="206.96085"
+     x="89.4532"><tspan
+       id="tspan1"
        y="206.96085"
-       id="tspan1">1855</tspan></text>
+       x="89.4532">1855</tspan></text>
   <text
-     x="89.453125"
-     y="2370.9609"
-     id="text3822"
+     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
-       y="2370.9609"
-       id="tspan2"></tspan></text>
+     id="text3822"
+     y="2997.9609"
+     x="89.4532"><tspan
+       id="tspan2"
+       y="2997.9609"
+       x="89.4532"></tspan></text>
 </svg>
