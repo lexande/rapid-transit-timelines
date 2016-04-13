@@ -1,5 +1,8 @@
 #!/bin/bash
 mkdir -p small
+if [ -L small ]; then
+    exit
+fi
 for i in $@; do
     if [ $i -nt small/$i ]; then
         ~/timelines/scripts/hideyear.pl $i > small/$i
