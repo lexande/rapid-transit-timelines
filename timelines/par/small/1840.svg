@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,10 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="2625"
-   height="2825"
-   id="svg2">
+   id="svg2"
+   height="5850"
+   width="6550"
+   viewBox="700, 0, 6550, 5850"
+   version="1.1">
   <metadata
      id="metadata44">
     <rdf:RDF>
@@ -29,39 +28,39 @@
     <linearGradient
        id="linearGradient29158">
       <stop
-         id="stop29160"
+         offset="0"
          style="stop-color:#6699cc;stop-opacity:1"
-         offset="0" />
+         id="stop29160" />
       <stop
-         id="stop29162"
+         offset="1"
          style="stop-color:#6699cc;stop-opacity:0.41237113"
-         offset="1" />
+         id="stop29162" />
     </linearGradient>
   </defs>
   <image
-     xlink:href="../streetmap/parosm.png"
-     style="display:none"
+     xlink:href=".././../streetmap/parosm.png"
      id="image12"
-     height="2665.8462"
-     width="2888"
-     y="-40.84639"
-     x="-168" />
+     height="6886.769"
+     width="7997.5381"
+     y="263.23096"
+     x="666.13562"
+     style="display:none" />
   <text
-     x="89.453178"
-     y="206.96085"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text2847"
-     xml:space="preserve"
-     style="font-size:143.99993896px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453178"
-       y="206.96085"
-       id="tspan1">1840</tspan></text>
+     y="206.96103"
+     x="789.453125"><tspan
+       id="tspan1"
+       y="206.96103"
+       x="789.453125">1840</tspan></text>
   <text
-     x="89.453133"
-     y="2722.9609"
-     id="text2847-0"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-size:143.99993896px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453133"
-       y="2722.9609"
-       id="tspan2"></tspan></text>
+     id="text2847-0"
+     y="5747.9609"
+     x="789.453125"><tspan
+       id="tspan2"
+       y="5747.9609"
+       x="789.453125"></tspan></text>
 </svg>
