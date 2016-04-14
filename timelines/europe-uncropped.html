@@ -18,12 +18,12 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-        ["LON","PAR","BCN","MAD","KBP","MOW","LED"].forEach(function(city) {
+        ["LON","BCN","MAD","KBP","MOW","LED"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
 	});
-        ["BER","MUC","VIE"].forEach(function(city) {
+        ["BER","MUC","VIE","PAR"].forEach(function(city) {
 	        document[city].src=(city.toLowerCase() + "/uncropped/small/" + (start+step*index) + ".png");
 	        document[city].title=start+step*index;
         	document[city].alt=start+step*index + " map";
@@ -77,7 +77,7 @@ European cities -
 <span id="LON" style="display: inline-block; vertical-align: middle"><a href="lon">London<br>
   <img name="LON" src="lon/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PAR" style="display: inline-block; vertical-align: middle"><a href="par">Paris<br>
-  <img name="PAR" src="par/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="PAR" src="par/uncropped/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BER" style="display: inline-block; vertical-align: middle"><a href="ber">Berlin<br>
   <img name="BER" src="ber/uncropped/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
 <span id="VIE" style="display: inline-block; vertical-align: middle"><a href="vie">Wien<br>
@@ -152,42 +152,42 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="lon/small/2005.png" width="1" height="1" alt="">
 <img src="lon/small/2010.png" width="1" height="1" alt="">
 <img src="lon/small/2015.png" width="1" height="1" alt="">
-<img src="par/small/1840.png" width="1" height="1" alt="">
-<img src="par/small/1845.png" width="1" height="1" alt="">
-<img src="par/small/1850.png" width="1" height="1" alt="">
-<img src="par/small/1855.png" width="1" height="1" alt="">
-<img src="par/small/1860.png" width="1" height="1" alt="">
-<img src="par/small/1865.png" width="1" height="1" alt="">
-<img src="par/small/1870.png" width="1" height="1" alt="">
-<img src="par/small/1875.png" width="1" height="1" alt="">
-<img src="par/small/1880.png" width="1" height="1" alt="">
-<img src="par/small/1885.png" width="1" height="1" alt="">
-<img src="par/small/1890.png" width="1" height="1" alt="">
-<img src="par/small/1895.png" width="1" height="1" alt="">
-<img src="par/small/1900.png" width="1" height="1" alt="">
-<img src="par/small/1905.png" width="1" height="1" alt="">
-<img src="par/small/1910.png" width="1" height="1" alt="">
-<img src="par/small/1915.png" width="1" height="1" alt="">
-<img src="par/small/1920.png" width="1" height="1" alt="">
-<img src="par/small/1925.png" width="1" height="1" alt="">
-<img src="par/small/1930.png" width="1" height="1" alt="">
-<img src="par/small/1935.png" width="1" height="1" alt="">
-<img src="par/small/1940.png" width="1" height="1" alt="">
-<img src="par/small/1945.png" width="1" height="1" alt="">
-<img src="par/small/1950.png" width="1" height="1" alt="">
-<img src="par/small/1955.png" width="1" height="1" alt="">
-<img src="par/small/1960.png" width="1" height="1" alt="">
-<img src="par/small/1965.png" width="1" height="1" alt="">
-<img src="par/small/1970.png" width="1" height="1" alt="">
-<img src="par/small/1975.png" width="1" height="1" alt="">
-<img src="par/small/1980.png" width="1" height="1" alt="">
-<img src="par/small/1985.png" width="1" height="1" alt="">
-<img src="par/small/1990.png" width="1" height="1" alt="">
-<img src="par/small/1995.png" width="1" height="1" alt="">
-<img src="par/small/2000.png" width="1" height="1" alt="">
-<img src="par/small/2005.png" width="1" height="1" alt="">
-<img src="par/small/2010.png" width="1" height="1" alt="">
-<img src="par/small/2015.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1840.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1845.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1850.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1855.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1860.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1865.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1870.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1875.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1880.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1885.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1890.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1895.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1900.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1905.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1910.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1915.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1920.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1925.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1930.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1935.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1940.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1945.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1950.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1955.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1960.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1965.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1970.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1975.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1980.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1985.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1990.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/1995.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/2000.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/2005.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/2010.png" width="1" height="1" alt="">
+<img src="par/uncropped/small/2015.png" width="1" height="1" alt="">
 <img src="ber/uncropped/small/1840.png" width="1" height="1" alt="">
 <img src="ber/uncropped/small/1845.png" width="1" height="1" alt="">
 <img src="ber/uncropped/small/1850.png" width="1" height="1" alt="">
