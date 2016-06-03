@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -29,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/pitosm.png"
-     style="display:none"
      id="image10"
      height="2816"
      width="2816"
      y="34"
-     x="0" />
+     x="0"
+     style="display:none" />
   <text
      x="89.453178"
      y="206.96085"
@@ -53,4 +51,12 @@
        x="89.453125"
        y="2747.9609"
        id="tspan2"></tspan></text>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#6e84c1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 1287.6324,540.79051 -18.8692,46.41817"
+     id="path4138" />
+  <path
+     id="path4139"
+     d="m 1461.006,592.97919 1.868,39.22701 -1.868,8.53922 -5.337,5.87071 -48.0331,23.48283"
+     style="fill:none;fill-rule:evenodd;stroke:#6e84c1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
 </svg>

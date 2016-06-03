@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="2800"
-   height="2850"
+   id="svg2"
    viewBox="0, 0, 2800, 2850"
-   id="svg2">
+   height="2850"
+   width="2800"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -29,28 +27,40 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/pitosm.png"
-     style="display:none"
      id="image10"
      height="2816"
      width="2816"
      y="34"
-     x="0" />
+     x="0"
+     style="display:none" />
   <text
-     x="89.453178"
-     y="206.96085"
+     style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     xml:space="preserve"
      id="text3000"
-     xml:space="preserve"
-     style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453178"
+     y="206.96085"
+     x="89.453178"><tspan
+       id="tspan1"
        y="206.96085"
-       id="tspan1">1940</tspan></text>
+       x="89.453178">1940</tspan></text>
   <text
-     x="89.453125"
-     y="2747.9609"
-     id="text3004"
+     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
+     id="text3004"
+     y="2747.9609"
+     x="89.453125"><tspan
+       id="tspan2"
        y="2747.9609"
-       id="tspan2"></tspan></text>
+       x="89.453125"></tspan></text>
+  <path
+     id="path4138"
+     d="m 1287.6324,540.79051 -18.8692,46.41817"
+     style="fill:none;fill-rule:evenodd;stroke:#6e84c1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#6e84c1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 1461.006,592.97919 1.868,39.22701 -1.868,8.53922 -5.337,5.87071 -48.0331,23.48283"
+     id="path4139" />
+  <path
+     id="path4140"
+     d="m 1468.4302,601.08965 0.3625,64.34892"
+     style="fill:none;fill-rule:evenodd;stroke:#6e84c1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
