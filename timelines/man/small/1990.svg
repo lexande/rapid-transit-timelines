@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 3200 5200"
-   height="5200"
-   width="3200"
+   id="svg2"
    version="1.1"
-   id="svg2">
+   width="3200"
+   height="5200"
+   viewBox="0 0 3200 5200">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,43 +27,43 @@
      id="defs6" />
   <image
      style="display:none"
-     y="26.666504"
-     x="50"
-     id="image10"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/manosm.png"
-     preserveAspectRatio="none"
+     width="3104"
      height="5173.3335"
-     width="3104" />
+     preserveAspectRatio="none"
+     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/manosm.png"
+     id="image10"
+     x="50"
+     y="26.666504" />
   <path
-     id="path4221"
-     d="m 1322.035,2895.3742 18.965,1.1258 23,-6 111.5,-41 23,-6"
-     style="fill:none;fill-rule:evenodd;stroke:#4a62ad;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+     style="fill:none;fill-rule:evenodd;stroke:#4a62ad;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 1498.5,2843.5 -23,6 -111.5,41 -23,6 -18.965,-1.1258 -92.6123,-6.1793 -10.3284,-2.0657"
+     id="path4221" />
   <path
-     id="path4223"
+     style="fill:none;fill-rule:evenodd;stroke:#4a62ad;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1334.5,2607 -32.5,19 -91.5,55.5 -23,25 -20.5,14 -36,22 -30.5,8.5 -47,1 -40.5,-11 -37,-14.5 -22.5,-18 -11,-20.5 -7,-53"
-     style="fill:none;fill-rule:evenodd;stroke:#4a62ad;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path4223" />
   <text
-     id="text4227"
-     y="5097.4512"
-     x="86.816406"
+     xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:180px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     xml:space="preserve" />
+     x="86.816406"
+     y="5097.4512"
+     id="text4227" />
   <text
-     x="89.45314"
-     y="206.96092"
+     style="font-style:normal;font-weight:normal;font-size:143.99989319px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text2997"
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99989319px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.45314"
+     y="206.96092"
+     x="89.45314"><tspan
+       id="tspan1"
        y="206.96092"
-       id="tspan1">1990</tspan></text>
+       x="89.45314">1990</tspan></text>
   <text
-     x="89.45314"
-     y="5097.9604"
-     id="text2997-3"
+     style="font-style:normal;font-weight:normal;font-size:143.99989319px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99989319px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.45314"
+     id="text2997-3"
+     y="5097.9604"
+     x="89.45314"><tspan
+       id="tspan2"
        y="5097.9604"
-       id="tspan2"></tspan></text>
+       x="89.45314"></tspan></text>
 </svg>
