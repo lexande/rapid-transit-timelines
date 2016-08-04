@@ -18,7 +18,7 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-	["LON","PAR","BER","VIE","MUC","MAD","BCN","MOW","LED","KBP"].forEach(function(city) {
+	["LON","PAR","BER","VIE","BCN","MAD","MOW","LED","KBP","MUC"].forEach(function(city) {
 		document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		document[city].title=start+step*index;
 		document[city].alt=start+step*index + " map";
@@ -70,7 +70,7 @@ European cities -
 <a href="javascript:nextmap()">five years later (or press s)</a>
 <p>
 <span id="LON" style="display: inline-block; vertical-align: middle"><a href="lon">London<br>
-  <img name="LON" src="lon/small/2015.svg" title="2015" alt="2015 map" width="664px" height="591px" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="LON" src="lon/small/2015.svg" title="2015" alt="2015 map" width="631px" height="591px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PAR" style="display: inline-block; vertical-align: middle"><a href="par">Paris<br>
   <img name="PAR" src="par/small/2015.svg" title="2015" alt="2015 map" width="628px" height="519px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BER" style="display: inline-block; vertical-align: middle"><a href="ber">Berlin<br>
