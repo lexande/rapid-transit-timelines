@@ -12,12 +12,14 @@ for i in $@; do
             a=`grep 'tspan1">....-....' temp.svg | sed -e's/.*>\(....\)-.*/\1/'`
             b=`grep 'tspan1">....-....' temp.svg | sed -e's/.*>....-\(....\).*/\1/'`
             for k in `seq $a 5 $b`; do
-                 sed -e"s/tspan1\">....-..../tspan1\">$k/" temp.svg > $k.svg
-                 ~/timelines/scripts/smallautopng.sh $k.svg
+                sed -e"s/tspan1\">....-..../tspan1\">$k/" temp.svg > $k.svg
+                ~/timelines/scripts/smallautopng.sh $k.svg
+                gzip --keep $k.svg 
             done
             rm temp.svg
         else
             ~/timelines/scripts/smallautopng.sh $i
+            gzip --keep $i
         fi
         cd ..
     fi
