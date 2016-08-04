@@ -1,6 +1,9 @@
 #!/bin/bash
 START=$(basename $(ls *.svg | grep '^1\|^2' | head -n 1) .svg)
 END=$(basename $(ls *.svg | grep '^1\|^2' | tail -n 1) .svg)
+if [ $END == 2020 ]; then
+	END=2015
+fi
 if [ -f $(expr $START + 1).svg ]; then
         STEP=1
         COUNT=$(expr 1 + \( $END - $START \))
@@ -9,7 +12,7 @@ if [ -f $(expr $START + 1).svg ]; then
 
 elif [ -f $(expr $START + 5).svg ]; then
 	STEP=5
-	COUNT=$(expr 1 + \( 2015 - $START \) / 5)
+	COUNT=$(expr 1 + \( $END - $START \) / 5)
 	INDEX="count-1"
 	SNAME="five years"
 else
@@ -19,21 +22,27 @@ else
 	SNAME="ten years"
 fi
 CITYNAME=`cat name`
+CONTINENT=`cat c`
+NATIVEW=$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
+W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*1169/5376)}")
+H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*$W/$NATIVEW)}")
+
 sed -e"s/START/${START}/g; 
 s/STEP/${STEP}/g; 
 s/COUNT/${COUNT}/g; 
 s/CITYNAME/${CITYNAME}/g;
 s/INDEX/${INDEX}/g;
-s/SNAME/${SNAME}/g;" ~/timelines/scripts/boilerplate/car > index.html
-for i in *.svg; do
-	year=`basename $i .svg`
+s/SNAME/${SNAME}/g;
+s/WIDTH/${W}/g;
+s/HEIGHT/${H}/g;" ~/timelines/scripts/boilerplate/car > index.html
+for year in $(seq $START $STEP $END); do
 	echo \<a href=\"#${year}\" onclick=\"gotoyear\(${year}\)\"\>${year}\</a\> >> index.html
 done
 sed -e"s/SNAME/${SNAME}/g" ~/timelines/scripts/boilerplate/cadr >> index.html
-for i in *.svg; do
-	echo \<img src=\"`basename $i .svg`.png\" width=\"1\" height=\"1\" alt=\"\"\> >> index.html
+for year in $(seq $START $STEP $END); do
+	echo \<img src=\"${year}.svg\" width=\"1\" height=\"1\" alt=\"\"\> >> index.html
 done
-sed -e"s!<a href=.*>${CITYNAME}</a>!${CITYNAME}!" ~/timelines/scripts/boilerplate/$1 >> index.html
+sed -e"s!<a href=.*>${CITYNAME}</a>!${CITYNAME}!" ~/timelines/scripts/boilerplate/${CONTINENT} >> index.html
 if [ -d uncropped ]; then
 	 sed -e's!\.\.!\.\./\.\.!' index.html > uncropped/index.html
 fi

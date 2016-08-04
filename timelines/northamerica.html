@@ -18,10 +18,10 @@ count=29;
 step=5;
 index=count-1;
 function update() {
-        ["NYC","CHI","BOS","PHL","SFO","LAX","WAS","YTO","YMQ","YVR"].forEach(function(city) {
-	        document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".png");
-	        document[city].title=start+step*index;
-        	document[city].alt=start+step*index + " map";
+	["NYC","CHI","BOS","PHL","LAX","SFO","WAS","YTO","YMQ","YVR"].forEach(function(city) {
+		document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
+		document[city].title=start+step*index;
+		document[city].alt=start+step*index + " map";
 	});
 }
 function nextmap() {
@@ -34,7 +34,7 @@ function prevmap() {
 }
 function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
-        else document.getElementById(x).style.display = 'inline-block';
+	else document.getElementById(x).style.display = 'inline-block';
 }
 
 document.onkeydown=function(keypress) {
@@ -69,32 +69,32 @@ North American cities -
 <a href="javascript:prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:nextmap()">five years later (or press s)</a>
 <p>
-<span id="NYC" style="display: inline-block; vertical-align: middle"><a href="../subtimeline">New York<br>
-  <img name="NYC" src="nyc/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+<span id="NYC" style="display: inline-block; vertical-align: middle"><a href="../subtimeline/">New York<br>
+  <img name="NYC" src="nyc/small/2015.svg" title="2015" alt="2015 map" width="390px" height="390px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CHI" style="display: inline-block; vertical-align: middle"><a href="../ltimeline">Chicago<br>
-  <img name="CHI" src="chi/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="CHI" src="chi/small/2015.svg" title="2015" alt="2015 map" width="274px" height="407px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BOS" style="display: inline-block; vertical-align: middle"><a href="../ttimeline">Boston<br>
-  <img name="BOS" src="bos/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="BOS" src="bos/small/2015.svg" title="2015" alt="2015 map" width="235px" height="271px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PHL" style="display: inline-block; vertical-align: middle"><a href="phl">Philadelphia<br>
-  <img name="PHL" src="phl/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="PHL" src="phl/small/2015.svg" title="2015" alt="2015 map" width="319px" height="338px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="LAX" style="display: inline-block; vertical-align: middle"><a href="lax">Los Angeles<br>
-  <img name="LAX" src="lax/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="LAX" src="lax/small/2015.svg" title="2015" alt="2015 map" width="395px" height="467px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SFO" style="display: inline-block; vertical-align: middle"><a href="sfo">San Francisco<br>
-  <img name="SFO" src="sfo/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="SFO" src="sfo/small/2015.svg" title="2015" alt="2015 map" width="562px" height="601px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="WAS" style="display: inline-block; vertical-align: middle"><a href="was">Washington<br>
-  <img name="WAS" src="was/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="WAS" src="was/small/2015.svg" title="2015" alt="2015 map" width="439px" height="419px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YTO" style="display: inline-block; vertical-align: middle"><a href="yto">Toronto<br>
-  <img name="YTO" src="yto/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="YTO" src="yto/small/2015.svg" title="2015" alt="2015 map" width="248px" height="177px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YMQ" style="display: inline-block; vertical-align: middle"><a href="ymq">Montréal<br>
-  <img name="YMQ" src="ymq/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="YMQ" src="ymq/small/2015.svg" title="2015" alt="2015 map" width="172px" height="172px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YVR" style="display: inline-block; vertical-align: middle"><a href="yvr">Vancouver<br>
-  <img name="YVR" src="yvr/small/2015.png" title="2015" alt="2015 map" style="border-width: 1px; border-style: solid"></a></span>
+  <img name="YVR" src="yvr/small/2015.svg" title="2015" alt="2015 map" width="254px" height="152px" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:nextmap()">five years later (or press s)</a>
 <p>
 <form action="">Cities to show: 
-<div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="../subtimeline">New York</a></div>
+<div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="../subtimeline/">New York</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="../ltimeline">Chicago</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="phl">Philadelphia</a></div>
@@ -106,301 +106,301 @@ North American cities -
 <div style="display: inline-block"><input type="checkbox" id="YVRcheckbox" onclick="toggleshow('YVR')" checked><a href="yvr">Vancouver</a></div>
 </form>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 (CSS) pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="nyc/small/1875.png" width="1" height="1" alt="">
-<img src="nyc/small/1880.png" width="1" height="1" alt="">
-<img src="nyc/small/1885.png" width="1" height="1" alt="">
-<img src="nyc/small/1890.png" width="1" height="1" alt="">
-<img src="nyc/small/1895.png" width="1" height="1" alt="">
-<img src="nyc/small/1900.png" width="1" height="1" alt="">
-<img src="nyc/small/1905.png" width="1" height="1" alt="">
-<img src="nyc/small/1910.png" width="1" height="1" alt="">
-<img src="nyc/small/1915.png" width="1" height="1" alt="">
-<img src="nyc/small/1920.png" width="1" height="1" alt="">
-<img src="nyc/small/1925.png" width="1" height="1" alt="">
-<img src="nyc/small/1930.png" width="1" height="1" alt="">
-<img src="nyc/small/1935.png" width="1" height="1" alt="">
-<img src="nyc/small/1940.png" width="1" height="1" alt="">
-<img src="nyc/small/1945.png" width="1" height="1" alt="">
-<img src="nyc/small/1950.png" width="1" height="1" alt="">
-<img src="nyc/small/1955.png" width="1" height="1" alt="">
-<img src="nyc/small/1960.png" width="1" height="1" alt="">
-<img src="nyc/small/1965.png" width="1" height="1" alt="">
-<img src="nyc/small/1970.png" width="1" height="1" alt="">
-<img src="nyc/small/1975.png" width="1" height="1" alt="">
-<img src="nyc/small/1980.png" width="1" height="1" alt="">
-<img src="nyc/small/1985.png" width="1" height="1" alt="">
-<img src="nyc/small/1990.png" width="1" height="1" alt="">
-<img src="nyc/small/1995.png" width="1" height="1" alt="">
-<img src="nyc/small/2000.png" width="1" height="1" alt="">
-<img src="nyc/small/2005.png" width="1" height="1" alt="">
-<img src="nyc/small/2010.png" width="1" height="1" alt="">
-<img src="nyc/small/2015.png" width="1" height="1" alt="">
-<img src="chi/small/1875.png" width="1" height="1" alt="">
-<img src="chi/small/1880.png" width="1" height="1" alt="">
-<img src="chi/small/1885.png" width="1" height="1" alt="">
-<img src="chi/small/1890.png" width="1" height="1" alt="">
-<img src="chi/small/1895.png" width="1" height="1" alt="">
-<img src="chi/small/1900.png" width="1" height="1" alt="">
-<img src="chi/small/1905.png" width="1" height="1" alt="">
-<img src="chi/small/1910.png" width="1" height="1" alt="">
-<img src="chi/small/1915.png" width="1" height="1" alt="">
-<img src="chi/small/1920.png" width="1" height="1" alt="">
-<img src="chi/small/1925.png" width="1" height="1" alt="">
-<img src="chi/small/1930.png" width="1" height="1" alt="">
-<img src="chi/small/1935.png" width="1" height="1" alt="">
-<img src="chi/small/1940.png" width="1" height="1" alt="">
-<img src="chi/small/1945.png" width="1" height="1" alt="">
-<img src="chi/small/1950.png" width="1" height="1" alt="">
-<img src="chi/small/1955.png" width="1" height="1" alt="">
-<img src="chi/small/1960.png" width="1" height="1" alt="">
-<img src="chi/small/1965.png" width="1" height="1" alt="">
-<img src="chi/small/1970.png" width="1" height="1" alt="">
-<img src="chi/small/1975.png" width="1" height="1" alt="">
-<img src="chi/small/1980.png" width="1" height="1" alt="">
-<img src="chi/small/1985.png" width="1" height="1" alt="">
-<img src="chi/small/1990.png" width="1" height="1" alt="">
-<img src="chi/small/1995.png" width="1" height="1" alt="">
-<img src="chi/small/2000.png" width="1" height="1" alt="">
-<img src="chi/small/2005.png" width="1" height="1" alt="">
-<img src="chi/small/2010.png" width="1" height="1" alt="">
-<img src="chi/small/2015.png" width="1" height="1" alt="">
-<img src="bos/small/1875.png" width="1" height="1" alt="">
-<img src="bos/small/1880.png" width="1" height="1" alt="">
-<img src="bos/small/1885.png" width="1" height="1" alt="">
-<img src="bos/small/1890.png" width="1" height="1" alt="">
-<img src="bos/small/1895.png" width="1" height="1" alt="">
-<img src="bos/small/1900.png" width="1" height="1" alt="">
-<img src="bos/small/1905.png" width="1" height="1" alt="">
-<img src="bos/small/1910.png" width="1" height="1" alt="">
-<img src="bos/small/1915.png" width="1" height="1" alt="">
-<img src="bos/small/1920.png" width="1" height="1" alt="">
-<img src="bos/small/1925.png" width="1" height="1" alt="">
-<img src="bos/small/1930.png" width="1" height="1" alt="">
-<img src="bos/small/1935.png" width="1" height="1" alt="">
-<img src="bos/small/1940.png" width="1" height="1" alt="">
-<img src="bos/small/1945.png" width="1" height="1" alt="">
-<img src="bos/small/1950.png" width="1" height="1" alt="">
-<img src="bos/small/1955.png" width="1" height="1" alt="">
-<img src="bos/small/1960.png" width="1" height="1" alt="">
-<img src="bos/small/1965.png" width="1" height="1" alt="">
-<img src="bos/small/1970.png" width="1" height="1" alt="">
-<img src="bos/small/1975.png" width="1" height="1" alt="">
-<img src="bos/small/1980.png" width="1" height="1" alt="">
-<img src="bos/small/1985.png" width="1" height="1" alt="">
-<img src="bos/small/1990.png" width="1" height="1" alt="">
-<img src="bos/small/1995.png" width="1" height="1" alt="">
-<img src="bos/small/2000.png" width="1" height="1" alt="">
-<img src="bos/small/2005.png" width="1" height="1" alt="">
-<img src="bos/small/2010.png" width="1" height="1" alt="">
-<img src="bos/small/2015.png" width="1" height="1" alt="">
-<img src="lax/small/1875.png" width="1" height="1" alt="">
-<img src="lax/small/1880.png" width="1" height="1" alt="">
-<img src="lax/small/1885.png" width="1" height="1" alt="">
-<img src="lax/small/1890.png" width="1" height="1" alt="">
-<img src="lax/small/1895.png" width="1" height="1" alt="">
-<img src="lax/small/1900.png" width="1" height="1" alt="">
-<img src="lax/small/1905.png" width="1" height="1" alt="">
-<img src="lax/small/1910.png" width="1" height="1" alt="">
-<img src="lax/small/1915.png" width="1" height="1" alt="">
-<img src="lax/small/1920.png" width="1" height="1" alt="">
-<img src="lax/small/1925.png" width="1" height="1" alt="">
-<img src="lax/small/1930.png" width="1" height="1" alt="">
-<img src="lax/small/1935.png" width="1" height="1" alt="">
-<img src="lax/small/1940.png" width="1" height="1" alt="">
-<img src="lax/small/1945.png" width="1" height="1" alt="">
-<img src="lax/small/1950.png" width="1" height="1" alt="">
-<img src="lax/small/1955.png" width="1" height="1" alt="">
-<img src="lax/small/1960.png" width="1" height="1" alt="">
-<img src="lax/small/1965.png" width="1" height="1" alt="">
-<img src="lax/small/1970.png" width="1" height="1" alt="">
-<img src="lax/small/1975.png" width="1" height="1" alt="">
-<img src="lax/small/1980.png" width="1" height="1" alt="">
-<img src="lax/small/1985.png" width="1" height="1" alt="">
-<img src="lax/small/1990.png" width="1" height="1" alt="">
-<img src="lax/small/1995.png" width="1" height="1" alt="">
-<img src="lax/small/2000.png" width="1" height="1" alt="">
-<img src="lax/small/2005.png" width="1" height="1" alt="">
-<img src="lax/small/2010.png" width="1" height="1" alt="">
-<img src="lax/small/2015.png" width="1" height="1" alt="">
-<img src="phl/small/1875.png" width="1" height="1" alt="">
-<img src="phl/small/1880.png" width="1" height="1" alt="">
-<img src="phl/small/1885.png" width="1" height="1" alt="">
-<img src="phl/small/1890.png" width="1" height="1" alt="">
-<img src="phl/small/1895.png" width="1" height="1" alt="">
-<img src="phl/small/1900.png" width="1" height="1" alt="">
-<img src="phl/small/1905.png" width="1" height="1" alt="">
-<img src="phl/small/1910.png" width="1" height="1" alt="">
-<img src="phl/small/1915.png" width="1" height="1" alt="">
-<img src="phl/small/1920.png" width="1" height="1" alt="">
-<img src="phl/small/1925.png" width="1" height="1" alt="">
-<img src="phl/small/1930.png" width="1" height="1" alt="">
-<img src="phl/small/1935.png" width="1" height="1" alt="">
-<img src="phl/small/1940.png" width="1" height="1" alt="">
-<img src="phl/small/1945.png" width="1" height="1" alt="">
-<img src="phl/small/1950.png" width="1" height="1" alt="">
-<img src="phl/small/1955.png" width="1" height="1" alt="">
-<img src="phl/small/1960.png" width="1" height="1" alt="">
-<img src="phl/small/1965.png" width="1" height="1" alt="">
-<img src="phl/small/1970.png" width="1" height="1" alt="">
-<img src="phl/small/1975.png" width="1" height="1" alt="">
-<img src="phl/small/1980.png" width="1" height="1" alt="">
-<img src="phl/small/1985.png" width="1" height="1" alt="">
-<img src="phl/small/1990.png" width="1" height="1" alt="">
-<img src="phl/small/1995.png" width="1" height="1" alt="">
-<img src="phl/small/2000.png" width="1" height="1" alt="">
-<img src="phl/small/2005.png" width="1" height="1" alt="">
-<img src="phl/small/2010.png" width="1" height="1" alt="">
-<img src="phl/small/2015.png" width="1" height="1" alt="">
-<img src="sfo/small/1875.png" width="1" height="1" alt="">
-<img src="sfo/small/1880.png" width="1" height="1" alt="">
-<img src="sfo/small/1885.png" width="1" height="1" alt="">
-<img src="sfo/small/1890.png" width="1" height="1" alt="">
-<img src="sfo/small/1895.png" width="1" height="1" alt="">
-<img src="sfo/small/1900.png" width="1" height="1" alt="">
-<img src="sfo/small/1905.png" width="1" height="1" alt="">
-<img src="sfo/small/1910.png" width="1" height="1" alt="">
-<img src="sfo/small/1915.png" width="1" height="1" alt="">
-<img src="sfo/small/1920.png" width="1" height="1" alt="">
-<img src="sfo/small/1925.png" width="1" height="1" alt="">
-<img src="sfo/small/1930.png" width="1" height="1" alt="">
-<img src="sfo/small/1935.png" width="1" height="1" alt="">
-<img src="sfo/small/1940.png" width="1" height="1" alt="">
-<img src="sfo/small/1945.png" width="1" height="1" alt="">
-<img src="sfo/small/1950.png" width="1" height="1" alt="">
-<img src="sfo/small/1955.png" width="1" height="1" alt="">
-<img src="sfo/small/1960.png" width="1" height="1" alt="">
-<img src="sfo/small/1965.png" width="1" height="1" alt="">
-<img src="sfo/small/1970.png" width="1" height="1" alt="">
-<img src="sfo/small/1975.png" width="1" height="1" alt="">
-<img src="sfo/small/1980.png" width="1" height="1" alt="">
-<img src="sfo/small/1985.png" width="1" height="1" alt="">
-<img src="sfo/small/1990.png" width="1" height="1" alt="">
-<img src="sfo/small/1995.png" width="1" height="1" alt="">
-<img src="sfo/small/2000.png" width="1" height="1" alt="">
-<img src="sfo/small/2005.png" width="1" height="1" alt="">
-<img src="sfo/small/2010.png" width="1" height="1" alt="">
-<img src="sfo/small/2015.png" width="1" height="1" alt="">
-<img src="was/small/1875.png" width="1" height="1" alt="">
-<img src="was/small/1880.png" width="1" height="1" alt="">
-<img src="was/small/1885.png" width="1" height="1" alt="">
-<img src="was/small/1890.png" width="1" height="1" alt="">
-<img src="was/small/1895.png" width="1" height="1" alt="">
-<img src="was/small/1900.png" width="1" height="1" alt="">
-<img src="was/small/1905.png" width="1" height="1" alt="">
-<img src="was/small/1910.png" width="1" height="1" alt="">
-<img src="was/small/1915.png" width="1" height="1" alt="">
-<img src="was/small/1920.png" width="1" height="1" alt="">
-<img src="was/small/1925.png" width="1" height="1" alt="">
-<img src="was/small/1930.png" width="1" height="1" alt="">
-<img src="was/small/1935.png" width="1" height="1" alt="">
-<img src="was/small/1940.png" width="1" height="1" alt="">
-<img src="was/small/1945.png" width="1" height="1" alt="">
-<img src="was/small/1950.png" width="1" height="1" alt="">
-<img src="was/small/1955.png" width="1" height="1" alt="">
-<img src="was/small/1960.png" width="1" height="1" alt="">
-<img src="was/small/1965.png" width="1" height="1" alt="">
-<img src="was/small/1970.png" width="1" height="1" alt="">
-<img src="was/small/1975.png" width="1" height="1" alt="">
-<img src="was/small/1980.png" width="1" height="1" alt="">
-<img src="was/small/1985.png" width="1" height="1" alt="">
-<img src="was/small/1990.png" width="1" height="1" alt="">
-<img src="was/small/1995.png" width="1" height="1" alt="">
-<img src="was/small/2000.png" width="1" height="1" alt="">
-<img src="was/small/2005.png" width="1" height="1" alt="">
-<img src="was/small/2010.png" width="1" height="1" alt="">
-<img src="was/small/2015.png" width="1" height="1" alt="">
-<img src="yto/small/1875.png" width="1" height="1" alt="">
-<img src="yto/small/1880.png" width="1" height="1" alt="">
-<img src="yto/small/1885.png" width="1" height="1" alt="">
-<img src="yto/small/1890.png" width="1" height="1" alt="">
-<img src="yto/small/1895.png" width="1" height="1" alt="">
-<img src="yto/small/1900.png" width="1" height="1" alt="">
-<img src="yto/small/1905.png" width="1" height="1" alt="">
-<img src="yto/small/1910.png" width="1" height="1" alt="">
-<img src="yto/small/1915.png" width="1" height="1" alt="">
-<img src="yto/small/1920.png" width="1" height="1" alt="">
-<img src="yto/small/1925.png" width="1" height="1" alt="">
-<img src="yto/small/1930.png" width="1" height="1" alt="">
-<img src="yto/small/1935.png" width="1" height="1" alt="">
-<img src="yto/small/1940.png" width="1" height="1" alt="">
-<img src="yto/small/1945.png" width="1" height="1" alt="">
-<img src="yto/small/1950.png" width="1" height="1" alt="">
-<img src="yto/small/1955.png" width="1" height="1" alt="">
-<img src="yto/small/1960.png" width="1" height="1" alt="">
-<img src="yto/small/1965.png" width="1" height="1" alt="">
-<img src="yto/small/1970.png" width="1" height="1" alt="">
-<img src="yto/small/1975.png" width="1" height="1" alt="">
-<img src="yto/small/1980.png" width="1" height="1" alt="">
-<img src="yto/small/1985.png" width="1" height="1" alt="">
-<img src="yto/small/1990.png" width="1" height="1" alt="">
-<img src="yto/small/1995.png" width="1" height="1" alt="">
-<img src="yto/small/2000.png" width="1" height="1" alt="">
-<img src="yto/small/2005.png" width="1" height="1" alt="">
-<img src="yto/small/2010.png" width="1" height="1" alt="">
-<img src="yto/small/2015.png" width="1" height="1" alt="">
-<img src="ymq/small/1875.png" width="1" height="1" alt="">
-<img src="ymq/small/1880.png" width="1" height="1" alt="">
-<img src="ymq/small/1885.png" width="1" height="1" alt="">
-<img src="ymq/small/1890.png" width="1" height="1" alt="">
-<img src="ymq/small/1895.png" width="1" height="1" alt="">
-<img src="ymq/small/1900.png" width="1" height="1" alt="">
-<img src="ymq/small/1905.png" width="1" height="1" alt="">
-<img src="ymq/small/1910.png" width="1" height="1" alt="">
-<img src="ymq/small/1915.png" width="1" height="1" alt="">
-<img src="ymq/small/1920.png" width="1" height="1" alt="">
-<img src="ymq/small/1925.png" width="1" height="1" alt="">
-<img src="ymq/small/1930.png" width="1" height="1" alt="">
-<img src="ymq/small/1935.png" width="1" height="1" alt="">
-<img src="ymq/small/1940.png" width="1" height="1" alt="">
-<img src="ymq/small/1945.png" width="1" height="1" alt="">
-<img src="ymq/small/1950.png" width="1" height="1" alt="">
-<img src="ymq/small/1955.png" width="1" height="1" alt="">
-<img src="ymq/small/1960.png" width="1" height="1" alt="">
-<img src="ymq/small/1965.png" width="1" height="1" alt="">
-<img src="ymq/small/1970.png" width="1" height="1" alt="">
-<img src="ymq/small/1975.png" width="1" height="1" alt="">
-<img src="ymq/small/1980.png" width="1" height="1" alt="">
-<img src="ymq/small/1985.png" width="1" height="1" alt="">
-<img src="ymq/small/1990.png" width="1" height="1" alt="">
-<img src="ymq/small/1995.png" width="1" height="1" alt="">
-<img src="ymq/small/2000.png" width="1" height="1" alt="">
-<img src="ymq/small/2005.png" width="1" height="1" alt="">
-<img src="ymq/small/2010.png" width="1" height="1" alt="">
-<img src="ymq/small/2015.png" width="1" height="1" alt="">
-<img src="yvr/small/1875.png" width="1" height="1" alt="">
-<img src="yvr/small/1880.png" width="1" height="1" alt="">
-<img src="yvr/small/1885.png" width="1" height="1" alt="">
-<img src="yvr/small/1890.png" width="1" height="1" alt="">
-<img src="yvr/small/1895.png" width="1" height="1" alt="">
-<img src="yvr/small/1900.png" width="1" height="1" alt="">
-<img src="yvr/small/1905.png" width="1" height="1" alt="">
-<img src="yvr/small/1910.png" width="1" height="1" alt="">
-<img src="yvr/small/1915.png" width="1" height="1" alt="">
-<img src="yvr/small/1920.png" width="1" height="1" alt="">
-<img src="yvr/small/1925.png" width="1" height="1" alt="">
-<img src="yvr/small/1930.png" width="1" height="1" alt="">
-<img src="yvr/small/1935.png" width="1" height="1" alt="">
-<img src="yvr/small/1940.png" width="1" height="1" alt="">
-<img src="yvr/small/1945.png" width="1" height="1" alt="">
-<img src="yvr/small/1950.png" width="1" height="1" alt="">
-<img src="yvr/small/1955.png" width="1" height="1" alt="">
-<img src="yvr/small/1960.png" width="1" height="1" alt="">
-<img src="yvr/small/1965.png" width="1" height="1" alt="">
-<img src="yvr/small/1970.png" width="1" height="1" alt="">
-<img src="yvr/small/1975.png" width="1" height="1" alt="">
-<img src="yvr/small/1980.png" width="1" height="1" alt="">
-<img src="yvr/small/1985.png" width="1" height="1" alt="">
-<img src="yvr/small/1990.png" width="1" height="1" alt="">
-<img src="yvr/small/1995.png" width="1" height="1" alt="">
-<img src="yvr/small/2000.png" width="1" height="1" alt="">
-<img src="yvr/small/2005.png" width="1" height="1" alt="">
-<img src="yvr/small/2010.png" width="1" height="1" alt="">
-<img src="yvr/small/2015.png" width="1" height="1" alt="">
+<img src="nyc/small/1875.svg" width="1" height="1" alt="">
+<img src="nyc/small/1880.svg" width="1" height="1" alt="">
+<img src="nyc/small/1885.svg" width="1" height="1" alt="">
+<img src="nyc/small/1890.svg" width="1" height="1" alt="">
+<img src="nyc/small/1895.svg" width="1" height="1" alt="">
+<img src="nyc/small/1900.svg" width="1" height="1" alt="">
+<img src="nyc/small/1905.svg" width="1" height="1" alt="">
+<img src="nyc/small/1910.svg" width="1" height="1" alt="">
+<img src="nyc/small/1915.svg" width="1" height="1" alt="">
+<img src="nyc/small/1920.svg" width="1" height="1" alt="">
+<img src="nyc/small/1925.svg" width="1" height="1" alt="">
+<img src="nyc/small/1930.svg" width="1" height="1" alt="">
+<img src="nyc/small/1935.svg" width="1" height="1" alt="">
+<img src="nyc/small/1940.svg" width="1" height="1" alt="">
+<img src="nyc/small/1945.svg" width="1" height="1" alt="">
+<img src="nyc/small/1950.svg" width="1" height="1" alt="">
+<img src="nyc/small/1955.svg" width="1" height="1" alt="">
+<img src="nyc/small/1960.svg" width="1" height="1" alt="">
+<img src="nyc/small/1965.svg" width="1" height="1" alt="">
+<img src="nyc/small/1970.svg" width="1" height="1" alt="">
+<img src="nyc/small/1975.svg" width="1" height="1" alt="">
+<img src="nyc/small/1980.svg" width="1" height="1" alt="">
+<img src="nyc/small/1985.svg" width="1" height="1" alt="">
+<img src="nyc/small/1990.svg" width="1" height="1" alt="">
+<img src="nyc/small/1995.svg" width="1" height="1" alt="">
+<img src="nyc/small/2000.svg" width="1" height="1" alt="">
+<img src="nyc/small/2005.svg" width="1" height="1" alt="">
+<img src="nyc/small/2010.svg" width="1" height="1" alt="">
+<img src="nyc/small/2015.svg" width="1" height="1" alt="">
+<img src="chi/small/1875.svg" width="1" height="1" alt="">
+<img src="chi/small/1880.svg" width="1" height="1" alt="">
+<img src="chi/small/1885.svg" width="1" height="1" alt="">
+<img src="chi/small/1890.svg" width="1" height="1" alt="">
+<img src="chi/small/1895.svg" width="1" height="1" alt="">
+<img src="chi/small/1900.svg" width="1" height="1" alt="">
+<img src="chi/small/1905.svg" width="1" height="1" alt="">
+<img src="chi/small/1910.svg" width="1" height="1" alt="">
+<img src="chi/small/1915.svg" width="1" height="1" alt="">
+<img src="chi/small/1920.svg" width="1" height="1" alt="">
+<img src="chi/small/1925.svg" width="1" height="1" alt="">
+<img src="chi/small/1930.svg" width="1" height="1" alt="">
+<img src="chi/small/1935.svg" width="1" height="1" alt="">
+<img src="chi/small/1940.svg" width="1" height="1" alt="">
+<img src="chi/small/1945.svg" width="1" height="1" alt="">
+<img src="chi/small/1950.svg" width="1" height="1" alt="">
+<img src="chi/small/1955.svg" width="1" height="1" alt="">
+<img src="chi/small/1960.svg" width="1" height="1" alt="">
+<img src="chi/small/1965.svg" width="1" height="1" alt="">
+<img src="chi/small/1970.svg" width="1" height="1" alt="">
+<img src="chi/small/1975.svg" width="1" height="1" alt="">
+<img src="chi/small/1980.svg" width="1" height="1" alt="">
+<img src="chi/small/1985.svg" width="1" height="1" alt="">
+<img src="chi/small/1990.svg" width="1" height="1" alt="">
+<img src="chi/small/1995.svg" width="1" height="1" alt="">
+<img src="chi/small/2000.svg" width="1" height="1" alt="">
+<img src="chi/small/2005.svg" width="1" height="1" alt="">
+<img src="chi/small/2010.svg" width="1" height="1" alt="">
+<img src="chi/small/2015.svg" width="1" height="1" alt="">
+<img src="bos/small/1875.svg" width="1" height="1" alt="">
+<img src="bos/small/1880.svg" width="1" height="1" alt="">
+<img src="bos/small/1885.svg" width="1" height="1" alt="">
+<img src="bos/small/1890.svg" width="1" height="1" alt="">
+<img src="bos/small/1895.svg" width="1" height="1" alt="">
+<img src="bos/small/1900.svg" width="1" height="1" alt="">
+<img src="bos/small/1905.svg" width="1" height="1" alt="">
+<img src="bos/small/1910.svg" width="1" height="1" alt="">
+<img src="bos/small/1915.svg" width="1" height="1" alt="">
+<img src="bos/small/1920.svg" width="1" height="1" alt="">
+<img src="bos/small/1925.svg" width="1" height="1" alt="">
+<img src="bos/small/1930.svg" width="1" height="1" alt="">
+<img src="bos/small/1935.svg" width="1" height="1" alt="">
+<img src="bos/small/1940.svg" width="1" height="1" alt="">
+<img src="bos/small/1945.svg" width="1" height="1" alt="">
+<img src="bos/small/1950.svg" width="1" height="1" alt="">
+<img src="bos/small/1955.svg" width="1" height="1" alt="">
+<img src="bos/small/1960.svg" width="1" height="1" alt="">
+<img src="bos/small/1965.svg" width="1" height="1" alt="">
+<img src="bos/small/1970.svg" width="1" height="1" alt="">
+<img src="bos/small/1975.svg" width="1" height="1" alt="">
+<img src="bos/small/1980.svg" width="1" height="1" alt="">
+<img src="bos/small/1985.svg" width="1" height="1" alt="">
+<img src="bos/small/1990.svg" width="1" height="1" alt="">
+<img src="bos/small/1995.svg" width="1" height="1" alt="">
+<img src="bos/small/2000.svg" width="1" height="1" alt="">
+<img src="bos/small/2005.svg" width="1" height="1" alt="">
+<img src="bos/small/2010.svg" width="1" height="1" alt="">
+<img src="bos/small/2015.svg" width="1" height="1" alt="">
+<img src="phl/small/1875.svg" width="1" height="1" alt="">
+<img src="phl/small/1880.svg" width="1" height="1" alt="">
+<img src="phl/small/1885.svg" width="1" height="1" alt="">
+<img src="phl/small/1890.svg" width="1" height="1" alt="">
+<img src="phl/small/1895.svg" width="1" height="1" alt="">
+<img src="phl/small/1900.svg" width="1" height="1" alt="">
+<img src="phl/small/1905.svg" width="1" height="1" alt="">
+<img src="phl/small/1910.svg" width="1" height="1" alt="">
+<img src="phl/small/1915.svg" width="1" height="1" alt="">
+<img src="phl/small/1920.svg" width="1" height="1" alt="">
+<img src="phl/small/1925.svg" width="1" height="1" alt="">
+<img src="phl/small/1930.svg" width="1" height="1" alt="">
+<img src="phl/small/1935.svg" width="1" height="1" alt="">
+<img src="phl/small/1940.svg" width="1" height="1" alt="">
+<img src="phl/small/1945.svg" width="1" height="1" alt="">
+<img src="phl/small/1950.svg" width="1" height="1" alt="">
+<img src="phl/small/1955.svg" width="1" height="1" alt="">
+<img src="phl/small/1960.svg" width="1" height="1" alt="">
+<img src="phl/small/1965.svg" width="1" height="1" alt="">
+<img src="phl/small/1970.svg" width="1" height="1" alt="">
+<img src="phl/small/1975.svg" width="1" height="1" alt="">
+<img src="phl/small/1980.svg" width="1" height="1" alt="">
+<img src="phl/small/1985.svg" width="1" height="1" alt="">
+<img src="phl/small/1990.svg" width="1" height="1" alt="">
+<img src="phl/small/1995.svg" width="1" height="1" alt="">
+<img src="phl/small/2000.svg" width="1" height="1" alt="">
+<img src="phl/small/2005.svg" width="1" height="1" alt="">
+<img src="phl/small/2010.svg" width="1" height="1" alt="">
+<img src="phl/small/2015.svg" width="1" height="1" alt="">
+<img src="lax/small/1875.svg" width="1" height="1" alt="">
+<img src="lax/small/1880.svg" width="1" height="1" alt="">
+<img src="lax/small/1885.svg" width="1" height="1" alt="">
+<img src="lax/small/1890.svg" width="1" height="1" alt="">
+<img src="lax/small/1895.svg" width="1" height="1" alt="">
+<img src="lax/small/1900.svg" width="1" height="1" alt="">
+<img src="lax/small/1905.svg" width="1" height="1" alt="">
+<img src="lax/small/1910.svg" width="1" height="1" alt="">
+<img src="lax/small/1915.svg" width="1" height="1" alt="">
+<img src="lax/small/1920.svg" width="1" height="1" alt="">
+<img src="lax/small/1925.svg" width="1" height="1" alt="">
+<img src="lax/small/1930.svg" width="1" height="1" alt="">
+<img src="lax/small/1935.svg" width="1" height="1" alt="">
+<img src="lax/small/1940.svg" width="1" height="1" alt="">
+<img src="lax/small/1945.svg" width="1" height="1" alt="">
+<img src="lax/small/1950.svg" width="1" height="1" alt="">
+<img src="lax/small/1955.svg" width="1" height="1" alt="">
+<img src="lax/small/1960.svg" width="1" height="1" alt="">
+<img src="lax/small/1965.svg" width="1" height="1" alt="">
+<img src="lax/small/1970.svg" width="1" height="1" alt="">
+<img src="lax/small/1975.svg" width="1" height="1" alt="">
+<img src="lax/small/1980.svg" width="1" height="1" alt="">
+<img src="lax/small/1985.svg" width="1" height="1" alt="">
+<img src="lax/small/1990.svg" width="1" height="1" alt="">
+<img src="lax/small/1995.svg" width="1" height="1" alt="">
+<img src="lax/small/2000.svg" width="1" height="1" alt="">
+<img src="lax/small/2005.svg" width="1" height="1" alt="">
+<img src="lax/small/2010.svg" width="1" height="1" alt="">
+<img src="lax/small/2015.svg" width="1" height="1" alt="">
+<img src="sfo/small/1875.svg" width="1" height="1" alt="">
+<img src="sfo/small/1880.svg" width="1" height="1" alt="">
+<img src="sfo/small/1885.svg" width="1" height="1" alt="">
+<img src="sfo/small/1890.svg" width="1" height="1" alt="">
+<img src="sfo/small/1895.svg" width="1" height="1" alt="">
+<img src="sfo/small/1900.svg" width="1" height="1" alt="">
+<img src="sfo/small/1905.svg" width="1" height="1" alt="">
+<img src="sfo/small/1910.svg" width="1" height="1" alt="">
+<img src="sfo/small/1915.svg" width="1" height="1" alt="">
+<img src="sfo/small/1920.svg" width="1" height="1" alt="">
+<img src="sfo/small/1925.svg" width="1" height="1" alt="">
+<img src="sfo/small/1930.svg" width="1" height="1" alt="">
+<img src="sfo/small/1935.svg" width="1" height="1" alt="">
+<img src="sfo/small/1940.svg" width="1" height="1" alt="">
+<img src="sfo/small/1945.svg" width="1" height="1" alt="">
+<img src="sfo/small/1950.svg" width="1" height="1" alt="">
+<img src="sfo/small/1955.svg" width="1" height="1" alt="">
+<img src="sfo/small/1960.svg" width="1" height="1" alt="">
+<img src="sfo/small/1965.svg" width="1" height="1" alt="">
+<img src="sfo/small/1970.svg" width="1" height="1" alt="">
+<img src="sfo/small/1975.svg" width="1" height="1" alt="">
+<img src="sfo/small/1980.svg" width="1" height="1" alt="">
+<img src="sfo/small/1985.svg" width="1" height="1" alt="">
+<img src="sfo/small/1990.svg" width="1" height="1" alt="">
+<img src="sfo/small/1995.svg" width="1" height="1" alt="">
+<img src="sfo/small/2000.svg" width="1" height="1" alt="">
+<img src="sfo/small/2005.svg" width="1" height="1" alt="">
+<img src="sfo/small/2010.svg" width="1" height="1" alt="">
+<img src="sfo/small/2015.svg" width="1" height="1" alt="">
+<img src="was/small/1875.svg" width="1" height="1" alt="">
+<img src="was/small/1880.svg" width="1" height="1" alt="">
+<img src="was/small/1885.svg" width="1" height="1" alt="">
+<img src="was/small/1890.svg" width="1" height="1" alt="">
+<img src="was/small/1895.svg" width="1" height="1" alt="">
+<img src="was/small/1900.svg" width="1" height="1" alt="">
+<img src="was/small/1905.svg" width="1" height="1" alt="">
+<img src="was/small/1910.svg" width="1" height="1" alt="">
+<img src="was/small/1915.svg" width="1" height="1" alt="">
+<img src="was/small/1920.svg" width="1" height="1" alt="">
+<img src="was/small/1925.svg" width="1" height="1" alt="">
+<img src="was/small/1930.svg" width="1" height="1" alt="">
+<img src="was/small/1935.svg" width="1" height="1" alt="">
+<img src="was/small/1940.svg" width="1" height="1" alt="">
+<img src="was/small/1945.svg" width="1" height="1" alt="">
+<img src="was/small/1950.svg" width="1" height="1" alt="">
+<img src="was/small/1955.svg" width="1" height="1" alt="">
+<img src="was/small/1960.svg" width="1" height="1" alt="">
+<img src="was/small/1965.svg" width="1" height="1" alt="">
+<img src="was/small/1970.svg" width="1" height="1" alt="">
+<img src="was/small/1975.svg" width="1" height="1" alt="">
+<img src="was/small/1980.svg" width="1" height="1" alt="">
+<img src="was/small/1985.svg" width="1" height="1" alt="">
+<img src="was/small/1990.svg" width="1" height="1" alt="">
+<img src="was/small/1995.svg" width="1" height="1" alt="">
+<img src="was/small/2000.svg" width="1" height="1" alt="">
+<img src="was/small/2005.svg" width="1" height="1" alt="">
+<img src="was/small/2010.svg" width="1" height="1" alt="">
+<img src="was/small/2015.svg" width="1" height="1" alt="">
+<img src="yto/small/1875.svg" width="1" height="1" alt="">
+<img src="yto/small/1880.svg" width="1" height="1" alt="">
+<img src="yto/small/1885.svg" width="1" height="1" alt="">
+<img src="yto/small/1890.svg" width="1" height="1" alt="">
+<img src="yto/small/1895.svg" width="1" height="1" alt="">
+<img src="yto/small/1900.svg" width="1" height="1" alt="">
+<img src="yto/small/1905.svg" width="1" height="1" alt="">
+<img src="yto/small/1910.svg" width="1" height="1" alt="">
+<img src="yto/small/1915.svg" width="1" height="1" alt="">
+<img src="yto/small/1920.svg" width="1" height="1" alt="">
+<img src="yto/small/1925.svg" width="1" height="1" alt="">
+<img src="yto/small/1930.svg" width="1" height="1" alt="">
+<img src="yto/small/1935.svg" width="1" height="1" alt="">
+<img src="yto/small/1940.svg" width="1" height="1" alt="">
+<img src="yto/small/1945.svg" width="1" height="1" alt="">
+<img src="yto/small/1950.svg" width="1" height="1" alt="">
+<img src="yto/small/1955.svg" width="1" height="1" alt="">
+<img src="yto/small/1960.svg" width="1" height="1" alt="">
+<img src="yto/small/1965.svg" width="1" height="1" alt="">
+<img src="yto/small/1970.svg" width="1" height="1" alt="">
+<img src="yto/small/1975.svg" width="1" height="1" alt="">
+<img src="yto/small/1980.svg" width="1" height="1" alt="">
+<img src="yto/small/1985.svg" width="1" height="1" alt="">
+<img src="yto/small/1990.svg" width="1" height="1" alt="">
+<img src="yto/small/1995.svg" width="1" height="1" alt="">
+<img src="yto/small/2000.svg" width="1" height="1" alt="">
+<img src="yto/small/2005.svg" width="1" height="1" alt="">
+<img src="yto/small/2010.svg" width="1" height="1" alt="">
+<img src="yto/small/2015.svg" width="1" height="1" alt="">
+<img src="ymq/small/1875.svg" width="1" height="1" alt="">
+<img src="ymq/small/1880.svg" width="1" height="1" alt="">
+<img src="ymq/small/1885.svg" width="1" height="1" alt="">
+<img src="ymq/small/1890.svg" width="1" height="1" alt="">
+<img src="ymq/small/1895.svg" width="1" height="1" alt="">
+<img src="ymq/small/1900.svg" width="1" height="1" alt="">
+<img src="ymq/small/1905.svg" width="1" height="1" alt="">
+<img src="ymq/small/1910.svg" width="1" height="1" alt="">
+<img src="ymq/small/1915.svg" width="1" height="1" alt="">
+<img src="ymq/small/1920.svg" width="1" height="1" alt="">
+<img src="ymq/small/1925.svg" width="1" height="1" alt="">
+<img src="ymq/small/1930.svg" width="1" height="1" alt="">
+<img src="ymq/small/1935.svg" width="1" height="1" alt="">
+<img src="ymq/small/1940.svg" width="1" height="1" alt="">
+<img src="ymq/small/1945.svg" width="1" height="1" alt="">
+<img src="ymq/small/1950.svg" width="1" height="1" alt="">
+<img src="ymq/small/1955.svg" width="1" height="1" alt="">
+<img src="ymq/small/1960.svg" width="1" height="1" alt="">
+<img src="ymq/small/1965.svg" width="1" height="1" alt="">
+<img src="ymq/small/1970.svg" width="1" height="1" alt="">
+<img src="ymq/small/1975.svg" width="1" height="1" alt="">
+<img src="ymq/small/1980.svg" width="1" height="1" alt="">
+<img src="ymq/small/1985.svg" width="1" height="1" alt="">
+<img src="ymq/small/1990.svg" width="1" height="1" alt="">
+<img src="ymq/small/1995.svg" width="1" height="1" alt="">
+<img src="ymq/small/2000.svg" width="1" height="1" alt="">
+<img src="ymq/small/2005.svg" width="1" height="1" alt="">
+<img src="ymq/small/2010.svg" width="1" height="1" alt="">
+<img src="ymq/small/2015.svg" width="1" height="1" alt="">
+<img src="yvr/small/1875.svg" width="1" height="1" alt="">
+<img src="yvr/small/1880.svg" width="1" height="1" alt="">
+<img src="yvr/small/1885.svg" width="1" height="1" alt="">
+<img src="yvr/small/1890.svg" width="1" height="1" alt="">
+<img src="yvr/small/1895.svg" width="1" height="1" alt="">
+<img src="yvr/small/1900.svg" width="1" height="1" alt="">
+<img src="yvr/small/1905.svg" width="1" height="1" alt="">
+<img src="yvr/small/1910.svg" width="1" height="1" alt="">
+<img src="yvr/small/1915.svg" width="1" height="1" alt="">
+<img src="yvr/small/1920.svg" width="1" height="1" alt="">
+<img src="yvr/small/1925.svg" width="1" height="1" alt="">
+<img src="yvr/small/1930.svg" width="1" height="1" alt="">
+<img src="yvr/small/1935.svg" width="1" height="1" alt="">
+<img src="yvr/small/1940.svg" width="1" height="1" alt="">
+<img src="yvr/small/1945.svg" width="1" height="1" alt="">
+<img src="yvr/small/1950.svg" width="1" height="1" alt="">
+<img src="yvr/small/1955.svg" width="1" height="1" alt="">
+<img src="yvr/small/1960.svg" width="1" height="1" alt="">
+<img src="yvr/small/1965.svg" width="1" height="1" alt="">
+<img src="yvr/small/1970.svg" width="1" height="1" alt="">
+<img src="yvr/small/1975.svg" width="1" height="1" alt="">
+<img src="yvr/small/1980.svg" width="1" height="1" alt="">
+<img src="yvr/small/1985.svg" width="1" height="1" alt="">
+<img src="yvr/small/1990.svg" width="1" height="1" alt="">
+<img src="yvr/small/1995.svg" width="1" height="1" alt="">
+<img src="yvr/small/2000.svg" width="1" height="1" alt="">
+<img src="yvr/small/2005.svg" width="1" height="1" alt="">
+<img src="yvr/small/2010.svg" width="1" height="1" alt="">
+<img src="yvr/small/2015.svg" width="1" height="1" alt="">
 </div>
 <font size="1">By <a href="/">Alexander Rapp</a> based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>

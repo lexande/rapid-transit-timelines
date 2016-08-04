@@ -18,11 +18,11 @@ count=21;
 step=5;
 index=count-1;
 function update() {
-	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].src=(start+step*index) + ".svg";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
-        location.replace("#" + (start+step*index));
+	location.replace("#" + (start+step*index));
 }
 function nextmap() {
 	index=(index+1)%count;
@@ -66,7 +66,7 @@ window.onhashchange=function() {
 <a href="javascript:nextmap()">five years later (or press s)</a>
 <p>
 <a name="LINK" href="2015.svg">
-<img name="MAP" src="2015.png" title="2015" alt="2015 map"style="border-width: 1px; border-style: solid">
+<img name="MAP" src="2015.svg" title="2015" alt="2015 map" width="363" height="363" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#1915" onclick="gotoyear(1915)">1915</a>
@@ -94,35 +94,35 @@ window.onhashchange=function() {
 <a href="javascript:prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:nextmap()">five years later (or press s)</a>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).  Scale 30 pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).  Scale 30 (CSS) pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="1915.png" width="1" height="1" alt="">
-<img src="1920.png" width="1" height="1" alt="">
-<img src="1925.png" width="1" height="1" alt="">
-<img src="1930.png" width="1" height="1" alt="">
-<img src="1935.png" width="1" height="1" alt="">
-<img src="1940.png" width="1" height="1" alt="">
-<img src="1945.png" width="1" height="1" alt="">
-<img src="1950.png" width="1" height="1" alt="">
-<img src="1955.png" width="1" height="1" alt="">
-<img src="1960.png" width="1" height="1" alt="">
-<img src="1965.png" width="1" height="1" alt="">
-<img src="1970.png" width="1" height="1" alt="">
-<img src="1975.png" width="1" height="1" alt="">
-<img src="1980.png" width="1" height="1" alt="">
-<img src="1985.png" width="1" height="1" alt="">
-<img src="1990.png" width="1" height="1" alt="">
-<img src="1995.png" width="1" height="1" alt="">
-<img src="2000.png" width="1" height="1" alt="">
-<img src="2005.png" width="1" height="1" alt="">
-<img src="2010.png" width="1" height="1" alt="">
-<img src="2015.png" width="1" height="1" alt="">
+<img src="1915.svg" width="1" height="1" alt="">
+<img src="1920.svg" width="1" height="1" alt="">
+<img src="1925.svg" width="1" height="1" alt="">
+<img src="1930.svg" width="1" height="1" alt="">
+<img src="1935.svg" width="1" height="1" alt="">
+<img src="1940.svg" width="1" height="1" alt="">
+<img src="1945.svg" width="1" height="1" alt="">
+<img src="1950.svg" width="1" height="1" alt="">
+<img src="1955.svg" width="1" height="1" alt="">
+<img src="1960.svg" width="1" height="1" alt="">
+<img src="1965.svg" width="1" height="1" alt="">
+<img src="1970.svg" width="1" height="1" alt="">
+<img src="1975.svg" width="1" height="1" alt="">
+<img src="1980.svg" width="1" height="1" alt="">
+<img src="1985.svg" width="1" height="1" alt="">
+<img src="1990.svg" width="1" height="1" alt="">
+<img src="1995.svg" width="1" height="1" alt="">
+<img src="2000.svg" width="1" height="1" alt="">
+<img src="2005.svg" width="1" height="1" alt="">
+<img src="2010.svg" width="1" height="1" alt="">
+<img src="2015.svg" width="1" height="1" alt="">
 </div>
 See also: <a href="../../subtimeline">New York</a> -
-<a href="../par">Paris</a> -
+<a href="../lon">London</a> -
 <a href="../hkg">Hong Kong</a> -
 <a href="../other.html">more cities</a>
 <p>

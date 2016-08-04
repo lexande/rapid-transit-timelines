@@ -18,7 +18,7 @@ count=3;
 step=5;
 index=count-1;
 function update() {
-	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].src=(start+step*index) + ".svg";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
@@ -46,6 +46,9 @@ function gotoyear(x) {
 window.onload=function() {
 	gotoyear(location.hash.substring(1));
 }
+window.onhashchange=function() {
+	gotoyear(location.hash.substring(1));
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -63,7 +66,7 @@ window.onload=function() {
 <a href="javascript:nextmap()">five years later (or press s)</a>
 <p>
 <a name="LINK" href="2015.svg">
-<img name="MAP" src="2015.png" title="2015" alt="2015 map"style="border-width: 1px; border-style: solid">
+<img name="MAP" src="2015.svg" title="2015" alt="2015 map" width="359" height="218" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#2005" onclick="gotoyear(2005)">2005</a>
@@ -73,14 +76,14 @@ window.onload=function() {
 <a href="javascript:prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:nextmap()">five years later (or press s)</a>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).  Scale 30 pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).  Scale 30 (CSS) pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="2005.png" width="1" height="1" alt="">
-<img src="2010.png" width="1" height="1" alt="">
-<img src="2015.png" width="1" height="1" alt="">
+<img src="2005.svg" width="1" height="1" alt="">
+<img src="2010.svg" width="1" height="1" alt="">
+<img src="2015.svg" width="1" height="1" alt="">
 </div>
 See also: <a href="../../subtimeline">New York</a> - 
 <a href="../../ltimeline">Chicago</a> - 
