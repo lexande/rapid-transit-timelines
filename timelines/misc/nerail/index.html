@@ -18,7 +18,7 @@ count=8;
 step=25;
 index=count-1;
 function update() {
-	document["MAP"].src=(start+step*index) + "s.png";
+	document["MAP"].src=(start+step*index) + ".svg";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	location.replace("#" + (start+step*index));
@@ -45,6 +45,9 @@ function gotoyear(x) {
 window.onload=function() {
 	gotoyear(location.hash.substring(1));
 }
+window.onhashchange=function() {
+	gotoyear(location.hash.substring(1));
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -64,7 +67,7 @@ smaller version --- <a href="large.html">larger version</a>
 <a href="javascript:nextmap()">25 years later (or press s)</a>
 <p>
 <a name="LINK" href="large.html">
-<img name="MAP" src="2010s.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
+<img name="MAP" src="2010.svg" title="2010" alt="2010 map" width="957px" height="770px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#1835" onclick="gotoyear(1835)">1835</a>
@@ -79,19 +82,19 @@ smaller version --- <a href="large.html">larger version</a>
 <a href="javascript:prevmap()">25 years earlier (or press a)</a> --- 
 <a href="javascript:nextmap()">25 years later (or press s)</a>
 <p>
-Showing those lines with at least three trains per direction each weekday.  Lines coloured by operator (<a href="colours.html">key</a>). Scale approximately 1.5 pixels per km.
+Showing those lines with at least three trains per direction each weekday.  Lines coloured by operator (<a href="colours.html">key</a>). Scale approximately 1.5 CSS pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="1835s.png" width="1" height="1" alt="">
-<img src="1860s.png" width="1" height="1" alt="">
-<img src="1885s.png" width="1" height="1" alt="">
-<img src="1910s.png" width="1" height="1" alt="">
-<img src="1935s.png" width="1" height="1" alt="">
-<img src="1960s.png" width="1" height="1" alt="">
-<img src="1985s.png" width="1" height="1" alt="">
-<img src="2010s.png" width="1" height="1" alt="">
+<img src="1835.svg" width="1" height="1" alt="">
+<img src="1860.svg" width="1" height="1" alt="">
+<img src="1885.svg" width="1" height="1" alt="">
+<img src="1910.svg" width="1" height="1" alt="">
+<img src="1935.svg" width="1" height="1" alt="">
+<img src="1960.svg" width="1" height="1" alt="">
+<img src="1985.svg" width="1" height="1" alt="">
+<img src="2010.svg" width="1" height="1" alt="">
 </div>
 See also: rapid transit timelines for <a href="/subtimeline">New York</a> - 
 <a href="/ttimeline">Boston</a> - 

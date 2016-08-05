@@ -18,7 +18,7 @@ count=26;
 step=1;
 index=0;
 function update() {
-	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].src=(start+step*index) + ".svg";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
@@ -46,6 +46,9 @@ function gotoyear(x) {
 window.onload=function() {
 	gotoyear(location.hash.substring(1));
 }
+window.onhashchange=function() {
+	gotoyear(location.hash.substring(1));
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -63,7 +66,7 @@ window.onload=function() {
 <a href="javascript:nextmap()">one year later (or press s)</a>
 <p>
 <a name="LINK" href="1932.svg">
-<img name="MAP" src="1932.png" title="1932" alt="1932 map"style="border-width: 1px; border-style: solid">
+<img name="MAP" src="1932.svg" title="1932" alt="1932 map" width="779px" height="1169px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#1932" onclick="gotoyear(1932)">1932</a>
@@ -96,37 +99,37 @@ window.onload=function() {
 <a href="javascript:prevmap()">one year earlier (or press a)</a> --- 
 <a href="javascript:nextmap()">one year later (or press s)</a>
 <p>
-Based on service at the end of the year in question.  Lines coloured by operator.  Scale 30 pixels per km.
+Based on service at the end of the year in question.  Lines coloured by operator.  Scale 30 CSS pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="1932.png" width="1" height="1" alt="">
-<img src="1933.png" width="1" height="1" alt="">
-<img src="1934.png" width="1" height="1" alt="">
-<img src="1935.png" width="1" height="1" alt="">
-<img src="1936.png" width="1" height="1" alt="">
-<img src="1937.png" width="1" height="1" alt="">
-<img src="1938.png" width="1" height="1" alt="">
-<img src="1939.png" width="1" height="1" alt="">
-<img src="1940.png" width="1" height="1" alt="">
-<img src="1941.png" width="1" height="1" alt="">
-<img src="1942.png" width="1" height="1" alt="">
-<img src="1943.png" width="1" height="1" alt="">
-<img src="1944.png" width="1" height="1" alt="">
-<img src="1945.png" width="1" height="1" alt="">
-<img src="1946.png" width="1" height="1" alt="">
-<img src="1947.png" width="1" height="1" alt="">
-<img src="1948.png" width="1" height="1" alt="">
-<img src="1949.png" width="1" height="1" alt="">
-<img src="1950.png" width="1" height="1" alt="">
-<img src="1951.png" width="1" height="1" alt="">
-<img src="1952.png" width="1" height="1" alt="">
-<img src="1953.png" width="1" height="1" alt="">
-<img src="1954.png" width="1" height="1" alt="">
-<img src="1955.png" width="1" height="1" alt="">
-<img src="1956.png" width="1" height="1" alt="">
-<img src="1957.png" width="1" height="1" alt="">
+<img src="1932.svg" width="1" height="1" alt="">
+<img src="1933.svg" width="1" height="1" alt="">
+<img src="1934.svg" width="1" height="1" alt="">
+<img src="1935.svg" width="1" height="1" alt="">
+<img src="1936.svg" width="1" height="1" alt="">
+<img src="1937.svg" width="1" height="1" alt="">
+<img src="1938.svg" width="1" height="1" alt="">
+<img src="1939.svg" width="1" height="1" alt="">
+<img src="1940.svg" width="1" height="1" alt="">
+<img src="1941.svg" width="1" height="1" alt="">
+<img src="1942.svg" width="1" height="1" alt="">
+<img src="1943.svg" width="1" height="1" alt="">
+<img src="1944.svg" width="1" height="1" alt="">
+<img src="1945.svg" width="1" height="1" alt="">
+<img src="1946.svg" width="1" height="1" alt="">
+<img src="1947.svg" width="1" height="1" alt="">
+<img src="1948.svg" width="1" height="1" alt="">
+<img src="1949.svg" width="1" height="1" alt="">
+<img src="1950.svg" width="1" height="1" alt="">
+<img src="1951.svg" width="1" height="1" alt="">
+<img src="1952.svg" width="1" height="1" alt="">
+<img src="1953.svg" width="1" height="1" alt="">
+<img src="1954.svg" width="1" height="1" alt="">
+<img src="1955.svg" width="1" height="1" alt="">
+<img src="1956.svg" width="1" height="1" alt="">
+<img src="1957.svg" width="1" height="1" alt="">
 </div>
 See also: <a href="/subtimeline">New York rapid transit timeline</a> -
 <a href="/timelines/">other rapid transit timelines</a> - 

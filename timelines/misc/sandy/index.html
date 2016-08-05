@@ -19,7 +19,7 @@ step=1;
 index=0;
 function update() {
         num = start+step*index;
-	document["MAP"].src=num + ".png";
+	document["MAP"].src=num + ".svg";
         if (num < 7) { 
 		document["MAP"].title="Oct " + (num+25);
 		document["MAP"].alt="Oct " + (num+25) + " map";
@@ -80,6 +80,9 @@ function gotoyear(x) {
 window.onload=function() {
 	gotoyear(location.hash.substring(1));
 }
+window.onhashchange=function() {
+	gotoyear(location.hash.substring(1));
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -97,7 +100,7 @@ window.onload=function() {
 <a href="javascript:nextmap()">next day (or press s)</a>
 <p>
 <a name="LINK" href="1.svg">
-<img name="MAP" src="1.png" title="Oct 26" alt="Oct 26 map"style="border-width: 1px; border-style: solid">
+<img name="MAP" src="1.svg" title="Oct 26" alt="Oct 26 map" width="1169px" height="1169px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#1" onclick="gotoyear(1)">Oct 26</a>
@@ -141,39 +144,39 @@ Based on midday service on the day in question.  Check <a href="http://www.mta.i
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="1.png" width="1" height="1" alt="">
-<img src="2.png" width="1" height="1" alt="">
-<img src="3.png" width="1" height="1" alt="">
-<img src="4.png" width="1" height="1" alt="">
-<img src="5.png" width="1" height="1" alt="">
-<img src="6.png" width="1" height="1" alt="">
-<img src="7.png" width="1" height="1" alt="">
-<img src="8.png" width="1" height="1" alt="">
-<img src="9.png" width="1" height="1" alt="">
-<img src="10.png" width="1" height="1" alt="">
-<img src="11.png" width="1" height="1" alt="">
-<img src="12.png" width="1" height="1" alt="">
-<img src="13.png" width="1" height="1" alt="">
-<img src="14.png" width="1" height="1" alt="">
-<img src="15.png" width="1" height="1" alt="">
-<img src="16.png" width="1" height="1" alt="">
-<img src="17.png" width="1" height="1" alt="">
-<img src="18.png" width="1" height="1" alt="">
-<img src="19.png" width="1" height="1" alt="">
-<img src="20.png" width="1" height="1" alt="">
-<img src="21.png" width="1" height="1" alt="">
-<img src="22.png" width="1" height="1" alt="">
-<img src="23.png" width="1" height="1" alt="">
-<img src="24.png" width="1" height="1" alt="">
-<img src="25.png" width="1" height="1" alt="">
-<img src="26.png" width="1" height="1" alt="">
-<img src="27.png" width="1" height="1" alt="">
-<img src="28.png" width="1" height="1" alt="">
-<img src="29.png" width="1" height="1" alt="">
-<img src="30.png" width="1" height="1" alt="">
-<img src="31.png" width="1" height="1" alt="">
-<img src="32.png" width="1" height="1" alt="">
-<img src="33.png" width="1" height="1" alt="">
+<img src="1.svg" width="1" height="1" alt="">
+<img src="2.svg" width="1" height="1" alt="">
+<img src="3.svg" width="1" height="1" alt="">
+<img src="4.svg" width="1" height="1" alt="">
+<img src="5.svg" width="1" height="1" alt="">
+<img src="6.svg" width="1" height="1" alt="">
+<img src="7.svg" width="1" height="1" alt="">
+<img src="8.svg" width="1" height="1" alt="">
+<img src="9.svg" width="1" height="1" alt="">
+<img src="10.svg" width="1" height="1" alt="">
+<img src="11.svg" width="1" height="1" alt="">
+<img src="12.svg" width="1" height="1" alt="">
+<img src="13.svg" width="1" height="1" alt="">
+<img src="14.svg" width="1" height="1" alt="">
+<img src="15.svg" width="1" height="1" alt="">
+<img src="16.svg" width="1" height="1" alt="">
+<img src="17.svg" width="1" height="1" alt="">
+<img src="18.svg" width="1" height="1" alt="">
+<img src="19.svg" width="1" height="1" alt="">
+<img src="20.svg" width="1" height="1" alt="">
+<img src="21.svg" width="1" height="1" alt="">
+<img src="22.svg" width="1" height="1" alt="">
+<img src="23.svg" width="1" height="1" alt="">
+<img src="24.svg" width="1" height="1" alt="">
+<img src="25.svg" width="1" height="1" alt="">
+<img src="26.svg" width="1" height="1" alt="">
+<img src="27.svg" width="1" height="1" alt="">
+<img src="28.svg" width="1" height="1" alt="">
+<img src="29.svg" width="1" height="1" alt="">
+<img src="30.svg" width="1" height="1" alt="">
+<img src="31.svg" width="1" height="1" alt="">
+<img src="32.svg" width="1" height="1" alt="">
+<img src="33.svg" width="1" height="1" alt="">
 </div>
 Historical timelines: <a href="../../subtimeline">New York</a> - 
 <a href="../../ltimeline">Chicago</a> - 

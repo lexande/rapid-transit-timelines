@@ -46,6 +46,9 @@ function gotoyear(x) {
 window.onload=function() {
 	gotoyear(location.hash.substring(1));
 }
+window.onhashchange=function() {
+        gotoyear(location.hash.substring(1));
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -63,7 +66,7 @@ window.onload=function() {
 <a href="javascript:nextmap()">one year later (or press s)</a>
 <p>
 <a name="LINK" href="2015.svg">
-<img name="MAP" src="2015.png" title="2015" alt="2015 map"style="border-width: 1px; border-style: solid">
+<img name="MAP" src="2015.png" title="2015" alt="2015 map" width="508px" height="607px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#1996" onclick="gotoyear(1996)">1996</a>

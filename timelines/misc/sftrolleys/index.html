@@ -18,7 +18,7 @@ count=17;
 step=10;
 index=count-2;
 function update() {
-	document["MAP"].src=(start+step*index) + ".png";
+	document["MAP"].src=(start+step*index) + ".svg";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
@@ -46,6 +46,9 @@ function gotoyear(x) {
 window.onload=function() {
 	gotoyear(location.hash.substring(1));
 }
+window.onhashchange=function() {
+	gotoyear(location.hash.substring(1));
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -63,7 +66,7 @@ window.onload=function() {
 <a href="javascript:nextmap()">ten years later (or press s)</a>
 <p>
 <a name="LINK" href="2010.svg">
-<img name="MAP" src="2010.png" title="2010" alt="2010 map"style="border-width: 1px; border-style: solid">
+<img name="MAP" src="2010.svg" title="2010" alt="2010 map" width="739px" height="739px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#1860" onclick="gotoyear(1860)">1860</a>
@@ -89,28 +92,28 @@ window.onload=function() {
 <p>
 Red represents cable cars, blue electric trolleys, purple tunnelled/elevated electric trolleys, green trolleybuses, pink full rapid transit, and black steam or diesel trains.
 <p>
-Based on service at the end of the year in question.  Scale 60 pixels per km.
+Based on service at the end of the year in question.  Scale 60 CSS pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="1860.png" width="1" height="1" alt="">
-<img src="1870.png" width="1" height="1" alt="">
-<img src="1880.png" width="1" height="1" alt="">
-<img src="1890.png" width="1" height="1" alt="">
-<img src="1900.png" width="1" height="1" alt="">
-<img src="1910.png" width="1" height="1" alt="">
-<img src="1920.png" width="1" height="1" alt="">
-<img src="1930.png" width="1" height="1" alt="">
-<img src="1940.png" width="1" height="1" alt="">
-<img src="1950.png" width="1" height="1" alt="">
-<img src="1960.png" width="1" height="1" alt="">
-<img src="1970.png" width="1" height="1" alt="">
-<img src="1980.png" width="1" height="1" alt="">
-<img src="1990.png" width="1" height="1" alt="">
-<img src="2000.png" width="1" height="1" alt="">
-<img src="2010.png" width="1" height="1" alt="">
-<img src="2020.png" width="1" height="1" alt="">
+<img src="1860.svg" width="1" height="1" alt="">
+<img src="1870.svg" width="1" height="1" alt="">
+<img src="1880.svg" width="1" height="1" alt="">
+<img src="1890.svg" width="1" height="1" alt="">
+<img src="1900.svg" width="1" height="1" alt="">
+<img src="1910.svg" width="1" height="1" alt="">
+<img src="1920.svg" width="1" height="1" alt="">
+<img src="1930.svg" width="1" height="1" alt="">
+<img src="1940.svg" width="1" height="1" alt="">
+<img src="1950.svg" width="1" height="1" alt="">
+<img src="1960.svg" width="1" height="1" alt="">
+<img src="1970.svg" width="1" height="1" alt="">
+<img src="1980.svg" width="1" height="1" alt="">
+<img src="1990.svg" width="1" height="1" alt="">
+<img src="2000.svg" width="1" height="1" alt="">
+<img src="2010.svg" width="1" height="1" alt="">
+<img src="2020.svg" width="1" height="1" alt="">
 </div>
 See also:
 <a href="../..">historical rapid transit timelines</a> -
