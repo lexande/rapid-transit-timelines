@@ -21,8 +21,13 @@ else
 	INDEX="count-1"
 	SNAME="ten years"
 fi
-CITYNAME=`cat name`
-CONTINENT=`cat c`
+if [ $(basename $(pwd)) == 'uncropped' ]; then
+	CITYNAME=`cat ../name`
+	CONTINENT=`cat ../c`
+else
+	CITYNAME=`cat name`
+	CONTINENT=`cat c`
+fi
 NATIVEW=$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
 W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*1169/5376)}")
 H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*$W/$NATIVEW)}")
@@ -43,6 +48,6 @@ for year in $(seq $START $STEP $END); do
 	echo \<img src=\"${year}.svg\" width=\"1\" height=\"1\" alt=\"\"\> >> index.html
 done
 sed -e"s!<a href=.*>${CITYNAME}</a>!${CITYNAME}!" ~/timelines/scripts/boilerplate/${CONTINENT} >> index.html
-if [ -d uncropped ]; then
-	 sed -e's!\.\.!\.\./\.\.!' index.html > uncropped/index.html
+if [ $(basename $(pwd)) == 'uncropped' ]; then
+	 sed -e's!\.\.!\.\./\.\.!' -i index.html
 fi
