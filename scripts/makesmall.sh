@@ -19,7 +19,7 @@ for i in $@; do
             rm temp.svg
         else
             ~/timelines/scripts/smallautopng.sh $i
-            gzip --keep $i
+            gzip -f --keep $i
         fi
         cd ..
     fi
