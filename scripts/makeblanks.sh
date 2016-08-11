@@ -11,6 +11,7 @@ if [ $start.svg -nt 1840.svg ]; then
     for i in `seq 1840 5 $lastblank`; do
         ~/timelines/scripts/blank.pl $i
         ~/timelines/scripts/smallautopng.sh $i.svg
+        gzip --keep -f $i.svg
     done
 fi
 cd ..
