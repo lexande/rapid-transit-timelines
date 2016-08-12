@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
-   height="16200"
+   version="1.1"
    width="7600"
+   height="16200"
    viewBox="0, 0, 7600, 16200"
-   version="1.1">
+   id="svg2">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -28,27 +28,27 @@
   <image
      style="display:none"
      x="0"
-     y="2180.0002"
+     y="2180"
      width="6955"
      height="6420"
      id="image10"
      xlink:href="file:///home/alexander/timelines/timelines/sel/../streetmap/selosm.png" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     xml:space="preserve"
+     x="89.453178"
+     y="206.96083"
      id="text3859"
-     y="206.96094"
-     x="89.453178"><tspan
-       id="tspan1"
-       y="206.96094"
-       x="89.453178">1870</tspan></text>
-  <text
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     id="text3863"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453178"
+       y="206.96083"
+       id="tspan1">1870</tspan></text>
+  <text
+     x="89.453125"
      y="16097.961"
-     x="89.453125"><tspan
-       id="tspan2"
+     id="text3863"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453125"
        y="16097.961"
-       x="89.453125"></tspan></text>
+       id="tspan2"></tspan></text>
 </svg>
