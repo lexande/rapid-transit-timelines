@@ -1,4 +1,5 @@
 #!/bin/bash
+pushd $1
 START=$(basename $(ls *.svg | grep '^1\|^2' | head -n 1) .svg)
 END=$(basename $(ls *.svg | grep '^1\|^2' | tail -n 1) .svg)
 if [ $END == 2020 ]; then
@@ -49,5 +50,9 @@ for year in $(seq $START $STEP $END); do
 done
 sed -e"s!<a href=.*>${CITYNAME}</a>!${CITYNAME}!" ~/timelines/scripts/boilerplate/${CONTINENT} >> index.html
 if [ $(basename $(pwd)) == 'uncropped' ]; then
-	 sed -e's!\.\.!\.\./\.\.!' -i index.html
+	sed -e's!\.\.!\.\./\.\.!' -i index.html
 fi
+if [ $(basename $(pwd)) == 'nyc' -o $(basename $(pwd)) == 'chi' -o $(basename $(pwd)) == 'bos' ]; then
+	sed -e's!\.\./\.\.!!; s!\.\.!/timelines!' -i index.html
+fi
+popd

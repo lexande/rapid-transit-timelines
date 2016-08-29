@@ -14,27 +14,34 @@ endef
 
 define WriteRules
 ifeq ($(wildcard $(1)/cropscript.pl),$(1)/cropscript.pl)
-$(1)/%.svg: $(1)/uncropped/%.svg
+$(1)/%.svg: $(1)/uncropped/%.svg $(1)/cropscript.pl
 	$(1)/cropscript.pl $$< > $$@
 
-$(1): $(1)/uncropped $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg)))
+$(1)/index.html: $(1)/name $(1)/c $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg))) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/boilerplate/*)
+	~/timelines/scripts/makeindex.sh $(1)
+
+$(1): $(1)/uncropped $(1)/index.html
 
 else
 $(foreach yr, $(shell seq 1840 5 2015), $(eval $(call WriteSmall, $(1), $(strip $(yr)))))
 
-$(1): $(1)/small $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg))
+$(1)/index.html: $(wildcard $(1)/name $(1)/uncropped/name $(1)/c $(1)/uncropped/c) $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/boilerplate/*)
+	~/timelines/scripts/makeindex.sh $(1)
+
+$(1): $(1)/small $(1)/index.html
 
 endif
 
 
 $(1)/small: $(patsubst %,$(1)/small/%.svg.gz,$(shell seq 1840 5 2015))
+
 endef
 
 
 %.svg.gz : %.svg
 	gzip -f --keep $<
 
-.PHONY: all $(wildcard ???) $(wildcard ???/small) $(wildcard ???/uncropped) $(wildcard ???/uncropped/small) rsync
+.PHONY: all $(wildcard ???) $(wildcard ???/small) $(wildcard ???/uncropped) $(wildcard ???/uncropped/small) rsync makeindex
 .SECONDARY:
 $(foreach dir, $(wildcard ??? ???/uncropped), $(eval $(call WriteRules, $(dir))))
 
