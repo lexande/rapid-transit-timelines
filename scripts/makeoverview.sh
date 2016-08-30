@@ -113,7 +113,7 @@ done
 cat <<HEREDOC
 </form>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 CSS pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>

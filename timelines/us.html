@@ -18,7 +18,7 @@ count=29;
 step=5;
 index=count-1;
 function update() {
-	["NYC","CHI","BWI","BOS","PHL","LAX","SFO","CLE","ROC","SEA","WAS","ATL","SAN","MIA","PIT","BUF","PDX","SAC","DET","SJC","JAX","DAL","STL","DEN","LAS","IND","MSP","CLT","SJU","ORF"].forEach(function(city) {
+	["NYC","CHI","BWI","BOS","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","PIT","BUF","PDX","SAC","DET","SJC","JAX","DAL","STL","DEN","LAS","IND","MSP","CLT","SJU","ORF"].forEach(function(city) {
 		document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		document[city].title=start+step*index;
 		document[city].alt=start+step*index + " map";
@@ -85,8 +85,6 @@ window.onload=function() {
   <img name="SFO" src="sfo/small/2015.svg" title="2015" alt="2015 map" width="562px" height="601px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CLE" style="display: inline-block; vertical-align: middle"><a href="cle">Cleveland<br>
   <img name="CLE" src="cle/small/2015.svg" title="2015" alt="2015 map" width="276px" height="145px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="ROC" style="display: inline-block; vertical-align: middle"><a href="roc">Rochester<br>
-  <img name="ROC" src="roc/small/2015.svg" title="2015" alt="2015 map" width="96px" height="96px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SEA" style="display: inline-block; vertical-align: middle"><a href="sea">Seattle<br>
   <img name="SEA" src="sea/small/2015.svg" title="2015" alt="2015 map" width="145px" height="305px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="WAS" style="display: inline-block; vertical-align: middle"><a href="was">Washington<br>
@@ -142,7 +140,6 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')" checked><a href="lax">Los Angeles</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="sfo">San Francisco</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CLEcheckbox" onclick="toggleshow('CLE')" checked><a href="cle">Cleveland</a></div>
-<div style="display: inline-block"><input type="checkbox" id="ROCcheckbox" onclick="toggleshow('ROC')" checked><a href="roc">Rochester</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SEAcheckbox" onclick="toggleshow('SEA')" checked><a href="sea">Seattle</a></div>
 <div style="display: inline-block"><input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="was">Washington</a></div>
 <div style="display: inline-block"><input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked><a href="atl">Atlanta</a></div>
@@ -166,7 +163,7 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="ORFcheckbox" onclick="toggleshow('ORF')" checked><a href="orf">Norfolk</a></div>
 </form>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 CSS pixels per km.
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
@@ -403,35 +400,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="cle/small/2005.svg" width="1" height="1" alt="">
 <img src="cle/small/2010.svg" width="1" height="1" alt="">
 <img src="cle/small/2015.svg" width="1" height="1" alt="">
-<img src="roc/small/1875.svg" width="1" height="1" alt="">
-<img src="roc/small/1880.svg" width="1" height="1" alt="">
-<img src="roc/small/1885.svg" width="1" height="1" alt="">
-<img src="roc/small/1890.svg" width="1" height="1" alt="">
-<img src="roc/small/1895.svg" width="1" height="1" alt="">
-<img src="roc/small/1900.svg" width="1" height="1" alt="">
-<img src="roc/small/1905.svg" width="1" height="1" alt="">
-<img src="roc/small/1910.svg" width="1" height="1" alt="">
-<img src="roc/small/1915.svg" width="1" height="1" alt="">
-<img src="roc/small/1920.svg" width="1" height="1" alt="">
-<img src="roc/small/1925.svg" width="1" height="1" alt="">
-<img src="roc/small/1930.svg" width="1" height="1" alt="">
-<img src="roc/small/1935.svg" width="1" height="1" alt="">
-<img src="roc/small/1940.svg" width="1" height="1" alt="">
-<img src="roc/small/1945.svg" width="1" height="1" alt="">
-<img src="roc/small/1950.svg" width="1" height="1" alt="">
-<img src="roc/small/1955.svg" width="1" height="1" alt="">
-<img src="roc/small/1960.svg" width="1" height="1" alt="">
-<img src="roc/small/1965.svg" width="1" height="1" alt="">
-<img src="roc/small/1970.svg" width="1" height="1" alt="">
-<img src="roc/small/1975.svg" width="1" height="1" alt="">
-<img src="roc/small/1980.svg" width="1" height="1" alt="">
-<img src="roc/small/1985.svg" width="1" height="1" alt="">
-<img src="roc/small/1990.svg" width="1" height="1" alt="">
-<img src="roc/small/1995.svg" width="1" height="1" alt="">
-<img src="roc/small/2000.svg" width="1" height="1" alt="">
-<img src="roc/small/2005.svg" width="1" height="1" alt="">
-<img src="roc/small/2010.svg" width="1" height="1" alt="">
-<img src="roc/small/2015.svg" width="1" height="1" alt="">
 <img src="sea/small/1875.svg" width="1" height="1" alt="">
 <img src="sea/small/1880.svg" width="1" height="1" alt="">
 <img src="sea/small/1885.svg" width="1" height="1" alt="">

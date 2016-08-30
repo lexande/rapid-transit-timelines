@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="5376"
+   id="svg2"
    height="5000"
-   viewBox="0, 0, 5376, 5000"
-   id="svg2">
+   width="5376"
+   viewBox="0, 2250, 5376, 5000"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -28,53 +26,53 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/canosm.png"
      style="display:none"
-     id="image10"
-     height="4966.2222"
+     x="0"
+     y="2383.7778"
      width="5587"
-     y="133.77783"
-     x="0" />
+     height="4966.2222"
+     id="image10"
+     xlink:href="file:///home/alexander/timelines/timelines/can/../streetmap/canosm.png" />
   <path
-     d="m 2505.3657,2381.986 22.0589,13.8216 19.0333,-3.6691 L 2592,2370 l 39,-9 125,29 40,13 17,5 14,-6 32,-15 51,-45 51,-9 128,-4 180,-7 30,-4 38,-10 53,-20 107,-1 303,1 258,12"
+     style="fill:none;stroke:#005f96;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path2987"
-     style="fill:none;stroke:#005f96;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 2505.3657,4631.986 22.0589,13.8216 19.0333,-3.6691 L 2592,4620 l 39,-9 125,29 40,13 17,5 14,-6 32,-15 51,-45 51,-9 128,-4 180,-7 30,-4 38,-10 53,-20 107,-1 303,1 258,12" />
   <path
-     d="M 4045.2565,2289.5708 4041,2305 3998.1886,2436.9233 3933,2561 l -41,77 -8.912,42.7696 9.912,45.2304 37,52 110,122 101,103 360.2301,386.7972"
+     style="fill:none;stroke:#057d4f;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647"
      id="path3797"
-     style="fill:none;stroke:#057d4f;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.94117647;stroke-dasharray:none" />
+     d="M 4045.2565,4539.5708 4041,4555 3998.1886,4686.9233 3933,4811 l -41,77 -8.912,42.7696 9.912,45.2304 37,52 110,122 101,103 360.2301,386.7972" />
   <path
-     d="m 2505.7213,2381.9013 -115.7004,-285.6909 -29.6985,-62.2254 -21.2132,-42.4264 2.2486,-132.3518 -15.6836,-21.0904 2.5469,-120.9517 -8.2037,-19.7625 -40.3051,-83.4387 -37.4767,-55.1543 -14.1421,-45.2548"
+     style="fill:none;stroke:#005f96;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3799"
-     style="fill:none;stroke:#005f96;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 2505.7213,4631.9013 -115.7004,-285.6909 -29.6985,-62.2254 -21.2132,-42.4264 2.2486,-132.3518 -15.6836,-21.0904 2.5469,-120.9517 -8.2037,-19.7625 -40.3051,-83.4387 -37.4767,-55.1543 -14.1421,-45.2548" />
   <path
-     d="M 3189.6507,1486.0882 3182,1507 l -2,114 0,22 -17.5,88 -13,19.5 -7.5,265.5 3,46.5 29.5,68 -0.5,49.5 -1,34 -8,35 -20,34 -5,59"
+     style="fill:none;stroke:#e89e49;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3801"
-     style="fill:none;stroke:#e89e49;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="M 3189.6507,3736.0882 3182,3757 l -2,114 0,22 -17.5,88 -13,19.5 -7.5,265.5 3,46.5 29.5,68 -0.5,49.5 -1,34 -8,35 -20,34 -5,59" />
   <path
-     d="m 1886,2808 -18,-60 1,-19 29,-188 19,-34 -6,-77 -5,-43 50,-157 41.2929,-77.8873 0.2513,-70.9497 23.6148,-57.139 L 2032,1943 l 6,-39 14,-25 19,-11 109,6 97,6 140,-10 36,-4 26,-9 102,-7 56,3 55,20 61,19 36,3 98,-26 56,-24 47,-23 64,-16.5 56.0085,-21.4602 L 3150,1785 l 60,3 14,-8 12,-15 8,-29 -4,-212 -9.5,-7.5 -20.5,-10.5 -36.5,-11.5"
+     style="fill:none;stroke:#eccd38;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3862"
-     style="fill:none;stroke:#eccd38;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 1886,5058 -18,-60 1,-19 29,-188 19,-34 -6,-77 -5,-43 50,-157 41.2929,-77.8873 0.2513,-70.9497 23.6148,-57.139 L 2032,4193 l 6,-39 14,-25 19,-11 109,6 97,6 140,-10 36,-4 26,-9 102,-7 56,3 55,20 61,19 36,3 98,-26 56,-24 47,-23 64,-16.5 56.0085,-21.4602 L 3150,4035 l 60,3 14,-8 12,-15 8,-29 -4,-212 -9.5,-7.5 -20.5,-10.5 -36.5,-11.5" />
   <path
-     d="m 2777,1382 77,-216"
+     style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3868"
-     style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 2777,3632 77,-216" />
   <text
-     x="89.453125"
-     y="4897.9609"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text3870"
-     xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
-       y="4897.9609"
-       id="tspan2">2005</tspan></text>
+     y="9197.9609"
+     x="89.453125"><tspan
+       id="tspan2"
+       y="9197.9609"
+       x="89.453125">2005</tspan></text>
   <text
-     x="89.453125"
-     y="206.96094"
-     id="text3874"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
-       y="206.96094"
-       id="tspan1">2005</tspan></text>
+     id="text3874"
+     y="2456.96094"
+     x="89.453125"><tspan
+       id="tspan1"
+       y="2456.96094"
+       x="89.453125">2005</tspan></text>
 </svg>

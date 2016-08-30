@@ -28,13 +28,21 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/hkgosm.png"
+     xlink:href="../../streetmap/hkgosm.png"
      style="display:none"
      id="image12"
      height="4999.1113"
      width="5624"
      y="2800.8887"
-     x="1000" />
+     x="999.99994" />
+  <image
+     xlink:href="file:///home/alexander/timelines/timelines/streetmap/szxosm.png"
+     x="-249.77699"
+     y="-11.110352"
+     width="6873.7769"
+     height="4061.7773"
+     id="image3520"
+     style="display:none" />
   <text
      x="89.453125"
      y="7197.9609"
