@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -27,13 +25,13 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="sfosm.png"
-     style="display:none"
+     xlink:href="../../streetmap/sfoosm.png"
      id="image12"
      height="3471"
      width="3471"
      y="-1171"
-     x="-4.4408921e-16" />
+     x="-4.4408921e-16"
+     style="display:none" />
   <path
      d="m 1453.5,673 -21.5,10 -29,28.5 -68.5,8.5 -24,7.5 -9.5,11 -8,39 10.5,140 -6,21 -9,8.5 -101.5,75.5 -26.5,25.5 -15,21 -6.5,29 1.5,24.5 9,23.5 6.5,19.5 -2.5,28 -8.5,16 -36.5,36 -68,44.5 -82,45 -38.5,23 -30.5,36 -11.5,33.5 -7,34 -6,51.5 -15,39 -23,24 -31,33 -23.5,12 -50,5 -56,0.5 -33,17 -31,34.5 -15.5,26 -4,33.5 3.5,84 15.5,43"
      id="path3093"
@@ -519,4 +517,16 @@
      d="m 1023.4997,306.7499 -16.3318,-99.11279"
      id="path3835"
      style="fill:none;stroke:#0000ff;stroke-width:2.99998093;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 665.63824,509.18962 66.63136,-2.92638 2.25106,-2.02596 0,-6.30296 1.80085,-1.35064 50.64883,-3.60169 1.35064,-1.80085 -1.35064,-28.81356 2.02595,-2.70127"
+     id="path4255" />
+  <path
+     id="path4249"
+     d="m 1072.4049,615.43954 5.8527,3.8268"
+     style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path4251"
+     d="m 1169.6506,603.95913 3.8268,1.80085 9.0042,54.02542"
+     style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
