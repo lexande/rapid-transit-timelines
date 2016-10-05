@@ -25,13 +25,13 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="sfosm.png"
-     style="display:none"
+     xlink:href="../../streetmap/sfoosm.png"
      id="image12"
      height="3471"
      width="3471"
      y="-1171"
-     x="-4.4408921e-16" />
+     x="-4.4408921e-16"
+     style="display:none" />
   <path
      style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3093"
@@ -65,6 +65,10 @@
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3788"
      d="m 883.17637,440.64282 -1.41421,-8.83883 -5.3033,-38.89088 6.07108,-6.70498 145.26226,-25.01654 5.2908,5.91213 14.1421,90.50966 5.3033,3.18198 383.4836,-61.21736 9.6678,-1.36158" />
+  <path
+     id="path9918"
+     d="m 1520.8157,333.15678 -49.869,43.45675 -21.2645,21.37376 -8.6806,0.92499"
+     style="fill:none;fill-rule:evenodd;stroke:#ffdd00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3792"
@@ -455,10 +459,6 @@
      d="m 1355.5237,334.93036 6.0104,3.88909" />
   <path
      style="fill:none;stroke:#0000ff;stroke-width:2.99999905;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     id="path3848"
-     d="m 1006.2129,293.56502 -101.484,17.31198 -3.90102,-1.91982 -3.07312,-22.63606 -2.32843,-14.16422 -3.53551,-2.83452 -23.4628,3.30665 L 831.5,261.25041" />
-  <path
-     style="fill:none;stroke:#0000ff;stroke-width:2.99999905;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3850"
      d="m 1018.2337,292.15081 119.421,-18.89147 4.8029,2.60396 3.1482,22.21454 5.4184,2.64453 18.6912,-2.19287 32.5888,-5.8887 2.4863,-5.35839 -3.0221,-20.41395 3.0037,-4.22658 63.7772,-10.08905 52.4256,-8.60319 6.9975,1.19151" />
   <path
@@ -505,4 +505,8 @@
      id="path4251"
      d="m 1169.6506,603.95913 3.8268,1.80085 9.0042,54.02542"
      style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     d="m 1006.2131,293.56503 -101.4841,17.31198 -3.90103,-1.91982 -3.07312,-22.63606 -2.57843,-2.66422 -28.03553,3.91548 -25.64084,-11.82197"
+     id="path3848-3"
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
