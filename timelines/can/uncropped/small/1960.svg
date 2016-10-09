@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
-   height="9300"
+   version="1.1"
    width="6300"
+   height="9300"
    viewBox="0, 0, 6300, 9300"
-   version="1.1">
+   id="svg2">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,29 +26,29 @@
   <defs
      id="defs6" />
   <image
-     style="display:none"
-     x="0"
-     y="2383.7778"
-     width="5587"
-     height="4966.2222"
+     xlink:href="file:///home/alexander/timelines/timelines/can/../streetmap/canosm.png"
      id="image10"
-     xlink:href="file:///home/alexander/timelines/timelines/can/../streetmap/canosm.png" />
+     height="4966.2222"
+     width="5587"
+     y="2383.7773"
+     x="0"
+     style="display:none" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     xml:space="preserve"
+     x="89.453102"
+     y="9197.9629"
      id="text3870"
-     y="9197.9609"
-     x="89.453125"><tspan
-       id="tspan2"
-       y="9197.9609"
-       x="89.453125"></tspan></text>
-  <text
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     id="text3874"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453102"
+       y="9197.9629"
+       id="tspan2"></tspan></text>
+  <text
+     x="89.453125"
      y="206.96094"
-     x="89.453125"><tspan
-       id="tspan1"
+     id="text3874"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453125"
        y="206.96094"
-       x="89.453125">1960</tspan></text>
+       id="tspan1">1960</tspan></text>
 </svg>

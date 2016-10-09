@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   viewBox="0, -3393, 5107, 8500"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
+   viewBox="0, -3393, 5107, 8500"
    width="5107"
    height="8500"
    id="svg2">
@@ -29,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/bomosm.png"
-     style="display:none"
      id="image10"
      height="5107"
      width="5107"
      y="0"
-     x="50" />
+     x="50"
+     style="display:none" />
   <text
      x="89.453133"
      y="-3186.03915"

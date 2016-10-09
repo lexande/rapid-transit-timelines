@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="7743"
+   id="svg2"
    height="8277"
+   width="7743"
    viewBox="0, 0, 7743, 8277"
-   id="svg2">
+   version="1.1">
   <metadata
      id="metadata42">
     <rdf:RDF>
@@ -29,28 +27,28 @@
      id="defs6" />
   <image
      xlink:href="../../streetmap/sfoosm.png"
-     style="display:none"
      id="image12"
      height="3471"
      width="3471"
      y="2136"
-     x="0" />
+     x="0"
+     style="display:none" />
   <text
-     x="89.453125"
-     y="8174.9609"
+     style="font-size:144px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     xml:space="preserve"
      id="text3639"
-     xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
+     y="8174.9609"
+     x="89.453125"><tspan
+       id="tspan2"
        y="8174.9609"
-       id="tspan2"></tspan></text>
+       x="89.453125"></tspan></text>
   <text
-     x="89.453178"
-     y="206.96094"
-     id="text3639-3"
+     style="font-size:143.99993896px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
-     style="font-size:143.99993896px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453178"
+     id="text3639-3"
+     y="206.96094"
+     x="89.453178"><tspan
+       id="tspan1"
        y="206.96094"
-       id="tspan1">1900</tspan></text>
+       x="89.453178">1900</tspan></text>
 </svg>

@@ -1,13 +1,12 @@
 all: adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt dal den det dub gla hkg ind jax kbp las lax led lon lpl mad man mde mel mex mia mow msp muc ncl ngo nyc orf par pdx per phl pit rio sac san sao scl sea sel sfo sha sin sjc sju stl syd tpe vie was yeg ymq yow yto yvr yyc northamerica.html europe.html asia.html other.html canada.html australasia.html
 
 define WriteSmall
-year=$(strip $(2))
-ifeq ($(wildcard $(1)/$(year).svg),)
-$(1)/small/$(year).svg: $(1)/small/2015.svg
-	~/timelines/scripts/blank.pl $(1)/small/2015.svg $(year) > $$@
+ifeq ($(wildcard $(1)/$(strip $(2)).svg),)
+$(1)/small/$(strip $(2)).svg: $(1)/small/2015.svg
+	~/timelines/scripts/blank.pl $(1)/small/2015.svg $(2) > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
 else
-$(1)/small/$(year).svg: $(1)/$(year).svg
+$(1)/small/$(strip $(2)).svg: $(1)/$(strip $(2)).svg
 	~/timelines/scripts/hideyear.pl $$< > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
 endif
