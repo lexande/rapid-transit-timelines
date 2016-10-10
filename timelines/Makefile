@@ -2,13 +2,15 @@ all: adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt
 
 define WriteSmall
 ifeq ($(wildcard $(1)/$(strip $(2)).svg),)
-$(1)/small/$(strip $(2)).svg: $(1)/small/2015.svg
-	~/timelines/scripts/blank.pl $(1)/small/2015.svg $(2) > $$@
+$(1)/small/$(strip $(2)).svg: $(1)/2015.svg
+	~/timelines/scripts/blank.pl $(1)/2015.svg $(2) | ~/timelines/scripts/hideyear.pl > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
+	svgo $$@
 else
 $(1)/small/$(strip $(2)).svg: $(1)/$(strip $(2)).svg
 	~/timelines/scripts/hideyear.pl $$< > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
+	svgo $$@
 endif
 endef
 

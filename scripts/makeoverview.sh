@@ -84,9 +84,9 @@ HEREDOC
 for city in $@; do
   NAME=`cat $city/name`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
-  NATIVEW=$(grep '^   width=' $city/small/2015.svg | head -n1 | sed -e's/"$//; s/.*"//;')
-  W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' $city/small/2015.svg | head -n1 | sed -e's/"$//; s/.*"//;')*390/5376)}")
-  H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' $city/small/2015.svg | head -n1 | sed -e's/"$//; s/.*"//;')*$W/$NATIVEW)}")
+  NATIVEW=$(grep ' width="' $city/small/2015.svg | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
+  W=$(awk "BEGIN{print int(0.5+$NATIVEW*390/5376)}")
+  H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $city/small/2015.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
 
   echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle"><a href="'$city'">'$NAME'<br>' \
     | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
