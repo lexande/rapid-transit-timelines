@@ -41,7 +41,7 @@ $(1)/small: $(patsubst %,$(1)/small/%.svg.gz,$(shell seq 1840 5 2015))
 endef
 
 define WriteOverview
-$(1): $(patsubst %,%/small/2015.svg,$(2)) ~/timelines/scripts/makeoverview.sh ; ~/timelines/scripts/makeoverview.sh $(2) | sed -e"s!UNTITLED!$(3)!; s!<a href=.$(1).>\(.*\)<.a>!\1!" > $(1)
+$(1): $(patsubst %,%/small/2015.svg,$(patsubst %@,%,$(2))) ~/timelines/scripts/makeoverview.sh ; ~/timelines/scripts/makeoverview.sh $(2) | sed -e"s!UNTITLED!$(3)!; s!<a href=.$(1).>\(.*\)<.a>!\1!" > $(1)
 endef
 
 %.svg.gz : %.svg
@@ -61,3 +61,4 @@ $(call WriteOverview,other.html,mel syd cai bue bom rio sao mex scl ccs,Other)
 $(call WriteOverview,canada.html,yto ymq yeg yyc yow yvr,Canadian)
 $(call WriteOverview,australasia.html,mel syd adl bne per akl,Australia/NZ)
 $(call WriteOverview,us.html,nyc chi bwi bos phl lax sfo cle sea was atl san mia pit buf pdx sac det sjc jax dal stl den las ind msp clt sju orf,United States)
+$(call WriteOverview,all.html,lon nyc par ber mel@ syd@ bos chi vie phl@ lax@ cai@ bue@ bom@ sfo@ mad bcn@ ath@ mow rio@ yto led@ sao@ kbp@ ymq@ mex bjs muc sel scl@ was hkg atl@ ccs@ yvr@ sin sha tpe@ can@,Historic)
