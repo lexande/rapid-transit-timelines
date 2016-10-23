@@ -76,7 +76,7 @@ index=count-1;
 function update() {
 HEREDOC
 echo -n '	['
-for city in $@; do echo -n '"'$city'",'; done | tr 'a-z' 'A-Z' | sed -e's/@//g; s/,$/].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {/'
+for city in $@; do echo -n '"'$city'",'; done | tr 'a-z' 'A-Z' | sed -e's/,$/].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {/'
 echo ''
 cat << HEREDOC
 		mapimg = document.getElementById(city + "map");
@@ -207,7 +207,7 @@ cat <<HEREDOC
 <div id=sidebar>
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
-<div id="form" style="display: block;"><form action="#">(ordered by opening date)<br>
+<div id="form" style="display: block;">(ordered by opening date)<br>
 HEREDOC
 for city in $@; do
   NAME=`cat $city/name`
@@ -221,7 +221,7 @@ for city in $@; do
   fi
 done
 cat <<HEREDOC
-</form></div>
+</div>
 <div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
 <div id="hideall" style="display: block;"><a href="javascript:deselectall()">hide all</a></div>
 </div>
@@ -246,4 +246,13 @@ for city in $@; do
   fi
   echo '</div>'
 done
-echo "</div></body></html>"
+echo '</div><script type="text/javascript">'
+echo -n '['
+for city in $@; do echo -n '"'$city'",'; done | tr 'a-z' 'A-Z' | sed -e's/,$/].forEach(function(city) {/'
+cat <<HEREDOC
+	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
+		toggleshow(city);
+	}
+});
+</script></body></html>
+HEREDOC

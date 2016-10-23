@@ -257,7 +257,7 @@ window.onload=function() {
 <div id=sidebar>
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
-<div id="form" style="display: block;"><form action="#">(ordered by opening year)<br>
+<div id="form" style="display: block;">(ordered by opening date)<br>
 <input type="checkbox" id="LONcheckbox" onclick="toggleshow('LON')" checked><a href="lon">London</a><br>
 <input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="../subtimeline/">New York</a><br>
 <input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')" checked><a href="par">Paris</a><br>
@@ -298,7 +298,7 @@ window.onload=function() {
 <input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" checked><a href="sha">Shanghai</a><br>
 <input type="checkbox" id="TPEcheckbox" onclick="toggleshow('TPE')"><a href="tpe">Taipei</a><br>
 <input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')"><a href="can">Guangzhou</a><br>
-</form></div>
+</div>
 <div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
 <div id="hideall" style="display: block;"><a href="javascript:deselectall()">hide all</a></div>
 </div>
@@ -932,4 +932,9 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="CANpre">
 </div>
-</div></body></html>
+</div><script type="text/javascript">
+["LON","NYC","PAR","BER","MEL","SYD","BOS","CHI","VIE","PHL","LAX","CAI","BUE","BOM","SFO","MAD","BCN","ATH","MOW","RIO","WAS","YTO","LED","SAO","KBP","YMQ","MEX","BJS","MUC","SEL","SCL","HKG","ATL","CCS","MNL","YVR","SIN","SHA","TPE","CAN"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
+		toggleshow(city);
+	}
+});
+</script></body></html>
