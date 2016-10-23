@@ -45,7 +45,7 @@ $(1): $(patsubst %,%/small/2015.svg,$(2)) ~/timelines/scripts/makeoverview.sh ; 
 endef
 
 define WriteMainIndex
-$(1): $(patsubst %,%/small/2015.svg,$(2)) ~/timelines/scripts/makemainindex.sh ; ~/timelines/scripts/makemainindex.sh $(2) > $(1)
+$(1): $(patsubst %,%/small/2015.svg,$(2)) $(wildcard ???/s) ~/timelines/scripts/makemainindex.sh ; ~/timelines/scripts/makemainindex.sh $(2) > $(1)
 endef
 
 %.svg.gz : %.svg

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<head><title>Rapid Transit Timelines</title>
+<head><title>Rapid Transit Timelines and Scale Comparison</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <style type="text/css">
 div#preloader {
@@ -170,24 +170,24 @@ window.onload=function() {
 <p>
 <div id="maps" style="padding-left: calc(10em + 22px);">
 <noscript>Sorry, the maps really don't work without javascript.</noscript>
-<span id="LON" style="display: none; vertical-align: middle"><a href="lon">London<br>
-  <img class="map" id="LONmap" src="about:blank" title="2015" alt="2015 map" width="631" height="591"></a></span>
-<span id="NYC" style="display: none; vertical-align: middle"><a href="../subtimeline/">New York<br>
-  <img class="map" id="NYCmap" src="about:blank" title="2015" alt="2015 map" width="390" height="390"></a></span>
-<span id="PAR" style="display: none; vertical-align: middle"><a href="par">Paris<br>
-  <img class="map" id="PARmap" src="about:blank" title="2015" alt="2015 map" width="628" height="519"></a></span>
-<span id="BER" style="display: none; vertical-align: middle"><a href="ber">Berlin<br>
-  <img class="map" id="BERmap" src="about:blank" title="2015" alt="2015 map" width="537" height="522"></a></span>
+<span id="LON" style="display: inline-block; vertical-align: middle"><a href="lon">London<br>
+  <img class="map" id="LONmap" src="lon/small/2015.svg" title="2015" alt="2015 map" width="631" height="591"></a></span>
+<span id="NYC" style="display: inline-block; vertical-align: middle"><a href="../subtimeline/">New York<br>
+  <img class="map" id="NYCmap" src="nyc/small/2015.svg" title="2015" alt="2015 map" width="390" height="390"></a></span>
+<span id="PAR" style="display: inline-block; vertical-align: middle"><a href="par">Paris<br>
+  <img class="map" id="PARmap" src="par/small/2015.svg" title="2015" alt="2015 map" width="628" height="519"></a></span>
+<span id="BER" style="display: inline-block; vertical-align: middle"><a href="ber">Berlin<br>
+  <img class="map" id="BERmap" src="ber/small/2015.svg" title="2015" alt="2015 map" width="537" height="522"></a></span>
 <span id="MEL" style="display: none; vertical-align: middle"><a href="mel">Melbourne<br>
   <img class="map" id="MELmap" src="about:blank" title="2015" alt="2015 map" width="740" height="624"></a></span>
 <span id="SYD" style="display: none; vertical-align: middle"><a href="syd">Sydney<br>
   <img class="map" id="SYDmap" src="about:blank" title="2015" alt="2015 map" width="527" height="414"></a></span>
-<span id="BOS" style="display: none; vertical-align: middle"><a href="../ttimeline">Boston<br>
-  <img class="map" id="BOSmap" src="about:blank" title="2015" alt="2015 map" width="235" height="271"></a></span>
-<span id="CHI" style="display: none; vertical-align: middle"><a href="../ltimeline">Chicago<br>
-  <img class="map" id="CHImap" src="about:blank" title="2015" alt="2015 map" width="308" height="407"></a></span>
-<span id="VIE" style="display: none; vertical-align: middle"><a href="vie">Wien<br>
-  <img class="map" id="VIEmap" src="about:blank" title="2015" alt="2015 map" width="227" height="317"></a></span>
+<span id="BOS" style="display: inline-block; vertical-align: middle"><a href="../ttimeline">Boston<br>
+  <img class="map" id="BOSmap" src="bos/small/2015.svg" title="2015" alt="2015 map" width="235" height="271"></a></span>
+<span id="CHI" style="display: inline-block; vertical-align: middle"><a href="../ltimeline">Chicago<br>
+  <img class="map" id="CHImap" src="chi/small/2015.svg" title="2015" alt="2015 map" width="308" height="407"></a></span>
+<span id="VIE" style="display: inline-block; vertical-align: middle"><a href="vie">Wien<br>
+  <img class="map" id="VIEmap" src="vie/small/2015.svg" title="2015" alt="2015 map" width="227" height="317"></a></span>
 <span id="PHL" style="display: none; vertical-align: middle"><a href="phl">Philadelphia<br>
   <img class="map" id="PHLmap" src="about:blank" title="2015" alt="2015 map" width="319" height="338"></a></span>
 <span id="LAX" style="display: none; vertical-align: middle"><a href="lax">Los Angeles<br>
@@ -200,18 +200,18 @@ window.onload=function() {
   <img class="map" id="BOMmap" src="about:blank" title="2015" alt="2015 map" width="370" height="616"></a></span>
 <span id="SFO" style="display: none; vertical-align: middle"><a href="sfo">San Francisco<br>
   <img class="map" id="SFOmap" src="about:blank" title="2015" alt="2015 map" width="562" height="601"></a></span>
-<span id="MAD" style="display: none; vertical-align: middle"><a href="mad">Madrid<br>
-  <img class="map" id="MADmap" src="about:blank" title="2015" alt="2015 map" width="464" height="384"></a></span>
+<span id="MAD" style="display: inline-block; vertical-align: middle"><a href="mad">Madrid<br>
+  <img class="map" id="MADmap" src="mad/small/2015.svg" title="2015" alt="2015 map" width="464" height="384"></a></span>
 <span id="BCN" style="display: none; vertical-align: middle"><a href="bcn">Barcelona<br>
   <img class="map" id="BCNmap" src="about:blank" title="2015" alt="2015 map" width="609" height="435"></a></span>
 <span id="ATH" style="display: none; vertical-align: middle"><a href="ath">Athína<br>
   <img class="map" id="ATHmap" src="about:blank" title="2015" alt="2015 map" width="186" height="213"></a></span>
-<span id="MOW" style="display: none; vertical-align: middle"><a href="mow">Moskva<br>
-  <img class="map" id="MOWmap" src="about:blank" title="2015" alt="2015 map" width="326" height="413"></a></span>
+<span id="MOW" style="display: inline-block; vertical-align: middle"><a href="mow">Moskva<br>
+  <img class="map" id="MOWmap" src="mow/small/2015.svg" title="2015" alt="2015 map" width="326" height="413"></a></span>
 <span id="RIO" style="display: none; vertical-align: middle"><a href="rio">Rio de Janeiro<br>
   <img class="map" id="RIOmap" src="about:blank" title="2015" alt="2015 map" width="551" height="392"></a></span>
-<span id="WAS" style="display: none; vertical-align: middle"><a href="was">Washington<br>
-  <img class="map" id="WASmap" src="about:blank" title="2015" alt="2015 map" width="439" height="419"></a></span>
+<span id="WAS" style="display: inline-block; vertical-align: middle"><a href="was">Washington<br>
+  <img class="map" id="WASmap" src="was/small/2015.svg" title="2015" alt="2015 map" width="439" height="419"></a></span>
 <span id="YTO" style="display: none; vertical-align: middle"><a href="yto">Toronto<br>
   <img class="map" id="YTOmap" src="about:blank" title="2015" alt="2015 map" width="248" height="177"></a></span>
 <span id="LED" style="display: none; vertical-align: middle"><a href="led">Sankt-Peterburg<br>
@@ -222,18 +222,18 @@ window.onload=function() {
   <img class="map" id="KBPmap" src="about:blank" title="2015" alt="2015 map" width="261" height="196"></a></span>
 <span id="YMQ" style="display: none; vertical-align: middle"><a href="ymq">Montréal<br>
   <img class="map" id="YMQmap" src="about:blank" title="2015" alt="2015 map" width="172" height="172"></a></span>
-<span id="MEX" style="display: none; vertical-align: middle"><a href="mex">México<br>
-  <img class="map" id="MEXmap" src="about:blank" title="2015" alt="2015 map" width="290" height="315"></a></span>
-<span id="BJS" style="display: none; vertical-align: middle"><a href="bjs">Beijing<br>
-  <img class="map" id="BJSmap" src="about:blank" title="2015" alt="2015 map" width="551" height="660"></a></span>
-<span id="MUC" style="display: none; vertical-align: middle"><a href="muc">München<br>
-  <img class="map" id="MUCmap" src="about:blank" title="2015" alt="2015 map" width="548" height="410"></a></span>
+<span id="MEX" style="display: inline-block; vertical-align: middle"><a href="mex">México<br>
+  <img class="map" id="MEXmap" src="mex/small/2015.svg" title="2015" alt="2015 map" width="290" height="315"></a></span>
+<span id="BJS" style="display: inline-block; vertical-align: middle"><a href="bjs">Beijing<br>
+  <img class="map" id="BJSmap" src="bjs/small/2015.svg" title="2015" alt="2015 map" width="551" height="660"></a></span>
+<span id="MUC" style="display: inline-block; vertical-align: middle"><a href="muc">München<br>
+  <img class="map" id="MUCmap" src="muc/small/2015.svg" title="2015" alt="2015 map" width="548" height="410"></a></span>
 <span id="SEL" style="display: none; vertical-align: middle"><a href="sel">Seoul<br>
   <img class="map" id="SELmap" src="about:blank" title="2015" alt="2015 map" width="551" height="1175"></a></span>
 <span id="SCL" style="display: none; vertical-align: middle"><a href="scl">Santiago<br>
   <img class="map" id="SCLmap" src="about:blank" title="2015" alt="2015 map" width="204" height="265"></a></span>
-<span id="HKG" style="display: none; vertical-align: middle"><a href="hkg">Hong Kong<br>
-  <img class="map" id="HKGmap" src="about:blank" title="2015" alt="2015 map" width="479" height="530"></a></span>
+<span id="HKG" style="display: inline-block; vertical-align: middle"><a href="hkg">Hong Kong<br>
+  <img class="map" id="HKGmap" src="hkg/small/2015.svg" title="2015" alt="2015 map" width="479" height="530"></a></span>
 <span id="ATL" style="display: none; vertical-align: middle"><a href="atl">Atlanta<br>
   <img class="map" id="ATLmap" src="about:blank" title="2015" alt="2015 map" width="244" height="355"></a></span>
 <span id="CCS" style="display: none; vertical-align: middle"><a href="ccs">Caracas<br>
@@ -242,8 +242,8 @@ window.onload=function() {
   <img class="map" id="YVRmap" src="about:blank" title="2015" alt="2015 map" width="254" height="152"></a></span>
 <span id="SIN" style="display: none; vertical-align: middle"><a href="sin">Singapore<br>
   <img class="map" id="SINmap" src="about:blank" title="2015" alt="2015 map" width="367" height="269"></a></span>
-<span id="SHA" style="display: none; vertical-align: middle"><a href="sha">Shanghai<br>
-  <img class="map" id="SHAmap" src="about:blank" title="2015" alt="2015 map" width="798" height="569"></a></span>
+<span id="SHA" style="display: inline-block; vertical-align: middle"><a href="sha">Shanghai<br>
+  <img class="map" id="SHAmap" src="sha/small/2015.svg" title="2015" alt="2015 map" width="798" height="569"></a></span>
 <span id="TPE" style="display: none; vertical-align: middle"><a href="tpe">Taipei<br>
   <img class="map" id="TPEmap" src="about:blank" title="2015" alt="2015 map" width="244" height="261"></a></span>
 <span id="CAN" style="display: none; vertical-align: middle"><a href="can">Guangzhou<br>
@@ -256,43 +256,43 @@ window.onload=function() {
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
 <div id="form" style="display: block;"><form action="#">(ordered by opening year)<br>
-<input type="checkbox" id="LONcheckbox" onclick="toggleshow('LON')"><a href="lon">London</a><br>
-<input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')"><a href="../subtimeline/">New York</a><br>
-<input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')"><a href="par">Paris</a><br>
-<input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')"><a href="ber">Berlin</a><br>
+<input type="checkbox" id="LONcheckbox" onclick="toggleshow('LON')" checked><a href="lon">London</a><br>
+<input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="../subtimeline/">New York</a><br>
+<input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')" checked><a href="par">Paris</a><br>
+<input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')" checked><a href="ber">Berlin</a><br>
 <input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')"><a href="mel">Melbourne</a><br>
 <input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')"><a href="syd">Sydney</a><br>
-<input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')"><a href="../ttimeline">Boston</a><br>
-<input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')"><a href="../ltimeline">Chicago</a><br>
-<input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')"><a href="vie">Wien</a><br>
+<input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a><br>
+<input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="../ltimeline">Chicago</a><br>
+<input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')" checked><a href="vie">Wien</a><br>
 <input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')"><a href="phl">Philadelphia</a><br>
 <input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')"><a href="lax">Los Angeles</a><br>
 <input type="checkbox" id="CAIcheckbox" onclick="toggleshow('CAI')"><a href="cai">Cairo</a><br>
 <input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')"><a href="bue">Buenos Aires</a><br>
 <input type="checkbox" id="BOMcheckbox" onclick="toggleshow('BOM')"><a href="bom">Mumbai</a><br>
 <input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')"><a href="sfo">San Francisco</a><br>
-<input type="checkbox" id="MADcheckbox" onclick="toggleshow('MAD')"><a href="mad">Madrid</a><br>
+<input type="checkbox" id="MADcheckbox" onclick="toggleshow('MAD')" checked><a href="mad">Madrid</a><br>
 <input type="checkbox" id="BCNcheckbox" onclick="toggleshow('BCN')"><a href="bcn">Barcelona</a><br>
 <input type="checkbox" id="ATHcheckbox" onclick="toggleshow('ATH')"><a href="ath">Athína</a><br>
-<input type="checkbox" id="MOWcheckbox" onclick="toggleshow('MOW')"><a href="mow">Moskva</a><br>
+<input type="checkbox" id="MOWcheckbox" onclick="toggleshow('MOW')" checked><a href="mow">Moskva</a><br>
 <input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')"><a href="rio">Rio de Janeiro</a><br>
-<input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')"><a href="was">Washington</a><br>
+<input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="was">Washington</a><br>
 <input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')"><a href="yto">Toronto</a><br>
 <input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="led">Sankt-Peterburg</a><br>
 <input type="checkbox" id="SAOcheckbox" onclick="toggleshow('SAO')"><a href="sao">São Paulo</a><br>
 <input type="checkbox" id="KBPcheckbox" onclick="toggleshow('KBP')"><a href="kbp">Kyiv</a><br>
 <input type="checkbox" id="YMQcheckbox" onclick="toggleshow('YMQ')"><a href="ymq">Montréal</a><br>
-<input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')"><a href="mex">México</a><br>
-<input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')"><a href="bjs">Beijing</a><br>
-<input type="checkbox" id="MUCcheckbox" onclick="toggleshow('MUC')"><a href="muc">München</a><br>
+<input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')" checked><a href="mex">México</a><br>
+<input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')" checked><a href="bjs">Beijing</a><br>
+<input type="checkbox" id="MUCcheckbox" onclick="toggleshow('MUC')" checked><a href="muc">München</a><br>
 <input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')"><a href="sel">Seoul</a><br>
 <input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')"><a href="scl">Santiago</a><br>
-<input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')"><a href="hkg">Hong Kong</a><br>
+<input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="hkg">Hong Kong</a><br>
 <input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')"><a href="atl">Atlanta</a><br>
 <input type="checkbox" id="CCScheckbox" onclick="toggleshow('CCS')"><a href="ccs">Caracas</a><br>
 <input type="checkbox" id="YVRcheckbox" onclick="toggleshow('YVR')"><a href="yvr">Vancouver</a><br>
 <input type="checkbox" id="SINcheckbox" onclick="toggleshow('SIN')"><a href="sin">Singapore</a><br>
-<input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')"><a href="sha">Shanghai</a><br>
+<input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" checked><a href="sha">Shanghai</a><br>
 <input type="checkbox" id="TPEcheckbox" onclick="toggleshow('TPE')"><a href="tpe">Taipei</a><br>
 <input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')"><a href="can">Guangzhou</a><br>
 </form></div>
@@ -310,22 +310,274 @@ See also: <a href="misc">miscellaneous timelines</a>
 by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id=preloader>
 <div id="LONpre">
+<img src="lon/small/1840.svg" width="1" height="1" alt="">
+<img src="lon/small/1845.svg" width="1" height="1" alt="">
+<img src="lon/small/1850.svg" width="1" height="1" alt="">
+<img src="lon/small/1855.svg" width="1" height="1" alt="">
+<img src="lon/small/1860.svg" width="1" height="1" alt="">
+<img src="lon/small/1865.svg" width="1" height="1" alt="">
+<img src="lon/small/1870.svg" width="1" height="1" alt="">
+<img src="lon/small/1875.svg" width="1" height="1" alt="">
+<img src="lon/small/1880.svg" width="1" height="1" alt="">
+<img src="lon/small/1885.svg" width="1" height="1" alt="">
+<img src="lon/small/1890.svg" width="1" height="1" alt="">
+<img src="lon/small/1895.svg" width="1" height="1" alt="">
+<img src="lon/small/1900.svg" width="1" height="1" alt="">
+<img src="lon/small/1905.svg" width="1" height="1" alt="">
+<img src="lon/small/1910.svg" width="1" height="1" alt="">
+<img src="lon/small/1915.svg" width="1" height="1" alt="">
+<img src="lon/small/1920.svg" width="1" height="1" alt="">
+<img src="lon/small/1925.svg" width="1" height="1" alt="">
+<img src="lon/small/1930.svg" width="1" height="1" alt="">
+<img src="lon/small/1935.svg" width="1" height="1" alt="">
+<img src="lon/small/1940.svg" width="1" height="1" alt="">
+<img src="lon/small/1945.svg" width="1" height="1" alt="">
+<img src="lon/small/1950.svg" width="1" height="1" alt="">
+<img src="lon/small/1955.svg" width="1" height="1" alt="">
+<img src="lon/small/1960.svg" width="1" height="1" alt="">
+<img src="lon/small/1965.svg" width="1" height="1" alt="">
+<img src="lon/small/1970.svg" width="1" height="1" alt="">
+<img src="lon/small/1975.svg" width="1" height="1" alt="">
+<img src="lon/small/1980.svg" width="1" height="1" alt="">
+<img src="lon/small/1985.svg" width="1" height="1" alt="">
+<img src="lon/small/1990.svg" width="1" height="1" alt="">
+<img src="lon/small/1995.svg" width="1" height="1" alt="">
+<img src="lon/small/2000.svg" width="1" height="1" alt="">
+<img src="lon/small/2005.svg" width="1" height="1" alt="">
+<img src="lon/small/2010.svg" width="1" height="1" alt="">
+<img src="lon/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="NYCpre">
+<img src="nyc/small/1840.svg" width="1" height="1" alt="">
+<img src="nyc/small/1845.svg" width="1" height="1" alt="">
+<img src="nyc/small/1850.svg" width="1" height="1" alt="">
+<img src="nyc/small/1855.svg" width="1" height="1" alt="">
+<img src="nyc/small/1860.svg" width="1" height="1" alt="">
+<img src="nyc/small/1865.svg" width="1" height="1" alt="">
+<img src="nyc/small/1870.svg" width="1" height="1" alt="">
+<img src="nyc/small/1875.svg" width="1" height="1" alt="">
+<img src="nyc/small/1880.svg" width="1" height="1" alt="">
+<img src="nyc/small/1885.svg" width="1" height="1" alt="">
+<img src="nyc/small/1890.svg" width="1" height="1" alt="">
+<img src="nyc/small/1895.svg" width="1" height="1" alt="">
+<img src="nyc/small/1900.svg" width="1" height="1" alt="">
+<img src="nyc/small/1905.svg" width="1" height="1" alt="">
+<img src="nyc/small/1910.svg" width="1" height="1" alt="">
+<img src="nyc/small/1915.svg" width="1" height="1" alt="">
+<img src="nyc/small/1920.svg" width="1" height="1" alt="">
+<img src="nyc/small/1925.svg" width="1" height="1" alt="">
+<img src="nyc/small/1930.svg" width="1" height="1" alt="">
+<img src="nyc/small/1935.svg" width="1" height="1" alt="">
+<img src="nyc/small/1940.svg" width="1" height="1" alt="">
+<img src="nyc/small/1945.svg" width="1" height="1" alt="">
+<img src="nyc/small/1950.svg" width="1" height="1" alt="">
+<img src="nyc/small/1955.svg" width="1" height="1" alt="">
+<img src="nyc/small/1960.svg" width="1" height="1" alt="">
+<img src="nyc/small/1965.svg" width="1" height="1" alt="">
+<img src="nyc/small/1970.svg" width="1" height="1" alt="">
+<img src="nyc/small/1975.svg" width="1" height="1" alt="">
+<img src="nyc/small/1980.svg" width="1" height="1" alt="">
+<img src="nyc/small/1985.svg" width="1" height="1" alt="">
+<img src="nyc/small/1990.svg" width="1" height="1" alt="">
+<img src="nyc/small/1995.svg" width="1" height="1" alt="">
+<img src="nyc/small/2000.svg" width="1" height="1" alt="">
+<img src="nyc/small/2005.svg" width="1" height="1" alt="">
+<img src="nyc/small/2010.svg" width="1" height="1" alt="">
+<img src="nyc/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="PARpre">
+<img src="par/small/1840.svg" width="1" height="1" alt="">
+<img src="par/small/1845.svg" width="1" height="1" alt="">
+<img src="par/small/1850.svg" width="1" height="1" alt="">
+<img src="par/small/1855.svg" width="1" height="1" alt="">
+<img src="par/small/1860.svg" width="1" height="1" alt="">
+<img src="par/small/1865.svg" width="1" height="1" alt="">
+<img src="par/small/1870.svg" width="1" height="1" alt="">
+<img src="par/small/1875.svg" width="1" height="1" alt="">
+<img src="par/small/1880.svg" width="1" height="1" alt="">
+<img src="par/small/1885.svg" width="1" height="1" alt="">
+<img src="par/small/1890.svg" width="1" height="1" alt="">
+<img src="par/small/1895.svg" width="1" height="1" alt="">
+<img src="par/small/1900.svg" width="1" height="1" alt="">
+<img src="par/small/1905.svg" width="1" height="1" alt="">
+<img src="par/small/1910.svg" width="1" height="1" alt="">
+<img src="par/small/1915.svg" width="1" height="1" alt="">
+<img src="par/small/1920.svg" width="1" height="1" alt="">
+<img src="par/small/1925.svg" width="1" height="1" alt="">
+<img src="par/small/1930.svg" width="1" height="1" alt="">
+<img src="par/small/1935.svg" width="1" height="1" alt="">
+<img src="par/small/1940.svg" width="1" height="1" alt="">
+<img src="par/small/1945.svg" width="1" height="1" alt="">
+<img src="par/small/1950.svg" width="1" height="1" alt="">
+<img src="par/small/1955.svg" width="1" height="1" alt="">
+<img src="par/small/1960.svg" width="1" height="1" alt="">
+<img src="par/small/1965.svg" width="1" height="1" alt="">
+<img src="par/small/1970.svg" width="1" height="1" alt="">
+<img src="par/small/1975.svg" width="1" height="1" alt="">
+<img src="par/small/1980.svg" width="1" height="1" alt="">
+<img src="par/small/1985.svg" width="1" height="1" alt="">
+<img src="par/small/1990.svg" width="1" height="1" alt="">
+<img src="par/small/1995.svg" width="1" height="1" alt="">
+<img src="par/small/2000.svg" width="1" height="1" alt="">
+<img src="par/small/2005.svg" width="1" height="1" alt="">
+<img src="par/small/2010.svg" width="1" height="1" alt="">
+<img src="par/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="BERpre">
+<img src="ber/small/1840.svg" width="1" height="1" alt="">
+<img src="ber/small/1845.svg" width="1" height="1" alt="">
+<img src="ber/small/1850.svg" width="1" height="1" alt="">
+<img src="ber/small/1855.svg" width="1" height="1" alt="">
+<img src="ber/small/1860.svg" width="1" height="1" alt="">
+<img src="ber/small/1865.svg" width="1" height="1" alt="">
+<img src="ber/small/1870.svg" width="1" height="1" alt="">
+<img src="ber/small/1875.svg" width="1" height="1" alt="">
+<img src="ber/small/1880.svg" width="1" height="1" alt="">
+<img src="ber/small/1885.svg" width="1" height="1" alt="">
+<img src="ber/small/1890.svg" width="1" height="1" alt="">
+<img src="ber/small/1895.svg" width="1" height="1" alt="">
+<img src="ber/small/1900.svg" width="1" height="1" alt="">
+<img src="ber/small/1905.svg" width="1" height="1" alt="">
+<img src="ber/small/1910.svg" width="1" height="1" alt="">
+<img src="ber/small/1915.svg" width="1" height="1" alt="">
+<img src="ber/small/1920.svg" width="1" height="1" alt="">
+<img src="ber/small/1925.svg" width="1" height="1" alt="">
+<img src="ber/small/1930.svg" width="1" height="1" alt="">
+<img src="ber/small/1935.svg" width="1" height="1" alt="">
+<img src="ber/small/1940.svg" width="1" height="1" alt="">
+<img src="ber/small/1945.svg" width="1" height="1" alt="">
+<img src="ber/small/1950.svg" width="1" height="1" alt="">
+<img src="ber/small/1955.svg" width="1" height="1" alt="">
+<img src="ber/small/1960.svg" width="1" height="1" alt="">
+<img src="ber/small/1965.svg" width="1" height="1" alt="">
+<img src="ber/small/1970.svg" width="1" height="1" alt="">
+<img src="ber/small/1975.svg" width="1" height="1" alt="">
+<img src="ber/small/1980.svg" width="1" height="1" alt="">
+<img src="ber/small/1985.svg" width="1" height="1" alt="">
+<img src="ber/small/1990.svg" width="1" height="1" alt="">
+<img src="ber/small/1995.svg" width="1" height="1" alt="">
+<img src="ber/small/2000.svg" width="1" height="1" alt="">
+<img src="ber/small/2005.svg" width="1" height="1" alt="">
+<img src="ber/small/2010.svg" width="1" height="1" alt="">
+<img src="ber/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="MELpre">
 </div>
 <div id="SYDpre">
 </div>
 <div id="BOSpre">
+<img src="bos/small/1840.svg" width="1" height="1" alt="">
+<img src="bos/small/1845.svg" width="1" height="1" alt="">
+<img src="bos/small/1850.svg" width="1" height="1" alt="">
+<img src="bos/small/1855.svg" width="1" height="1" alt="">
+<img src="bos/small/1860.svg" width="1" height="1" alt="">
+<img src="bos/small/1865.svg" width="1" height="1" alt="">
+<img src="bos/small/1870.svg" width="1" height="1" alt="">
+<img src="bos/small/1875.svg" width="1" height="1" alt="">
+<img src="bos/small/1880.svg" width="1" height="1" alt="">
+<img src="bos/small/1885.svg" width="1" height="1" alt="">
+<img src="bos/small/1890.svg" width="1" height="1" alt="">
+<img src="bos/small/1895.svg" width="1" height="1" alt="">
+<img src="bos/small/1900.svg" width="1" height="1" alt="">
+<img src="bos/small/1905.svg" width="1" height="1" alt="">
+<img src="bos/small/1910.svg" width="1" height="1" alt="">
+<img src="bos/small/1915.svg" width="1" height="1" alt="">
+<img src="bos/small/1920.svg" width="1" height="1" alt="">
+<img src="bos/small/1925.svg" width="1" height="1" alt="">
+<img src="bos/small/1930.svg" width="1" height="1" alt="">
+<img src="bos/small/1935.svg" width="1" height="1" alt="">
+<img src="bos/small/1940.svg" width="1" height="1" alt="">
+<img src="bos/small/1945.svg" width="1" height="1" alt="">
+<img src="bos/small/1950.svg" width="1" height="1" alt="">
+<img src="bos/small/1955.svg" width="1" height="1" alt="">
+<img src="bos/small/1960.svg" width="1" height="1" alt="">
+<img src="bos/small/1965.svg" width="1" height="1" alt="">
+<img src="bos/small/1970.svg" width="1" height="1" alt="">
+<img src="bos/small/1975.svg" width="1" height="1" alt="">
+<img src="bos/small/1980.svg" width="1" height="1" alt="">
+<img src="bos/small/1985.svg" width="1" height="1" alt="">
+<img src="bos/small/1990.svg" width="1" height="1" alt="">
+<img src="bos/small/1995.svg" width="1" height="1" alt="">
+<img src="bos/small/2000.svg" width="1" height="1" alt="">
+<img src="bos/small/2005.svg" width="1" height="1" alt="">
+<img src="bos/small/2010.svg" width="1" height="1" alt="">
+<img src="bos/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="CHIpre">
+<img src="chi/small/1840.svg" width="1" height="1" alt="">
+<img src="chi/small/1845.svg" width="1" height="1" alt="">
+<img src="chi/small/1850.svg" width="1" height="1" alt="">
+<img src="chi/small/1855.svg" width="1" height="1" alt="">
+<img src="chi/small/1860.svg" width="1" height="1" alt="">
+<img src="chi/small/1865.svg" width="1" height="1" alt="">
+<img src="chi/small/1870.svg" width="1" height="1" alt="">
+<img src="chi/small/1875.svg" width="1" height="1" alt="">
+<img src="chi/small/1880.svg" width="1" height="1" alt="">
+<img src="chi/small/1885.svg" width="1" height="1" alt="">
+<img src="chi/small/1890.svg" width="1" height="1" alt="">
+<img src="chi/small/1895.svg" width="1" height="1" alt="">
+<img src="chi/small/1900.svg" width="1" height="1" alt="">
+<img src="chi/small/1905.svg" width="1" height="1" alt="">
+<img src="chi/small/1910.svg" width="1" height="1" alt="">
+<img src="chi/small/1915.svg" width="1" height="1" alt="">
+<img src="chi/small/1920.svg" width="1" height="1" alt="">
+<img src="chi/small/1925.svg" width="1" height="1" alt="">
+<img src="chi/small/1930.svg" width="1" height="1" alt="">
+<img src="chi/small/1935.svg" width="1" height="1" alt="">
+<img src="chi/small/1940.svg" width="1" height="1" alt="">
+<img src="chi/small/1945.svg" width="1" height="1" alt="">
+<img src="chi/small/1950.svg" width="1" height="1" alt="">
+<img src="chi/small/1955.svg" width="1" height="1" alt="">
+<img src="chi/small/1960.svg" width="1" height="1" alt="">
+<img src="chi/small/1965.svg" width="1" height="1" alt="">
+<img src="chi/small/1970.svg" width="1" height="1" alt="">
+<img src="chi/small/1975.svg" width="1" height="1" alt="">
+<img src="chi/small/1980.svg" width="1" height="1" alt="">
+<img src="chi/small/1985.svg" width="1" height="1" alt="">
+<img src="chi/small/1990.svg" width="1" height="1" alt="">
+<img src="chi/small/1995.svg" width="1" height="1" alt="">
+<img src="chi/small/2000.svg" width="1" height="1" alt="">
+<img src="chi/small/2005.svg" width="1" height="1" alt="">
+<img src="chi/small/2010.svg" width="1" height="1" alt="">
+<img src="chi/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="VIEpre">
+<img src="vie/small/1840.svg" width="1" height="1" alt="">
+<img src="vie/small/1845.svg" width="1" height="1" alt="">
+<img src="vie/small/1850.svg" width="1" height="1" alt="">
+<img src="vie/small/1855.svg" width="1" height="1" alt="">
+<img src="vie/small/1860.svg" width="1" height="1" alt="">
+<img src="vie/small/1865.svg" width="1" height="1" alt="">
+<img src="vie/small/1870.svg" width="1" height="1" alt="">
+<img src="vie/small/1875.svg" width="1" height="1" alt="">
+<img src="vie/small/1880.svg" width="1" height="1" alt="">
+<img src="vie/small/1885.svg" width="1" height="1" alt="">
+<img src="vie/small/1890.svg" width="1" height="1" alt="">
+<img src="vie/small/1895.svg" width="1" height="1" alt="">
+<img src="vie/small/1900.svg" width="1" height="1" alt="">
+<img src="vie/small/1905.svg" width="1" height="1" alt="">
+<img src="vie/small/1910.svg" width="1" height="1" alt="">
+<img src="vie/small/1915.svg" width="1" height="1" alt="">
+<img src="vie/small/1920.svg" width="1" height="1" alt="">
+<img src="vie/small/1925.svg" width="1" height="1" alt="">
+<img src="vie/small/1930.svg" width="1" height="1" alt="">
+<img src="vie/small/1935.svg" width="1" height="1" alt="">
+<img src="vie/small/1940.svg" width="1" height="1" alt="">
+<img src="vie/small/1945.svg" width="1" height="1" alt="">
+<img src="vie/small/1950.svg" width="1" height="1" alt="">
+<img src="vie/small/1955.svg" width="1" height="1" alt="">
+<img src="vie/small/1960.svg" width="1" height="1" alt="">
+<img src="vie/small/1965.svg" width="1" height="1" alt="">
+<img src="vie/small/1970.svg" width="1" height="1" alt="">
+<img src="vie/small/1975.svg" width="1" height="1" alt="">
+<img src="vie/small/1980.svg" width="1" height="1" alt="">
+<img src="vie/small/1985.svg" width="1" height="1" alt="">
+<img src="vie/small/1990.svg" width="1" height="1" alt="">
+<img src="vie/small/1995.svg" width="1" height="1" alt="">
+<img src="vie/small/2000.svg" width="1" height="1" alt="">
+<img src="vie/small/2005.svg" width="1" height="1" alt="">
+<img src="vie/small/2010.svg" width="1" height="1" alt="">
+<img src="vie/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="PHLpre">
 </div>
@@ -340,16 +592,124 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="SFOpre">
 </div>
 <div id="MADpre">
+<img src="mad/small/1840.svg" width="1" height="1" alt="">
+<img src="mad/small/1845.svg" width="1" height="1" alt="">
+<img src="mad/small/1850.svg" width="1" height="1" alt="">
+<img src="mad/small/1855.svg" width="1" height="1" alt="">
+<img src="mad/small/1860.svg" width="1" height="1" alt="">
+<img src="mad/small/1865.svg" width="1" height="1" alt="">
+<img src="mad/small/1870.svg" width="1" height="1" alt="">
+<img src="mad/small/1875.svg" width="1" height="1" alt="">
+<img src="mad/small/1880.svg" width="1" height="1" alt="">
+<img src="mad/small/1885.svg" width="1" height="1" alt="">
+<img src="mad/small/1890.svg" width="1" height="1" alt="">
+<img src="mad/small/1895.svg" width="1" height="1" alt="">
+<img src="mad/small/1900.svg" width="1" height="1" alt="">
+<img src="mad/small/1905.svg" width="1" height="1" alt="">
+<img src="mad/small/1910.svg" width="1" height="1" alt="">
+<img src="mad/small/1915.svg" width="1" height="1" alt="">
+<img src="mad/small/1920.svg" width="1" height="1" alt="">
+<img src="mad/small/1925.svg" width="1" height="1" alt="">
+<img src="mad/small/1930.svg" width="1" height="1" alt="">
+<img src="mad/small/1935.svg" width="1" height="1" alt="">
+<img src="mad/small/1940.svg" width="1" height="1" alt="">
+<img src="mad/small/1945.svg" width="1" height="1" alt="">
+<img src="mad/small/1950.svg" width="1" height="1" alt="">
+<img src="mad/small/1955.svg" width="1" height="1" alt="">
+<img src="mad/small/1960.svg" width="1" height="1" alt="">
+<img src="mad/small/1965.svg" width="1" height="1" alt="">
+<img src="mad/small/1970.svg" width="1" height="1" alt="">
+<img src="mad/small/1975.svg" width="1" height="1" alt="">
+<img src="mad/small/1980.svg" width="1" height="1" alt="">
+<img src="mad/small/1985.svg" width="1" height="1" alt="">
+<img src="mad/small/1990.svg" width="1" height="1" alt="">
+<img src="mad/small/1995.svg" width="1" height="1" alt="">
+<img src="mad/small/2000.svg" width="1" height="1" alt="">
+<img src="mad/small/2005.svg" width="1" height="1" alt="">
+<img src="mad/small/2010.svg" width="1" height="1" alt="">
+<img src="mad/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="BCNpre">
 </div>
 <div id="ATHpre">
 </div>
 <div id="MOWpre">
+<img src="mow/small/1840.svg" width="1" height="1" alt="">
+<img src="mow/small/1845.svg" width="1" height="1" alt="">
+<img src="mow/small/1850.svg" width="1" height="1" alt="">
+<img src="mow/small/1855.svg" width="1" height="1" alt="">
+<img src="mow/small/1860.svg" width="1" height="1" alt="">
+<img src="mow/small/1865.svg" width="1" height="1" alt="">
+<img src="mow/small/1870.svg" width="1" height="1" alt="">
+<img src="mow/small/1875.svg" width="1" height="1" alt="">
+<img src="mow/small/1880.svg" width="1" height="1" alt="">
+<img src="mow/small/1885.svg" width="1" height="1" alt="">
+<img src="mow/small/1890.svg" width="1" height="1" alt="">
+<img src="mow/small/1895.svg" width="1" height="1" alt="">
+<img src="mow/small/1900.svg" width="1" height="1" alt="">
+<img src="mow/small/1905.svg" width="1" height="1" alt="">
+<img src="mow/small/1910.svg" width="1" height="1" alt="">
+<img src="mow/small/1915.svg" width="1" height="1" alt="">
+<img src="mow/small/1920.svg" width="1" height="1" alt="">
+<img src="mow/small/1925.svg" width="1" height="1" alt="">
+<img src="mow/small/1930.svg" width="1" height="1" alt="">
+<img src="mow/small/1935.svg" width="1" height="1" alt="">
+<img src="mow/small/1940.svg" width="1" height="1" alt="">
+<img src="mow/small/1945.svg" width="1" height="1" alt="">
+<img src="mow/small/1950.svg" width="1" height="1" alt="">
+<img src="mow/small/1955.svg" width="1" height="1" alt="">
+<img src="mow/small/1960.svg" width="1" height="1" alt="">
+<img src="mow/small/1965.svg" width="1" height="1" alt="">
+<img src="mow/small/1970.svg" width="1" height="1" alt="">
+<img src="mow/small/1975.svg" width="1" height="1" alt="">
+<img src="mow/small/1980.svg" width="1" height="1" alt="">
+<img src="mow/small/1985.svg" width="1" height="1" alt="">
+<img src="mow/small/1990.svg" width="1" height="1" alt="">
+<img src="mow/small/1995.svg" width="1" height="1" alt="">
+<img src="mow/small/2000.svg" width="1" height="1" alt="">
+<img src="mow/small/2005.svg" width="1" height="1" alt="">
+<img src="mow/small/2010.svg" width="1" height="1" alt="">
+<img src="mow/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="RIOpre">
 </div>
 <div id="WASpre">
+<img src="was/small/1840.svg" width="1" height="1" alt="">
+<img src="was/small/1845.svg" width="1" height="1" alt="">
+<img src="was/small/1850.svg" width="1" height="1" alt="">
+<img src="was/small/1855.svg" width="1" height="1" alt="">
+<img src="was/small/1860.svg" width="1" height="1" alt="">
+<img src="was/small/1865.svg" width="1" height="1" alt="">
+<img src="was/small/1870.svg" width="1" height="1" alt="">
+<img src="was/small/1875.svg" width="1" height="1" alt="">
+<img src="was/small/1880.svg" width="1" height="1" alt="">
+<img src="was/small/1885.svg" width="1" height="1" alt="">
+<img src="was/small/1890.svg" width="1" height="1" alt="">
+<img src="was/small/1895.svg" width="1" height="1" alt="">
+<img src="was/small/1900.svg" width="1" height="1" alt="">
+<img src="was/small/1905.svg" width="1" height="1" alt="">
+<img src="was/small/1910.svg" width="1" height="1" alt="">
+<img src="was/small/1915.svg" width="1" height="1" alt="">
+<img src="was/small/1920.svg" width="1" height="1" alt="">
+<img src="was/small/1925.svg" width="1" height="1" alt="">
+<img src="was/small/1930.svg" width="1" height="1" alt="">
+<img src="was/small/1935.svg" width="1" height="1" alt="">
+<img src="was/small/1940.svg" width="1" height="1" alt="">
+<img src="was/small/1945.svg" width="1" height="1" alt="">
+<img src="was/small/1950.svg" width="1" height="1" alt="">
+<img src="was/small/1955.svg" width="1" height="1" alt="">
+<img src="was/small/1960.svg" width="1" height="1" alt="">
+<img src="was/small/1965.svg" width="1" height="1" alt="">
+<img src="was/small/1970.svg" width="1" height="1" alt="">
+<img src="was/small/1975.svg" width="1" height="1" alt="">
+<img src="was/small/1980.svg" width="1" height="1" alt="">
+<img src="was/small/1985.svg" width="1" height="1" alt="">
+<img src="was/small/1990.svg" width="1" height="1" alt="">
+<img src="was/small/1995.svg" width="1" height="1" alt="">
+<img src="was/small/2000.svg" width="1" height="1" alt="">
+<img src="was/small/2005.svg" width="1" height="1" alt="">
+<img src="was/small/2010.svg" width="1" height="1" alt="">
+<img src="was/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="YTOpre">
 </div>
@@ -362,16 +722,160 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="YMQpre">
 </div>
 <div id="MEXpre">
+<img src="mex/small/1840.svg" width="1" height="1" alt="">
+<img src="mex/small/1845.svg" width="1" height="1" alt="">
+<img src="mex/small/1850.svg" width="1" height="1" alt="">
+<img src="mex/small/1855.svg" width="1" height="1" alt="">
+<img src="mex/small/1860.svg" width="1" height="1" alt="">
+<img src="mex/small/1865.svg" width="1" height="1" alt="">
+<img src="mex/small/1870.svg" width="1" height="1" alt="">
+<img src="mex/small/1875.svg" width="1" height="1" alt="">
+<img src="mex/small/1880.svg" width="1" height="1" alt="">
+<img src="mex/small/1885.svg" width="1" height="1" alt="">
+<img src="mex/small/1890.svg" width="1" height="1" alt="">
+<img src="mex/small/1895.svg" width="1" height="1" alt="">
+<img src="mex/small/1900.svg" width="1" height="1" alt="">
+<img src="mex/small/1905.svg" width="1" height="1" alt="">
+<img src="mex/small/1910.svg" width="1" height="1" alt="">
+<img src="mex/small/1915.svg" width="1" height="1" alt="">
+<img src="mex/small/1920.svg" width="1" height="1" alt="">
+<img src="mex/small/1925.svg" width="1" height="1" alt="">
+<img src="mex/small/1930.svg" width="1" height="1" alt="">
+<img src="mex/small/1935.svg" width="1" height="1" alt="">
+<img src="mex/small/1940.svg" width="1" height="1" alt="">
+<img src="mex/small/1945.svg" width="1" height="1" alt="">
+<img src="mex/small/1950.svg" width="1" height="1" alt="">
+<img src="mex/small/1955.svg" width="1" height="1" alt="">
+<img src="mex/small/1960.svg" width="1" height="1" alt="">
+<img src="mex/small/1965.svg" width="1" height="1" alt="">
+<img src="mex/small/1970.svg" width="1" height="1" alt="">
+<img src="mex/small/1975.svg" width="1" height="1" alt="">
+<img src="mex/small/1980.svg" width="1" height="1" alt="">
+<img src="mex/small/1985.svg" width="1" height="1" alt="">
+<img src="mex/small/1990.svg" width="1" height="1" alt="">
+<img src="mex/small/1995.svg" width="1" height="1" alt="">
+<img src="mex/small/2000.svg" width="1" height="1" alt="">
+<img src="mex/small/2005.svg" width="1" height="1" alt="">
+<img src="mex/small/2010.svg" width="1" height="1" alt="">
+<img src="mex/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="BJSpre">
+<img src="bjs/small/1840.svg" width="1" height="1" alt="">
+<img src="bjs/small/1845.svg" width="1" height="1" alt="">
+<img src="bjs/small/1850.svg" width="1" height="1" alt="">
+<img src="bjs/small/1855.svg" width="1" height="1" alt="">
+<img src="bjs/small/1860.svg" width="1" height="1" alt="">
+<img src="bjs/small/1865.svg" width="1" height="1" alt="">
+<img src="bjs/small/1870.svg" width="1" height="1" alt="">
+<img src="bjs/small/1875.svg" width="1" height="1" alt="">
+<img src="bjs/small/1880.svg" width="1" height="1" alt="">
+<img src="bjs/small/1885.svg" width="1" height="1" alt="">
+<img src="bjs/small/1890.svg" width="1" height="1" alt="">
+<img src="bjs/small/1895.svg" width="1" height="1" alt="">
+<img src="bjs/small/1900.svg" width="1" height="1" alt="">
+<img src="bjs/small/1905.svg" width="1" height="1" alt="">
+<img src="bjs/small/1910.svg" width="1" height="1" alt="">
+<img src="bjs/small/1915.svg" width="1" height="1" alt="">
+<img src="bjs/small/1920.svg" width="1" height="1" alt="">
+<img src="bjs/small/1925.svg" width="1" height="1" alt="">
+<img src="bjs/small/1930.svg" width="1" height="1" alt="">
+<img src="bjs/small/1935.svg" width="1" height="1" alt="">
+<img src="bjs/small/1940.svg" width="1" height="1" alt="">
+<img src="bjs/small/1945.svg" width="1" height="1" alt="">
+<img src="bjs/small/1950.svg" width="1" height="1" alt="">
+<img src="bjs/small/1955.svg" width="1" height="1" alt="">
+<img src="bjs/small/1960.svg" width="1" height="1" alt="">
+<img src="bjs/small/1965.svg" width="1" height="1" alt="">
+<img src="bjs/small/1970.svg" width="1" height="1" alt="">
+<img src="bjs/small/1975.svg" width="1" height="1" alt="">
+<img src="bjs/small/1980.svg" width="1" height="1" alt="">
+<img src="bjs/small/1985.svg" width="1" height="1" alt="">
+<img src="bjs/small/1990.svg" width="1" height="1" alt="">
+<img src="bjs/small/1995.svg" width="1" height="1" alt="">
+<img src="bjs/small/2000.svg" width="1" height="1" alt="">
+<img src="bjs/small/2005.svg" width="1" height="1" alt="">
+<img src="bjs/small/2010.svg" width="1" height="1" alt="">
+<img src="bjs/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="MUCpre">
+<img src="muc/small/1840.svg" width="1" height="1" alt="">
+<img src="muc/small/1845.svg" width="1" height="1" alt="">
+<img src="muc/small/1850.svg" width="1" height="1" alt="">
+<img src="muc/small/1855.svg" width="1" height="1" alt="">
+<img src="muc/small/1860.svg" width="1" height="1" alt="">
+<img src="muc/small/1865.svg" width="1" height="1" alt="">
+<img src="muc/small/1870.svg" width="1" height="1" alt="">
+<img src="muc/small/1875.svg" width="1" height="1" alt="">
+<img src="muc/small/1880.svg" width="1" height="1" alt="">
+<img src="muc/small/1885.svg" width="1" height="1" alt="">
+<img src="muc/small/1890.svg" width="1" height="1" alt="">
+<img src="muc/small/1895.svg" width="1" height="1" alt="">
+<img src="muc/small/1900.svg" width="1" height="1" alt="">
+<img src="muc/small/1905.svg" width="1" height="1" alt="">
+<img src="muc/small/1910.svg" width="1" height="1" alt="">
+<img src="muc/small/1915.svg" width="1" height="1" alt="">
+<img src="muc/small/1920.svg" width="1" height="1" alt="">
+<img src="muc/small/1925.svg" width="1" height="1" alt="">
+<img src="muc/small/1930.svg" width="1" height="1" alt="">
+<img src="muc/small/1935.svg" width="1" height="1" alt="">
+<img src="muc/small/1940.svg" width="1" height="1" alt="">
+<img src="muc/small/1945.svg" width="1" height="1" alt="">
+<img src="muc/small/1950.svg" width="1" height="1" alt="">
+<img src="muc/small/1955.svg" width="1" height="1" alt="">
+<img src="muc/small/1960.svg" width="1" height="1" alt="">
+<img src="muc/small/1965.svg" width="1" height="1" alt="">
+<img src="muc/small/1970.svg" width="1" height="1" alt="">
+<img src="muc/small/1975.svg" width="1" height="1" alt="">
+<img src="muc/small/1980.svg" width="1" height="1" alt="">
+<img src="muc/small/1985.svg" width="1" height="1" alt="">
+<img src="muc/small/1990.svg" width="1" height="1" alt="">
+<img src="muc/small/1995.svg" width="1" height="1" alt="">
+<img src="muc/small/2000.svg" width="1" height="1" alt="">
+<img src="muc/small/2005.svg" width="1" height="1" alt="">
+<img src="muc/small/2010.svg" width="1" height="1" alt="">
+<img src="muc/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="SELpre">
 </div>
 <div id="SCLpre">
 </div>
 <div id="HKGpre">
+<img src="hkg/small/1840.svg" width="1" height="1" alt="">
+<img src="hkg/small/1845.svg" width="1" height="1" alt="">
+<img src="hkg/small/1850.svg" width="1" height="1" alt="">
+<img src="hkg/small/1855.svg" width="1" height="1" alt="">
+<img src="hkg/small/1860.svg" width="1" height="1" alt="">
+<img src="hkg/small/1865.svg" width="1" height="1" alt="">
+<img src="hkg/small/1870.svg" width="1" height="1" alt="">
+<img src="hkg/small/1875.svg" width="1" height="1" alt="">
+<img src="hkg/small/1880.svg" width="1" height="1" alt="">
+<img src="hkg/small/1885.svg" width="1" height="1" alt="">
+<img src="hkg/small/1890.svg" width="1" height="1" alt="">
+<img src="hkg/small/1895.svg" width="1" height="1" alt="">
+<img src="hkg/small/1900.svg" width="1" height="1" alt="">
+<img src="hkg/small/1905.svg" width="1" height="1" alt="">
+<img src="hkg/small/1910.svg" width="1" height="1" alt="">
+<img src="hkg/small/1915.svg" width="1" height="1" alt="">
+<img src="hkg/small/1920.svg" width="1" height="1" alt="">
+<img src="hkg/small/1925.svg" width="1" height="1" alt="">
+<img src="hkg/small/1930.svg" width="1" height="1" alt="">
+<img src="hkg/small/1935.svg" width="1" height="1" alt="">
+<img src="hkg/small/1940.svg" width="1" height="1" alt="">
+<img src="hkg/small/1945.svg" width="1" height="1" alt="">
+<img src="hkg/small/1950.svg" width="1" height="1" alt="">
+<img src="hkg/small/1955.svg" width="1" height="1" alt="">
+<img src="hkg/small/1960.svg" width="1" height="1" alt="">
+<img src="hkg/small/1965.svg" width="1" height="1" alt="">
+<img src="hkg/small/1970.svg" width="1" height="1" alt="">
+<img src="hkg/small/1975.svg" width="1" height="1" alt="">
+<img src="hkg/small/1980.svg" width="1" height="1" alt="">
+<img src="hkg/small/1985.svg" width="1" height="1" alt="">
+<img src="hkg/small/1990.svg" width="1" height="1" alt="">
+<img src="hkg/small/1995.svg" width="1" height="1" alt="">
+<img src="hkg/small/2000.svg" width="1" height="1" alt="">
+<img src="hkg/small/2005.svg" width="1" height="1" alt="">
+<img src="hkg/small/2010.svg" width="1" height="1" alt="">
+<img src="hkg/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="ATLpre">
 </div>
@@ -382,13 +886,45 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="SINpre">
 </div>
 <div id="SHApre">
+<img src="sha/small/1840.svg" width="1" height="1" alt="">
+<img src="sha/small/1845.svg" width="1" height="1" alt="">
+<img src="sha/small/1850.svg" width="1" height="1" alt="">
+<img src="sha/small/1855.svg" width="1" height="1" alt="">
+<img src="sha/small/1860.svg" width="1" height="1" alt="">
+<img src="sha/small/1865.svg" width="1" height="1" alt="">
+<img src="sha/small/1870.svg" width="1" height="1" alt="">
+<img src="sha/small/1875.svg" width="1" height="1" alt="">
+<img src="sha/small/1880.svg" width="1" height="1" alt="">
+<img src="sha/small/1885.svg" width="1" height="1" alt="">
+<img src="sha/small/1890.svg" width="1" height="1" alt="">
+<img src="sha/small/1895.svg" width="1" height="1" alt="">
+<img src="sha/small/1900.svg" width="1" height="1" alt="">
+<img src="sha/small/1905.svg" width="1" height="1" alt="">
+<img src="sha/small/1910.svg" width="1" height="1" alt="">
+<img src="sha/small/1915.svg" width="1" height="1" alt="">
+<img src="sha/small/1920.svg" width="1" height="1" alt="">
+<img src="sha/small/1925.svg" width="1" height="1" alt="">
+<img src="sha/small/1930.svg" width="1" height="1" alt="">
+<img src="sha/small/1935.svg" width="1" height="1" alt="">
+<img src="sha/small/1940.svg" width="1" height="1" alt="">
+<img src="sha/small/1945.svg" width="1" height="1" alt="">
+<img src="sha/small/1950.svg" width="1" height="1" alt="">
+<img src="sha/small/1955.svg" width="1" height="1" alt="">
+<img src="sha/small/1960.svg" width="1" height="1" alt="">
+<img src="sha/small/1965.svg" width="1" height="1" alt="">
+<img src="sha/small/1970.svg" width="1" height="1" alt="">
+<img src="sha/small/1975.svg" width="1" height="1" alt="">
+<img src="sha/small/1980.svg" width="1" height="1" alt="">
+<img src="sha/small/1985.svg" width="1" height="1" alt="">
+<img src="sha/small/1990.svg" width="1" height="1" alt="">
+<img src="sha/small/1995.svg" width="1" height="1" alt="">
+<img src="sha/small/2000.svg" width="1" height="1" alt="">
+<img src="sha/small/2005.svg" width="1" height="1" alt="">
+<img src="sha/small/2010.svg" width="1" height="1" alt="">
+<img src="sha/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="TPEpre">
 </div>
 <div id="CANpre">
 </div>
-</div>
-<script type="text/javascript">
-["LON","NYC","PAR","BER","BOS","CHI","VIE","MAD","MOW","MEX","BJS","MUC","WAS","HKG","SHA"].forEach(function(city) { document.getElementById(city + "checkbox").click();});
-</script>
-</body></html>
+</div></body></html>

@@ -2,7 +2,7 @@
 cat <<HEREDOC
 <!DOCTYPE HTML>
 <html>
-<head><title>Rapid Transit Timelines</title>
+<head><title>Rapid Transit Timelines and Scale Comparison</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <style type="text/css">
 div#preloader {
@@ -188,9 +188,15 @@ for city in $@; do
   NATIVEW=$(grep ' width="' $city/small/2015.svg | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*390/5376)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $city/small/2015.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
-  echo '<span id="'$UPPER'" style="display: none; vertical-align: middle"><a href="'$city'">'$NAME'<br>' \
+  if [ -f $city/s ]; then
+    echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle"><a href="'$city'">'$NAME'<br>' \
     | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
-  echo '  <img class="map" id="'$UPPER'map" src="about:blank" title="2015" alt="2015 map" width="'$W'" height="'$H'"></a></span>'
+    echo '  <img class="map" id="'$UPPER'map" src="'$city'/small/2015.svg" title="2015" alt="2015 map" width="'$W'" height="'$H'"></a></span>'
+  else
+    echo '<span id="'$UPPER'" style="display: none; vertical-align: middle"><a href="'$city'">'$NAME'<br>' \
+    | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
+    echo '  <img class="map" id="'$UPPER'map" src="about:blank" title="2015" alt="2015 map" width="'$W'" height="'$H'"></a></span>'
+  fi
 done
 
 cat <<HEREDOC
@@ -206,8 +212,13 @@ HEREDOC
 for city in $@; do
   NAME=`cat $city/name`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
-  echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\"><a href=\"$city\">$NAME</a><br>" \
-    | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
+  if [ -f $city/s ]; then
+    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"$city\">$NAME</a><br>" \
+      | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
+  else
+    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\"><a href=\"$city\">$NAME</a><br>" \
+      | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
+  fi
 done
 cat <<HEREDOC
 </form></div>
@@ -228,12 +239,11 @@ HEREDOC
 for city in $@; do
   UPPER=`echo $city | tr 'a-z' 'A-Z'`
   echo '<div id="'$UPPER'pre">'
+  if [ -f $city/s ]; then
+    for year in `seq 1840 5 2015`; do
+      echo '<img src="'$city'/small/'$year'.svg" width="1" height="1" alt="">'
+    done
+  fi
   echo '</div>'
 done
-cat <<HEREDOC
-</div>
-<script type="text/javascript">
-["LON","NYC","PAR","BER","BOS","CHI","VIE","MAD","MOW","MEX","BJS","MUC","WAS","HKG","SHA"].forEach(function(city) { document.getElementById(city + "checkbox").click();});
-</script>
-</body></html>
-HEREDOC
+echo "</div></body></html>"
