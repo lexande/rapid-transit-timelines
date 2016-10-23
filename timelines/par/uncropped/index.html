@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
 <head><title>Paris Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
@@ -11,16 +11,20 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+body {
+	text-align: center;
+}
 </style>
-<script language="JavaScript" type="text/javascript">
+<script type="text/javascript">
 start=1875;
 count=29;
 step=5;
 index=count-1;
 function update() {
-	document["MAP"].src=(start+step*index) + ".svg";
-	document["MAP"].title=start+step*index;
-	document["MAP"].alt=start+step*index + " map";
+	map = document.getElementById("map");
+	map.src=(start+step*index) + ".svg";
+	map.title=start+step*index;
+	map.alt=start+step*index + " map";
 	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 	location.replace("#" + (start+step*index));
 }
@@ -61,12 +65,11 @@ window.onhashchange=function() {
   })();
 </script>
 </head><body>
-<center>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-<a name="LINK" href="2015.svg">
-<img name="MAP" src="2015.svg" title="2015" alt="2015 map" width="1881" height="1555" style="border-width: 1px; border-style: solid">
+<a href="2015.svg">
+<img id="map" src="2015.svg" title="2015" alt="2015 map" width="1881" height="1555" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#1875" onclick="gotoyear(1875)">1875</a>
@@ -142,8 +145,7 @@ See also: <a href="../../../subtimeline">New York</a> -
 <a href="../../lon">London</a> -
 <a href="../../">more cities</a>
 <p>
-<font size="1">By <a href="/">Alexander Rapp</a> based on map data 
+<div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
-by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</font>
-</center>
+by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </body></html>
