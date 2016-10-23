@@ -207,7 +207,7 @@ cat <<HEREDOC
 <div id=sidebar>
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
-<div id="form" style="display: block;"><form action="#">(ordered by opening year)<br>
+<div id="form" style="display: block;"><form action="#">(ordered by opening date)<br>
 HEREDOC
 for city in $@; do
   NAME=`cat $city/name`
