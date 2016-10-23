@@ -11,6 +11,14 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+span {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.map {
+	margin-left: 5px;
+	margin-right: 5px;
+}
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1880;
@@ -61,29 +69,24 @@ window.onload=function() {
 </script>
 </head><body>
 <center>
-<a href="northamerica.html">North American cities</a> -
-<a href="europe.html">European cities</a> -
-<a href="asia.html">East Asian cities</a> - 
-<a href="other.html">Other cities</a>
-<p>
-<a href="javascript:prevmap()">five years earlier (or press a)</a> ---
-<a href="javascript:nextmap()">five years later (or press s)</a>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
 <span id="MEL" style="display: inline-block; vertical-align: middle"><a href="mel">Melbourne<br>
-  <img name="MEL" src="mel/small/2015.svg" title="2015" alt="2015 map" width="740px" height="624px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="MEL" src="mel/small/2015.svg" title="2015" alt="2015 map" width="740px" height="624px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SYD" style="display: inline-block; vertical-align: middle"><a href="syd">Sydney<br>
-  <img name="SYD" src="syd/small/2015.svg" title="2015" alt="2015 map" width="527px" height="414px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="SYD" src="syd/small/2015.svg" title="2015" alt="2015 map" width="527px" height="414px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="ADL" style="display: inline-block; vertical-align: middle"><a href="adl">Adelaide<br>
-  <img name="ADL" src="adl/small/2015.svg" title="2015" alt="2015 map" width="239px" height="500px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="ADL" src="adl/small/2015.svg" title="2015" alt="2015 map" width="239px" height="500px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BNE" style="display: inline-block; vertical-align: middle"><a href="bne">Brisbane<br>
-  <img name="BNE" src="bne/small/2015.svg" title="2015" alt="2015 map" width="174px" height="239px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="BNE" src="bne/small/2015.svg" title="2015" alt="2015 map" width="174px" height="239px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PER" style="display: inline-block; vertical-align: middle"><a href="per">Perth<br>
-  <img name="PER" src="per/small/2015.svg" title="2015" alt="2015 map" width="341px" height="1008px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="PER" src="per/small/2015.svg" title="2015" alt="2015 map" width="341px" height="1008px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="AKL" style="display: inline-block; vertical-align: middle"><a href="akl">Auckland<br>
-  <img name="AKL" src="akl/small/2015.svg" title="2015" alt="2015 map" width="225px" height="410px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="AKL" src="akl/small/2015.svg" title="2015" alt="2015 map" width="225px" height="410px" style="border-width: 1px; border-style: solid"></a></span>
 <p>
-<a href="javascript:prevmap()">five years earlier (or press a)</a> --- 
-<a href="javascript:nextmap()">five years later (or press s)</a>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
 <form action="">Cities to show: 
 <div style="display: inline-block"><input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked><a href="mel">Melbourne</a></div>

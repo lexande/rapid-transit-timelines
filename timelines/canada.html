@@ -11,6 +11,14 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+span {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.map {
+	margin-left: 5px;
+	margin-right: 5px;
+}
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1955;
@@ -61,29 +69,24 @@ window.onload=function() {
 </script>
 </head><body>
 <center>
-<a href="northamerica.html">North American cities</a> -
-<a href="europe.html">European cities</a> -
-<a href="asia.html">East Asian cities</a> - 
-<a href="other.html">Other cities</a>
-<p>
-<a href="javascript:prevmap()">five years earlier (or press a)</a> ---
-<a href="javascript:nextmap()">five years later (or press s)</a>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
 <span id="YTO" style="display: inline-block; vertical-align: middle"><a href="yto">Toronto<br>
-  <img name="YTO" src="yto/small/2015.svg" title="2015" alt="2015 map" width="248px" height="177px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="YTO" src="yto/small/2015.svg" title="2015" alt="2015 map" width="248px" height="177px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YMQ" style="display: inline-block; vertical-align: middle"><a href="ymq">Montréal<br>
-  <img name="YMQ" src="ymq/small/2015.svg" title="2015" alt="2015 map" width="172px" height="172px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="YMQ" src="ymq/small/2015.svg" title="2015" alt="2015 map" width="172px" height="172px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YEG" style="display: inline-block; vertical-align: middle"><a href="yeg">Edmonton<br>
-  <img name="YEG" src="yeg/small/2015.svg" title="2015" alt="2015 map" width="87px" height="170px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="YEG" src="yeg/small/2015.svg" title="2015" alt="2015 map" width="87px" height="170px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YYC" style="display: inline-block; vertical-align: middle"><a href="yyc">Calgary<br>
-  <img name="YYC" src="yyc/small/2015.svg" title="2015" alt="2015 map" width="218px" height="291px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="YYC" src="yyc/small/2015.svg" title="2015" alt="2015 map" width="218px" height="291px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YOW" style="display: inline-block; vertical-align: middle"><a href="yow">Ottawa<br>
-  <img name="YOW" src="yow/small/2015.svg" title="2015" alt="2015 map" width="189px" height="120px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="YOW" src="yow/small/2015.svg" title="2015" alt="2015 map" width="189px" height="120px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YVR" style="display: inline-block; vertical-align: middle"><a href="yvr">Vancouver<br>
-  <img name="YVR" src="yvr/small/2015.svg" title="2015" alt="2015 map" width="254px" height="152px" style="border-width: 1px; border-style: solid"></a></span>
+  <img class="map" name="YVR" src="yvr/small/2015.svg" title="2015" alt="2015 map" width="254px" height="152px" style="border-width: 1px; border-style: solid"></a></span>
 <p>
-<a href="javascript:prevmap()">five years earlier (or press a)</a> --- 
-<a href="javascript:nextmap()">five years later (or press s)</a>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
 <form action="">Cities to show: 
 <div style="display: inline-block"><input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')" checked><a href="yto">Toronto</a></div>

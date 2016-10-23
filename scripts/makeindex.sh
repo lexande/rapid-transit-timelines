@@ -24,10 +24,8 @@ else
 fi
 if [ $(basename $(pwd)) == 'uncropped' ]; then
 	CITYNAME=`cat ../name`
-	CONTINENT=`cat ../c`
 else
 	CITYNAME=`cat name`
-	CONTINENT=`cat c`
 fi
 NATIVEW=$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
 W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*1169/5376)}")
@@ -48,7 +46,7 @@ sed -e"s/SNAME/${SNAME}/g" ~/timelines/scripts/boilerplate/cadr >> index.html
 for year in $(seq $START $STEP $END); do
 	echo \<img src=\"${year}.svg\" width=\"1\" height=\"1\" alt=\"\"\> >> index.html
 done
-sed -e"s!<a href=.*>${CITYNAME}</a>!${CITYNAME}!" ~/timelines/scripts/boilerplate/${CONTINENT} >> index.html
+sed -e"s!<a href=.*>${CITYNAME}</a>!${CITYNAME}!" ~/timelines/scripts/boilerplate/cdr >> index.html
 if [ $(basename $(pwd)) == 'uncropped' ]; then
 	sed -e's!\.\.!\.\./\.\.!' -i index.html
 fi
