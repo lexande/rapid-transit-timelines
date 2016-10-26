@@ -68,7 +68,7 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-	["LON","NYC","PAR","BER","MEL","LPL","SYD","BOS","CHI","VIE","NCL","PHL","LAX","CAI","BUE","BOM","SFO","MAD","BCN","ATH","MOW","RIO","WAS","YTO","LED","SAO","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SCL","HKG","ATL","CCS","DUB","MNL","YVR","SIN","SHA","MDE","TPE","CAN","THR"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
+	["LON","NYC","PAR","BER","MEL","LPL","SYD","BOS","CHI","VIE","NCL","PHL","LAX","CAI","BUE","BOM","SFO","MAD","BCN","ATH","MOW","RIO","WAS","YTO","LED","SAO","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SCL","HKG","ATL","CCS","DUB","MNL","PUS","YVR","SIN","SHA","MDE","TPE","CAN","THR"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
 		mapimg = document.getElementById(city + "map");
 		mapimg.src = (city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		mapimg.title = start+step*index;
@@ -248,6 +248,8 @@ window.onload=function() {
   <img class="map" id="DUBmap" src="about:blank" title="2015" alt="2015 map" width="254" height="220"></a></span>
 <span id="MNL" style="display: none; vertical-align: middle"><a href="mnl">Manila<br>
   <img class="map" id="MNLmap" src="about:blank" title="2015" alt="2015 map" width="138" height="167"></a></span>
+<span id="PUS" style="display: none; vertical-align: middle"><a href="pus">Busan<br>
+  <img class="map" id="PUSmap" src="about:blank" title="2015" alt="2015 map" width="305" height="298"></a></span>
 <span id="YVR" style="display: none; vertical-align: middle"><a href="yvr">Vancouver<br>
   <img class="map" id="YVRmap" src="about:blank" title="2015" alt="2015 map" width="254" height="152"></a></span>
 <span id="SIN" style="display: none; vertical-align: middle"><a href="sin">Singapore<br>
@@ -309,6 +311,7 @@ window.onload=function() {
 <input type="checkbox" id="CCScheckbox" onclick="toggleshow('CCS')"><a href="ccs">Caracas</a><br>
 <input type="checkbox" id="DUBcheckbox" onclick="toggleshow('DUB')"><a href="dub">Dublin</a><br>
 <input type="checkbox" id="MNLcheckbox" onclick="toggleshow('MNL')"><a href="mnl">Manila</a><br>
+<input type="checkbox" id="PUScheckbox" onclick="toggleshow('PUS')"><a href="pus">Busan</a><br>
 <input type="checkbox" id="YVRcheckbox" onclick="toggleshow('YVR')"><a href="yvr">Vancouver</a><br>
 <input type="checkbox" id="SINcheckbox" onclick="toggleshow('SIN')"><a href="sin">Singapore</a><br>
 <input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" checked><a href="sha">Shanghai</a><br>
@@ -912,6 +915,8 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="MNLpre">
 </div>
+<div id="PUSpre">
+</div>
 <div id="YVRpre">
 </div>
 <div id="SINpre">
@@ -963,7 +968,7 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="THRpre">
 </div>
 </div><script type="text/javascript">
-["LON","NYC","PAR","BER","MEL","LPL","SYD","BOS","CHI","VIE","NCL","PHL","LAX","CAI","BUE","BOM","SFO","MAD","BCN","ATH","MOW","RIO","WAS","YTO","LED","SAO","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SCL","HKG","ATL","CCS","DUB","MNL","YVR","SIN","SHA","MDE","TPE","CAN","THR"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
+["LON","NYC","PAR","BER","MEL","LPL","SYD","BOS","CHI","VIE","NCL","PHL","LAX","CAI","BUE","BOM","SFO","MAD","BCN","ATH","MOW","RIO","WAS","YTO","LED","SAO","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SCL","HKG","ATL","CCS","DUB","MNL","PUS","YVR","SIN","SHA","MDE","TPE","CAN","THR"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
 		toggleshow(city);
 	}
 });
