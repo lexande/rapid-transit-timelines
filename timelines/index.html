@@ -68,7 +68,7 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-	["LON","NYC","PAR","BER","MEL","LPL","SYD","BOS","CHI","VIE","NCL","PHL","LAX","HAM","CAI","BUE","BOM","SFO","MAD","BCN","ATH","MOW","RIO","WAS","YTO","LED","SAO","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SCL","HKG","ATL","CCS","DUB","MNL","PUS","YVR","SIN","IST","SHA","MDE","TPE","CAN","THR"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
+	["LON","NYC","PAR","BER","MEL","LPL","SYD","BOS","CHI","VIE","NCL","PHL","LAX","HAM","CAI","BUE","BOM","SFO","MAD","BCN","ATH","MOW","RIO","WAS","YTO","ROM","LED","SAO","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SCL","HKG","ATL","CCS","DUB","MNL","PUS","YVR","SIN","IST","SHA","MDE","TPE","CAN","THR"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
 		mapimg = document.getElementById(city + "map");
 		mapimg.src = (city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		mapimg.title = start+step*index;
@@ -220,6 +220,8 @@ window.onload=function() {
   <img class="map" id="WASmap" src="was/small/2015.svg" title="2015" alt="2015 map" width="439" height="419"></a></span>
 <span id="YTO" style="display: none; vertical-align: middle"><a href="yto">Toronto<br>
   <img class="map" id="YTOmap" src="about:blank" title="2015" alt="2015 map" width="248" height="177"></a></span>
+<span id="ROM" style="display: none; vertical-align: middle"><a href="rom">Roma<br>
+  <img class="map" id="ROMmap" src="about:blank" title="2015" alt="2015 map" width="401" height="510"></a></span>
 <span id="LED" style="display: none; vertical-align: middle"><a href="led">Sankt-Peterburg<br>
   <img class="map" id="LEDmap" src="about:blank" title="2015" alt="2015 map" width="160" height="276"></a></span>
 <span id="SAO" style="display: none; vertical-align: middle"><a href="sao">São Paulo<br>
@@ -301,6 +303,7 @@ window.onload=function() {
 <input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')"><a href="rio">Rio de Janeiro</a><br>
 <input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="was">Washington</a><br>
 <input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')"><a href="yto">Toronto</a><br>
+<input type="checkbox" id="ROMcheckbox" onclick="toggleshow('ROM')"><a href="rom">Roma</a><br>
 <input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="led">Sankt-Peterburg</a><br>
 <input type="checkbox" id="SAOcheckbox" onclick="toggleshow('SAO')"><a href="sao">São Paulo</a><br>
 <input type="checkbox" id="KBPcheckbox" onclick="toggleshow('KBP')"><a href="kbp">Kyiv</a><br>
@@ -749,6 +752,8 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="YTOpre">
 </div>
+<div id="ROMpre">
+</div>
 <div id="LEDpre">
 </div>
 <div id="SAOpre">
@@ -978,7 +983,7 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="THRpre">
 </div>
 </div><script type="text/javascript">
-["LON","NYC","PAR","BER","MEL","LPL","SYD","BOS","CHI","VIE","NCL","PHL","LAX","HAM","CAI","BUE","BOM","SFO","MAD","BCN","ATH","MOW","RIO","WAS","YTO","LED","SAO","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SCL","HKG","ATL","CCS","DUB","MNL","PUS","YVR","SIN","IST","SHA","MDE","TPE","CAN","THR"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
+["LON","NYC","PAR","BER","MEL","LPL","SYD","BOS","CHI","VIE","NCL","PHL","LAX","HAM","CAI","BUE","BOM","SFO","MAD","BCN","ATH","MOW","RIO","WAS","YTO","ROM","LED","SAO","KBP","YMQ","MEX","BJS","MUC","PRG","SEL","SCL","HKG","ATL","CCS","DUB","MNL","PUS","YVR","SIN","IST","SHA","MDE","TPE","CAN","THR"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
 		toggleshow(city);
 	}
 });
