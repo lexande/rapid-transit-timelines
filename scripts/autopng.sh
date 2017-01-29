@@ -7,7 +7,4 @@ for i in $@; do
         convert ${b}.png24 -type palette PNG8:${b}.png
         rm ${b}.png24 ${b}-osmless.svg
     fi
-    if [ $i -nt ${i}.svg.gz ]; then
-        gzip -f --keep $i
-    fi
 done
