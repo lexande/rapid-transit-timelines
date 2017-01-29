@@ -26,7 +26,7 @@ count=29;
 step=5;
 index=count-1;
 function update() {
-	["NYC","CHI","BWI","BOS","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","PIT","BUF","PDX","SAC","DET","SJC","JAX","DAL","STL","DEN","LAS","IND","MSP","CLT","SJU","ORF"].forEach(function(city) {
+	["NYC","CHI","BWI","BOS","PIT","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","SJC","JAX","DAL","STL","DEN","LAS","IND","MSP","CLT","SJU","ORF"].forEach(function(city) {
 		document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		document[city].title=start+step*index;
 		document[city].alt=start+step*index + " map";
@@ -80,6 +80,8 @@ window.onload=function() {
   <img class="map" name="BWI" src="bwi/small/2015.svg" title="2015" alt="2015 map" width="189px" height="373px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BOS" style="display: inline-block; vertical-align: middle"><a href="../ttimeline">Boston<br>
   <img class="map" name="BOS" src="bos/small/2015.svg" title="2015" alt="2015 map" width="235px" height="271px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PIT" style="display: inline-block; vertical-align: middle"><a href="pit">Pittsburgh<br>
+  <img class="map" name="PIT" src="pit/small/2015.svg" title="2015" alt="2015 map" width="203px" height="207px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PHL" style="display: inline-block; vertical-align: middle"><a href="phl">Philadelphia<br>
   <img class="map" name="PHL" src="phl/small/2015.svg" title="2015" alt="2015 map" width="319px" height="338px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="LAX" style="display: inline-block; vertical-align: middle"><a href="lax">Los Angeles<br>
@@ -98,8 +100,6 @@ window.onload=function() {
   <img class="map" name="SAN" src="san/small/2015.svg" title="2015" alt="2015 map" width="239px" height="351px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MIA" style="display: inline-block; vertical-align: middle"><a href="mia">Miami<br>
   <img class="map" name="MIA" src="mia/small/2015.svg" title="2015" alt="2015 map" width="154px" height="210px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="PIT" style="display: inline-block; vertical-align: middle"><a href="pit">Pittsburgh<br>
-  <img class="map" name="PIT" src="pit/small/2015.svg" title="2015" alt="2015 map" width="203px" height="207px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BUF" style="display: inline-block; vertical-align: middle"><a href="buf">Buffalo<br>
   <img class="map" name="BUF" src="buf/small/2015.svg" title="2015" alt="2015 map" width="56px" height="93px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PDX" style="display: inline-block; vertical-align: middle"><a href="pdx">Portland<br>
@@ -139,6 +139,7 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="../ltimeline">Chicago</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BWIcheckbox" onclick="toggleshow('BWI')" checked><a href="bwi">Baltimore</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PITcheckbox" onclick="toggleshow('PIT')" checked><a href="pit">Pittsburgh</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="phl">Philadelphia</a></div>
 <div style="display: inline-block"><input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')" checked><a href="lax">Los Angeles</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="sfo">San Francisco</a></div>
@@ -148,7 +149,6 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked><a href="atl">Atlanta</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SANcheckbox" onclick="toggleshow('SAN')" checked><a href="san">San Diego</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MIAcheckbox" onclick="toggleshow('MIA')" checked><a href="mia">Miami</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PITcheckbox" onclick="toggleshow('PIT')" checked><a href="pit">Pittsburgh</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BUFcheckbox" onclick="toggleshow('BUF')" checked><a href="buf">Buffalo</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="pdx">Portland</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SACcheckbox" onclick="toggleshow('SAC')" checked><a href="sac">Sacramento</a></div>
@@ -287,6 +287,35 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="bos/small/2005.svg" width="1" height="1" alt="">
 <img src="bos/small/2010.svg" width="1" height="1" alt="">
 <img src="bos/small/2015.svg" width="1" height="1" alt="">
+<img src="pit/small/1875.svg" width="1" height="1" alt="">
+<img src="pit/small/1880.svg" width="1" height="1" alt="">
+<img src="pit/small/1885.svg" width="1" height="1" alt="">
+<img src="pit/small/1890.svg" width="1" height="1" alt="">
+<img src="pit/small/1895.svg" width="1" height="1" alt="">
+<img src="pit/small/1900.svg" width="1" height="1" alt="">
+<img src="pit/small/1905.svg" width="1" height="1" alt="">
+<img src="pit/small/1910.svg" width="1" height="1" alt="">
+<img src="pit/small/1915.svg" width="1" height="1" alt="">
+<img src="pit/small/1920.svg" width="1" height="1" alt="">
+<img src="pit/small/1925.svg" width="1" height="1" alt="">
+<img src="pit/small/1930.svg" width="1" height="1" alt="">
+<img src="pit/small/1935.svg" width="1" height="1" alt="">
+<img src="pit/small/1940.svg" width="1" height="1" alt="">
+<img src="pit/small/1945.svg" width="1" height="1" alt="">
+<img src="pit/small/1950.svg" width="1" height="1" alt="">
+<img src="pit/small/1955.svg" width="1" height="1" alt="">
+<img src="pit/small/1960.svg" width="1" height="1" alt="">
+<img src="pit/small/1965.svg" width="1" height="1" alt="">
+<img src="pit/small/1970.svg" width="1" height="1" alt="">
+<img src="pit/small/1975.svg" width="1" height="1" alt="">
+<img src="pit/small/1980.svg" width="1" height="1" alt="">
+<img src="pit/small/1985.svg" width="1" height="1" alt="">
+<img src="pit/small/1990.svg" width="1" height="1" alt="">
+<img src="pit/small/1995.svg" width="1" height="1" alt="">
+<img src="pit/small/2000.svg" width="1" height="1" alt="">
+<img src="pit/small/2005.svg" width="1" height="1" alt="">
+<img src="pit/small/2010.svg" width="1" height="1" alt="">
+<img src="pit/small/2015.svg" width="1" height="1" alt="">
 <img src="phl/small/1875.svg" width="1" height="1" alt="">
 <img src="phl/small/1880.svg" width="1" height="1" alt="">
 <img src="phl/small/1885.svg" width="1" height="1" alt="">
@@ -548,35 +577,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="mia/small/2005.svg" width="1" height="1" alt="">
 <img src="mia/small/2010.svg" width="1" height="1" alt="">
 <img src="mia/small/2015.svg" width="1" height="1" alt="">
-<img src="pit/small/1875.svg" width="1" height="1" alt="">
-<img src="pit/small/1880.svg" width="1" height="1" alt="">
-<img src="pit/small/1885.svg" width="1" height="1" alt="">
-<img src="pit/small/1890.svg" width="1" height="1" alt="">
-<img src="pit/small/1895.svg" width="1" height="1" alt="">
-<img src="pit/small/1900.svg" width="1" height="1" alt="">
-<img src="pit/small/1905.svg" width="1" height="1" alt="">
-<img src="pit/small/1910.svg" width="1" height="1" alt="">
-<img src="pit/small/1915.svg" width="1" height="1" alt="">
-<img src="pit/small/1920.svg" width="1" height="1" alt="">
-<img src="pit/small/1925.svg" width="1" height="1" alt="">
-<img src="pit/small/1930.svg" width="1" height="1" alt="">
-<img src="pit/small/1935.svg" width="1" height="1" alt="">
-<img src="pit/small/1940.svg" width="1" height="1" alt="">
-<img src="pit/small/1945.svg" width="1" height="1" alt="">
-<img src="pit/small/1950.svg" width="1" height="1" alt="">
-<img src="pit/small/1955.svg" width="1" height="1" alt="">
-<img src="pit/small/1960.svg" width="1" height="1" alt="">
-<img src="pit/small/1965.svg" width="1" height="1" alt="">
-<img src="pit/small/1970.svg" width="1" height="1" alt="">
-<img src="pit/small/1975.svg" width="1" height="1" alt="">
-<img src="pit/small/1980.svg" width="1" height="1" alt="">
-<img src="pit/small/1985.svg" width="1" height="1" alt="">
-<img src="pit/small/1990.svg" width="1" height="1" alt="">
-<img src="pit/small/1995.svg" width="1" height="1" alt="">
-<img src="pit/small/2000.svg" width="1" height="1" alt="">
-<img src="pit/small/2005.svg" width="1" height="1" alt="">
-<img src="pit/small/2010.svg" width="1" height="1" alt="">
-<img src="pit/small/2015.svg" width="1" height="1" alt="">
 <img src="buf/small/1875.svg" width="1" height="1" alt="">
 <img src="buf/small/1880.svg" width="1" height="1" alt="">
 <img src="buf/small/1885.svg" width="1" height="1" alt="">

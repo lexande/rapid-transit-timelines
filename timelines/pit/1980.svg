@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -29,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/pitosm.png"
-     style="display:none"
      id="image10"
      height="2816"
      width="2816"
      y="34"
-     x="0" />
+     x="0"
+     style="display:none" />
   <text
      x="89.453178"
      y="206.96085"
@@ -53,4 +51,36 @@
        x="89.453125"
        y="2747.9609"
        id="tspan2">1980</tspan></text>
+  <path
+     style="fill:none;stroke:#ec2c29;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path2987"
+     d="m 1033.5,837.99986 29,-0.5 9.5,6.5 12.5,14.5 11.5,2 10.5,-2.5 12,-13.5 11,-10 32,-3 14,-4 5,-9.5 0.5,-17 -9.5,-35 -1,-19 5,-15.5 9,-17 23.5,-14.5 19.5,-13 5,-10.5 24.5,-156 v 0 l 2.8008,-1.97193" />
+  <path
+     style="fill:none;stroke:#017ec0;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3757"
+     d="m 557.49995,2109.9998 15.5,-13.5 36,-16.5 29,-7.5 29.49999,-5 19,-13 9.5,-18 10.5,-39 16.00002,-32 24.5,-38.5 27.5,-68 12.5,-15.5 45,-32 21.5,-12.5 50.5,-7.5 35.5,-9 30,-20.5 14.5,-20 -1,-16 -12,-39.5 -6,-25.5 -0.5,-40 6.5,-27.5 5,-32.5 32.00004,-29 9.5,-1.5 19,9.5 45,-5.5 43.5,-18 13.5,-11.9999 28,-36.9999 70,-81 6,-22 19,-24.9999 19,-13 9,-8.5 16.5,-21 39.5,-27.5 6.5,-13.5 4.5,-28.5 -5.5,-16.5 -14,-15.5 -9.5,-25 3,-19.5 -0.5,-21 -3.5,-30.5 5,-25 3.5,-17.5 -11.5,-27.5 -2.0294,-23.8181 L 1316,987.5 l -6.5,-27 -13.5,-24 -19.5222,-33.1424 -4.2421,-3.3576 -4.0085,-6.2221 1.9091,-11.23267 -2.1363,-8.54522 -10,-23 -23,-34.5 -8,-19.5 -33,-30.5 -12,-23.5 2.2738,-9.49047 21.718,-26.45842 7.0082,-5.05111 18.25,-11.5 5.5,-13.25 23.75,-152.25 2.7699,-4.33728" />
+  <path
+     style="fill:none;stroke:#ec2c29;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3759"
+     d="m 946.99996,971.9999 -4.5,18 -9,8.5 -18.5,20 -23.5,25.5 -36,29 -9.5,15 -19.5,64 -2.18054,11.1322" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#ec2c29;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 1258.7334,519.72876 38.6193,-73.7402 31.2462,-59.34918 15.4865,-30.46943 3.4311,-1.10255 15.8222,7.61989 1.0675,3.2022 -46.1652,89.39489 h -2.9353 l -14.9437,-7.47182 -4.8033,1.0674"
+     id="path4499" />
+  <path
+     style="fill:none;stroke:#017ec0;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3034"
+     d="m 1077.5,2739.0002 -36,-13.5 -19,-15.5 -28.5,-23.5 -16.5,-21.5 -13,-25.5 -8.5,-38 -29,-159 -9.5,-42.5 2,-36 12,-25 39,-54.5 7,-21.5 1.5,-21.5 -5.5,-20 -11.5,-33 -6.5,-23.5 -2.5,-27.5 -5.5,-186.5 24.5,-53.5 5,-16 v -20 l -6.5,-27.5 0.5,-36 3,-21.5 10,-34.5" />
+  <path
+     style="fill:none;stroke:#ec2c29;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="path3761"
+     d="m 1035,837.99967 -8.5,1.5 -5,4 v 24 l -5,14.5 -10.5,10.5 -41.5,27 -5.5,9.5 -4.5,23 -8.5,23" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#017ec0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 1262.3359,521.06301 34.824,-69.7814 2.6685,-1.46767 12.8088,6.67126 4.2696,1.20083 3.469,-1.33425 58.3069,-112.61088 -2.2683,-5.60385 -3.7359,-1.33426 -54.9712,19.48008 -38.6933,77.92033 1.6011,4.8033 12.6755,6.67126 2.8019,7.87209"
+     id="path4521" />
+  <path
+     d="m 824.63201,1161.3397 -1.76134,8.4724 -14.66851,17.5316 -6.46905,12.6155 -4.77236,28.1458 1.92708,27.4746 -7.87898,46.0839 6.34019,7.0085"
+     id="path4523"
+     style="fill:none;stroke:#ec2c29;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
