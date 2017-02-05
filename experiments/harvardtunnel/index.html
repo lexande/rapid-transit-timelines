@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><title>Harvard Transit Tunnel Timeline</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<style type="text/css">
+div#preloader {
+	position: absolute;
+	left: -9999px;
+	top:  -9999px;
+}
+div#preloader img {
+	display: block;
+}
+</style>
+<script language="JavaScript" type="text/javascript">
+start=1920;
+count=10;
+step=10;
+index=count-1;
+function update() {
+	document["MAP"].src=(start+step*index) + ".svg";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
+	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
+	location.replace("#" + (start+step*index));
+}
+function nextmap() {
+	index=(index+1)%count;
+	update();
+}
+function prevmap() {
+	index=(index+count-1)%count;
+	update();
+}
+document.onkeydown=function(keypress) {
+	if(keypress.which == 65) { prevmap(); }
+	if(keypress.which == 83) { nextmap(); }
+}
+function gotoyear(x) {
+	inyear = parseInt(x);
+	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
+}
+window.onload=function() {
+	gotoyear(location.hash.substring(1));
+}
+window.onhashchange=function() {
+	gotoyear(location.hash.substring(1));
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19998781-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body>
+<center>
+<a href="javascript:" onclick="prevmap()">ten years earlier (or press a)</a> ---
+<a href="javascript:nextmap()">ten years later (or press s)</a>
+<p>
+<a name="LINK" href="2010.svg">
+<img name="MAP" src="2010.svg" title="2010" alt="2010 map" width="739px" height="782px" style="border-width: 1px; border-style: solid">
+</a>
+<p>
+<a href="#1920" onclick="gotoyear(1920)">1920</a>
+<a href="#1930" onclick="gotoyear(1930)">1930</a>
+<a href="#1940" onclick="gotoyear(1940)">1940</a>
+<a href="#1950" onclick="gotoyear(1950)">1950</a>
+<a href="#1960" onclick="gotoyear(1960)">1960</a>
+<a href="#1970" onclick="gotoyear(1970)">1970</a>
+<a href="#1980" onclick="gotoyear(1980)">1980</a>
+<a href="#1990" onclick="gotoyear(1990)">1990</a>
+<a href="#2000" onclick="gotoyear(2000)">2000</a>
+<a href="#2010" onclick="gotoyear(2010)">2010</a>
+<p>
+<a href="javascript:" onclick="prevmap()">ten years earlier (or press a)</a> --- 
+<a href="javascript:nextmap()">ten years later (or press s)</a>
+<p>
+Grey represents motorbuses, green trolleybuses, and blue electric streetcars. The tunnel itself is shown in red and the surrounding rapid transit lines in light grey.
+<p>
+Based on weekday midday service using the Harvard transit tunnel during year in question.  Scale 60 CSS pixels per km.
+<p>
+Please send any corrections or questions to threestationsquare at gmail dot com.
+<p>
+<div id="preloader">
+<img src="1920.svg" width="1" height="1" alt="">
+<img src="1930.svg" width="1" height="1" alt="">
+<img src="1940.svg" width="1" height="1" alt="">
+<img src="1950.svg" width="1" height="1" alt="">
+<img src="1960.svg" width="1" height="1" alt="">
+<img src="1970.svg" width="1" height="1" alt="">
+<img src="1980.svg" width="1" height="1" alt="">
+<img src="1990.svg" width="1" height="1" alt="">
+<img src="2000.svg" width="1" height="1" alt="">
+<img src="2010.svg" width="1" height="1" alt="">
+</div>
+See also:
+<a href="/ttimeline">Boston rapid transit timeline</a> -
+<a href="/timelines">other rapid transit timelines</a> -
+<a href="/timelines/misc">miscellaneous timelines</a>
+<p>
+<font size="1">By <a href="/">Alexander Rapp</a> based on map data 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
+by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</font>
+</center>
+</body></html>
