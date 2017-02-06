@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
-   height="4000"
+   version="1.1"
    width="3000"
+   height="4000"
    viewBox="0, 0, 3000, 4000"
-   version="1.1">
+   id="svg2">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -34,37 +34,38 @@
      x="-104.362"
      style="display:none" />
   <path
-     style="fill:none;stroke:#ee2e22;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1850,1642.5 6,10.5 -4.5,12.5 -8.5,19.5 -18,27 -2,10 -0.5,30.5 v 21.5 l -5,56.5 -2,55 -6.5,28.5 3.5,22 2.5,25 -1.5,21 3,15 4.5,11.5 -2.5,8.5 -25,55 -2,19.5 -3.5,15 -11.5,15 -5,18 -7,98 -9.5,103 -7,71 -10,96.5 -4,15.5 -57,134.5 -7.5,20 -7,31 -20.5,101.5 -3,33 2,28.5 24,186.5"
      id="path3757"
-     d="m 1850,1642.5 6,10.5 -4.5,12.5 -8.5,19.5 -18,27 -2,10 -0.5,30.5 0,21.5 -5,56.5 -2,55 -6.5,28.5 3.5,22 2.5,25 -1.5,21 3,15 4.5,11.5 -2.5,8.5 -25,55 -2,19.5 -3.5,15 -11.5,15 -5,18 -7,98 -9.5,103 -7,71 -10,96.5 -4,15.5 -57,134.5 -7.5,20 -7,31 -20.5,101.5 -3,33 2,28.5 24,186.5" />
+     style="fill:none;stroke:#ee2e22;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     d="m 1852.75,1645.25 -6.5,-3 -259.75,-12.25 -30.1836,-1.8175"
+     id="path3765"
+     style="fill:none;stroke:#ee2e22;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 1872.5,1638 -5.75,2.25 -14.25,0.25 -295.75,-15"
+     id="path3767"
+     style="fill:none;stroke:#00447b;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:179.99989319px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
+     id="text3790"
+     y="206.96094"
+     x="89.453133"><tspan
+       id="tspan1"
+       y="206.96094"
+       x="89.453133"
+       style="line-height:179.99989319px">1985</tspan></text>
+  <text
+     style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
+     id="text3790-1"
+     y="3897.9609"
+     x="89.453133"><tspan
+       id="tspan2"
+       y="3897.9609"
+       x="89.453133">1985</tspan></text>
   <path
      style="fill:none;stroke:#00447b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path3759"
-     d="m 1871.5,1639.25 4,-6.25 1,-20.5 7,-6 17.5,-14.5 18.5,-5.5 19,5 15,4 38,1.5 11,4 23,12.5 15.5,3.5 34,-1 42,6.5 22,1.5 34.5,-5 19.5,-6.5 24,-3 23,3 16,5.5 40,24.5 22,9.5 13.5,3 25,1.5 23.5,-0.5 15.5,-4.5 26,-11.5 19.5,-16 38,-33.5 26.5,-22 30,-11.5 14.5,-3.5 8.5,-5.5 2.5,-11 0,-60 0.8403,-457.5531" />
-  <path
-     style="fill:none;stroke:#ee2e22;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     id="path3765"
-     d="M 1556.9048,1628.4795 1586.5,1630 l 259.75,12.25 6.5,3" />
-  <path
-     style="fill:none;stroke:#00447b;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     id="path3767"
-     d="m 1556.75,1625.5 295.75,15 14.25,-0.25 5.75,-2.25" />
-  <text
-     x="89.453133"
-     y="206.96094"
-     id="text3790"
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453133"
-       y="206.96094"
-       id="tspan1">1985</tspan></text>
-  <text
-     x="89.453133"
-     y="3897.9609"
-     id="text3790-1"
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453133"
-       y="3897.9609"
-       id="tspan2">1985</tspan></text>
+     id="path4493"
+     d="m 1871.5,1639.25 4,-6.25 1,-20.5 7,-6 17.5,-14.5 18.5,-5.5 19,5 15,4 38,1.5 11,4 23,12.5 15.5,3.5 34,-1 42,6.5 22,1.5 34.5,-5 19.5,-6.5 24,-3 23,3 16,5.5 40,24.5 22,9.5 13.5,3 25,1.5 23.5,-0.5 15.5,-4.5 26,-11.5 19.5,-16 38,-33.5 26.5,-22 30,-11.5 14.5,-3.5 8.5,-5.5 2.5,-11 v -34.1576 l 0.2184,-481.4546" />
 </svg>
