@@ -42,7 +42,11 @@ s/HEIGHT/${H}/g;" ~/timelines/scripts/boilerplate/car > index.html
 for year in $(seq $START $STEP $END); do
 	echo \<a href=\"#${year}\" onclick=\"gotoyear\(${year}\)\"\>${year}\</a\> >> index.html
 done
-sed -e"s/SNAME/${SNAME}/g" ~/timelines/scripts/boilerplate/cadr >> index.html
+if [ -d uncropped ]; then
+	sed -e"s/SNAME/${SNAME}/g" ~/timelines/scripts/boilerplate/cadru >> index.html
+else
+	sed -e"s/SNAME/${SNAME}/g" ~/timelines/scripts/boilerplate/cadr >> index.html
+fi
 for year in $(seq $START $STEP $END); do
 	echo \<img src=\"${year}.svg\" width=\"1\" height=\"1\" alt=\"\"\> >> index.html
 done
