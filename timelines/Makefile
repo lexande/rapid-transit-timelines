@@ -1,4 +1,4 @@
-all: adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt dal den det dub gla hkg ind jax kbp las lax led lon lpl mad man mde mel mex mia mow msp muc ncl nyc orf par pdx per phl pit rio sac san sao scl sea sel sfo sha sin sjc sju stl syd tpe vie was yeg ymq yow yto yvr yyc mnl prg thr pus ist ham rom msq bkk bhx wlg index.html canada.html australasia.html us.html
+all: adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt dal den det dub gla hkg ind jax kbp las lax led lon lpl mad man mde mel mex mia mow msp muc ncl nyc orf par pdx per phl pit rio sac san sao scl sea sel sfo sha sin sjc sju stl syd tpe vie was yeg ymq yow yto yvr yyc mnl prg thr pus ist ham rom msq bkk bhx wlg nqt mil index.html canada.html australasia.html us.html
 
 define WriteSmall
 ifeq ($(wildcard $(1)/$(strip $(2)).svg),)
@@ -63,4 +63,4 @@ rsync: all
 $(call WriteOverview,us.html,nyc chi bwi bos pit phl lax sfo cle sea was atl san mia buf pdx sac det sjc jax dal stl den las ind msp clt sju orf,United States)
 $(call WriteOverview,canada.html,yto ymq yeg yyc yow yvr,Canadian)
 $(call WriteOverview,australasia.html,mel syd adl bne per akl,Australia/NZ)
-$(call WriteMainIndex,index.html,lon nyc par ber mel lpl syd gla bos chi vie ncl phl lax ham cai bue bom sfo mad bcn ath mow rio was yto rom led sao kbp ymq mex bjs muc prg sel scl bhx atl hkg bne yyc ccs per msq dub mnl pus yvr sin ist bkk sha mde tpe can thr)
+$(call WriteMainIndex,index.html,lon nyc par ber mel lpl syd gla bos chi vie ncl phl lax ham cai bue bom sfo mad bcn ath mow rio was yto rom led sao kbp mil ymq mex bjs muc prg sel scl bhx atl hkg bne yyc ccs per msq dub mnl pus yvr sin ist bkk sha mde tpe can thr)
