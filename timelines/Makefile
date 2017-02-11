@@ -1,13 +1,15 @@
-all: adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt dal den det dub gla hkg ind jax kbp las lax led lon lpl mad man mde mel mex mia mow msp muc ncl nyc orf par pdx per phl pit rio sac san sao scl sea sel sfo sha sin sjc sju stl syd tpe vie was yeg ymq yow yto yvr yyc mnl prg thr pus ist ham rom msq bkk bhx index.html canada.html australasia.html us.html
+all: adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt dal den det dub gla hkg ind jax kbp las lax led lon lpl mad man mde mel mex mia mow msp muc ncl nyc orf par pdx per phl pit rio sac san sao scl sea sel sfo sha sin sjc sju stl syd tpe vie was yeg ymq yow yto yvr yyc mnl prg thr pus ist ham rom msq bkk bhx wlg index.html canada.html australasia.html us.html
 
 define WriteSmall
 ifeq ($(wildcard $(1)/$(strip $(2)).svg),)
 $(1)/small/$(strip $(2)).svg: $(1)/2015.svg
+	mkdir -p $(1)/small
 	~/timelines/scripts/blank.pl $(1)/2015.svg $(2) | ~/timelines/scripts/hideyear.pl > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
 	svgo $$@
 else
 $(1)/small/$(strip $(2)).svg: $(1)/$(strip $(2)).svg
+	mkdir -p $(1)/small
 	~/timelines/scripts/hideyear.pl $$< > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
 	svgo $$@
