@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
-   viewBox="0, 0, 3500, 2100"
-   height="2100"
+   version="1.1"
    width="3500"
-   version="1.1">
+   height="2100"
+   viewBox="0, 0, 3500, 2100"
+   id="svg2">
   <metadata
      id="metadata12">
     <rdf:RDF>
@@ -34,33 +34,33 @@
      id="image12"
      style="display:none" />
   <path
-     style="fill:none;stroke:#ff2a2a;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 1200.1923,669.28927 1208.5,678.5 1326,757 l 208,128.5 28.5,19.00004 62.5,45 126.5,84.49996 162.5,117 10.5,5 120.5,38 21,6 15,8 20.5,13.5 33,24.5 10.5,5 79,1 17,1.5 11.5,7.5 8,13 27.5,58 6.5,15 1,6.5 1,7.5 -3,9 -17.5,38 -3.5,14 2,15 4,15.5 8,11.5 11.5,10.5 11,7 16,5.5 18.5,1 14,-3 23.5,-7.5 31.5,-12.5 26.5,-4 11.5,-2.5 9,-6 16,-11 45,-20 9,-0.5 51.5,9 12,9 12.3851,14.1605 11.2807,4.4438 21.7897,2.8958 8.0577,9.8903 19.9868,5.6096 28.5,1.5 14,1.5 17.4518,-1.3851"
      id="path3636"
-     d="M 1200.1923,669.28927 1208.5,678.5 1326,757 l 208,128.5 28.5,19.00004 62.5,45 126.5,84.49996 162.5,117 10.5,5 120.5,38 21,6 15,8 20.5,13.5 33,24.5 10.5,5 79,1 17,1.5 11.5,7.5 8,13 27.5,58 6.5,15 1,6.5 1,7.5 -3,9 -17.5,38 -3.5,14 2,15 4,15.5 8,11.5 11.5,10.5 11,7 16,5.5 18.5,1 14,-3 23.5,-7.5 31.5,-12.5 26.5,-4 11.5,-2.5 9,-6 16,-11 45,-20 9,-0.5 51.5,9 12,9 16,20 8.5,5 16.5,5 32.5,7 28.5,1.5 14,1.5 17.4518,-1.3851" />
+     style="fill:none;stroke:#ff2a2a;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
-     xml:space="preserve"
-     id="text2816"
+     x="89.453125"
      y="1997.9609"
-     x="89.453125"><tspan
-       id="tspan2"
-       y="1997.9609"
-       x="89.453125">1925</tspan></text>
-  <text
-     style="font-style:normal;font-weight:normal;font-size:143.99990845px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+     id="text2816"
      xml:space="preserve"
-     id="text2816-0"
+     style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453125"
+       y="1997.9609"
+       id="tspan2">1925</tspan></text>
+  <text
+     x="89.453201"
      y="206.96089"
-     x="89.453201"><tspan
-       id="tspan1"
+     id="text2816-0"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:143.99990845px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453201"
        y="206.96089"
-       x="89.453201">1925</tspan></text>
+       id="tspan1">1925</tspan></text>
   <path
-     id="path4508"
+     style="fill:none;fill-rule:evenodd;stroke:#ff2a2a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 1203.2177,672.93432 -30.0318,-35.31515 -11.4009,-23.07998 3.6149,-310.05032 -2.7807,-3.33686 -72.2988,-1.11229 -3.3368,-3.61494 1.9465,-63.12235 -3.893,-4.44915 -7.2299,-0.55615 -13.9036,6.67373 -250.5429,-5.83951"
-     style="fill:none;fill-rule:evenodd;stroke:#ff2a2a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     id="path4508" />
   <path
-     id="path4510"
+     style="fill:none;fill-rule:evenodd;stroke:#ff2a2a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      d="m 2723.672,1478.07 2.7798,-0.4551 22.3884,-18.0278 h 5.3089"
-     style="fill:none;fill-rule:evenodd;stroke:#ff2a2a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     id="path4510" />
 </svg>
