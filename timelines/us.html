@@ -26,7 +26,7 @@ count=29;
 step=5;
 index=count-1;
 function update() {
-	["NYC","CHI","BWI","BOS","PIT","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","SJC","JAX","DAL","STL","DEN","LAS","IND","MSP","CLT","SJU","ORF"].forEach(function(city) {
+	["NYC","CHI","BWI","BOS","PIT","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","SJC","JAX","DAL","STL","DEN","LAS","SLC","IND","MSP","CLT","SJU","ORF"].forEach(function(city) {
 		document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		document[city].title=start+step*index;
 		document[city].alt=start+step*index + " map";
@@ -120,6 +120,8 @@ window.onload=function() {
   <img class="map" name="DEN" src="den/small/2015.svg" title="2015" alt="2015 map" width="319px" height="261px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="LAS" style="display: inline-block; vertical-align: middle"><a href="las">Las Vegas<br>
   <img class="map" name="LAS" src="las/small/2015.svg" title="2015" alt="2015 map" width="40px" height="80px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SLC" style="display: inline-block; vertical-align: middle"><a href="slc">Salt Lake City<br>
+  <img class="map" name="SLC" src="slc/small/2015.svg" title="2015" alt="2015 map" width="174px" height="305px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="IND" style="display: inline-block; vertical-align: middle"><a href="ind">Indianapolis<br>
   <img class="map" name="IND" src="ind/small/2015.svg" title="2015" alt="2015 map" width="40px" height="33px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MSP" style="display: inline-block; vertical-align: middle"><a href="msp">Minneapolis<br>
@@ -159,6 +161,7 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="STLcheckbox" onclick="toggleshow('STL')" checked><a href="stl">Saint Louis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')" checked><a href="den">Denver</a></div>
 <div style="display: inline-block"><input type="checkbox" id="LAScheckbox" onclick="toggleshow('LAS')" checked><a href="las">Las Vegas</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SLCcheckbox" onclick="toggleshow('SLC')" checked><a href="slc">Salt Lake City</a></div>
 <div style="display: inline-block"><input type="checkbox" id="INDcheckbox" onclick="toggleshow('IND')" checked><a href="ind">Indianapolis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MSPcheckbox" onclick="toggleshow('MSP')" checked><a href="msp">Minneapolis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="clt">Charlotte</a></div>
@@ -867,6 +870,35 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="las/small/2005.svg" width="1" height="1" alt="">
 <img src="las/small/2010.svg" width="1" height="1" alt="">
 <img src="las/small/2015.svg" width="1" height="1" alt="">
+<img src="slc/small/1875.svg" width="1" height="1" alt="">
+<img src="slc/small/1880.svg" width="1" height="1" alt="">
+<img src="slc/small/1885.svg" width="1" height="1" alt="">
+<img src="slc/small/1890.svg" width="1" height="1" alt="">
+<img src="slc/small/1895.svg" width="1" height="1" alt="">
+<img src="slc/small/1900.svg" width="1" height="1" alt="">
+<img src="slc/small/1905.svg" width="1" height="1" alt="">
+<img src="slc/small/1910.svg" width="1" height="1" alt="">
+<img src="slc/small/1915.svg" width="1" height="1" alt="">
+<img src="slc/small/1920.svg" width="1" height="1" alt="">
+<img src="slc/small/1925.svg" width="1" height="1" alt="">
+<img src="slc/small/1930.svg" width="1" height="1" alt="">
+<img src="slc/small/1935.svg" width="1" height="1" alt="">
+<img src="slc/small/1940.svg" width="1" height="1" alt="">
+<img src="slc/small/1945.svg" width="1" height="1" alt="">
+<img src="slc/small/1950.svg" width="1" height="1" alt="">
+<img src="slc/small/1955.svg" width="1" height="1" alt="">
+<img src="slc/small/1960.svg" width="1" height="1" alt="">
+<img src="slc/small/1965.svg" width="1" height="1" alt="">
+<img src="slc/small/1970.svg" width="1" height="1" alt="">
+<img src="slc/small/1975.svg" width="1" height="1" alt="">
+<img src="slc/small/1980.svg" width="1" height="1" alt="">
+<img src="slc/small/1985.svg" width="1" height="1" alt="">
+<img src="slc/small/1990.svg" width="1" height="1" alt="">
+<img src="slc/small/1995.svg" width="1" height="1" alt="">
+<img src="slc/small/2000.svg" width="1" height="1" alt="">
+<img src="slc/small/2005.svg" width="1" height="1" alt="">
+<img src="slc/small/2010.svg" width="1" height="1" alt="">
+<img src="slc/small/2015.svg" width="1" height="1" alt="">
 <img src="ind/small/1875.svg" width="1" height="1" alt="">
 <img src="ind/small/1880.svg" width="1" height="1" alt="">
 <img src="ind/small/1885.svg" width="1" height="1" alt="">
