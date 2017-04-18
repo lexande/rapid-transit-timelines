@@ -26,7 +26,7 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="ngoeosm.png"
+     xlink:href="../streetmap/ngoosm.png"
      id="image10"
      height="9936"
      width="8556"
@@ -49,7 +49,7 @@
      style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="89.453133"
        y="206.96094"
-       id="tspan1">1920</tspan></text>
+       id="tspan1">1925</tspan></text>
   <text
      x="89.453133"
      y="9497.9609"
@@ -58,5 +58,13 @@
      style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="89.453133"
        y="9497.9609"
-       id="tspan2">1920</tspan></text>
+       id="tspan2">1925</tspan></text>
+  <path
+     id="path4554"
+     d="m 1940.9306,1084.359 -12.931,17.641 -18,8 -23.5,8 -9.5,13.5 -32.5,65"
+     style="fill:none;fill-rule:evenodd;stroke:#00aa7f;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#00aa7f;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path10179"
+     d="m 1940.931,1084.359 43.487,-100.7627 7.0711,-30.052 3.5355,-28.2843 2.8285,-103.9447 -5.6569,-38.5373 1.4142,-127.2793 -2.8284,-15.2028 -7.4246,-10.253 -14.1422,-6.7175 -68.2358,-24.0416 -8.4852,-6.0105 -5.6569,-6.7175 -2.1213,-9.8995 2.8284,-32.1733 -7.4246,-24.7488" />
 </svg>
