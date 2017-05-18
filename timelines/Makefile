@@ -63,4 +63,4 @@ rsync: all
 $(call WriteOverview,us.html,nyc chi bwi bos pit phl lax sfo cle sea was atl san mia buf pdx sac det sjc jax dal stl den las slc ind msp clt sju orf,United States)
 $(call WriteOverview,canada.html,yvr yto ymq yeg yyc yow,Canadian)
 $(call WriteOverview,australasia.html,mel syd adl per bne akl,Australia/NZ)
-$(call WriteMainIndex,index.html,lon nyc par ber mel lpl syd gla bud bos chi vie tyo ncl phl lax ham cai yvr ngo bue bom sfo mad bcn ath mow rio was yto per rom led sao kbp mil ymq maa mex bjs muc spk prg sel scl bhx atl hkg bne yyc ccs msq dub mnl pus sin ist bkk sha mde tpe can thr)
+$(call WriteMainIndex,index.html,lon nyc par ber mel lpl syd gla bud bos chi vie tyo ncl phl lax ham cai yvr ngo bue bom sfo mad bcn sto ath mow rio was yto per rom led sao kbp mil ymq maa mex bjs muc spk prg sel scl bhx atl hkg bne yyc ccs msq dub mnl pus sin ist bkk sha mde tpe can thr)
