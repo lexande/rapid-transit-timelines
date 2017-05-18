@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,7 +6,6 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="2200"
    viewBox="-50, 0, 2200, 3800"
@@ -22,7 +19,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -30,33 +27,32 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/ledosm.png"
-     style="display:none"
      id="image10"
      height="3888.9167"
      width="2029"
      y="-48.916748"
-     x="30" />
+     x="30"
+     style="display:none;fill:#803300" />
+  <path
+     d="m 1001.7367,2165.6967 -2.2367,11.3032 -3.5,15.5 -14.89646,12.51 -76.10354,28.49 -39.5,34.5 -78.5,69.5 -46.5,29.5 -52.80719,20.4608 -14.69281,12.0392 -3,9 -12.72388,45.8619 -7.69187,7.5743 L 524,2541.4999 l -157.97958,64.594 -27.52042,35.906 -9,39 -25.5,85 -27.5,88.5 -15.5,54 -18.5,50.5 -4.5,194 1.50123,7.4257"
+     id="path3774"
+     style="fill:none;stroke:#e3173c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
-     x="49.453125"
+     x="39.453125"
      y="3697.9609"
      id="text3776"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="49.453125"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="39.453125"
        y="3697.9609"
        id="tspan2">1955</tspan></text>
   <text
-     x="49.453125"
+     x="39.453125"
      y="206.96094"
      id="text3776-5"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="49.453125"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="39.453125"
        y="206.96094"
        id="tspan1">1955</tspan></text>
-  <path
-     d="m 999.5,2177 -3.5,15.5 -91,41 -39.5,34.5 -78.5,69.5 -46.5,29.5 -58.5,29 -9,3.5 -3,9 -91,85 -55,48 -171.5,89.5 -14,11 -9,39 -25.5,85 -27.5,88.5 -15.5,54 -18.5,50.5 -4.5,194 1.45671,7.2055"
-     inkscape:connector-curvature="0"
-     id="path3774"
-     style="fill:none;stroke:#e3173c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
 </svg>
