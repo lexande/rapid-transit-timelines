@@ -68,7 +68,7 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-	["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","BUD","BOS","CHI","VIE","TYO","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","BJS","MUC","SPK","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
+	["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","BJS","MUC","SPK","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
 		mapimg = document.getElementById(city + "map");
 		mapimg.src = (city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		mapimg.title = start+step*index;
@@ -186,16 +186,18 @@ window.onload=function() {
   <img class="map" id="SYDmap" src="about:blank" title="2015" alt="2015 map" width="527" height="414"></a></span>
 <span id="GLA" style="display: none; vertical-align: middle"><a href="gla">Glasgow<br>
   <img class="map" id="GLAmap" src="about:blank" title="2015" alt="2015 map" width="385" height="225"></a></span>
+<span id="CHI" style="display: inline-block; vertical-align: middle"><a href="../ltimeline">Chicago<br>
+  <img class="map" id="CHImap" src="chi/small/2015.svg" title="2015" alt="2015 map" width="308" height="407"></a></span>
 <span id="BUD" style="display: none; vertical-align: middle"><a href="bud">Budapest<br>
   <img class="map" id="BUDmap" src="about:blank" title="2015" alt="2015 map" width="207" height="341"></a></span>
 <span id="BOS" style="display: inline-block; vertical-align: middle"><a href="../ttimeline">Boston<br>
   <img class="map" id="BOSmap" src="bos/small/2015.svg" title="2015" alt="2015 map" width="235" height="271"></a></span>
-<span id="CHI" style="display: inline-block; vertical-align: middle"><a href="../ltimeline">Chicago<br>
-  <img class="map" id="CHImap" src="chi/small/2015.svg" title="2015" alt="2015 map" width="308" height="407"></a></span>
 <span id="VIE" style="display: inline-block; vertical-align: middle"><a href="vie">Wien<br>
   <img class="map" id="VIEmap" src="vie/small/2015.svg" title="2015" alt="2015 map" width="227" height="317"></a></span>
 <span id="TYO" style="display: inline-block; vertical-align: middle"><a href="tyo">Tokyo<br>
   <img class="map" id="TYOmap" src="tyo/small/2015.svg" title="2015" alt="2015 map" width="1284" height="1063"></a></span>
+<span id="DUS" style="display: none; vertical-align: middle"><a href="dus">Rhine-Ruhr<br>
+  <img class="map" id="DUSmap" src="about:blank" title="2015" alt="2015 map" width="889" height="1074"></a></span>
 <span id="NCL" style="display: none; vertical-align: middle"><a href="ncl">Newcastle<br>
   <img class="map" id="NCLmap" src="about:blank" title="2015" alt="2015 map" width="225" height="174"></a></span>
 <span id="PHL" style="display: none; vertical-align: middle"><a href="phl">Philadelphia<br>
@@ -318,11 +320,12 @@ window.onload=function() {
 <input type="checkbox" id="LPLcheckbox" onclick="toggleshow('LPL')"><a href="lpl">Liverpool</a><br>
 <input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')"><a href="syd">Sydney</a><br>
 <input type="checkbox" id="GLAcheckbox" onclick="toggleshow('GLA')"><a href="gla">Glasgow</a><br>
+<input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="../ltimeline">Chicago</a><br>
 <input type="checkbox" id="BUDcheckbox" onclick="toggleshow('BUD')"><a href="bud">Budapest</a><br>
 <input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a><br>
-<input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="../ltimeline">Chicago</a><br>
 <input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')" checked><a href="vie">Wien</a><br>
 <input type="checkbox" id="TYOcheckbox" onclick="toggleshow('TYO')" checked><a href="tyo">Tokyo</a><br>
+<input type="checkbox" id="DUScheckbox" onclick="toggleshow('DUS')"><a href="dus">Rhine-Ruhr</a><br>
 <input type="checkbox" id="NCLcheckbox" onclick="toggleshow('NCL')"><a href="ncl">Newcastle</a><br>
 <input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')"><a href="phl">Philadelphia</a><br>
 <input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')"><a href="lax">Los Angeles</a><br>
@@ -550,6 +553,44 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="GLApre">
 </div>
+<div id="CHIpre">
+<img src="chi/small/1840.svg" width="1" height="1" alt="">
+<img src="chi/small/1845.svg" width="1" height="1" alt="">
+<img src="chi/small/1850.svg" width="1" height="1" alt="">
+<img src="chi/small/1855.svg" width="1" height="1" alt="">
+<img src="chi/small/1860.svg" width="1" height="1" alt="">
+<img src="chi/small/1865.svg" width="1" height="1" alt="">
+<img src="chi/small/1870.svg" width="1" height="1" alt="">
+<img src="chi/small/1875.svg" width="1" height="1" alt="">
+<img src="chi/small/1880.svg" width="1" height="1" alt="">
+<img src="chi/small/1885.svg" width="1" height="1" alt="">
+<img src="chi/small/1890.svg" width="1" height="1" alt="">
+<img src="chi/small/1895.svg" width="1" height="1" alt="">
+<img src="chi/small/1900.svg" width="1" height="1" alt="">
+<img src="chi/small/1905.svg" width="1" height="1" alt="">
+<img src="chi/small/1910.svg" width="1" height="1" alt="">
+<img src="chi/small/1915.svg" width="1" height="1" alt="">
+<img src="chi/small/1920.svg" width="1" height="1" alt="">
+<img src="chi/small/1925.svg" width="1" height="1" alt="">
+<img src="chi/small/1930.svg" width="1" height="1" alt="">
+<img src="chi/small/1935.svg" width="1" height="1" alt="">
+<img src="chi/small/1940.svg" width="1" height="1" alt="">
+<img src="chi/small/1945.svg" width="1" height="1" alt="">
+<img src="chi/small/1950.svg" width="1" height="1" alt="">
+<img src="chi/small/1955.svg" width="1" height="1" alt="">
+<img src="chi/small/1960.svg" width="1" height="1" alt="">
+<img src="chi/small/1965.svg" width="1" height="1" alt="">
+<img src="chi/small/1970.svg" width="1" height="1" alt="">
+<img src="chi/small/1975.svg" width="1" height="1" alt="">
+<img src="chi/small/1980.svg" width="1" height="1" alt="">
+<img src="chi/small/1985.svg" width="1" height="1" alt="">
+<img src="chi/small/1990.svg" width="1" height="1" alt="">
+<img src="chi/small/1995.svg" width="1" height="1" alt="">
+<img src="chi/small/2000.svg" width="1" height="1" alt="">
+<img src="chi/small/2005.svg" width="1" height="1" alt="">
+<img src="chi/small/2010.svg" width="1" height="1" alt="">
+<img src="chi/small/2015.svg" width="1" height="1" alt="">
+</div>
 <div id="BUDpre">
 </div>
 <div id="BOSpre">
@@ -589,44 +630,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <img src="bos/small/2005.svg" width="1" height="1" alt="">
 <img src="bos/small/2010.svg" width="1" height="1" alt="">
 <img src="bos/small/2015.svg" width="1" height="1" alt="">
-</div>
-<div id="CHIpre">
-<img src="chi/small/1840.svg" width="1" height="1" alt="">
-<img src="chi/small/1845.svg" width="1" height="1" alt="">
-<img src="chi/small/1850.svg" width="1" height="1" alt="">
-<img src="chi/small/1855.svg" width="1" height="1" alt="">
-<img src="chi/small/1860.svg" width="1" height="1" alt="">
-<img src="chi/small/1865.svg" width="1" height="1" alt="">
-<img src="chi/small/1870.svg" width="1" height="1" alt="">
-<img src="chi/small/1875.svg" width="1" height="1" alt="">
-<img src="chi/small/1880.svg" width="1" height="1" alt="">
-<img src="chi/small/1885.svg" width="1" height="1" alt="">
-<img src="chi/small/1890.svg" width="1" height="1" alt="">
-<img src="chi/small/1895.svg" width="1" height="1" alt="">
-<img src="chi/small/1900.svg" width="1" height="1" alt="">
-<img src="chi/small/1905.svg" width="1" height="1" alt="">
-<img src="chi/small/1910.svg" width="1" height="1" alt="">
-<img src="chi/small/1915.svg" width="1" height="1" alt="">
-<img src="chi/small/1920.svg" width="1" height="1" alt="">
-<img src="chi/small/1925.svg" width="1" height="1" alt="">
-<img src="chi/small/1930.svg" width="1" height="1" alt="">
-<img src="chi/small/1935.svg" width="1" height="1" alt="">
-<img src="chi/small/1940.svg" width="1" height="1" alt="">
-<img src="chi/small/1945.svg" width="1" height="1" alt="">
-<img src="chi/small/1950.svg" width="1" height="1" alt="">
-<img src="chi/small/1955.svg" width="1" height="1" alt="">
-<img src="chi/small/1960.svg" width="1" height="1" alt="">
-<img src="chi/small/1965.svg" width="1" height="1" alt="">
-<img src="chi/small/1970.svg" width="1" height="1" alt="">
-<img src="chi/small/1975.svg" width="1" height="1" alt="">
-<img src="chi/small/1980.svg" width="1" height="1" alt="">
-<img src="chi/small/1985.svg" width="1" height="1" alt="">
-<img src="chi/small/1990.svg" width="1" height="1" alt="">
-<img src="chi/small/1995.svg" width="1" height="1" alt="">
-<img src="chi/small/2000.svg" width="1" height="1" alt="">
-<img src="chi/small/2005.svg" width="1" height="1" alt="">
-<img src="chi/small/2010.svg" width="1" height="1" alt="">
-<img src="chi/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="VIEpre">
 <img src="vie/small/1840.svg" width="1" height="1" alt="">
@@ -703,6 +706,8 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <img src="tyo/small/2005.svg" width="1" height="1" alt="">
 <img src="tyo/small/2010.svg" width="1" height="1" alt="">
 <img src="tyo/small/2015.svg" width="1" height="1" alt="">
+</div>
+<div id="DUSpre">
 </div>
 <div id="NCLpre">
 </div>
@@ -1099,7 +1104,7 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="THRpre">
 </div>
 </div><script type="text/javascript">
-["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","BUD","BOS","CHI","VIE","TYO","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","BJS","MUC","SPK","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
+["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","BJS","MUC","SPK","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
 		toggleshow(city);
 	}
 });

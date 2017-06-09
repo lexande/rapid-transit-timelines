@@ -34,7 +34,7 @@ H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' ${END}.svg | head -n1 | sed -e
 sed -e"s/START/${START}/g; 
 s/STEP/${STEP}/g; 
 s/COUNT/${COUNT}/g; 
-s/CITYNAME/${CITYNAME}/g;
+s!CITYNAME!${CITYNAME}!g;
 s/INDEX/${INDEX}/g;
 s/SNAME/${SNAME}/g;
 s/WIDTH/${W}/g;
