@@ -62,4 +62,4 @@ rsync: all
 
 $(call WriteOverview,us.html,nyc chi bwi bos pit phl lax sfo cle sea was atl san mia buf pdx sac det sjc jax dal stl den las slc ind msp clt sju orf,United States)
 $(call WriteOverview,anglo.html,lon mel lpl syd gla ncl yvr adl man yto per yeg bhx bne yyc yow dub szd nqt akl edi,Non-US Anglosphere)
-$(call WriteMainIndex,index.html,lon nyc par ber mel lpl syd gla chi bud bos vie tyo dus ncl phl lax ham cai yvr ngo bue bom sfo mad bcn sto ath mow rio was yto per rom led sao kbp mil ymq maa fra mex bjs muc spk prg sel scl bhx atl hkg bne yyc ccs msq dub mnl tsn pus sin ist bkk sha mde tpe can thr del wuh ckg nkg)
+$(call WriteMainIndex,index.html,lon nyc par ber mel lpl syd gla chi bud bos vie tyo dus ncl phl lax ham cai yvr ngo bue bom sfo mad bcn sto ath mow rio was yto per rom led sao kbp mil ymq maa fra mex muc spk bjs prg sel scl bhx atl hkg bne yyc ccs msq dub mnl tsn pus sin ist bkk sha mde tpe can thr del wuh ckg nkg)
