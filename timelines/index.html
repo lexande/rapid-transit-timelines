@@ -68,7 +68,7 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-	["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","BJS","MUC","SPK","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
+	["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
 		mapimg = document.getElementById(city + "map");
 		mapimg.src = (city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		mapimg.title = start+step*index;
@@ -254,12 +254,12 @@ window.onload=function() {
   <img class="map" id="FRAmap" src="about:blank" title="2015" alt="2015 map" width="335" height="301"></a></span>
 <span id="MEX" style="display: inline-block; vertical-align: middle"><a href="mex">México<br>
   <img class="map" id="MEXmap" src="mex/small/2015.svg" title="2015" alt="2015 map" width="290" height="315"></a></span>
-<span id="BJS" style="display: inline-block; vertical-align: middle"><a href="bjs">Beijing<br>
-  <img class="map" id="BJSmap" src="bjs/small/2015.svg" title="2015" alt="2015 map" width="551" height="660"></a></span>
 <span id="MUC" style="display: inline-block; vertical-align: middle"><a href="muc">München<br>
   <img class="map" id="MUCmap" src="muc/small/2015.svg" title="2015" alt="2015 map" width="548" height="410"></a></span>
 <span id="SPK" style="display: none; vertical-align: middle"><a href="spk">Sapporo<br>
   <img class="map" id="SPKmap" src="about:blank" title="2015" alt="2015 map" width="203" height="210"></a></span>
+<span id="BJS" style="display: inline-block; vertical-align: middle"><a href="bjs">Beijing<br>
+  <img class="map" id="BJSmap" src="bjs/small/2015.svg" title="2015" alt="2015 map" width="551" height="660"></a></span>
 <span id="PRG" style="display: none; vertical-align: middle"><a href="prg">Praha<br>
   <img class="map" id="PRGmap" src="about:blank" title="2015" alt="2015 map" width="220" height="126"></a></span>
 <span id="SEL" style="display: none; vertical-align: middle"><a href="sel">Seoul<br>
@@ -362,9 +362,9 @@ window.onload=function() {
 <input type="checkbox" id="MAAcheckbox" onclick="toggleshow('MAA')"><a href="maa">Chennai</a><br>
 <input type="checkbox" id="FRAcheckbox" onclick="toggleshow('FRA')"><a href="fra">Frankfurt</a><br>
 <input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')" checked><a href="mex">México</a><br>
-<input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')" checked><a href="bjs">Beijing</a><br>
 <input type="checkbox" id="MUCcheckbox" onclick="toggleshow('MUC')" checked><a href="muc">München</a><br>
 <input type="checkbox" id="SPKcheckbox" onclick="toggleshow('SPK')"><a href="spk">Sapporo</a><br>
+<input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')" checked><a href="bjs">Beijing</a><br>
 <input type="checkbox" id="PRGcheckbox" onclick="toggleshow('PRG')"><a href="prg">Praha</a><br>
 <input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')"><a href="sel">Seoul</a><br>
 <input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')"><a href="scl">Santiago</a><br>
@@ -921,44 +921,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <img src="mex/small/2010.svg" width="1" height="1" alt="">
 <img src="mex/small/2015.svg" width="1" height="1" alt="">
 </div>
-<div id="BJSpre">
-<img src="bjs/small/1840.svg" width="1" height="1" alt="">
-<img src="bjs/small/1845.svg" width="1" height="1" alt="">
-<img src="bjs/small/1850.svg" width="1" height="1" alt="">
-<img src="bjs/small/1855.svg" width="1" height="1" alt="">
-<img src="bjs/small/1860.svg" width="1" height="1" alt="">
-<img src="bjs/small/1865.svg" width="1" height="1" alt="">
-<img src="bjs/small/1870.svg" width="1" height="1" alt="">
-<img src="bjs/small/1875.svg" width="1" height="1" alt="">
-<img src="bjs/small/1880.svg" width="1" height="1" alt="">
-<img src="bjs/small/1885.svg" width="1" height="1" alt="">
-<img src="bjs/small/1890.svg" width="1" height="1" alt="">
-<img src="bjs/small/1895.svg" width="1" height="1" alt="">
-<img src="bjs/small/1900.svg" width="1" height="1" alt="">
-<img src="bjs/small/1905.svg" width="1" height="1" alt="">
-<img src="bjs/small/1910.svg" width="1" height="1" alt="">
-<img src="bjs/small/1915.svg" width="1" height="1" alt="">
-<img src="bjs/small/1920.svg" width="1" height="1" alt="">
-<img src="bjs/small/1925.svg" width="1" height="1" alt="">
-<img src="bjs/small/1930.svg" width="1" height="1" alt="">
-<img src="bjs/small/1935.svg" width="1" height="1" alt="">
-<img src="bjs/small/1940.svg" width="1" height="1" alt="">
-<img src="bjs/small/1945.svg" width="1" height="1" alt="">
-<img src="bjs/small/1950.svg" width="1" height="1" alt="">
-<img src="bjs/small/1955.svg" width="1" height="1" alt="">
-<img src="bjs/small/1960.svg" width="1" height="1" alt="">
-<img src="bjs/small/1965.svg" width="1" height="1" alt="">
-<img src="bjs/small/1970.svg" width="1" height="1" alt="">
-<img src="bjs/small/1975.svg" width="1" height="1" alt="">
-<img src="bjs/small/1980.svg" width="1" height="1" alt="">
-<img src="bjs/small/1985.svg" width="1" height="1" alt="">
-<img src="bjs/small/1990.svg" width="1" height="1" alt="">
-<img src="bjs/small/1995.svg" width="1" height="1" alt="">
-<img src="bjs/small/2000.svg" width="1" height="1" alt="">
-<img src="bjs/small/2005.svg" width="1" height="1" alt="">
-<img src="bjs/small/2010.svg" width="1" height="1" alt="">
-<img src="bjs/small/2015.svg" width="1" height="1" alt="">
-</div>
 <div id="MUCpre">
 <img src="muc/small/1840.svg" width="1" height="1" alt="">
 <img src="muc/small/1845.svg" width="1" height="1" alt="">
@@ -998,6 +960,44 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <img src="muc/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="SPKpre">
+</div>
+<div id="BJSpre">
+<img src="bjs/small/1840.svg" width="1" height="1" alt="">
+<img src="bjs/small/1845.svg" width="1" height="1" alt="">
+<img src="bjs/small/1850.svg" width="1" height="1" alt="">
+<img src="bjs/small/1855.svg" width="1" height="1" alt="">
+<img src="bjs/small/1860.svg" width="1" height="1" alt="">
+<img src="bjs/small/1865.svg" width="1" height="1" alt="">
+<img src="bjs/small/1870.svg" width="1" height="1" alt="">
+<img src="bjs/small/1875.svg" width="1" height="1" alt="">
+<img src="bjs/small/1880.svg" width="1" height="1" alt="">
+<img src="bjs/small/1885.svg" width="1" height="1" alt="">
+<img src="bjs/small/1890.svg" width="1" height="1" alt="">
+<img src="bjs/small/1895.svg" width="1" height="1" alt="">
+<img src="bjs/small/1900.svg" width="1" height="1" alt="">
+<img src="bjs/small/1905.svg" width="1" height="1" alt="">
+<img src="bjs/small/1910.svg" width="1" height="1" alt="">
+<img src="bjs/small/1915.svg" width="1" height="1" alt="">
+<img src="bjs/small/1920.svg" width="1" height="1" alt="">
+<img src="bjs/small/1925.svg" width="1" height="1" alt="">
+<img src="bjs/small/1930.svg" width="1" height="1" alt="">
+<img src="bjs/small/1935.svg" width="1" height="1" alt="">
+<img src="bjs/small/1940.svg" width="1" height="1" alt="">
+<img src="bjs/small/1945.svg" width="1" height="1" alt="">
+<img src="bjs/small/1950.svg" width="1" height="1" alt="">
+<img src="bjs/small/1955.svg" width="1" height="1" alt="">
+<img src="bjs/small/1960.svg" width="1" height="1" alt="">
+<img src="bjs/small/1965.svg" width="1" height="1" alt="">
+<img src="bjs/small/1970.svg" width="1" height="1" alt="">
+<img src="bjs/small/1975.svg" width="1" height="1" alt="">
+<img src="bjs/small/1980.svg" width="1" height="1" alt="">
+<img src="bjs/small/1985.svg" width="1" height="1" alt="">
+<img src="bjs/small/1990.svg" width="1" height="1" alt="">
+<img src="bjs/small/1995.svg" width="1" height="1" alt="">
+<img src="bjs/small/2000.svg" width="1" height="1" alt="">
+<img src="bjs/small/2005.svg" width="1" height="1" alt="">
+<img src="bjs/small/2010.svg" width="1" height="1" alt="">
+<img src="bjs/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="PRGpre">
 </div>
@@ -1124,7 +1124,7 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="NKGpre">
 </div>
 </div><script type="text/javascript">
-["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","BJS","MUC","SPK","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
+["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
 		toggleshow(city);
 	}
 });
