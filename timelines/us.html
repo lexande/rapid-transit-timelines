@@ -26,7 +26,7 @@ count=29;
 step=5;
 index=count-1;
 function update() {
-	["NYC","CHI","BWI","BOS","PIT","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","SJC","JAX","DAL","STL","DEN","LAS","SLC","IND","MSP","CLT","SJU","ORF"].forEach(function(city) {
+	["NYC","CHI","BWI","BOS","PIT","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","SJC","JAX","DAL","STL","DEN","LAS","SLC","IND","MSP","CLT","SJU","ORF","HFD"].forEach(function(city) {
 		document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		document[city].title=start+step*index;
 		document[city].alt=start+step*index + " map";
@@ -132,6 +132,8 @@ window.onload=function() {
   <img class="map" name="SJU" src="sju/small/2015.svg" title="2015" alt="2015 map" width="120px" height="73px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="ORF" style="display: inline-block; vertical-align: middle"><a href="orf">Norfolk<br>
   <img class="map" name="ORF" src="orf/small/2015.svg" title="2015" alt="2015 map" width="117px" height="43px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="HFD" style="display: inline-block; vertical-align: middle"><a href="hfd">Hartford<br>
+  <img class="map" name="HFD" src="hfd/small/2015.svg" title="2015" alt="2015 map" width="102px" height="124px" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
@@ -167,6 +169,7 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="clt">Charlotte</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SJUcheckbox" onclick="toggleshow('SJU')" checked><a href="sju">San Juan</a></div>
 <div style="display: inline-block"><input type="checkbox" id="ORFcheckbox" onclick="toggleshow('ORF')" checked><a href="orf">Norfolk</a></div>
+<div style="display: inline-block"><input type="checkbox" id="HFDcheckbox" onclick="toggleshow('HFD')" checked><a href="hfd">Hartford</a></div>
 </form>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 CSS pixels per km.
@@ -1044,6 +1047,35 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="orf/small/2005.svg" width="1" height="1" alt="">
 <img src="orf/small/2010.svg" width="1" height="1" alt="">
 <img src="orf/small/2015.svg" width="1" height="1" alt="">
+<img src="hfd/small/1875.svg" width="1" height="1" alt="">
+<img src="hfd/small/1880.svg" width="1" height="1" alt="">
+<img src="hfd/small/1885.svg" width="1" height="1" alt="">
+<img src="hfd/small/1890.svg" width="1" height="1" alt="">
+<img src="hfd/small/1895.svg" width="1" height="1" alt="">
+<img src="hfd/small/1900.svg" width="1" height="1" alt="">
+<img src="hfd/small/1905.svg" width="1" height="1" alt="">
+<img src="hfd/small/1910.svg" width="1" height="1" alt="">
+<img src="hfd/small/1915.svg" width="1" height="1" alt="">
+<img src="hfd/small/1920.svg" width="1" height="1" alt="">
+<img src="hfd/small/1925.svg" width="1" height="1" alt="">
+<img src="hfd/small/1930.svg" width="1" height="1" alt="">
+<img src="hfd/small/1935.svg" width="1" height="1" alt="">
+<img src="hfd/small/1940.svg" width="1" height="1" alt="">
+<img src="hfd/small/1945.svg" width="1" height="1" alt="">
+<img src="hfd/small/1950.svg" width="1" height="1" alt="">
+<img src="hfd/small/1955.svg" width="1" height="1" alt="">
+<img src="hfd/small/1960.svg" width="1" height="1" alt="">
+<img src="hfd/small/1965.svg" width="1" height="1" alt="">
+<img src="hfd/small/1970.svg" width="1" height="1" alt="">
+<img src="hfd/small/1975.svg" width="1" height="1" alt="">
+<img src="hfd/small/1980.svg" width="1" height="1" alt="">
+<img src="hfd/small/1985.svg" width="1" height="1" alt="">
+<img src="hfd/small/1990.svg" width="1" height="1" alt="">
+<img src="hfd/small/1995.svg" width="1" height="1" alt="">
+<img src="hfd/small/2000.svg" width="1" height="1" alt="">
+<img src="hfd/small/2005.svg" width="1" height="1" alt="">
+<img src="hfd/small/2010.svg" width="1" height="1" alt="">
+<img src="hfd/small/2015.svg" width="1" height="1" alt="">
 </div>
 <font size="1">By <a href="/">Alexander Rapp</a> based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
