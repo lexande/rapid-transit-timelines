@@ -68,7 +68,7 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-	["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
+	["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","HRK","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
 		mapimg = document.getElementById(city + "map");
 		mapimg.src = (city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		mapimg.title = start+step*index;
@@ -264,6 +264,8 @@ window.onload=function() {
   <img class="map" id="PRGmap" src="about:blank" title="2015" alt="2015 map" width="220" height="126"></a></span>
 <span id="SEL" style="display: none; vertical-align: middle"><a href="sel">Seoul<br>
   <img class="map" id="SELmap" src="about:blank" title="2015" alt="2015 map" width="551" height="740"></a></span>
+<span id="HRK" style="display: none; vertical-align: middle"><a href="hrk">Kharkiv<br>
+  <img class="map" id="HRKmap" src="about:blank" title="2015" alt="2015 map" width="181" height="138"></a></span>
 <span id="SCL" style="display: none; vertical-align: middle"><a href="scl">Santiago<br>
   <img class="map" id="SCLmap" src="about:blank" title="2015" alt="2015 map" width="204" height="265"></a></span>
 <span id="BHX" style="display: none; vertical-align: middle"><a href="bhx">Birmingham<br>
@@ -367,6 +369,7 @@ window.onload=function() {
 <input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')" checked><a href="bjs">Beijing</a><br>
 <input type="checkbox" id="PRGcheckbox" onclick="toggleshow('PRG')"><a href="prg">Praha</a><br>
 <input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')"><a href="sel">Seoul</a><br>
+<input type="checkbox" id="HRKcheckbox" onclick="toggleshow('HRK')"><a href="hrk">Kharkiv</a><br>
 <input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')"><a href="scl">Santiago</a><br>
 <input type="checkbox" id="BHXcheckbox" onclick="toggleshow('BHX')"><a href="bhx">Birmingham</a><br>
 <input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')"><a href="atl">Atlanta</a><br>
@@ -1003,6 +1006,8 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="SELpre">
 </div>
+<div id="HRKpre">
+</div>
 <div id="SCLpre">
 </div>
 <div id="BHXpre">
@@ -1124,7 +1129,7 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="NKGpre">
 </div>
 </div><script type="text/javascript">
-["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
+["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","HRK","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
 		toggleshow(city);
 	}
 });
