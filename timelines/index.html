@@ -68,7 +68,7 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-	["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","HRK","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
+	["LON","NYC","PAR","BER","MEL","SYD","CHI","BUD","BOS","VIE","TYO","DUS","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","HRK","SCL","HKG","BNE","CCS","MSQ","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
 		mapimg = document.getElementById(city + "map");
 		mapimg.src = (city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		mapimg.title = start+step*index;
@@ -180,12 +180,8 @@ window.onload=function() {
   <img class="map" id="BERmap" src="ber/small/2015.svg" title="2015" alt="2015 map" width="537" height="522"></a></span>
 <span id="MEL" style="display: none; vertical-align: middle"><a href="mel">Melbourne<br>
   <img class="map" id="MELmap" src="about:blank" title="2015" alt="2015 map" width="740" height="624"></a></span>
-<span id="LPL" style="display: none; vertical-align: middle"><a href="lpl">Liverpool<br>
-  <img class="map" id="LPLmap" src="about:blank" title="2015" alt="2015 map" width="243" height="511"></a></span>
 <span id="SYD" style="display: none; vertical-align: middle"><a href="syd">Sydney<br>
   <img class="map" id="SYDmap" src="about:blank" title="2015" alt="2015 map" width="527" height="414"></a></span>
-<span id="GLA" style="display: none; vertical-align: middle"><a href="gla">Glasgow<br>
-  <img class="map" id="GLAmap" src="about:blank" title="2015" alt="2015 map" width="385" height="225"></a></span>
 <span id="CHI" style="display: inline-block; vertical-align: middle"><a href="../ltimeline">Chicago<br>
   <img class="map" id="CHImap" src="chi/small/2015.svg" title="2015" alt="2015 map" width="308" height="407"></a></span>
 <span id="BUD" style="display: none; vertical-align: middle"><a href="bud">Budapest<br>
@@ -198,8 +194,6 @@ window.onload=function() {
   <img class="map" id="TYOmap" src="tyo/small/2015.svg" title="2015" alt="2015 map" width="1284" height="1063"></a></span>
 <span id="DUS" style="display: none; vertical-align: middle"><a href="dus">Rhine-Ruhr<br>
   <img class="map" id="DUSmap" src="about:blank" title="2015" alt="2015 map" width="889" height="1074"></a></span>
-<span id="NCL" style="display: none; vertical-align: middle"><a href="ncl">Newcastle<br>
-  <img class="map" id="NCLmap" src="about:blank" title="2015" alt="2015 map" width="225" height="174"></a></span>
 <span id="PHL" style="display: none; vertical-align: middle"><a href="phl">Philadelphia<br>
   <img class="map" id="PHLmap" src="about:blank" title="2015" alt="2015 map" width="319" height="338"></a></span>
 <span id="LAX" style="display: none; vertical-align: middle"><a href="lax">Los Angeles<br>
@@ -234,8 +228,6 @@ window.onload=function() {
   <img class="map" id="WASmap" src="was/small/2015.svg" title="2015" alt="2015 map" width="439" height="410"></a></span>
 <span id="YTO" style="display: none; vertical-align: middle"><a href="yto">Toronto<br>
   <img class="map" id="YTOmap" src="about:blank" title="2015" alt="2015 map" width="248" height="177"></a></span>
-<span id="PER" style="display: none; vertical-align: middle"><a href="per">Perth<br>
-  <img class="map" id="PERmap" src="about:blank" title="2015" alt="2015 map" width="348" height="1008"></a></span>
 <span id="ROM" style="display: none; vertical-align: middle"><a href="rom">Roma<br>
   <img class="map" id="ROMmap" src="about:blank" title="2015" alt="2015 map" width="401" height="510"></a></span>
 <span id="LED" style="display: none; vertical-align: middle"><a href="led">Sankt-Peterburg<br>
@@ -268,22 +260,14 @@ window.onload=function() {
   <img class="map" id="HRKmap" src="about:blank" title="2015" alt="2015 map" width="181" height="138"></a></span>
 <span id="SCL" style="display: none; vertical-align: middle"><a href="scl">Santiago<br>
   <img class="map" id="SCLmap" src="about:blank" title="2015" alt="2015 map" width="204" height="265"></a></span>
-<span id="BHX" style="display: none; vertical-align: middle"><a href="bhx">Birmingham<br>
-  <img class="map" id="BHXmap" src="about:blank" title="2015" alt="2015 map" width="363" height="439"></a></span>
-<span id="ATL" style="display: none; vertical-align: middle"><a href="atl">Atlanta<br>
-  <img class="map" id="ATLmap" src="about:blank" title="2015" alt="2015 map" width="244" height="355"></a></span>
 <span id="HKG" style="display: inline-block; vertical-align: middle"><a href="hkg">Hong Kong<br>
   <img class="map" id="HKGmap" src="hkg/small/2015.svg" title="2015" alt="2015 map" width="479" height="530"></a></span>
 <span id="BNE" style="display: none; vertical-align: middle"><a href="bne">Brisbane<br>
   <img class="map" id="BNEmap" src="about:blank" title="2015" alt="2015 map" width="261" height="399"></a></span>
-<span id="YYC" style="display: none; vertical-align: middle"><a href="yyc">Calgary<br>
-  <img class="map" id="YYCmap" src="about:blank" title="2015" alt="2015 map" width="218" height="291"></a></span>
 <span id="CCS" style="display: none; vertical-align: middle"><a href="ccs">Caracas<br>
   <img class="map" id="CCSmap" src="about:blank" title="2015" alt="2015 map" width="316" height="222"></a></span>
 <span id="MSQ" style="display: none; vertical-align: middle"><a href="msq">Minsk<br>
   <img class="map" id="MSQmap" src="about:blank" title="2015" alt="2015 map" width="185" height="127"></a></span>
-<span id="DUB" style="display: none; vertical-align: middle"><a href="dub">Dublin<br>
-  <img class="map" id="DUBmap" src="about:blank" title="2015" alt="2015 map" width="254" height="220"></a></span>
 <span id="MNL" style="display: none; vertical-align: middle"><a href="mnl">Manila<br>
   <img class="map" id="MNLmap" src="about:blank" title="2015" alt="2015 map" width="138" height="167"></a></span>
 <span id="TSN" style="display: none; vertical-align: middle"><a href="tsn">Tianjin<br>
@@ -327,16 +311,13 @@ window.onload=function() {
 <input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')" checked><a href="par">Paris</a><br>
 <input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')" checked><a href="ber">Berlin</a><br>
 <input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')"><a href="mel">Melbourne</a><br>
-<input type="checkbox" id="LPLcheckbox" onclick="toggleshow('LPL')"><a href="lpl">Liverpool</a><br>
 <input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')"><a href="syd">Sydney</a><br>
-<input type="checkbox" id="GLAcheckbox" onclick="toggleshow('GLA')"><a href="gla">Glasgow</a><br>
 <input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="../ltimeline">Chicago</a><br>
 <input type="checkbox" id="BUDcheckbox" onclick="toggleshow('BUD')"><a href="bud">Budapest</a><br>
 <input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a><br>
 <input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')" checked><a href="vie">Wien</a><br>
 <input type="checkbox" id="TYOcheckbox" onclick="toggleshow('TYO')" checked><a href="tyo">Tokyo</a><br>
 <input type="checkbox" id="DUScheckbox" onclick="toggleshow('DUS')"><a href="dus">Rhine-Ruhr</a><br>
-<input type="checkbox" id="NCLcheckbox" onclick="toggleshow('NCL')"><a href="ncl">Newcastle</a><br>
 <input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')"><a href="phl">Philadelphia</a><br>
 <input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')"><a href="lax">Los Angeles</a><br>
 <input type="checkbox" id="HAMcheckbox" onclick="toggleshow('HAM')"><a href="ham">Hamburg</a><br>
@@ -354,7 +335,6 @@ window.onload=function() {
 <input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')"><a href="rio">Rio de Janeiro</a><br>
 <input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="was">Washington</a><br>
 <input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')"><a href="yto">Toronto</a><br>
-<input type="checkbox" id="PERcheckbox" onclick="toggleshow('PER')"><a href="per">Perth</a><br>
 <input type="checkbox" id="ROMcheckbox" onclick="toggleshow('ROM')"><a href="rom">Roma</a><br>
 <input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="led">Sankt-Peterburg</a><br>
 <input type="checkbox" id="SAOcheckbox" onclick="toggleshow('SAO')"><a href="sao">São Paulo</a><br>
@@ -371,14 +351,10 @@ window.onload=function() {
 <input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')"><a href="sel">Seoul</a><br>
 <input type="checkbox" id="HRKcheckbox" onclick="toggleshow('HRK')"><a href="hrk">Kharkiv</a><br>
 <input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')"><a href="scl">Santiago</a><br>
-<input type="checkbox" id="BHXcheckbox" onclick="toggleshow('BHX')"><a href="bhx">Birmingham</a><br>
-<input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')"><a href="atl">Atlanta</a><br>
 <input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="hkg">Hong Kong</a><br>
 <input type="checkbox" id="BNEcheckbox" onclick="toggleshow('BNE')"><a href="bne">Brisbane</a><br>
-<input type="checkbox" id="YYCcheckbox" onclick="toggleshow('YYC')"><a href="yyc">Calgary</a><br>
 <input type="checkbox" id="CCScheckbox" onclick="toggleshow('CCS')"><a href="ccs">Caracas</a><br>
 <input type="checkbox" id="MSQcheckbox" onclick="toggleshow('MSQ')"><a href="msq">Minsk</a><br>
-<input type="checkbox" id="DUBcheckbox" onclick="toggleshow('DUB')"><a href="dub">Dublin</a><br>
 <input type="checkbox" id="MNLcheckbox" onclick="toggleshow('MNL')"><a href="mnl">Manila</a><br>
 <input type="checkbox" id="TSNcheckbox" onclick="toggleshow('TSN')"><a href="tsn">Tianjin</a><br>
 <input type="checkbox" id="PUScheckbox" onclick="toggleshow('PUS')"><a href="pus">Busan</a><br>
@@ -562,11 +538,7 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="MELpre">
 </div>
-<div id="LPLpre">
-</div>
 <div id="SYDpre">
-</div>
-<div id="GLApre">
 </div>
 <div id="CHIpre">
 <img src="chi/small/1840.svg" width="1" height="1" alt="">
@@ -724,8 +696,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="DUSpre">
 </div>
-<div id="NCLpre">
-</div>
 <div id="PHLpre">
 </div>
 <div id="LAXpre">
@@ -868,8 +838,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="YTOpre">
 </div>
-<div id="PERpre">
-</div>
 <div id="ROMpre">
 </div>
 <div id="LEDpre">
@@ -1010,10 +978,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="SCLpre">
 </div>
-<div id="BHXpre">
-</div>
-<div id="ATLpre">
-</div>
 <div id="HKGpre">
 <img src="hkg/small/1840.svg" width="1" height="1" alt="">
 <img src="hkg/small/1845.svg" width="1" height="1" alt="">
@@ -1054,13 +1018,9 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 </div>
 <div id="BNEpre">
 </div>
-<div id="YYCpre">
-</div>
 <div id="CCSpre">
 </div>
 <div id="MSQpre">
-</div>
-<div id="DUBpre">
 </div>
 <div id="MNLpre">
 </div>
@@ -1129,7 +1089,7 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="NKGpre">
 </div>
 </div><script type="text/javascript">
-["LON","NYC","PAR","BER","MEL","LPL","SYD","GLA","CHI","BUD","BOS","VIE","TYO","DUS","NCL","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","PER","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","HRK","SCL","BHX","ATL","HKG","BNE","YYC","CCS","MSQ","DUB","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
+["LON","NYC","PAR","BER","MEL","SYD","CHI","BUD","BOS","VIE","TYO","DUS","PHL","LAX","HAM","CAI","YVR","NGO","BUE","BOM","SFO","MAD","BCN","STO","ATH","MOW","RIO","WAS","YTO","ROM","LED","SAO","KBP","MIL","YMQ","MAA","FRA","MEX","MUC","SPK","BJS","PRG","SEL","HRK","SCL","HKG","BNE","CCS","MSQ","MNL","TSN","PUS","SIN","IST","BKK","SHA","MDE","TPE","CAN","THR","DEL","WUH","CKG","NKG"].forEach(function(city) {	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
 		toggleshow(city);
 	}
 });
