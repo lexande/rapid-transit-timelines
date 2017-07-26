@@ -18,7 +18,7 @@ body {
 <script type="text/javascript">
 start=2015;
 count=1;
-step=10;
+step=5;
 index=count-1;
 function update() {
 	map = document.getElementById("map");
@@ -65,8 +65,8 @@ window.onhashchange=function() {
   })();
 </script>
 </head><body>
-<a href="javascript:" onclick="prevmap()">ten years earlier (or press a)</a> ---
-<a href="javascript:" onclick="nextmap()">ten years later (or press s)</a>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
 <a href="2015.svg">
 <img id="map" src="2015.svg" title="2015" alt="2015 map" width="348" height="131" style="border-width: 1px; border-style: solid">
@@ -74,8 +74,8 @@ window.onhashchange=function() {
 <p>
 <a href="#2015" onclick="gotoyear(2015)">2015</a>
 <p>
-<a href="javascript:" onclick="prevmap()">ten years earlier (or press a)</a> --- 
-<a href="javascript:" onclick="nextmap()">ten years later (or press s)</a>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).  Scale 30 CSS pixels per km.
 <p>

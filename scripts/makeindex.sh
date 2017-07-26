@@ -11,16 +11,17 @@ if [ -f $(expr $START + 1).svg ]; then
         INDEX="count-1"
         SNAME="one year"
 
-elif [ -f $(expr $START + 5).svg ]; then
+#elif [ -f $(expr $START + 5).svg ]; then
+else
 	STEP=5
 	COUNT=$(expr 1 + \( $END - $START \) / 5)
 	INDEX="count-1"
 	SNAME="five years"
-else
-	STEP=10
-	COUNT=$(expr 1 + \( $END - $START \) / 10)
-	INDEX="count-1"
-	SNAME="ten years"
+#else
+#	STEP=10
+#	COUNT=$(expr 1 + \( $END - $START \) / 10)
+#	INDEX="count-1"
+#	SNAME="ten years"
 fi
 if [ $(basename $(pwd)) == 'uncropped' ]; then
 	CITYNAME=`cat ../name`
