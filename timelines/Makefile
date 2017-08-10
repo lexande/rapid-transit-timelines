@@ -1,4 +1,4 @@
-all: bog bak ccu osa hrk hfd cwl szd nkg ckg wuh del dus fra adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt dal den det dub gla hkg ind jax kbp las lax led lon lpl mad man mde mel mex mia mow msp muc ncl nyc orf par pdx per phl pit rio sac san sao scl sea sel sfo sha sin sjc sju stl syd tpe vie was yeg ymq yow yto yvr yyc mnl prg thr pus ist ham rom msq bkk bhx wlg nqt mil slc tyo spk ngo bud maa sto tsn edi index.html anglo.html us.html
+all: uio bog bak ccu osa hrk hfd cwl szd nkg ckg wuh del dus fra adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt dal den det dub gla hkg ind jax kbp las lax led lon lpl mad man mde mel mex mia mow msp muc ncl nyc orf par pdx per phl pit rio sac san sao scl sea sel sfo sha sin sjc sju stl syd tpe vie was yeg ymq yow yto yvr yyc mnl prg thr pus ist ham rom msq bkk bhx wlg nqt mil slc tyo spk ngo bud maa sto tsn edi index.html anglo.html us.html
 
 define WriteSmall
 ifeq ($(wildcard $(1)/$(strip $(2)).svg),)
