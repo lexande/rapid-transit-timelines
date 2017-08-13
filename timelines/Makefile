@@ -61,5 +61,5 @@ rsync: all
 	rsync -4Pav ~/timelines/timelines --exclude '*osm*.png' arapp_arapp@ssh.phx.nearlyfreespeech.net:.
 
 $(call WriteOverview,us.html,nyc chi bwi bos pit phl lax sfo cle sea was atl san mia buf pdx sac det sjc jax dal stl den las slc ind msp clt sju orf hfd,United States)
-$(call WriteOverview,anglo.html,lon mel lpl syd gla ncl yvr adl man yto per yeg bhx bne yyc yow dub cwl szd nqt akl edi,Non-US Anglosphere)
+$(call WriteOverview,anglo.html,lon mel lpl syd gla ncl yvr adl man yto per yeg bhx bne yyc yow dub cwl szd nqt edi akl,Non-US Anglosphere)
 $(call WriteMainIndex,index.html,lon nyc par ber mel syd chi bud bos vie tyo dus osa phl lax ham cai yvr ngo bue sfo mad bcn bom sto ath mow rio was yto rom led sao kbp mil ymq maa bak fra mex muc spk bjs prg sel hrk scl hkg bne ccs msq ccu mnl tsn pus bhz sin ist bkk sha mde tpe can thr bog del wuh ckg nkg)
