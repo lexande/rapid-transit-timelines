@@ -26,7 +26,7 @@ count=36;
 step=5;
 index=count-1;
 function update() {
-	["LON","MEL","LPL","SYD","GLA","NCL","YVR","ADL","MAN","YTO","PER","YEG","BHX","BNE","YYC","YOW","DUB","CWL","SZD","NQT","EDI","AKL"].forEach(function(city) {
+	["LON","MEL","LPL","SYD","GLA","NCL","YVR","ADL","MAN","PME","YTO","PER","YEG","BHX","BNE","YYC","YOW","DUB","CWL","SZD","NQT","EDI","AKL"].forEach(function(city) {
 		document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
 		document[city].title=start+step*index;
 		document[city].alt=start+step*index + " map";
@@ -90,6 +90,8 @@ window.onload=function() {
   <img class="map" name="ADL" src="adl/small/2015.svg" title="2015" alt="2015 map" width="239px" height="500px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MAN" style="display: inline-block; vertical-align: middle"><a href="man">Manchester<br>
   <img class="map" name="MAN" src="man/small/2015.svg" title="2015" alt="2015 map" width="232px" height="377px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PME" style="display: inline-block; vertical-align: middle"><a href="pme">Portsmouth<br>
+  <img class="map" name="PME" src="pme/small/2015.svg" title="2015" alt="2015 map" width="170px" height="101px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="YTO" style="display: inline-block; vertical-align: middle"><a href="yto">Toronto<br>
   <img class="map" name="YTO" src="yto/small/2015.svg" title="2015" alt="2015 map" width="248px" height="177px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PER" style="display: inline-block; vertical-align: middle"><a href="per">Perth<br>
@@ -130,6 +132,7 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="YVRcheckbox" onclick="toggleshow('YVR')" checked><a href="yvr">Vancouver</a></div>
 <div style="display: inline-block"><input type="checkbox" id="ADLcheckbox" onclick="toggleshow('ADL')" checked><a href="adl">Adelaide</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MANcheckbox" onclick="toggleshow('MAN')" checked><a href="man">Manchester</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PMEcheckbox" onclick="toggleshow('PME')" checked><a href="pme">Portsmouth</a></div>
 <div style="display: inline-block"><input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')" checked><a href="yto">Toronto</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PERcheckbox" onclick="toggleshow('PER')" checked><a href="per">Perth</a></div>
 <div style="display: inline-block"><input type="checkbox" id="YEGcheckbox" onclick="toggleshow('YEG')" checked><a href="yeg">Edmonton</a></div>
@@ -474,6 +477,42 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="man/small/2005.svg" width="1" height="1" alt="">
 <img src="man/small/2010.svg" width="1" height="1" alt="">
 <img src="man/small/2015.svg" width="1" height="1" alt="">
+<img src="pme/small/1840.svg" width="1" height="1" alt="">
+<img src="pme/small/1845.svg" width="1" height="1" alt="">
+<img src="pme/small/1850.svg" width="1" height="1" alt="">
+<img src="pme/small/1855.svg" width="1" height="1" alt="">
+<img src="pme/small/1860.svg" width="1" height="1" alt="">
+<img src="pme/small/1865.svg" width="1" height="1" alt="">
+<img src="pme/small/1870.svg" width="1" height="1" alt="">
+<img src="pme/small/1875.svg" width="1" height="1" alt="">
+<img src="pme/small/1880.svg" width="1" height="1" alt="">
+<img src="pme/small/1885.svg" width="1" height="1" alt="">
+<img src="pme/small/1890.svg" width="1" height="1" alt="">
+<img src="pme/small/1895.svg" width="1" height="1" alt="">
+<img src="pme/small/1900.svg" width="1" height="1" alt="">
+<img src="pme/small/1905.svg" width="1" height="1" alt="">
+<img src="pme/small/1910.svg" width="1" height="1" alt="">
+<img src="pme/small/1915.svg" width="1" height="1" alt="">
+<img src="pme/small/1920.svg" width="1" height="1" alt="">
+<img src="pme/small/1925.svg" width="1" height="1" alt="">
+<img src="pme/small/1930.svg" width="1" height="1" alt="">
+<img src="pme/small/1935.svg" width="1" height="1" alt="">
+<img src="pme/small/1940.svg" width="1" height="1" alt="">
+<img src="pme/small/1945.svg" width="1" height="1" alt="">
+<img src="pme/small/1950.svg" width="1" height="1" alt="">
+<img src="pme/small/1955.svg" width="1" height="1" alt="">
+<img src="pme/small/1960.svg" width="1" height="1" alt="">
+<img src="pme/small/1965.svg" width="1" height="1" alt="">
+<img src="pme/small/1970.svg" width="1" height="1" alt="">
+<img src="pme/small/1975.svg" width="1" height="1" alt="">
+<img src="pme/small/1980.svg" width="1" height="1" alt="">
+<img src="pme/small/1985.svg" width="1" height="1" alt="">
+<img src="pme/small/1990.svg" width="1" height="1" alt="">
+<img src="pme/small/1995.svg" width="1" height="1" alt="">
+<img src="pme/small/2000.svg" width="1" height="1" alt="">
+<img src="pme/small/2005.svg" width="1" height="1" alt="">
+<img src="pme/small/2010.svg" width="1" height="1" alt="">
+<img src="pme/small/2015.svg" width="1" height="1" alt="">
 <img src="yto/small/1840.svg" width="1" height="1" alt="">
 <img src="yto/small/1845.svg" width="1" height="1" alt="">
 <img src="yto/small/1850.svg" width="1" height="1" alt="">
