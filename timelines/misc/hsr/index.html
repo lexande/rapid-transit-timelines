@@ -27,10 +27,10 @@ step=5;
 index=count-1;
 function update() {
 	["A","E"].forEach(function(cont) {
-		document[cont].src=(cont.toLowerCase() + (start+step*index) + ".svg");
+		document[cont].src=(cont.toLowerCase() + '/' + (start+step*index) + ".svg");
 		document[cont].title=start+step*index;
 		document[cont].alt=start+step*index + " map";
-		document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
+		document.getElementsByTagName('a')[2].href=(cont.toLowerCase() + '/' + (start+step*index) + ".svg");
 		location.replace("#" + (start+step*index));
 	});
 }
@@ -84,7 +84,19 @@ window.onhashchange=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-Based on average scheduled speeds at the end of the year in question.  Scale approximatley 0.25 CSS pixels per km.
+Based on service at the end of the year in question.  Scale approximatley 0.25 CSS pixels per km.
+<p>
+Lines are coloured based on the speed of the fastest service using them, measured by average scheduled speed between consecutive stops.
+<p>
+<table><tr>
+<td width="16" bgcolor="#ff0000"></td><td>150-175km/h</td><td></td>
+<td width="16" bgcolor="#ff0066"></td><td>175-200km/h</td><td></td>
+<td width="16" bgcolor="#ff00cc"></td><td>200-225km/h</td><td></td>
+<td width="16" bgcolor="#cc00ff"></td><td>225-250km/h</td><td></td>
+<td width="16" bgcolor="#6600ff"></td><td>250-275km/h</td><td></td>
+<td width="16" bgcolor="#0000ff"></td><td>275-300km/h</td><td></td>
+<td width="16" bgcolor="#66cc66"></td><td>thru-running onto lower-speed lines</td>
+</tr></table>
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
