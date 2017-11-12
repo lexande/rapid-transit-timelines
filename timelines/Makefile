@@ -1,4 +1,4 @@
-all: osl rec tls cph izm sdj hel ams haj bru str tae fuk nue zrh sof kul waw buh lis pme jkt lyn bhz uio bog bak ccu osa hrk hfd cwl szd nkg ckg wuh del dus fra adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt dal den det dub gla hkg ind jax kbp las lax led lon lpl mad man mde mel mex mia mow msp muc ncl nyc orf par pdx per phl pit rio sac san sao scl sea sel sfo sha sin sju stl syd tpe vie was yeg ymq yow yto yvr yyc mnl prg thr pus ist ham rom msq bkk bhx wlg nqt mil slc tyo spk ngo bud maa sto tsn edi index.html anglo.html us.html
+all: ank osl rec tls cph izm sdj hel ams haj bru str tae fuk nue zrh sof kul waw buh lis pme jkt lyn bhz uio bog bak ccu osa hrk hfd cwl szd nkg ckg wuh del dus fra adl akl ath atl bcn ber bjs bne bom bos bue buf bwi cai can ccs chi cle clt dal den det dub gla hkg ind jax kbp las lax led lon lpl mad man mde mel mex mia mow msp muc ncl nyc orf par pdx per phl pit rio sac san sao scl sea sel sfo sha sin sju stl syd tpe vie was yeg ymq yow yto yvr yyc mnl prg thr pus ist ham rom msq bkk bhx wlg nqt mil slc tyo spk ngo bud maa sto tsn edi index.html anglo.html us.html
 
 define WriteSmall
 ifeq ($(wildcard $(1)/$(strip $(2)).svg),)
@@ -58,8 +58,8 @@ endef
 $(foreach dir, $(wildcard ??? ???/uncropped), $(eval $(call WriteRules, $(dir))))
 
 rsync: all
-	rsync -4Pav ~/timelines/timelines --exclude '*osm*.png' arapp_arapp@ssh.phx.nearlyfreespeech.net:.
+	rsync -4Pav ~/timelines/timelines --exclude '*osm*.png' --exclude '*streetmap*' arapp_arapp@ssh.phx.nearlyfreespeech.net:.
 
 $(call WriteOverview,us.html,nyc chi bwi bos pit phl lax sfo cle sea was atl san mia buf pdx sac det jax dal stl den las slc ind msp clt sju orf hfd,United States)
 $(call WriteOverview,anglo.html,lon mel lpl syd gla ncl yvr adl man pme yto per yeg bhx bne yyc yow dub cwl szd nqt edi akl,Non-US Anglosphere)
-$(call WriteMainIndex,index.html,lon nyc par mel ber syd chi bud bos vie osl tyo dus osa phl lax ham cai yvr ngo bue fuk sfo mad bcn bom sto lis ath cph mow rio was bru yto rom led sao kbp ams waw mil str ymq maa bak sdj muc fra mex spk nue hel bjs prg sel hrk scl haj zrh lyn hkg buh bne ccs lil msq ccu mnl tsn rec pus bhz sin ist bkk sha tls mde tpe kul uio tae sof can thr izm bog del jkt wuh ckg nkg)
+$(call WriteMainIndex,index.html,lon nyc par mel ber syd chi bud bos vie osl tyo dus osa phl lax ham cai yvr ngo bue fuk sfo mad bcn bom sto lis ath cph mow rio was bru yto rom led sao kbp ams waw mil str ymq maa bak sdj muc fra mex spk nue hel bjs prg sel hrk scl haj zrh lyn hkg buh bne ccs lil msq ccu mnl tsn rec pus bhz sin ist bkk sha tls mde tpe ank kul uio tae sof can thr izm bog del jkt wuh ckg nkg)
