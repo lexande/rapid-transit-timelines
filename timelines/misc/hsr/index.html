@@ -30,7 +30,7 @@ function update() {
 		document[cont].src=(cont.toLowerCase() + '/' + (start+step*index) + ".svg");
 		document[cont].title=start+step*index;
 		document[cont].alt=start+step*index + " map";
-		document.getElementsByTagName('a')[2].href=(cont.toLowerCase() + '/' + (start+step*index) + ".svg");
+		document[cont].parentElement.href=(cont.toLowerCase() + '/' + (start+step*index) + ".svg");
 		location.replace("#" + (start+step*index));
 	});
 }
@@ -76,15 +76,15 @@ window.onhashchange=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-<span id="A" style="display: inline-block; vertical-align: middle"><a href="a">Asia<br>
+<span id="A" style="display: inline-block; vertical-align: middle"><a href="a/2015.svg">Asia<br>
   <img class="map" name="A" src="a/2015.svg" title="2015" alt="2015 map" width="1200px" height="860px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="E" style="display: inline-block; vertical-align: middle"><a href="e">Europe<br>
+<span id="E" style="display: inline-block; vertical-align: middle"><a href="e/2015.svg">Europe<br>
   <img class="map" name="E" src="e/2015.svg" title="2015" alt="2015 map" width="985px" height="860px" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-Based on service at the end of the year in question.  Scale approximatley 0.25 CSS pixels per km.
+Based on service at the end of the year in question, excluding seasonal services.  Scale approximatley 0.25 CSS pixels per km.
 <p>
 Lines are coloured based on the speed of the fastest service using them, measured by average scheduled speed between consecutive stops.
 <p>
@@ -101,19 +101,28 @@ Lines are coloured based on the speed of the fastest service using them, measure
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="a/small/1965.svg" width="1" height="1" alt="">
-<img src="a/small/1970.svg" width="1" height="1" alt="">
-<img src="a/small/1975.svg" width="1" height="1" alt="">
-<img src="a/small/1980.svg" width="1" height="1" alt="">
-<img src="a/small/1985.svg" width="1" height="1" alt="">
-<img src="a/small/1990.svg" width="1" height="1" alt="">
-<img src="a/small/1995.svg" width="1" height="1" alt="">
-<img src="a/small/2000.svg" width="1" height="1" alt="">
-<img src="a/small/2005.svg" width="1" height="1" alt="">
-<img src="a/small/2010.svg" width="1" height="1" alt="">
-<img src="a/small/2015.svg" width="1" height="1" alt="">
-<img src="e/small/2010.svg" width="1" height="1" alt="">
-<img src="e/small/2015.svg" width="1" height="1" alt="">
+<img src="a/1965.svg" width="1" height="1" alt="">
+<img src="a/1970.svg" width="1" height="1" alt="">
+<img src="a/1975.svg" width="1" height="1" alt="">
+<img src="a/1980.svg" width="1" height="1" alt="">
+<img src="a/1985.svg" width="1" height="1" alt="">
+<img src="a/1990.svg" width="1" height="1" alt="">
+<img src="a/1995.svg" width="1" height="1" alt="">
+<img src="a/2000.svg" width="1" height="1" alt="">
+<img src="a/2005.svg" width="1" height="1" alt="">
+<img src="a/2010.svg" width="1" height="1" alt="">
+<img src="a/2015.svg" width="1" height="1" alt="">
+<img src="e/1965.svg" width="1" height="1" alt="">
+<img src="e/1970.svg" width="1" height="1" alt="">
+<img src="e/1975.svg" width="1" height="1" alt="">
+<img src="e/1980.svg" width="1" height="1" alt="">
+<img src="e/1985.svg" width="1" height="1" alt="">
+<img src="e/1990.svg" width="1" height="1" alt="">
+<img src="e/1995.svg" width="1" height="1" alt="">
+<img src="e/2000.svg" width="1" height="1" alt="">
+<img src="e/2005.svg" width="1" height="1" alt="">
+<img src="e/2010.svg" width="1" height="1" alt="">
+<img src="e/2015.svg" width="1" height="1" alt="">
 </div>
 <font size="1">By <a href="/">Alexander Rapp</a> based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>

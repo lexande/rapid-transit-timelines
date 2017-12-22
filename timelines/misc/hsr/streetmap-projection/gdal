@@ -1,0 +1,4 @@
+gdaltransform # to get bounds
+gdal_translate -of Gtiff -co "tfw=yes"  -a_ullr -2817774.61070474 20037342.1661525 17219733.7320845 0 -a_srs "EPSG:3857"  "osm.png" "osm_tfw.tiff
+gdalwarp -s_srs EPSG:3857 -t_srs '+proj=lcc +lat_1=18 +lat_2=48 +lat_0=30 +lon_0=116.5 +x_0=0 +y_0=0 +ellps=intl +units=m' osm_tfw.tiff a.tiff
+gdalwarp -s_srs EPSG:3857 -t_srs '+proj=lcc +lat_1=35 +lat_2=65 +lat_0=47 +lon_0=12 +x_0=0 +y_0=0 +ellps=intl +units=m' osm_tfw.tiff e.tiff
