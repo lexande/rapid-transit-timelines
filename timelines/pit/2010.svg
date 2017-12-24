@@ -44,7 +44,7 @@
   <path
      d="m 1035,838 -8.5,1.5 -5,4 0,24 -5,14.5 -10.5,10.5 -41.5,27 -5.5,9.5 -4.5,23 -8.5,23"
      id="path3761"
-     style="fill:none;stroke:#ec2c29;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#ec2c29;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
      d="m 2647.4078,734.3365 -11.3137,-10.6066 -12.0208,-20.5061 0.7071,-33.9411 26.87,-110.3087 -0.7071,-32.5269 -5.6568,-50.9117 -19.0919,-119.501 -11.3137,-45.2548 -14.8493,-26.163 -23.3345,-30.4056 -31.8198,-24.0416 -62.2254,-29.6985 -76.3675,-45.2548 -24.0417,-4.2427 -76.3675,-38.8909 -45.2548,-21.9203 -23.3345,-0.7071 -59.397,16.2635 -78.4889,30.4056 -34.6482,32.5269 -19.0919,14.8492 -25.4558,7.0711 -19.0919,-2.1213 -25.4559,-11.3137 -29.6984,-26.163 -16.2635,-10.6066 -66.468,-11.3137 -16.9706,-9.1924 -16.9706,-28.2843 -13.435,-11.3137 -14.1421,-3.5355 -72.832,15.5564 -40.3051,10.6066 -26.8701,18.3847 -63.6396,55.8615 -59.3969,49.4974 -35.3554,20.5061 -106.7731,86.9742 -10.9602,3.182"
      id="path3786"
@@ -56,7 +56,7 @@
   <path
      d="m 1895,199 26,83 -3.5,5.5 -44.5,6.5 -137.5,130 -9,5.5 -12.5,3"
      id="path3792"
-     style="fill:none;stroke:#7d0d6f;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#7d0d6f;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
      d="m 257,910 10,-31 11,-26 30,-19 47,-90 10,-28 9,-55 12,-12 56,-24 19,-15 29,-41 28,-60 4,-27 0,-30 15,-52 3,-62 7,-38 12,-19 62,-62 34,-14 21,-6 26,7 28,-1 38,9 29,-1 27,-10 23,3 31,26.5"
      id="path3794"
@@ -68,7 +68,7 @@
   <path
      d="m 1891,202 6.6982,9.24523 22.1604,70.60388 -2.8678,4.62262 -44.3399,6.50953 -137.6318,130.11309 -8.9152,5.44345 -13.8774,3.40566 L 1700.5,447.5 l -50,0.5 -35,-1 -106,14 -48,11 -56.5,1.5 -33,-11 -2.5,-13 13.5,-45 7.5,-18 -2,-10 -12,-8.5 -14.2889,-6.53183 -20.7116,-9.46817 -8.9656,-1.09972"
      id="path3800"
-     style="fill:none;stroke:#20b34b;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#20b34b;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
      d="m 333.5,785.5 9.5,13 12.5,9.5 10,-1 4,-9.5 -20.46825,-8.5197 L 315,760.5"
      id="path3804"
@@ -76,7 +76,7 @@
   <path
      d="M 317.5,762 268,720.5 194,679.5 0,636"
      id="path3806"
-     style="fill:none;stroke:#20b34b;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#20b34b;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <text
      x="89.453178"
      y="206.96085"
@@ -100,7 +100,7 @@
      d="m 1278.9526,522.11003 2.0069,1.26244 -17.1858,-9.26519 -9.6848,4.93341 -2.3079,4.39019 -24.1526,151.89684 -3.5851,9.81197 -43.3991,26.03946 -9.4346,18.68048 -5.8494,16.60488 0.7547,6.7929"
      id="path4497" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#ee9e18;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#ee9e18;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
      d="m 1259.14,514.93974 6.0933,-2.79843 33.7206,-65.88536 34.3419,-69.06117 -0.7547,-3.20776 -16.4162,-8.30244 -3.0191,2.45299 -32.455,64.34388 1.8869,3.96253 13.5858,6.7929 1.1322,5.47206"
      id="path4499" />
   <path
@@ -110,9 +110,9 @@
   <path
      d="m 1388.4037,335.5283 -11.3396,1.17113 -27.8782,9.37529 -13.7447,27.02453 0.8481,3.55751 18.9967,9.34959 2.2898,-2.39485 20.1935,-40.96553 10.2808,-6.05697"
      id="path3790"
-     style="fill:none;stroke:#7d0d6f;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#7d0d6f;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
      d="m 876.99953,231.5 67,65.5 33.5,33.5 44.49997,24.5 66,30.5 43.5,31 14.5,9 h 12.5 l 48.5,-33.5 126,-41.5 39.4632,-13.27733 4.6189,-1.55399 9.2063,-2.20152"
      id="path3796"
-     style="fill:none;stroke:#20b34b;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     style="fill:none;stroke:#20b34b;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
 </svg>

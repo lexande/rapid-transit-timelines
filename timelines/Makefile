@@ -6,13 +6,13 @@ $(1)/small/$(strip $(2)).svg: $(1)/2015.svg
 	mkdir -p $(1)/small
 	~/timelines/scripts/blank.pl $(1)/2015.svg $(2) | ~/timelines/scripts/hideyear.pl > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
-	svgo $$@
+	svgo --disable=cleanupNumericValues $$@
 else
 $(1)/small/$(strip $(2)).svg: $(1)/$(strip $(2)).svg
 	mkdir -p $(1)/small
 	~/timelines/scripts/hideyear.pl $$< > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
-	svgo $$@
+	svgo --disable=cleanupNumericValues $$@
 endif
 endef
 
