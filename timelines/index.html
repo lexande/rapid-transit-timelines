@@ -15,7 +15,7 @@ div#sidebar {
 	float: left;
 	background: #ffffff;
 	border: 1px solid;
-	width: 10em;
+	width: 14em;
 	max-height: calc(100% - 22px);
 	top: 0;
 	left: 0;
@@ -122,15 +122,16 @@ function togglesidebar() {
 		s.style.display = 'block';
 		h.style.display = 'block';
 		a.innerHTML = "[&minus;]";
-		m.style.paddingLeft = "calc(10em + 22px)";
+		m.style.paddingLeft = "calc(14em + 22px)";
 	}
 }
-function selectall() {
+function selectall(i) {
 	spans = document.getElementsByTagName("span");
-	for (var i=0; i < spans.length; i++) {
+	if (i < spans.length) {
 		if (spans[i].style.display == 'none') {
 			document.getElementById(spans[i].id + "checkbox").click();
 		}
+		setTimeout(function(){ selectall(i+1) }, 10);
 	}
 }
 function deselectall() {
@@ -168,7 +169,7 @@ window.onload=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-<div id="maps" style="padding-left: calc(10em + 22px);">
+<div id="maps" style="padding-left: calc(14em + 22px);">
 <noscript>Sorry, the maps really don't work without javascript.</noscript>
 <span id="LON" style="display: inline-block; vertical-align: middle"><a href="lon">London<br>
   <img class="map" id="LONmap" src="lon/small/2015.svg" title="2015" alt="2015 map" width="635" height="907"></a></span>
@@ -368,103 +369,103 @@ window.onload=function() {
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
 <div id="form" style="display: block;">(ordered by opening date)<br>
-<input type="checkbox" id="LONcheckbox" onclick="toggleshow('LON')" checked><a href="lon">London</a><br>
-<input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="../subtimeline/">New York</a><br>
-<input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')" checked><a href="par">Paris</a><br>
-<input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')"><a href="mel">Melbourne</a><br>
-<input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')" checked><a href="ber">Berlin</a><br>
-<input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')"><a href="syd">Sydney</a><br>
-<input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="../ltimeline">Chicago</a><br>
-<input type="checkbox" id="BUDcheckbox" onclick="toggleshow('BUD')"><a href="bud">Budapest</a><br>
-<input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a><br>
-<input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')" checked><a href="vie">Wien</a><br>
-<input type="checkbox" id="OSLcheckbox" onclick="toggleshow('OSL')"><a href="osl">Oslo</a><br>
-<input type="checkbox" id="TYOcheckbox" onclick="toggleshow('TYO')" checked><a href="tyo">Tokyo</a><br>
-<input type="checkbox" id="DUScheckbox" onclick="toggleshow('DUS')"><a href="dus">Rhein-Ruhr</a><br>
-<input type="checkbox" id="OSAcheckbox" onclick="toggleshow('OSA')" checked><a href="osa">Osaka</a><br>
-<input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')"><a href="phl">Philadelphia</a><br>
-<input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')"><a href="lax">Los Angeles</a><br>
-<input type="checkbox" id="HAMcheckbox" onclick="toggleshow('HAM')"><a href="ham">Hamburg</a><br>
-<input type="checkbox" id="CAIcheckbox" onclick="toggleshow('CAI')"><a href="cai">Qahirah</a><br>
-<input type="checkbox" id="YVRcheckbox" onclick="toggleshow('YVR')"><a href="yvr">Vancouver</a><br>
-<input type="checkbox" id="NGOcheckbox" onclick="toggleshow('NGO')"><a href="ngo">Nagoya</a><br>
-<input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')"><a href="bue">Buenos Aires</a><br>
-<input type="checkbox" id="FUKcheckbox" onclick="toggleshow('FUK')"><a href="fuk">Fukuoka</a><br>
-<input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')"><a href="sfo">San Francisco</a><br>
-<input type="checkbox" id="MADcheckbox" onclick="toggleshow('MAD')" checked><a href="mad">Madrid</a><br>
-<input type="checkbox" id="BCNcheckbox" onclick="toggleshow('BCN')"><a href="bcn">Barcelona</a><br>
-<input type="checkbox" id="BOMcheckbox" onclick="toggleshow('BOM')"><a href="bom">Mumbai</a><br>
-<input type="checkbox" id="STOcheckbox" onclick="toggleshow('STO')"><a href="sto">Stockholm</a><br>
-<input type="checkbox" id="LIScheckbox" onclick="toggleshow('LIS')"><a href="lis">Lisboa</a><br>
-<input type="checkbox" id="ATHcheckbox" onclick="toggleshow('ATH')"><a href="ath">Athína</a><br>
-<input type="checkbox" id="CPHcheckbox" onclick="toggleshow('CPH')"><a href="cph">København</a><br>
-<input type="checkbox" id="MOWcheckbox" onclick="toggleshow('MOW')" checked><a href="mow">Moskva</a><br>
-<input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')"><a href="rio">Rio de Janeiro</a><br>
-<input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="was">Washington</a><br>
-<input type="checkbox" id="BRUcheckbox" onclick="toggleshow('BRU')"><a href="bru">Bruxelles</a><br>
-<input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')"><a href="yto">Toronto</a><br>
-<input type="checkbox" id="ROMcheckbox" onclick="toggleshow('ROM')"><a href="rom">Roma</a><br>
-<input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="led">Sankt-Peterburg</a><br>
-<input type="checkbox" id="SAOcheckbox" onclick="toggleshow('SAO')"><a href="sao">São Paulo</a><br>
-<input type="checkbox" id="KBPcheckbox" onclick="toggleshow('KBP')"><a href="kbp">Kyiv</a><br>
-<input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')"><a href="ams">Randstad</a><br>
-<input type="checkbox" id="WAWcheckbox" onclick="toggleshow('WAW')"><a href="waw">Warszawa</a><br>
-<input type="checkbox" id="MILcheckbox" onclick="toggleshow('MIL')"><a href="mil">Milano</a><br>
-<input type="checkbox" id="STRcheckbox" onclick="toggleshow('STR')"><a href="str">Stuttgart</a><br>
-<input type="checkbox" id="YMQcheckbox" onclick="toggleshow('YMQ')"><a href="ymq">Montréal</a><br>
-<input type="checkbox" id="MAAcheckbox" onclick="toggleshow('MAA')"><a href="maa">Chennai</a><br>
-<input type="checkbox" id="BAKcheckbox" onclick="toggleshow('BAK')"><a href="bak">Bakı</a><br>
-<input type="checkbox" id="SDJcheckbox" onclick="toggleshow('SDJ')"><a href="sdj">Sendai</a><br>
-<input type="checkbox" id="MUCcheckbox" onclick="toggleshow('MUC')" checked><a href="muc">München</a><br>
-<input type="checkbox" id="FRAcheckbox" onclick="toggleshow('FRA')"><a href="fra">Frankfurt</a><br>
-<input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')" checked><a href="mex">México</a><br>
-<input type="checkbox" id="SPKcheckbox" onclick="toggleshow('SPK')"><a href="spk">Sapporo</a><br>
-<input type="checkbox" id="NUEcheckbox" onclick="toggleshow('NUE')"><a href="nue">Nürnberg</a><br>
-<input type="checkbox" id="HELcheckbox" onclick="toggleshow('HEL')"><a href="hel">Helsinki</a><br>
-<input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')" checked><a href="bjs">Beijing</a><br>
-<input type="checkbox" id="PRGcheckbox" onclick="toggleshow('PRG')"><a href="prg">Praha</a><br>
-<input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')"><a href="sel">Seoul</a><br>
-<input type="checkbox" id="HRKcheckbox" onclick="toggleshow('HRK')"><a href="hrk">Kharkiv</a><br>
-<input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')"><a href="scl">Santiago</a><br>
-<input type="checkbox" id="HAJcheckbox" onclick="toggleshow('HAJ')"><a href="haj">Hannover</a><br>
-<input type="checkbox" id="ZRHcheckbox" onclick="toggleshow('ZRH')"><a href="zrh">Zürich</a><br>
-<input type="checkbox" id="LYNcheckbox" onclick="toggleshow('LYN')"><a href="lyn">Lyon</a><br>
-<input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="hkg">Hong Kong</a><br>
-<input type="checkbox" id="BUHcheckbox" onclick="toggleshow('BUH')"><a href="buh">Bucureşti</a><br>
-<input type="checkbox" id="BNEcheckbox" onclick="toggleshow('BNE')"><a href="bne">Brisbane</a><br>
-<input type="checkbox" id="CCScheckbox" onclick="toggleshow('CCS')"><a href="ccs">Caracas</a><br>
-<input type="checkbox" id="LILcheckbox" onclick="toggleshow('LIL')"><a href="lil">Lille</a><br>
-<input type="checkbox" id="MSQcheckbox" onclick="toggleshow('MSQ')"><a href="msq">Minsk</a><br>
-<input type="checkbox" id="CCUcheckbox" onclick="toggleshow('CCU')"><a href="ccu">Kolkata</a><br>
-<input type="checkbox" id="MNLcheckbox" onclick="toggleshow('MNL')"><a href="mnl">Manila</a><br>
-<input type="checkbox" id="TSNcheckbox" onclick="toggleshow('TSN')"><a href="tsn">Tianjin</a><br>
-<input type="checkbox" id="RECcheckbox" onclick="toggleshow('REC')"><a href="rec">Recife</a><br>
-<input type="checkbox" id="PUScheckbox" onclick="toggleshow('PUS')"><a href="pus">Busan</a><br>
-<input type="checkbox" id="BHZcheckbox" onclick="toggleshow('BHZ')"><a href="bhz">Belo Horizonte</a><br>
-<input type="checkbox" id="SINcheckbox" onclick="toggleshow('SIN')"><a href="sin">Singapore</a><br>
-<input type="checkbox" id="ISTcheckbox" onclick="toggleshow('IST')"><a href="ist">İstanbul</a><br>
-<input type="checkbox" id="BKKcheckbox" onclick="toggleshow('BKK')"><a href="bkk">Bangkok</a><br>
-<input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" checked><a href="sha">Shanghai</a><br>
-<input type="checkbox" id="TLScheckbox" onclick="toggleshow('TLS')"><a href="tls">Toulouse</a><br>
-<input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')"><a href="mde">Medellín</a><br>
-<input type="checkbox" id="TPEcheckbox" onclick="toggleshow('TPE')"><a href="tpe">Taipei</a><br>
-<input type="checkbox" id="ANKcheckbox" onclick="toggleshow('ANK')"><a href="ank">Ankara</a><br>
-<input type="checkbox" id="KULcheckbox" onclick="toggleshow('KUL')"><a href="kul">Kuala Lumpur</a><br>
-<input type="checkbox" id="UIOcheckbox" onclick="toggleshow('UIO')"><a href="uio">Quito</a><br>
-<input type="checkbox" id="TAEcheckbox" onclick="toggleshow('TAE')"><a href="tae">Daegu</a><br>
-<input type="checkbox" id="SOFcheckbox" onclick="toggleshow('SOF')"><a href="sof">Sofia</a><br>
-<input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')"><a href="can">Guangzhou</a><br>
-<input type="checkbox" id="THRcheckbox" onclick="toggleshow('THR')"><a href="thr">Tehran</a><br>
-<input type="checkbox" id="IZMcheckbox" onclick="toggleshow('IZM')"><a href="izm">İzmir</a><br>
-<input type="checkbox" id="BOGcheckbox" onclick="toggleshow('BOG')"><a href="bog">Bogotá</a><br>
-<input type="checkbox" id="DLCcheckbox" onclick="toggleshow('DLC')"><a href="dlc">Dalian</a><br>
-<input type="checkbox" id="DELcheckbox" onclick="toggleshow('DEL')"><a href="del">Delhi</a><br>
-<input type="checkbox" id="JKTcheckbox" onclick="toggleshow('JKT')"><a href="jkt">Jakarta</a><br>
-<input type="checkbox" id="WUHcheckbox" onclick="toggleshow('WUH')"><a href="wuh">Wuhan</a><br>
-<input type="checkbox" id="CKGcheckbox" onclick="toggleshow('CKG')"><a href="ckg">Chongqing</a><br>
-<input type="checkbox" id="NKGcheckbox" onclick="toggleshow('NKG')"><a href="nkg">Nanjing</a><br>
+<input type="checkbox" id="LONcheckbox" onclick="toggleshow('LON')" checked><a href="lon">London</a> (1838)<br>
+<input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="../subtimeline/">New York</a> (1875)<br>
+<input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')" checked><a href="par">Paris</a> (1875)<br>
+<input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')"><a href="mel">Melbourne</a> (1879)<br>
+<input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')" checked><a href="ber">Berlin</a> (1882)<br>
+<input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')"><a href="syd">Sydney</a> (1892)<br>
+<input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="../ltimeline">Chicago</a> (1892)<br>
+<input type="checkbox" id="BUDcheckbox" onclick="toggleshow('BUD')"><a href="bud">Budapest</a> (1896)<br>
+<input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a> (1897)<br>
+<input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')" checked><a href="vie">Wien</a> (1898)<br>
+<input type="checkbox" id="OSLcheckbox" onclick="toggleshow('OSL')"><a href="osl">Oslo</a> (1898)<br>
+<input type="checkbox" id="TYOcheckbox" onclick="toggleshow('TYO')" checked><a href="tyo">Tokyo</a> (1901)<br>
+<input type="checkbox" id="DUScheckbox" onclick="toggleshow('DUS')"><a href="dus">Rhein-Ruhr</a> (1901)<br>
+<input type="checkbox" id="OSAcheckbox" onclick="toggleshow('OSA')" checked><a href="osa">Osaka</a> (1905)<br>
+<input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')"><a href="phl">Philadelphia</a> (1905)<br>
+<input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')"><a href="lax">Los Angeles</a> (1906)<br>
+<input type="checkbox" id="HAMcheckbox" onclick="toggleshow('HAM')"><a href="ham">Hamburg</a> (1907)<br>
+<input type="checkbox" id="CAIcheckbox" onclick="toggleshow('CAI')"><a href="cai">Qahirah</a> (1910)<br>
+<input type="checkbox" id="YVRcheckbox" onclick="toggleshow('YVR')"><a href="yvr">Vancouver</a> (1912)<br>
+<input type="checkbox" id="NGOcheckbox" onclick="toggleshow('NGO')"><a href="ngo">Nagoya</a> (1913)<br>
+<input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')"><a href="bue">Buenos Aires</a> (1913)<br>
+<input type="checkbox" id="FUKcheckbox" onclick="toggleshow('FUK')"><a href="fuk">Fukuoka</a> (1914)<br>
+<input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')"><a href="sfo">San Francisco</a> (1918)<br>
+<input type="checkbox" id="MADcheckbox" onclick="toggleshow('MAD')" checked><a href="mad">Madrid</a> (1919)<br>
+<input type="checkbox" id="BCNcheckbox" onclick="toggleshow('BCN')"><a href="bcn">Barcelona</a> (1924)<br>
+<input type="checkbox" id="BOMcheckbox" onclick="toggleshow('BOM')"><a href="bom">Mumbai</a> (1925)<br>
+<input type="checkbox" id="STOcheckbox" onclick="toggleshow('STO')"><a href="sto">Stockholm</a> (1925)<br>
+<input type="checkbox" id="LIScheckbox" onclick="toggleshow('LIS')"><a href="lis">Lisboa</a> (1926)<br>
+<input type="checkbox" id="ATHcheckbox" onclick="toggleshow('ATH')"><a href="ath">Athína</a> (1930)<br>
+<input type="checkbox" id="CPHcheckbox" onclick="toggleshow('CPH')"><a href="cph">København</a> (1934)<br>
+<input type="checkbox" id="MOWcheckbox" onclick="toggleshow('MOW')" checked><a href="mow">Moskva</a> (1935)<br>
+<input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')"><a href="rio">Rio de Janeiro</a> (1937)<br>
+<input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="was">Washington</a> (1949)<br>
+<input type="checkbox" id="BRUcheckbox" onclick="toggleshow('BRU')"><a href="bru">Bruxelles</a> (1952)<br>
+<input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')"><a href="yto">Toronto</a> (1954)<br>
+<input type="checkbox" id="ROMcheckbox" onclick="toggleshow('ROM')"><a href="rom">Roma</a> (1955)<br>
+<input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="led">Sankt-Peterburg</a> (1955)<br>
+<input type="checkbox" id="SAOcheckbox" onclick="toggleshow('SAO')"><a href="sao">São Paulo</a> (1957)<br>
+<input type="checkbox" id="KBPcheckbox" onclick="toggleshow('KBP')"><a href="kbp">Kyiv</a> (1960)<br>
+<input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')"><a href="ams">Randstad</a> (1962)<br>
+<input type="checkbox" id="WAWcheckbox" onclick="toggleshow('WAW')"><a href="waw">Warszawa</a> (1963)<br>
+<input type="checkbox" id="MILcheckbox" onclick="toggleshow('MIL')"><a href="mil">Milano</a> (1964)<br>
+<input type="checkbox" id="STRcheckbox" onclick="toggleshow('STR')"><a href="str">Stuttgart</a> (1966)<br>
+<input type="checkbox" id="YMQcheckbox" onclick="toggleshow('YMQ')"><a href="ymq">Montréal</a> (1966)<br>
+<input type="checkbox" id="MAAcheckbox" onclick="toggleshow('MAA')"><a href="maa">Chennai</a> (1967)<br>
+<input type="checkbox" id="BAKcheckbox" onclick="toggleshow('BAK')"><a href="bak">Bakı</a> (1967)<br>
+<input type="checkbox" id="SDJcheckbox" onclick="toggleshow('SDJ')"><a href="sdj">Sendai</a> (1968)<br>
+<input type="checkbox" id="MUCcheckbox" onclick="toggleshow('MUC')" checked><a href="muc">München</a> (1968)<br>
+<input type="checkbox" id="FRAcheckbox" onclick="toggleshow('FRA')"><a href="fra">Frankfurt</a> (1968)<br>
+<input type="checkbox" id="MEXcheckbox" onclick="toggleshow('MEX')" checked><a href="mex">México</a> (1969)<br>
+<input type="checkbox" id="SPKcheckbox" onclick="toggleshow('SPK')"><a href="spk">Sapporo</a> (1971)<br>
+<input type="checkbox" id="NUEcheckbox" onclick="toggleshow('NUE')"><a href="nue">Nürnberg</a> (1972)<br>
+<input type="checkbox" id="HELcheckbox" onclick="toggleshow('HEL')"><a href="hel">Helsinki</a> (1972)<br>
+<input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')" checked><a href="bjs">Beijing</a> (1972)<br>
+<input type="checkbox" id="PRGcheckbox" onclick="toggleshow('PRG')"><a href="prg">Praha</a> (1974)<br>
+<input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')"><a href="sel">Seoul</a> (1974)<br>
+<input type="checkbox" id="HRKcheckbox" onclick="toggleshow('HRK')"><a href="hrk">Kharkiv</a> (1975)<br>
+<input type="checkbox" id="SCLcheckbox" onclick="toggleshow('SCL')"><a href="scl">Santiago</a> (1975)<br>
+<input type="checkbox" id="HAJcheckbox" onclick="toggleshow('HAJ')"><a href="haj">Hannover</a> (1975)<br>
+<input type="checkbox" id="ZRHcheckbox" onclick="toggleshow('ZRH')"><a href="zrh">Zürich</a> (1976)<br>
+<input type="checkbox" id="LYNcheckbox" onclick="toggleshow('LYN')"><a href="lyn">Lyon</a> (1978)<br>
+<input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="hkg">Hong Kong</a> (1979)<br>
+<input type="checkbox" id="BUHcheckbox" onclick="toggleshow('BUH')"><a href="buh">Bucureşti</a> (1979)<br>
+<input type="checkbox" id="BNEcheckbox" onclick="toggleshow('BNE')"><a href="bne">Brisbane</a> (1979)<br>
+<input type="checkbox" id="CCScheckbox" onclick="toggleshow('CCS')"><a href="ccs">Caracas</a> (1983)<br>
+<input type="checkbox" id="LILcheckbox" onclick="toggleshow('LIL')"><a href="lil">Lille</a> (1983)<br>
+<input type="checkbox" id="MSQcheckbox" onclick="toggleshow('MSQ')"><a href="msq">Minsk</a> (1984)<br>
+<input type="checkbox" id="CCUcheckbox" onclick="toggleshow('CCU')"><a href="ccu">Kolkata</a> (1984)<br>
+<input type="checkbox" id="MNLcheckbox" onclick="toggleshow('MNL')"><a href="mnl">Manila</a> (1984)<br>
+<input type="checkbox" id="TSNcheckbox" onclick="toggleshow('TSN')"><a href="tsn">Tianjin</a> (1984)<br>
+<input type="checkbox" id="RECcheckbox" onclick="toggleshow('REC')"><a href="rec">Recife</a> (1985)<br>
+<input type="checkbox" id="PUScheckbox" onclick="toggleshow('PUS')"><a href="pus">Busan</a> (1985)<br>
+<input type="checkbox" id="BHZcheckbox" onclick="toggleshow('BHZ')"><a href="bhz">Belo Horizonte</a> (1986)<br>
+<input type="checkbox" id="SINcheckbox" onclick="toggleshow('SIN')"><a href="sin">Singapore</a> (1987)<br>
+<input type="checkbox" id="ISTcheckbox" onclick="toggleshow('IST')"><a href="ist">İstanbul</a> (1989)<br>
+<input type="checkbox" id="BKKcheckbox" onclick="toggleshow('BKK')"><a href="bkk">Bangkok</a> (1990)<br>
+<input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" checked><a href="sha">Shanghai</a> (1993)<br>
+<input type="checkbox" id="TLScheckbox" onclick="toggleshow('TLS')"><a href="tls">Toulouse</a> (1993)<br>
+<input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')"><a href="mde">Medellín</a> (1995)<br>
+<input type="checkbox" id="TPEcheckbox" onclick="toggleshow('TPE')"><a href="tpe">Taipei</a> (1996)<br>
+<input type="checkbox" id="ANKcheckbox" onclick="toggleshow('ANK')"><a href="ank">Ankara</a> (1996)<br>
+<input type="checkbox" id="KULcheckbox" onclick="toggleshow('KUL')"><a href="kul">Kuala Lumpur</a> (1996)<br>
+<input type="checkbox" id="UIOcheckbox" onclick="toggleshow('UIO')"><a href="uio">Quito</a> (1996)<br>
+<input type="checkbox" id="TAEcheckbox" onclick="toggleshow('TAE')"><a href="tae">Daegu</a> (1997)<br>
+<input type="checkbox" id="SOFcheckbox" onclick="toggleshow('SOF')"><a href="sof">Sofia</a> (1998)<br>
+<input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')"><a href="can">Guangzhou</a> (1999)<br>
+<input type="checkbox" id="THRcheckbox" onclick="toggleshow('THR')"><a href="thr">Tehran</a> (2000)<br>
+<input type="checkbox" id="IZMcheckbox" onclick="toggleshow('IZM')"><a href="izm">İzmir</a> (2000)<br>
+<input type="checkbox" id="BOGcheckbox" onclick="toggleshow('BOG')"><a href="bog">Bogotá</a> (2000)<br>
+<input type="checkbox" id="DLCcheckbox" onclick="toggleshow('DLC')"><a href="dlc">Dalian</a> (2002)<br>
+<input type="checkbox" id="DELcheckbox" onclick="toggleshow('DEL')"><a href="del">Delhi</a> (2002)<br>
+<input type="checkbox" id="JKTcheckbox" onclick="toggleshow('JKT')"><a href="jkt">Jakarta</a> (2004)<br>
+<input type="checkbox" id="WUHcheckbox" onclick="toggleshow('WUH')"><a href="wuh">Wuhan</a> (2004)<br>
+<input type="checkbox" id="CKGcheckbox" onclick="toggleshow('CKG')"><a href="ckg">Chongqing</a> (2005)<br>
+<input type="checkbox" id="NKGcheckbox" onclick="toggleshow('NKG')"><a href="nkg">Nanjing</a> (2005)<br>
 </div>
-<div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
+<div id="showall" style="display: block;"><a href="javascript:selectall(0)">show all</a></div>
 <div id="hideall" style="display: block;"><a href="javascript:deselectall()">hide all</a></div>
 </div>
 <p>

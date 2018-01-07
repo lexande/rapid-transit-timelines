@@ -17,7 +17,7 @@ div#sidebar {
 	float: left;
 	background: #ffffff;
 	border: 1px solid;
-	width: 10em;
+	width: 14em;
 	max-height: calc(100% - 22px);
 	top: 0;
 	left: 0;
@@ -132,15 +132,16 @@ function togglesidebar() {
 		s.style.display = 'block';
 		h.style.display = 'block';
 		a.innerHTML = "[&minus;]";
-		m.style.paddingLeft = "calc(10em + 22px)";
+		m.style.paddingLeft = "calc(14em + 22px)";
 	}
 }
-function selectall() {
+function selectall(i) {
 	spans = document.getElementsByTagName("span");
-	for (var i=0; i < spans.length; i++) {
+	if (i < spans.length) {
 		if (spans[i].style.display == 'none') {
 			document.getElementById(spans[i].id + "checkbox").click();
 		}
+		setTimeout(function(){ selectall(i+1) }, 10);
 	}
 }
 function deselectall() {
@@ -178,7 +179,7 @@ window.onload=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-<div id="maps" style="padding-left: calc(10em + 22px);">
+<div id="maps" style="padding-left: calc(14em + 22px);">
 <noscript>Sorry, the maps really don't work without javascript.</noscript>
 HEREDOC
 
@@ -211,18 +212,19 @@ cat <<HEREDOC
 HEREDOC
 for city in $@; do
   NAME=`cat $city/name`
+  OPENYEAR=`cat $city/yr`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   if [ -f $city/s ]; then
-    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"$city\">$NAME</a><br>" \
+    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"$city\">$NAME</a> ($OPENYEAR)<br>" \
       | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
   else
-    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\"><a href=\"$city\">$NAME</a><br>" \
+    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\"><a href=\"$city\">$NAME</a> ($OPENYEAR)<br>" \
       | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
   fi
 done
 cat <<HEREDOC
 </div>
-<div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
+<div id="showall" style="display: block;"><a href="javascript:selectall(0)">show all</a></div>
 <div id="hideall" style="display: block;"><a href="javascript:deselectall()">hide all</a></div>
 </div>
 <p>
