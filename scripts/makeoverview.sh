@@ -13,11 +13,15 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+a:link.map-wrap {
+        text-decoration: none;
+}
 span {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 .map {
+	border: 1px solid;
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -28,6 +32,11 @@ start=$(for city in $@; do ls $city/????.svg; done | sed -e's!^.../\(....\).svg!
 echo "start=${start};"
 echo -n "count="
 expr 1 + \( \( 2015 - $start \) / 5 \) | sed -e's/$/;/'
+echo -n "citystartyears = { "
+for city in $@; do
+  echo -n "${city}: "$(ls $city/????.svg | sed -e's!^.../\(....\).svg!\1!' | sort | head -n 1)", "
+done
+echo "};"
 cat <<HEREDOC
 step=5;
 index=count-1;
@@ -37,9 +46,54 @@ echo -n '	['
 for city in $@; do echo -n '"'$city'",'; done | tr 'a-z' 'A-Z' |  sed -e's/,$/].forEach(function(city) {/'
 echo ''
 cat << HEREDOC
-		document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
-		document[city].title=start+step*index;
-		document[city].alt=start+step*index + " map";
+		yr = start+step*index;
+		mapimg = document.getElementById(city + "map");
+		if (yr < citystartyears[city.toLowerCase()]) {
+			if (mapimg.tagName.toUpperCase() == "IMG") {
+				svgelt = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+				textelt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+				tspanelt = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+				yearcontent = document.createTextNode(yr);
+				tspanelt.appendChild(yearcontent);
+				textelt.appendChild(tspanelt);
+				textelt.setAttribute("x", "6.48935");
+				textelt.setAttribute("y", "15.0139");
+				textelt.setAttribute("style", "-inkscape-font-specification:Sans");
+				textelt.setAttribute("font-family", "Sans");
+				textelt.setAttribute("font-weight", "400");
+				textelt.setAttribute("font-size", "10.4464px");
+				svgelt.appendChild(textelt);
+				svgelt.setAttribute("id", mapimg.id);
+				svgelt.setAttribute("width", mapimg.width);
+				svgelt.setAttribute("height", mapimg.height);
+				svgelt.setAttribute("class", "map");
+				svgelt.setAttribute("title", yr);
+				svgelt.setAttribute("alt", yr + " map");
+				mapimg.parentNode.replaceChild(svgelt, mapimg);
+			} else {
+				mapimg.getElementsByTagName("text")[0].getElementsByTagName("tspan")[0].innerHTML = yr;
+				mapimg.setAttribute("title", yr);
+				mapimg.setAttribute("alt", yr + " map");
+			}
+		} else {
+			if (mapimg.tagName.toUpperCase() == "SVG") {
+			console.log(city,yr);
+				imgelt = document.createElement("img");
+				imgelt.setAttribute("class", "map");
+				imgelt.id = mapimg.getAttribute("id");
+				imgelt.width = mapimg.getAttribute("width");
+				imgelt.height = mapimg.getAttribute("height");
+				imgelt.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+				imgelt.title = yr;
+				imgelt.alt = yr + " map";
+				mapimg.parentNode.replaceChild(imgelt, mapimg);
+			} else {
+				mapimg.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+				mapimg.title = yr;
+				mapimg.alt = yr + " map";
+			}
+		}
+	
 	});
 }
 function nextmap() {
@@ -91,10 +145,10 @@ for city in $@; do
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*390/5376)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $city/small/2015.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
 
-  echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle"><a href="'$city'">'$NAME'<br>' \
+  echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle"><a href="'$city'">'$NAME'</a><br>' \
     | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
 
-  echo '  <img class="map" name="'$UPPER'" src="'$city'/small/2015.svg" title="2015" alt="2015 map" width="'$W'px" height="'$H'px" style="border-width: 1px; border-style: solid"></a></span>'
+  echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="'$city'/small/2015.svg" title="2015" alt="2015 map" width="'$W'px" height="'$H'px" style="border-width: 1px; border-style: solid"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
 done
 
 cat <<HEREDOC
@@ -123,8 +177,8 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <div id="preloader">
 HEREDOC
 for city in $@; do
-  for year in `seq $start 5 2015`; do
-    echo '<img src="'$city'/small/'$year'.svg" width="1" height="1" alt="">'
+  for img in ${city}/small/????.svg; do
+    echo '<img src="'${img}'" width="1" height="1" alt="">'
   done
 done
 

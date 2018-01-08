@@ -11,6 +11,9 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+a:link.map-wrap {
+	text-decoration: none;
+}
 div#sidebar {
 	float: left;
 	background: #ffffff;
@@ -65,14 +68,58 @@ body {
 <script type="text/javascript">
 start=1840;
 count=36;
+citystartyears = { lon: 1840, nyc: 1875, par: 1875, mel: 1880, ber: 1885, syd: 1895, chi: 1895, bud: 1900, bos: 1900, vie: 1900, osl: 1900, tyo: 1905, dus: 1905, osa: 1905, phl: 1905, lax: 1910, ham: 1910, cai: 1910, yvr: 1915, ngo: 1915, bue: 1915, fuk: 1915, sfo: 1920, mad: 1920, bcn: 1905, bom: 1925, sto: 1925, lis: 1930, ath: 1930, cph: 1935, mow: 1935, rio: 1900, was: 1950, bru: 1955, yto: 1955, rom: 1955, led: 1955, sao: 1960, kbp: 1960, ams: 1965, waw: 1965, mil: 1965, str: 1930, ymq: 1970, maa: 1970, bak: 1960, sdj: 1970, muc: 1970, fra: 1970, mex: 1970, spk: 1960, nue: 1975, hel: 1975, bjs: 1975, prg: 1895, sel: 1965, hrk: 1975, scl: 1970, haj: 1975, zrh: 1895, lyn: 1865, hkg: 1975, buh: 1980, bne: 1980, ccs: 1985, lil: 1985, msq: 1985, ccu: 1985, mnl: 1985, tsn: 1985, rec: 1985, pus: 1970, bhz: 1990, sin: 1975, ist: 1985, bkk: 1990, sha: 1995, tls: 1995, mde: 1995, tpe: 2000, ank: 2000, kul: 2000, uio: 2000, tae: 1975, sof: 2000, can: 1990, thr: 1980, izm: 1975, bog: 2000, dlc: 2005, del: 2005, jkt: 2005, wuh: 2005, ckg: 1985, nkg: 2005, };
 step=5;
 index=count-1;
 function update() {
 	["LON","NYC","PAR","MEL","BER","SYD","CHI","BUD","BOS","VIE","OSL","TYO","DUS","OSA","PHL","LAX","HAM","CAI","YVR","NGO","BUE","FUK","SFO","MAD","BCN","BOM","STO","LIS","ATH","CPH","MOW","RIO","WAS","BRU","YTO","ROM","LED","SAO","KBP","AMS","WAW","MIL","STR","YMQ","MAA","BAK","SDJ","MUC","FRA","MEX","SPK","NUE","HEL","BJS","PRG","SEL","HRK","SCL","HAJ","ZRH","LYN","HKG","BUH","BNE","CCS","LIL","MSQ","CCU","MNL","TSN","REC","PUS","BHZ","SIN","IST","BKK","SHA","TLS","MDE","TPE","ANK","KUL","UIO","TAE","SOF","CAN","THR","IZM","BOG","DLC","DEL","JKT","WUH","CKG","NKG"].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {
+		yr = start+step*index;
 		mapimg = document.getElementById(city + "map");
-		mapimg.src = (city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
-		mapimg.title = start+step*index;
-		mapimg.alt = start+step*index + " map";
+		if (yr < citystartyears[city.toLowerCase()]) {
+			if (mapimg.tagName.toUpperCase() == "IMG") {
+				svgelt = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+				textelt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+				tspanelt = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+				yearcontent = document.createTextNode(yr);
+				tspanelt.appendChild(yearcontent);
+				textelt.appendChild(tspanelt);
+				textelt.setAttribute("x", "6.48935");
+				textelt.setAttribute("y", "15.0139");
+				textelt.setAttribute("style", "-inkscape-font-specification:Sans");
+				textelt.setAttribute("font-family", "Sans");
+				textelt.setAttribute("font-weight", "400");
+				textelt.setAttribute("font-size", "10.4464px");
+				svgelt.appendChild(textelt);
+				svgelt.setAttribute("id", mapimg.id);
+				svgelt.setAttribute("width", mapimg.width);
+				svgelt.setAttribute("height", mapimg.height);
+				svgelt.setAttribute("class", "map");
+				svgelt.setAttribute("title", yr);
+				svgelt.setAttribute("alt", yr + " map");
+				mapimg.parentNode.replaceChild(svgelt, mapimg);
+			} else {
+				mapimg.getElementsByTagName("text")[0].getElementsByTagName("tspan")[0].innerHTML = yr;
+				mapimg.setAttribute("title", yr);
+				mapimg.setAttribute("alt", yr + " map");
+			}
+		} else {
+			if (mapimg.tagName.toUpperCase() == "SVG") {
+			console.log(city,yr);
+				imgelt = document.createElement("img");
+				imgelt.setAttribute("class", "map");
+				imgelt.id = mapimg.getAttribute("id");
+				imgelt.width = mapimg.getAttribute("width");
+				imgelt.height = mapimg.getAttribute("height");
+				imgelt.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+				imgelt.title = yr;
+				imgelt.alt = yr + " map";
+				mapimg.parentNode.replaceChild(imgelt, mapimg);
+			} else {
+				mapimg.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+				mapimg.title = yr;
+				mapimg.alt = yr + " map";
+			}
+		}
 	}});
 }
 function nextmap() {
@@ -96,7 +143,7 @@ function toggleshow(x) {
 		}
 	} else {
 		mapimg.src = x.toLowerCase() + '/small/' + (start+step*index) + '.svg';
-		for (var i = start; i < start + count*step; i+=step) {
+		for (var i = citystartyears[x.toLowerCase()]; i < start + count*step; i+=step) {
 			img = document.createElement("img");
 			img.src = x.toLowerCase() + '/small/' + i + '.svg';
 			img.width = "1"; img.height = "1"; img.alt = "";
@@ -171,196 +218,196 @@ window.onload=function() {
 <p>
 <div id="maps" style="padding-left: calc(14em + 22px);">
 <noscript>Sorry, the maps really don't work without javascript.</noscript>
-<span id="LON" style="display: inline-block; vertical-align: middle"><a href="lon">London<br>
-  <img class="map" id="LONmap" src="lon/small/2015.svg" title="2015" alt="2015 map" width="635" height="907"></a></span>
-<span id="NYC" style="display: inline-block; vertical-align: middle"><a href="../subtimeline/">New York<br>
-  <img class="map" id="NYCmap" src="nyc/small/2015.svg" title="2015" alt="2015 map" width="390" height="390"></a></span>
-<span id="PAR" style="display: inline-block; vertical-align: middle"><a href="par">Paris<br>
-  <img class="map" id="PARmap" src="par/small/2015.svg" title="2015" alt="2015 map" width="628" height="519"></a></span>
-<span id="MEL" style="display: none; vertical-align: middle"><a href="mel">Melbourne<br>
-  <img class="map" id="MELmap" src="about:blank" title="2015" alt="2015 map" width="740" height="624"></a></span>
-<span id="BER" style="display: inline-block; vertical-align: middle"><a href="ber">Berlin<br>
-  <img class="map" id="BERmap" src="ber/small/2015.svg" title="2015" alt="2015 map" width="537" height="522"></a></span>
-<span id="SYD" style="display: none; vertical-align: middle"><a href="syd">Sydney<br>
-  <img class="map" id="SYDmap" src="about:blank" title="2015" alt="2015 map" width="527" height="414"></a></span>
-<span id="CHI" style="display: inline-block; vertical-align: middle"><a href="../ltimeline">Chicago<br>
-  <img class="map" id="CHImap" src="chi/small/2015.svg" title="2015" alt="2015 map" width="308" height="407"></a></span>
-<span id="BUD" style="display: none; vertical-align: middle"><a href="bud">Budapest<br>
-  <img class="map" id="BUDmap" src="about:blank" title="2015" alt="2015 map" width="207" height="341"></a></span>
-<span id="BOS" style="display: inline-block; vertical-align: middle"><a href="../ttimeline">Boston<br>
-  <img class="map" id="BOSmap" src="bos/small/2015.svg" title="2015" alt="2015 map" width="235" height="271"></a></span>
-<span id="VIE" style="display: inline-block; vertical-align: middle"><a href="vie">Wien<br>
-  <img class="map" id="VIEmap" src="vie/small/2015.svg" title="2015" alt="2015 map" width="227" height="317"></a></span>
-<span id="OSL" style="display: none; vertical-align: middle"><a href="osl">Oslo<br>
-  <img class="map" id="OSLmap" src="about:blank" title="2015" alt="2015 map" width="486" height="297"></a></span>
-<span id="TYO" style="display: inline-block; vertical-align: middle"><a href="tyo">Tokyo<br>
-  <img class="map" id="TYOmap" src="tyo/small/2015.svg" title="2015" alt="2015 map" width="1284" height="1063"></a></span>
-<span id="DUS" style="display: none; vertical-align: middle"><a href="dus">Rhein-Ruhr<br>
-  <img class="map" id="DUSmap" src="about:blank" title="2015" alt="2015 map" width="889" height="1074"></a></span>
-<span id="OSA" style="display: inline-block; vertical-align: middle"><a href="osa">Osaka<br>
-  <img class="map" id="OSAmap" src="osa/small/2015.svg" title="2015" alt="2015 map" width="1331" height="1001"></a></span>
-<span id="PHL" style="display: none; vertical-align: middle"><a href="phl">Philadelphia<br>
-  <img class="map" id="PHLmap" src="about:blank" title="2015" alt="2015 map" width="319" height="338"></a></span>
-<span id="LAX" style="display: none; vertical-align: middle"><a href="lax">Los Angeles<br>
-  <img class="map" id="LAXmap" src="about:blank" title="2015" alt="2015 map" width="395" height="467"></a></span>
-<span id="HAM" style="display: none; vertical-align: middle"><a href="ham">Hamburg<br>
-  <img class="map" id="HAMmap" src="about:blank" title="2015" alt="2015 map" width="435" height="442"></a></span>
-<span id="CAI" style="display: none; vertical-align: middle"><a href="cai">Qahirah<br>
-  <img class="map" id="CAImap" src="about:blank" title="2015" alt="2015 map" width="185" height="370"></a></span>
-<span id="YVR" style="display: none; vertical-align: middle"><a href="yvr">Vancouver<br>
-  <img class="map" id="YVRmap" src="about:blank" title="2015" alt="2015 map" width="254" height="152"></a></span>
-<span id="NGO" style="display: none; vertical-align: middle"><a href="ngo">Nagoya<br>
-  <img class="map" id="NGOmap" src="about:blank" title="2015" alt="2015 map" width="667" height="696"></a></span>
-<span id="BUE" style="display: none; vertical-align: middle"><a href="bue">Buenos Aires<br>
-  <img class="map" id="BUEmap" src="about:blank" title="2015" alt="2015 map" width="551" height="537"></a></span>
-<span id="FUK" style="display: none; vertical-align: middle"><a href="fuk">Fukuoka<br>
-  <img class="map" id="FUKmap" src="about:blank" title="2015" alt="2015 map" width="747" height="722"></a></span>
-<span id="SFO" style="display: none; vertical-align: middle"><a href="sfo">San Francisco<br>
-  <img class="map" id="SFOmap" src="about:blank" title="2015" alt="2015 map" width="653" height="892"></a></span>
-<span id="MAD" style="display: inline-block; vertical-align: middle"><a href="mad">Madrid<br>
-  <img class="map" id="MADmap" src="mad/small/2015.svg" title="2015" alt="2015 map" width="464" height="384"></a></span>
-<span id="BCN" style="display: none; vertical-align: middle"><a href="bcn">Barcelona<br>
-  <img class="map" id="BCNmap" src="about:blank" title="2015" alt="2015 map" width="609" height="435"></a></span>
-<span id="BOM" style="display: none; vertical-align: middle"><a href="bom">Mumbai<br>
-  <img class="map" id="BOMmap" src="about:blank" title="2015" alt="2015 map" width="370" height="616"></a></span>
-<span id="STO" style="display: none; vertical-align: middle"><a href="sto">Stockholm<br>
-  <img class="map" id="STOmap" src="about:blank" title="2015" alt="2015 map" width="403" height="577"></a></span>
-<span id="LIS" style="display: none; vertical-align: middle"><a href="lis">Lisboa<br>
-  <img class="map" id="LISmap" src="about:blank" title="2015" alt="2015 map" width="334" height="261"></a></span>
-<span id="ATH" style="display: none; vertical-align: middle"><a href="ath">Athína<br>
-  <img class="map" id="ATHmap" src="about:blank" title="2015" alt="2015 map" width="186" height="262"></a></span>
-<span id="CPH" style="display: none; vertical-align: middle"><a href="cph">København<br>
-  <img class="map" id="CPHmap" src="about:blank" title="2015" alt="2015 map" width="896" height="689"></a></span>
-<span id="MOW" style="display: inline-block; vertical-align: middle"><a href="mow">Moskva<br>
-  <img class="map" id="MOWmap" src="mow/small/2015.svg" title="2015" alt="2015 map" width="326" height="413"></a></span>
-<span id="RIO" style="display: none; vertical-align: middle"><a href="rio">Rio de Janeiro<br>
-  <img class="map" id="RIOmap" src="about:blank" title="2015" alt="2015 map" width="551" height="392"></a></span>
-<span id="WAS" style="display: inline-block; vertical-align: middle"><a href="was">Washington<br>
-  <img class="map" id="WASmap" src="was/small/2015.svg" title="2015" alt="2015 map" width="439" height="410"></a></span>
-<span id="BRU" style="display: none; vertical-align: middle"><a href="bru">Bruxelles<br>
-  <img class="map" id="BRUmap" src="about:blank" title="2015" alt="2015 map" width="725" height="747"></a></span>
-<span id="YTO" style="display: none; vertical-align: middle"><a href="yto">Toronto<br>
-  <img class="map" id="YTOmap" src="about:blank" title="2015" alt="2015 map" width="248" height="177"></a></span>
-<span id="ROM" style="display: none; vertical-align: middle"><a href="rom">Roma<br>
-  <img class="map" id="ROMmap" src="about:blank" title="2015" alt="2015 map" width="401" height="510"></a></span>
-<span id="LED" style="display: none; vertical-align: middle"><a href="led">Sankt-Peterburg<br>
-  <img class="map" id="LEDmap" src="about:blank" title="2015" alt="2015 map" width="160" height="276"></a></span>
-<span id="SAO" style="display: none; vertical-align: middle"><a href="sao">São Paulo<br>
-  <img class="map" id="SAOmap" src="about:blank" title="2015" alt="2015 map" width="783" height="537"></a></span>
-<span id="KBP" style="display: none; vertical-align: middle"><a href="kbp">Kyiv<br>
-  <img class="map" id="KBPmap" src="about:blank" title="2015" alt="2015 map" width="261" height="196"></a></span>
-<span id="AMS" style="display: none; vertical-align: middle"><a href="ams">Randstad<br>
-  <img class="map" id="AMSmap" src="about:blank" title="2015" alt="2015 map" width="747" height="936"></a></span>
-<span id="WAW" style="display: none; vertical-align: middle"><a href="waw">Warszawa<br>
-  <img class="map" id="WAWmap" src="about:blank" title="2015" alt="2015 map" width="109" height="203"></a></span>
-<span id="MIL" style="display: none; vertical-align: middle"><a href="mil">Milano<br>
-  <img class="map" id="MILmap" src="about:blank" title="2015" alt="2015 map" width="334" height="290"></a></span>
-<span id="STR" style="display: none; vertical-align: middle"><a href="str">Stuttgart<br>
-  <img class="map" id="STRmap" src="about:blank" title="2015" alt="2015 map" width="287" height="243"></a></span>
-<span id="YMQ" style="display: none; vertical-align: middle"><a href="ymq">Montréal<br>
-  <img class="map" id="YMQmap" src="about:blank" title="2015" alt="2015 map" width="172" height="172"></a></span>
-<span id="MAA" style="display: none; vertical-align: middle"><a href="maa">Chennai<br>
-  <img class="map" id="MAAmap" src="about:blank" title="2015" alt="2015 map" width="210" height="217"></a></span>
-<span id="BAK" style="display: none; vertical-align: middle"><a href="bak">Bakı<br>
-  <img class="map" id="BAKmap" src="about:blank" title="2015" alt="2015 map" width="149" height="98"></a></span>
-<span id="SDJ" style="display: none; vertical-align: middle"><a href="sdj">Sendai<br>
-  <img class="map" id="SDJmap" src="about:blank" title="2015" alt="2015 map" width="189" height="185"></a></span>
-<span id="MUC" style="display: inline-block; vertical-align: middle"><a href="muc">München<br>
-  <img class="map" id="MUCmap" src="muc/small/2015.svg" title="2015" alt="2015 map" width="548" height="410"></a></span>
-<span id="FRA" style="display: none; vertical-align: middle"><a href="fra">Frankfurt<br>
-  <img class="map" id="FRAmap" src="about:blank" title="2015" alt="2015 map" width="335" height="301"></a></span>
-<span id="MEX" style="display: inline-block; vertical-align: middle"><a href="mex">México<br>
-  <img class="map" id="MEXmap" src="mex/small/2015.svg" title="2015" alt="2015 map" width="290" height="315"></a></span>
-<span id="SPK" style="display: none; vertical-align: middle"><a href="spk">Sapporo<br>
-  <img class="map" id="SPKmap" src="about:blank" title="2015" alt="2015 map" width="203" height="210"></a></span>
-<span id="NUE" style="display: none; vertical-align: middle"><a href="nue">Nürnberg<br>
-  <img class="map" id="NUEmap" src="about:blank" title="2015" alt="2015 map" width="258" height="218"></a></span>
-<span id="HEL" style="display: none; vertical-align: middle"><a href="hel">Helsinki<br>
-  <img class="map" id="HELmap" src="about:blank" title="2015" alt="2015 map" width="316" height="291"></a></span>
-<span id="BJS" style="display: inline-block; vertical-align: middle"><a href="bjs">Beijing<br>
-  <img class="map" id="BJSmap" src="bjs/small/2015.svg" title="2015" alt="2015 map" width="551" height="660"></a></span>
-<span id="PRG" style="display: none; vertical-align: middle"><a href="prg">Praha<br>
-  <img class="map" id="PRGmap" src="about:blank" title="2015" alt="2015 map" width="220" height="126"></a></span>
-<span id="SEL" style="display: none; vertical-align: middle"><a href="sel">Seoul<br>
-  <img class="map" id="SELmap" src="about:blank" title="2015" alt="2015 map" width="551" height="740"></a></span>
-<span id="HRK" style="display: none; vertical-align: middle"><a href="hrk">Kharkiv<br>
-  <img class="map" id="HRKmap" src="about:blank" title="2015" alt="2015 map" width="181" height="138"></a></span>
-<span id="SCL" style="display: none; vertical-align: middle"><a href="scl">Santiago<br>
-  <img class="map" id="SCLmap" src="about:blank" title="2015" alt="2015 map" width="204" height="265"></a></span>
-<span id="HAJ" style="display: none; vertical-align: middle"><a href="haj">Hannover<br>
-  <img class="map" id="HAJmap" src="about:blank" title="2015" alt="2015 map" width="192" height="239"></a></span>
-<span id="ZRH" style="display: none; vertical-align: middle"><a href="zrh">Zürich<br>
-  <img class="map" id="ZRHmap" src="about:blank" title="2015" alt="2015 map" width="414" height="385"></a></span>
-<span id="LYN" style="display: none; vertical-align: middle"><a href="lyn">Lyon<br>
-  <img class="map" id="LYNmap" src="about:blank" title="2015" alt="2015 map" width="196" height="134"></a></span>
-<span id="HKG" style="display: inline-block; vertical-align: middle"><a href="hkg">Hong Kong<br>
-  <img class="map" id="HKGmap" src="hkg/small/2015.svg" title="2015" alt="2015 map" width="479" height="530"></a></span>
-<span id="BUH" style="display: none; vertical-align: middle"><a href="buh">Bucureşti<br>
-  <img class="map" id="BUHmap" src="about:blank" title="2015" alt="2015 map" width="189" height="160"></a></span>
-<span id="BNE" style="display: none; vertical-align: middle"><a href="bne">Brisbane<br>
-  <img class="map" id="BNEmap" src="about:blank" title="2015" alt="2015 map" width="261" height="399"></a></span>
-<span id="CCS" style="display: none; vertical-align: middle"><a href="ccs">Caracas<br>
-  <img class="map" id="CCSmap" src="about:blank" title="2015" alt="2015 map" width="316" height="222"></a></span>
-<span id="LIL" style="display: none; vertical-align: middle"><a href="lil">Lille<br>
-  <img class="map" id="LILmap" src="about:blank" title="2015" alt="2015 map" width="163" height="170"></a></span>
-<span id="MSQ" style="display: none; vertical-align: middle"><a href="msq">Minsk<br>
-  <img class="map" id="MSQmap" src="about:blank" title="2015" alt="2015 map" width="185" height="127"></a></span>
-<span id="CCU" style="display: none; vertical-align: middle"><a href="ccu">Kolkata<br>
-  <img class="map" id="CCUmap" src="about:blank" title="2015" alt="2015 map" width="83" height="217"></a></span>
-<span id="MNL" style="display: none; vertical-align: middle"><a href="mnl">Manila<br>
-  <img class="map" id="MNLmap" src="about:blank" title="2015" alt="2015 map" width="138" height="167"></a></span>
-<span id="TSN" style="display: none; vertical-align: middle"><a href="tsn">Tianjin<br>
-  <img class="map" id="TSNmap" src="about:blank" title="2015" alt="2015 map" width="598" height="275"></a></span>
-<span id="REC" style="display: none; vertical-align: middle"><a href="rec">Recife<br>
-  <img class="map" id="RECmap" src="about:blank" title="2015" alt="2015 map" width="167" height="178"></a></span>
-<span id="PUS" style="display: none; vertical-align: middle"><a href="pus">Busan<br>
-  <img class="map" id="PUSmap" src="about:blank" title="2015" alt="2015 map" width="305" height="298"></a></span>
-<span id="BHZ" style="display: none; vertical-align: middle"><a href="bhz">Belo Horizonte<br>
-  <img class="map" id="BHZmap" src="about:blank" title="2015" alt="2015 map" width="145" height="221"></a></span>
-<span id="SIN" style="display: none; vertical-align: middle"><a href="sin">Singapore<br>
-  <img class="map" id="SINmap" src="about:blank" title="2015" alt="2015 map" width="367" height="269"></a></span>
-<span id="IST" style="display: none; vertical-align: middle"><a href="ist">İstanbul<br>
-  <img class="map" id="ISTmap" src="about:blank" title="2015" alt="2015 map" width="508" height="279"></a></span>
-<span id="BKK" style="display: none; vertical-align: middle"><a href="bkk">Bangkok<br>
-  <img class="map" id="BKKmap" src="about:blank" title="2015" alt="2015 map" width="345" height="196"></a></span>
-<span id="SHA" style="display: inline-block; vertical-align: middle"><a href="sha">Shanghai<br>
-  <img class="map" id="SHAmap" src="sha/small/2015.svg" title="2015" alt="2015 map" width="798" height="569"></a></span>
-<span id="TLS" style="display: none; vertical-align: middle"><a href="tls">Toulouse<br>
-  <img class="map" id="TLSmap" src="about:blank" title="2015" alt="2015 map" width="91" height="113"></a></span>
-<span id="MDE" style="display: none; vertical-align: middle"><a href="mde">Medellín<br>
-  <img class="map" id="MDEmap" src="about:blank" title="2015" alt="2015 map" width="102" height="226"></a></span>
-<span id="TPE" style="display: none; vertical-align: middle"><a href="tpe">Taipei<br>
-  <img class="map" id="TPEmap" src="about:blank" title="2015" alt="2015 map" width="244" height="261"></a></span>
-<span id="ANK" style="display: none; vertical-align: middle"><a href="ank">Ankara<br>
-  <img class="map" id="ANKmap" src="about:blank" title="2015" alt="2015 map" width="290" height="138"></a></span>
-<span id="KUL" style="display: none; vertical-align: middle"><a href="kul">Kuala Lumpur<br>
-  <img class="map" id="KULmap" src="about:blank" title="2015" alt="2015 map" width="203" height="225"></a></span>
-<span id="UIO" style="display: none; vertical-align: middle"><a href="uio">Quito<br>
-  <img class="map" id="UIOmap" src="about:blank" title="2015" alt="2015 map" width="112" height="249"></a></span>
-<span id="TAE" style="display: none; vertical-align: middle"><a href="tae">Daegu<br>
-  <img class="map" id="TAEmap" src="about:blank" title="2015" alt="2015 map" width="301" height="181"></a></span>
-<span id="SOF" style="display: none; vertical-align: middle"><a href="sof">Sofia<br>
-  <img class="map" id="SOFmap" src="about:blank" title="2015" alt="2015 map" width="149" height="153"></a></span>
-<span id="CAN" style="display: none; vertical-align: middle"><a href="can">Guangzhou<br>
-  <img class="map" id="CANmap" src="about:blank" title="2015" alt="2015 map" width="457" height="675"></a></span>
-<span id="THR" style="display: none; vertical-align: middle"><a href="thr">Tehran<br>
-  <img class="map" id="THRmap" src="about:blank" title="2015" alt="2015 map" width="597" height="428"></a></span>
-<span id="IZM" style="display: none; vertical-align: middle"><a href="izm">İzmir<br>
-  <img class="map" id="IZMmap" src="about:blank" title="2015" alt="2015 map" width="265" height="613"></a></span>
-<span id="BOG" style="display: none; vertical-align: middle"><a href="bog">Bogotá<br>
-  <img class="map" id="BOGmap" src="about:blank" title="2015" alt="2015 map" width="218" height="283"></a></span>
-<span id="DLC" style="display: none; vertical-align: middle"><a href="dlc">Dalian<br>
-  <img class="map" id="DLCmap" src="about:blank" title="2015" alt="2015 map" width="428" height="294"></a></span>
-<span id="DEL" style="display: none; vertical-align: middle"><a href="del">Delhi<br>
-  <img class="map" id="DELmap" src="about:blank" title="2015" alt="2015 map" width="348" height="435"></a></span>
-<span id="JKT" style="display: none; vertical-align: middle"><a href="jkt">Jakarta<br>
-  <img class="map" id="JKTmap" src="about:blank" title="2015" alt="2015 map" width="239" height="536"></a></span>
-<span id="WUH" style="display: none; vertical-align: middle"><a href="wuh">Wuhan<br>
-  <img class="map" id="WUHmap" src="about:blank" title="2015" alt="2015 map" width="312" height="276"></a></span>
-<span id="CKG" style="display: none; vertical-align: middle"><a href="ckg">Chongqing<br>
-  <img class="map" id="CKGmap" src="about:blank" title="2015" alt="2015 map" width="377" height="522"></a></span>
-<span id="NKG" style="display: none; vertical-align: middle"><a href="nkg">Nanjing<br>
-  <img class="map" id="NKGmap" src="about:blank" title="2015" alt="2015 map" width="359" height="682"></a></span>
+<span id="LON" style="display: inline-block; vertical-align: middle"><a href="lon">London</a><br>
+  <a href="lon" class="map-wrap"><img class="map" id="LONmap" src="lon/small/2015.svg" title="2015" alt="2015 map" width="635" height="907"></a></span>
+<span id="NYC" style="display: inline-block; vertical-align: middle"><a href="../subtimeline/">New York</a><br>
+  <a href="../subtimeline/" class="map-wrap"><img class="map" id="NYCmap" src="nyc/small/2015.svg" title="2015" alt="2015 map" width="390" height="390"></a></span>
+<span id="PAR" style="display: inline-block; vertical-align: middle"><a href="par">Paris</a><br>
+  <a href="par" class="map-wrap"><img class="map" id="PARmap" src="par/small/2015.svg" title="2015" alt="2015 map" width="628" height="519"></a></span>
+<span id="MEL" style="display: none; vertical-align: middle"><a href="mel">Melbourne</a><br>
+  <a href="mel" class="map-wrap"><img class="map" id="MELmap" src="about:blank" title="2015" alt="2015 map" width="740" height="624"></a></span>
+<span id="BER" style="display: inline-block; vertical-align: middle"><a href="ber">Berlin</a><br>
+  <a href="ber" class="map-wrap"><img class="map" id="BERmap" src="ber/small/2015.svg" title="2015" alt="2015 map" width="537" height="522"></a></span>
+<span id="SYD" style="display: none; vertical-align: middle"><a href="syd">Sydney</a><br>
+  <a href="syd" class="map-wrap"><img class="map" id="SYDmap" src="about:blank" title="2015" alt="2015 map" width="527" height="414"></a></span>
+<span id="CHI" style="display: inline-block; vertical-align: middle"><a href="../ltimeline">Chicago</a><br>
+  <a href="../ltimeline" class="map-wrap"><img class="map" id="CHImap" src="chi/small/2015.svg" title="2015" alt="2015 map" width="308" height="407"></a></span>
+<span id="BUD" style="display: none; vertical-align: middle"><a href="bud">Budapest</a><br>
+  <a href="bud" class="map-wrap"><img class="map" id="BUDmap" src="about:blank" title="2015" alt="2015 map" width="207" height="341"></a></span>
+<span id="BOS" style="display: inline-block; vertical-align: middle"><a href="../ttimeline">Boston</a><br>
+  <a href="../ttimeline" class="map-wrap"><img class="map" id="BOSmap" src="bos/small/2015.svg" title="2015" alt="2015 map" width="235" height="271"></a></span>
+<span id="VIE" style="display: inline-block; vertical-align: middle"><a href="vie">Wien</a><br>
+  <a href="vie" class="map-wrap"><img class="map" id="VIEmap" src="vie/small/2015.svg" title="2015" alt="2015 map" width="227" height="317"></a></span>
+<span id="OSL" style="display: none; vertical-align: middle"><a href="osl">Oslo</a><br>
+  <a href="osl" class="map-wrap"><img class="map" id="OSLmap" src="about:blank" title="2015" alt="2015 map" width="486" height="297"></a></span>
+<span id="TYO" style="display: inline-block; vertical-align: middle"><a href="tyo">Tokyo</a><br>
+  <a href="tyo" class="map-wrap"><img class="map" id="TYOmap" src="tyo/small/2015.svg" title="2015" alt="2015 map" width="1284" height="1063"></a></span>
+<span id="DUS" style="display: none; vertical-align: middle"><a href="dus">Rhein-Ruhr</a><br>
+  <a href="dus" class="map-wrap"><img class="map" id="DUSmap" src="about:blank" title="2015" alt="2015 map" width="889" height="1074"></a></span>
+<span id="OSA" style="display: inline-block; vertical-align: middle"><a href="osa">Osaka</a><br>
+  <a href="osa" class="map-wrap"><img class="map" id="OSAmap" src="osa/small/2015.svg" title="2015" alt="2015 map" width="1331" height="1001"></a></span>
+<span id="PHL" style="display: none; vertical-align: middle"><a href="phl">Philadelphia</a><br>
+  <a href="phl" class="map-wrap"><img class="map" id="PHLmap" src="about:blank" title="2015" alt="2015 map" width="319" height="338"></a></span>
+<span id="LAX" style="display: none; vertical-align: middle"><a href="lax">Los Angeles</a><br>
+  <a href="lax" class="map-wrap"><img class="map" id="LAXmap" src="about:blank" title="2015" alt="2015 map" width="395" height="467"></a></span>
+<span id="HAM" style="display: none; vertical-align: middle"><a href="ham">Hamburg</a><br>
+  <a href="ham" class="map-wrap"><img class="map" id="HAMmap" src="about:blank" title="2015" alt="2015 map" width="435" height="442"></a></span>
+<span id="CAI" style="display: none; vertical-align: middle"><a href="cai">Qahirah</a><br>
+  <a href="cai" class="map-wrap"><img class="map" id="CAImap" src="about:blank" title="2015" alt="2015 map" width="185" height="370"></a></span>
+<span id="YVR" style="display: none; vertical-align: middle"><a href="yvr">Vancouver</a><br>
+  <a href="yvr" class="map-wrap"><img class="map" id="YVRmap" src="about:blank" title="2015" alt="2015 map" width="254" height="152"></a></span>
+<span id="NGO" style="display: none; vertical-align: middle"><a href="ngo">Nagoya</a><br>
+  <a href="ngo" class="map-wrap"><img class="map" id="NGOmap" src="about:blank" title="2015" alt="2015 map" width="667" height="696"></a></span>
+<span id="BUE" style="display: none; vertical-align: middle"><a href="bue">Buenos Aires</a><br>
+  <a href="bue" class="map-wrap"><img class="map" id="BUEmap" src="about:blank" title="2015" alt="2015 map" width="551" height="537"></a></span>
+<span id="FUK" style="display: none; vertical-align: middle"><a href="fuk">Fukuoka</a><br>
+  <a href="fuk" class="map-wrap"><img class="map" id="FUKmap" src="about:blank" title="2015" alt="2015 map" width="747" height="722"></a></span>
+<span id="SFO" style="display: none; vertical-align: middle"><a href="sfo">San Francisco</a><br>
+  <a href="sfo" class="map-wrap"><img class="map" id="SFOmap" src="about:blank" title="2015" alt="2015 map" width="653" height="892"></a></span>
+<span id="MAD" style="display: inline-block; vertical-align: middle"><a href="mad">Madrid</a><br>
+  <a href="mad" class="map-wrap"><img class="map" id="MADmap" src="mad/small/2015.svg" title="2015" alt="2015 map" width="464" height="384"></a></span>
+<span id="BCN" style="display: none; vertical-align: middle"><a href="bcn">Barcelona</a><br>
+  <a href="bcn" class="map-wrap"><img class="map" id="BCNmap" src="about:blank" title="2015" alt="2015 map" width="609" height="435"></a></span>
+<span id="BOM" style="display: none; vertical-align: middle"><a href="bom">Mumbai</a><br>
+  <a href="bom" class="map-wrap"><img class="map" id="BOMmap" src="about:blank" title="2015" alt="2015 map" width="370" height="616"></a></span>
+<span id="STO" style="display: none; vertical-align: middle"><a href="sto">Stockholm</a><br>
+  <a href="sto" class="map-wrap"><img class="map" id="STOmap" src="about:blank" title="2015" alt="2015 map" width="403" height="577"></a></span>
+<span id="LIS" style="display: none; vertical-align: middle"><a href="lis">Lisboa</a><br>
+  <a href="lis" class="map-wrap"><img class="map" id="LISmap" src="about:blank" title="2015" alt="2015 map" width="334" height="261"></a></span>
+<span id="ATH" style="display: none; vertical-align: middle"><a href="ath">Athína</a><br>
+  <a href="ath" class="map-wrap"><img class="map" id="ATHmap" src="about:blank" title="2015" alt="2015 map" width="186" height="262"></a></span>
+<span id="CPH" style="display: none; vertical-align: middle"><a href="cph">København</a><br>
+  <a href="cph" class="map-wrap"><img class="map" id="CPHmap" src="about:blank" title="2015" alt="2015 map" width="896" height="689"></a></span>
+<span id="MOW" style="display: inline-block; vertical-align: middle"><a href="mow">Moskva</a><br>
+  <a href="mow" class="map-wrap"><img class="map" id="MOWmap" src="mow/small/2015.svg" title="2015" alt="2015 map" width="326" height="413"></a></span>
+<span id="RIO" style="display: none; vertical-align: middle"><a href="rio">Rio de Janeiro</a><br>
+  <a href="rio" class="map-wrap"><img class="map" id="RIOmap" src="about:blank" title="2015" alt="2015 map" width="551" height="392"></a></span>
+<span id="WAS" style="display: inline-block; vertical-align: middle"><a href="was">Washington</a><br>
+  <a href="was" class="map-wrap"><img class="map" id="WASmap" src="was/small/2015.svg" title="2015" alt="2015 map" width="439" height="410"></a></span>
+<span id="BRU" style="display: none; vertical-align: middle"><a href="bru">Bruxelles</a><br>
+  <a href="bru" class="map-wrap"><img class="map" id="BRUmap" src="about:blank" title="2015" alt="2015 map" width="725" height="747"></a></span>
+<span id="YTO" style="display: none; vertical-align: middle"><a href="yto">Toronto</a><br>
+  <a href="yto" class="map-wrap"><img class="map" id="YTOmap" src="about:blank" title="2015" alt="2015 map" width="248" height="177"></a></span>
+<span id="ROM" style="display: none; vertical-align: middle"><a href="rom">Roma</a><br>
+  <a href="rom" class="map-wrap"><img class="map" id="ROMmap" src="about:blank" title="2015" alt="2015 map" width="401" height="510"></a></span>
+<span id="LED" style="display: none; vertical-align: middle"><a href="led">Sankt-Peterburg</a><br>
+  <a href="led" class="map-wrap"><img class="map" id="LEDmap" src="about:blank" title="2015" alt="2015 map" width="160" height="276"></a></span>
+<span id="SAO" style="display: none; vertical-align: middle"><a href="sao">São Paulo</a><br>
+  <a href="sao" class="map-wrap"><img class="map" id="SAOmap" src="about:blank" title="2015" alt="2015 map" width="783" height="537"></a></span>
+<span id="KBP" style="display: none; vertical-align: middle"><a href="kbp">Kyiv</a><br>
+  <a href="kbp" class="map-wrap"><img class="map" id="KBPmap" src="about:blank" title="2015" alt="2015 map" width="261" height="196"></a></span>
+<span id="AMS" style="display: none; vertical-align: middle"><a href="ams">Randstad</a><br>
+  <a href="ams" class="map-wrap"><img class="map" id="AMSmap" src="about:blank" title="2015" alt="2015 map" width="747" height="936"></a></span>
+<span id="WAW" style="display: none; vertical-align: middle"><a href="waw">Warszawa</a><br>
+  <a href="waw" class="map-wrap"><img class="map" id="WAWmap" src="about:blank" title="2015" alt="2015 map" width="109" height="203"></a></span>
+<span id="MIL" style="display: none; vertical-align: middle"><a href="mil">Milano</a><br>
+  <a href="mil" class="map-wrap"><img class="map" id="MILmap" src="about:blank" title="2015" alt="2015 map" width="334" height="290"></a></span>
+<span id="STR" style="display: none; vertical-align: middle"><a href="str">Stuttgart</a><br>
+  <a href="str" class="map-wrap"><img class="map" id="STRmap" src="about:blank" title="2015" alt="2015 map" width="287" height="243"></a></span>
+<span id="YMQ" style="display: none; vertical-align: middle"><a href="ymq">Montréal</a><br>
+  <a href="ymq" class="map-wrap"><img class="map" id="YMQmap" src="about:blank" title="2015" alt="2015 map" width="172" height="172"></a></span>
+<span id="MAA" style="display: none; vertical-align: middle"><a href="maa">Chennai</a><br>
+  <a href="maa" class="map-wrap"><img class="map" id="MAAmap" src="about:blank" title="2015" alt="2015 map" width="210" height="217"></a></span>
+<span id="BAK" style="display: none; vertical-align: middle"><a href="bak">Bakı</a><br>
+  <a href="bak" class="map-wrap"><img class="map" id="BAKmap" src="about:blank" title="2015" alt="2015 map" width="149" height="98"></a></span>
+<span id="SDJ" style="display: none; vertical-align: middle"><a href="sdj">Sendai</a><br>
+  <a href="sdj" class="map-wrap"><img class="map" id="SDJmap" src="about:blank" title="2015" alt="2015 map" width="189" height="185"></a></span>
+<span id="MUC" style="display: inline-block; vertical-align: middle"><a href="muc">München</a><br>
+  <a href="muc" class="map-wrap"><img class="map" id="MUCmap" src="muc/small/2015.svg" title="2015" alt="2015 map" width="548" height="410"></a></span>
+<span id="FRA" style="display: none; vertical-align: middle"><a href="fra">Frankfurt</a><br>
+  <a href="fra" class="map-wrap"><img class="map" id="FRAmap" src="about:blank" title="2015" alt="2015 map" width="335" height="301"></a></span>
+<span id="MEX" style="display: inline-block; vertical-align: middle"><a href="mex">México</a><br>
+  <a href="mex" class="map-wrap"><img class="map" id="MEXmap" src="mex/small/2015.svg" title="2015" alt="2015 map" width="290" height="315"></a></span>
+<span id="SPK" style="display: none; vertical-align: middle"><a href="spk">Sapporo</a><br>
+  <a href="spk" class="map-wrap"><img class="map" id="SPKmap" src="about:blank" title="2015" alt="2015 map" width="203" height="210"></a></span>
+<span id="NUE" style="display: none; vertical-align: middle"><a href="nue">Nürnberg</a><br>
+  <a href="nue" class="map-wrap"><img class="map" id="NUEmap" src="about:blank" title="2015" alt="2015 map" width="258" height="218"></a></span>
+<span id="HEL" style="display: none; vertical-align: middle"><a href="hel">Helsinki</a><br>
+  <a href="hel" class="map-wrap"><img class="map" id="HELmap" src="about:blank" title="2015" alt="2015 map" width="316" height="291"></a></span>
+<span id="BJS" style="display: inline-block; vertical-align: middle"><a href="bjs">Beijing</a><br>
+  <a href="bjs" class="map-wrap"><img class="map" id="BJSmap" src="bjs/small/2015.svg" title="2015" alt="2015 map" width="551" height="660"></a></span>
+<span id="PRG" style="display: none; vertical-align: middle"><a href="prg">Praha</a><br>
+  <a href="prg" class="map-wrap"><img class="map" id="PRGmap" src="about:blank" title="2015" alt="2015 map" width="220" height="126"></a></span>
+<span id="SEL" style="display: none; vertical-align: middle"><a href="sel">Seoul</a><br>
+  <a href="sel" class="map-wrap"><img class="map" id="SELmap" src="about:blank" title="2015" alt="2015 map" width="551" height="740"></a></span>
+<span id="HRK" style="display: none; vertical-align: middle"><a href="hrk">Kharkiv</a><br>
+  <a href="hrk" class="map-wrap"><img class="map" id="HRKmap" src="about:blank" title="2015" alt="2015 map" width="181" height="138"></a></span>
+<span id="SCL" style="display: none; vertical-align: middle"><a href="scl">Santiago</a><br>
+  <a href="scl" class="map-wrap"><img class="map" id="SCLmap" src="about:blank" title="2015" alt="2015 map" width="204" height="265"></a></span>
+<span id="HAJ" style="display: none; vertical-align: middle"><a href="haj">Hannover</a><br>
+  <a href="haj" class="map-wrap"><img class="map" id="HAJmap" src="about:blank" title="2015" alt="2015 map" width="192" height="239"></a></span>
+<span id="ZRH" style="display: none; vertical-align: middle"><a href="zrh">Zürich</a><br>
+  <a href="zrh" class="map-wrap"><img class="map" id="ZRHmap" src="about:blank" title="2015" alt="2015 map" width="414" height="385"></a></span>
+<span id="LYN" style="display: none; vertical-align: middle"><a href="lyn">Lyon</a><br>
+  <a href="lyn" class="map-wrap"><img class="map" id="LYNmap" src="about:blank" title="2015" alt="2015 map" width="196" height="134"></a></span>
+<span id="HKG" style="display: inline-block; vertical-align: middle"><a href="hkg">Hong Kong</a><br>
+  <a href="hkg" class="map-wrap"><img class="map" id="HKGmap" src="hkg/small/2015.svg" title="2015" alt="2015 map" width="479" height="530"></a></span>
+<span id="BUH" style="display: none; vertical-align: middle"><a href="buh">Bucureşti</a><br>
+  <a href="buh" class="map-wrap"><img class="map" id="BUHmap" src="about:blank" title="2015" alt="2015 map" width="189" height="160"></a></span>
+<span id="BNE" style="display: none; vertical-align: middle"><a href="bne">Brisbane</a><br>
+  <a href="bne" class="map-wrap"><img class="map" id="BNEmap" src="about:blank" title="2015" alt="2015 map" width="261" height="399"></a></span>
+<span id="CCS" style="display: none; vertical-align: middle"><a href="ccs">Caracas</a><br>
+  <a href="ccs" class="map-wrap"><img class="map" id="CCSmap" src="about:blank" title="2015" alt="2015 map" width="316" height="222"></a></span>
+<span id="LIL" style="display: none; vertical-align: middle"><a href="lil">Lille</a><br>
+  <a href="lil" class="map-wrap"><img class="map" id="LILmap" src="about:blank" title="2015" alt="2015 map" width="163" height="170"></a></span>
+<span id="MSQ" style="display: none; vertical-align: middle"><a href="msq">Minsk</a><br>
+  <a href="msq" class="map-wrap"><img class="map" id="MSQmap" src="about:blank" title="2015" alt="2015 map" width="185" height="127"></a></span>
+<span id="CCU" style="display: none; vertical-align: middle"><a href="ccu">Kolkata</a><br>
+  <a href="ccu" class="map-wrap"><img class="map" id="CCUmap" src="about:blank" title="2015" alt="2015 map" width="83" height="217"></a></span>
+<span id="MNL" style="display: none; vertical-align: middle"><a href="mnl">Manila</a><br>
+  <a href="mnl" class="map-wrap"><img class="map" id="MNLmap" src="about:blank" title="2015" alt="2015 map" width="138" height="167"></a></span>
+<span id="TSN" style="display: none; vertical-align: middle"><a href="tsn">Tianjin</a><br>
+  <a href="tsn" class="map-wrap"><img class="map" id="TSNmap" src="about:blank" title="2015" alt="2015 map" width="598" height="275"></a></span>
+<span id="REC" style="display: none; vertical-align: middle"><a href="rec">Recife</a><br>
+  <a href="rec" class="map-wrap"><img class="map" id="RECmap" src="about:blank" title="2015" alt="2015 map" width="167" height="178"></a></span>
+<span id="PUS" style="display: none; vertical-align: middle"><a href="pus">Busan</a><br>
+  <a href="pus" class="map-wrap"><img class="map" id="PUSmap" src="about:blank" title="2015" alt="2015 map" width="305" height="298"></a></span>
+<span id="BHZ" style="display: none; vertical-align: middle"><a href="bhz">Belo Horizonte</a><br>
+  <a href="bhz" class="map-wrap"><img class="map" id="BHZmap" src="about:blank" title="2015" alt="2015 map" width="145" height="221"></a></span>
+<span id="SIN" style="display: none; vertical-align: middle"><a href="sin">Singapore</a><br>
+  <a href="sin" class="map-wrap"><img class="map" id="SINmap" src="about:blank" title="2015" alt="2015 map" width="367" height="269"></a></span>
+<span id="IST" style="display: none; vertical-align: middle"><a href="ist">İstanbul</a><br>
+  <a href="ist" class="map-wrap"><img class="map" id="ISTmap" src="about:blank" title="2015" alt="2015 map" width="508" height="279"></a></span>
+<span id="BKK" style="display: none; vertical-align: middle"><a href="bkk">Bangkok</a><br>
+  <a href="bkk" class="map-wrap"><img class="map" id="BKKmap" src="about:blank" title="2015" alt="2015 map" width="345" height="196"></a></span>
+<span id="SHA" style="display: inline-block; vertical-align: middle"><a href="sha">Shanghai</a><br>
+  <a href="sha" class="map-wrap"><img class="map" id="SHAmap" src="sha/small/2015.svg" title="2015" alt="2015 map" width="798" height="569"></a></span>
+<span id="TLS" style="display: none; vertical-align: middle"><a href="tls">Toulouse</a><br>
+  <a href="tls" class="map-wrap"><img class="map" id="TLSmap" src="about:blank" title="2015" alt="2015 map" width="91" height="113"></a></span>
+<span id="MDE" style="display: none; vertical-align: middle"><a href="mde">Medellín</a><br>
+  <a href="mde" class="map-wrap"><img class="map" id="MDEmap" src="about:blank" title="2015" alt="2015 map" width="102" height="226"></a></span>
+<span id="TPE" style="display: none; vertical-align: middle"><a href="tpe">Taipei</a><br>
+  <a href="tpe" class="map-wrap"><img class="map" id="TPEmap" src="about:blank" title="2015" alt="2015 map" width="244" height="261"></a></span>
+<span id="ANK" style="display: none; vertical-align: middle"><a href="ank">Ankara</a><br>
+  <a href="ank" class="map-wrap"><img class="map" id="ANKmap" src="about:blank" title="2015" alt="2015 map" width="290" height="138"></a></span>
+<span id="KUL" style="display: none; vertical-align: middle"><a href="kul">Kuala Lumpur</a><br>
+  <a href="kul" class="map-wrap"><img class="map" id="KULmap" src="about:blank" title="2015" alt="2015 map" width="203" height="225"></a></span>
+<span id="UIO" style="display: none; vertical-align: middle"><a href="uio">Quito</a><br>
+  <a href="uio" class="map-wrap"><img class="map" id="UIOmap" src="about:blank" title="2015" alt="2015 map" width="112" height="249"></a></span>
+<span id="TAE" style="display: none; vertical-align: middle"><a href="tae">Daegu</a><br>
+  <a href="tae" class="map-wrap"><img class="map" id="TAEmap" src="about:blank" title="2015" alt="2015 map" width="301" height="181"></a></span>
+<span id="SOF" style="display: none; vertical-align: middle"><a href="sof">Sofia</a><br>
+  <a href="sof" class="map-wrap"><img class="map" id="SOFmap" src="about:blank" title="2015" alt="2015 map" width="149" height="153"></a></span>
+<span id="CAN" style="display: none; vertical-align: middle"><a href="can">Guangzhou</a><br>
+  <a href="can" class="map-wrap"><img class="map" id="CANmap" src="about:blank" title="2015" alt="2015 map" width="457" height="675"></a></span>
+<span id="THR" style="display: none; vertical-align: middle"><a href="thr">Tehran</a><br>
+  <a href="thr" class="map-wrap"><img class="map" id="THRmap" src="about:blank" title="2015" alt="2015 map" width="597" height="428"></a></span>
+<span id="IZM" style="display: none; vertical-align: middle"><a href="izm">İzmir</a><br>
+  <a href="izm" class="map-wrap"><img class="map" id="IZMmap" src="about:blank" title="2015" alt="2015 map" width="265" height="613"></a></span>
+<span id="BOG" style="display: none; vertical-align: middle"><a href="bog">Bogotá</a><br>
+  <a href="bog" class="map-wrap"><img class="map" id="BOGmap" src="about:blank" title="2015" alt="2015 map" width="218" height="283"></a></span>
+<span id="DLC" style="display: none; vertical-align: middle"><a href="dlc">Dalian</a><br>
+  <a href="dlc" class="map-wrap"><img class="map" id="DLCmap" src="about:blank" title="2015" alt="2015 map" width="428" height="294"></a></span>
+<span id="DEL" style="display: none; vertical-align: middle"><a href="del">Delhi</a><br>
+  <a href="del" class="map-wrap"><img class="map" id="DELmap" src="about:blank" title="2015" alt="2015 map" width="348" height="435"></a></span>
+<span id="JKT" style="display: none; vertical-align: middle"><a href="jkt">Jakarta</a><br>
+  <a href="jkt" class="map-wrap"><img class="map" id="JKTmap" src="about:blank" title="2015" alt="2015 map" width="239" height="536"></a></span>
+<span id="WUH" style="display: none; vertical-align: middle"><a href="wuh">Wuhan</a><br>
+  <a href="wuh" class="map-wrap"><img class="map" id="WUHmap" src="about:blank" title="2015" alt="2015 map" width="312" height="276"></a></span>
+<span id="CKG" style="display: none; vertical-align: middle"><a href="ckg">Chongqing</a><br>
+  <a href="ckg" class="map-wrap"><img class="map" id="CKGmap" src="about:blank" title="2015" alt="2015 map" width="377" height="522"></a></span>
+<span id="NKG" style="display: none; vertical-align: middle"><a href="nkg">Nanjing</a><br>
+  <a href="nkg" class="map-wrap"><img class="map" id="NKGmap" src="about:blank" title="2015" alt="2015 map" width="359" height="682"></a></span>
 </div>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
@@ -517,13 +564,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <img src="lon/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="NYCpre">
-<img src="nyc/small/1840.svg" width="1" height="1" alt="">
-<img src="nyc/small/1845.svg" width="1" height="1" alt="">
-<img src="nyc/small/1850.svg" width="1" height="1" alt="">
-<img src="nyc/small/1855.svg" width="1" height="1" alt="">
-<img src="nyc/small/1860.svg" width="1" height="1" alt="">
-<img src="nyc/small/1865.svg" width="1" height="1" alt="">
-<img src="nyc/small/1870.svg" width="1" height="1" alt="">
 <img src="nyc/small/1875.svg" width="1" height="1" alt="">
 <img src="nyc/small/1880.svg" width="1" height="1" alt="">
 <img src="nyc/small/1885.svg" width="1" height="1" alt="">
@@ -553,15 +593,9 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <img src="nyc/small/2005.svg" width="1" height="1" alt="">
 <img src="nyc/small/2010.svg" width="1" height="1" alt="">
 <img src="nyc/small/2015.svg" width="1" height="1" alt="">
+<img src="nyc/small/2020.svg" width="1" height="1" alt="">
 </div>
 <div id="PARpre">
-<img src="par/small/1840.svg" width="1" height="1" alt="">
-<img src="par/small/1845.svg" width="1" height="1" alt="">
-<img src="par/small/1850.svg" width="1" height="1" alt="">
-<img src="par/small/1855.svg" width="1" height="1" alt="">
-<img src="par/small/1860.svg" width="1" height="1" alt="">
-<img src="par/small/1865.svg" width="1" height="1" alt="">
-<img src="par/small/1870.svg" width="1" height="1" alt="">
 <img src="par/small/1875.svg" width="1" height="1" alt="">
 <img src="par/small/1880.svg" width="1" height="1" alt="">
 <img src="par/small/1885.svg" width="1" height="1" alt="">
@@ -595,15 +629,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="MELpre">
 </div>
 <div id="BERpre">
-<img src="ber/small/1840.svg" width="1" height="1" alt="">
-<img src="ber/small/1845.svg" width="1" height="1" alt="">
-<img src="ber/small/1850.svg" width="1" height="1" alt="">
-<img src="ber/small/1855.svg" width="1" height="1" alt="">
-<img src="ber/small/1860.svg" width="1" height="1" alt="">
-<img src="ber/small/1865.svg" width="1" height="1" alt="">
-<img src="ber/small/1870.svg" width="1" height="1" alt="">
-<img src="ber/small/1875.svg" width="1" height="1" alt="">
-<img src="ber/small/1880.svg" width="1" height="1" alt="">
 <img src="ber/small/1885.svg" width="1" height="1" alt="">
 <img src="ber/small/1890.svg" width="1" height="1" alt="">
 <img src="ber/small/1895.svg" width="1" height="1" alt="">
@@ -635,17 +660,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="SYDpre">
 </div>
 <div id="CHIpre">
-<img src="chi/small/1840.svg" width="1" height="1" alt="">
-<img src="chi/small/1845.svg" width="1" height="1" alt="">
-<img src="chi/small/1850.svg" width="1" height="1" alt="">
-<img src="chi/small/1855.svg" width="1" height="1" alt="">
-<img src="chi/small/1860.svg" width="1" height="1" alt="">
-<img src="chi/small/1865.svg" width="1" height="1" alt="">
-<img src="chi/small/1870.svg" width="1" height="1" alt="">
-<img src="chi/small/1875.svg" width="1" height="1" alt="">
-<img src="chi/small/1880.svg" width="1" height="1" alt="">
-<img src="chi/small/1885.svg" width="1" height="1" alt="">
-<img src="chi/small/1890.svg" width="1" height="1" alt="">
 <img src="chi/small/1895.svg" width="1" height="1" alt="">
 <img src="chi/small/1900.svg" width="1" height="1" alt="">
 <img src="chi/small/1905.svg" width="1" height="1" alt="">
@@ -671,22 +685,11 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <img src="chi/small/2005.svg" width="1" height="1" alt="">
 <img src="chi/small/2010.svg" width="1" height="1" alt="">
 <img src="chi/small/2015.svg" width="1" height="1" alt="">
+<img src="chi/small/2020.svg" width="1" height="1" alt="">
 </div>
 <div id="BUDpre">
 </div>
 <div id="BOSpre">
-<img src="bos/small/1840.svg" width="1" height="1" alt="">
-<img src="bos/small/1845.svg" width="1" height="1" alt="">
-<img src="bos/small/1850.svg" width="1" height="1" alt="">
-<img src="bos/small/1855.svg" width="1" height="1" alt="">
-<img src="bos/small/1860.svg" width="1" height="1" alt="">
-<img src="bos/small/1865.svg" width="1" height="1" alt="">
-<img src="bos/small/1870.svg" width="1" height="1" alt="">
-<img src="bos/small/1875.svg" width="1" height="1" alt="">
-<img src="bos/small/1880.svg" width="1" height="1" alt="">
-<img src="bos/small/1885.svg" width="1" height="1" alt="">
-<img src="bos/small/1890.svg" width="1" height="1" alt="">
-<img src="bos/small/1895.svg" width="1" height="1" alt="">
 <img src="bos/small/1900.svg" width="1" height="1" alt="">
 <img src="bos/small/1905.svg" width="1" height="1" alt="">
 <img src="bos/small/1910.svg" width="1" height="1" alt="">
@@ -713,18 +716,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <img src="bos/small/2015.svg" width="1" height="1" alt="">
 </div>
 <div id="VIEpre">
-<img src="vie/small/1840.svg" width="1" height="1" alt="">
-<img src="vie/small/1845.svg" width="1" height="1" alt="">
-<img src="vie/small/1850.svg" width="1" height="1" alt="">
-<img src="vie/small/1855.svg" width="1" height="1" alt="">
-<img src="vie/small/1860.svg" width="1" height="1" alt="">
-<img src="vie/small/1865.svg" width="1" height="1" alt="">
-<img src="vie/small/1870.svg" width="1" height="1" alt="">
-<img src="vie/small/1875.svg" width="1" height="1" alt="">
-<img src="vie/small/1880.svg" width="1" height="1" alt="">
-<img src="vie/small/1885.svg" width="1" height="1" alt="">
-<img src="vie/small/1890.svg" width="1" height="1" alt="">
-<img src="vie/small/1895.svg" width="1" height="1" alt="">
 <img src="vie/small/1900.svg" width="1" height="1" alt="">
 <img src="vie/small/1905.svg" width="1" height="1" alt="">
 <img src="vie/small/1910.svg" width="1" height="1" alt="">
@@ -753,19 +744,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="OSLpre">
 </div>
 <div id="TYOpre">
-<img src="tyo/small/1840.svg" width="1" height="1" alt="">
-<img src="tyo/small/1845.svg" width="1" height="1" alt="">
-<img src="tyo/small/1850.svg" width="1" height="1" alt="">
-<img src="tyo/small/1855.svg" width="1" height="1" alt="">
-<img src="tyo/small/1860.svg" width="1" height="1" alt="">
-<img src="tyo/small/1865.svg" width="1" height="1" alt="">
-<img src="tyo/small/1870.svg" width="1" height="1" alt="">
-<img src="tyo/small/1875.svg" width="1" height="1" alt="">
-<img src="tyo/small/1880.svg" width="1" height="1" alt="">
-<img src="tyo/small/1885.svg" width="1" height="1" alt="">
-<img src="tyo/small/1890.svg" width="1" height="1" alt="">
-<img src="tyo/small/1895.svg" width="1" height="1" alt="">
-<img src="tyo/small/1900.svg" width="1" height="1" alt="">
 <img src="tyo/small/1905.svg" width="1" height="1" alt="">
 <img src="tyo/small/1910.svg" width="1" height="1" alt="">
 <img src="tyo/small/1915.svg" width="1" height="1" alt="">
@@ -793,19 +771,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="DUSpre">
 </div>
 <div id="OSApre">
-<img src="osa/small/1840.svg" width="1" height="1" alt="">
-<img src="osa/small/1845.svg" width="1" height="1" alt="">
-<img src="osa/small/1850.svg" width="1" height="1" alt="">
-<img src="osa/small/1855.svg" width="1" height="1" alt="">
-<img src="osa/small/1860.svg" width="1" height="1" alt="">
-<img src="osa/small/1865.svg" width="1" height="1" alt="">
-<img src="osa/small/1870.svg" width="1" height="1" alt="">
-<img src="osa/small/1875.svg" width="1" height="1" alt="">
-<img src="osa/small/1880.svg" width="1" height="1" alt="">
-<img src="osa/small/1885.svg" width="1" height="1" alt="">
-<img src="osa/small/1890.svg" width="1" height="1" alt="">
-<img src="osa/small/1895.svg" width="1" height="1" alt="">
-<img src="osa/small/1900.svg" width="1" height="1" alt="">
 <img src="osa/small/1905.svg" width="1" height="1" alt="">
 <img src="osa/small/1910.svg" width="1" height="1" alt="">
 <img src="osa/small/1915.svg" width="1" height="1" alt="">
@@ -849,22 +814,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="SFOpre">
 </div>
 <div id="MADpre">
-<img src="mad/small/1840.svg" width="1" height="1" alt="">
-<img src="mad/small/1845.svg" width="1" height="1" alt="">
-<img src="mad/small/1850.svg" width="1" height="1" alt="">
-<img src="mad/small/1855.svg" width="1" height="1" alt="">
-<img src="mad/small/1860.svg" width="1" height="1" alt="">
-<img src="mad/small/1865.svg" width="1" height="1" alt="">
-<img src="mad/small/1870.svg" width="1" height="1" alt="">
-<img src="mad/small/1875.svg" width="1" height="1" alt="">
-<img src="mad/small/1880.svg" width="1" height="1" alt="">
-<img src="mad/small/1885.svg" width="1" height="1" alt="">
-<img src="mad/small/1890.svg" width="1" height="1" alt="">
-<img src="mad/small/1895.svg" width="1" height="1" alt="">
-<img src="mad/small/1900.svg" width="1" height="1" alt="">
-<img src="mad/small/1905.svg" width="1" height="1" alt="">
-<img src="mad/small/1910.svg" width="1" height="1" alt="">
-<img src="mad/small/1915.svg" width="1" height="1" alt="">
 <img src="mad/small/1920.svg" width="1" height="1" alt="">
 <img src="mad/small/1925.svg" width="1" height="1" alt="">
 <img src="mad/small/1930.svg" width="1" height="1" alt="">
@@ -899,25 +848,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="CPHpre">
 </div>
 <div id="MOWpre">
-<img src="mow/small/1840.svg" width="1" height="1" alt="">
-<img src="mow/small/1845.svg" width="1" height="1" alt="">
-<img src="mow/small/1850.svg" width="1" height="1" alt="">
-<img src="mow/small/1855.svg" width="1" height="1" alt="">
-<img src="mow/small/1860.svg" width="1" height="1" alt="">
-<img src="mow/small/1865.svg" width="1" height="1" alt="">
-<img src="mow/small/1870.svg" width="1" height="1" alt="">
-<img src="mow/small/1875.svg" width="1" height="1" alt="">
-<img src="mow/small/1880.svg" width="1" height="1" alt="">
-<img src="mow/small/1885.svg" width="1" height="1" alt="">
-<img src="mow/small/1890.svg" width="1" height="1" alt="">
-<img src="mow/small/1895.svg" width="1" height="1" alt="">
-<img src="mow/small/1900.svg" width="1" height="1" alt="">
-<img src="mow/small/1905.svg" width="1" height="1" alt="">
-<img src="mow/small/1910.svg" width="1" height="1" alt="">
-<img src="mow/small/1915.svg" width="1" height="1" alt="">
-<img src="mow/small/1920.svg" width="1" height="1" alt="">
-<img src="mow/small/1925.svg" width="1" height="1" alt="">
-<img src="mow/small/1930.svg" width="1" height="1" alt="">
 <img src="mow/small/1935.svg" width="1" height="1" alt="">
 <img src="mow/small/1940.svg" width="1" height="1" alt="">
 <img src="mow/small/1945.svg" width="1" height="1" alt="">
@@ -939,28 +869,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="RIOpre">
 </div>
 <div id="WASpre">
-<img src="was/small/1840.svg" width="1" height="1" alt="">
-<img src="was/small/1845.svg" width="1" height="1" alt="">
-<img src="was/small/1850.svg" width="1" height="1" alt="">
-<img src="was/small/1855.svg" width="1" height="1" alt="">
-<img src="was/small/1860.svg" width="1" height="1" alt="">
-<img src="was/small/1865.svg" width="1" height="1" alt="">
-<img src="was/small/1870.svg" width="1" height="1" alt="">
-<img src="was/small/1875.svg" width="1" height="1" alt="">
-<img src="was/small/1880.svg" width="1" height="1" alt="">
-<img src="was/small/1885.svg" width="1" height="1" alt="">
-<img src="was/small/1890.svg" width="1" height="1" alt="">
-<img src="was/small/1895.svg" width="1" height="1" alt="">
-<img src="was/small/1900.svg" width="1" height="1" alt="">
-<img src="was/small/1905.svg" width="1" height="1" alt="">
-<img src="was/small/1910.svg" width="1" height="1" alt="">
-<img src="was/small/1915.svg" width="1" height="1" alt="">
-<img src="was/small/1920.svg" width="1" height="1" alt="">
-<img src="was/small/1925.svg" width="1" height="1" alt="">
-<img src="was/small/1930.svg" width="1" height="1" alt="">
-<img src="was/small/1935.svg" width="1" height="1" alt="">
-<img src="was/small/1940.svg" width="1" height="1" alt="">
-<img src="was/small/1945.svg" width="1" height="1" alt="">
 <img src="was/small/1950.svg" width="1" height="1" alt="">
 <img src="was/small/1955.svg" width="1" height="1" alt="">
 <img src="was/small/1960.svg" width="1" height="1" alt="">
@@ -1005,32 +913,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="SDJpre">
 </div>
 <div id="MUCpre">
-<img src="muc/small/1840.svg" width="1" height="1" alt="">
-<img src="muc/small/1845.svg" width="1" height="1" alt="">
-<img src="muc/small/1850.svg" width="1" height="1" alt="">
-<img src="muc/small/1855.svg" width="1" height="1" alt="">
-<img src="muc/small/1860.svg" width="1" height="1" alt="">
-<img src="muc/small/1865.svg" width="1" height="1" alt="">
-<img src="muc/small/1870.svg" width="1" height="1" alt="">
-<img src="muc/small/1875.svg" width="1" height="1" alt="">
-<img src="muc/small/1880.svg" width="1" height="1" alt="">
-<img src="muc/small/1885.svg" width="1" height="1" alt="">
-<img src="muc/small/1890.svg" width="1" height="1" alt="">
-<img src="muc/small/1895.svg" width="1" height="1" alt="">
-<img src="muc/small/1900.svg" width="1" height="1" alt="">
-<img src="muc/small/1905.svg" width="1" height="1" alt="">
-<img src="muc/small/1910.svg" width="1" height="1" alt="">
-<img src="muc/small/1915.svg" width="1" height="1" alt="">
-<img src="muc/small/1920.svg" width="1" height="1" alt="">
-<img src="muc/small/1925.svg" width="1" height="1" alt="">
-<img src="muc/small/1930.svg" width="1" height="1" alt="">
-<img src="muc/small/1935.svg" width="1" height="1" alt="">
-<img src="muc/small/1940.svg" width="1" height="1" alt="">
-<img src="muc/small/1945.svg" width="1" height="1" alt="">
-<img src="muc/small/1950.svg" width="1" height="1" alt="">
-<img src="muc/small/1955.svg" width="1" height="1" alt="">
-<img src="muc/small/1960.svg" width="1" height="1" alt="">
-<img src="muc/small/1965.svg" width="1" height="1" alt="">
 <img src="muc/small/1970.svg" width="1" height="1" alt="">
 <img src="muc/small/1975.svg" width="1" height="1" alt="">
 <img src="muc/small/1980.svg" width="1" height="1" alt="">
@@ -1045,32 +927,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="FRApre">
 </div>
 <div id="MEXpre">
-<img src="mex/small/1840.svg" width="1" height="1" alt="">
-<img src="mex/small/1845.svg" width="1" height="1" alt="">
-<img src="mex/small/1850.svg" width="1" height="1" alt="">
-<img src="mex/small/1855.svg" width="1" height="1" alt="">
-<img src="mex/small/1860.svg" width="1" height="1" alt="">
-<img src="mex/small/1865.svg" width="1" height="1" alt="">
-<img src="mex/small/1870.svg" width="1" height="1" alt="">
-<img src="mex/small/1875.svg" width="1" height="1" alt="">
-<img src="mex/small/1880.svg" width="1" height="1" alt="">
-<img src="mex/small/1885.svg" width="1" height="1" alt="">
-<img src="mex/small/1890.svg" width="1" height="1" alt="">
-<img src="mex/small/1895.svg" width="1" height="1" alt="">
-<img src="mex/small/1900.svg" width="1" height="1" alt="">
-<img src="mex/small/1905.svg" width="1" height="1" alt="">
-<img src="mex/small/1910.svg" width="1" height="1" alt="">
-<img src="mex/small/1915.svg" width="1" height="1" alt="">
-<img src="mex/small/1920.svg" width="1" height="1" alt="">
-<img src="mex/small/1925.svg" width="1" height="1" alt="">
-<img src="mex/small/1930.svg" width="1" height="1" alt="">
-<img src="mex/small/1935.svg" width="1" height="1" alt="">
-<img src="mex/small/1940.svg" width="1" height="1" alt="">
-<img src="mex/small/1945.svg" width="1" height="1" alt="">
-<img src="mex/small/1950.svg" width="1" height="1" alt="">
-<img src="mex/small/1955.svg" width="1" height="1" alt="">
-<img src="mex/small/1960.svg" width="1" height="1" alt="">
-<img src="mex/small/1965.svg" width="1" height="1" alt="">
 <img src="mex/small/1970.svg" width="1" height="1" alt="">
 <img src="mex/small/1975.svg" width="1" height="1" alt="">
 <img src="mex/small/1980.svg" width="1" height="1" alt="">
@@ -1081,6 +937,7 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <img src="mex/small/2005.svg" width="1" height="1" alt="">
 <img src="mex/small/2010.svg" width="1" height="1" alt="">
 <img src="mex/small/2015.svg" width="1" height="1" alt="">
+<img src="mex/small/2020.svg" width="1" height="1" alt="">
 </div>
 <div id="SPKpre">
 </div>
@@ -1089,33 +946,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="HELpre">
 </div>
 <div id="BJSpre">
-<img src="bjs/small/1840.svg" width="1" height="1" alt="">
-<img src="bjs/small/1845.svg" width="1" height="1" alt="">
-<img src="bjs/small/1850.svg" width="1" height="1" alt="">
-<img src="bjs/small/1855.svg" width="1" height="1" alt="">
-<img src="bjs/small/1860.svg" width="1" height="1" alt="">
-<img src="bjs/small/1865.svg" width="1" height="1" alt="">
-<img src="bjs/small/1870.svg" width="1" height="1" alt="">
-<img src="bjs/small/1875.svg" width="1" height="1" alt="">
-<img src="bjs/small/1880.svg" width="1" height="1" alt="">
-<img src="bjs/small/1885.svg" width="1" height="1" alt="">
-<img src="bjs/small/1890.svg" width="1" height="1" alt="">
-<img src="bjs/small/1895.svg" width="1" height="1" alt="">
-<img src="bjs/small/1900.svg" width="1" height="1" alt="">
-<img src="bjs/small/1905.svg" width="1" height="1" alt="">
-<img src="bjs/small/1910.svg" width="1" height="1" alt="">
-<img src="bjs/small/1915.svg" width="1" height="1" alt="">
-<img src="bjs/small/1920.svg" width="1" height="1" alt="">
-<img src="bjs/small/1925.svg" width="1" height="1" alt="">
-<img src="bjs/small/1930.svg" width="1" height="1" alt="">
-<img src="bjs/small/1935.svg" width="1" height="1" alt="">
-<img src="bjs/small/1940.svg" width="1" height="1" alt="">
-<img src="bjs/small/1945.svg" width="1" height="1" alt="">
-<img src="bjs/small/1950.svg" width="1" height="1" alt="">
-<img src="bjs/small/1955.svg" width="1" height="1" alt="">
-<img src="bjs/small/1960.svg" width="1" height="1" alt="">
-<img src="bjs/small/1965.svg" width="1" height="1" alt="">
-<img src="bjs/small/1970.svg" width="1" height="1" alt="">
 <img src="bjs/small/1975.svg" width="1" height="1" alt="">
 <img src="bjs/small/1980.svg" width="1" height="1" alt="">
 <img src="bjs/small/1985.svg" width="1" height="1" alt="">
@@ -1141,33 +971,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="LYNpre">
 </div>
 <div id="HKGpre">
-<img src="hkg/small/1840.svg" width="1" height="1" alt="">
-<img src="hkg/small/1845.svg" width="1" height="1" alt="">
-<img src="hkg/small/1850.svg" width="1" height="1" alt="">
-<img src="hkg/small/1855.svg" width="1" height="1" alt="">
-<img src="hkg/small/1860.svg" width="1" height="1" alt="">
-<img src="hkg/small/1865.svg" width="1" height="1" alt="">
-<img src="hkg/small/1870.svg" width="1" height="1" alt="">
-<img src="hkg/small/1875.svg" width="1" height="1" alt="">
-<img src="hkg/small/1880.svg" width="1" height="1" alt="">
-<img src="hkg/small/1885.svg" width="1" height="1" alt="">
-<img src="hkg/small/1890.svg" width="1" height="1" alt="">
-<img src="hkg/small/1895.svg" width="1" height="1" alt="">
-<img src="hkg/small/1900.svg" width="1" height="1" alt="">
-<img src="hkg/small/1905.svg" width="1" height="1" alt="">
-<img src="hkg/small/1910.svg" width="1" height="1" alt="">
-<img src="hkg/small/1915.svg" width="1" height="1" alt="">
-<img src="hkg/small/1920.svg" width="1" height="1" alt="">
-<img src="hkg/small/1925.svg" width="1" height="1" alt="">
-<img src="hkg/small/1930.svg" width="1" height="1" alt="">
-<img src="hkg/small/1935.svg" width="1" height="1" alt="">
-<img src="hkg/small/1940.svg" width="1" height="1" alt="">
-<img src="hkg/small/1945.svg" width="1" height="1" alt="">
-<img src="hkg/small/1950.svg" width="1" height="1" alt="">
-<img src="hkg/small/1955.svg" width="1" height="1" alt="">
-<img src="hkg/small/1960.svg" width="1" height="1" alt="">
-<img src="hkg/small/1965.svg" width="1" height="1" alt="">
-<img src="hkg/small/1970.svg" width="1" height="1" alt="">
 <img src="hkg/small/1975.svg" width="1" height="1" alt="">
 <img src="hkg/small/1980.svg" width="1" height="1" alt="">
 <img src="hkg/small/1985.svg" width="1" height="1" alt="">
@@ -1207,37 +1010,6 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
 <div id="BKKpre">
 </div>
 <div id="SHApre">
-<img src="sha/small/1840.svg" width="1" height="1" alt="">
-<img src="sha/small/1845.svg" width="1" height="1" alt="">
-<img src="sha/small/1850.svg" width="1" height="1" alt="">
-<img src="sha/small/1855.svg" width="1" height="1" alt="">
-<img src="sha/small/1860.svg" width="1" height="1" alt="">
-<img src="sha/small/1865.svg" width="1" height="1" alt="">
-<img src="sha/small/1870.svg" width="1" height="1" alt="">
-<img src="sha/small/1875.svg" width="1" height="1" alt="">
-<img src="sha/small/1880.svg" width="1" height="1" alt="">
-<img src="sha/small/1885.svg" width="1" height="1" alt="">
-<img src="sha/small/1890.svg" width="1" height="1" alt="">
-<img src="sha/small/1895.svg" width="1" height="1" alt="">
-<img src="sha/small/1900.svg" width="1" height="1" alt="">
-<img src="sha/small/1905.svg" width="1" height="1" alt="">
-<img src="sha/small/1910.svg" width="1" height="1" alt="">
-<img src="sha/small/1915.svg" width="1" height="1" alt="">
-<img src="sha/small/1920.svg" width="1" height="1" alt="">
-<img src="sha/small/1925.svg" width="1" height="1" alt="">
-<img src="sha/small/1930.svg" width="1" height="1" alt="">
-<img src="sha/small/1935.svg" width="1" height="1" alt="">
-<img src="sha/small/1940.svg" width="1" height="1" alt="">
-<img src="sha/small/1945.svg" width="1" height="1" alt="">
-<img src="sha/small/1950.svg" width="1" height="1" alt="">
-<img src="sha/small/1955.svg" width="1" height="1" alt="">
-<img src="sha/small/1960.svg" width="1" height="1" alt="">
-<img src="sha/small/1965.svg" width="1" height="1" alt="">
-<img src="sha/small/1970.svg" width="1" height="1" alt="">
-<img src="sha/small/1975.svg" width="1" height="1" alt="">
-<img src="sha/small/1980.svg" width="1" height="1" alt="">
-<img src="sha/small/1985.svg" width="1" height="1" alt="">
-<img src="sha/small/1990.svg" width="1" height="1" alt="">
 <img src="sha/small/1995.svg" width="1" height="1" alt="">
 <img src="sha/small/2000.svg" width="1" height="1" alt="">
 <img src="sha/small/2005.svg" width="1" height="1" alt="">

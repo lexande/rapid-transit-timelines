@@ -11,11 +11,15 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+a:link.map-wrap {
+        text-decoration: none;
+}
 span {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 .map {
+	border: 1px solid;
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -23,13 +27,59 @@ span {
 <script language="JavaScript" type="text/javascript">
 start=1840;
 count=36;
+citystartyears = { lon: 1840, mel: 1880, lpl: 1890, syd: 1895, gla: 1895, ncl: 1905, yvr: 1915, adl: 1985, man: 1935, pme: 1940, yto: 1955, per: 1955, yeg: 1980, bhx: 1980, bne: 1980, yyc: 1985, yow: 1985, dub: 1985, cwl: 1990, szd: 1995, nqt: 2005, edi: 2005, akl: 2010, };
 step=5;
 index=count-1;
 function update() {
 	["LON","MEL","LPL","SYD","GLA","NCL","YVR","ADL","MAN","PME","YTO","PER","YEG","BHX","BNE","YYC","YOW","DUB","CWL","SZD","NQT","EDI","AKL"].forEach(function(city) {
-		document[city].src=(city.toLowerCase() + "/small/" + (start+step*index) + ".svg");
-		document[city].title=start+step*index;
-		document[city].alt=start+step*index + " map";
+		yr = start+step*index;
+		mapimg = document.getElementById(city + "map");
+		if (yr < citystartyears[city.toLowerCase()]) {
+			if (mapimg.tagName.toUpperCase() == "IMG") {
+				svgelt = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+				textelt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+				tspanelt = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+				yearcontent = document.createTextNode(yr);
+				tspanelt.appendChild(yearcontent);
+				textelt.appendChild(tspanelt);
+				textelt.setAttribute("x", "6.48935");
+				textelt.setAttribute("y", "15.0139");
+				textelt.setAttribute("style", "-inkscape-font-specification:Sans");
+				textelt.setAttribute("font-family", "Sans");
+				textelt.setAttribute("font-weight", "400");
+				textelt.setAttribute("font-size", "10.4464px");
+				svgelt.appendChild(textelt);
+				svgelt.setAttribute("id", mapimg.id);
+				svgelt.setAttribute("width", mapimg.width);
+				svgelt.setAttribute("height", mapimg.height);
+				svgelt.setAttribute("class", "map");
+				svgelt.setAttribute("title", yr);
+				svgelt.setAttribute("alt", yr + " map");
+				mapimg.parentNode.replaceChild(svgelt, mapimg);
+			} else {
+				mapimg.getElementsByTagName("text")[0].getElementsByTagName("tspan")[0].innerHTML = yr;
+				mapimg.setAttribute("title", yr);
+				mapimg.setAttribute("alt", yr + " map");
+			}
+		} else {
+			if (mapimg.tagName.toUpperCase() == "SVG") {
+			console.log(city,yr);
+				imgelt = document.createElement("img");
+				imgelt.setAttribute("class", "map");
+				imgelt.id = mapimg.getAttribute("id");
+				imgelt.width = mapimg.getAttribute("width");
+				imgelt.height = mapimg.getAttribute("height");
+				imgelt.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+				imgelt.title = yr;
+				imgelt.alt = yr + " map";
+				mapimg.parentNode.replaceChild(imgelt, mapimg);
+			} else {
+				mapimg.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+				mapimg.title = yr;
+				mapimg.alt = yr + " map";
+			}
+		}
+	
 	});
 }
 function nextmap() {
@@ -72,52 +122,52 @@ window.onload=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-<span id="LON" style="display: inline-block; vertical-align: middle"><a href="lon">London<br>
-  <img class="map" name="LON" src="lon/small/2015.svg" title="2015" alt="2015 map" width="635px" height="907px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="MEL" style="display: inline-block; vertical-align: middle"><a href="mel">Melbourne<br>
-  <img class="map" name="MEL" src="mel/small/2015.svg" title="2015" alt="2015 map" width="740px" height="624px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="LPL" style="display: inline-block; vertical-align: middle"><a href="lpl">Liverpool<br>
-  <img class="map" name="LPL" src="lpl/small/2015.svg" title="2015" alt="2015 map" width="243px" height="511px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="SYD" style="display: inline-block; vertical-align: middle"><a href="syd">Sydney<br>
-  <img class="map" name="SYD" src="syd/small/2015.svg" title="2015" alt="2015 map" width="527px" height="414px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="GLA" style="display: inline-block; vertical-align: middle"><a href="gla">Glasgow<br>
-  <img class="map" name="GLA" src="gla/small/2015.svg" title="2015" alt="2015 map" width="385px" height="225px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="NCL" style="display: inline-block; vertical-align: middle"><a href="ncl">Newcastle<br>
-  <img class="map" name="NCL" src="ncl/small/2015.svg" title="2015" alt="2015 map" width="225px" height="174px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="YVR" style="display: inline-block; vertical-align: middle"><a href="yvr">Vancouver<br>
-  <img class="map" name="YVR" src="yvr/small/2015.svg" title="2015" alt="2015 map" width="254px" height="152px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="ADL" style="display: inline-block; vertical-align: middle"><a href="adl">Adelaide<br>
-  <img class="map" name="ADL" src="adl/small/2015.svg" title="2015" alt="2015 map" width="239px" height="500px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="MAN" style="display: inline-block; vertical-align: middle"><a href="man">Manchester<br>
-  <img class="map" name="MAN" src="man/small/2015.svg" title="2015" alt="2015 map" width="232px" height="377px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="PME" style="display: inline-block; vertical-align: middle"><a href="pme">Portsmouth<br>
-  <img class="map" name="PME" src="pme/small/2015.svg" title="2015" alt="2015 map" width="170px" height="101px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="YTO" style="display: inline-block; vertical-align: middle"><a href="yto">Toronto<br>
-  <img class="map" name="YTO" src="yto/small/2015.svg" title="2015" alt="2015 map" width="248px" height="177px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="PER" style="display: inline-block; vertical-align: middle"><a href="per">Perth<br>
-  <img class="map" name="PER" src="per/small/2015.svg" title="2015" alt="2015 map" width="348px" height="1008px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="YEG" style="display: inline-block; vertical-align: middle"><a href="yeg">Edmonton<br>
-  <img class="map" name="YEG" src="yeg/small/2015.svg" title="2015" alt="2015 map" width="87px" height="170px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="BHX" style="display: inline-block; vertical-align: middle"><a href="bhx">Birmingham<br>
-  <img class="map" name="BHX" src="bhx/small/2015.svg" title="2015" alt="2015 map" width="363px" height="439px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="BNE" style="display: inline-block; vertical-align: middle"><a href="bne">Brisbane<br>
-  <img class="map" name="BNE" src="bne/small/2015.svg" title="2015" alt="2015 map" width="261px" height="399px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="YYC" style="display: inline-block; vertical-align: middle"><a href="yyc">Calgary<br>
-  <img class="map" name="YYC" src="yyc/small/2015.svg" title="2015" alt="2015 map" width="218px" height="291px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="YOW" style="display: inline-block; vertical-align: middle"><a href="yow">Ottawa<br>
-  <img class="map" name="YOW" src="yow/small/2015.svg" title="2015" alt="2015 map" width="189px" height="120px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="DUB" style="display: inline-block; vertical-align: middle"><a href="dub">Dublin<br>
-  <img class="map" name="DUB" src="dub/small/2015.svg" title="2015" alt="2015 map" width="254px" height="220px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="CWL" style="display: inline-block; vertical-align: middle"><a href="cwl">Cardiff<br>
-  <img class="map" name="CWL" src="cwl/small/2015.svg" title="2015" alt="2015 map" width="138px" height="349px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="SZD" style="display: inline-block; vertical-align: middle"><a href="szd">Sheffield<br>
-  <img class="map" name="SZD" src="szd/small/2015.svg" title="2015" alt="2015 map" width="120px" height="116px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="NQT" style="display: inline-block; vertical-align: middle"><a href="nqt">Nottingham<br>
-  <img class="map" name="NQT" src="nqt/small/2015.svg" title="2015" alt="2015 map" width="116px" height="210px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="EDI" style="display: inline-block; vertical-align: middle"><a href="edi">Edinburgh<br>
-  <img class="map" name="EDI" src="edi/small/2015.svg" title="2015" alt="2015 map" width="167px" height="73px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="AKL" style="display: inline-block; vertical-align: middle"><a href="akl">Auckland<br>
-  <img class="map" name="AKL" src="akl/small/2015.svg" title="2015" alt="2015 map" width="225px" height="410px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="LON" style="display: inline-block; vertical-align: middle"><a href="lon">London</a><br>
+  <a href="lon" class="map-wrap"><img class="map" id="LONmap" src="lon/small/2015.svg" title="2015" alt="2015 map" width="635px" height="907px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="MEL" style="display: inline-block; vertical-align: middle"><a href="mel">Melbourne</a><br>
+  <a href="mel" class="map-wrap"><img class="map" id="MELmap" src="mel/small/2015.svg" title="2015" alt="2015 map" width="740px" height="624px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="LPL" style="display: inline-block; vertical-align: middle"><a href="lpl">Liverpool</a><br>
+  <a href="lpl" class="map-wrap"><img class="map" id="LPLmap" src="lpl/small/2015.svg" title="2015" alt="2015 map" width="243px" height="511px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SYD" style="display: inline-block; vertical-align: middle"><a href="syd">Sydney</a><br>
+  <a href="syd" class="map-wrap"><img class="map" id="SYDmap" src="syd/small/2015.svg" title="2015" alt="2015 map" width="527px" height="414px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="GLA" style="display: inline-block; vertical-align: middle"><a href="gla">Glasgow</a><br>
+  <a href="gla" class="map-wrap"><img class="map" id="GLAmap" src="gla/small/2015.svg" title="2015" alt="2015 map" width="385px" height="225px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="NCL" style="display: inline-block; vertical-align: middle"><a href="ncl">Newcastle</a><br>
+  <a href="ncl" class="map-wrap"><img class="map" id="NCLmap" src="ncl/small/2015.svg" title="2015" alt="2015 map" width="225px" height="174px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="YVR" style="display: inline-block; vertical-align: middle"><a href="yvr">Vancouver</a><br>
+  <a href="yvr" class="map-wrap"><img class="map" id="YVRmap" src="yvr/small/2015.svg" title="2015" alt="2015 map" width="254px" height="152px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="ADL" style="display: inline-block; vertical-align: middle"><a href="adl">Adelaide</a><br>
+  <a href="adl" class="map-wrap"><img class="map" id="ADLmap" src="adl/small/2015.svg" title="2015" alt="2015 map" width="239px" height="500px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="MAN" style="display: inline-block; vertical-align: middle"><a href="man">Manchester</a><br>
+  <a href="man" class="map-wrap"><img class="map" id="MANmap" src="man/small/2015.svg" title="2015" alt="2015 map" width="232px" height="377px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PME" style="display: inline-block; vertical-align: middle"><a href="pme">Portsmouth</a><br>
+  <a href="pme" class="map-wrap"><img class="map" id="PMEmap" src="pme/small/2015.svg" title="2015" alt="2015 map" width="170px" height="101px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="YTO" style="display: inline-block; vertical-align: middle"><a href="yto">Toronto</a><br>
+  <a href="yto" class="map-wrap"><img class="map" id="YTOmap" src="yto/small/2015.svg" title="2015" alt="2015 map" width="248px" height="177px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PER" style="display: inline-block; vertical-align: middle"><a href="per">Perth</a><br>
+  <a href="per" class="map-wrap"><img class="map" id="PERmap" src="per/small/2015.svg" title="2015" alt="2015 map" width="348px" height="1008px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="YEG" style="display: inline-block; vertical-align: middle"><a href="yeg">Edmonton</a><br>
+  <a href="yeg" class="map-wrap"><img class="map" id="YEGmap" src="yeg/small/2015.svg" title="2015" alt="2015 map" width="87px" height="170px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="BHX" style="display: inline-block; vertical-align: middle"><a href="bhx">Birmingham</a><br>
+  <a href="bhx" class="map-wrap"><img class="map" id="BHXmap" src="bhx/small/2015.svg" title="2015" alt="2015 map" width="363px" height="439px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="BNE" style="display: inline-block; vertical-align: middle"><a href="bne">Brisbane</a><br>
+  <a href="bne" class="map-wrap"><img class="map" id="BNEmap" src="bne/small/2015.svg" title="2015" alt="2015 map" width="261px" height="399px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="YYC" style="display: inline-block; vertical-align: middle"><a href="yyc">Calgary</a><br>
+  <a href="yyc" class="map-wrap"><img class="map" id="YYCmap" src="yyc/small/2015.svg" title="2015" alt="2015 map" width="218px" height="291px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="YOW" style="display: inline-block; vertical-align: middle"><a href="yow">Ottawa</a><br>
+  <a href="yow" class="map-wrap"><img class="map" id="YOWmap" src="yow/small/2015.svg" title="2015" alt="2015 map" width="189px" height="120px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="DUB" style="display: inline-block; vertical-align: middle"><a href="dub">Dublin</a><br>
+  <a href="dub" class="map-wrap"><img class="map" id="DUBmap" src="dub/small/2015.svg" title="2015" alt="2015 map" width="254px" height="220px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="CWL" style="display: inline-block; vertical-align: middle"><a href="cwl">Cardiff</a><br>
+  <a href="cwl" class="map-wrap"><img class="map" id="CWLmap" src="cwl/small/2015.svg" title="2015" alt="2015 map" width="138px" height="349px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SZD" style="display: inline-block; vertical-align: middle"><a href="szd">Sheffield</a><br>
+  <a href="szd" class="map-wrap"><img class="map" id="SZDmap" src="szd/small/2015.svg" title="2015" alt="2015 map" width="120px" height="116px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="NQT" style="display: inline-block; vertical-align: middle"><a href="nqt">Nottingham</a><br>
+  <a href="nqt" class="map-wrap"><img class="map" id="NQTmap" src="nqt/small/2015.svg" title="2015" alt="2015 map" width="116px" height="210px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="EDI" style="display: inline-block; vertical-align: middle"><a href="edi">Edinburgh</a><br>
+  <a href="edi" class="map-wrap"><img class="map" id="EDImap" src="edi/small/2015.svg" title="2015" alt="2015 map" width="167px" height="73px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="AKL" style="display: inline-block; vertical-align: middle"><a href="akl">Auckland</a><br>
+  <a href="akl" class="map-wrap"><img class="map" id="AKLmap" src="akl/small/2015.svg" title="2015" alt="2015 map" width="225px" height="410px" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
@@ -189,14 +239,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="lon/small/2005.svg" width="1" height="1" alt="">
 <img src="lon/small/2010.svg" width="1" height="1" alt="">
 <img src="lon/small/2015.svg" width="1" height="1" alt="">
-<img src="mel/small/1840.svg" width="1" height="1" alt="">
-<img src="mel/small/1845.svg" width="1" height="1" alt="">
-<img src="mel/small/1850.svg" width="1" height="1" alt="">
-<img src="mel/small/1855.svg" width="1" height="1" alt="">
-<img src="mel/small/1860.svg" width="1" height="1" alt="">
-<img src="mel/small/1865.svg" width="1" height="1" alt="">
-<img src="mel/small/1870.svg" width="1" height="1" alt="">
-<img src="mel/small/1875.svg" width="1" height="1" alt="">
 <img src="mel/small/1880.svg" width="1" height="1" alt="">
 <img src="mel/small/1885.svg" width="1" height="1" alt="">
 <img src="mel/small/1890.svg" width="1" height="1" alt="">
@@ -225,16 +267,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="mel/small/2005.svg" width="1" height="1" alt="">
 <img src="mel/small/2010.svg" width="1" height="1" alt="">
 <img src="mel/small/2015.svg" width="1" height="1" alt="">
-<img src="lpl/small/1840.svg" width="1" height="1" alt="">
-<img src="lpl/small/1845.svg" width="1" height="1" alt="">
-<img src="lpl/small/1850.svg" width="1" height="1" alt="">
-<img src="lpl/small/1855.svg" width="1" height="1" alt="">
-<img src="lpl/small/1860.svg" width="1" height="1" alt="">
-<img src="lpl/small/1865.svg" width="1" height="1" alt="">
-<img src="lpl/small/1870.svg" width="1" height="1" alt="">
-<img src="lpl/small/1875.svg" width="1" height="1" alt="">
-<img src="lpl/small/1880.svg" width="1" height="1" alt="">
-<img src="lpl/small/1885.svg" width="1" height="1" alt="">
 <img src="lpl/small/1890.svg" width="1" height="1" alt="">
 <img src="lpl/small/1895.svg" width="1" height="1" alt="">
 <img src="lpl/small/1900.svg" width="1" height="1" alt="">
@@ -261,17 +293,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="lpl/small/2005.svg" width="1" height="1" alt="">
 <img src="lpl/small/2010.svg" width="1" height="1" alt="">
 <img src="lpl/small/2015.svg" width="1" height="1" alt="">
-<img src="syd/small/1840.svg" width="1" height="1" alt="">
-<img src="syd/small/1845.svg" width="1" height="1" alt="">
-<img src="syd/small/1850.svg" width="1" height="1" alt="">
-<img src="syd/small/1855.svg" width="1" height="1" alt="">
-<img src="syd/small/1860.svg" width="1" height="1" alt="">
-<img src="syd/small/1865.svg" width="1" height="1" alt="">
-<img src="syd/small/1870.svg" width="1" height="1" alt="">
-<img src="syd/small/1875.svg" width="1" height="1" alt="">
-<img src="syd/small/1880.svg" width="1" height="1" alt="">
-<img src="syd/small/1885.svg" width="1" height="1" alt="">
-<img src="syd/small/1890.svg" width="1" height="1" alt="">
 <img src="syd/small/1895.svg" width="1" height="1" alt="">
 <img src="syd/small/1900.svg" width="1" height="1" alt="">
 <img src="syd/small/1905.svg" width="1" height="1" alt="">
@@ -297,17 +318,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="syd/small/2005.svg" width="1" height="1" alt="">
 <img src="syd/small/2010.svg" width="1" height="1" alt="">
 <img src="syd/small/2015.svg" width="1" height="1" alt="">
-<img src="gla/small/1840.svg" width="1" height="1" alt="">
-<img src="gla/small/1845.svg" width="1" height="1" alt="">
-<img src="gla/small/1850.svg" width="1" height="1" alt="">
-<img src="gla/small/1855.svg" width="1" height="1" alt="">
-<img src="gla/small/1860.svg" width="1" height="1" alt="">
-<img src="gla/small/1865.svg" width="1" height="1" alt="">
-<img src="gla/small/1870.svg" width="1" height="1" alt="">
-<img src="gla/small/1875.svg" width="1" height="1" alt="">
-<img src="gla/small/1880.svg" width="1" height="1" alt="">
-<img src="gla/small/1885.svg" width="1" height="1" alt="">
-<img src="gla/small/1890.svg" width="1" height="1" alt="">
 <img src="gla/small/1895.svg" width="1" height="1" alt="">
 <img src="gla/small/1900.svg" width="1" height="1" alt="">
 <img src="gla/small/1905.svg" width="1" height="1" alt="">
@@ -333,19 +343,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="gla/small/2005.svg" width="1" height="1" alt="">
 <img src="gla/small/2010.svg" width="1" height="1" alt="">
 <img src="gla/small/2015.svg" width="1" height="1" alt="">
-<img src="ncl/small/1840.svg" width="1" height="1" alt="">
-<img src="ncl/small/1845.svg" width="1" height="1" alt="">
-<img src="ncl/small/1850.svg" width="1" height="1" alt="">
-<img src="ncl/small/1855.svg" width="1" height="1" alt="">
-<img src="ncl/small/1860.svg" width="1" height="1" alt="">
-<img src="ncl/small/1865.svg" width="1" height="1" alt="">
-<img src="ncl/small/1870.svg" width="1" height="1" alt="">
-<img src="ncl/small/1875.svg" width="1" height="1" alt="">
-<img src="ncl/small/1880.svg" width="1" height="1" alt="">
-<img src="ncl/small/1885.svg" width="1" height="1" alt="">
-<img src="ncl/small/1890.svg" width="1" height="1" alt="">
-<img src="ncl/small/1895.svg" width="1" height="1" alt="">
-<img src="ncl/small/1900.svg" width="1" height="1" alt="">
 <img src="ncl/small/1905.svg" width="1" height="1" alt="">
 <img src="ncl/small/1910.svg" width="1" height="1" alt="">
 <img src="ncl/small/1915.svg" width="1" height="1" alt="">
@@ -369,21 +366,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="ncl/small/2005.svg" width="1" height="1" alt="">
 <img src="ncl/small/2010.svg" width="1" height="1" alt="">
 <img src="ncl/small/2015.svg" width="1" height="1" alt="">
-<img src="yvr/small/1840.svg" width="1" height="1" alt="">
-<img src="yvr/small/1845.svg" width="1" height="1" alt="">
-<img src="yvr/small/1850.svg" width="1" height="1" alt="">
-<img src="yvr/small/1855.svg" width="1" height="1" alt="">
-<img src="yvr/small/1860.svg" width="1" height="1" alt="">
-<img src="yvr/small/1865.svg" width="1" height="1" alt="">
-<img src="yvr/small/1870.svg" width="1" height="1" alt="">
-<img src="yvr/small/1875.svg" width="1" height="1" alt="">
-<img src="yvr/small/1880.svg" width="1" height="1" alt="">
-<img src="yvr/small/1885.svg" width="1" height="1" alt="">
-<img src="yvr/small/1890.svg" width="1" height="1" alt="">
-<img src="yvr/small/1895.svg" width="1" height="1" alt="">
-<img src="yvr/small/1900.svg" width="1" height="1" alt="">
-<img src="yvr/small/1905.svg" width="1" height="1" alt="">
-<img src="yvr/small/1910.svg" width="1" height="1" alt="">
 <img src="yvr/small/1915.svg" width="1" height="1" alt="">
 <img src="yvr/small/1920.svg" width="1" height="1" alt="">
 <img src="yvr/small/1925.svg" width="1" height="1" alt="">
@@ -405,35 +387,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="yvr/small/2005.svg" width="1" height="1" alt="">
 <img src="yvr/small/2010.svg" width="1" height="1" alt="">
 <img src="yvr/small/2015.svg" width="1" height="1" alt="">
-<img src="adl/small/1840.svg" width="1" height="1" alt="">
-<img src="adl/small/1845.svg" width="1" height="1" alt="">
-<img src="adl/small/1850.svg" width="1" height="1" alt="">
-<img src="adl/small/1855.svg" width="1" height="1" alt="">
-<img src="adl/small/1860.svg" width="1" height="1" alt="">
-<img src="adl/small/1865.svg" width="1" height="1" alt="">
-<img src="adl/small/1870.svg" width="1" height="1" alt="">
-<img src="adl/small/1875.svg" width="1" height="1" alt="">
-<img src="adl/small/1880.svg" width="1" height="1" alt="">
-<img src="adl/small/1885.svg" width="1" height="1" alt="">
-<img src="adl/small/1890.svg" width="1" height="1" alt="">
-<img src="adl/small/1895.svg" width="1" height="1" alt="">
-<img src="adl/small/1900.svg" width="1" height="1" alt="">
-<img src="adl/small/1905.svg" width="1" height="1" alt="">
-<img src="adl/small/1910.svg" width="1" height="1" alt="">
-<img src="adl/small/1915.svg" width="1" height="1" alt="">
-<img src="adl/small/1920.svg" width="1" height="1" alt="">
-<img src="adl/small/1925.svg" width="1" height="1" alt="">
-<img src="adl/small/1930.svg" width="1" height="1" alt="">
-<img src="adl/small/1935.svg" width="1" height="1" alt="">
-<img src="adl/small/1940.svg" width="1" height="1" alt="">
-<img src="adl/small/1945.svg" width="1" height="1" alt="">
-<img src="adl/small/1950.svg" width="1" height="1" alt="">
-<img src="adl/small/1955.svg" width="1" height="1" alt="">
-<img src="adl/small/1960.svg" width="1" height="1" alt="">
-<img src="adl/small/1965.svg" width="1" height="1" alt="">
-<img src="adl/small/1970.svg" width="1" height="1" alt="">
-<img src="adl/small/1975.svg" width="1" height="1" alt="">
-<img src="adl/small/1980.svg" width="1" height="1" alt="">
 <img src="adl/small/1985.svg" width="1" height="1" alt="">
 <img src="adl/small/1990.svg" width="1" height="1" alt="">
 <img src="adl/small/1995.svg" width="1" height="1" alt="">
@@ -441,25 +394,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="adl/small/2005.svg" width="1" height="1" alt="">
 <img src="adl/small/2010.svg" width="1" height="1" alt="">
 <img src="adl/small/2015.svg" width="1" height="1" alt="">
-<img src="man/small/1840.svg" width="1" height="1" alt="">
-<img src="man/small/1845.svg" width="1" height="1" alt="">
-<img src="man/small/1850.svg" width="1" height="1" alt="">
-<img src="man/small/1855.svg" width="1" height="1" alt="">
-<img src="man/small/1860.svg" width="1" height="1" alt="">
-<img src="man/small/1865.svg" width="1" height="1" alt="">
-<img src="man/small/1870.svg" width="1" height="1" alt="">
-<img src="man/small/1875.svg" width="1" height="1" alt="">
-<img src="man/small/1880.svg" width="1" height="1" alt="">
-<img src="man/small/1885.svg" width="1" height="1" alt="">
-<img src="man/small/1890.svg" width="1" height="1" alt="">
-<img src="man/small/1895.svg" width="1" height="1" alt="">
-<img src="man/small/1900.svg" width="1" height="1" alt="">
-<img src="man/small/1905.svg" width="1" height="1" alt="">
-<img src="man/small/1910.svg" width="1" height="1" alt="">
-<img src="man/small/1915.svg" width="1" height="1" alt="">
-<img src="man/small/1920.svg" width="1" height="1" alt="">
-<img src="man/small/1925.svg" width="1" height="1" alt="">
-<img src="man/small/1930.svg" width="1" height="1" alt="">
 <img src="man/small/1935.svg" width="1" height="1" alt="">
 <img src="man/small/1940.svg" width="1" height="1" alt="">
 <img src="man/small/1945.svg" width="1" height="1" alt="">
@@ -477,26 +411,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="man/small/2005.svg" width="1" height="1" alt="">
 <img src="man/small/2010.svg" width="1" height="1" alt="">
 <img src="man/small/2015.svg" width="1" height="1" alt="">
-<img src="pme/small/1840.svg" width="1" height="1" alt="">
-<img src="pme/small/1845.svg" width="1" height="1" alt="">
-<img src="pme/small/1850.svg" width="1" height="1" alt="">
-<img src="pme/small/1855.svg" width="1" height="1" alt="">
-<img src="pme/small/1860.svg" width="1" height="1" alt="">
-<img src="pme/small/1865.svg" width="1" height="1" alt="">
-<img src="pme/small/1870.svg" width="1" height="1" alt="">
-<img src="pme/small/1875.svg" width="1" height="1" alt="">
-<img src="pme/small/1880.svg" width="1" height="1" alt="">
-<img src="pme/small/1885.svg" width="1" height="1" alt="">
-<img src="pme/small/1890.svg" width="1" height="1" alt="">
-<img src="pme/small/1895.svg" width="1" height="1" alt="">
-<img src="pme/small/1900.svg" width="1" height="1" alt="">
-<img src="pme/small/1905.svg" width="1" height="1" alt="">
-<img src="pme/small/1910.svg" width="1" height="1" alt="">
-<img src="pme/small/1915.svg" width="1" height="1" alt="">
-<img src="pme/small/1920.svg" width="1" height="1" alt="">
-<img src="pme/small/1925.svg" width="1" height="1" alt="">
-<img src="pme/small/1930.svg" width="1" height="1" alt="">
-<img src="pme/small/1935.svg" width="1" height="1" alt="">
 <img src="pme/small/1940.svg" width="1" height="1" alt="">
 <img src="pme/small/1945.svg" width="1" height="1" alt="">
 <img src="pme/small/1950.svg" width="1" height="1" alt="">
@@ -513,29 +427,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="pme/small/2005.svg" width="1" height="1" alt="">
 <img src="pme/small/2010.svg" width="1" height="1" alt="">
 <img src="pme/small/2015.svg" width="1" height="1" alt="">
-<img src="yto/small/1840.svg" width="1" height="1" alt="">
-<img src="yto/small/1845.svg" width="1" height="1" alt="">
-<img src="yto/small/1850.svg" width="1" height="1" alt="">
-<img src="yto/small/1855.svg" width="1" height="1" alt="">
-<img src="yto/small/1860.svg" width="1" height="1" alt="">
-<img src="yto/small/1865.svg" width="1" height="1" alt="">
-<img src="yto/small/1870.svg" width="1" height="1" alt="">
-<img src="yto/small/1875.svg" width="1" height="1" alt="">
-<img src="yto/small/1880.svg" width="1" height="1" alt="">
-<img src="yto/small/1885.svg" width="1" height="1" alt="">
-<img src="yto/small/1890.svg" width="1" height="1" alt="">
-<img src="yto/small/1895.svg" width="1" height="1" alt="">
-<img src="yto/small/1900.svg" width="1" height="1" alt="">
-<img src="yto/small/1905.svg" width="1" height="1" alt="">
-<img src="yto/small/1910.svg" width="1" height="1" alt="">
-<img src="yto/small/1915.svg" width="1" height="1" alt="">
-<img src="yto/small/1920.svg" width="1" height="1" alt="">
-<img src="yto/small/1925.svg" width="1" height="1" alt="">
-<img src="yto/small/1930.svg" width="1" height="1" alt="">
-<img src="yto/small/1935.svg" width="1" height="1" alt="">
-<img src="yto/small/1940.svg" width="1" height="1" alt="">
-<img src="yto/small/1945.svg" width="1" height="1" alt="">
-<img src="yto/small/1950.svg" width="1" height="1" alt="">
 <img src="yto/small/1955.svg" width="1" height="1" alt="">
 <img src="yto/small/1960.svg" width="1" height="1" alt="">
 <img src="yto/small/1965.svg" width="1" height="1" alt="">
@@ -549,29 +440,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="yto/small/2005.svg" width="1" height="1" alt="">
 <img src="yto/small/2010.svg" width="1" height="1" alt="">
 <img src="yto/small/2015.svg" width="1" height="1" alt="">
-<img src="per/small/1840.svg" width="1" height="1" alt="">
-<img src="per/small/1845.svg" width="1" height="1" alt="">
-<img src="per/small/1850.svg" width="1" height="1" alt="">
-<img src="per/small/1855.svg" width="1" height="1" alt="">
-<img src="per/small/1860.svg" width="1" height="1" alt="">
-<img src="per/small/1865.svg" width="1" height="1" alt="">
-<img src="per/small/1870.svg" width="1" height="1" alt="">
-<img src="per/small/1875.svg" width="1" height="1" alt="">
-<img src="per/small/1880.svg" width="1" height="1" alt="">
-<img src="per/small/1885.svg" width="1" height="1" alt="">
-<img src="per/small/1890.svg" width="1" height="1" alt="">
-<img src="per/small/1895.svg" width="1" height="1" alt="">
-<img src="per/small/1900.svg" width="1" height="1" alt="">
-<img src="per/small/1905.svg" width="1" height="1" alt="">
-<img src="per/small/1910.svg" width="1" height="1" alt="">
-<img src="per/small/1915.svg" width="1" height="1" alt="">
-<img src="per/small/1920.svg" width="1" height="1" alt="">
-<img src="per/small/1925.svg" width="1" height="1" alt="">
-<img src="per/small/1930.svg" width="1" height="1" alt="">
-<img src="per/small/1935.svg" width="1" height="1" alt="">
-<img src="per/small/1940.svg" width="1" height="1" alt="">
-<img src="per/small/1945.svg" width="1" height="1" alt="">
-<img src="per/small/1950.svg" width="1" height="1" alt="">
+<img src="yto/small/2020.svg" width="1" height="1" alt="">
 <img src="per/small/1955.svg" width="1" height="1" alt="">
 <img src="per/small/1960.svg" width="1" height="1" alt="">
 <img src="per/small/1965.svg" width="1" height="1" alt="">
@@ -585,34 +454,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="per/small/2005.svg" width="1" height="1" alt="">
 <img src="per/small/2010.svg" width="1" height="1" alt="">
 <img src="per/small/2015.svg" width="1" height="1" alt="">
-<img src="yeg/small/1840.svg" width="1" height="1" alt="">
-<img src="yeg/small/1845.svg" width="1" height="1" alt="">
-<img src="yeg/small/1850.svg" width="1" height="1" alt="">
-<img src="yeg/small/1855.svg" width="1" height="1" alt="">
-<img src="yeg/small/1860.svg" width="1" height="1" alt="">
-<img src="yeg/small/1865.svg" width="1" height="1" alt="">
-<img src="yeg/small/1870.svg" width="1" height="1" alt="">
-<img src="yeg/small/1875.svg" width="1" height="1" alt="">
-<img src="yeg/small/1880.svg" width="1" height="1" alt="">
-<img src="yeg/small/1885.svg" width="1" height="1" alt="">
-<img src="yeg/small/1890.svg" width="1" height="1" alt="">
-<img src="yeg/small/1895.svg" width="1" height="1" alt="">
-<img src="yeg/small/1900.svg" width="1" height="1" alt="">
-<img src="yeg/small/1905.svg" width="1" height="1" alt="">
-<img src="yeg/small/1910.svg" width="1" height="1" alt="">
-<img src="yeg/small/1915.svg" width="1" height="1" alt="">
-<img src="yeg/small/1920.svg" width="1" height="1" alt="">
-<img src="yeg/small/1925.svg" width="1" height="1" alt="">
-<img src="yeg/small/1930.svg" width="1" height="1" alt="">
-<img src="yeg/small/1935.svg" width="1" height="1" alt="">
-<img src="yeg/small/1940.svg" width="1" height="1" alt="">
-<img src="yeg/small/1945.svg" width="1" height="1" alt="">
-<img src="yeg/small/1950.svg" width="1" height="1" alt="">
-<img src="yeg/small/1955.svg" width="1" height="1" alt="">
-<img src="yeg/small/1960.svg" width="1" height="1" alt="">
-<img src="yeg/small/1965.svg" width="1" height="1" alt="">
-<img src="yeg/small/1970.svg" width="1" height="1" alt="">
-<img src="yeg/small/1975.svg" width="1" height="1" alt="">
 <img src="yeg/small/1980.svg" width="1" height="1" alt="">
 <img src="yeg/small/1985.svg" width="1" height="1" alt="">
 <img src="yeg/small/1990.svg" width="1" height="1" alt="">
@@ -621,34 +462,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="yeg/small/2005.svg" width="1" height="1" alt="">
 <img src="yeg/small/2010.svg" width="1" height="1" alt="">
 <img src="yeg/small/2015.svg" width="1" height="1" alt="">
-<img src="bhx/small/1840.svg" width="1" height="1" alt="">
-<img src="bhx/small/1845.svg" width="1" height="1" alt="">
-<img src="bhx/small/1850.svg" width="1" height="1" alt="">
-<img src="bhx/small/1855.svg" width="1" height="1" alt="">
-<img src="bhx/small/1860.svg" width="1" height="1" alt="">
-<img src="bhx/small/1865.svg" width="1" height="1" alt="">
-<img src="bhx/small/1870.svg" width="1" height="1" alt="">
-<img src="bhx/small/1875.svg" width="1" height="1" alt="">
-<img src="bhx/small/1880.svg" width="1" height="1" alt="">
-<img src="bhx/small/1885.svg" width="1" height="1" alt="">
-<img src="bhx/small/1890.svg" width="1" height="1" alt="">
-<img src="bhx/small/1895.svg" width="1" height="1" alt="">
-<img src="bhx/small/1900.svg" width="1" height="1" alt="">
-<img src="bhx/small/1905.svg" width="1" height="1" alt="">
-<img src="bhx/small/1910.svg" width="1" height="1" alt="">
-<img src="bhx/small/1915.svg" width="1" height="1" alt="">
-<img src="bhx/small/1920.svg" width="1" height="1" alt="">
-<img src="bhx/small/1925.svg" width="1" height="1" alt="">
-<img src="bhx/small/1930.svg" width="1" height="1" alt="">
-<img src="bhx/small/1935.svg" width="1" height="1" alt="">
-<img src="bhx/small/1940.svg" width="1" height="1" alt="">
-<img src="bhx/small/1945.svg" width="1" height="1" alt="">
-<img src="bhx/small/1950.svg" width="1" height="1" alt="">
-<img src="bhx/small/1955.svg" width="1" height="1" alt="">
-<img src="bhx/small/1960.svg" width="1" height="1" alt="">
-<img src="bhx/small/1965.svg" width="1" height="1" alt="">
-<img src="bhx/small/1970.svg" width="1" height="1" alt="">
-<img src="bhx/small/1975.svg" width="1" height="1" alt="">
 <img src="bhx/small/1980.svg" width="1" height="1" alt="">
 <img src="bhx/small/1985.svg" width="1" height="1" alt="">
 <img src="bhx/small/1990.svg" width="1" height="1" alt="">
@@ -657,34 +470,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="bhx/small/2005.svg" width="1" height="1" alt="">
 <img src="bhx/small/2010.svg" width="1" height="1" alt="">
 <img src="bhx/small/2015.svg" width="1" height="1" alt="">
-<img src="bne/small/1840.svg" width="1" height="1" alt="">
-<img src="bne/small/1845.svg" width="1" height="1" alt="">
-<img src="bne/small/1850.svg" width="1" height="1" alt="">
-<img src="bne/small/1855.svg" width="1" height="1" alt="">
-<img src="bne/small/1860.svg" width="1" height="1" alt="">
-<img src="bne/small/1865.svg" width="1" height="1" alt="">
-<img src="bne/small/1870.svg" width="1" height="1" alt="">
-<img src="bne/small/1875.svg" width="1" height="1" alt="">
-<img src="bne/small/1880.svg" width="1" height="1" alt="">
-<img src="bne/small/1885.svg" width="1" height="1" alt="">
-<img src="bne/small/1890.svg" width="1" height="1" alt="">
-<img src="bne/small/1895.svg" width="1" height="1" alt="">
-<img src="bne/small/1900.svg" width="1" height="1" alt="">
-<img src="bne/small/1905.svg" width="1" height="1" alt="">
-<img src="bne/small/1910.svg" width="1" height="1" alt="">
-<img src="bne/small/1915.svg" width="1" height="1" alt="">
-<img src="bne/small/1920.svg" width="1" height="1" alt="">
-<img src="bne/small/1925.svg" width="1" height="1" alt="">
-<img src="bne/small/1930.svg" width="1" height="1" alt="">
-<img src="bne/small/1935.svg" width="1" height="1" alt="">
-<img src="bne/small/1940.svg" width="1" height="1" alt="">
-<img src="bne/small/1945.svg" width="1" height="1" alt="">
-<img src="bne/small/1950.svg" width="1" height="1" alt="">
-<img src="bne/small/1955.svg" width="1" height="1" alt="">
-<img src="bne/small/1960.svg" width="1" height="1" alt="">
-<img src="bne/small/1965.svg" width="1" height="1" alt="">
-<img src="bne/small/1970.svg" width="1" height="1" alt="">
-<img src="bne/small/1975.svg" width="1" height="1" alt="">
 <img src="bne/small/1980.svg" width="1" height="1" alt="">
 <img src="bne/small/1985.svg" width="1" height="1" alt="">
 <img src="bne/small/1990.svg" width="1" height="1" alt="">
@@ -693,35 +478,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="bne/small/2005.svg" width="1" height="1" alt="">
 <img src="bne/small/2010.svg" width="1" height="1" alt="">
 <img src="bne/small/2015.svg" width="1" height="1" alt="">
-<img src="yyc/small/1840.svg" width="1" height="1" alt="">
-<img src="yyc/small/1845.svg" width="1" height="1" alt="">
-<img src="yyc/small/1850.svg" width="1" height="1" alt="">
-<img src="yyc/small/1855.svg" width="1" height="1" alt="">
-<img src="yyc/small/1860.svg" width="1" height="1" alt="">
-<img src="yyc/small/1865.svg" width="1" height="1" alt="">
-<img src="yyc/small/1870.svg" width="1" height="1" alt="">
-<img src="yyc/small/1875.svg" width="1" height="1" alt="">
-<img src="yyc/small/1880.svg" width="1" height="1" alt="">
-<img src="yyc/small/1885.svg" width="1" height="1" alt="">
-<img src="yyc/small/1890.svg" width="1" height="1" alt="">
-<img src="yyc/small/1895.svg" width="1" height="1" alt="">
-<img src="yyc/small/1900.svg" width="1" height="1" alt="">
-<img src="yyc/small/1905.svg" width="1" height="1" alt="">
-<img src="yyc/small/1910.svg" width="1" height="1" alt="">
-<img src="yyc/small/1915.svg" width="1" height="1" alt="">
-<img src="yyc/small/1920.svg" width="1" height="1" alt="">
-<img src="yyc/small/1925.svg" width="1" height="1" alt="">
-<img src="yyc/small/1930.svg" width="1" height="1" alt="">
-<img src="yyc/small/1935.svg" width="1" height="1" alt="">
-<img src="yyc/small/1940.svg" width="1" height="1" alt="">
-<img src="yyc/small/1945.svg" width="1" height="1" alt="">
-<img src="yyc/small/1950.svg" width="1" height="1" alt="">
-<img src="yyc/small/1955.svg" width="1" height="1" alt="">
-<img src="yyc/small/1960.svg" width="1" height="1" alt="">
-<img src="yyc/small/1965.svg" width="1" height="1" alt="">
-<img src="yyc/small/1970.svg" width="1" height="1" alt="">
-<img src="yyc/small/1975.svg" width="1" height="1" alt="">
-<img src="yyc/small/1980.svg" width="1" height="1" alt="">
 <img src="yyc/small/1985.svg" width="1" height="1" alt="">
 <img src="yyc/small/1990.svg" width="1" height="1" alt="">
 <img src="yyc/small/1995.svg" width="1" height="1" alt="">
@@ -729,35 +485,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="yyc/small/2005.svg" width="1" height="1" alt="">
 <img src="yyc/small/2010.svg" width="1" height="1" alt="">
 <img src="yyc/small/2015.svg" width="1" height="1" alt="">
-<img src="yow/small/1840.svg" width="1" height="1" alt="">
-<img src="yow/small/1845.svg" width="1" height="1" alt="">
-<img src="yow/small/1850.svg" width="1" height="1" alt="">
-<img src="yow/small/1855.svg" width="1" height="1" alt="">
-<img src="yow/small/1860.svg" width="1" height="1" alt="">
-<img src="yow/small/1865.svg" width="1" height="1" alt="">
-<img src="yow/small/1870.svg" width="1" height="1" alt="">
-<img src="yow/small/1875.svg" width="1" height="1" alt="">
-<img src="yow/small/1880.svg" width="1" height="1" alt="">
-<img src="yow/small/1885.svg" width="1" height="1" alt="">
-<img src="yow/small/1890.svg" width="1" height="1" alt="">
-<img src="yow/small/1895.svg" width="1" height="1" alt="">
-<img src="yow/small/1900.svg" width="1" height="1" alt="">
-<img src="yow/small/1905.svg" width="1" height="1" alt="">
-<img src="yow/small/1910.svg" width="1" height="1" alt="">
-<img src="yow/small/1915.svg" width="1" height="1" alt="">
-<img src="yow/small/1920.svg" width="1" height="1" alt="">
-<img src="yow/small/1925.svg" width="1" height="1" alt="">
-<img src="yow/small/1930.svg" width="1" height="1" alt="">
-<img src="yow/small/1935.svg" width="1" height="1" alt="">
-<img src="yow/small/1940.svg" width="1" height="1" alt="">
-<img src="yow/small/1945.svg" width="1" height="1" alt="">
-<img src="yow/small/1950.svg" width="1" height="1" alt="">
-<img src="yow/small/1955.svg" width="1" height="1" alt="">
-<img src="yow/small/1960.svg" width="1" height="1" alt="">
-<img src="yow/small/1965.svg" width="1" height="1" alt="">
-<img src="yow/small/1970.svg" width="1" height="1" alt="">
-<img src="yow/small/1975.svg" width="1" height="1" alt="">
-<img src="yow/small/1980.svg" width="1" height="1" alt="">
 <img src="yow/small/1985.svg" width="1" height="1" alt="">
 <img src="yow/small/1990.svg" width="1" height="1" alt="">
 <img src="yow/small/1995.svg" width="1" height="1" alt="">
@@ -765,35 +492,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="yow/small/2005.svg" width="1" height="1" alt="">
 <img src="yow/small/2010.svg" width="1" height="1" alt="">
 <img src="yow/small/2015.svg" width="1" height="1" alt="">
-<img src="dub/small/1840.svg" width="1" height="1" alt="">
-<img src="dub/small/1845.svg" width="1" height="1" alt="">
-<img src="dub/small/1850.svg" width="1" height="1" alt="">
-<img src="dub/small/1855.svg" width="1" height="1" alt="">
-<img src="dub/small/1860.svg" width="1" height="1" alt="">
-<img src="dub/small/1865.svg" width="1" height="1" alt="">
-<img src="dub/small/1870.svg" width="1" height="1" alt="">
-<img src="dub/small/1875.svg" width="1" height="1" alt="">
-<img src="dub/small/1880.svg" width="1" height="1" alt="">
-<img src="dub/small/1885.svg" width="1" height="1" alt="">
-<img src="dub/small/1890.svg" width="1" height="1" alt="">
-<img src="dub/small/1895.svg" width="1" height="1" alt="">
-<img src="dub/small/1900.svg" width="1" height="1" alt="">
-<img src="dub/small/1905.svg" width="1" height="1" alt="">
-<img src="dub/small/1910.svg" width="1" height="1" alt="">
-<img src="dub/small/1915.svg" width="1" height="1" alt="">
-<img src="dub/small/1920.svg" width="1" height="1" alt="">
-<img src="dub/small/1925.svg" width="1" height="1" alt="">
-<img src="dub/small/1930.svg" width="1" height="1" alt="">
-<img src="dub/small/1935.svg" width="1" height="1" alt="">
-<img src="dub/small/1940.svg" width="1" height="1" alt="">
-<img src="dub/small/1945.svg" width="1" height="1" alt="">
-<img src="dub/small/1950.svg" width="1" height="1" alt="">
-<img src="dub/small/1955.svg" width="1" height="1" alt="">
-<img src="dub/small/1960.svg" width="1" height="1" alt="">
-<img src="dub/small/1965.svg" width="1" height="1" alt="">
-<img src="dub/small/1970.svg" width="1" height="1" alt="">
-<img src="dub/small/1975.svg" width="1" height="1" alt="">
-<img src="dub/small/1980.svg" width="1" height="1" alt="">
 <img src="dub/small/1985.svg" width="1" height="1" alt="">
 <img src="dub/small/1990.svg" width="1" height="1" alt="">
 <img src="dub/small/1995.svg" width="1" height="1" alt="">
@@ -801,184 +499,23 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="dub/small/2005.svg" width="1" height="1" alt="">
 <img src="dub/small/2010.svg" width="1" height="1" alt="">
 <img src="dub/small/2015.svg" width="1" height="1" alt="">
-<img src="cwl/small/1840.svg" width="1" height="1" alt="">
-<img src="cwl/small/1845.svg" width="1" height="1" alt="">
-<img src="cwl/small/1850.svg" width="1" height="1" alt="">
-<img src="cwl/small/1855.svg" width="1" height="1" alt="">
-<img src="cwl/small/1860.svg" width="1" height="1" alt="">
-<img src="cwl/small/1865.svg" width="1" height="1" alt="">
-<img src="cwl/small/1870.svg" width="1" height="1" alt="">
-<img src="cwl/small/1875.svg" width="1" height="1" alt="">
-<img src="cwl/small/1880.svg" width="1" height="1" alt="">
-<img src="cwl/small/1885.svg" width="1" height="1" alt="">
-<img src="cwl/small/1890.svg" width="1" height="1" alt="">
-<img src="cwl/small/1895.svg" width="1" height="1" alt="">
-<img src="cwl/small/1900.svg" width="1" height="1" alt="">
-<img src="cwl/small/1905.svg" width="1" height="1" alt="">
-<img src="cwl/small/1910.svg" width="1" height="1" alt="">
-<img src="cwl/small/1915.svg" width="1" height="1" alt="">
-<img src="cwl/small/1920.svg" width="1" height="1" alt="">
-<img src="cwl/small/1925.svg" width="1" height="1" alt="">
-<img src="cwl/small/1930.svg" width="1" height="1" alt="">
-<img src="cwl/small/1935.svg" width="1" height="1" alt="">
-<img src="cwl/small/1940.svg" width="1" height="1" alt="">
-<img src="cwl/small/1945.svg" width="1" height="1" alt="">
-<img src="cwl/small/1950.svg" width="1" height="1" alt="">
-<img src="cwl/small/1955.svg" width="1" height="1" alt="">
-<img src="cwl/small/1960.svg" width="1" height="1" alt="">
-<img src="cwl/small/1965.svg" width="1" height="1" alt="">
-<img src="cwl/small/1970.svg" width="1" height="1" alt="">
-<img src="cwl/small/1975.svg" width="1" height="1" alt="">
-<img src="cwl/small/1980.svg" width="1" height="1" alt="">
-<img src="cwl/small/1985.svg" width="1" height="1" alt="">
 <img src="cwl/small/1990.svg" width="1" height="1" alt="">
 <img src="cwl/small/1995.svg" width="1" height="1" alt="">
 <img src="cwl/small/2000.svg" width="1" height="1" alt="">
 <img src="cwl/small/2005.svg" width="1" height="1" alt="">
 <img src="cwl/small/2010.svg" width="1" height="1" alt="">
 <img src="cwl/small/2015.svg" width="1" height="1" alt="">
-<img src="szd/small/1840.svg" width="1" height="1" alt="">
-<img src="szd/small/1845.svg" width="1" height="1" alt="">
-<img src="szd/small/1850.svg" width="1" height="1" alt="">
-<img src="szd/small/1855.svg" width="1" height="1" alt="">
-<img src="szd/small/1860.svg" width="1" height="1" alt="">
-<img src="szd/small/1865.svg" width="1" height="1" alt="">
-<img src="szd/small/1870.svg" width="1" height="1" alt="">
-<img src="szd/small/1875.svg" width="1" height="1" alt="">
-<img src="szd/small/1880.svg" width="1" height="1" alt="">
-<img src="szd/small/1885.svg" width="1" height="1" alt="">
-<img src="szd/small/1890.svg" width="1" height="1" alt="">
-<img src="szd/small/1895.svg" width="1" height="1" alt="">
-<img src="szd/small/1900.svg" width="1" height="1" alt="">
-<img src="szd/small/1905.svg" width="1" height="1" alt="">
-<img src="szd/small/1910.svg" width="1" height="1" alt="">
-<img src="szd/small/1915.svg" width="1" height="1" alt="">
-<img src="szd/small/1920.svg" width="1" height="1" alt="">
-<img src="szd/small/1925.svg" width="1" height="1" alt="">
-<img src="szd/small/1930.svg" width="1" height="1" alt="">
-<img src="szd/small/1935.svg" width="1" height="1" alt="">
-<img src="szd/small/1940.svg" width="1" height="1" alt="">
-<img src="szd/small/1945.svg" width="1" height="1" alt="">
-<img src="szd/small/1950.svg" width="1" height="1" alt="">
-<img src="szd/small/1955.svg" width="1" height="1" alt="">
-<img src="szd/small/1960.svg" width="1" height="1" alt="">
-<img src="szd/small/1965.svg" width="1" height="1" alt="">
-<img src="szd/small/1970.svg" width="1" height="1" alt="">
-<img src="szd/small/1975.svg" width="1" height="1" alt="">
-<img src="szd/small/1980.svg" width="1" height="1" alt="">
-<img src="szd/small/1985.svg" width="1" height="1" alt="">
-<img src="szd/small/1990.svg" width="1" height="1" alt="">
 <img src="szd/small/1995.svg" width="1" height="1" alt="">
 <img src="szd/small/2000.svg" width="1" height="1" alt="">
 <img src="szd/small/2005.svg" width="1" height="1" alt="">
 <img src="szd/small/2010.svg" width="1" height="1" alt="">
 <img src="szd/small/2015.svg" width="1" height="1" alt="">
-<img src="nqt/small/1840.svg" width="1" height="1" alt="">
-<img src="nqt/small/1845.svg" width="1" height="1" alt="">
-<img src="nqt/small/1850.svg" width="1" height="1" alt="">
-<img src="nqt/small/1855.svg" width="1" height="1" alt="">
-<img src="nqt/small/1860.svg" width="1" height="1" alt="">
-<img src="nqt/small/1865.svg" width="1" height="1" alt="">
-<img src="nqt/small/1870.svg" width="1" height="1" alt="">
-<img src="nqt/small/1875.svg" width="1" height="1" alt="">
-<img src="nqt/small/1880.svg" width="1" height="1" alt="">
-<img src="nqt/small/1885.svg" width="1" height="1" alt="">
-<img src="nqt/small/1890.svg" width="1" height="1" alt="">
-<img src="nqt/small/1895.svg" width="1" height="1" alt="">
-<img src="nqt/small/1900.svg" width="1" height="1" alt="">
-<img src="nqt/small/1905.svg" width="1" height="1" alt="">
-<img src="nqt/small/1910.svg" width="1" height="1" alt="">
-<img src="nqt/small/1915.svg" width="1" height="1" alt="">
-<img src="nqt/small/1920.svg" width="1" height="1" alt="">
-<img src="nqt/small/1925.svg" width="1" height="1" alt="">
-<img src="nqt/small/1930.svg" width="1" height="1" alt="">
-<img src="nqt/small/1935.svg" width="1" height="1" alt="">
-<img src="nqt/small/1940.svg" width="1" height="1" alt="">
-<img src="nqt/small/1945.svg" width="1" height="1" alt="">
-<img src="nqt/small/1950.svg" width="1" height="1" alt="">
-<img src="nqt/small/1955.svg" width="1" height="1" alt="">
-<img src="nqt/small/1960.svg" width="1" height="1" alt="">
-<img src="nqt/small/1965.svg" width="1" height="1" alt="">
-<img src="nqt/small/1970.svg" width="1" height="1" alt="">
-<img src="nqt/small/1975.svg" width="1" height="1" alt="">
-<img src="nqt/small/1980.svg" width="1" height="1" alt="">
-<img src="nqt/small/1985.svg" width="1" height="1" alt="">
-<img src="nqt/small/1990.svg" width="1" height="1" alt="">
-<img src="nqt/small/1995.svg" width="1" height="1" alt="">
-<img src="nqt/small/2000.svg" width="1" height="1" alt="">
 <img src="nqt/small/2005.svg" width="1" height="1" alt="">
 <img src="nqt/small/2010.svg" width="1" height="1" alt="">
 <img src="nqt/small/2015.svg" width="1" height="1" alt="">
-<img src="edi/small/1840.svg" width="1" height="1" alt="">
-<img src="edi/small/1845.svg" width="1" height="1" alt="">
-<img src="edi/small/1850.svg" width="1" height="1" alt="">
-<img src="edi/small/1855.svg" width="1" height="1" alt="">
-<img src="edi/small/1860.svg" width="1" height="1" alt="">
-<img src="edi/small/1865.svg" width="1" height="1" alt="">
-<img src="edi/small/1870.svg" width="1" height="1" alt="">
-<img src="edi/small/1875.svg" width="1" height="1" alt="">
-<img src="edi/small/1880.svg" width="1" height="1" alt="">
-<img src="edi/small/1885.svg" width="1" height="1" alt="">
-<img src="edi/small/1890.svg" width="1" height="1" alt="">
-<img src="edi/small/1895.svg" width="1" height="1" alt="">
-<img src="edi/small/1900.svg" width="1" height="1" alt="">
-<img src="edi/small/1905.svg" width="1" height="1" alt="">
-<img src="edi/small/1910.svg" width="1" height="1" alt="">
-<img src="edi/small/1915.svg" width="1" height="1" alt="">
-<img src="edi/small/1920.svg" width="1" height="1" alt="">
-<img src="edi/small/1925.svg" width="1" height="1" alt="">
-<img src="edi/small/1930.svg" width="1" height="1" alt="">
-<img src="edi/small/1935.svg" width="1" height="1" alt="">
-<img src="edi/small/1940.svg" width="1" height="1" alt="">
-<img src="edi/small/1945.svg" width="1" height="1" alt="">
-<img src="edi/small/1950.svg" width="1" height="1" alt="">
-<img src="edi/small/1955.svg" width="1" height="1" alt="">
-<img src="edi/small/1960.svg" width="1" height="1" alt="">
-<img src="edi/small/1965.svg" width="1" height="1" alt="">
-<img src="edi/small/1970.svg" width="1" height="1" alt="">
-<img src="edi/small/1975.svg" width="1" height="1" alt="">
-<img src="edi/small/1980.svg" width="1" height="1" alt="">
-<img src="edi/small/1985.svg" width="1" height="1" alt="">
-<img src="edi/small/1990.svg" width="1" height="1" alt="">
-<img src="edi/small/1995.svg" width="1" height="1" alt="">
-<img src="edi/small/2000.svg" width="1" height="1" alt="">
 <img src="edi/small/2005.svg" width="1" height="1" alt="">
 <img src="edi/small/2010.svg" width="1" height="1" alt="">
 <img src="edi/small/2015.svg" width="1" height="1" alt="">
-<img src="akl/small/1840.svg" width="1" height="1" alt="">
-<img src="akl/small/1845.svg" width="1" height="1" alt="">
-<img src="akl/small/1850.svg" width="1" height="1" alt="">
-<img src="akl/small/1855.svg" width="1" height="1" alt="">
-<img src="akl/small/1860.svg" width="1" height="1" alt="">
-<img src="akl/small/1865.svg" width="1" height="1" alt="">
-<img src="akl/small/1870.svg" width="1" height="1" alt="">
-<img src="akl/small/1875.svg" width="1" height="1" alt="">
-<img src="akl/small/1880.svg" width="1" height="1" alt="">
-<img src="akl/small/1885.svg" width="1" height="1" alt="">
-<img src="akl/small/1890.svg" width="1" height="1" alt="">
-<img src="akl/small/1895.svg" width="1" height="1" alt="">
-<img src="akl/small/1900.svg" width="1" height="1" alt="">
-<img src="akl/small/1905.svg" width="1" height="1" alt="">
-<img src="akl/small/1910.svg" width="1" height="1" alt="">
-<img src="akl/small/1915.svg" width="1" height="1" alt="">
-<img src="akl/small/1920.svg" width="1" height="1" alt="">
-<img src="akl/small/1925.svg" width="1" height="1" alt="">
-<img src="akl/small/1930.svg" width="1" height="1" alt="">
-<img src="akl/small/1935.svg" width="1" height="1" alt="">
-<img src="akl/small/1940.svg" width="1" height="1" alt="">
-<img src="akl/small/1945.svg" width="1" height="1" alt="">
-<img src="akl/small/1950.svg" width="1" height="1" alt="">
-<img src="akl/small/1955.svg" width="1" height="1" alt="">
-<img src="akl/small/1960.svg" width="1" height="1" alt="">
-<img src="akl/small/1965.svg" width="1" height="1" alt="">
-<img src="akl/small/1970.svg" width="1" height="1" alt="">
-<img src="akl/small/1975.svg" width="1" height="1" alt="">
-<img src="akl/small/1980.svg" width="1" height="1" alt="">
-<img src="akl/small/1985.svg" width="1" height="1" alt="">
-<img src="akl/small/1990.svg" width="1" height="1" alt="">
-<img src="akl/small/1995.svg" width="1" height="1" alt="">
-<img src="akl/small/2000.svg" width="1" height="1" alt="">
-<img src="akl/small/2005.svg" width="1" height="1" alt="">
 <img src="akl/small/2010.svg" width="1" height="1" alt="">
 <img src="akl/small/2015.svg" width="1" height="1" alt="">
 </div>
