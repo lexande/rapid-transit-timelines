@@ -20,7 +20,7 @@ div#sidebar {
 	float: left;
 	background: #ffffff;
 	border: 1px solid;
-	width: 14em;
+	width: 10em;
 	max-height: calc(100% - 22px);
 	top: 0;
 	left: 0;
@@ -183,7 +183,7 @@ function togglesidebar() {
 		s.style.display = 'block';
 		h.style.display = 'block';
 		a.innerHTML = "[&minus;]";
-		m.style.paddingLeft = "calc(14em + 22px)";
+		m.style.paddingLeft = "calc(10em + 22px)";
 	}
 }
 function selectall(i) {
@@ -202,6 +202,13 @@ function deselectall() {
 			document.getElementById(spans[i].id + "checkbox").click();
 		}
 	}
+}
+function sidebarclick(x) {
+	span = document.getElementById(x);
+	if (span.style.display == 'none') {
+		document.getElementById(x + "checkbox").click();
+	}
+	span.scrollIntoView();
 }
 
 document.onkeydown=function(keypress) {
@@ -229,8 +236,10 @@ window.onload=function() {
 </head><body>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
+<br>
+<small>(maps ordered by opening date; click a city name in sidebar to jump to its map)</small>
 <p>
-<div id="maps" style="padding-left: calc(14em + 22px);">
+<div id="maps" style="padding-left: calc(10em + 22px);">
 <noscript>Sorry, the maps really don't work without javascript.</noscript>
 HEREDOC
 
@@ -259,18 +268,16 @@ cat <<HEREDOC
 <div id=sidebar>
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
-<div id="form" style="display: block;">(ordered by opening date)<br>
+<div id="form" style="display: block;">
 HEREDOC
-for city in $@; do
+ALPHA=$(echo $@ | perl -wpe's/ /\n/g' | perl -wpe'/(...)/; $name=`cat $1/name`; chomp $name; print $name . " ";' | sort | perl -wpe's/.*(...)\n/$1 /')
+for city in $ALPHA; do
   NAME=`cat $city/name`
-  OPENYEAR=`cat $city/yr`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   if [ -f $city/s ]; then
-    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"$city\">$NAME</a> ($OPENYEAR)<br>" \
-      | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
+    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"javascript:sidebarclick('$UPPER')\">$NAME</a><br>"
   else
-    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\"><a href=\"$city\">$NAME</a> ($OPENYEAR)<br>" \
-      | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
+    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\"><a href=\"javascript:sidebarclick('$UPPER')\">$NAME</a><br>"
   fi
 done
 cat <<HEREDOC
