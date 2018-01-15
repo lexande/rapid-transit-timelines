@@ -52,6 +52,11 @@ span {
 	margin-left: 5px;
 	margin-right: 5px;
 }
+.headerfooter {
+	padding-left: calc(10em + 22px);
+	padding-right: calc(10em + 22px);
+	white-space: nowrap;
+}
 body {
 	text-align: center;
 }
@@ -234,11 +239,13 @@ window.onload=function() {
   })();
 </script>
 </head><body>
+<div class="headerfooter">
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <br>
 <small>(maps ordered by opening date; click a city name in sidebar to jump to its map)</small>
-<p>
+</div>
+<br>
 <div id="maps" style="padding-left: calc(10em + 22px);">
 <noscript>Sorry, the maps really don't work without javascript.</noscript>
 HEREDOC
@@ -262,9 +269,11 @@ done
 
 cat <<HEREDOC
 </div>
-<p>
+<br>
+<div class="headerfooter">
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
+</div>
 <div id=sidebar>
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
@@ -285,8 +294,10 @@ cat <<HEREDOC
 <div id="showall" style="display: block;"><a href="javascript:selectall(0)">show all</a></div>
 <div id="hideall" style="display: block;"><a href="javascript:deselectall()">hide all</a></div>
 </div>
-<p>
-Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 CSS pixels per km.
+<br>
+<div class="headerfooter">
+<div style="white-space: normal;">
+Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 CSS pixels per km.</div>
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
@@ -294,6 +305,7 @@ See also: <a href="misc">miscellaneous timelines</a>
 <div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
 by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
+</div>
 <div id=preloader>
 HEREDOC
 for city in $@; do
