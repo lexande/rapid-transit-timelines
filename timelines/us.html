@@ -27,11 +27,11 @@ span {
 <script language="JavaScript" type="text/javascript">
 start=1875;
 count=29;
-citystartyears = { nyc: 1875, chi: 1895, bwi: 1895, bos: 1900, pit: 1875, phl: 1905, lax: 1910, sfo: 1920, cle: 1920, sea: 1965, was: 1950, atl: 1980, san: 1985, mia: 1985, buf: 1985, pdx: 1990, sac: 1990, det: 1990, jax: 1990, dal: 1970, stl: 1995, den: 1995, las: 1995, slc: 2000, ind: 2005, msp: 2005, clt: 2005, sju: 2005, orf: 2015, hfd: 2015, };
+citystartyears = { nyc: 1875, chi: 1895, bwi: 1895, bos: 1900, pvd: 1900, pit: 1875, phl: 1905, lax: 1910, sfo: 1920, cle: 1920, sea: 1965, was: 1950, atl: 1980, san: 1985, mia: 1985, buf: 1985, pdx: 1990, sac: 1990, det: 1990, jax: 1990, dal: 1970, stl: 1995, den: 1995, las: 1995, slc: 2000, ind: 2005, msp: 2005, clt: 2005, sju: 2005, orf: 2015, hfd: 2015, };
 step=5;
 index=count-1;
 function update() {
-	["NYC","CHI","BWI","BOS","PIT","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","JAX","DAL","STL","DEN","LAS","SLC","IND","MSP","CLT","SJU","ORF","HFD"].forEach(function(city) {
+	["NYC","CHI","BWI","BOS","PVD","PIT","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","JAX","DAL","STL","DEN","LAS","SLC","IND","MSP","CLT","SJU","ORF","HFD"].forEach(function(city) {
 		yr = start+step*index;
 		mapimg = document.getElementById(city + "map");
 		if (yr < citystartyears[city.toLowerCase()]) {
@@ -130,6 +130,8 @@ window.onload=function() {
   <a href="bwi" class="map-wrap"><img class="map" id="BWImap" src="bwi/small/2015.svg" title="2015" alt="2015 map" width="189px" height="373px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BOS" style="display: inline-block; vertical-align: middle"><a href="../ttimeline">Boston</a><br>
   <a href="../ttimeline" class="map-wrap"><img class="map" id="BOSmap" src="bos/small/2015.svg" title="2015" alt="2015 map" width="235px" height="271px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PVD" style="display: inline-block; vertical-align: middle"><a href="pvd">Providence</a><br>
+  <a href="pvd" class="map-wrap"><img class="map" id="PVDmap" src="pvd/small/2015.svg" title="2015" alt="2015 map" width="73px" height="131px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PIT" style="display: inline-block; vertical-align: middle"><a href="pit">Pittsburgh</a><br>
   <a href="pit" class="map-wrap"><img class="map" id="PITmap" src="pit/small/2015.svg" title="2015" alt="2015 map" width="203px" height="207px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PHL" style="display: inline-block; vertical-align: middle"><a href="phl">Philadelphia</a><br>
@@ -191,6 +193,7 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="../ltimeline">Chicago</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BWIcheckbox" onclick="toggleshow('BWI')" checked><a href="bwi">Baltimore</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PVDcheckbox" onclick="toggleshow('PVD')" checked><a href="pvd">Providence</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PITcheckbox" onclick="toggleshow('PIT')" checked><a href="pit">Pittsburgh</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="phl">Philadelphia</a></div>
 <div style="display: inline-block"><input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')" checked><a href="lax">Los Angeles</a></div>
@@ -330,6 +333,42 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="bos/small/2005.svg" width="1" height="1" alt="">
 <img src="bos/small/2010.svg" width="1" height="1" alt="">
 <img src="bos/small/2015.svg" width="1" height="1" alt="">
+<img src="pvd/small/1840.svg" width="1" height="1" alt="">
+<img src="pvd/small/1845.svg" width="1" height="1" alt="">
+<img src="pvd/small/1850.svg" width="1" height="1" alt="">
+<img src="pvd/small/1855.svg" width="1" height="1" alt="">
+<img src="pvd/small/1860.svg" width="1" height="1" alt="">
+<img src="pvd/small/1865.svg" width="1" height="1" alt="">
+<img src="pvd/small/1870.svg" width="1" height="1" alt="">
+<img src="pvd/small/1875.svg" width="1" height="1" alt="">
+<img src="pvd/small/1880.svg" width="1" height="1" alt="">
+<img src="pvd/small/1885.svg" width="1" height="1" alt="">
+<img src="pvd/small/1890.svg" width="1" height="1" alt="">
+<img src="pvd/small/1895.svg" width="1" height="1" alt="">
+<img src="pvd/small/1900.svg" width="1" height="1" alt="">
+<img src="pvd/small/1905.svg" width="1" height="1" alt="">
+<img src="pvd/small/1910.svg" width="1" height="1" alt="">
+<img src="pvd/small/1915.svg" width="1" height="1" alt="">
+<img src="pvd/small/1920.svg" width="1" height="1" alt="">
+<img src="pvd/small/1925.svg" width="1" height="1" alt="">
+<img src="pvd/small/1930.svg" width="1" height="1" alt="">
+<img src="pvd/small/1935.svg" width="1" height="1" alt="">
+<img src="pvd/small/1940.svg" width="1" height="1" alt="">
+<img src="pvd/small/1945.svg" width="1" height="1" alt="">
+<img src="pvd/small/1950.svg" width="1" height="1" alt="">
+<img src="pvd/small/1955.svg" width="1" height="1" alt="">
+<img src="pvd/small/1960.svg" width="1" height="1" alt="">
+<img src="pvd/small/1965.svg" width="1" height="1" alt="">
+<img src="pvd/small/1970.svg" width="1" height="1" alt="">
+<img src="pvd/small/1975.svg" width="1" height="1" alt="">
+<img src="pvd/small/1980.svg" width="1" height="1" alt="">
+<img src="pvd/small/1985.svg" width="1" height="1" alt="">
+<img src="pvd/small/1990.svg" width="1" height="1" alt="">
+<img src="pvd/small/1995.svg" width="1" height="1" alt="">
+<img src="pvd/small/2000.svg" width="1" height="1" alt="">
+<img src="pvd/small/2005.svg" width="1" height="1" alt="">
+<img src="pvd/small/2010.svg" width="1" height="1" alt="">
+<img src="pvd/small/2015.svg" width="1" height="1" alt="">
 <img src="pit/small/1875.svg" width="1" height="1" alt="">
 <img src="pit/small/1880.svg" width="1" height="1" alt="">
 <img src="pit/small/1885.svg" width="1" height="1" alt="">
