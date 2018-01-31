@@ -26,7 +26,7 @@ count=11;
 step=5;
 index=count-1;
 function update() {
-	["A","E"].forEach(function(cont) {
+	["A","E","N","U"].forEach(function(cont) {
 		document[cont].src=(cont.toLowerCase() + '/' + (start+step*index) + ".svg");
 		document[cont].title=start+step*index;
 		document[cont].alt=start+step*index + " map";
@@ -80,6 +80,11 @@ window.onhashchange=function() {
   <img class="map" name="A" src="a/2015.svg" title="2015" alt="2015 map" width="1200px" height="860px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="E" style="display: inline-block; vertical-align: middle"><a href="e/2015.svg">Europe<br>
   <img class="map" name="E" src="e/2015.svg" title="2015" alt="2015 map" width="985px" height="860px" style="border-width: 1px; border-style: solid"></a></span>
+<br>
+<span id="N" style="display: inline-block; vertical-align: middle"><a href="n/2015.svg">Northeast US<br>
+  <img class="map" name="N" src="n/2015.svg" title="2015" alt="2015 map" width="150px" height="122.5px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="U" style="display: inline-block; vertical-align: middle"><a href="u/2015.svg">Uzbekistan<br>
+  <img class="map" name="U" src="u/2015.svg" title="2015" alt="2015 map" width="125px" height="75px" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
