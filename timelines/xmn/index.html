@@ -16,8 +16,8 @@ body {
 }
 </style>
 <script type="text/javascript">
-start=2010;
-count=2;
+start=2005;
+count=3;
 step=5;
 index=count-1;
 function update() {
@@ -69,9 +69,10 @@ window.onhashchange=function() {
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
 <a href="2015.svg">
-<img id="map" src="2015.svg" title="2015" alt="2015 map" width="435" height="946" style="border-width: 1px; border-style: solid">
+<img id="map" src="2015.svg" title="2015" alt="2015 map" width="435" height="968" style="border-width: 1px; border-style: solid">
 </a>
 <p>
+<a href="#2005" onclick="gotoyear(2005)">2005</a>
 <a href="#2010" onclick="gotoyear(2010)">2010</a>
 <a href="#2015" onclick="gotoyear(2015)">2015</a>
 <p>
@@ -83,6 +84,7 @@ Based on frequent midday service at the end of the year in question (<a href="..
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
+<img src="2005.svg" width="1" height="1" alt="">
 <img src="2010.svg" width="1" height="1" alt="">
 <img src="2015.svg" width="1" height="1" alt="">
 </div>
