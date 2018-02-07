@@ -25,7 +25,6 @@ function update() {
 	map.src=(start+step*index) + ".svg";
 	map.title=start+step*index;
 	map.alt=start+step*index + " map";
-	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -68,7 +67,7 @@ window.onhashchange=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-<a href="2015.svg">
+<a href="javascript:" onclick="nextmap()">
 <img id="map" src="2015.svg" title="2015" alt="2015 map" width="794" height="1838" style="border-width: 1px; border-style: solid">
 </a>
 <p>

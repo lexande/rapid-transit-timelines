@@ -21,7 +21,6 @@ function update() {
 	document["MAP"].src=(start+step*index) + ".svg";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
-	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -63,9 +62,9 @@ window.onhashchange=function() {
 </head><body>
 <center>
 <a href="javascript:" onclick="prevmap()">one year earlier (or press a)</a> ---
-<a href="javascript:nextmap()">one year later (or press s)</a>
+<a href="javascript:" onclick="nextmap()">one year later (or press s)</a>
 <p>
-<a name="LINK" href="1932.svg">
+<a href="javascript:" onlick="nextmap()">
 <img name="MAP" src="1932.svg" title="1932" alt="1932 map" width="1169px" height="1169px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
@@ -97,7 +96,7 @@ window.onhashchange=function() {
 <a href="#1957" onclick="gotoyear(1957)">1957</a>
 <p>
 <a href="javascript:" onclick="prevmap()">one year earlier (or press a)</a> --- 
-<a href="javascript:nextmap()">one year later (or press s)</a>
+<a href="javascript:" onclick="nextmap()">one year later (or press s)</a>
 <p>
 Based on service at the end of the year in question.  Lines coloured by operator.  Scale 30 CSS pixels per km.
 <p>

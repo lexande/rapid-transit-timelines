@@ -51,7 +51,6 @@ function update() {
                 document["MAP"].title="mid-June";
                 document["MAP"].alt="June map";
         }
-	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -97,9 +96,9 @@ window.onhashchange=function() {
 </head><body>
 <center>
 <a href="javascript:" onclick="prevmap()">previous day (or press a)</a> ---
-<a href="javascript:nextmap()">next day (or press s)</a>
+<a href="javascript:" onclick="nextmap()">next day (or press s)</a>
 <p>
-<a name="LINK" href="1.svg">
+<a href="javascript:" onclick="nextmap()">
 <img name="MAP" src="1.svg" title="Oct 26" alt="Oct 26 map" width="1169px" height="1169px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
@@ -137,7 +136,7 @@ window.onhashchange=function() {
 <a href="#32" onclick="gotoyear(32)">mid-Jun</a>
 <p>
 <a href="javascript:" onclick="prevmap()">previous day (or press a)</a> --- 
-<a href="javascript:nextmap()">next day (or press s)</a>
+<a href="javascript:" onclick="nextmap()">next day (or press s)</a>
 <p>
 Based on midday service on the day in question.  Check <a href="http://www.mta.info">mta.info</a>, <a href="http://www.panynj.gov">panynj.gov</a> and <a href="http://www.njtransit.com">njtransit.com</a> for most current information.
 <p>

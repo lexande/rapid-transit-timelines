@@ -21,7 +21,6 @@ function update() {
 	document["MAP"].src=(start+step*index) + ".svg";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
-	document.getElementsByTagName('a')[2].href=((start+step*index) + ".svg");
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -63,9 +62,9 @@ window.onhashchange=function() {
 </head><body>
 <center>
 <a href="javascript:" onclick="prevmap()">ten years earlier (or press a)</a> ---
-<a href="javascript:nextmap()">ten years later (or press s)</a>
+<a href="javascript:" onclick="nextmap()">ten years later (or press s)</a>
 <p>
-<a name="LINK" href="2010.svg">
+<a href="javascript:" onclick="nextmap()">
 <img name="MAP" src="2010.svg" title="2010" alt="2010 map" width="739px" height="739px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
@@ -88,7 +87,7 @@ window.onhashchange=function() {
 <a href="#2020" onclick="gotoyear(2020)">2020</a>
 <p>
 <a href="javascript:" onclick="prevmap()">ten years earlier (or press a)</a> --- 
-<a href="javascript:nextmap()">ten years later (or press s)</a>
+<a href="javascript:" onclick="nextmap()">ten years later (or press s)</a>
 <p>
 Red represents cable cars, yellow horsecars, green trolleybuses, blue electric streetcars, purple tunnelled/elevated electric streetcars, pink full rapid transit, and black steam or diesel trains.
 <p>
