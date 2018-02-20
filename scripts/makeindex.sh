@@ -39,19 +39,25 @@ s!CITYNAME!${CITYNAME}!g;
 s/INDEX/${INDEX}/g;
 s/SNAME/${SNAME}/g;
 s/WIDTH/${W}/g;
-s/HEIGHT/${H}/g;" ~/timelines/scripts/boilerplate/car > index.html
+s/HEIGHT/${H}/g;" ~/timelines/scripts/boilerplate/part1 > index.html
 for year in $(seq $START $STEP $END); do
 	echo \<a href=\"#${year}\" onclick=\"gotoyear\(${year}\)\"\>${year}\</a\> >> index.html
 done
 if [ -d uncropped ]; then
-	sed -e"s/SNAME/${SNAME}/g" ~/timelines/scripts/boilerplate/cadru >> index.html
+	sed -e"s/SNAME/${SNAME}/g" ~/timelines/scripts/boilerplate/part2u >> index.html
 else
-	sed -e"s/SNAME/${SNAME}/g" ~/timelines/scripts/boilerplate/cadr >> index.html
+	sed -e"s/SNAME/${SNAME}/g" ~/timelines/scripts/boilerplate/part2 >> index.html
 fi
 for year in $(seq $START $STEP $END); do
 	echo \<img src=\"${year}.svg\" width=\"1\" height=\"1\" alt=\"\"\> >> index.html
 done
-sed -e"s!<a href=.*>${CITYNAME}</a>!${CITYNAME}!" ~/timelines/scripts/boilerplate/cdr >> index.html
+sed -e"s!<a href=.*>${CITYNAME}</a>!${CITYNAME}!" ~/timelines/scripts/boilerplate/part3 >> index.html
+if [ -f seealso ]; then
+	cat seealso >> index.html
+elif [ $(basename $(pwd)) == 'uncropped' ] && [ -f ../seealso ]; then
+	cat ../seealso >> index.html
+fi
+cat ~/timelines/scripts/boilerplate/part4 >> index.html
 if [ $(basename $(pwd)) == 'uncropped' ]; then
 	sed -e's!\.\.!\.\./\.\.!' -i index.html
 fi
