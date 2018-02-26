@@ -32,7 +32,7 @@
   <image
      xlink:href="../streetmap/bososm.png"
      id="image12"
-     height="3995.077"
+     height="3995.0769"
      width="3246"
      y="-249.687"
      x="-1.110223e-16"
@@ -212,13 +212,13 @@
      id="path3858"
      style="fill:none;stroke:#008345;stroke-width:0.99999815;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 2265.9996,1110.3903 -9.4216,9.3536"
+     d="m 2265,1114 -11,-3"
      id="path2851"
-     style="fill:none;stroke:#ef8b22;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#ef8b22;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 2189.197,1436.7119 5.7334,-3.8196 11.3314,3.1581 17.0091,-59.7169 5.1446,-3.4192 43.38,13.0794 4.6075,-2.1173 9.3547,-22.2672 12.192,-26.3348 32.1869,-19.9949 14.6304,-14.6304 3.4138,-19.0195 0.4877,-10.729 -4.8768,-93.1469 -0.4877,-35.6007 -6.3399,-19.0195 -18.0441,-12.6797 -24.8717,-8.7782 -10.2413,-3.9015 -20.6381,14.4077 -7.1597,0.2227"
+     d="m 2189.197,1436.7119 5.7334,-3.8196 11.3314,3.1581 17.0091,-59.7169 5.1446,-3.4192 43.38,13.0794 4.6075,-2.1173 9.3547,-22.2672 12.192,-26.3348 32.1869,-19.9949 14.6304,-14.6304 3.4138,-19.0195 0.4877,-10.729 -4.8768,-93.1469 -0.4877,-35.6007 -6.3399,-19.0195 -18.0441,-12.6797 -24.8717,-8.7782 -10.2413,-3.9015 L 2272,1106 l -17.4009,16.7393"
      id="path5629-1"
-     style="fill:none;stroke:#ef8b22;stroke-width:4.99999094;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#ef8b22;stroke-width:4.99999094;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="m 2163.309,1463.8903 5.9071,8.091 100.9102,36.4291 5.1709,-3.1688 -0.1505,-10.2734 2.9207,-3.9233 124.2455,110.503"
      id="path4961-2"
@@ -323,4 +323,8 @@
      d="m 1650.2932,1656.3632 -41.2603,2.733 -29.6564,5.5174 -88.2795,22.07 1.3794,22.7595 7.5864,12.4143 17.2422,14.4833 6.2071,11.0351 8.966,5.5174"
      id="path5639"
      style="fill:none;stroke:#008345;stroke-width:0.99999815;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ef8b22;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 2236.3204,1136.2041 -5.9573,-1.8392 -6.3311,4.5311"
+     id="path876" />
 </svg>
