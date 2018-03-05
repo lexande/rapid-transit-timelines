@@ -43,6 +43,6 @@ $(foreach dir, $(wildcard ??? ???/uncropped), $(eval $(call WriteRules, $(dir)))
 rsync: all
 	rsync -4Pav ~/timelines/timelines --exclude '*osm*.png' --exclude '*streetmap*' arapp_arapp@ssh.phx.nearlyfreespeech.net:.
 
-$(call WriteOverview,us.html,nyc chi bwi bos pvd pit phl lax sfo cle sea was atl san mia buf pdx sac det jax dal stl den las slc ind msp clt sju orf hfd,United States)
+$(call WriteOverview,us.html,nyc chi bwi phl bos pvd pit lax sfo cle sea was atl san mia buf pdx sac det jax dal stl den las slc ind msp clt sju orf hfd,United States)
 $(call WriteOverview,anglo.html,lon mel lpl syd gla ncl yvr adl man pme yto per yeg bhx bne yyc yow dub cwl szd nqt edi akl,Non-US Anglosphere)
-$(call WriteMainIndex,index.html,lon nyc par mel ber syd chi bud bos vie osl tyo dus osa phl lax ham cai yvr ngo bue fuk sfo mad hij bcn bom sto lis nap ath cph mow rio was bru yto rom led sao kbp ams waw mil tbs str ymq maa bak sdj muc fra mex spk nue hel bjs fnj prg sel hrk scl haj zrh lyn hkg buh bne ccs lil msq ccu mnl tsn rec pus bhz sin ist bkk mty sha tls bio mde tpe ank kul uio tae sof can thr izm bog dlc del lim jkt wuh ckg nkg xmn dxb ctu she xiy blr szv hgh cgo csx ngb)
+$(call WriteMainIndex,index.html,lon nyc par mel ber syd chi bud phl bos vie osl tyo dus osa lax ham cai yvr ngo bue fuk sfo mad hij bcn bom sto lis nap ath cph mow rio was bru yto rom led sao kbp ams waw mil tbs str ymq maa bak sdj muc fra mex spk nue hel bjs fnj prg sel hrk scl haj zrh lyn hkg buh bne ccs lil msq ccu mnl tsn rec pus bhz sin ist bkk mty sha tls bio mde tpe ank kul uio tae sof can thr izm bog dlc del lim jkt wuh ckg nkg xmn dxb ctu she xiy blr szv hgh cgo csx ngb)
