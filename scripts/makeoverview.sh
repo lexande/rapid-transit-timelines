@@ -108,6 +108,19 @@ function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
 	else document.getElementById(x).style.display = 'inline-block';
 }
+intervalID=0;
+function startanim() {
+	intervalID = setInterval(nextmap, 1000);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = stopanim;
+	animbutton.innerText = "click here to stop animation";
+}
+function stopanim() {
+	clearInterval(intervalID);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = startanim;
+	animbutton.innerText = "click here to animate";
+}
 
 document.onkeydown=function(keypress) {
 	if(keypress.which == 65) { prevmap(); }
@@ -155,6 +168,8 @@ cat <<HEREDOC
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
+<br>
+<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <form action="">Cities to show: 
 HEREDOC

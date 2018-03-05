@@ -46,6 +46,19 @@ function gotoyear(x) {
 		update();
 	}
 }
+intervalID=0;
+function startanim() {
+	intervalID = setInterval(nextmap, 1000);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = stopanim;
+	animbutton.innerText = "click here to stop animation";
+}
+function stopanim() {
+	clearInterval(intervalID);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = startanim;
+	animbutton.innerText = "click here to animate";
+}
 window.onload=function() {
 	gotoyear(location.hash.substring(1));
 }
@@ -76,6 +89,8 @@ window.onhashchange=function() {
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
+<br>
+<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).  Scale 30 CSS pixels per km.
 <p>

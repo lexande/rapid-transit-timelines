@@ -46,6 +46,19 @@ function gotoyear(x) {
 		update();
 	}
 }
+intervalID=0;
+function startanim() {
+	intervalID = setInterval(nextmap, 1000);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = stopanim;
+	animbutton.innerText = "click here to stop animation";
+}
+function stopanim() {
+	clearInterval(intervalID);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = startanim;
+	animbutton.innerText = "click here to animate";
+}
 window.onload=function() {
 	gotoyear(location.hash.substring(1));
 }
