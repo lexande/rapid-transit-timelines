@@ -27,11 +27,11 @@ span {
 <script language="JavaScript" type="text/javascript">
 start=1875;
 count=29;
-citystartyears = { nyc: 1875, chi: 1895, bwi: 1895, phl: 1900, bos: 1900, pvd: 1900, pit: 1875, lax: 1910, sfo: 1920, cle: 1920, sea: 1965, was: 1950, atl: 1980, san: 1985, mia: 1985, buf: 1985, pdx: 1990, sac: 1990, det: 1990, jax: 1990, dal: 1970, stl: 1995, den: 1995, las: 1995, slc: 2000, ind: 2005, msp: 2005, clt: 2005, sju: 2005, orf: 2015, hfd: 2015, };
+citystartyears = { nyc: 1875, chi: 1895, bwi: 1895, phl: 1900, bos: 1900, pvd: 1900, pit: 1875, lax: 1910, sfo: 1920, cle: 1920, sea: 1965, was: 1950, atl: 1980, san: 1985, mia: 1985, buf: 1985, pdx: 1990, sac: 1990, det: 1990, jax: 1990, dal: 1970, stl: 1995, den: 1995, slc: 2000, msp: 2005, clt: 2005, las: 1995, sju: 2005, orf: 2015, hfd: 2015, };
 step=5;
 index=count-1;
 function update() {
-	["NYC","CHI","BWI","PHL","BOS","PVD","PIT","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","JAX","DAL","STL","DEN","LAS","SLC","IND","MSP","CLT","SJU","ORF","HFD"].forEach(function(city) {
+	["NYC","CHI","BWI","PHL","BOS","PVD","PIT","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","JAX","DAL","STL","DEN","SLC","MSP","CLT","LAS","SJU","ORF","HFD"].forEach(function(city) {
 		yr = start+step*index;
 		mapimg = document.getElementById(city + "map");
 		if (yr < citystartyears[city.toLowerCase()]) {
@@ -181,16 +181,14 @@ window.onload=function() {
   <a href="stl" class="map-wrap"><img class="map" id="STLmap" src="stl/small/2015.svg" title="2015" alt="2015 map" width="440px" height="290px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="DEN" style="display: inline-block; vertical-align: middle"><a href="den">Denver</a><br>
   <a href="den" class="map-wrap"><img class="map" id="DENmap" src="den/small/2015.svg" title="2015" alt="2015 map" width="319px" height="261px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="LAS" style="display: inline-block; vertical-align: middle"><a href="las">Las Vegas</a><br>
-  <a href="las" class="map-wrap"><img class="map" id="LASmap" src="las/small/2015.svg" title="2015" alt="2015 map" width="40px" height="80px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SLC" style="display: inline-block; vertical-align: middle"><a href="slc">Salt Lake City</a><br>
   <a href="slc" class="map-wrap"><img class="map" id="SLCmap" src="slc/small/2015.svg" title="2015" alt="2015 map" width="174px" height="305px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="IND" style="display: inline-block; vertical-align: middle"><a href="ind">Indianapolis</a><br>
-  <a href="ind" class="map-wrap"><img class="map" id="INDmap" src="ind/small/2015.svg" title="2015" alt="2015 map" width="40px" height="33px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="MSP" style="display: inline-block; vertical-align: middle"><a href="msp">Minneapolis</a><br>
   <a href="msp" class="map-wrap"><img class="map" id="MSPmap" src="msp/small/2015.svg" title="2015" alt="2015 map" width="163px" height="170px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CLT" style="display: inline-block; vertical-align: middle"><a href="clt">Charlotte</a><br>
   <a href="clt" class="map-wrap"><img class="map" id="CLTmap" src="clt/small/2015.svg" title="2015" alt="2015 map" width="65px" height="148px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="LAS" style="display: inline-block; vertical-align: middle"><a href="las">Las Vegas</a><br>
+  <a href="las" class="map-wrap"><img class="map" id="LASmap" src="las/small/2015.svg" title="2015" alt="2015 map" width="40px" height="80px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SJU" style="display: inline-block; vertical-align: middle"><a href="sju">San Juan</a><br>
   <a href="sju" class="map-wrap"><img class="map" id="SJUmap" src="sju/small/2015.svg" title="2015" alt="2015 map" width="120px" height="73px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="ORF" style="display: inline-block; vertical-align: middle"><a href="orf">Norfolk</a><br>
@@ -227,11 +225,10 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="DALcheckbox" onclick="toggleshow('DAL')" checked><a href="dal">Dallas</a></div>
 <div style="display: inline-block"><input type="checkbox" id="STLcheckbox" onclick="toggleshow('STL')" checked><a href="stl">Saint Louis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')" checked><a href="den">Denver</a></div>
-<div style="display: inline-block"><input type="checkbox" id="LAScheckbox" onclick="toggleshow('LAS')" checked><a href="las">Las Vegas</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SLCcheckbox" onclick="toggleshow('SLC')" checked><a href="slc">Salt Lake City</a></div>
-<div style="display: inline-block"><input type="checkbox" id="INDcheckbox" onclick="toggleshow('IND')" checked><a href="ind">Indianapolis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MSPcheckbox" onclick="toggleshow('MSP')" checked><a href="msp">Minneapolis</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="clt">Charlotte</a></div>
+<div style="display: inline-block"><input type="checkbox" id="LAScheckbox" onclick="toggleshow('LAS')" checked><a href="las">Las Vegas</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SJUcheckbox" onclick="toggleshow('SJU')" checked><a href="sju">San Juan</a></div>
 <div style="display: inline-block"><input type="checkbox" id="ORFcheckbox" onclick="toggleshow('ORF')" checked><a href="orf">Norfolk</a></div>
 <div style="display: inline-block"><input type="checkbox" id="HFDcheckbox" onclick="toggleshow('HFD')" checked><a href="hfd">Hartford</a></div>
@@ -605,20 +602,10 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="den/small/2005.svg" width="1" height="1" alt="">
 <img src="den/small/2010.svg" width="1" height="1" alt="">
 <img src="den/small/2015.svg" width="1" height="1" alt="">
-<img src="las/small/1995.svg" width="1" height="1" alt="">
-<img src="las/small/2000.svg" width="1" height="1" alt="">
-<img src="las/small/2005.svg" width="1" height="1" alt="">
-<img src="las/small/2010.svg" width="1" height="1" alt="">
-<img src="las/small/2015.svg" width="1" height="1" alt="">
-<img src="las/small/2020.svg" width="1" height="1" alt="">
 <img src="slc/small/2000.svg" width="1" height="1" alt="">
 <img src="slc/small/2005.svg" width="1" height="1" alt="">
 <img src="slc/small/2010.svg" width="1" height="1" alt="">
 <img src="slc/small/2015.svg" width="1" height="1" alt="">
-<img src="ind/small/2005.svg" width="1" height="1" alt="">
-<img src="ind/small/2010.svg" width="1" height="1" alt="">
-<img src="ind/small/2015.svg" width="1" height="1" alt="">
-<img src="ind/small/2020.svg" width="1" height="1" alt="">
 <img src="msp/small/2005.svg" width="1" height="1" alt="">
 <img src="msp/small/2010.svg" width="1" height="1" alt="">
 <img src="msp/small/2015.svg" width="1" height="1" alt="">
@@ -626,6 +613,12 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="clt/small/2010.svg" width="1" height="1" alt="">
 <img src="clt/small/2015.svg" width="1" height="1" alt="">
 <img src="clt/small/2020.svg" width="1" height="1" alt="">
+<img src="las/small/1995.svg" width="1" height="1" alt="">
+<img src="las/small/2000.svg" width="1" height="1" alt="">
+<img src="las/small/2005.svg" width="1" height="1" alt="">
+<img src="las/small/2010.svg" width="1" height="1" alt="">
+<img src="las/small/2015.svg" width="1" height="1" alt="">
+<img src="las/small/2020.svg" width="1" height="1" alt="">
 <img src="sju/small/2005.svg" width="1" height="1" alt="">
 <img src="sju/small/2010.svg" width="1" height="1" alt="">
 <img src="sju/small/2015.svg" width="1" height="1" alt="">
