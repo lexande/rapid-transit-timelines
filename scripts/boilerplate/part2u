@@ -1,6 +1,8 @@
 <p>
 <a href="javascript:" onclick="prevmap()">SNAME earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">SNAME later (or press s)</a>
+<br>
+<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="uncropped">click here for uncropped version</a>
 <p>
