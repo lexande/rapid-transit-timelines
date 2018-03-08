@@ -25,6 +25,9 @@ span {
 	margin-left: 5px;
 	margin-right: 5px;
 }
+body {
+	text-align: center;
+}
 </style>
 <script language="JavaScript" type="text/javascript">
 HEREDOC
@@ -145,7 +148,6 @@ window.onload=function() {
   })();
 </script>
 </head><body>
-<center>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
@@ -197,12 +199,7 @@ for city in $@; do
   done
 done
 
-cat <<HEREDOC
-</div>
-<font size="1">By <a href="/">Alexander Rapp</a> based on map data 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
-by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</font>
-</center>
-</body></html>
-HEREDOC
-
+echo '</div>'
+echo 'See also: <a href="..">rapid transit timelines around the world</a> -'
+echo '<a href="misc">miscellaneous timelines and maps</a>'
+cat ~/timelines/scripts/boilerplate/part4
