@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 400 500"
-   height="500"
-   width="400"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="550"
+   height="700"
+   viewBox="0 0 550 700">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,15 +27,24 @@
      id="defs6" />
   <image
      style="display:none"
-     y="30"
-     x="20"
-     id="image10"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../../timelines/streetmap/mgwosm.png"
-     preserveAspectRatio="none"
+     width="520"
      height="520"
-     width="520" />
+     preserveAspectRatio="none"
+     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../../timelines/streetmap/mgwosm.png"
+     id="image10"
+     x="100"
+     y="230" />
   <path
-     id="path817"
-     d="m 258.37288,51.288135 -5.69491,24.949152 1.08474,18.983053 -4.88135,7.8644 -16,5.69492 -18.98305,2.71186 -12.20339,4.61017 -11.38983,12.74577 -21.96611,32.27118 -32.54237,9.76272 -12.74576,9.49152 -6.77966,-1.08474 -16,-12.20339 -8.67797,-1.62712 -16,10.30508 -1.898305,5.9661 4.881356,10.0339 1.355932,2.98305 -1.898305,14.37288 1.898305,4.0678 5.423729,2.16949 16.542378,16.54237 16.54237,7.05085 16.27118,1.62712 11.93221,0.27119 23.59322,-5.15255 28.74576,2.1695 18.44068,16.54237 24.67797,18.44068 10.30508,8.67796 32.54237,46.64407 4.33899,11.9322 16.54237,14.64407 v 11.66102 l -13.01695,11.66102 v 17.8983 l -12.20339,24.13559 1.62712,3.25424 12.20339,9.22034 v 1.62712 l -2.71187,5.15254"
-     style="opacity:1;fill:none;fill-opacity:0;fill-rule:nonzero;stroke:#002855;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:0;fill-rule:nonzero;stroke:#002855;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 338.37288,251.28813 -5.69491,24.94916 1.08474,18.98305 -4.88135,7.8644 -16,5.69492 -18.98305,2.71186 -12.20339,4.61017 -11.38983,12.74577 -21.96611,32.27118 -32.54237,9.76272 -12.74576,9.49152 -6.77966,-1.08474 -16,-12.20339 -8.67797,-1.62712 -16,10.30508 -1.8983,5.9661 4.88135,10.0339 1.35593,2.98305 -1.8983,14.37288 1.8983,4.0678 5.42373,2.16949 16.54238,16.54237 16.54237,7.05085 16.27118,1.62712 11.93221,0.27119 23.59322,-5.15255 28.74576,2.1695 18.44068,16.54237 24.67797,18.44068 10.30508,8.67796 32.54237,46.64407 4.33899,11.9322 16.54237,14.64407 v 11.66102 l -13.01695,11.66102 v 17.8983 l -12.20339,24.13559 1.62712,3.25424 12.20339,9.22034 v 1.62712 l -2.71187,5.15254"
+     id="path817" />
+  <text
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
+     id="text2984"
+     y="206.96097"
+     x="89.453102"><tspan
+       id="tspan1"
+       y="206.96097"
+       x="89.453102">2015</tspan></text>
 </svg>
