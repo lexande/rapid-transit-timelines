@@ -200,6 +200,6 @@ for city in $@; do
 done
 
 echo '</div>'
-echo 'See also: <a href="..">rapid transit timelines around the world</a> -'
+echo 'See also: <a href=".">rapid transit timelines around the world</a> -'
 echo '<a href="misc">miscellaneous timelines and maps</a>'
 cat ~/timelines/scripts/boilerplate/part4

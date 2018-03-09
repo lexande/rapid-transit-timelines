@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Australia UNTITLED NZ Rapid Transit Timelines</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<style type="text/css">
+div#preloader {
+	position: absolute;
+	left: -9999px;
+	top:  -9999px;
+}
+div#preloader img {
+	display: block;
+}
+a:link.map-wrap {
+        text-decoration: none;
+}
+span {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.map {
+	border: 1px solid;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+body {
+	text-align: center;
+}
+</style>
+<script language="JavaScript" type="text/javascript">
+start=1880;
+count=28;
+citystartyears = { mel: 1880, syd: 1895, adl: 1985, per: 1955, bne: 1980, akl: 2010, };
+step=5;
+index=count-1;
+function update() {
+	["MEL","SYD","ADL","PER","BNE","AKL"].forEach(function(city) {
+		yr = start+step*index;
+		mapimg = document.getElementById(city + "map");
+		if (yr < citystartyears[city.toLowerCase()]) {
+			if (mapimg.tagName.toUpperCase() == "IMG") {
+				svgelt = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+				textelt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+				tspanelt = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+				yearcontent = document.createTextNode(yr);
+				tspanelt.appendChild(yearcontent);
+				textelt.appendChild(tspanelt);
+				textelt.setAttribute("x", "6.48935");
+				textelt.setAttribute("y", "15.0139");
+				textelt.setAttribute("style", "-inkscape-font-specification:Sans");
+				textelt.setAttribute("font-family", "Sans");
+				textelt.setAttribute("font-weight", "400");
+				textelt.setAttribute("font-size", "10.4464px");
+				svgelt.appendChild(textelt);
+				svgelt.setAttribute("id", mapimg.id);
+				svgelt.setAttribute("width", mapimg.width);
+				svgelt.setAttribute("height", mapimg.height);
+				svgelt.setAttribute("class", "map");
+				svgelt.setAttribute("title", yr);
+				svgelt.setAttribute("alt", yr + " map");
+				mapimg.parentNode.replaceChild(svgelt, mapimg);
+			} else {
+				mapimg.getElementsByTagName("text")[0].getElementsByTagName("tspan")[0].innerHTML = yr;
+				mapimg.setAttribute("title", yr);
+				mapimg.setAttribute("alt", yr + " map");
+			}
+		} else {
+			if (mapimg.tagName.toUpperCase() == "SVG") {
+			console.log(city,yr);
+				imgelt = document.createElement("img");
+				imgelt.setAttribute("class", "map");
+				imgelt.id = mapimg.getAttribute("id");
+				imgelt.width = mapimg.getAttribute("width");
+				imgelt.height = mapimg.getAttribute("height");
+				imgelt.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+				imgelt.title = yr;
+				imgelt.alt = yr + " map";
+				mapimg.parentNode.replaceChild(imgelt, mapimg);
+			} else {
+				mapimg.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+				mapimg.title = yr;
+				mapimg.alt = yr + " map";
+			}
+		}
+	
+	});
+}
+function nextmap() {
+	index=(index+1)%count;
+	update();
+}
+function prevmap() {
+	index=(index+count-1)%count;
+	update();
+}
+function toggleshow(x) {
+	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
+	else document.getElementById(x).style.display = 'inline-block';
+}
+intervalID=0;
+function startanim() {
+	intervalID = setInterval(nextmap, 1000);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = stopanim;
+	animbutton.innerText = "click here to stop animation";
+}
+function stopanim() {
+	clearInterval(intervalID);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = startanim;
+	animbutton.innerText = "click here to animate";
+}
+
+document.onkeydown=function(keypress) {
+	if(keypress.which == 65) { prevmap(); }
+	if(keypress.which == 83) { nextmap(); }
+}
+window.onload=function() {
+	inyear = parseInt(location.hash.substring(1));
+	if( start < inyear & inyear < start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19998781-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
+<p>
+<span id="MEL" style="display: inline-block; vertical-align: middle"><a href="mel">Melbourne</a><br>
+  <a href="mel" class="map-wrap"><img class="map" id="MELmap" src="mel/small/2015.svg" title="2015" alt="2015 map" width="740px" height="624px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="SYD" style="display: inline-block; vertical-align: middle"><a href="syd">Sydney</a><br>
+  <a href="syd" class="map-wrap"><img class="map" id="SYDmap" src="syd/small/2015.svg" title="2015" alt="2015 map" width="527px" height="414px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="ADL" style="display: inline-block; vertical-align: middle"><a href="adl">Adelaide</a><br>
+  <a href="adl" class="map-wrap"><img class="map" id="ADLmap" src="adl/small/2015.svg" title="2015" alt="2015 map" width="239px" height="500px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PER" style="display: inline-block; vertical-align: middle"><a href="per">Perth</a><br>
+  <a href="per" class="map-wrap"><img class="map" id="PERmap" src="per/small/2015.svg" title="2015" alt="2015 map" width="348px" height="1008px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="BNE" style="display: inline-block; vertical-align: middle"><a href="bne">Brisbane</a><br>
+  <a href="bne" class="map-wrap"><img class="map" id="BNEmap" src="bne/small/2015.svg" title="2015" alt="2015 map" width="261px" height="399px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="AKL" style="display: inline-block; vertical-align: middle"><a href="akl">Auckland</a><br>
+  <a href="akl" class="map-wrap"><img class="map" id="AKLmap" src="akl/small/2015.svg" title="2015" alt="2015 map" width="225px" height="410px" style="border-width: 1px; border-style: solid"></a></span>
+<p>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
+<br>
+<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
+<p>
+<form action="">Cities to show: 
+<div style="display: inline-block"><input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked><a href="mel">Melbourne</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')" checked><a href="syd">Sydney</a></div>
+<div style="display: inline-block"><input type="checkbox" id="ADLcheckbox" onclick="toggleshow('ADL')" checked><a href="adl">Adelaide</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PERcheckbox" onclick="toggleshow('PER')" checked><a href="per">Perth</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BNEcheckbox" onclick="toggleshow('BNE')" checked><a href="bne">Brisbane</a></div>
+<div style="display: inline-block"><input type="checkbox" id="AKLcheckbox" onclick="toggleshow('AKL')" checked><a href="akl">Auckland</a></div>
+</form>
+<p>
+Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 CSS pixels per km.
+<p>
+Please send any corrections or questions to threestationsquare at gmail dot com.
+<p>
+<div id="preloader">
+<img src="mel/small/1880.svg" width="1" height="1" alt="">
+<img src="mel/small/1885.svg" width="1" height="1" alt="">
+<img src="mel/small/1890.svg" width="1" height="1" alt="">
+<img src="mel/small/1895.svg" width="1" height="1" alt="">
+<img src="mel/small/1900.svg" width="1" height="1" alt="">
+<img src="mel/small/1905.svg" width="1" height="1" alt="">
+<img src="mel/small/1910.svg" width="1" height="1" alt="">
+<img src="mel/small/1915.svg" width="1" height="1" alt="">
+<img src="mel/small/1920.svg" width="1" height="1" alt="">
+<img src="mel/small/1925.svg" width="1" height="1" alt="">
+<img src="mel/small/1930.svg" width="1" height="1" alt="">
+<img src="mel/small/1935.svg" width="1" height="1" alt="">
+<img src="mel/small/1940.svg" width="1" height="1" alt="">
+<img src="mel/small/1945.svg" width="1" height="1" alt="">
+<img src="mel/small/1950.svg" width="1" height="1" alt="">
+<img src="mel/small/1955.svg" width="1" height="1" alt="">
+<img src="mel/small/1960.svg" width="1" height="1" alt="">
+<img src="mel/small/1965.svg" width="1" height="1" alt="">
+<img src="mel/small/1970.svg" width="1" height="1" alt="">
+<img src="mel/small/1975.svg" width="1" height="1" alt="">
+<img src="mel/small/1980.svg" width="1" height="1" alt="">
+<img src="mel/small/1985.svg" width="1" height="1" alt="">
+<img src="mel/small/1990.svg" width="1" height="1" alt="">
+<img src="mel/small/1995.svg" width="1" height="1" alt="">
+<img src="mel/small/2000.svg" width="1" height="1" alt="">
+<img src="mel/small/2005.svg" width="1" height="1" alt="">
+<img src="mel/small/2010.svg" width="1" height="1" alt="">
+<img src="mel/small/2015.svg" width="1" height="1" alt="">
+<img src="syd/small/1895.svg" width="1" height="1" alt="">
+<img src="syd/small/1900.svg" width="1" height="1" alt="">
+<img src="syd/small/1905.svg" width="1" height="1" alt="">
+<img src="syd/small/1910.svg" width="1" height="1" alt="">
+<img src="syd/small/1915.svg" width="1" height="1" alt="">
+<img src="syd/small/1920.svg" width="1" height="1" alt="">
+<img src="syd/small/1925.svg" width="1" height="1" alt="">
+<img src="syd/small/1930.svg" width="1" height="1" alt="">
+<img src="syd/small/1935.svg" width="1" height="1" alt="">
+<img src="syd/small/1940.svg" width="1" height="1" alt="">
+<img src="syd/small/1945.svg" width="1" height="1" alt="">
+<img src="syd/small/1950.svg" width="1" height="1" alt="">
+<img src="syd/small/1955.svg" width="1" height="1" alt="">
+<img src="syd/small/1960.svg" width="1" height="1" alt="">
+<img src="syd/small/1965.svg" width="1" height="1" alt="">
+<img src="syd/small/1970.svg" width="1" height="1" alt="">
+<img src="syd/small/1975.svg" width="1" height="1" alt="">
+<img src="syd/small/1980.svg" width="1" height="1" alt="">
+<img src="syd/small/1985.svg" width="1" height="1" alt="">
+<img src="syd/small/1990.svg" width="1" height="1" alt="">
+<img src="syd/small/1995.svg" width="1" height="1" alt="">
+<img src="syd/small/2000.svg" width="1" height="1" alt="">
+<img src="syd/small/2005.svg" width="1" height="1" alt="">
+<img src="syd/small/2010.svg" width="1" height="1" alt="">
+<img src="syd/small/2015.svg" width="1" height="1" alt="">
+<img src="adl/small/1985.svg" width="1" height="1" alt="">
+<img src="adl/small/1990.svg" width="1" height="1" alt="">
+<img src="adl/small/1995.svg" width="1" height="1" alt="">
+<img src="adl/small/2000.svg" width="1" height="1" alt="">
+<img src="adl/small/2005.svg" width="1" height="1" alt="">
+<img src="adl/small/2010.svg" width="1" height="1" alt="">
+<img src="adl/small/2015.svg" width="1" height="1" alt="">
+<img src="per/small/1955.svg" width="1" height="1" alt="">
+<img src="per/small/1960.svg" width="1" height="1" alt="">
+<img src="per/small/1965.svg" width="1" height="1" alt="">
+<img src="per/small/1970.svg" width="1" height="1" alt="">
+<img src="per/small/1975.svg" width="1" height="1" alt="">
+<img src="per/small/1980.svg" width="1" height="1" alt="">
+<img src="per/small/1985.svg" width="1" height="1" alt="">
+<img src="per/small/1990.svg" width="1" height="1" alt="">
+<img src="per/small/1995.svg" width="1" height="1" alt="">
+<img src="per/small/2000.svg" width="1" height="1" alt="">
+<img src="per/small/2005.svg" width="1" height="1" alt="">
+<img src="per/small/2010.svg" width="1" height="1" alt="">
+<img src="per/small/2015.svg" width="1" height="1" alt="">
+<img src="bne/small/1980.svg" width="1" height="1" alt="">
+<img src="bne/small/1985.svg" width="1" height="1" alt="">
+<img src="bne/small/1990.svg" width="1" height="1" alt="">
+<img src="bne/small/1995.svg" width="1" height="1" alt="">
+<img src="bne/small/2000.svg" width="1" height="1" alt="">
+<img src="bne/small/2005.svg" width="1" height="1" alt="">
+<img src="bne/small/2010.svg" width="1" height="1" alt="">
+<img src="bne/small/2015.svg" width="1" height="1" alt="">
+<img src="akl/small/2010.svg" width="1" height="1" alt="">
+<img src="akl/small/2015.svg" width="1" height="1" alt="">
+</div>
+See also: <a href=".">rapid transit timelines around the world</a> -
+<a href="misc">miscellaneous timelines and maps</a>
+<p>
+<div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> based on map data 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
+by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
+</body></html>
