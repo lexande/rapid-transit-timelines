@@ -61,7 +61,7 @@ cat ~/timelines/scripts/boilerplate/part4 >> index.html
 if [ $(basename $(pwd)) == 'uncropped' ]; then
 	sed -e's!\.\.!\.\./\.\.!' -i index.html
 fi
-if [ $(basename $(pwd)) == 'nyc' -o $(basename $(pwd)) == 'chi' -o $(basename $(pwd)) == 'bos' ]; then
+if [ $(basename $(pwd)) == 'nyc' -o $(basename $(pwd)) == 'bos' ]; then
 	sed -e's!\.\./\.\.!!; s!\.\.!/timelines!' -i index.html
 fi
 popd

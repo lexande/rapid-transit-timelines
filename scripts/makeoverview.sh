@@ -161,9 +161,9 @@ for city in $@; do
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $city/small/2015.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
 
   echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle"><a href="'$city'">'$NAME'</a><br>' \
-    | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
+    | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
 
-  echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="'$city'/small/2015.svg" title="2015" alt="2015 map" width="'$W'px" height="'$H'px" style="border-width: 1px; border-style: solid"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
+  echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="'$city'/small/2015.svg" title="2015" alt="2015 map" width="'$W'px" height="'$H'px" style="border-width: 1px; border-style: solid"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
 done
 
 cat <<HEREDOC
@@ -180,7 +180,7 @@ for city in $@; do
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
 
   echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"$city\">$NAME</a></div>" \
-    | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="chi"!href="../ltimeline"!; s!href="bos"!href="../ttimeline"!;'
+    | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
 
 done
 
