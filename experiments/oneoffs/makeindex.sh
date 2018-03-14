@@ -36,12 +36,13 @@ HEREDOC
 for file in $@; do
   city=`basename $file .svg`
   NAME=`grep ^$city names | sed -e's/.*\t//'`
+  SNAME=`echo $NAME | sed -e's/<br>.*//'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*390/5376)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
   echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
-  echo '  <img class="map" src="'$file'" title="'$NAME'" alt="'$NAME' map" width="'$W'px" height="'$H'px"></span>'
+  echo '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
 done
 echo '<p>'
 echo '<!--<form action="">Cities to show:'
