@@ -32,10 +32,10 @@ a:link.map-wrap {
 }
 </style>
 <script>
-mapyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 1910, "carail": 1910, "bostrolleys": 1950, "sftrolleys": 1950, "nycstreetcars": 1945, "sandy": 8, "harvardtunnel": 2000, "brc": 2015 };
-minyr = { "hsr/a": 1965, "hsr/e": 1965, "nerail": 1835, "carail": 1835, "bostrolleys": 1840, "sftrolleys": 1840, "nycstreetcars": 1932, "sandy": 1, "harvardtunnel": 1920, "brc": 1996 };
-maxyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 2010, "carail": 2010, "bostrolleys": 2020, "sftrolleys": 2020, "nycstreetcars": 1957, "sandy": 32, "harvardtunnel": 2010, "brc": 2017 };
-step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "bostrolleys": 10, "sftrolleys": 10, "nycstreetcars": 1, "sandy": 1, "harvardtunnel": 10, "brc": 1 }
+mapyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 1910, "carail": 1910, "bostrolleys": 1950, "sftrolleys": 1950, "nycstreetcars": 1945, "sandy": 8, "harvardtunnel": 2000 };
+minyr = { "hsr/a": 1965, "hsr/e": 1965, "nerail": 1835, "carail": 1835, "bostrolleys": 1840, "sftrolleys": 1840, "nycstreetcars": 1932, "sandy": 1, "harvardtunnel": 1920 };
+maxyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 2010, "carail": 2010, "bostrolleys": 2020, "sftrolleys": 2020, "nycstreetcars": 1957, "sandy": 32, "harvardtunnel": 2010 };
+step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "bostrolleys": 10, "sftrolleys": 10, "nycstreetcars": 1, "sandy": 1, "harvardtunnel": 10 }
 function nextmap() {
 	for (map in mapyr) {
 		if (mapyr[map] == maxyr[map]) {
@@ -44,11 +44,7 @@ function nextmap() {
 			mapyr[map] = mapyr[map] + step[map];
 		}
 		mapimg = document.getElementById(map + "map");
-		if (map == "brc") {
-			mapimg.src = map + "/" + mapyr[map] + ".png";
-		} else {
-			mapimg.src = map + "/" + mapyr[map] + ".svg";
-		}
+		mapimg.src = map + "/" + mapyr[map] + ".svg";
 	}
 }
 function prevmap() {
@@ -59,11 +55,7 @@ function prevmap() {
 			mapyr[map] = mapyr[map] - step[map];
 		}
 		mapimg = document.getElementById(map + "map");
-		if (map == "brc") {
-			mapimg.src = map + "/" + mapyr[map] + ".png";
-		} else {
-			mapimg.src = map + "/" + mapyr[map] + ".svg";
-		}
+		mapimg.src = map + "/" + mapyr[map] + ".svg";
 	}
 }
 
@@ -116,9 +108,6 @@ document.onkeydown=function(keypress) {
 <span class="medcell">
   <a href="harvardtunnel">Routes using Harvard Transit Tunnel,<br>1920-2010<br>
   <img id="harvardtunnelmap" src="harvardtunnel/2000.svg" width="246" height="261px" alt="sample Harvard Transit Tunnel map"></a></span>
-<span class="medcell">
-  <a href="brc">Black Rock City street layouts,<br>1996-2017<br>
-  <img id="brcmap" src="brc/2015.png" width="169px" height="202px" alt="sample Black Rock City map"></a></span>
 </div>
 <h3>Other maps:</h3>
 <div>
