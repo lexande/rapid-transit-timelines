@@ -19,6 +19,7 @@ a:link.map-wrap {
 span {
 	margin-top: 5px;
 	margin-bottom: 5px;
+	vertical-align: middle;
 }
 .map {
 	border: 1px solid;
@@ -160,7 +161,7 @@ for city in $@; do
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*390/5376)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $city/small/2015.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
 
-  echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle"><a href="'$city'">'$NAME'</a><br>' \
+  echo '<span id="'$UPPER'" style="display: inline-block;"><a href="'$city'">'$NAME'</a><br>' \
     | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
 
   echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="'$city'/small/2015.svg" title="2015" alt="2015 map" width="'$W'px" height="'$H'px" style="border-width: 1px; border-style: solid"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
@@ -187,7 +188,8 @@ done
 cat <<HEREDOC
 </form>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 CSS pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).<br>
+Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (10 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>

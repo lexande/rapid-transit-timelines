@@ -17,6 +17,7 @@ a:link.map-wrap {
 span {
 	margin-top: 5px;
 	margin-bottom: 5px;
+	vertical-align: middle;
 }
 .map {
 	border: 1px solid;
@@ -137,15 +138,15 @@ window.onload=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-<span id="YVR" style="display: inline-block; vertical-align: middle"><a href="yvr">Vancouver</a><br>
+<span id="YVR" style="display: inline-block;"><a href="yvr">Vancouver</a><br>
   <a href="yvr" class="map-wrap"><img class="map" id="YVRmap" src="yvr/small/2015.svg" title="2015" alt="2015 map" width="254px" height="152px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="YTO" style="display: inline-block; vertical-align: middle"><a href="yto">Toronto</a><br>
+<span id="YTO" style="display: inline-block;"><a href="yto">Toronto</a><br>
   <a href="yto" class="map-wrap"><img class="map" id="YTOmap" src="yto/small/2015.svg" title="2015" alt="2015 map" width="248px" height="177px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="YEG" style="display: inline-block; vertical-align: middle"><a href="yeg">Edmonton</a><br>
+<span id="YEG" style="display: inline-block;"><a href="yeg">Edmonton</a><br>
   <a href="yeg" class="map-wrap"><img class="map" id="YEGmap" src="yeg/small/2015.svg" title="2015" alt="2015 map" width="87px" height="170px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="YYC" style="display: inline-block; vertical-align: middle"><a href="yyc">Calgary</a><br>
+<span id="YYC" style="display: inline-block;"><a href="yyc">Calgary</a><br>
   <a href="yyc" class="map-wrap"><img class="map" id="YYCmap" src="yyc/small/2015.svg" title="2015" alt="2015 map" width="218px" height="291px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="YOW" style="display: inline-block; vertical-align: middle"><a href="yow">Ottawa</a><br>
+<span id="YOW" style="display: inline-block;"><a href="yow">Ottawa</a><br>
   <a href="yow" class="map-wrap"><img class="map" id="YOWmap" src="yow/small/2015.svg" title="2015" alt="2015 map" width="189px" height="120px" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
@@ -161,7 +162,8 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="YOWcheckbox" onclick="toggleshow('YOW')" checked><a href="yow">Ottawa</a></div>
 </form>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 CSS pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).<br>
+Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (10 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>

@@ -17,6 +17,7 @@ a:link.map-wrap {
 span {
 	margin-top: 5px;
 	margin-bottom: 5px;
+	vertical-align: middle;
 }
 .map {
 	border: 1px solid;
@@ -137,17 +138,17 @@ window.onload=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-<span id="MEL" style="display: inline-block; vertical-align: middle"><a href="mel">Melbourne</a><br>
+<span id="MEL" style="display: inline-block;"><a href="mel">Melbourne</a><br>
   <a href="mel" class="map-wrap"><img class="map" id="MELmap" src="mel/small/2015.svg" title="2015" alt="2015 map" width="740px" height="624px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="SYD" style="display: inline-block; vertical-align: middle"><a href="syd">Sydney</a><br>
+<span id="SYD" style="display: inline-block;"><a href="syd">Sydney</a><br>
   <a href="syd" class="map-wrap"><img class="map" id="SYDmap" src="syd/small/2015.svg" title="2015" alt="2015 map" width="527px" height="414px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="ADL" style="display: inline-block; vertical-align: middle"><a href="adl">Adelaide</a><br>
+<span id="ADL" style="display: inline-block;"><a href="adl">Adelaide</a><br>
   <a href="adl" class="map-wrap"><img class="map" id="ADLmap" src="adl/small/2015.svg" title="2015" alt="2015 map" width="239px" height="500px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="PER" style="display: inline-block; vertical-align: middle"><a href="per">Perth</a><br>
+<span id="PER" style="display: inline-block;"><a href="per">Perth</a><br>
   <a href="per" class="map-wrap"><img class="map" id="PERmap" src="per/small/2015.svg" title="2015" alt="2015 map" width="348px" height="1008px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="BNE" style="display: inline-block; vertical-align: middle"><a href="bne">Brisbane</a><br>
+<span id="BNE" style="display: inline-block;"><a href="bne">Brisbane</a><br>
   <a href="bne" class="map-wrap"><img class="map" id="BNEmap" src="bne/small/2015.svg" title="2015" alt="2015 map" width="261px" height="399px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="AKL" style="display: inline-block; vertical-align: middle"><a href="akl">Auckland</a><br>
+<span id="AKL" style="display: inline-block;"><a href="akl">Auckland</a><br>
   <a href="akl" class="map-wrap"><img class="map" id="AKLmap" src="akl/small/2015.svg" title="2015" alt="2015 map" width="225px" height="410px" style="border-width: 1px; border-style: solid"></a></span>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
@@ -164,7 +165,8 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="AKLcheckbox" onclick="toggleshow('AKL')" checked><a href="akl">Auckland</a></div>
 </form>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).  Scale 10 CSS pixels per km.
+Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).<br>
+Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (10 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
