@@ -32,6 +32,7 @@ body {
 start=1915;
 count=21;
 citystartyears = { yvr: 1915, yto: 1955, yeg: 1980, yyc: 1985, yow: 1985, };
+svgviewboxes = { yvr: "3500 2100", yto: "3421 2450", yeg: "1200 2350", yyc: "3000 4000", yow: "2607 1659", };
 step=5;
 index=count-1;
 function update() {
@@ -46,14 +47,15 @@ function update() {
 				yearcontent = document.createTextNode(yr);
 				tspanelt.appendChild(yearcontent);
 				textelt.appendChild(tspanelt);
-				textelt.setAttribute("x", "6.48935");
-				textelt.setAttribute("y", "15.0139");
+				textelt.setAttribute("x", "89.4531");
+				textelt.setAttribute("y", "206.9609");
 				textelt.setAttribute("style", "-inkscape-font-specification:Sans");
 				textelt.setAttribute("font-family", "Sans");
 				textelt.setAttribute("font-weight", "400");
-				textelt.setAttribute("font-size", "10.4464px");
+				textelt.setAttribute("font-size", "144px");
 				svgelt.appendChild(textelt);
 				svgelt.setAttribute("id", mapimg.id);
+				svgelt.setAttribute("viewBox","0 0 " + svgviewboxes[city.toLowerCase()]);
 				svgelt.setAttribute("width", mapimg.width);
 				svgelt.setAttribute("height", mapimg.height);
 				svgelt.setAttribute("class", "map");
@@ -67,7 +69,6 @@ function update() {
 			}
 		} else {
 			if (mapimg.tagName.toUpperCase() == "SVG") {
-			console.log(city,yr);
 				imgelt = document.createElement("img");
 				imgelt.setAttribute("class", "map");
 				imgelt.id = mapimg.getAttribute("id");

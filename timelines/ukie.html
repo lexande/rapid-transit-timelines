@@ -32,6 +32,7 @@ body {
 start=1840;
 count=36;
 citystartyears = { lon: 1840, lpl: 1890, gla: 1895, ncl: 1905, man: 1935, pme: 1940, bhx: 1980, dub: 1985, cwl: 1990, szd: 1995, nqt: 2005, edi: 2005, };
+svgviewboxes = { lon: "8750 12500", lpl: "5600 7050", gla: "5307 3100", ncl: "3098 2400", man: "3200 5200", pme: "2350 1400", bhx: "5000 6050", dub: "3500 3030", cwl: "1900 4800", szd: "1650 1600", nqt: "1600 2900", edi: "2300 1000", };
 step=5;
 index=count-1;
 function update() {
@@ -46,14 +47,15 @@ function update() {
 				yearcontent = document.createTextNode(yr);
 				tspanelt.appendChild(yearcontent);
 				textelt.appendChild(tspanelt);
-				textelt.setAttribute("x", "6.48935");
-				textelt.setAttribute("y", "15.0139");
+				textelt.setAttribute("x", "89.4531");
+				textelt.setAttribute("y", "206.9609");
 				textelt.setAttribute("style", "-inkscape-font-specification:Sans");
 				textelt.setAttribute("font-family", "Sans");
 				textelt.setAttribute("font-weight", "400");
-				textelt.setAttribute("font-size", "10.4464px");
+				textelt.setAttribute("font-size", "144px");
 				svgelt.appendChild(textelt);
 				svgelt.setAttribute("id", mapimg.id);
+				svgelt.setAttribute("viewBox","0 0 " + svgviewboxes[city.toLowerCase()]);
 				svgelt.setAttribute("width", mapimg.width);
 				svgelt.setAttribute("height", mapimg.height);
 				svgelt.setAttribute("class", "map");
@@ -67,7 +69,6 @@ function update() {
 			}
 		} else {
 			if (mapimg.tagName.toUpperCase() == "SVG") {
-			console.log(city,yr);
 				imgelt = document.createElement("img");
 				imgelt.setAttribute("class", "map");
 				imgelt.id = mapimg.getAttribute("id");

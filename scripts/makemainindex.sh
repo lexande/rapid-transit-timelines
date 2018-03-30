@@ -84,6 +84,11 @@ for city in $@; do
   echo -n "${city}: "$(ls $city/????.svg | sed -e's!^.../\(....\).svg!\1!' | sort | head -n 1)", "
 done
 echo "};"
+echo -n "svgviewboxes = { "
+for city in $@; do
+  echo -n "${city}: \""$(if [ -d $city/uncropped ]; then grep viewBox $city/uncropped/2015.svg; else grep viewBox $city/2015.svg; fi | perl -wpe's/.*viewBox=".* .* ([0-9]*),? ([0-9]*)".*/$1 $2/')"\", "
+done
+echo "};"
 cat <<HEREDOC
 step=5;
 index=count-1;
@@ -103,14 +108,15 @@ cat << HEREDOC
 				yearcontent = document.createTextNode(yr);
 				tspanelt.appendChild(yearcontent);
 				textelt.appendChild(tspanelt);
-				textelt.setAttribute("x", "6.48935");
-				textelt.setAttribute("y", "15.0139");
+				textelt.setAttribute("x", "89.4531");
+				textelt.setAttribute("y", "206.9609");
 				textelt.setAttribute("style", "-inkscape-font-specification:Sans");
 				textelt.setAttribute("font-family", "Sans");
 				textelt.setAttribute("font-weight", "400");
-				textelt.setAttribute("font-size", "10.4464px");
+				textelt.setAttribute("font-size", "144px");
 				svgelt.appendChild(textelt);
 				svgelt.setAttribute("id", mapimg.id);
+				svgelt.setAttribute("viewBox","0 0 " + svgviewboxes[city.toLowerCase()]);
 				svgelt.setAttribute("width", mapimg.width);
 				svgelt.setAttribute("height", mapimg.height);
 				svgelt.setAttribute("class", "map");
@@ -124,7 +130,6 @@ cat << HEREDOC
 			}
 		} else {
 			if (mapimg.tagName.toUpperCase() == "SVG") {
-			console.log(city,yr);
 				imgelt = document.createElement("img");
 				imgelt.setAttribute("class", "map");
 				imgelt.id = mapimg.getAttribute("id");
