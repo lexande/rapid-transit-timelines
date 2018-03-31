@@ -79,6 +79,9 @@ start=$(for city in $@; do ls $city/????.svg; done | sed -e's!^.../\(....\).svg!
 echo "start=${start};"
 echo -n "count="
 expr 1 + \( \( 2015 - $start \) / 5 \) | sed -e's/$/;/'
+echo -n "citylist = ["
+for city in $@; do echo -n '"'$city'",'; done | tr 'a-z' 'A-Z' | sed -e's/,$/];/'
+echo ''
 echo -n "citystartyears = { "
 for city in $@; do
   echo -n "${city}: "$(ls $city/????.svg | sed -e's!^.../\(....\).svg!\1!' | sort | head -n 1)", "
@@ -92,82 +95,83 @@ echo "};"
 cat <<HEREDOC
 step=5;
 index=count-1;
-function update() {
-HEREDOC
-echo -n '	['
-for city in $@; do echo -n '"'$city'",'; done | tr 'a-z' 'A-Z' | sed -e's/,$/].forEach(function(city) { if (document.getElementById(city).style.display == "inline-block") {/'
-echo ''
-cat << HEREDOC
-		yr = start+step*index;
-		mapimg = document.getElementById(city + "map");
-		if (yr < citystartyears[city.toLowerCase()]) {
-			if (mapimg.tagName.toUpperCase() == "IMG") {
-				svgelt = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-				textelt = document.createElementNS("http://www.w3.org/2000/svg", "text");
-				tspanelt = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
-				yearcontent = document.createTextNode(yr);
-				tspanelt.appendChild(yearcontent);
-				textelt.appendChild(tspanelt);
-				textelt.setAttribute("x", "89.4531");
-				textelt.setAttribute("y", "206.9609");
-				textelt.setAttribute("style", "-inkscape-font-specification:Sans");
-				textelt.setAttribute("font-family", "Sans");
-				textelt.setAttribute("font-weight", "400");
-				textelt.setAttribute("font-size", "144px");
-				svgelt.appendChild(textelt);
-				svgelt.setAttribute("id", mapimg.id);
-				svgelt.setAttribute("viewBox","0 0 " + svgviewboxes[city.toLowerCase()]);
-				svgelt.setAttribute("width", mapimg.width);
-				svgelt.setAttribute("height", mapimg.height);
-				svgelt.setAttribute("class", "map");
-				svgelt.setAttribute("title", yr);
-				svgelt.setAttribute("alt", yr + " map");
-				mapimg.parentNode.replaceChild(svgelt, mapimg);
-			} else {
-				mapimg.getElementsByTagName("text")[0].getElementsByTagName("tspan")[0].innerHTML = yr;
-				mapimg.setAttribute("title", yr);
-				mapimg.setAttribute("alt", yr + " map");
-			}
+function update(city) {
+	yr = start+step*index;
+	mapimg = document.getElementById(city + "map");
+	if (yr < citystartyears[city.toLowerCase()]) {
+		if (mapimg.tagName.toUpperCase() == "IMG") {
+			svgelt = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+			textelt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+			tspanelt = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+			yearcontent = document.createTextNode(yr);
+			tspanelt.appendChild(yearcontent);
+			textelt.appendChild(tspanelt);
+			textelt.setAttribute("x", "89.4531");
+			textelt.setAttribute("y", "206.9609");
+			textelt.setAttribute("style", "-inkscape-font-specification:Sans");
+			textelt.setAttribute("font-family", "Sans");
+			textelt.setAttribute("font-weight", "400");
+			textelt.setAttribute("font-size", "144px");
+			svgelt.appendChild(textelt);
+			svgelt.setAttribute("id", mapimg.id);
+			svgelt.setAttribute("viewBox","0 0 " + svgviewboxes[city.toLowerCase()]);
+			svgelt.setAttribute("width", mapimg.width);
+			svgelt.setAttribute("height", mapimg.height);
+			svgelt.setAttribute("class", "map");
+			svgelt.setAttribute("title", yr);
+			svgelt.setAttribute("alt", yr + " map");
+			mapimg.parentNode.replaceChild(svgelt, mapimg);
 		} else {
-			if (mapimg.tagName.toUpperCase() == "SVG") {
-				imgelt = document.createElement("img");
-				imgelt.setAttribute("class", "map");
-				imgelt.id = mapimg.getAttribute("id");
-				imgelt.width = mapimg.getAttribute("width");
-				imgelt.height = mapimg.getAttribute("height");
-				imgelt.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
-				imgelt.title = yr;
-				imgelt.alt = yr + " map";
-				mapimg.parentNode.replaceChild(imgelt, mapimg);
-			} else {
-				mapimg.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
-				mapimg.title = yr;
-				mapimg.alt = yr + " map";
-			}
+			mapimg.getElementsByTagName("text")[0].getElementsByTagName("tspan")[0].innerHTML = yr;
+			mapimg.setAttribute("title", yr);
+			mapimg.setAttribute("alt", yr + " map");
 		}
-	}});
+	} else {
+		if (mapimg.tagName.toUpperCase() == "SVG") {
+			imgelt = document.createElement("img");
+			imgelt.setAttribute("class", "map");
+			imgelt.id = mapimg.getAttribute("id");
+			imgelt.width = mapimg.getAttribute("width");
+			imgelt.height = mapimg.getAttribute("height");
+			imgelt.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+			imgelt.title = yr;
+			imgelt.alt = yr + " map";
+			mapimg.parentNode.replaceChild(imgelt, mapimg);
+		} else {
+			mapimg.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+			mapimg.title = yr;
+			mapimg.alt = yr + " map";
+		}
+	}
+}
+function updateall() {
+	citylist.forEach(function (city) {
+		if (document.getElementById(city).style.display == "inline-block") {
+			update(city);
+		}
+	});
 }
 function nextmap() {
 	index = (index+1)%count;
-	update();
+	updateall();
 }
 function prevmap() {
 	index = (index+count-1)%count;
-	update();
+	updateall();
 }
 function toggleshow(x) {
 	span = document.getElementById(x);
 	prediv = document.getElementById(x + "pre");
-	mapimg = document.getElementById(x + "map");
 	if (span.style.display == 'inline-block') {
+		mapimg = document.getElementById(x + "map");
 		span.style.display = 'none';
-		mapimg.src = "about:blank";
+		if (mapimg.tagName.toUpperCase() == "IMG") mapimg.src = "about:blank";
 		imgs = prediv.getElementsByTagName("img");
 		for (var i=0; i < imgs.length; i++) {
 			prediv.removeChild(imgs[i]);
 		}
 	} else {
-		mapimg.src = x.toLowerCase() + '/small/' + (start+step*index) + '.svg';
+		update(x);
 		for (var i = citystartyears[x.toLowerCase()]; i < start + count*step; i+=step) {
 			img = document.createElement("img");
 			img.src = x.toLowerCase() + '/small/' + i + '.svg';
