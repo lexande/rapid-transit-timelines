@@ -26,28 +26,28 @@
   <defs
      id="defs6" />
   <image
+     xlink:href="../../streetmap/tyo2osm.png"
      width="5484"
      height="15629.4"
      preserveAspectRatio="none"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/tyo2osm.png"
      id="image10"
      x="9556.5996"
      y="-779.40039"
      style="display:none" />
   <image
+     xlink:href="../../streetmap/tyo1osm.png"
      style="display:none"
      y="-779.40039"
      x="3250"
      id="image4552"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/tyo1osm.png"
      preserveAspectRatio="none"
      height="15629.4"
      width="6306.6001" />
   <image
+     xlink:href="../../streetmap/tyo3osm.png"
      y="-779.40039"
      x="15040.6"
      id="image4601"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/tyo3osm.png"
      preserveAspectRatio="none"
      height="15629.4"
      width="6032.3999"
@@ -438,4 +438,12 @@
      id="path4580"
      d="m 3582.161,5331.3237 -19.5468,87.1032"
      style="opacity:1;fill:#001067;fill-opacity:0.01568627;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#37c871;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 12609.064,9287.9197 -20.126,17.2164 -44.375,58.1965 -78.808,36.1304 -43.405,-29.3408 -14.791,-6.7896 -25.704,-10.6693 -131.67,-112.2708 -37.1,-58.1965 0.728,-6.0621 32.621,-41.6654"
+     id="path1580" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#37c871;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 12893.45,9080.6941 -1.966,12.4762 -2.592,10.7034 -6.79,55.7716 -15.034,30.5532 -13.212,27.8509 -26.748,32.2351 -56.24,52.1248 -18.518,19.2038 -11.659,5.4869 -13.031,-2.7434 -6.859,-9.602 -50.753,-57.6116 -21.261,-0.6858 -15.775,12.3453 -23.948,19.1171"
+     id="path4602-6" />
 </svg>
