@@ -84,7 +84,7 @@ for city in $@; do echo -n '"'$city'",'; done | tr 'a-z' 'A-Z' | sed -e's/,$/];/
 echo ''
 echo -n "citystartyears = { "
 for city in $@; do
-  echo -n "${city}: "$(ls $city/????.svg | sed -e's!^.../\(....\).svg!\1!' | sort | head -n 1)", "
+  echo -n "${city}: "$(ls $city/small/????.svg | sed -e's!^.../small/\(....\).svg!\1!' | sort | head -n 1)", "
 done
 echo "};"
 echo -n "svgviewboxes = { "
