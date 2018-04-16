@@ -338,7 +338,7 @@ window.onload=function() {
   <a href="sao" class="map-wrap"><img class="map" id="SAOmap" src="sao/small/2015.svg" title="2015" alt="2015 map" width="783" height="537"></a></span>
 <span id="KBP" style="display: none;"><a href="kbp">Kyiv</a><br>
   <a href="kbp" class="map-wrap"><img class="map" id="KBPmap" src="about:blank" title="2015" alt="2015 map" width="261" height="196"></a></span>
-<span id="AMS" style="display: none;"><a href="ams">Randstad</a><br>
+<span id="AMS" style="display: none;"><a href="ams">Amsterdam</a><br>
   <a href="ams" class="map-wrap"><img class="map" id="AMSmap" src="about:blank" title="2015" alt="2015 map" width="747" height="936"></a></span>
 <span id="WAW" style="display: none;"><a href="waw">Warszawa</a><br>
   <a href="waw" class="map-wrap"><img class="map" id="WAWmap" src="about:blank" title="2015" alt="2015 map" width="109" height="203"></a></span>
@@ -494,6 +494,7 @@ window.onload=function() {
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
 <div id="form" style="display: block;">
+<input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')"><a href="javascript:sidebarclick('AMS')">Amsterdam</a><br>
 <input type="checkbox" id="ANKcheckbox" onclick="toggleshow('ANK')"><a href="javascript:sidebarclick('ANK')">Ankara</a><br>
 <input type="checkbox" id="ATHcheckbox" onclick="toggleshow('ATH')"><a href="javascript:sidebarclick('ATH')">Athína</a><br>
 <input type="checkbox" id="BAKcheckbox" onclick="toggleshow('BAK')"><a href="javascript:sidebarclick('BAK')">Bakı</a><br>
@@ -571,7 +572,6 @@ window.onload=function() {
 <input type="checkbox" id="FNJcheckbox" onclick="toggleshow('FNJ')"><a href="javascript:sidebarclick('FNJ')">Pyongyang</a><br>
 <input type="checkbox" id="CAIcheckbox" onclick="toggleshow('CAI')"><a href="javascript:sidebarclick('CAI')">Qahirah</a><br>
 <input type="checkbox" id="UIOcheckbox" onclick="toggleshow('UIO')"><a href="javascript:sidebarclick('UIO')">Quito</a><br>
-<input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')"><a href="javascript:sidebarclick('AMS')">Randstad</a><br>
 <input type="checkbox" id="RECcheckbox" onclick="toggleshow('REC')"><a href="javascript:sidebarclick('REC')">Recife</a><br>
 <input type="checkbox" id="DUScheckbox" onclick="toggleshow('DUS')"><a href="javascript:sidebarclick('DUS')">Rhein-Ruhr</a><br>
 <input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')"><a href="javascript:sidebarclick('RIO')">Rio de Janeiro</a><br>
