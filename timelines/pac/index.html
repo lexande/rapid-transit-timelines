@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Panamá Rapid Transit Timeline</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<style type="text/css">
+div#preloader {
+	position: absolute;
+	left: -9999px;
+	top:  -9999px;
+}
+div#preloader img {
+	display: block;
+}
+body {
+	text-align: center;
+}
+</style>
+<script type="text/javascript">
+start=2015;
+count=1;
+step=5;
+index=count-1;
+function update() {
+	map = document.getElementById("map");
+	map.src=(start+step*index) + ".svg";
+	map.title=start+step*index;
+	map.alt=start+step*index + " map";
+	location.replace("#" + (start+step*index));
+}
+function nextmap() {
+	index=(index+1)%count;
+	update();
+}
+function prevmap() {
+	index=(index+count-1)%count;
+	update();
+}
+document.onkeydown=function(keypress) {
+	if(keypress.which == 65) { prevmap(); }
+	if(keypress.which == 83) { nextmap(); }
+}
+function gotoyear(x) {
+	inyear = parseInt(x);
+	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
+}
+intervalID=0;
+function startanim() {
+	intervalID = setInterval(nextmap, 1000);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = stopanim;
+	animbutton.innerText = "click here to stop animation";
+}
+function stopanim() {
+	clearInterval(intervalID);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = startanim;
+	animbutton.innerText = "click here to animate";
+}
+window.onload=function() {
+	gotoyear(location.hash.substring(1));
+}
+window.onhashchange=function() {
+	gotoyear(location.hash.substring(1));
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19998781-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
+<p>
+<a href="javascript:" onclick="nextmap()">
+<img id="map" src="2015.svg" title="2015" alt="2015 map" width="207" height="403" style="border-width: 1px; border-style: solid">
+</a>
+<p>
+<a href="#2015" onclick="gotoyear(2015)">2015</a>
+<p>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
+<br>
+<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
+<p>
+Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).<br>
+Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
+<p>
+Please send any corrections or questions to threestationsquare at gmail dot com.
+<p>
+<div id="preloader">
+<img src="2015.svg" width="1" height="1" alt="">
+</div>
+See also: <a href="../../subtimeline">New York</a> -
+<a href="../../ttimeline">Boston</a> -
+<a href="../lon">London</a> -
+<a href="../">more cities</a>
+<p>
+<div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> based on map data 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
+by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors.</div>
+</body></html>
