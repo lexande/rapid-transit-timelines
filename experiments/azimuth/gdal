@@ -1,0 +1,5 @@
+https://gis.stackexchange.com/questions/173766/convert-a-geotiff-web-mercator-into-an-azimuthal-equidistant-projection
+
+gdal_translate -of Gtiff -co "tfw=yes"  -a_ullr -180 90 180 -90 -a_srs WGS84 Worldmap_wdb_combined.png world.tiff 
+gdalwarp -s_srs WGS84 -t_srs '+proj=aeqd +lon_0=-74.01 +lat_0=40.71' -et 0 -wo SOURCE_EXTRA=1000 world.tiff nyc.tiff
+gdalwarp -s_srs WGS84 -t_srs '+proj=aeqd +lon_0=-74.01 +lat_0=40.71' -et 0 -wo SOURCE_EXTRA=1000 -tr 10000 10000 world.tiff nyc4.tiff
