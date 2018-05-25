@@ -21,7 +21,7 @@
 	width: 662px;
 }
 .medcell {
-	width: 400px;
+	width: 438px;
 }
 img {
 	border-width: 1px;
@@ -32,10 +32,10 @@ a:link.map-wrap {
 }
 </style>
 <script>
-mapyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 1910, "carail": 1910, "bostrolleys": 1950, "sftrolleys": 1950, "nycstreetcars": 1945, "sandy": 8, "harvardtunnel": 2000 };
-minyr = { "hsr/a": 1965, "hsr/e": 1965, "nerail": 1835, "carail": 1835, "bostrolleys": 1840, "sftrolleys": 1840, "nycstreetcars": 1932, "sandy": 1, "harvardtunnel": 1920 };
-maxyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 2010, "carail": 2010, "bostrolleys": 2020, "sftrolleys": 2020, "nycstreetcars": 1957, "sandy": 32, "harvardtunnel": 2010 };
-step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "bostrolleys": 10, "sftrolleys": 10, "nycstreetcars": 1, "sandy": 1, "harvardtunnel": 10 }
+mapyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 1910, "carail": 1910, "bostrolleys": 1950, "sftrolleys": 1950, "nycstreetcars": 1945, "sandy": 8, "harvardtunnel": 2000, "nycflights": 2010 };
+minyr = { "hsr/a": 1965, "hsr/e": 1965, "nerail": 1835, "carail": 1835, "bostrolleys": 1840, "sftrolleys": 1840, "nycstreetcars": 1932, "sandy": 1, "harvardtunnel": 1920, "nycflights": 1930 };
+maxyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 2010, "carail": 2010, "bostrolleys": 2020, "sftrolleys": 2020, "nycstreetcars": 1957, "sandy": 32, "harvardtunnel": 2010, "nycflights": 2010 };
+step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "bostrolleys": 10, "sftrolleys": 10, "nycstreetcars": 1, "sandy": 1, "harvardtunnel": 10, "nycflights": 10 }
 function nextmap() {
 	for (map in mapyr) {
 		if (mapyr[map] == maxyr[map]) {
@@ -104,7 +104,9 @@ document.onkeydown=function(keypress) {
 <span class="medcell">
   <a href="sandy">Hurricane Sandy rapid transit recovery,<br>October 2012-June 2013<br>
   <img id="sandymap" src="sandy/8.svg" width="390px" height="390px" alt="sample Hurricane Sandy map"></a></span>
-
+<span class="medcell">
+  <a href="nycflights">Nonstop flights from New York<br>1930-2010<br>
+  <img id="nycflightsmap" src="nycflights/2010.svg" width="400px" height="400px" alt="sample New York nonstop flight map"></a></span>
 <span class="medcell">
   <a href="harvardtunnel">Routes using Harvard Transit Tunnel,<br>1920-2010<br>
   <img id="harvardtunnelmap" src="harvardtunnel/2000.svg" width="246" height="261px" alt="sample Harvard Transit Tunnel map"></a></span>
