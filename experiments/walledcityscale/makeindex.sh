@@ -70,4 +70,5 @@ i=1
 for src in `cat sources`; do
   echo -n '<a href="'$src'">'$i'</a>,'
   i=`expr $i + 1`
-done | sed -e's!,$!) contributors.</div></body></html>!'
+done | sed -e's!,$!) contributors and historical sources.</div></body></html>!'
+echo ''
