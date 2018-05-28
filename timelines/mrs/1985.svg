@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   id="svg2"
-   width="1080"
+   viewBox="0 0 950 1230"
    height="1230"
-   viewBox="0 0 1080 1230">
+   width="950"
+   id="svg2"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,29 +26,29 @@
   <defs
      id="defs6" />
   <image
-     width="982"
-     height="1227.5"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/mrsosm.png"
-     id="image10"
-     x="130"
+     style="display:none"
      y="2.5"
-     style="display:none" />
+     x="75"
+     id="image10"
+     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/mrsosm.png"
+     preserveAspectRatio="none"
+     height="1227.5"
+     width="982" />
   <path
-     style="opacity:1;fill:none;fill-opacity:0.39215686;fill-rule:nonzero;stroke:#ed1c24;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 199.20469,568.38331 16.897,25.3455 4.0678,2.0339 37.62712,11.52542 22.37288,-7.79661 11.06659,-9.7929 14.47699,-8.3753 16.05205,-0.15745 14.27842,4.5472 17.68527,29.37167 -3.05084,49.15255 2.03389,20 4.74577,20.33898 14.57627,15.59322 6.10169,17.28814 4.40678,20.67796 1.69492,35.59322 -3.72881,49.49153 2.92698,14.63494"
-     id="path836" />
+     id="path836"
+     d="m 144.20469,568.38331 16.897,25.3455 4.0678,2.0339 37.62712,11.52542 22.37288,-7.79661 11.06659,-9.7929 14.47699,-8.3753 16.05205,-0.15745 14.27842,4.5472 17.68527,29.37167 -3.05084,49.15255 2.03389,20 4.74577,20.33898 14.57627,15.59322 6.10169,17.28814 4.40678,20.67796 1.69492,35.59322 -3.72881,49.49153 2.92698,14.63494"
+     style="opacity:1;fill:none;fill-opacity:0.39215686;fill-rule:nonzero;stroke:#ed1c24;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     style="opacity:1;fill:none;fill-opacity:0.39215686;fill-rule:nonzero;stroke:#007dc5;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 389.65732,847.83728 -13.21664,4.87458 h -13.55932 l -12.20339,-2.37288 -10.84746,-4.74576 -6.77966,-9.49153 -20.33899,-61.69491 -10.16949,-13.22034 -14.57627,-10.16949 -10.50847,-9.83051 -2.0339,-22.37288 -3.38983,-42.37288 2.0339,-41.35594 10.50847,-31.18644 9.37662,-10.05471 13.42305,-7.67031 h 13.90243 l 11.98487,3.35577 15.93986,27.44532 27.44533,18.09714 8.14971,2.39698 14.86123,-2.27713 84.37342,-54.77081 19.53532,-5.75273 c 29.26874,-2.95464 41.99053,-8.43848 56.209,-31.87973 l 24.20941,-67.11522 7.91001,-27.32549 23.25063,-42.18671 12.46426,-8.3894 37.39276,-9.82758 40.74853,-28.76367 45.54247,-54.17157 29.96215,-31.40034 17.4979,-14.62153 34.2767,-24.44911 23.49033,-19.17578 10.30698,-10.54668 2.63667,-7.43061 -2.39698,-27.08579 3.83516,-11.02607 15.82002,-20.13456 12.46425,-25.64761"
-     id="path838" />
+     id="path838"
+     d="m 334.65732,847.83728 -13.21664,4.87458 h -13.55932 l -12.20339,-2.37288 -10.84746,-4.74576 -6.77966,-9.49153 -20.33899,-61.69491 -10.16949,-13.22034 -14.57627,-10.16949 -10.50847,-9.83051 -2.0339,-22.37288 -3.38983,-42.37288 2.0339,-41.35594 10.50847,-31.18644 9.37662,-10.05471 13.42305,-7.67031 h 13.90243 l 11.98487,3.35577 15.93986,27.44532 27.44533,18.09714 8.14971,2.39698 14.86123,-2.27713 84.37342,-54.77081 19.53532,-5.75273 c 29.26874,-2.95464 41.99053,-8.43848 56.209,-31.87973 l 24.20941,-67.11522 7.91001,-27.32549 23.25063,-42.18671 12.46426,-8.3894 37.39276,-9.82758 40.74853,-28.76367 45.54247,-54.17157 29.96215,-31.40034 17.4979,-14.62153 34.2767,-24.44911 23.49033,-19.17578 10.30698,-10.54668 2.63667,-7.43061 -2.39698,-27.08579 3.83516,-11.02607 15.82002,-20.13456 12.46425,-25.64761"
+     style="opacity:1;fill:none;fill-opacity:0.39215686;fill-rule:nonzero;stroke:#007dc5;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     xml:space="preserve"
-     id="text3019"
+     x="89.453087"
      y="206.96103"
-     x="89.453087"><tspan
-       id="tspan1"
+     id="text3019"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453087"
        y="206.96103"
-       x="89.453087">1985</tspan></text>
+       id="tspan1">1985</tspan></text>
 </svg>

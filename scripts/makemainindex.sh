@@ -44,14 +44,14 @@ div#button a:visited {
 	text-decoration: none;
 }
 span {
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	vertical-align: middle;
 }
 .map {
 	border: 1px solid;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .headerfooter {
 	padding-left: calc(10em + 22px);

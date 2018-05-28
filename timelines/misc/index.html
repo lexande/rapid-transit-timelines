@@ -8,24 +8,30 @@
 	vertical-align: middle;
 }
 .vbigcell, .bigcell, .medcell {
-	margin: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 .innercell {
-	margin-top: 2px;
-	margin-bottom: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.innercell img {
+	margin-left: 2px;
+	margin-right: 2px;
 }
 .vbigcell {
 	width: 900px;
 }
 .bigcell {
-	width: 662px;
+	width: 670px;
 }
 .medcell {
-	width: 438px;
+	width: 440px;
 }
 img {
-	border-width: 1px;
-	border-style: solid;
+	border: 1px solid;
 }
 a:link.map-wrap {
 	text-decoration: none;
@@ -80,23 +86,23 @@ document.onkeydown=function(keypress) {
 <h3>Miscellaneous (not strictly rapid transit) timelines:</h3>
 <span class="vbigcell">
   <a href="hsr">High speed rail in Asia and Europe, 1965-2015</a><br>
-  <span class="innercell"><a href="hsr"><img id="hsr/amap" src="hsr/a/2015.svg" width="480px" height="344px" alt="sample Asia HSR map"></a></span>
-  <span class="innercell"><a href="hsr"><img id="hsr/emap" src="hsr/e/2015.svg" width="394px" height="344px" alt="sample Europe HSR map"></a></span></span><br>
+  <span class="innercell" style="margin-top: 0px;"><a href="hsr"><img id="hsr/amap" src="hsr/a/2015.svg" width="480px" height="344px" alt="sample Asia HSR map"></a></span>
+  <span class="innercell" style="margin-top: 0px;"><a href="hsr"><img id="hsr/emap" src="hsr/e/2015.svg" width="394px" height="344px" alt="sample Europe HSR map"></a></span></span><br>
 <span class="bigcell">
-  Regional passenger rail timelines:<br>
+  Regional passenger rail timelines, 1835-2010:<br>
 <span class="innercell">
-  <a href="nerail">Northeast US, 1835-2010<br>
+  <a href="nerail">Northeast US<br>
   <img id="nerailmap" src="nerail/1910.svg" width="355px" height="285px" alt="sample Northeast passenger rail map"></a></span>
 <span class="innercell">
-  <a href="carail">California, 1860-2010<br>
+  <a href="carail">California<br>
   <img id="carailmap" src="carail/1910.svg" width="296px" height="390px" alt="sample California passenger rail map"></a></span></span>
 <span class="bigcell">
-  Streetcar and trolleybus timelines:<br>
+  Streetcar and trolleybus timelines, 1840-2010:<br>
 <span class="innercell">
-  <a href="bostrolleys">Boston, 1840-2010<br>
+  <a href="bostrolleys">Boston<br>
   <img id="bostrolleysmap" src="bostrolleys/1950.svg" width="363px" height="435px" alt="sample Boston trolley map"></a></span>
 <span class="innercell">
-  <a href="sftrolleys">San Francisco, 1860-2010<br>
+  <a href="sftrolleys">San Francisco<br>
   <img id="sftrolleysmap" src="sftrolleys/1950.svg" width="246px" height="246px" alt="sample San Francisco trolley map"></a></span></span><br>
 <span class="medcell">
   <a href="nycstreetcars">New York streetcar abandonment,<br>1932-1957<br>
@@ -156,7 +162,7 @@ Google maps:
 <p>
 Note: above maps not all at same scale.
 <p>
-See also: <a href="..">historical rapid transit timelines</a>
+See also: <a href="..">historical rapid transit timelines, 1840-2015</a>
 <p>
 <font size="1">By <a href="/">Alexander Rapp</a> based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
