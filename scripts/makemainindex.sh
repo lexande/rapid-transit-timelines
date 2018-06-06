@@ -329,9 +329,8 @@ Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-wid
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 More comprehensive lists (including minor/low-ridership cities) for specific countries:
-<a href="us.html">USA</a>
-<a href="ukie.html">UK & Ireland</a>
-<a href="aunz.html">Australia & NZ</a>
+<a href="us.html">US</a>
+<a href="uk.html">UK</a>
 <p>
 See also: <a href="misc">miscellaneous timelines and maps</a>
 <div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> based on map data 

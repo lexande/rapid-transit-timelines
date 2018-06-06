@@ -31,9 +31,9 @@ body {
 <script language="JavaScript" type="text/javascript">
 start=1840;
 count=36;
-citylist = ["LON","LPL","GLA","NCL","MAN","PME","BHX","DUB","CWL","SZD","NQT","EDI"];
-citystartyears = { lon: 1840, lpl: 1890, gla: 1895, ncl: 1905, man: 1935, pme: 1940, bhx: 1980, dub: 1985, cwl: 1990, szd: 1995, nqt: 2005, edi: 2005, };
-svgviewboxes = { lon: "8750 12500", lpl: "5600 7050", gla: "5307 3100", ncl: "3098 2400", man: "3200 5200", pme: "2350 1400", bhx: "5000 6050", dub: "3500 3030", cwl: "1900 4800", szd: "1650 1600", nqt: "1600 2900", edi: "2300 1000", };
+citylist = ["LON","LPL","GLA","NCL","MAN","PME","BHX","CWL","SZD","NQT","EDI"];
+citystartyears = { lon: 1840, lpl: 1890, gla: 1895, ncl: 1905, man: 1935, pme: 1940, bhx: 1980, cwl: 1990, szd: 1995, nqt: 2005, edi: 2005, };
+svgviewboxes = { lon: "8750 12500", lpl: "5600 7050", gla: "5307 3100", ncl: "3098 2400", man: "3200 5200", pme: "2350 1400", bhx: "5000 6050", cwl: "1900 4800", szd: "1650 1600", nqt: "1600 2900", edi: "2300 1000", };
 step=5;
 index=count-1;
 function update(city) {
@@ -159,8 +159,6 @@ window.onload=function() {
   <a href="pme" class="map-wrap"><img class="map" id="PMEmap" src="pme/small/2015.svg" title="2015" alt="2015 map" width="170px" height="101px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BHX" style="display: inline-block;"><a href="bhx">Birmingham</a><br>
   <a href="bhx" class="map-wrap"><img class="map" id="BHXmap" src="bhx/small/2015.svg" title="2015" alt="2015 map" width="363px" height="439px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="DUB" style="display: inline-block;"><a href="dub">Dublin</a><br>
-  <a href="dub" class="map-wrap"><img class="map" id="DUBmap" src="dub/small/2015.svg" title="2015" alt="2015 map" width="254px" height="220px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="CWL" style="display: inline-block;"><a href="cwl">Cardiff</a><br>
   <a href="cwl" class="map-wrap"><img class="map" id="CWLmap" src="cwl/small/2015.svg" title="2015" alt="2015 map" width="138px" height="349px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SZD" style="display: inline-block;"><a href="szd">Sheffield</a><br>
@@ -183,7 +181,6 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="MANcheckbox" onclick="toggleshow('MAN')" checked><a href="man">Manchester</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PMEcheckbox" onclick="toggleshow('PME')" checked><a href="pme">Portsmouth</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BHXcheckbox" onclick="toggleshow('BHX')" checked><a href="bhx">Birmingham</a></div>
-<div style="display: inline-block"><input type="checkbox" id="DUBcheckbox" onclick="toggleshow('DUB')" checked><a href="dub">Dublin</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CWLcheckbox" onclick="toggleshow('CWL')" checked><a href="cwl">Cardiff</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SZDcheckbox" onclick="toggleshow('SZD')" checked><a href="szd">Sheffield</a></div>
 <div style="display: inline-block"><input type="checkbox" id="NQTcheckbox" onclick="toggleshow('NQT')" checked><a href="nqt">Nottingham</a></div>
@@ -347,13 +344,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="bhx/small/2005.svg" width="1" height="1" alt="">
 <img src="bhx/small/2010.svg" width="1" height="1" alt="">
 <img src="bhx/small/2015.svg" width="1" height="1" alt="">
-<img src="dub/small/1985.svg" width="1" height="1" alt="">
-<img src="dub/small/1990.svg" width="1" height="1" alt="">
-<img src="dub/small/1995.svg" width="1" height="1" alt="">
-<img src="dub/small/2000.svg" width="1" height="1" alt="">
-<img src="dub/small/2005.svg" width="1" height="1" alt="">
-<img src="dub/small/2010.svg" width="1" height="1" alt="">
-<img src="dub/small/2015.svg" width="1" height="1" alt="">
 <img src="cwl/small/1990.svg" width="1" height="1" alt="">
 <img src="cwl/small/1995.svg" width="1" height="1" alt="">
 <img src="cwl/small/2000.svg" width="1" height="1" alt="">
