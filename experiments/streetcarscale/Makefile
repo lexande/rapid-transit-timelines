@@ -7,4 +7,4 @@ index.html: names makeindex.sh $(wildcard *.svg)
 	./makeindex.sh atl.svg blk.svg clt.svg chc.svg cvg.svg dal.svg det.svg ool.svg hkg.svg hou.svg aly.svg jrs.svg mci.svg ccu.svg lit.svg mel.svg msy.svg par.svg phl.svg phx.svg pdx.svg slc.svg sfo.svg sea.svg tcm.svg yto.svg tus.svg was.svg > $@
 
 extra.html: names makeindex.sh $(wildcard *.svg)
-	./makeindex.sh atl.svg blk.svg bos.svg clt.svg chc.svg cvg.svg dal.svg det.svg iom.svg ool.svg hkg.svg hou.svg aly.svg jrs.svg mci.svg ccu.svg lit.svg mel.svg msy.svg nyc.svg par.svg phl.svg phx.svg pdx.svg slc.svg sfo.svg sea.svg tcm.svg tpa.svg yto.svg tus.svg vce.svg was.svg alo.svg > $@
+	./makeindex.sh atl.svg blk.svg bos.svg cbg.svg clt.svg chc.svg cvg.svg dal.svg det.svg iom.svg ool.svg hkg.svg hou.svg aly.svg jrs.svg mci.svg ccu.svg lit.svg mel.svg msy.svg nyc.svg par.svg phl.svg phx.svg pdx.svg slc.svg sfo.svg sea.svg tcm.svg tpa.svg yto.svg tus.svg vce.svg was.svg alo.svg > $@
