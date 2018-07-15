@@ -36,6 +36,12 @@ img {
 a:link.map-wrap {
 	text-decoration: none;
 }
+#oprmap img {
+	border: 0px;
+}
+.olImageLoadError {
+	display: none;
+}
 </style>
 <script>
 mapyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 1910, "carail": 1910, "bostrolleys": 1950, "sftrolleys": 1950, "nycstreetcars": 1945, "sandy": 8, "harvardtunnel": 2000, "nycflights": 2010 };
@@ -80,7 +86,23 @@ document.onkeydown=function(keypress) {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-</head><body>
+<script src="https://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
+<script type="text/javascript">
+function initoprm() {
+  map = new OpenLayers.Map("oprmap");
+  map.addLayer(new OpenLayers.Layer.XYZ("basemap","https://a.tile.openstreetmap.org/${z}/${x}/${y}.png",{sphericalMercator: true}));
+  map.addLayer(new OpenLayers.Layer.XYZ("Passenger Rail","https://iron.alexander.co.tz/tiles/${z}/${x}/${y}.png",{sphericalMercator: true, maxZoomLevel: 14, numZoomLevels: 15, alpha: true, isBaseLayer: false }));
+
+  map.setCenter(new OpenLayers.LonLat(0,0) // Center of the map
+    .transform(
+      new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+      new OpenLayers.Projection("EPSG:900913") // to Spherical Mercator Projection
+    ), 1 // Zoom level
+  );
+  map.getNumZoomLevels = function() { return 15; }
+}
+</script>
+</head><body onload="initoprm();">
 <center>
 <div>
 <h3>Miscellaneous (not strictly rapid transit) timelines:</h3>
@@ -162,10 +184,14 @@ Google maps:
 Google charts:
 <ul style="text-align: left;">
 <li><a href="https://docs.google.com/spreadsheets/d/1TkMGrHp17fUtjoqAPZJyxavicrdE032FEcdlJlGfi9I/edit#gid=1229173968">Travel times from New York to Philadelphia, Washington and Boston, 1834-2017</a>
-<li><a href="https://docs.google.com/spreadsheets/d/1TTBQRrPkAU1I7J93pN7j6SBbe2663_kmnr3bjnTSNoY/edit#gid=970690919">Trains per weekday on the San Francisco Peninsula Corridor, 1865-2017</a>
+<li><a href="https://docs.google.com/spreadsheets/d/1TTBQRrPkAU1I7J93pN7j6SBbe2663_kmnr3bjnTSNoY/edit#gid=970690919">Trains per weekday on the San Francisco Peninsula Corridor, 1863-2017</a>
 <li><a href="https://docs.google.com/spreadsheets/d/1E_H9-4yuMO2RyJpF6noYIkHv10PMGRm5fXEdrQGMoDo/edit#gid=536731106">Total US transit ridership by mode, 1907-2017</a>
 </ul>
 </span>
+<br>
+<span class="bigcell">
+<a href="/oprm">All passenger rail lines in OpenStreetMap</a>
+<div id="oprmap" style="width: 600px; height: 400px; border: 1px solid;"></div>
 </div>
 <p>
 Note: above maps not all at same scale.
