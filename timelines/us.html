@@ -31,9 +31,9 @@ body {
 <script language="JavaScript" type="text/javascript">
 start=1875;
 count=29;
-citylist = ["NYC","CHI","BWI","PHL","BOS","PVD","PIT","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DET","JAX","DAL","STL","DEN","SLC","MSP","CLT","LAS","SJU","ORF","HFD"];
-citystartyears = { nyc: 1875, chi: 1895, bwi: 1895, phl: 1900, bos: 1900, pvd: 1900, pit: 1875, lax: 1910, sfo: 1920, cle: 1920, sea: 1965, was: 1950, atl: 1980, san: 1985, mia: 1985, buf: 1985, pdx: 1990, sac: 1990, det: 1990, jax: 1990, dal: 1970, stl: 1995, den: 1995, slc: 2000, msp: 2005, clt: 2005, las: 1995, sju: 2005, orf: 2015, hfd: 2015, };
-svgviewboxes = { nyc: "5376 5376", chi: "4250 5610", bwi: "2612 5150", phl: "4398 4650", bos: "3200 3750", pvd: "2200 2400", pit: "2800 2850", lax: "5445 6450", sfo: "9000 12300", cle: "3600 2000", sea: "2000 4200", was: "6050 5650", atl: "3369 4900", san: "3300 4850", mia: "2128 2900", buf: "768 1280", pdx: "6300 2850", sac: "3000 3050", det: "550 450", jax: "550 550", dal: "6400 5670", stl: "6063 4000", den: "4400 3600", slc: "2400 4200", msp: "2250 2350", clt: "900 2048", las: "545 1090", sju: "1650 1000", orf: "1619 600", hfd: "1400 1700", };
+citylist = ["NYC","CHI","BWI","PHL","BOS","PVD","PIT","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DTT","JAX","DAL","STL","DEN","SLC","MSP","CLT","LAS","SJU","ORF","HFD"];
+citystartyears = { nyc: 1875, chi: 1895, bwi: 1895, phl: 1900, bos: 1900, pvd: 1900, pit: 1875, lax: 1910, sfo: 1920, cle: 1920, sea: 1965, was: 1950, atl: 1980, san: 1985, mia: 1985, buf: 1985, pdx: 1990, sac: 1990, dtt: 1990, jax: 1990, dal: 1970, stl: 1995, den: 1995, slc: 2000, msp: 2005, clt: 2005, las: 1995, sju: 2005, orf: 2015, hfd: 2015, };
+svgviewboxes = { nyc: "5376 5376", chi: "4250 5610", bwi: "2612 5150", phl: "4398 4650", bos: "3200 3750", pvd: "2200 2400", pit: "2800 2850", lax: "5445 6450", sfo: "9000 12300", cle: "3600 2000", sea: "2000 4200", was: "6050 5650", atl: "3369 4900", san: "3300 4850", mia: "2128 2900", buf: "768 1280", pdx: "6300 2850", sac: "3000 3050", dtt: "550 450", jax: "550 550", dal: "6400 5670", stl: "6063 4000", den: "4400 3600", slc: "2400 4200", msp: "2250 2350", clt: "900 2048", las: "545 1090", sju: "1650 1000", orf: "1619 600", hfd: "1400 1700", };
 step=5;
 index=count-1;
 function update(city) {
@@ -181,8 +181,8 @@ window.onload=function() {
   <a href="pdx" class="map-wrap"><img class="map" id="PDXmap" src="pdx/small/2015.svg" title="2015" alt="2015 map" width="457px" height="207px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SAC" style="display: inline-block;"><a href="sac">Sacramento</a><br>
   <a href="sac" class="map-wrap"><img class="map" id="SACmap" src="sac/small/2015.svg" title="2015" alt="2015 map" width="218px" height="222px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="DET" style="display: inline-block;"><a href="det">Detroit</a><br>
-  <a href="det" class="map-wrap"><img class="map" id="DETmap" src="det/small/2015.svg" title="2015" alt="2015 map" width="40px" height="33px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="DTT" style="display: inline-block;"><a href="dtt">Detroit</a><br>
+  <a href="dtt" class="map-wrap"><img class="map" id="DTTmap" src="dtt/small/2015.svg" title="2015" alt="2015 map" width="40px" height="33px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="JAX" style="display: inline-block;"><a href="jax">Jacksonville</a><br>
   <a href="jax" class="map-wrap"><img class="map" id="JAXmap" src="jax/small/2015.svg" title="2015" alt="2015 map" width="40px" height="40px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="DAL" style="display: inline-block;"><a href="dal">Dallas</a><br>
@@ -230,7 +230,7 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="BUFcheckbox" onclick="toggleshow('BUF')" checked><a href="buf">Buffalo</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="pdx">Portland</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SACcheckbox" onclick="toggleshow('SAC')" checked><a href="sac">Sacramento</a></div>
-<div style="display: inline-block"><input type="checkbox" id="DETcheckbox" onclick="toggleshow('DET')" checked><a href="det">Detroit</a></div>
+<div style="display: inline-block"><input type="checkbox" id="DTTcheckbox" onclick="toggleshow('DTT')" checked><a href="dtt">Detroit</a></div>
 <div style="display: inline-block"><input type="checkbox" id="JAXcheckbox" onclick="toggleshow('JAX')" checked><a href="jax">Jacksonville</a></div>
 <div style="display: inline-block"><input type="checkbox" id="DALcheckbox" onclick="toggleshow('DAL')" checked><a href="dal">Dallas</a></div>
 <div style="display: inline-block"><input type="checkbox" id="STLcheckbox" onclick="toggleshow('STL')" checked><a href="stl">Saint Louis</a></div>
@@ -566,13 +566,13 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="sac/small/2005.svg" width="1" height="1" alt="">
 <img src="sac/small/2010.svg" width="1" height="1" alt="">
 <img src="sac/small/2015.svg" width="1" height="1" alt="">
-<img src="det/small/1990.svg" width="1" height="1" alt="">
-<img src="det/small/1995.svg" width="1" height="1" alt="">
-<img src="det/small/2000.svg" width="1" height="1" alt="">
-<img src="det/small/2005.svg" width="1" height="1" alt="">
-<img src="det/small/2010.svg" width="1" height="1" alt="">
-<img src="det/small/2015.svg" width="1" height="1" alt="">
-<img src="det/small/2020.svg" width="1" height="1" alt="">
+<img src="dtt/small/1990.svg" width="1" height="1" alt="">
+<img src="dtt/small/1995.svg" width="1" height="1" alt="">
+<img src="dtt/small/2000.svg" width="1" height="1" alt="">
+<img src="dtt/small/2005.svg" width="1" height="1" alt="">
+<img src="dtt/small/2010.svg" width="1" height="1" alt="">
+<img src="dtt/small/2015.svg" width="1" height="1" alt="">
+<img src="dtt/small/2020.svg" width="1" height="1" alt="">
 <img src="jax/small/1990.svg" width="1" height="1" alt="">
 <img src="jax/small/1995.svg" width="1" height="1" alt="">
 <img src="jax/small/2000.svg" width="1" height="1" alt="">
