@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
-   height="4200"
-   width="2000"
+   version="1.1"
    viewBox="0, 0, 2000, 4200"
-   version="1.1">
+   width="2000"
+   height="4200"
+   id="svg2">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -34,25 +34,33 @@
      id="image10"
      style="display:none" />
   <path
-     style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 251.5,1065.5 16.5,1.5 6.5,7 1,27 6,10 99.5,88 6.14645,11.0858 -0.0729,17.2809"
      id="path2987"
-     d="m 251.5,1065.5 16.5,1.5 6.5,7 1,27 6,10 99.5,88 6.14645,11.0858 -0.0729,17.2809" />
+     style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     xml:space="preserve"
-     id="text2995"
+     x="89.453133"
      y="206.96094"
-     x="89.453133"><tspan
-       id="tspan1"
-       y="206.96094"
-       x="89.453133">1985</tspan></text>
-  <text
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     id="text2995"
      xml:space="preserve"
-     id="text2999"
+     style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453133"
+       y="206.96094"
+       id="tspan1">1985</tspan></text>
+  <text
+     x="89.453125"
      y="4097.9609"
-     x="89.453125"><tspan
-       id="tspan2"
+     id="text2999"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453125"
        y="4097.9609"
-       x="89.453125">1985</tspan></text>
+       id="tspan2">1985</tspan></text>
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#008000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 197.80638,1157.3997 78.84728,67.8361"
+     id="path827" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 276.65366,1225.2358 54.85882,48.5668 6.29206,7.8651 51.7128,81.9933 5.11229,9.2414 2.75277,7.2752 0.25676,6.1623"
+     id="path829" />
 </svg>
