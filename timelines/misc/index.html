@@ -44,10 +44,10 @@ a:link.map-wrap {
 }
 </style>
 <script>
-mapyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 1910, "carail": 1910, "bostrolleys": 1950, "sftrolleys": 1950, "nycstreetcars": 1945, "sandy": 8, "harvardtunnel": 2000, "nycflights": 2010 };
-minyr = { "hsr/a": 1965, "hsr/e": 1965, "nerail": 1835, "carail": 1835, "bostrolleys": 1840, "sftrolleys": 1840, "nycstreetcars": 1932, "sandy": 1, "harvardtunnel": 1920, "nycflights": 1930 };
-maxyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 2010, "carail": 2010, "bostrolleys": 2020, "sftrolleys": 2020, "nycstreetcars": 1957, "sandy": 32, "harvardtunnel": 2010, "nycflights": 2010 };
-step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "bostrolleys": 10, "sftrolleys": 10, "nycstreetcars": 1, "sandy": 1, "harvardtunnel": 10, "nycflights": 10 }
+mapyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 1910, "carail": 1910, "bosbymode": 1950, "sfbymode": 1950, "nyctrolleys": 1945, "sandy": 8, "nycflights": 2010 };
+minyr = { "hsr/a": 1965, "hsr/e": 1965, "nerail": 1835, "carail": 1835, "bosbymode": 1840, "sfbymode": 1840, "nyctrolleys": 1932, "sandy": 1, "nycflights": 1930 };
+maxyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 2010, "carail": 2010, "bosbymode": 2020, "sfbymode": 2020, "nyctrolleys": 1957, "sandy": 32, "nycflights": 2010 };
+step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "bosbymode": 10, "sfbymode": 10, "nyctrolleys": 1, "sandy": 1, "nycflights": 10 }
 function nextmap() {
 	for (map in mapyr) {
 		if (mapyr[map] == maxyr[map]) {
@@ -119,25 +119,22 @@ function initoprm() {
   <a href="carail">California<br>
   <img id="carailmap" src="carail/1910.svg" width="296px" height="390px" alt="sample California passenger rail map"></a></span></span>
 <span class="bigcell">
-  Streetcar and trolleybus timelines, 1840-2010:<br>
+  City rail and trolleybus timelines, 1840-2010:<br>
 <span class="innercell">
-  <a href="bostrolleys">Boston<br>
-  <img id="bostrolleysmap" src="bostrolleys/1950.svg" width="363px" height="435px" alt="sample Boston trolley map"></a></span>
+  <a href="bosbymode">Boston<br>
+  <img id="bosbymodemap" src="bosbymode/1950.svg" width="363px" height="435px" alt="sample Boston rail & trolleybus map"></a></span>
 <span class="innercell">
-  <a href="sftrolleys">San Francisco<br>
-  <img id="sftrolleysmap" src="sftrolleys/1950.svg" width="246px" height="246px" alt="sample San Francisco trolley map"></a></span></span><br>
+  <a href="sfbymode">San Francisco<br>
+  <img id="sfbymodemap" src="sfbymode/1950.svg" width="246px" height="246px" alt="sample San Francisco rail & trolleybus map"></a></span></span><br>
 <span class="medcell">
-  <a href="nycstreetcars">New York streetcar abandonment,<br>1932-1957<br>
-  <img id="nycstreetcarsmap" src="nycstreetcars/1945.svg" width="390px" height="390px" alt="sample New York streetcar map"></a></span>
+  <a href="nyctrolleys">New York trolley abandonment,<br>1932-1957<br>
+  <img id="nyctrolleysmap" src="nyctrolleys/1945.svg" width="390px" height="390px" alt="sample New York trolley map"></a></span>
 <span class="medcell">
   <a href="sandy">Hurricane Sandy rapid transit recovery,<br>October 2012-June 2013<br>
   <img id="sandymap" src="sandy/8.svg" width="390px" height="390px" alt="sample Hurricane Sandy map"></a></span>
 <span class="medcell">
   <a href="nycflights">Nonstop flights from New York,<br>1930-2010<br>
   <img id="nycflightsmap" src="nycflights/2010.svg" width="400px" height="400px" alt="sample New York nonstop flight map"></a></span>
-<span class="medcell">
-  <a href="harvardtunnel">Routes using Harvard Transit Tunnel,<br>1920-2010<br>
-  <img id="harvardtunnelmap" src="harvardtunnel/2000.svg" width="246" height="261px" alt="sample Harvard Transit Tunnel map"></a></span>
 </div>
 <h3>Other maps:</h3>
 <div>
@@ -171,7 +168,7 @@ Google maps:
 <li>
   <a href="https://www.google.com/maps/d/edit?mid=1JCl-hJ3LsQZBSY7hFgSq28lld3Q">Boston-New York by local interurban trolleys, 1915</a>
 <li>
-  Streetcar systems in 1932:<ul>
+  Trolley systems in 1932:<ul>
 <li><a href="https://www.google.com/maps/d/edit?mid=1YF-6azqoHFeCqTrtNDDWmKsFTRU">New York City Area</a>
 <li><a href="https://www.google.com/maps/d/edit?mid=1nQ-9vr-XDdkJR3Nc3nfjeiksuCY">San Francisco Bay Area</a>
 <li><a href="https://www.google.com/maps/d/edit?mid=19mApGyHiIT2qbGbE3R_qqjtSLxR6UMXm">Boston Area</a>
