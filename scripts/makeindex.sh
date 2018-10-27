@@ -22,9 +22,9 @@ else
 fi
 
 if [ $(basename $(pwd)) == 'uncropped' ]; then
-	CITYNAME=`cat ../name`
+	CITYNAME=`cat ../name | sed -e's/<br>/ /'`
 else
-	CITYNAME=`cat name`
+	CITYNAME=`cat name | sed -e's/<br>/ /'`
 fi
 NATIVEW=$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
 W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*1169/5376)}")

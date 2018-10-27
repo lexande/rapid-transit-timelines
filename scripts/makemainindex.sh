@@ -20,7 +20,7 @@ div#sidebar {
 	float: left;
 	background: #ffffff;
 	border: 1px solid;
-	width: 10em;
+	width: 10.5em;
 	max-height: calc(100% - 22px);
 	top: 0;
 	left: 0;
@@ -54,8 +54,8 @@ span {
 	margin-right: 10px;
 }
 .headerfooter {
-	padding-left: calc(10em + 22px);
-	padding-right: calc(10em + 22px);
+	padding-left: calc(10.5em + 22px);
+	padding-right: calc(10.5em + 22px);
 	white-space: nowrap;
 }
 body {
@@ -198,7 +198,7 @@ function togglesidebar() {
 		s.style.display = 'block';
 		h.style.display = 'block';
 		a.innerHTML = "[&minus;]";
-		m.style.paddingLeft = "calc(10em + 22px)";
+		m.style.paddingLeft = "calc(10.5em + 22px)";
 	}
 }
 function selectall(i) {
@@ -270,7 +270,7 @@ window.onload=function() {
 <small>(maps ordered by opening date; click a city name in sidebar to jump to its map)</small>
 </div>
 <br>
-<div id="maps" style="padding-left: calc(10em + 22px);">
+<div id="maps" style="padding-left: calc(10.5em + 22px);">
 <noscript>Sorry, the maps really don't work without javascript.</noscript>
 HEREDOC
 
@@ -307,7 +307,7 @@ cat <<HEREDOC
 HEREDOC
 ALPHA=$(echo $@ | perl -wpe's/ /\n/g' | perl -wpe'/(...)/; $name=`cat $1/name`; chomp $name; print $name . " ";' | sort | perl -wpe's/.*(...)\n/$1 /')
 for city in $ALPHA; do
-  NAME=`cat $city/name`
+  NAME=`cat $city/name | sed -e's/<br>/ /'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   if [ -f $city/s ]; then
     echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"javascript:sidebarclick('$UPPER')\">$NAME</a><br>"
