@@ -31,6 +31,8 @@ function toggleshow(x) {
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <center>
 <h3>Streetcar Scale Comparison</h3>
+<span id="AMS" style="display: inline-block; vertical-align: middle">Amsterdam<br>
+  <img class="map" src="ams.svg" title="Amsterdam" alt="Amsterdam map" width="518px" height="435px"></span>
 <span id="ATL" style="display: inline-block; vertical-align: middle">Atlanta<br>
   <img class="map" src="atl.svg" title="Atlanta" alt="Atlanta map" width="65px" height="37px"></span>
 <span id="BER" style="display: inline-block; vertical-align: middle">Berlin<br>
@@ -111,6 +113,7 @@ function toggleshow(x) {
   <img class="map" src="vie.svg" title="Wien" alt="Wien map" width="620px" height="1044px"></span>
 <p>
 <form action="">Cities to show:
+<div style="display: inline-block"><input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')" checked>Amsterdam</div>
 <div style="display: inline-block"><input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked>Atlanta</div>
 <div style="display: inline-block"><input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')" checked>Berlin</div>
 <div style="display: inline-block"><input type="checkbox" id="BLKcheckbox" onclick="toggleshow('BLK')" checked>Blackpool</div>
