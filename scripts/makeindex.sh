@@ -2,27 +2,25 @@
 pushd $1
 START=$(basename $(ls *.svg | grep '^1\|^2' | head -n 1) .svg)
 END=$(basename $(ls *.svg | grep '^1\|^2' | tail -n 1) .svg)
-if [ $END == 2020 ]; then
-	END=2015
-fi
 if [ -f $(expr $START + 1).svg ]; then
         STEP=1
         COUNT=$(expr 1 + \( $END - $START \))
-        INDEX="count-1"
         SNAME="one year"
-
-#elif [ -f $(expr $START + 5).svg ]; then
+elif [ -f $(expr $START + 10).svg ] && [ ! -f $(expr $START + 5).svg ]; then
+	STEP=10
+	COUNT=$(expr 1 + \( $END - $START \) / 10)
+	SNAME="ten years"
 else
 	STEP=5
 	COUNT=$(expr 1 + \( $END - $START \) / 5)
-	INDEX="count-1"
 	SNAME="five years"
-#else
-#	STEP=10
-#	COUNT=$(expr 1 + \( $END - $START \) / 10)
-#	INDEX="count-1"
-#	SNAME="ten years"
 fi
+if [ $END == 2020 ]; then
+	INDEX="count-2"
+else
+	INDEX="count-1"
+fi
+
 if [ $(basename $(pwd)) == 'uncropped' ]; then
 	CITYNAME=`cat ../name`
 else
