@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 1550 2100"
-   height="2100"
-   width="1550"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="1350"
+   height="2100"
+   viewBox="0 0 1350 2100">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,33 +27,24 @@
      id="defs6" />
   <image
      style="display:none"
-     y="-19.5"
-     x="-300"
-     id="image10"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/hrbosm.png"
-     preserveAspectRatio="none"
+     width="1884"
      height="2119.5"
-     width="1884" />
+     preserveAspectRatio="none"
+     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/hrbosm.png"
+     id="image10"
+     x="-500"
+     y="-19.5" />
   <path
-     id="path836"
-     d="M 508.11519,1983.0757 386.01343,1188.7671 374.7956,1151.6619 469.28424,960.9588 909.7998,415.16828 l 83.7022,-41.85113 110.0211,-143.24306 13.3751,-15.53238 92.3313,-42.71404 17.6897,-2.58873 48.7544,3.02018 174.3078,-28.90748"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#b60000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#b60000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 308.11519,1983.0757 186.01343,1188.7671 174.7956,1151.6619 269.28424,960.9588 709.7998,415.16828 793.502,373.31715 903.5231,230.07409 l 13.3751,-15.53238 92.3313,-42.71404 17.6897,-2.58873 48.7544,3.02018 174.3078,-28.90748"
+     id="path836" />
   <text
-     x="89.453133"
-     y="206.96094"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text3784"
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453133"
+     y="206.96094"
+     x="89.453133"><tspan
+       id="tspan1"
        y="206.96094"
-       id="tspan1">2015</tspan></text>
-  <text
-     x="89.453133"
-     y="1997.9609"
-     id="text3788"
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453133"
-       y="1997.9609"
-       id="tspan2">2015</tspan></text>
+       x="89.453133">2015</tspan></text>
 </svg>
