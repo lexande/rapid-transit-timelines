@@ -31,9 +31,9 @@ body {
 <script language="JavaScript" type="text/javascript">
 start=1875;
 count=29;
-citylist = ["NYC","CHI","BWI","PHL","BOS","PVD","PIT","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DTT","JAX","DAL","STL","DEN","SLC","MSP","CLT","LAS","SJU","ORF","HFD"];
-citystartyears = { nyc: 1875, chi: 1895, bwi: 1895, phl: 1900, bos: 1900, pvd: 1900, pit: 1875, lax: 1910, sfo: 1920, cle: 1920, sea: 1965, was: 1950, atl: 1980, san: 1985, mia: 1985, buf: 1985, pdx: 1990, sac: 1990, dtt: 1990, jax: 1990, dal: 1970, stl: 1995, den: 1995, slc: 2000, msp: 2005, clt: 2005, las: 1995, sju: 2005, orf: 2015, hfd: 2015, };
-svgviewboxes = { nyc: "5376 5376", chi: "4250 5610", bwi: "2612 5150", phl: "4398 4650", bos: "3200 3750", pvd: "1050 1850", pit: "2800 2850", lax: "5445 6450", sfo: "9000 12300", cle: "3600 2000", sea: "2000 4200", was: "6050 5650", atl: "3650 5000", san: "3300 4850", mia: "2128 2900", buf: "768 1280", pdx: "6300 2850", sac: "3000 3050", dtt: "550 450", jax: "550 550", dal: "6400 5670", stl: "6063 4000", den: "4400 3600", slc: "2400 4200", msp: "2250 2350", clt: "900 2048", las: "545 1090", sju: "1650 1000", orf: "1619 600", hfd: "1400 1700", };
+citylist = ["NYC","CHI","BWI","BOS","PVD","PIT","PHL","LAX","SFO","CLE","SEA","WAS","ATL","SAN","MIA","BUF","PDX","SAC","DTT","JAX","DAL","STL","DEN","SLC","MSP","CLT","LAS","SJU","ORF","HFD"];
+citystartyears = { nyc: 1875, chi: 1895, bwi: 1895, bos: 1900, pvd: 1900, pit: 1875, phl: 1900, lax: 1910, sfo: 1920, cle: 1920, sea: 1965, was: 1950, atl: 1980, san: 1985, mia: 1985, buf: 1985, pdx: 1990, sac: 1990, dtt: 1990, jax: 1990, dal: 1970, stl: 1995, den: 1995, slc: 2000, msp: 2005, clt: 2005, las: 1995, sju: 2005, orf: 2015, hfd: 2015, };
+svgviewboxes = { nyc: "5376 5376", chi: "4250 5610", bwi: "2612 5150", bos: "3200 3750", pvd: "1050 1850", pit: "2800 2850", phl: "4398 4650", lax: "5445 6450", sfo: "9000 12300", cle: "3600 2000", sea: "2000 4200", was: "6050 5650", atl: "3650 5000", san: "3300 4850", mia: "2128 2900", buf: "768 1280", pdx: "6300 2850", sac: "3000 3050", dtt: "550 450", jax: "550 550", dal: "6400 5670", stl: "6063 4000", den: "4400 3600", slc: "2400 4200", msp: "2250 2350", clt: "900 2048", las: "545 1090", sju: "1650 1000", orf: "1619 600", hfd: "1400 1700", };
 step=5;
 index=count-1;
 function update(city) {
@@ -151,14 +151,14 @@ window.onload=function() {
   <a href="chi" class="map-wrap"><img class="map" id="CHImap" src="chi/small/2015.svg" title="2015" alt="2015 map" width="308px" height="407px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BWI" style="display: inline-block;"><a href="bwi">Baltimore</a><br>
   <a href="bwi" class="map-wrap"><img class="map" id="BWImap" src="bwi/small/2015.svg" title="2015" alt="2015 map" width="189px" height="373px" style="border-width: 1px; border-style: solid"></a></span>
-<span id="PHL" style="display: inline-block;"><a href="phl">Philadelphia</a><br>
-  <a href="phl" class="map-wrap"><img class="map" id="PHLmap" src="phl/small/2015.svg" title="2015" alt="2015 map" width="319px" height="337px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="BOS" style="display: inline-block;"><a href="../ttimeline">Boston</a><br>
   <a href="../ttimeline" class="map-wrap"><img class="map" id="BOSmap" src="bos/small/2015.svg" title="2015" alt="2015 map" width="232px" height="272px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PVD" style="display: inline-block;"><a href="pvd">Providence</a><br>
   <a href="pvd" class="map-wrap"><img class="map" id="PVDmap" src="pvd/small/2015.svg" title="2015" alt="2015 map" width="76px" height="134px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="PIT" style="display: inline-block;"><a href="pit">Pittsburgh</a><br>
   <a href="pit" class="map-wrap"><img class="map" id="PITmap" src="pit/small/2015.svg" title="2015" alt="2015 map" width="203px" height="207px" style="border-width: 1px; border-style: solid"></a></span>
+<span id="PHL" style="display: inline-block;"><a href="phl">Philadelphia</a><br>
+  <a href="phl" class="map-wrap"><img class="map" id="PHLmap" src="phl/small/2015.svg" title="2015" alt="2015 map" width="319px" height="337px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="LAX" style="display: inline-block;"><a href="lax">Los Angeles</a><br>
   <a href="lax" class="map-wrap"><img class="map" id="LAXmap" src="lax/small/2015.svg" title="2015" alt="2015 map" width="395px" height="468px" style="border-width: 1px; border-style: solid"></a></span>
 <span id="SFO" style="display: inline-block;"><a href="sfo">San Francisco</a><br>
@@ -215,10 +215,10 @@ window.onload=function() {
 <div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="../subtimeline/">New York</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="chi">Chicago</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BWIcheckbox" onclick="toggleshow('BWI')" checked><a href="bwi">Baltimore</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="phl">Philadelphia</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PVDcheckbox" onclick="toggleshow('PVD')" checked><a href="pvd">Providence</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PITcheckbox" onclick="toggleshow('PIT')" checked><a href="pit">Pittsburgh</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="phl">Philadelphia</a></div>
 <div style="display: inline-block"><input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')" checked><a href="lax">Los Angeles</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="sfo">San Francisco</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CLEcheckbox" onclick="toggleshow('CLE')" checked><a href="cle">Cleveland</a></div>
@@ -305,7 +305,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="chi/small/2005.svg" width="1" height="1" alt="">
 <img src="chi/small/2010.svg" width="1" height="1" alt="">
 <img src="chi/small/2015.svg" width="1" height="1" alt="">
-<img src="chi/small/2020.svg" width="1" height="1" alt="">
 <img src="bwi/small/1895.svg" width="1" height="1" alt="">
 <img src="bwi/small/1900.svg" width="1" height="1" alt="">
 <img src="bwi/small/1905.svg" width="1" height="1" alt="">
@@ -331,31 +330,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="bwi/small/2005.svg" width="1" height="1" alt="">
 <img src="bwi/small/2010.svg" width="1" height="1" alt="">
 <img src="bwi/small/2015.svg" width="1" height="1" alt="">
-<img src="bwi/small/2020.svg" width="1" height="1" alt="">
-<img src="phl/small/1900.svg" width="1" height="1" alt="">
-<img src="phl/small/1905.svg" width="1" height="1" alt="">
-<img src="phl/small/1910.svg" width="1" height="1" alt="">
-<img src="phl/small/1915.svg" width="1" height="1" alt="">
-<img src="phl/small/1920.svg" width="1" height="1" alt="">
-<img src="phl/small/1925.svg" width="1" height="1" alt="">
-<img src="phl/small/1930.svg" width="1" height="1" alt="">
-<img src="phl/small/1935.svg" width="1" height="1" alt="">
-<img src="phl/small/1940.svg" width="1" height="1" alt="">
-<img src="phl/small/1945.svg" width="1" height="1" alt="">
-<img src="phl/small/1950.svg" width="1" height="1" alt="">
-<img src="phl/small/1955.svg" width="1" height="1" alt="">
-<img src="phl/small/1960.svg" width="1" height="1" alt="">
-<img src="phl/small/1965.svg" width="1" height="1" alt="">
-<img src="phl/small/1970.svg" width="1" height="1" alt="">
-<img src="phl/small/1975.svg" width="1" height="1" alt="">
-<img src="phl/small/1980.svg" width="1" height="1" alt="">
-<img src="phl/small/1985.svg" width="1" height="1" alt="">
-<img src="phl/small/1990.svg" width="1" height="1" alt="">
-<img src="phl/small/1995.svg" width="1" height="1" alt="">
-<img src="phl/small/2000.svg" width="1" height="1" alt="">
-<img src="phl/small/2005.svg" width="1" height="1" alt="">
-<img src="phl/small/2010.svg" width="1" height="1" alt="">
-<img src="phl/small/2015.svg" width="1" height="1" alt="">
 <img src="bos/small/1900.svg" width="1" height="1" alt="">
 <img src="bos/small/1905.svg" width="1" height="1" alt="">
 <img src="bos/small/1910.svg" width="1" height="1" alt="">
@@ -380,6 +354,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="bos/small/2005.svg" width="1" height="1" alt="">
 <img src="bos/small/2010.svg" width="1" height="1" alt="">
 <img src="bos/small/2015.svg" width="1" height="1" alt="">
+<img src="bos/small/2020.svg" width="1" height="1" alt="">
 <img src="pvd/small/1900.svg" width="1" height="1" alt="">
 <img src="pvd/small/1905.svg" width="1" height="1" alt="">
 <img src="pvd/small/1910.svg" width="1" height="1" alt="">
@@ -433,6 +408,30 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="pit/small/2005.svg" width="1" height="1" alt="">
 <img src="pit/small/2010.svg" width="1" height="1" alt="">
 <img src="pit/small/2015.svg" width="1" height="1" alt="">
+<img src="phl/small/1900.svg" width="1" height="1" alt="">
+<img src="phl/small/1905.svg" width="1" height="1" alt="">
+<img src="phl/small/1910.svg" width="1" height="1" alt="">
+<img src="phl/small/1915.svg" width="1" height="1" alt="">
+<img src="phl/small/1920.svg" width="1" height="1" alt="">
+<img src="phl/small/1925.svg" width="1" height="1" alt="">
+<img src="phl/small/1930.svg" width="1" height="1" alt="">
+<img src="phl/small/1935.svg" width="1" height="1" alt="">
+<img src="phl/small/1940.svg" width="1" height="1" alt="">
+<img src="phl/small/1945.svg" width="1" height="1" alt="">
+<img src="phl/small/1950.svg" width="1" height="1" alt="">
+<img src="phl/small/1955.svg" width="1" height="1" alt="">
+<img src="phl/small/1960.svg" width="1" height="1" alt="">
+<img src="phl/small/1965.svg" width="1" height="1" alt="">
+<img src="phl/small/1970.svg" width="1" height="1" alt="">
+<img src="phl/small/1975.svg" width="1" height="1" alt="">
+<img src="phl/small/1980.svg" width="1" height="1" alt="">
+<img src="phl/small/1985.svg" width="1" height="1" alt="">
+<img src="phl/small/1990.svg" width="1" height="1" alt="">
+<img src="phl/small/1995.svg" width="1" height="1" alt="">
+<img src="phl/small/2000.svg" width="1" height="1" alt="">
+<img src="phl/small/2005.svg" width="1" height="1" alt="">
+<img src="phl/small/2010.svg" width="1" height="1" alt="">
+<img src="phl/small/2015.svg" width="1" height="1" alt="">
 <img src="lax/small/1910.svg" width="1" height="1" alt="">
 <img src="lax/small/1915.svg" width="1" height="1" alt="">
 <img src="lax/small/1920.svg" width="1" height="1" alt="">
@@ -475,7 +474,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="sfo/small/2005.svg" width="1" height="1" alt="">
 <img src="sfo/small/2010.svg" width="1" height="1" alt="">
 <img src="sfo/small/2015.svg" width="1" height="1" alt="">
-<img src="sfo/small/2020.svg" width="1" height="1" alt="">
 <img src="cle/small/1920.svg" width="1" height="1" alt="">
 <img src="cle/small/1925.svg" width="1" height="1" alt="">
 <img src="cle/small/1930.svg" width="1" height="1" alt="">
@@ -496,7 +494,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="cle/small/2005.svg" width="1" height="1" alt="">
 <img src="cle/small/2010.svg" width="1" height="1" alt="">
 <img src="cle/small/2015.svg" width="1" height="1" alt="">
-<img src="cle/small/2020.svg" width="1" height="1" alt="">
 <img src="sea/small/1965.svg" width="1" height="1" alt="">
 <img src="sea/small/1970.svg" width="1" height="1" alt="">
 <img src="sea/small/1975.svg" width="1" height="1" alt="">
@@ -538,6 +535,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="san/small/2005.svg" width="1" height="1" alt="">
 <img src="san/small/2010.svg" width="1" height="1" alt="">
 <img src="san/small/2015.svg" width="1" height="1" alt="">
+<img src="san/small/2020.svg" width="1" height="1" alt="">
 <img src="mia/small/1985.svg" width="1" height="1" alt="">
 <img src="mia/small/1990.svg" width="1" height="1" alt="">
 <img src="mia/small/1995.svg" width="1" height="1" alt="">
@@ -560,6 +558,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="pdx/small/2005.svg" width="1" height="1" alt="">
 <img src="pdx/small/2010.svg" width="1" height="1" alt="">
 <img src="pdx/small/2015.svg" width="1" height="1" alt="">
+<img src="pdx/small/2020.svg" width="1" height="1" alt="">
 <img src="sac/small/1990.svg" width="1" height="1" alt="">
 <img src="sac/small/1995.svg" width="1" height="1" alt="">
 <img src="sac/small/2000.svg" width="1" height="1" alt="">
@@ -595,6 +594,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="stl/small/2005.svg" width="1" height="1" alt="">
 <img src="stl/small/2010.svg" width="1" height="1" alt="">
 <img src="stl/small/2015.svg" width="1" height="1" alt="">
+<img src="stl/small/2020.svg" width="1" height="1" alt="">
 <img src="den/small/1995.svg" width="1" height="1" alt="">
 <img src="den/small/2000.svg" width="1" height="1" alt="">
 <img src="den/small/2005.svg" width="1" height="1" alt="">
@@ -604,13 +604,13 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="slc/small/2005.svg" width="1" height="1" alt="">
 <img src="slc/small/2010.svg" width="1" height="1" alt="">
 <img src="slc/small/2015.svg" width="1" height="1" alt="">
+<img src="slc/small/2020.svg" width="1" height="1" alt="">
 <img src="msp/small/2005.svg" width="1" height="1" alt="">
 <img src="msp/small/2010.svg" width="1" height="1" alt="">
 <img src="msp/small/2015.svg" width="1" height="1" alt="">
 <img src="clt/small/2005.svg" width="1" height="1" alt="">
 <img src="clt/small/2010.svg" width="1" height="1" alt="">
 <img src="clt/small/2015.svg" width="1" height="1" alt="">
-<img src="clt/small/2020.svg" width="1" height="1" alt="">
 <img src="las/small/1995.svg" width="1" height="1" alt="">
 <img src="las/small/2000.svg" width="1" height="1" alt="">
 <img src="las/small/2005.svg" width="1" height="1" alt="">
@@ -622,6 +622,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="sju/small/2015.svg" width="1" height="1" alt="">
 <img src="sju/small/2020.svg" width="1" height="1" alt="">
 <img src="orf/small/2015.svg" width="1" height="1" alt="">
+<img src="orf/small/2020.svg" width="1" height="1" alt="">
 <img src="hfd/small/2015.svg" width="1" height="1" alt="">
 </div>
 See also: <a href=".">rapid transit timelines around the world</a> -
