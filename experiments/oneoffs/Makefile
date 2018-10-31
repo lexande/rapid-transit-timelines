@@ -4,7 +4,7 @@ all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
 	gzip -f --keep $<
 
 index.html: names makeindex.sh $(wildcard *.svg)
-	./makeindex.sh 390 cbg.svg dws.svg hnl.svg ind.svg mci.svg lon.svg lou.svg mgw.svg nyc.svg roc.svg sea.svg sux.svg > $@
+	./makeindex.sh 390 dws.svg hnl.svg ind.svg mci.svg lon.svg lou.svg mgw.svg nyc.svg roc.svg sea.svg sux.svg > $@
 
 large.html: names makeindex.sh $(wildcard *.svg)
-	./makeindex.sh 1169 cbg.svg dws.svg hnl.svg ind.svg mci.svg lon.svg lou.svg mgw.svg nyc.svg roc.svg sea.svg sux.svg > $@
+	./makeindex.sh 1169 dws.svg hnl.svg ind.svg mci.svg lon.svg lou.svg mgw.svg nyc.svg roc.svg sea.svg sux.svg > $@
