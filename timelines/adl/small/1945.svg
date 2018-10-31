@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
+   viewBox="0 0 3500 9250"
+   height="9250"
+   width="3500"
    version="1.1"
-   width="3300"
-   height="6900"
-   viewBox="0 0 3300 6900">
+   id="svg2">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -28,40 +28,40 @@
   <image
      xlink:href="../streetmap/adlosm.png"
      style="display:none"
-     y="-2707.5381"
+     y="-357.53809"
      x="0"
      id="image10"
      preserveAspectRatio="none"
      height="9407.5381"
      width="3597" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#e91938;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1619,2850 -13,31 -19,27 -45,33.5 -100.5,60 -188,117.5 -270.5,167 -205.5,126 -20.5,10 -32.5,9 -31,5.5 -81,5"
-     id="path4171" />
+     id="path4171"
+     d="m 1619,5200 -13,31 -19,27 -45,33.5 -100.5,60 -188,117.5 -270.5,167 -205.5,126 -20.5,10 -32.5,9 -31,5.5 -81,5"
+     style="fill:none;fill-rule:evenodd;stroke:#e91938;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#e91938;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
-     d="m 502.5,3447.5 113,-6"
-     id="path4173" />
+     id="path4173"
+     d="m 502.5,5797.5 113,-6"
+     style="fill:none;fill-rule:evenodd;stroke:#e91938;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#e91938;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
-     d="m 1618.5,2850 4.5,-15 -2.5,-66 2,-10.5 -5.5,-81.5 -1.3683,-21.3033"
-     id="path4175" />
+     id="path4175"
+     d="m 1618.5,5200 4.5,-15 -2.5,-66 2,-10.5 -5.5,-81.5 -1.3683,-21.3033"
+     style="fill:none;fill-rule:evenodd;stroke:#e91938;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     xml:space="preserve"
+     x="89.453125"
+     y="9147.9609"
      id="text3788"
-     y="6797.9609"
-     x="89.453125"><tspan
-       id="tspan2"
-       y="6797.9609"
-       x="89.453125"></tspan></text>
-  <text
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453125"
+       y="9147.9609"
+       id="tspan2"></tspan></text>
+  <text
+     x="89.453102"
+     y="206.96094"
      id="text3792"
-     y="206.96097"
-     x="89.453102"><tspan
-       id="tspan1"
-       y="206.96097"
-       x="89.453102">1945</tspan></text>
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453102"
+       y="206.96094"
+       id="tspan1">1945</tspan></text>
 </svg>
