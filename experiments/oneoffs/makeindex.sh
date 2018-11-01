@@ -36,23 +36,29 @@ function toggleshow(x) {
 <h3>One-off Rapid Transit Maps for Scale Comparison with <a href="/timelines">Timelines</a></h3>
 HEREDOC
 for file in $@; do
-  city=`basename $file .svg`
-  NAME=`grep ^$city names | sed -e's/.*\t//'`
-  SNAME=`echo $NAME | sed -e's/<br>.*//'`
-  UPPER=$(echo $city | tr 'a-z' 'A-Z')
-  NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
-  W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/5376)}")
-  H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
-  echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
-  echo '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
+  if [ -f $file ]; then
+    city=`basename $file .svg`
+    NAME=`grep ^$city names | sed -e's/.*\t//'`
+    SNAME=`echo $NAME | sed -e's/<br>.*//'`
+    UPPER=$(echo $city | tr 'a-z' 'A-Z')
+    NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
+    W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/5376)}")
+    H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
+    echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
+    echo '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
+  else
+    echo '<h4>'$file'</h4>'
+  fi
 done
 echo '<p>'
 echo '<!--<form action="">Cities to show:'
 for file in $@; do
-  city=`basename $file .svg`
-  NAME=`grep ^$city names | sed -e's/.*\t//'`
-  UPPER=$(echo $city | tr 'a-z' 'A-Z')
-  echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked>$NAME</div>"
+  if [ -f $file ]; then
+    city=`basename $file .svg`
+    NAME=`grep ^$city names | sed -e's/.*\t//'`
+    UPPER=$(echo $city | tr 'a-z' 'A-Z')
+    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked>$NAME</div>"
+  fi
 done
 if [ $SCALE = 390 ]; then
   cat <<HEREDOC

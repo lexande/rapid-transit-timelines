@@ -31,41 +31,44 @@ function toggleshow(x) {
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <center>
 <h3>One-off Rapid Transit Maps for Scale Comparison with <a href="/timelines">Timelines</a></h3>
-<span id="DWS" style="display: inline-block; vertical-align: middle">Disneyworld<br><small>(modulo stop spacing)</small><br>
-  <img class="map" src="dws.svg" title="Disneyworld" alt="Disneyworld map" width="51px" height="73px"></span>
-<span id="HNL" style="display: inline-block; vertical-align: middle">Honolulu 2025<br>
-  <img class="map" src="hnl.svg" title="Honolulu 2025" alt="Honolulu 2025 map" width="239px" height="145px"></span>
-<span id="IND" style="display: inline-block; vertical-align: middle">Indianapolis<br>
-  <img class="map" src="ind.svg" title="Indianapolis" alt="Indianapolis map" width="40px" height="33px"></span>
-<span id="MCI" style="display: inline-block; vertical-align: middle">Kansas City 1895<br>
-  <img class="map" src="mci.svg" title="Kansas City 1895" alt="Kansas City 1895 map" width="73px" height="58px"></span>
+<h4>Past:</h4>
+<span id="NYC" style="display: inline-block; vertical-align: middle">New York<br><small>(horse)</small><br>
+  <img class="map" src="nyc.svg" title="New York" alt="New York map" width="47px" height="83px"></span>
+<span id="MCI" style="display: inline-block; vertical-align: middle">Kansas City<br>
+  <img class="map" src="mci.svg" title="Kansas City" alt="Kansas City map" width="73px" height="58px"></span>
+<span id="SUX" style="display: inline-block; vertical-align: middle">Sioux City<br>
+  <img class="map" src="sux.svg" title="Sioux City" alt="Sioux City map" width="69px" height="54px"></span>
+<span id="LOU" style="display: inline-block; vertical-align: middle">Louisville<br>
+  <img class="map" src="lou.svg" title="Louisville" alt="Louisville map" width="62px" height="62px"></span>
+<span id="ROC" style="display: inline-block; vertical-align: middle">Rochester<br>
+  <img class="map" src="roc.svg" title="Rochester" alt="Rochester map" width="98px" height="116px"></span>
+<h4>Special-Purpose:</h4>
 <span id="LON" style="display: inline-block; vertical-align: middle">London Mail Rail<br><small>(no passengers)</small><br>
   <img class="map" src="lon.svg" title="London Mail Rail" alt="London Mail Rail map" width="96px" height="32px"></span>
-<span id="LOU" style="display: inline-block; vertical-align: middle">Louisville 1895<br>
-  <img class="map" src="lou.svg" title="Louisville 1895" alt="Louisville 1895 map" width="62px" height="62px"></span>
+<span id="DWS" style="display: inline-block; vertical-align: middle">Disneyworld<br><small>(modulo stop spacing)</small><br>
+  <img class="map" src="dws.svg" title="Disneyworld" alt="Disneyworld map" width="51px" height="73px"></span>
 <span id="MGW" style="display: inline-block; vertical-align: middle">Morgantown<br><small>(not year round)</small><br>
   <img class="map" src="mgw.svg" title="Morgantown" alt="Morgantown map" width="40px" height="51px"></span>
-<span id="NYC" style="display: inline-block; vertical-align: middle">New York 1870<br><small>(horse)</small><br>
-  <img class="map" src="nyc.svg" title="New York 1870" alt="New York 1870 map" width="47px" height="83px"></span>
-<span id="ROC" style="display: inline-block; vertical-align: middle">Rochester 1930<br>
-  <img class="map" src="roc.svg" title="Rochester 1930" alt="Rochester 1930 map" width="98px" height="116px"></span>
-<span id="SEA" style="display: inline-block; vertical-align: middle">Seattle 2025<br>
-  <img class="map" src="sea.svg" title="Seattle 2025" alt="Seattle 2025 map" width="189px" height="487px"></span>
-<span id="SUX" style="display: inline-block; vertical-align: middle">Sioux City 1895<br>
-  <img class="map" src="sux.svg" title="Sioux City 1895" alt="Sioux City 1895 map" width="69px" height="54px"></span>
+<span id="IND" style="display: inline-block; vertical-align: middle">Indianapolis<br>
+  <img class="map" src="ind.svg" title="Indianapolis" alt="Indianapolis map" width="40px" height="33px"></span>
+<h4>Future:</h4>
+<span id="SEA" style="display: inline-block; vertical-align: middle">Seattle<br>
+  <img class="map" src="sea.svg" title="Seattle" alt="Seattle map" width="189px" height="487px"></span>
+<span id="HNL" style="display: inline-block; vertical-align: middle">Honolulu<br>
+  <img class="map" src="hnl.svg" title="Honolulu" alt="Honolulu map" width="239px" height="145px"></span>
 <p>
 <!--<form action="">Cities to show:
-<div style="display: inline-block"><input type="checkbox" id="DWScheckbox" onclick="toggleshow('DWS')" checked>Disneyworld<br><small>(modulo stop spacing)</small></div>
-<div style="display: inline-block"><input type="checkbox" id="HNLcheckbox" onclick="toggleshow('HNL')" checked>Honolulu 2025</div>
-<div style="display: inline-block"><input type="checkbox" id="INDcheckbox" onclick="toggleshow('IND')" checked>Indianapolis</div>
-<div style="display: inline-block"><input type="checkbox" id="MCIcheckbox" onclick="toggleshow('MCI')" checked>Kansas City 1895</div>
+<div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked>New York<br><small>(horse)</small></div>
+<div style="display: inline-block"><input type="checkbox" id="MCIcheckbox" onclick="toggleshow('MCI')" checked>Kansas City</div>
+<div style="display: inline-block"><input type="checkbox" id="SUXcheckbox" onclick="toggleshow('SUX')" checked>Sioux City</div>
+<div style="display: inline-block"><input type="checkbox" id="LOUcheckbox" onclick="toggleshow('LOU')" checked>Louisville</div>
+<div style="display: inline-block"><input type="checkbox" id="ROCcheckbox" onclick="toggleshow('ROC')" checked>Rochester</div>
 <div style="display: inline-block"><input type="checkbox" id="LONcheckbox" onclick="toggleshow('LON')" checked>London Mail Rail<br><small>(no passengers)</small></div>
-<div style="display: inline-block"><input type="checkbox" id="LOUcheckbox" onclick="toggleshow('LOU')" checked>Louisville 1895</div>
+<div style="display: inline-block"><input type="checkbox" id="DWScheckbox" onclick="toggleshow('DWS')" checked>Disneyworld<br><small>(modulo stop spacing)</small></div>
 <div style="display: inline-block"><input type="checkbox" id="MGWcheckbox" onclick="toggleshow('MGW')" checked>Morgantown<br><small>(not year round)</small></div>
-<div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked>New York 1870<br><small>(horse)</small></div>
-<div style="display: inline-block"><input type="checkbox" id="ROCcheckbox" onclick="toggleshow('ROC')" checked>Rochester 1930</div>
-<div style="display: inline-block"><input type="checkbox" id="SEAcheckbox" onclick="toggleshow('SEA')" checked>Seattle 2025</div>
-<div style="display: inline-block"><input type="checkbox" id="SUXcheckbox" onclick="toggleshow('SUX')" checked>Sioux City 1895</div>
+<div style="display: inline-block"><input type="checkbox" id="INDcheckbox" onclick="toggleshow('IND')" checked>Indianapolis</div>
+<div style="display: inline-block"><input type="checkbox" id="SEAcheckbox" onclick="toggleshow('SEA')" checked>Seattle</div>
+<div style="display: inline-block"><input type="checkbox" id="HNLcheckbox" onclick="toggleshow('HNL')" checked>Honolulu</div>
 </form>-->
 <a href="large.html">larger versions</a>
 <p>
