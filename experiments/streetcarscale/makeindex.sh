@@ -4,19 +4,26 @@ cat <<HEREDOC
 <head><title>Streetcar Scale Comparison</title>
 <style type="text/css">
 span {
-        margin-top: 10px;
-        margin-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .map {
-        border: 1px solid;
-        margin-left: 10px;
-        margin-right: 10px;
+	border: 1px solid;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 </style>
 <script language="JavaScript" type="text/javascript">
 function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
 	else document.getElementById(x).style.display = 'inline-block';
+}
+function listclick(x) {
+	span = document.getElementById(x);
+	if (span.style.display == 'none') {
+		document.getElementById(x + "checkbox").click();
+	}
+	span.scrollIntoView();
 }
 </script>
 <script type="text/javascript">
@@ -55,9 +62,9 @@ for file in $@; do
   NAME=`grep ^$city names | sed -e's/.*\t//; s/<br>.*//'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   if ( grep ^$city@ names >/dev/null); then
-    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\">$NAME</div>"
+    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\"><a href=\"javascript:listclick('$UPPER')\">$NAME</a></div>"
   else
-    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked>$NAME</div>"
+    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"javascript:listclick('$UPPER')\">$NAME</a></div>"
   fi
 done
 cat <<HEREDOC
