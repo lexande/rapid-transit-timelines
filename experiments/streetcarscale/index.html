@@ -33,8 +33,12 @@ function toggleshow(x) {
 <h3>Streetcar Scale Comparison</h3>
 <span id="ADL" style="display: inline-block; vertical-align: middle">Adelaide<br>
   <img class="map" src="adl.svg" title="Adelaide" alt="Adelaide map" width="120px" height="136px"></span>
+<span id="AMS" style="display: none; vertical-align: middle">Amsterdam<br>
+  <img class="map" src="ams.svg" title="Amsterdam" alt="Amsterdam map" width="518px" height="435px"></span>
 <span id="ATL" style="display: inline-block; vertical-align: middle">Atlanta<br>
   <img class="map" src="atl.svg" title="Atlanta" alt="Atlanta map" width="65px" height="37px"></span>
+<span id="BER" style="display: none; vertical-align: middle">Berlin<br>
+  <img class="map" src="ber.svg" title="Berlin" alt="Berlin map" width="1000px" height="837px"></span>
 <span id="BLK" style="display: inline-block; vertical-align: middle">Blackpool<br>
   <img class="map" src="blk.svg" title="Blackpool" alt="Blackpool map" width="130px" height="521px"></span>
 <span id="CLT" style="display: inline-block; vertical-align: middle">Charlotte<br>
@@ -71,7 +75,7 @@ function toggleshow(x) {
   <img class="map" src="mem.svg" title="Memphis" alt="Memphis map" width="54px" height="104px"></span>
 <span id="MSY" style="display: inline-block; vertical-align: middle">New Orleans<br>
   <img class="map" src="msy.svg" title="New Orleans" alt="New Orleans map" width="261px" height="254px"></span>
-<span id="PAR" style="display: inline-block; vertical-align: middle">Paris<br>
+<span id="PAR" style="display: none; vertical-align: middle">Paris<br>
   <img class="map" src="par.svg" title="Paris" alt="Paris map" width="685px" height="902px"></span>
 <span id="PHL" style="display: inline-block; vertical-align: middle">Philadelphia<br>
   <img class="map" src="phl.svg" title="Philadelphia" alt="Philadelphia map" width="696px" height="326px"></span>
@@ -95,10 +99,14 @@ function toggleshow(x) {
   <img class="map" src="tus.svg" title="Tucson" alt="Tucson map" width="141px" height="87px"></span>
 <span id="WAS" style="display: inline-block; vertical-align: middle">Washington<br>
   <img class="map" src="was.svg" title="Washington" alt="Washington map" width="120px" height="44px"></span>
+<span id="VIE" style="display: none; vertical-align: middle">Wien<br>
+  <img class="map" src="vie.svg" title="Wien" alt="Wien map" width="620px" height="1044px"></span>
 <p>
 <form action="">Cities to show:
 <div style="display: inline-block"><input type="checkbox" id="ADLcheckbox" onclick="toggleshow('ADL')" checked>Adelaide</div>
+<div style="display: inline-block"><input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')">Amsterdam</div>
 <div style="display: inline-block"><input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked>Atlanta</div>
+<div style="display: inline-block"><input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')">Berlin</div>
 <div style="display: inline-block"><input type="checkbox" id="BLKcheckbox" onclick="toggleshow('BLK')" checked>Blackpool</div>
 <div style="display: inline-block"><input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked>Charlotte</div>
 <div style="display: inline-block"><input type="checkbox" id="CHCcheckbox" onclick="toggleshow('CHC')" checked>Christchurch</div>
@@ -117,7 +125,7 @@ function toggleshow(x) {
 <div style="display: inline-block"><input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked>Melbourne</div>
 <div style="display: inline-block"><input type="checkbox" id="MEMcheckbox" onclick="toggleshow('MEM')" checked>Memphis</div>
 <div style="display: inline-block"><input type="checkbox" id="MSYcheckbox" onclick="toggleshow('MSY')" checked>New Orleans</div>
-<div style="display: inline-block"><input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')" checked>Paris</div>
+<div style="display: inline-block"><input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')">Paris</div>
 <div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked>Philadelphia</div>
 <div style="display: inline-block"><input type="checkbox" id="PHXcheckbox" onclick="toggleshow('PHX')" checked>Phoenix</div>
 <div style="display: inline-block"><input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked>Portland</div>
@@ -129,6 +137,7 @@ function toggleshow(x) {
 <div style="display: inline-block"><input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')" checked>Toronto</div>
 <div style="display: inline-block"><input type="checkbox" id="TUScheckbox" onclick="toggleshow('TUS')" checked>Tucson</div>
 <div style="display: inline-block"><input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked>Washington</div>
+<div style="display: inline-block"><input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')">Wien</div>
 </form>
 <p>
 Thick lines represent running in streets or with uncontrolled grade crossings; thin lines are sections with grade-separations or crossing gates.  Connecting rapid transit lines are shown in light gray.  All lines shown run at least every 20 minutes during the day on weekdays.  Maps current as of 2018.<br>
