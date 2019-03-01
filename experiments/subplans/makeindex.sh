@@ -3,7 +3,7 @@ shift
 cat <<HEREDOC
 <!DOCTYPE HTML>
 <html>
-<head><title>Unbuilt Rapid Transit Plans</title>
+<head><title>Unrealised Rapid Transit Plans</title>
 <style type="text/css">
 span {
         margin-top: 10px;
@@ -20,6 +20,15 @@ function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
 	else document.getElementById(x).style.display = 'inline-block';
 }
+function setsrc(x, url) {
+        document.getElementById(x + "map").src = url;
+}
+nextdict = {};
+function next(x) {
+	if (!(x in nextdict)) { nextdict[x] = 2; }
+	document.getElementById(x).getElementsByTagName('small')[1].getElementsByTagName('a')[nextdict[x]].click();
+	nextdict[x] += 1; if (nextdict[x] > 2) { nextdict[x] = 0; }
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -33,21 +42,36 @@ function toggleshow(x) {
 </script>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <center>
-<h3>Unrealized Rapid Transit Plans</h3>
+<h3>Unrealised Rapid Transit Plans</h3>
 HEREDOC
 for file in $@; do
   if [ -f $file ]; then
     city=`basename $file .svg`
-    NAME=`grep ^$city names | sed -e's/\S*\t//; s/\t.*//;'`
-    LINK=`grep ^$city names | sed -e's/.*\t//'`
-    SNAME=`echo $NAME | sed -e's/<br>.*//'`
-    UPPER=$(echo $city | tr 'a-z' 'A-Z')
+    NAME=`grep ^$city names | awk -F"\t" '{print $2}'`
+    SUBNAME=`grep ^$city names | awk -F"\t" '{print $3}'`
+    YEAR=`grep ^$city names | awk -F"\t" '{print $4}'`
+    EARLIER=`grep ^$city names | awk -F"\t" '{print $5}'`
+    LATER=`grep ^$city names | awk -F"\t" '{print $6}'`
+    EYEAR=`basename $EARLIER .svg | sed -e's/.*-//'`
+    LYEAR=`basename $LATER .svg | sed -e's/.*-//'`
     NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
     W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/5376)}")
     H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
-    echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
-    echo '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"><br>'
-    echo '  <a href="'$LINK'">more info</a></span>'
+    echo '<span id="'$city'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
+    echo '  <small>'$SUBNAME'</small><br>'
+    if [ ! -z $LATER ]; then
+      echo '<a href="javascript:next('\'$city\'');">'
+    fi
+    echo '  <img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"><br>'
+    if [ ! -z $LATER ]; then
+      echo '  </a>'
+      echo '  <small>'
+      echo '    <a href="javascript:setsrc('\'$city\'','\'$EARLIER\'');">'$EYEAR' actual</a>'
+      echo '    <a href="javascript:setsrc('\'$city\'','\'$file\'');">'$YEAR' proposal</a>'
+      echo '    <a href="javascript:setsrc('\'$city\'','\'$LATER\'');">'$LYEAR' actual</a>'
+      echo '  </small>'
+    fi
+    echo '</span>'
   else
     echo '<h4>'$file'</h4>'
   fi
