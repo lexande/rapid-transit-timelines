@@ -23,10 +23,18 @@ function setsrc(x, url) {
 nextdict = {};
 function next(x) {
 	if (!(x in nextdict)) { nextdict[x] = 1; }
-	document.getElementById(x).getElementsByClassName('setsrc')[nextdict[x]].click();
-	nextdict[x] += 1;
         if (nextdict[x] >= document.getElementById(x).getElementsByClassName('setsrc').length) {
 		nextdict[x] = 0;
+	}
+	document.getElementById(x).getElementsByClassName('setsrc')[nextdict[x]].click();
+	nextdict[x] += 1;
+}
+window.onload=function() {
+	spans = document.getElementsByTagName('span');
+	for (var i=0; i<spans.length; i++) {
+		if (document.getElementById(spans[i].id).getElementsByClassName('setsrc')[0].innerHTML.match(/actual/)) {
+			next(spans[i].id);
+		}
 	}
 }
 </script>
@@ -69,8 +77,10 @@ function next(x) {
   </small></span>
 <span id="bos" style="display: inline-block; vertical-align: middle">Boston<br>
   <a href="javascript:next('bos');">
-  <img class="map" src="../../ttimeline/small/1915.svg" id="bosmap" title="Boston" alt=" map" width="232px" height="272px"></a><br>
+  <img class="map" src="bos1892.svg" id="bosmap" title="Boston" alt=" map" width="232px" height="272px"></a><br>
   <small>
+    <a class="setsrc" href="javascript:setsrc('bos','bos1892.svg');">1892 proposal</a>
+(<a href="https://books.google.com/books?id=besqAAAAYAAJ&pg=PA72">info</a>)<br>
     <a class="setsrc" href="javascript:setsrc('bos','../../ttimeline/small/1915.svg');">1915 actual</a>
     <a class="setsrc" href="javascript:setsrc('bos','bos1917.svg');">1917 proposal</a>
 (<a href="https://books.google.com/books?id=YpApAAAAYAAJ">info</a>)<br>
@@ -81,12 +91,12 @@ function next(x) {
   </small></span>
 <span id="sfo" style="display: inline-block; vertical-align: middle">San Francisco<br>
   <a href="javascript:next('sfo');">
-  <img class="map" src="actualsfo-1965.svg" id="sfomap" title="San Francisco" alt=" map" width="363px" height="388px"></a><br>
+  <img class="map" src="actualsfo1965.svg" id="sfomap" title="San Francisco" alt=" map" width="363px" height="388px"></a><br>
   <small>
-    <a class="setsrc" href="javascript:setsrc('sfo','actualsfo-1965.svg');">1965 actual</a>
+    <a class="setsrc" href="javascript:setsrc('sfo','actualsfo1965.svg');">1965 actual</a>
     <a class="setsrc" href="javascript:setsrc('sfo','sfo1966.svg');">1966 proposal</a>
 (<a href="https://www.flickr.com/photos/walkingsf/4408099420/in/album-72157622518181915/">info</a>)<br>
-    <a class="setsrc" href="javascript:setsrc('sfo','actualsfo-2015.svg');">2015 actual</a>
+    <a class="setsrc" href="javascript:setsrc('sfo','actualsfo2015.svg');">2015 actual</a>
   </small></span>
 <span id="cvg" style="display: inline-block; vertical-align: middle">Cincinnati<br>
   <a href="javascript:next('cvg');">
@@ -113,14 +123,15 @@ function next(x) {
 <div style="display: inline-block"><input type="checkbox" id="1975checkbox" onclick="toggleshow('1975')" checked></div>
 <div style="display: inline-block"><input type="checkbox" id="CHI1976checkbox" onclick="toggleshow('CHI1976')" checked>http://www.chicago-l.org/plans/CUTD.html</div>
 <div style="display: inline-block"><input type="checkbox" id="2020checkbox" onclick="toggleshow('2020')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="BOS1892checkbox" onclick="toggleshow('BOS1892')" checked>https://books.google.com/books?id=besqAAAAYAAJ&pg=PA72</div>
 <div style="display: inline-block"><input type="checkbox" id="1915checkbox" onclick="toggleshow('1915')" checked></div>
 <div style="display: inline-block"><input type="checkbox" id="BOS1917checkbox" onclick="toggleshow('BOS1917')" checked>https://books.google.com/books?id=YpApAAAAYAAJ</div>
 <div style="display: inline-block"><input type="checkbox" id="1945checkbox" onclick="toggleshow('1945')" checked></div>
 <div style="display: inline-block"><input type="checkbox" id="BOS1945checkbox" onclick="toggleshow('BOS1945')" checked>https://commons.wikimedia.org/wiki/File:1945_BERy_extensions_map.jpg</div>
 <div style="display: inline-block"><input type="checkbox" id="2020checkbox" onclick="toggleshow('2020')" checked></div>
-<div style="display: inline-block"><input type="checkbox" id="ACTUALSFO-1965checkbox" onclick="toggleshow('ACTUALSFO-1965')" checked>1965 actual</div>
+<div style="display: inline-block"><input type="checkbox" id="ACTUALSFO1965checkbox" onclick="toggleshow('ACTUALSFO1965')" checked>1965 actual</div>
 <div style="display: inline-block"><input type="checkbox" id="SFO1966checkbox" onclick="toggleshow('SFO1966')" checked>https://www.flickr.com/photos/walkingsf/4408099420/in/album-72157622518181915/</div>
-<div style="display: inline-block"><input type="checkbox" id="ACTUALSFO-2015checkbox" onclick="toggleshow('ACTUALSFO-2015')" checked>2015 actual</div>
+<div style="display: inline-block"><input type="checkbox" id="ACTUALSFO2015checkbox" onclick="toggleshow('ACTUALSFO2015')" checked>2015 actual</div>
 <div style="display: inline-block"><input type="checkbox" id="CVG1920checkbox" onclick="toggleshow('CVG1920')" checked>http://digital.libraries.uc.edu/collections/subway/story.html</div>
 <div style="display: inline-block"><input type="checkbox" id="MSY1959checkbox" onclick="toggleshow('MSY1959')" checked>https://babel.hathitrust.org/cgi/pt?id=uiug.30112117747748</div>
 </form>-->

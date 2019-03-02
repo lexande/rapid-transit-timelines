@@ -26,10 +26,18 @@ function setsrc(x, url) {
 nextdict = {};
 function next(x) {
 	if (!(x in nextdict)) { nextdict[x] = 1; }
-	document.getElementById(x).getElementsByClassName('setsrc')[nextdict[x]].click();
-	nextdict[x] += 1;
         if (nextdict[x] >= document.getElementById(x).getElementsByClassName('setsrc').length) {
 		nextdict[x] = 0;
+	}
+	document.getElementById(x).getElementsByClassName('setsrc')[nextdict[x]].click();
+	nextdict[x] += 1;
+}
+window.onload=function() {
+	spans = document.getElementsByTagName('span');
+	for (var i=0; i<spans.length; i++) {
+		if (document.getElementById(spans[i].id).getElementsByClassName('setsrc')[0].innerHTML.match(/actual/)) {
+			next(spans[i].id);
+		}
 	}
 }
 </script>
