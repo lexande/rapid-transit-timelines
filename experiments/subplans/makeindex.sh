@@ -25,9 +25,12 @@ function setsrc(x, url) {
 }
 nextdict = {};
 function next(x) {
-	if (!(x in nextdict)) { nextdict[x] = 2; }
-	document.getElementById(x).getElementsByTagName('small')[1].getElementsByTagName('a')[nextdict[x]].click();
-	nextdict[x] += 1; if (nextdict[x] > 2) { nextdict[x] = 0; }
+	if (!(x in nextdict)) { nextdict[x] = 1; }
+	document.getElementById(x).getElementsByClassName('setsrc')[nextdict[x]].click();
+	nextdict[x] += 1;
+        if (nextdict[x] >= document.getElementById(x).getElementsByClassName('setsrc').length) {
+		nextdict[x] = 0;
+	}
 }
 </script>
 <script type="text/javascript">
@@ -44,34 +47,31 @@ function next(x) {
 <center>
 <h3>Unrealised Rapid Transit Plans</h3>
 HEREDOC
+oldcity=""
 for file in $@; do
   if [ -f $file ]; then
-    city=`basename $file .svg`
-    NAME=`grep ^$city names | awk -F"\t" '{print $2}'`
-    SUBNAME=`grep ^$city names | awk -F"\t" '{print $3}'`
-    YEAR=`grep ^$city names | awk -F"\t" '{print $4}'`
-    EARLIER=`grep ^$city names | awk -F"\t" '{print $5}'`
-    LATER=`grep ^$city names | awk -F"\t" '{print $6}'`
-    EYEAR=`basename $EARLIER .svg | sed -e's/.*-//'`
-    LYEAR=`basename $LATER .svg | sed -e's/.*-//'`
-    NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
-    W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/5376)}")
-    H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
-    echo '<span id="'$city'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
-    echo '  <small>'$SUBNAME'</small><br>'
-    if [ ! -z $LATER ]; then
-      echo '<a href="javascript:next('\'$city\'');">'
-    fi
-    echo '  <img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"><br>'
-    if [ ! -z $LATER ]; then
-      echo '  </a>'
+    city=`grep ^$file names | awk -F"\t" '{print $2}'`
+    NAME=`grep ^$file names | awk -F"\t" '{print $3}'`
+    SUBNAME=`grep ^$file names | awk -F"\t" '{print $4}'`
+    URL=`grep ^$file names | awk -F"\t" '{print $5}'`
+    if [ c$city != c$oldcity ]; then
+      altfile=$(echo $file | sed -e's!small/!!')
+      NATIVEW=$(grep '^   width="' $altfile | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
+      W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/5376)}")
+      H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $altfile | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
+      if [ ! -z $oldcity ]; then
+        echo "  </small></span>"
+      fi
+      echo '<span id="'$city'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
+      echo '  <a href="javascript:next('\'$city\'');">'
+      echo '  <img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></a><br>'
       echo '  <small>'
-      echo '    <a href="javascript:setsrc('\'$city\'','\'$EARLIER\'');">'$EYEAR' actual</a>'
-      echo '    <a href="javascript:setsrc('\'$city\'','\'$file\'');">'$YEAR' proposal</a>'
-      echo '    <a href="javascript:setsrc('\'$city\'','\'$LATER\'');">'$LYEAR' actual</a>'
-      echo '  </small>'
     fi
-    echo '</span>'
+    echo '    <a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'');">'$SUBNAME'</a>'
+    if [ ! -z "$URL" ]; then
+      echo '(<a href="'$URL'">info</a>)<br>'
+    fi
+    oldcity=$city
   else
     echo '<h4>'$file'</h4>'
   fi

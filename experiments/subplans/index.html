@@ -22,9 +22,12 @@ function setsrc(x, url) {
 }
 nextdict = {};
 function next(x) {
-	if (!(x in nextdict)) { nextdict[x] = 2; }
-	document.getElementById(x).getElementsByTagName('small')[1].getElementsByTagName('a')[nextdict[x]].click();
-	nextdict[x] += 1; if (nextdict[x] > 2) { nextdict[x] = 0; }
+	if (!(x in nextdict)) { nextdict[x] = 1; }
+	document.getElementById(x).getElementsByClassName('setsrc')[nextdict[x]].click();
+	nextdict[x] += 1;
+        if (nextdict[x] >= document.getElementById(x).getElementsByClassName('setsrc').length) {
+		nextdict[x] = 0;
+	}
 }
 </script>
 <script type="text/javascript">
@@ -40,114 +43,86 @@ function next(x) {
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <center>
 <h3>Unrealised Rapid Transit Plans</h3>
-<span id="nyc1891" style="display: inline-block; vertical-align: middle">New York<br>
-  <small><a href="https://www.nytimes.com/1891/05/13/archives/goulds-modest-request-eighteen-miles-of-newyork-streets-all-he-asks.html">Gould 1891 Request to Transit Commission</a></small><br>
-<a href="javascript:next('nyc1891');">
-  <img class="map" src="nyc1891.svg" id="nyc1891map" title="New York" alt=" map" width="390px" height="390px"><br>
-  </a>
+<span id="nyc" style="display: inline-block; vertical-align: middle">New York<br>
+  <a href="javascript:next('nyc');">
+  <img class="map" src="../../subtimeline/small/1890.svg" id="nycmap" title="New York" alt=" map" width="390px" height="390px"></a><br>
   <small>
-    <a href="javascript:setsrc('nyc1891','../../subtimeline/small/1890.svg');">1890 actual</a>
-    <a href="javascript:setsrc('nyc1891','nyc1891.svg');">1891 proposal</a>
-    <a href="javascript:setsrc('nyc1891','../../subtimeline/small/1920.svg');">1920 actual</a>
-  </small>
-</span>
-<span id="nyc1939" style="display: inline-block; vertical-align: middle">New York<br>
-  <small><a href="https://en.wikipedia.org/wiki/File:1939_IND_Second_System.jpg">1939 IND Second System</a></small><br>
-<a href="javascript:next('nyc1939');">
-  <img class="map" src="nyc1939.svg" id="nyc1939map" title="New York" alt=" map" width="390px" height="390px"><br>
-  </a>
+    <a class="setsrc" href="javascript:setsrc('nyc','../../subtimeline/small/1890.svg');">1890 actual</a>
+    <a class="setsrc" href="javascript:setsrc('nyc','nyc1891.svg');">1891 proposal</a>
+(<a href="https://www.nytimes.com/1891/05/13/archives/goulds-modest-request-eighteen-miles-of-newyork-streets-all-he-asks.html">info</a>)<br>
+    <a class="setsrc" href="javascript:setsrc('nyc','../../subtimeline/small/1935.svg');">1935 actual</a>
+    <a class="setsrc" href="javascript:setsrc('nyc','nyc1939.svg');">1939 proposal</a>
+(<a href="https://en.wikipedia.org/wiki/File:1939_IND_Second_System.jpg">info</a>)<br>
+    <a class="setsrc" href="javascript:setsrc('nyc','../../subtimeline/small/1965.svg');">1965 actual</a>
+    <a class="setsrc" href="javascript:setsrc('nyc','nyc1968.svg');">1968 proposal</a>
+(<a href="https://en.wikipedia.org/wiki/Program_for_Action">info</a>)<br>
+    <a class="setsrc" href="javascript:setsrc('nyc','../../subtimeline/small/2020.svg');">2020 actual</a>
+  </small></span>
+<span id="chi" style="display: inline-block; vertical-align: middle">Chicago<br>
+  <a href="javascript:next('chi');">
+  <img class="map" src="../../timelines/chi/small/1975.svg" id="chimap" title="Chicago" alt=" map" width="308px" height="407px"></a><br>
   <small>
-    <a href="javascript:setsrc('nyc1939','../../subtimeline/small/1935.svg');">1935 actual</a>
-    <a href="javascript:setsrc('nyc1939','nyc1939.svg');">1939 proposal</a>
-    <a href="javascript:setsrc('nyc1939','../../subtimeline/small/2020.svg');">2020 actual</a>
-  </small>
-</span>
-<span id="nyc1968" style="display: inline-block; vertical-align: middle">New York<br>
-  <small><a href="https://en.wikipedia.org/wiki/Program_for_Action">1968 MTA Program for Action</a></small><br>
-<a href="javascript:next('nyc1968');">
-  <img class="map" src="nyc1968.svg" id="nyc1968map" title="New York" alt=" map" width="390px" height="390px"><br>
-  </a>
+    <a class="setsrc" href="javascript:setsrc('chi','../../timelines/chi/small/1975.svg');">1975 actual</a>
+    <a class="setsrc" href="javascript:setsrc('chi','chi1976.svg');">1976 proposal</a>
+(<a href="http://www.chicago-l.org/plans/CUTD.html">info</a>)<br>
+    <a class="setsrc" href="javascript:setsrc('chi','../../timelines/chi/small/2020.svg');">2020 actual</a>
+  </small></span>
+<span id="bos" style="display: inline-block; vertical-align: middle">Boston<br>
+  <a href="javascript:next('bos');">
+  <img class="map" src="../../ttimeline/small/1915.svg" id="bosmap" title="Boston" alt=" map" width="232px" height="272px"></a><br>
   <small>
-    <a href="javascript:setsrc('nyc1968','../../subtimeline/small/1965.svg');">1965 actual</a>
-    <a href="javascript:setsrc('nyc1968','nyc1968.svg');">1968 proposal</a>
-    <a href="javascript:setsrc('nyc1968','../../subtimeline/small/2020.svg');">2020 actual</a>
-  </small>
-</span>
-<span id="nyc2008" style="display: inline-block; vertical-align: middle">New York<br>
-  <small><a href="https://nyc.streetsblog.org/2008/03/03/sander-makes-the-case-for-mta-capital-plan-and-pricing/">2008 Sander congestion pricing vision</a></small><br>
-<a href="javascript:next('nyc2008');">
-  <img class="map" src="nyc2008.svg" id="nyc2008map" title="New York" alt=" map" width="390px" height="390px"><br>
-  </a>
+    <a class="setsrc" href="javascript:setsrc('bos','../../ttimeline/small/1915.svg');">1915 actual</a>
+    <a class="setsrc" href="javascript:setsrc('bos','bos1917.svg');">1917 proposal</a>
+(<a href="https://books.google.com/books?id=YpApAAAAYAAJ">info</a>)<br>
+    <a class="setsrc" href="javascript:setsrc('bos','../../ttimeline/small/1945.svg');">1945 actual</a>
+    <a class="setsrc" href="javascript:setsrc('bos','bos1945.svg');">1945 proposal</a>
+(<a href="https://commons.wikimedia.org/wiki/File:1945_BERy_extensions_map.jpg">info</a>)<br>
+    <a class="setsrc" href="javascript:setsrc('bos','../../ttimeline/small/2020.svg');">2020 actual</a>
+  </small></span>
+<span id="sfo" style="display: inline-block; vertical-align: middle">San Francisco<br>
+  <a href="javascript:next('sfo');">
+  <img class="map" src="actualsfo-1965.svg" id="sfomap" title="San Francisco" alt=" map" width="363px" height="388px"></a><br>
   <small>
-    <a href="javascript:setsrc('nyc2008','../../subtimeline/small/2005.svg');">2005 actual</a>
-    <a href="javascript:setsrc('nyc2008','nyc2008.svg');">2008 proposal</a>
-    <a href="javascript:setsrc('nyc2008','../../subtimeline/small/2020.svg');">2020 actual</a>
-  </small>
-</span>
-<span id="chi1976" style="display: inline-block; vertical-align: middle">Chicago<br>
-  <small><a href="http://www.chicago-l.org/plans/CUTD.html">1976 CUTD Plan</a></small><br>
-<a href="javascript:next('chi1976');">
-  <img class="map" src="chi1976.svg" id="chi1976map" title="Chicago" alt=" map" width="308px" height="407px"><br>
-  </a>
+    <a class="setsrc" href="javascript:setsrc('sfo','actualsfo-1965.svg');">1965 actual</a>
+    <a class="setsrc" href="javascript:setsrc('sfo','sfo1966.svg');">1966 proposal</a>
+(<a href="https://www.flickr.com/photos/walkingsf/4408099420/in/album-72157622518181915/">info</a>)<br>
+    <a class="setsrc" href="javascript:setsrc('sfo','actualsfo-2015.svg');">2015 actual</a>
+  </small></span>
+<span id="cvg" style="display: inline-block; vertical-align: middle">Cincinnati<br>
+  <a href="javascript:next('cvg');">
+  <img class="map" src="cvg1920.svg" id="cvgmap" title="Cincinnati" alt=" map" width="102px" height="106px"></a><br>
   <small>
-    <a href="javascript:setsrc('chi1976','../../timelines/chi/small/1975.svg');">1975 actual</a>
-    <a href="javascript:setsrc('chi1976','chi1976.svg');">1976 proposal</a>
-    <a href="javascript:setsrc('chi1976','../../timelines/chi/small/2020.svg');">2020 actual</a>
-  </small>
-</span>
-<span id="bos1917" style="display: inline-block; vertical-align: middle">Boston<br>
-  <small><a href="https://books.google.com/books?id=YpApAAAAYAAJ">1917 Beeler Report</a></small><br>
-<a href="javascript:next('bos1917');">
-  <img class="map" src="bos1917.svg" id="bos1917map" title="Boston" alt=" map" width="232px" height="272px"><br>
-  </a>
+    <a class="setsrc" href="javascript:setsrc('cvg','cvg1920.svg');">1920 proposal</a>
+(<a href="http://digital.libraries.uc.edu/collections/subway/story.html">info</a>)<br>
+  </small></span>
+<span id="msy" style="display: inline-block; vertical-align: middle">New Orleans<br>
+  <a href="javascript:next('msy');">
+  <img class="map" src="msy1959.svg" id="msymap" title="New Orleans" alt=" map" width="203px" height="98px"></a><br>
   <small>
-    <a href="javascript:setsrc('bos1917','../../timelines/bos/small/1915.svg');">1915 actual</a>
-    <a href="javascript:setsrc('bos1917','bos1917.svg');">1917 proposal</a>
-    <a href="javascript:setsrc('bos1917','../../timelines/bos/small/2020.svg');">2020 actual</a>
-  </small>
-</span>
-<span id="bos1945" style="display: inline-block; vertical-align: middle">Boston<br>
-  <small><a href="https://commons.wikimedia.org/wiki/File:1945_BERy_extensions_map.jpg">1945 Coolidge Commission</a></small><br>
-<a href="javascript:next('bos1945');">
-  <img class="map" src="bos1945.svg" id="bos1945map" title="Boston" alt=" map" width="232px" height="272px"><br>
-  </a>
-  <small>
-    <a href="javascript:setsrc('bos1945','../../timelines/bos/small/1945.svg');">1945 actual</a>
-    <a href="javascript:setsrc('bos1945','bos1945.svg');">1945 proposal</a>
-    <a href="javascript:setsrc('bos1945','../../timelines/bos/small/2020.svg');">2020 actual</a>
-  </small>
-</span>
-<span id="sfo1966" style="display: inline-block; vertical-align: middle">San Francisco<br>
-  <small><a href="https://www.flickr.com/photos/walkingsf/4408099420/in/album-72157622518181915/">1966 Muni Modernization Scheme</a></small><br>
-<a href="javascript:next('sfo1966');">
-  <img class="map" src="sfo1966.svg" id="sfo1966map" title="San Francisco" alt=" map" width="363px" height="388px"><br>
-  </a>
-  <small>
-    <a href="javascript:setsrc('sfo1966','actualsfo-1965.svg');">1965 actual</a>
-    <a href="javascript:setsrc('sfo1966','sfo1966.svg');">1966 proposal</a>
-    <a href="javascript:setsrc('sfo1966','actualsfo-2015.svg');">2015 actual</a>
-  </small>
-</span>
-<span id="cvg1920" style="display: inline-block; vertical-align: middle">Cincinnati<br>
-  <small><a href="http://digital.libraries.uc.edu/collections/subway/story.html">1920 subway plan</a></small><br>
-  <img class="map" src="cvg1920.svg" id="cvg1920map" title="Cincinnati" alt=" map" width="102px" height="106px"><br>
-</span>
-<span id="msy1959" style="display: inline-block; vertical-align: middle">New Orleans<br>
-  <small><a href=""https://babel.hathitrust.org/cgi/pt?id=uiug.30112117747748>1959 Monorail of Louisiana plan</a></small><br>
-  <img class="map" src="msy1959.svg" id="msy1959map" title="New Orleans" alt=" map" width="203px" height="98px"><br>
-</span>
+    <a class="setsrc" href="javascript:setsrc('msy','msy1959.svg');">1959 proposal</a>
+(<a href="https://babel.hathitrust.org/cgi/pt?id=uiug.30112117747748">info</a>)<br>
 <p>
 <!--<form action="">Cities to show:
-<div style="display: inline-block"><input type="checkbox" id="NYC1891checkbox" onclick="toggleshow('NYC1891')" checked>../../subtimeline/small/1920.svg</div>
-<div style="display: inline-block"><input type="checkbox" id="NYC1939checkbox" onclick="toggleshow('NYC1939')" checked>../../subtimeline/small/2020.svg</div>
-<div style="display: inline-block"><input type="checkbox" id="NYC1968checkbox" onclick="toggleshow('NYC1968')" checked>../../subtimeline/small/2020.svg</div>
-<div style="display: inline-block"><input type="checkbox" id="NYC2008checkbox" onclick="toggleshow('NYC2008')" checked>../../subtimeline/small/2020.svg</div>
-<div style="display: inline-block"><input type="checkbox" id="CHI1976checkbox" onclick="toggleshow('CHI1976')" checked>../../timelines/chi/small/2020.svg</div>
-<div style="display: inline-block"><input type="checkbox" id="BOS1917checkbox" onclick="toggleshow('BOS1917')" checked>../../timelines/bos/small/2020.svg</div>
-<div style="display: inline-block"><input type="checkbox" id="BOS1945checkbox" onclick="toggleshow('BOS1945')" checked>../../timelines/bos/small/2020.svg</div>
-<div style="display: inline-block"><input type="checkbox" id="SFO1966checkbox" onclick="toggleshow('SFO1966')" checked>actualsfo-2015.svg</div>
-<div style="display: inline-block"><input type="checkbox" id="CVG1920checkbox" onclick="toggleshow('CVG1920')" checked>1920</div>
-<div style="display: inline-block"><input type="checkbox" id="MSY1959checkbox" onclick="toggleshow('MSY1959')" checked>1959</div>
+<div style="display: inline-block"><input type="checkbox" id="1890checkbox" onclick="toggleshow('1890')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="NYC1891checkbox" onclick="toggleshow('NYC1891')" checked>https://www.nytimes.com/1891/05/13/archives/goulds-modest-request-eighteen-miles-of-newyork-streets-all-he-asks.html</div>
+<div style="display: inline-block"><input type="checkbox" id="1935checkbox" onclick="toggleshow('1935')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="NYC1939checkbox" onclick="toggleshow('NYC1939')" checked>https://en.wikipedia.org/wiki/File:1939_IND_Second_System.jpg</div>
+<div style="display: inline-block"><input type="checkbox" id="1965checkbox" onclick="toggleshow('1965')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="NYC1968checkbox" onclick="toggleshow('NYC1968')" checked>https://en.wikipedia.org/wiki/Program_for_Action</div>
+<div style="display: inline-block"><input type="checkbox" id="2020checkbox" onclick="toggleshow('2020')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="1975checkbox" onclick="toggleshow('1975')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="CHI1976checkbox" onclick="toggleshow('CHI1976')" checked>http://www.chicago-l.org/plans/CUTD.html</div>
+<div style="display: inline-block"><input type="checkbox" id="2020checkbox" onclick="toggleshow('2020')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="1915checkbox" onclick="toggleshow('1915')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="BOS1917checkbox" onclick="toggleshow('BOS1917')" checked>https://books.google.com/books?id=YpApAAAAYAAJ</div>
+<div style="display: inline-block"><input type="checkbox" id="1945checkbox" onclick="toggleshow('1945')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="BOS1945checkbox" onclick="toggleshow('BOS1945')" checked>https://commons.wikimedia.org/wiki/File:1945_BERy_extensions_map.jpg</div>
+<div style="display: inline-block"><input type="checkbox" id="2020checkbox" onclick="toggleshow('2020')" checked></div>
+<div style="display: inline-block"><input type="checkbox" id="ACTUALSFO-1965checkbox" onclick="toggleshow('ACTUALSFO-1965')" checked>1965 actual</div>
+<div style="display: inline-block"><input type="checkbox" id="SFO1966checkbox" onclick="toggleshow('SFO1966')" checked>https://www.flickr.com/photos/walkingsf/4408099420/in/album-72157622518181915/</div>
+<div style="display: inline-block"><input type="checkbox" id="ACTUALSFO-2015checkbox" onclick="toggleshow('ACTUALSFO-2015')" checked>2015 actual</div>
+<div style="display: inline-block"><input type="checkbox" id="CVG1920checkbox" onclick="toggleshow('CVG1920')" checked>http://digital.libraries.uc.edu/collections/subway/story.html</div>
+<div style="display: inline-block"><input type="checkbox" id="MSY1959checkbox" onclick="toggleshow('MSY1959')" checked>https://babel.hathitrust.org/cgi/pt?id=uiug.30112117747748</div>
 </form>-->
 <a href="large.html">larger versions</a>
 <p>
