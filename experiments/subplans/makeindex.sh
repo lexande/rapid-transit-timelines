@@ -20,22 +20,44 @@ function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
 	else document.getElementById(x).style.display = 'inline-block';
 }
-function setsrc(x, url) {
+posdict = {};
+function setsrc(x, url, pos) {
         document.getElementById(x + "map").src = url;
+	posdict[x] = pos;
 }
-nextdict = {};
 function next(x) {
-	if (!(x in nextdict)) { nextdict[x] = 1; }
-        if (nextdict[x] >= document.getElementById(x).getElementsByClassName('setsrc').length) {
-		nextdict[x] = 0;
+	if (!(x in posdict)) { posdict[x] = 0; }
+	var links = document.getElementById(x).getElementsByClassName('setsrc');
+        if (posdict[x] + 1 >= links.length) {
+		links[0].click();
+	} else {
+		links[posdict[x]+1].click();
 	}
-	document.getElementById(x).getElementsByClassName('setsrc')[nextdict[x]].click();
-	nextdict[x] += 1;
 }
 window.onload=function() {
-	spans = document.getElementsByTagName('span');
+	var spans = document.getElementsByTagName('span');
 	for (var i=0; i<spans.length; i++) {
 		if (document.getElementById(spans[i].id).getElementsByClassName('setsrc')[0].innerHTML.match(/actual/)) {
+			next(spans[i].id);
+		}
+	}
+}
+document.onkeydown=function(keypress) {
+        if(keypress.which == 65) {
+		var spans = document.getElementsByTagName('span');
+		for (var i=0; i<spans.length; i++) {
+			var links = document.getElementById(spans[i].id).getElementsByClassName('setsrc');
+			if (!(spans[i].id in posdict)) { posdict[spans[i].id] = 0; }
+        		if (posdict[spans[i].id] - 1 < 0) {
+				links[posdict[spans[i].id] - 1 + links.length].click();
+			} else {
+				links[posdict[spans[i].id] - 1].click();
+			}
+		}
+	}
+        if(keypress.which == 83) {
+		var spans = document.getElementsByTagName('span');
+		for (var i=0; i<spans.length; i++) {
 			next(spans[i].id);
 		}
 	}
@@ -67,36 +89,27 @@ for file in $@; do
       NATIVEW=$(grep '^   width="' $altfile | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
       W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/5376)}")
       H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $altfile | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
+      index=0
       if [ ! -z $oldcity ]; then
         echo "  </small></span>"
       fi
       echo '<span id="'$city'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
       echo '  <a href="javascript:next('\'$city\'');">'
-      echo '  <img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></a><br>'
-      echo '  <small>'
+      echo '  <img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></a><small>'
     fi
-    echo '    <a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'');">'$SUBNAME'</a>'
+    echo '  <br><a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'','$index');">'$SUBNAME'</a>'
     if [ ! -z "$URL" ]; then
-      echo '(<a href="'$URL'">info</a>)<br>'
+      echo '(<a href="'$URL'">info</a>)'
     fi
     oldcity=$city
+    index=$(expr $index + 1)
   else
     echo '<h4>'$file'</h4>'
   fi
 done
-echo '<p>'
-echo '<!--<form action="">Cities to show:'
-for file in $@; do
-  if [ -f $file ]; then
-    city=`basename $file .svg`
-    NAME=`grep ^$city names | sed -e's/.*\t//'`
-    UPPER=$(echo $city | tr 'a-z' 'A-Z')
-    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked>$NAME</div>"
-  fi
-done
+echo '</small></span><p>'
 if [ $SCALE = 390 ]; then
   cat <<HEREDOC
-</form>-->
 <a href="large.html">larger versions</a>
 <p>
 Based on planned frequent midday service (<a href="notes.html">notes</a>).<br>
