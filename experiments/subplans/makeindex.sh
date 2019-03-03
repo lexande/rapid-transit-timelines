@@ -91,13 +91,13 @@ for file in $@; do
       H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $altfile | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
       index=0
       if [ ! -z $oldcity ]; then
-        echo "  </small></span>"
+        echo "</small></span>"
       fi
       echo '<span id="'$city'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
-      echo '  <a href="javascript:next('\'$city\'');">'
-      echo '  <img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></a><small>'
+      echo '<a href="javascript:next('\'$city\'');">'
+      echo '<img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></a><small>'
     fi
-    echo '  <br><a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'','$index');">'$SUBNAME'</a>'
+    echo '<br><a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'','$index');">'$SUBNAME'</a>'
     if [ ! -z "$URL" ]; then
       echo '(<a href="'$URL'">info</a>)'
     fi
