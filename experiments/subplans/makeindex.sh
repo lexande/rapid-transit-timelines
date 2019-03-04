@@ -97,9 +97,11 @@ for file in $@; do
       echo '<a href="javascript:next('\'$city\'');">'
       echo '<img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></a><small>'
     fi
-    echo '<br><a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'','$index');">'$SUBNAME'</a>'
+    echo -n '<br><a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'','$index');">'$SUBNAME'</a>'
     if [ ! -z "$URL" ]; then
-      echo '(<a href="'$URL'">info</a>)'
+      echo ' (<a href="'$URL'">info</a>)'
+    else
+      echo ''
     fi
     oldcity=$city
     index=$(expr $index + 1)
