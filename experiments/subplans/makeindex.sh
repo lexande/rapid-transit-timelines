@@ -106,7 +106,10 @@ for file in $@; do
     oldcity=$city
     index=$(expr $index + 1)
   else
-    echo '<h4>'$file'</h4>'
+    if [ ! -z $oldcity ]; then
+      echo "</small></span>"
+    fi
+    echo $file
   fi
 done
 echo '</small></span><p>'
