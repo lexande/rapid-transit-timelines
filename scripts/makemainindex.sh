@@ -343,8 +343,10 @@ for city in $@; do
   UPPER=`echo $city | tr 'a-z' 'A-Z'`
   echo '<div id="'$UPPER'pre">'
   if [ -f $city/s ]; then
-    for img in ${city}/small/????.svg; do
-      echo '<img src="'${img}'" width="1" height="1" alt="">'
+    for yr in $(seq ${start} 5 2015); do
+      if [ -f $city/small/$yr.svg ]; then
+        echo '<img src="'${city}'/small/'${yr}'.svg" width="1" height="1" alt="">'
+      fi
     done
   fi
   echo '</div>'
