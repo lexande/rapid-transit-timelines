@@ -87,7 +87,7 @@ for file in $@; do
     if [ c$city != c$oldcity ]; then
       altfile=$(echo $file | sed -e's!small/!!')
       NATIVEW=$(grep '^   width="' $altfile | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
-      W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/5376)}")
+      W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/138)}")
       H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $altfile | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
       index=0
       if [ ! -z $oldcity ]; then
@@ -113,7 +113,7 @@ for file in $@; do
   fi
 done
 echo '</small></span><p>'
-if [ $SCALE = 390 ]; then
+if [ $SCALE = 10 ]; then
   cat <<HEREDOC
 <a href="large.html">larger versions</a>
 <p>
@@ -124,7 +124,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 See also: <a href="/timelines">rapid transit timelines</a> - <a href="/timelines/misc/">miscellaneous timelines and maps</a>
 HEREDOC
-elif [ $SCALE = 1169 ]; then
+elif [ $SCALE = 30 ]; then
   cat <<HEREDOC
 </form>-->
 <a href=".">smaller versions</a>

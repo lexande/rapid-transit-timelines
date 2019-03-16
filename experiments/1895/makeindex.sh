@@ -41,7 +41,7 @@ for file in $@; do
   SNAME=`echo $NAME | sed -e's/<br>.*//'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
-  W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/5376)}")
+  W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/138)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
   echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
   echo '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
@@ -54,7 +54,7 @@ for file in $@; do
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked>$NAME</div>"
 done
-if [ $SCALE = 390 ]; then
+if [ $SCALE = 10 ]; then
   cat <<HEREDOC
 </form>-->
 <a href="large.html">larger versions</a>
@@ -66,7 +66,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 See also: <a href="/timelines">rapid transit timelines</a> - <a href="/timelines/misc/">miscellaneous timelines and maps</a>
 HEREDOC
-elif [ $SCALE = 1169 ]; then
+elif [ $SCALE = 30 ]; then
   cat <<HEREDOC
 </form>-->
 <a href=".">smaller versions</a>

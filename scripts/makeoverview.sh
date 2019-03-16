@@ -167,7 +167,7 @@ for city in $@; do
   NAME=`cat $city/name`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   NATIVEW=$(grep ' width="' $city/small/2015.svg | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
-  W=$(awk "BEGIN{print int(0.5+$NATIVEW*390/5376)}")
+  W=$(awk "BEGIN{print int(0.5+$NATIVEW*10/138)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $city/small/2015.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
 
   echo '<span id="'$UPPER'" style="display: inline-block;"><a href="'$city'">'$NAME'</a><br>' \

@@ -46,7 +46,7 @@ for file in $@; do
   SNAME=`echo $NAME | sed -e's/<br>.*//'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
-  W=$(awk "BEGIN{print int(0.5+$NATIVEW*1169/5376)}")
+  W=$(awk "BEGIN{print int(0.5+$NATIVEW*30/138)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
   if ( grep ^$city@ names >/dev/null); then
     echo '<span id="'$UPPER'" style="display: none; vertical-align: middle">'$NAME'<br>'
