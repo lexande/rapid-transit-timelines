@@ -70,7 +70,7 @@ done
 cat <<HEREDOC
 </form>
 <p>
-Thick lines represent running in streets or with uncontrolled grade crossings; thin lines are sections with grade-separations or crossing gates.  Connecting rapid transit lines are shown in light gray.  All lines shown run at least every 20 minutes during the day on weekdays.  Maps current as of 2018.<br>
+Thick lines represent running in streets or with uncontrolled grade crossings; thin lines are sections with grade-separations or crossing gates.  Connecting rapid transit lines are shown in light gray, ferries in cyan.  All lines shown run at least every 20 minutes during the day on weekdays.  Maps current as of 2019.<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
