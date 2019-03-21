@@ -121,6 +121,13 @@ function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
 	else document.getElementById(x).style.display = 'inline-block';
 }
+function footerclick(x) {
+	span = document.getElementById(x);
+	if (span.style.display == 'none') {
+		document.getElementById(x + "checkbox").click();
+	}
+	span.scrollIntoView();
+}
 intervalID=0;
 function startanim() {
 	intervalID = setInterval(nextmap, 1000);
@@ -189,7 +196,7 @@ for city in $@; do
   NAME=`cat $city/name`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
 
-  echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"$city\">$NAME</a></div>" \
+  echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"javascript:footerclick('${UPPER}')\">$NAME</a></div>" \
     | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
 
 done

@@ -105,6 +105,13 @@ function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
 	else document.getElementById(x).style.display = 'inline-block';
 }
+function footerclick(x) {
+	span = document.getElementById(x);
+	if (span.style.display == 'none') {
+		document.getElementById(x + "checkbox").click();
+	}
+	span.scrollIntoView();
+}
 intervalID=0;
 function startanim() {
 	intervalID = setInterval(nextmap, 1000);
@@ -176,18 +183,18 @@ window.onload=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <form action="">Cities to show: 
-<div style="display: inline-block"><input type="checkbox" id="LONcheckbox" onclick="toggleshow('LON')" checked><a href="lon">London</a></div>
-<div style="display: inline-block"><input type="checkbox" id="LPLcheckbox" onclick="toggleshow('LPL')" checked><a href="lpl">Liverpool</a></div>
-<div style="display: inline-block"><input type="checkbox" id="GLAcheckbox" onclick="toggleshow('GLA')" checked><a href="gla">Glasgow</a></div>
-<div style="display: inline-block"><input type="checkbox" id="NCLcheckbox" onclick="toggleshow('NCL')" checked><a href="ncl">Newcastle</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MANcheckbox" onclick="toggleshow('MAN')" checked><a href="man">Manchester</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PMEcheckbox" onclick="toggleshow('PME')" checked><a href="pme">Portsmouth</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BHXcheckbox" onclick="toggleshow('BHX')" checked><a href="bhx">Birmingham</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CWLcheckbox" onclick="toggleshow('CWL')" checked><a href="cwl">Cardiff</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SZDcheckbox" onclick="toggleshow('SZD')" checked><a href="szd">Sheffield</a></div>
-<div style="display: inline-block"><input type="checkbox" id="NQTcheckbox" onclick="toggleshow('NQT')" checked><a href="nqt">Nottingham</a></div>
-<div style="display: inline-block"><input type="checkbox" id="EDIcheckbox" onclick="toggleshow('EDI')" checked><a href="edi">Edinburgh</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BFScheckbox" onclick="toggleshow('BFS')" checked><a href="bfs">Belfast</a></div>
+<div style="display: inline-block"><input type="checkbox" id="LONcheckbox" onclick="toggleshow('LON')" checked><a href="javascript:footerclick('LON')">London</a></div>
+<div style="display: inline-block"><input type="checkbox" id="LPLcheckbox" onclick="toggleshow('LPL')" checked><a href="javascript:footerclick('LPL')">Liverpool</a></div>
+<div style="display: inline-block"><input type="checkbox" id="GLAcheckbox" onclick="toggleshow('GLA')" checked><a href="javascript:footerclick('GLA')">Glasgow</a></div>
+<div style="display: inline-block"><input type="checkbox" id="NCLcheckbox" onclick="toggleshow('NCL')" checked><a href="javascript:footerclick('NCL')">Newcastle</a></div>
+<div style="display: inline-block"><input type="checkbox" id="MANcheckbox" onclick="toggleshow('MAN')" checked><a href="javascript:footerclick('MAN')">Manchester</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PMEcheckbox" onclick="toggleshow('PME')" checked><a href="javascript:footerclick('PME')">Portsmouth</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BHXcheckbox" onclick="toggleshow('BHX')" checked><a href="javascript:footerclick('BHX')">Birmingham</a></div>
+<div style="display: inline-block"><input type="checkbox" id="CWLcheckbox" onclick="toggleshow('CWL')" checked><a href="javascript:footerclick('CWL')">Cardiff</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SZDcheckbox" onclick="toggleshow('SZD')" checked><a href="javascript:footerclick('SZD')">Sheffield</a></div>
+<div style="display: inline-block"><input type="checkbox" id="NQTcheckbox" onclick="toggleshow('NQT')" checked><a href="javascript:footerclick('NQT')">Nottingham</a></div>
+<div style="display: inline-block"><input type="checkbox" id="EDIcheckbox" onclick="toggleshow('EDI')" checked><a href="javascript:footerclick('EDI')">Edinburgh</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BFScheckbox" onclick="toggleshow('BFS')" checked><a href="javascript:footerclick('BFS')">Belfast</a></div>
 </form>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).<br>

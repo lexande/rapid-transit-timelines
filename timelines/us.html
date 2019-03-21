@@ -105,6 +105,13 @@ function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
 	else document.getElementById(x).style.display = 'inline-block';
 }
+function footerclick(x) {
+	span = document.getElementById(x);
+	if (span.style.display == 'none') {
+		document.getElementById(x + "checkbox").click();
+	}
+	span.scrollIntoView();
+}
 intervalID=0;
 function startanim() {
 	intervalID = setInterval(nextmap, 1000);
@@ -212,36 +219,36 @@ window.onload=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <form action="">Cities to show: 
-<div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="../subtimeline/">New York</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="chi">Chicago</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BWIcheckbox" onclick="toggleshow('BWI')" checked><a href="bwi">Baltimore</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="../ttimeline">Boston</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PVDcheckbox" onclick="toggleshow('PVD')" checked><a href="pvd">Providence</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PITcheckbox" onclick="toggleshow('PIT')" checked><a href="pit">Pittsburgh</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="phl">Philadelphia</a></div>
-<div style="display: inline-block"><input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')" checked><a href="lax">Los Angeles</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="sfo">San Francisco</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CLEcheckbox" onclick="toggleshow('CLE')" checked><a href="cle">Cleveland</a></div>
-<div style="display: inline-block"><input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="was">Washington</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SEAcheckbox" onclick="toggleshow('SEA')" checked><a href="sea">Seattle</a></div>
-<div style="display: inline-block"><input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked><a href="atl">Atlanta</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SANcheckbox" onclick="toggleshow('SAN')" checked><a href="san">San Diego</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MIAcheckbox" onclick="toggleshow('MIA')" checked><a href="mia">Miami</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BUFcheckbox" onclick="toggleshow('BUF')" checked><a href="buf">Buffalo</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="pdx">Portland</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SACcheckbox" onclick="toggleshow('SAC')" checked><a href="sac">Sacramento</a></div>
-<div style="display: inline-block"><input type="checkbox" id="DTTcheckbox" onclick="toggleshow('DTT')" checked><a href="dtt">Detroit</a></div>
-<div style="display: inline-block"><input type="checkbox" id="JAXcheckbox" onclick="toggleshow('JAX')" checked><a href="jax">Jacksonville</a></div>
-<div style="display: inline-block"><input type="checkbox" id="DALcheckbox" onclick="toggleshow('DAL')" checked><a href="dal">Dallas</a></div>
-<div style="display: inline-block"><input type="checkbox" id="STLcheckbox" onclick="toggleshow('STL')" checked><a href="stl">Saint Louis</a></div>
-<div style="display: inline-block"><input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')" checked><a href="den">Denver</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SLCcheckbox" onclick="toggleshow('SLC')" checked><a href="slc">Salt Lake City</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MSPcheckbox" onclick="toggleshow('MSP')" checked><a href="msp">Minneapolis</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="clt">Charlotte</a></div>
-<div style="display: inline-block"><input type="checkbox" id="LAScheckbox" onclick="toggleshow('LAS')" checked><a href="las">Las Vegas</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SJUcheckbox" onclick="toggleshow('SJU')" checked><a href="sju">San Juan</a></div>
-<div style="display: inline-block"><input type="checkbox" id="ORFcheckbox" onclick="toggleshow('ORF')" checked><a href="orf">Norfolk</a></div>
-<div style="display: inline-block"><input type="checkbox" id="HFDcheckbox" onclick="toggleshow('HFD')" checked><a href="hfd">Hartford</a></div>
+<div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="javascript:footerclick('NYC')">New York</a></div>
+<div style="display: inline-block"><input type="checkbox" id="CHIcheckbox" onclick="toggleshow('CHI')" checked><a href="javascript:footerclick('CHI')">Chicago</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BWIcheckbox" onclick="toggleshow('BWI')" checked><a href="javascript:footerclick('BWI')">Baltimore</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BOScheckbox" onclick="toggleshow('BOS')" checked><a href="javascript:footerclick('BOS')">Boston</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PVDcheckbox" onclick="toggleshow('PVD')" checked><a href="javascript:footerclick('PVD')">Providence</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PITcheckbox" onclick="toggleshow('PIT')" checked><a href="javascript:footerclick('PIT')">Pittsburgh</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="javascript:footerclick('PHL')">Philadelphia</a></div>
+<div style="display: inline-block"><input type="checkbox" id="LAXcheckbox" onclick="toggleshow('LAX')" checked><a href="javascript:footerclick('LAX')">Los Angeles</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="javascript:footerclick('SFO')">San Francisco</a></div>
+<div style="display: inline-block"><input type="checkbox" id="CLEcheckbox" onclick="toggleshow('CLE')" checked><a href="javascript:footerclick('CLE')">Cleveland</a></div>
+<div style="display: inline-block"><input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="javascript:footerclick('WAS')">Washington</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SEAcheckbox" onclick="toggleshow('SEA')" checked><a href="javascript:footerclick('SEA')">Seattle</a></div>
+<div style="display: inline-block"><input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked><a href="javascript:footerclick('ATL')">Atlanta</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SANcheckbox" onclick="toggleshow('SAN')" checked><a href="javascript:footerclick('SAN')">San Diego</a></div>
+<div style="display: inline-block"><input type="checkbox" id="MIAcheckbox" onclick="toggleshow('MIA')" checked><a href="javascript:footerclick('MIA')">Miami</a></div>
+<div style="display: inline-block"><input type="checkbox" id="BUFcheckbox" onclick="toggleshow('BUF')" checked><a href="javascript:footerclick('BUF')">Buffalo</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="javascript:footerclick('PDX')">Portland</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SACcheckbox" onclick="toggleshow('SAC')" checked><a href="javascript:footerclick('SAC')">Sacramento</a></div>
+<div style="display: inline-block"><input type="checkbox" id="DTTcheckbox" onclick="toggleshow('DTT')" checked><a href="javascript:footerclick('DTT')">Detroit</a></div>
+<div style="display: inline-block"><input type="checkbox" id="JAXcheckbox" onclick="toggleshow('JAX')" checked><a href="javascript:footerclick('JAX')">Jacksonville</a></div>
+<div style="display: inline-block"><input type="checkbox" id="DALcheckbox" onclick="toggleshow('DAL')" checked><a href="javascript:footerclick('DAL')">Dallas</a></div>
+<div style="display: inline-block"><input type="checkbox" id="STLcheckbox" onclick="toggleshow('STL')" checked><a href="javascript:footerclick('STL')">Saint Louis</a></div>
+<div style="display: inline-block"><input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')" checked><a href="javascript:footerclick('DEN')">Denver</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SLCcheckbox" onclick="toggleshow('SLC')" checked><a href="javascript:footerclick('SLC')">Salt Lake City</a></div>
+<div style="display: inline-block"><input type="checkbox" id="MSPcheckbox" onclick="toggleshow('MSP')" checked><a href="javascript:footerclick('MSP')">Minneapolis</a></div>
+<div style="display: inline-block"><input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="javascript:footerclick('CLT')">Charlotte</a></div>
+<div style="display: inline-block"><input type="checkbox" id="LAScheckbox" onclick="toggleshow('LAS')" checked><a href="javascript:footerclick('LAS')">Las Vegas</a></div>
+<div style="display: inline-block"><input type="checkbox" id="SJUcheckbox" onclick="toggleshow('SJU')" checked><a href="javascript:footerclick('SJU')">San Juan</a></div>
+<div style="display: inline-block"><input type="checkbox" id="ORFcheckbox" onclick="toggleshow('ORF')" checked><a href="javascript:footerclick('ORF')">Norfolk</a></div>
+<div style="display: inline-block"><input type="checkbox" id="HFDcheckbox" onclick="toggleshow('HFD')" checked><a href="javascript:footerclick('HFD')">Hartford</a></div>
 </form>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).<br>
