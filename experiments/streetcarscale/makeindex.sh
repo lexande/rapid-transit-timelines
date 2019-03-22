@@ -43,7 +43,7 @@ HEREDOC
 for file in $@; do
   city=`basename $file .svg`
   NAME=`grep ^$city names | sed -e's/.*\t//'`
-  SNAME=`echo $NAME | sed -e's/<br>.*//'`
+  SNAME=`echo $NAME | sed -e's/<br>/ /; s/ (.*//;'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*30/138)}")
@@ -59,7 +59,7 @@ echo '<p>'
 echo '<form action="">Cities to show:'
 for file in $@; do
   city=`basename $file .svg`
-  NAME=`grep ^$city names | sed -e's/.*\t//; s/<br>.*//'`
+  NAME=`grep ^$city names | sed -e's/.*\t//; s/<br>/ /; s/ (.*//;'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   if ( grep ^$city@ names >/dev/null); then
     echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\"><a href=\"javascript:listclick('$UPPER')\">$NAME</a></div>"
