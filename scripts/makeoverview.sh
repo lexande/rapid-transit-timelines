@@ -167,6 +167,8 @@ window.onload=function() {
 </head><body>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
+<br>
+<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 HEREDOC
 
@@ -187,8 +189,6 @@ cat <<HEREDOC
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
-<br>
-<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <form action="">Cities to show: 
 HEREDOC

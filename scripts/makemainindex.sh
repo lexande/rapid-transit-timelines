@@ -267,6 +267,8 @@ window.onload=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <br>
+<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
+<br>
 <small>(maps ordered by opening date; click a city name in sidebar to jump to its map)</small>
 </div>
 <br>
@@ -297,8 +299,6 @@ cat <<HEREDOC
 <div class="headerfooter">
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
-<br>
-<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 </div>
 <div id=sidebar>
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
