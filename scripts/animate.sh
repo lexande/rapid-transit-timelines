@@ -1,15 +1,15 @@
 #!/bin/bash
 mkdir -p anim
 for i in $1/*.svg; do
-  cp $i anim
+  ~/timelines/scripts/hideyear.pl $i > anim/`basename $i`
 done
 cd anim
-rm -f 2020.svg
+basefile=`ls *.svg | head -n1`
 sed -e's!</svg>!!' -i *.svg
-WIDTH=$(grep width 2010.svg | head -n1 | sed -e's/"$//; s/.*"//; s/\..*//;')
-HEIGHT=$(grep height 2010.svg | head -n1 | sed -e's/"$//; s/.*"//; s/\..*//;')
-XMIN=$(grep viewBox 2010.svg | head -n1 | perl -wpe's/.*"(-?[0-9]*),? .* .* .*"$/$1/')
-YMIN=$(grep viewBox 2010.svg | head -n1 | perl -wpe's/.*".* (-?[0-9]*),? .* .*"$/$1/')
+WIDTH=$(grep width $basefile | head -n1 | sed -e's/"$//; s/.*"//; s/\..*//;')
+HEIGHT=$(grep height $basefile | head -n1 | sed -e's/"$//; s/.*"//; s/\..*//;')
+XMIN=$(grep viewBox $basefile | head -n1 | perl -wpe's/.*"(-?[0-9]*),? .* .* .*"$/$1/')
+YMIN=$(grep viewBox $basefile | head -n1 | perl -wpe's/.*".* (-?[0-9]*),? .* .*"$/$1/')
 XPOS=$(expr $WIDTH + $XMIN - 2400)
 YPOS=$(expr $HEIGHT + $YMIN - 40)
 for i in *.svg; do
