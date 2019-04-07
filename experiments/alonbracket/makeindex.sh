@@ -41,7 +41,7 @@ function listclick(x) {
 <h3>Rapid Transit Bracket: Round of NNN</h3>
 HEREDOC
 n=0
-for file in $@; do
+for file in $@; do if [ -f $file ]; then
   city=`basename $file .svg`
   NAME=`cat ~/timelines/timelines/$city/name`
   SNAME=`echo $NAME | sed -e's/<br>/ /; s/ (.*//;'`
@@ -57,7 +57,7 @@ for file in $@; do
   else
     n=1
   fi
-done
+else hed=$(echo $file | tr _ ' '); echo '<h4>'$hed'</h4>'; fi; done
 #echo '<p>'
 #echo '<form action="">Cities to show:'
 #for file in $@; do
@@ -69,7 +69,7 @@ done
 cat <<HEREDOC
 </form>
 <p>
-Based on frequent midday service (<a href="../../timelines/notes.html">notes</a>). Current as of April 2019.<br>
+Based on frequent midday service (<a href="../../timelines/notes.html">notes</a>). Current as of April 2019 unless noted otherwise.<br>
 Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (10 CSS pixels per km)
 <p>
 See also: <a href="/timelines">rapid transit timelines</a> - <a href="/timelines/misc/">miscellaneous timelines and maps</a>
