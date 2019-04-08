@@ -1,6 +1,19 @@
+#!/bin/bash
+START=$(basename $(grep 'stroke-width:5' $1/1*.svg $1/2*.svg | head -n1 | sed -e's/:.*//') .svg)
+END=2010
+COUNT=$(expr 1 + \( $END - $START \) / 25)
+NAME=`cat $1/name | sed -e's/<br>/ /'`
+SCALE=$2
+NATIVEW=$(grep '^   width=' $1/${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
+W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' $1/${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*${SCALE}/17.25)}")
+H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' $1/${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*$W/$NATIVEW)}")
+DIRNAME=$(basename $(realpath $1))
+cat <<HEREDOC | sed -e"s/START/${START}/g;
+s/COUNT/${COUNT}/g; 
+s!NAME!${NAME}!g;"
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head><title>Northeast US Passenger Rail Timeline</title>
+<head><title>NAME Passenger Rail Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <style type="text/css">
 div#preloader {
@@ -16,15 +29,19 @@ body {
 }
 </style>
 <script language="JavaScript" type="text/javascript">
-start=1835;
-count=8;
+start=START;
+count=COUNT;
 step=25;
 index=count-1;
 function update() {
 	document["MAP"].src=(start+step*index) + ".svg";
 	document["MAP"].title=start+step*index;
 	document["MAP"].alt=start+step*index + " map";
-	document.getElementById("LINK").href="large.html#" + (start+step*index);
+HEREDOC
+if [ $SCALE = 1.5 ]; then
+  echo '	document.getElementById("LINK").href="large.html#" + (start+step*index);'
+fi
+cat << HEREDOC
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -77,55 +94,84 @@ window.onhashchange=function() {
   })();
 </script>
 </head><body>
-smaller version --- <a href="large.html">larger version</a>
+HEREDOC
+if [ $SCALE = 1.5 ]; then
+  echo 'smaller version --- <a href="large.html">larger version</a>'
+else
+  echo '<a href=".">smaller version</a> --- larger version'
+fi
+cat <<HEREDOC
 <p>
 <a href="javascript:" onclick="prevmap()">25 years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">25 years later (or press s)</a>
 <br>
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
-<a id="LINK" href="large.html">
-<img name="MAP" src="2010.svg" title="2010" alt="2010 map" width="957px" height="770px" style="border-width: 1px; border-style: solid">
-</a>
-<p>
-<a href="#1835" onclick="gotoyear(1835)">1835</a>
-<a href="#1860" onclick="gotoyear(1860)">1860</a>
-<a href="#1885" onclick="gotoyear(1885)">1885</a>
-<a href="#1910" onclick="gotoyear(1910)">1910</a>
-<a href="#1935" onclick="gotoyear(1935)">1935</a>
-<a href="#1960" onclick="gotoyear(1960)">1960</a>
-<a href="#1985" onclick="gotoyear(1985)">1985</a>
-<a href="#2010" onclick="gotoyear(2010)">2010</a>
+HEREDOC
+if [ $SCALE = 1.5 ]; then
+  echo '<a id="LINK" href="large.html">'
+else
+  echo '<a href="javascript:" onclick="nextmap()">'
+fi 
+echo '<img name="MAP" src="2010.svg" title="2010" alt="2010 map" width="'${W}'px" height="'${H}'px" style="border-width: 1px; border-style: solid">'
+echo '</a>'
+echo '<p>'
+for year in $(seq $START 25 $END); do
+	echo \<a href=\"#${year}\" onclick=\"gotoyear\(${year}\)\"\>${year}\</a\>
+done
+cat <<HEREDOC
 <p>
 <a href="javascript:" onclick="prevmap()">25 years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">25 years later (or press s)</a>
 <p>
 Showing those lines with at least three trains per direction each weekday.  Lines coloured by operator (<a href="colours.html">key</a>).<br>
-Scale: <svg width="150.0px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> ≈ 100 km (approximately 1.5 CSS pixels per km)
+HEREDOC
+echo 'Scale: <svg width="'`echo 100*${SCALE} | bc`'px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> ≈ 100 km (approximately '${SCALE}' CSS pixels per km)'
+cat <<HEREDOC
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="1835.svg" width="1" height="1" alt="">
-<img src="1860.svg" width="1" height="1" alt="">
-<img src="1885.svg" width="1" height="1" alt="">
-<img src="1910.svg" width="1" height="1" alt="">
-<img src="1935.svg" width="1" height="1" alt="">
-<img src="1960.svg" width="1" height="1" alt="">
-<img src="1985.svg" width="1" height="1" alt="">
-<img src="2010.svg" width="1" height="1" alt="">
-</div>
-See also: <a href="../carail">California passenger rail timeline</a>
-<br>
-rapid transit timelines for <a href="/subtimeline">New York</a> - 
-<a href="/ttimeline">Boston</a> - 
-<a href="../../phl">Philadelphia</a> - 
-<a href="../../was">Washington</a>
+HEREDOC
+for year in $(seq $START 25 $END); do
+	echo \<img src=\"${year}.svg\" width=\"1\" height=\"1\" alt=\"\"\>
+done
+echo '</div>'
+first=1
+for link in nerail carail; do
+  if [ $DIRNAME = $link ]; then continue; fi
+  if [ $first = 1 ]; then
+    echo -n "See also: "
+    first=0
+  else
+    echo " - "
+  fi
+  echo -n '<a href="../'$link'">'`cat ~/timelines/timelines/misc/${link}/name`' passenger rail timeline</a>'
+done
+echo ''
+echo '<br>'
+first=1
+for city in `cat $1/cities`; do
+  if [ $first = 1 ]; then
+    echo -n "rapid transit timelines for "
+    first=0
+  else
+    echo " - "
+  fi
+  echo -n '<a href="'
+  if [ $city = nyc ]; then
+    echo -n "/subtimeline"
+  elif [ $city = bos ]; then
+    echo -n "/ttimeline"
+  else
+    echo -n "../../${city}"
+  fi
+  echo -n '">'$(cat ~/timelines/timelines/${city}/name)"</a>"
+done
+cat <<HEREDOC
+
 <br>
 <a href="../..">other rapid transit timelines</a> -
 <a href="..">miscellaneous timelines and maps</a>
-<p>
-<div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> based on map data 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
-by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors and historical sources.</div>
-</body></html>
+HEREDOC
+cat ~/timelines/scripts/boilerplate/part4
