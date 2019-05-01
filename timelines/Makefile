@@ -41,7 +41,7 @@ endef
 $(foreach dir, $(wildcard ??? ???/uncropped), $(eval $(call WriteRules, $(dir))))
 
 rsync: all
-	rsync -4Pav ~/timelines/timelines --exclude '*osm*.png' --exclude '*streetmap*' arapp_arapp@ssh.phx.nearlyfreespeech.net:.
+	rsync -4Pav ~/timelines/timelines ~/timelines/experiments --exclude '*streetmap*' --exclude '*osm*.png' --exclude '*azimuth*' arapp_arapp@ssh.phx.nearlyfreespeech.net:.	
 
 $(call WriteOverview,us.html,nyc chi bwi bos pvd pit phl lax sfo cle was sea atl san mia buf pdx sac dtt jax dal stl den slc msp clt las sju orf hfd,United States)
 $(call WriteOverview,uk.html,lon lpl gla ncl man pme bhx cwl szd nqt edi bfs,United Kingdom)

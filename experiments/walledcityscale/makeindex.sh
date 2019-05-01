@@ -18,6 +18,22 @@ function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
 	else document.getElementById(x).style.display = 'inline-block';
 }
+function selectall() {
+	spans = document.getElementsByTagName("span");
+	for (var i=0; i < spans.length; i++) {
+		if (spans[i].style.display == 'none') {
+			document.getElementById(spans[i].id + "checkbox").click();
+		}
+	}
+}
+function deselectall() {
+	spans = document.getElementsByTagName("span");
+	for (var i=0; i < spans.length; i++) {
+		if (spans[i].style.display == 'inline-block') {
+			document.getElementById(spans[i].id + "checkbox").click();
+		}
+	}
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -54,6 +70,8 @@ for file in $@; do
 done
 cat <<HEREDOC
 </form>
+<a href="javascript:selectall()">show all</a>
+<a href="javascript:deselectall()">hide all</a>
 <p>
 Scale: <svg width="60px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 1 km (60 CSS pixels per km)
 <p>

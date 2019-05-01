@@ -153,6 +153,22 @@ window.onload=function() {
 		update();
 	}
 }
+function selectall() {
+	spans = document.getElementsByTagName("span");
+	for (var i=0; i < spans.length; i++) {
+		if (spans[i].style.display == 'none') {
+			document.getElementById(spans[i].id + "checkbox").click();
+		}
+	}
+}
+function deselectall() {
+	spans = document.getElementsByTagName("span");
+	for (var i=0; i < spans.length; i++) {
+		if (spans[i].style.display == 'inline-block') {
+			document.getElementById(spans[i].id + "checkbox").click();
+		}
+	}
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -203,6 +219,8 @@ done
 
 cat <<HEREDOC
 </form>
+<a href="javascript:selectall()">show all</a>
+<a href="javascript:deselectall()">hide all</a>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="notes.html">notes</a>).<br>
 Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (10 CSS pixels per km)
