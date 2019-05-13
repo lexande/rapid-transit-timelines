@@ -181,6 +181,16 @@ function toggleshow(x) {
 		span.style.display = 'inline-block';
 	}
 }
+function toggleshowm(x) {
+	span = document.getElementById(x);
+	checkboxes = document.getElementsByClassName(x + "checkbox");
+	if (span.style.display == 'inline-block') {
+		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = false; }
+	} else {
+		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = true; }
+	}
+	toggleshow(x);
+}
 function togglesidebar() {
 	f = document.getElementById("form");
 	s = document.getElementById("showall");
@@ -305,16 +315,32 @@ cat <<HEREDOC
 <div style="padding-right: 2em;">Cities to show:</div>
 <div id="form" style="display: block;">
 HEREDOC
-ALPHA=$(echo $@ | perl -wpe's/ /\n/g' | perl -wpe'/(...)/; $name=`cat $1/name`; chomp $name; print $name . " ";' | sort | perl -wpe's/.*(...)\n/$1 /')
-for city in $ALPHA; do
-  NAME=`cat $city/name | sed -e's/<br>/ /'`
-  UPPER=$(echo $city | tr 'a-z' 'A-Z')
-  if [ -f $city/s ]; then
-    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked><a href=\"javascript:sidebarclick('$UPPER')\">$NAME</a><br>"
-  else
-    echo "<input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\"><a href=\"javascript:sidebarclick('$UPPER')\">$NAME</a><br>"
-  fi
-done
+for city in $@; do
+  perl -e'
+    $city = $ARGV[0];
+    $upper = $city;
+    $upper =~ tr/a-z/A-Z/;
+    $name = `cat $city/name`;
+    $name =~ s/<br>/ /;
+    chomp $name;
+    if ( $name =~ / \/ / ) { 
+      $id = "";
+      foreach ( split(/ \/ /, $name) ) {
+        if (-e "$city/s") {
+          print "$_ <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshowm(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
+        } else {
+          print "$_ <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshowm(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
+        }
+      $id += 1;
+      }
+    } else {
+      if (-e "$city/s") {
+        print "$name <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
+      } else {
+        print "$name <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
+      }
+    }' $city
+done | sort | sed -e's/.* <input/<input/;'
 cat <<HEREDOC
 </div>
 <div id="showall" style="display: block;"><a href="javascript:selectall(0)">show all</a></div>

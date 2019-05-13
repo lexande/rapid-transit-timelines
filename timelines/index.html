@@ -165,6 +165,16 @@ function toggleshow(x) {
 		span.style.display = 'inline-block';
 	}
 }
+function toggleshowm(x) {
+	span = document.getElementById(x);
+	checkboxes = document.getElementsByClassName(x + "checkbox");
+	if (span.style.display == 'inline-block') {
+		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = false; }
+	} else {
+		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = true; }
+	}
+	toggleshow(x);
+}
 function togglesidebar() {
 	f = document.getElementById("form");
 	s = document.getElementById("showall");
@@ -288,7 +298,7 @@ window.onload=function() {
   <a href="osl" class="map-wrap"><img class="map" id="OSLmap" src="about:blank" title="2015" alt="2015 map" width="486" height="297"></a></span>
 <span id="TYO" style="display: inline-block;"><a href="tyo">Tokyo</a><br>
   <a href="tyo" class="map-wrap"><img class="map" id="TYOmap" src="tyo/small/2015.svg" title="2015" alt="2015 map" width="1283" height="1062"></a></span>
-<span id="DUS" style="display: none;"><a href="dus">Rhein-Ruhr</a><br>
+<span id="DUS" style="display: none;"><a href="dus">Düsseldorf / Köln / Ruhr</a><br>
   <a href="dus" class="map-wrap"><img class="map" id="DUSmap" src="about:blank" title="2015" alt="2015 map" width="888" height="1073"></a></span>
 <span id="NCL" style="display: none;"><a href="ncl">Newcastle</a><br>
   <a href="ncl" class="map-wrap"><img class="map" id="NCLmap" src="about:blank" title="2015" alt="2015 map" width="228" height="177"></a></span>
@@ -356,7 +366,7 @@ window.onload=function() {
   <a href="kbp" class="map-wrap"><img class="map" id="KBPmap" src="about:blank" title="2015" alt="2015 map" width="261" height="196"></a></span>
 <span id="SEA" style="display: none;"><a href="sea">Seattle</a><br>
   <a href="sea" class="map-wrap"><img class="map" id="SEAmap" src="about:blank" title="2015" alt="2015 map" width="145" height="388"></a></span>
-<span id="AMS" style="display: none;"><a href="ams">Amsterdam</a><br>
+<span id="AMS" style="display: none;"><a href="ams">Amsterdam / Rotterdam</a><br>
   <a href="ams" class="map-wrap"><img class="map" id="AMSmap" src="about:blank" title="2015" alt="2015 map" width="746" height="934"></a></span>
 <span id="MIL" style="display: inline-block;"><a href="mil">Milano</a><br>
   <a href="mil" class="map-wrap"><img class="map" id="MILmap" src="mil/small/2015.svg" title="2015" alt="2015 map" width="333" height="290"></a></span>
@@ -422,7 +432,7 @@ window.onload=function() {
   <a href="bhx" class="map-wrap"><img class="map" id="BHXmap" src="about:blank" title="2015" alt="2015 map" width="362" height="438"></a></span>
 <span id="ATL" style="display: none;"><a href="atl">Atlanta</a><br>
   <a href="atl" class="map-wrap"><img class="map" id="ATLmap" src="about:blank" title="2015" alt="2015 map" width="264" height="362"></a></span>
-<span id="HKG" style="display: inline-block;"><a href="hkg">Hong Kong</a><br>
+<span id="HKG" style="display: inline-block;"><a href="hkg">Hong Kong / Shenzhen</a><br>
   <a href="hkg" class="map-wrap"><img class="map" id="HKGmap" src="hkg/small/2015.svg" title="2015" alt="2015 map" width="478" height="529"></a></span>
 <span id="BUH" style="display: none;"><a href="buh">Bucureşti</a><br>
   <a href="buh" class="map-wrap"><img class="map" id="BUHmap" src="about:blank" title="2015" alt="2015 map" width="188" height="159"></a></span>
@@ -615,7 +625,7 @@ window.onload=function() {
 <input type="checkbox" id="ADDcheckbox" onclick="toggleshow('ADD')"><a href="javascript:sidebarclick('ADD')">Addis Ababa</a><br>
 <input type="checkbox" id="ADLcheckbox" onclick="toggleshow('ADL')"><a href="javascript:sidebarclick('ADL')">Adelaide</a><br>
 <input type="checkbox" id="ALGcheckbox" onclick="toggleshow('ALG')"><a href="javascript:sidebarclick('ALG')">Alger</a><br>
-<input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')"><a href="javascript:sidebarclick('AMS')">Amsterdam</a><br>
+<input type="checkbox" id="AMScheckbox" class="AMScheckbox" onclick="toggleshowm('AMS')"><a href="javascript:sidebarclick('AMS')">Amsterdam</a><br>
 <input type="checkbox" id="ANKcheckbox" onclick="toggleshow('ANK')"><a href="javascript:sidebarclick('ANK')">Ankara</a><br>
 <input type="checkbox" id="ATHcheckbox" onclick="toggleshow('ATH')"><a href="javascript:sidebarclick('ATH')">Athína</a><br>
 <input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')"><a href="javascript:sidebarclick('ATL')">Atlanta</a><br>
@@ -657,6 +667,7 @@ window.onload=function() {
 <input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')"><a href="javascript:sidebarclick('DEN')">Denver</a><br>
 <input type="checkbox" id="DXBcheckbox" onclick="toggleshow('DXB')"><a href="javascript:sidebarclick('DXB')">Dubai</a><br>
 <input type="checkbox" id="DUBcheckbox" onclick="toggleshow('DUB')"><a href="javascript:sidebarclick('DUB')">Dublin</a><br>
+<input type="checkbox" id="DUScheckbox" class="DUScheckbox" onclick="toggleshowm('DUS')"><a href="javascript:sidebarclick('DUS')">Düsseldorf</a><br>
 <input type="checkbox" id="YEGcheckbox" onclick="toggleshow('YEG')"><a href="javascript:sidebarclick('YEG')">Edmonton</a><br>
 <input type="checkbox" id="IFNcheckbox" onclick="toggleshow('IFN')"><a href="javascript:sidebarclick('IFN')">Esfahan</a><br>
 <input type="checkbox" id="FRAcheckbox" onclick="toggleshow('FRA')"><a href="javascript:sidebarclick('FRA')">Frankfurt</a><br>
@@ -670,7 +681,7 @@ window.onload=function() {
 <input type="checkbox" id="HRBcheckbox" onclick="toggleshow('HRB')"><a href="javascript:sidebarclick('HRB')">Harbin</a><br>
 <input type="checkbox" id="HELcheckbox" onclick="toggleshow('HEL')"><a href="javascript:sidebarclick('HEL')">Helsinki</a><br>
 <input type="checkbox" id="HIJcheckbox" onclick="toggleshow('HIJ')"><a href="javascript:sidebarclick('HIJ')">Hiroshima</a><br>
-<input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="javascript:sidebarclick('HKG')">Hong Kong</a><br>
+<input type="checkbox" id="HKGcheckbox" class="HKGcheckbox" onclick="toggleshowm('HKG')" checked><a href="javascript:sidebarclick('HKG')">Hong Kong</a><br>
 <input type="checkbox" id="ISTcheckbox" onclick="toggleshow('IST')"><a href="javascript:sidebarclick('IST')">İstanbul</a><br>
 <input type="checkbox" id="IZMcheckbox" onclick="toggleshow('IZM')"><a href="javascript:sidebarclick('IZM')">İzmir</a><br>
 <input type="checkbox" id="JKTcheckbox" onclick="toggleshow('JKT')"><a href="javascript:sidebarclick('JKT')">Jakarta</a><br>
@@ -680,6 +691,7 @@ window.onload=function() {
 <input type="checkbox" id="HRKcheckbox" onclick="toggleshow('HRK')"><a href="javascript:sidebarclick('HRK')">Kharkiv</a><br>
 <input type="checkbox" id="CPHcheckbox" onclick="toggleshow('CPH')"><a href="javascript:sidebarclick('CPH')">København</a><br>
 <input type="checkbox" id="CCUcheckbox" onclick="toggleshow('CCU')"><a href="javascript:sidebarclick('CCU')">Kolkata</a><br>
+<input type="checkbox" id="DUScheckbox1" class="DUScheckbox" onclick="toggleshowm('DUS')"><a href="javascript:sidebarclick('DUS')">Köln</a><br>
 <input type="checkbox" id="KWGcheckbox" onclick="toggleshow('KWG')"><a href="javascript:sidebarclick('KWG')">Kryvyi Rih</a><br>
 <input type="checkbox" id="KULcheckbox" onclick="toggleshow('KUL')"><a href="javascript:sidebarclick('KUL')">Kuala Lumpur</a><br>
 <input type="checkbox" id="KMGcheckbox" onclick="toggleshow('KMG')"><a href="javascript:sidebarclick('KMG')">Kunming</a><br>
@@ -739,9 +751,10 @@ window.onload=function() {
 <input type="checkbox" id="UIOcheckbox" onclick="toggleshow('UIO')"><a href="javascript:sidebarclick('UIO')">Quito</a><br>
 <input type="checkbox" id="RECcheckbox" onclick="toggleshow('REC')"><a href="javascript:sidebarclick('REC')">Recife</a><br>
 <input type="checkbox" id="RNScheckbox" onclick="toggleshow('RNS')"><a href="javascript:sidebarclick('RNS')">Rennes</a><br>
-<input type="checkbox" id="DUScheckbox" onclick="toggleshow('DUS')"><a href="javascript:sidebarclick('DUS')">Rhein-Ruhr</a><br>
 <input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')"><a href="javascript:sidebarclick('RIO')">Rio de Janeiro</a><br>
 <input type="checkbox" id="ROMcheckbox" onclick="toggleshow('ROM')"><a href="javascript:sidebarclick('ROM')">Roma</a><br>
+<input type="checkbox" id="AMScheckbox1" class="AMScheckbox" onclick="toggleshowm('AMS')"><a href="javascript:sidebarclick('AMS')">Rotterdam</a><br>
+<input type="checkbox" id="DUScheckbox2" class="DUScheckbox" onclick="toggleshowm('DUS')"><a href="javascript:sidebarclick('DUS')">Ruhr</a><br>
 <input type="checkbox" id="SSAcheckbox" onclick="toggleshow('SSA')"><a href="javascript:sidebarclick('SSA')">Salvador</a><br>
 <input type="checkbox" id="SANcheckbox" onclick="toggleshow('SAN')"><a href="javascript:sidebarclick('SAN')">San Diego</a><br>
 <input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="javascript:sidebarclick('SFO')">San Francisco</a><br>
@@ -755,6 +768,7 @@ window.onload=function() {
 <input type="checkbox" id="SELcheckbox" onclick="toggleshow('SEL')" checked><a href="javascript:sidebarclick('SEL')">Seoul</a><br>
 <input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')" checked><a href="javascript:sidebarclick('SHA')">Shanghai</a><br>
 <input type="checkbox" id="SHEcheckbox" onclick="toggleshow('SHE')"><a href="javascript:sidebarclick('SHE')">Shenyang</a><br>
+<input type="checkbox" id="HKGcheckbox1" class="HKGcheckbox" onclick="toggleshowm('HKG')" checked><a href="javascript:sidebarclick('HKG')">Shenzhen</a><br>
 <input type="checkbox" id="SINcheckbox" onclick="toggleshow('SIN')" checked><a href="javascript:sidebarclick('SIN')">Singapore</a><br>
 <input type="checkbox" id="SOFcheckbox" onclick="toggleshow('SOF')"><a href="javascript:sidebarclick('SOF')">Sofia</a><br>
 <input type="checkbox" id="STOcheckbox" onclick="toggleshow('STO')"><a href="javascript:sidebarclick('STO')">Stockholm</a><br>
