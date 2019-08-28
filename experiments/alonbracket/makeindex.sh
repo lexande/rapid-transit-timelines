@@ -43,7 +43,7 @@ HEREDOC
 n=0
 for file in $@; do if [ -f $file ]; then
   city=`basename $file .svg`
-  NAME=`cat ~/timelines/timelines/$city/name`
+  if [ $city = szx ]; then NAME="Shenzhen"; elif [ $city = hkg ]; then NAME="Hong Kong"; else NAME=`cat ~/timelines/timelines/$city/name`; fi
   SNAME=`echo $NAME | sed -e's/<br>/ /; s/ (.*//;'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
