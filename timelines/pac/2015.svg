@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   id="svg2"
-   width="3250"
+   viewBox="0 0 3250 2450"
    height="2450"
-   viewBox="0 0 3250 2450">
+   width="3250"
+   id="svg2"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,29 +26,25 @@
   <defs
      id="defs6" />
   <image
-     style="display:none"
-     width="3333.333"
-     height="2666.667"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/pacosm.png"
-     id="image10"
+     y="-166.66699"
      x="-50"
-     y="-166.66699" />
+     id="image10"
+     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/pacosm.png"
+     preserveAspectRatio="none"
+     height="2666.667"
+     width="3333.333"
+     style="display:none" />
   <path
-     style="opacity:1;fill:none;fill-opacity:0.39215686;fill-rule:nonzero;stroke:#e10000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path817"
      d="m 158.27119,2133.4915 -10.16949,26.8475 -0.81356,19.9322 6.50847,12.6102 95.59322,78.5084 22.77966,23.1865 17.49153,15.4576 10.16949,3.2542 29.69491,-21.1525 88.67797,-157.017 15.45763,-60.2033 8.94915,-14.6441 25.62712,-18.7119 20.33898,-26.8474 37.83051,-56.9492 16.67797,-13.4237 6.91525,-9.7627 57.76271,-107.7966 5.28814,-16.2712 -8.13559,-23.5932 -4.0678,-142.3729 2.0339,-10.1695 25.62712,-41.8983 6.50847,-13.4237 4.0678,-34.1695 5.28813,-91.1187 11.79661,-28.8813 13.01695,-19.1187 27.66102,-21.5593 41.8983,-21.1525 45.15255,-37.017 10.98305,-23.5932 26.44068,-76.8814 1.22033,-25.6271 -8.94915,-19.1186 -28.06779,-35.7966 -8.54238,-25.2204 2.84746,-31.322 5.69492,-13.8305 12.61017,-39.8644 -0.81356,-19.9322 -8.54238,-15.45767 -28.47457,-51.25424 -2.0339,-15.45763 5.69491,-64.27118 -10.98305,-60.20339 1.22034,-23.59322 -6.50847,-18.30509 -18.30509,-14.23729 -46.07627,-17.17691"
-     id="path817" />
+     style="opacity:1;fill:none;fill-opacity:0.39215686;fill-rule:nonzero;stroke:#e10000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
-     x="89.453125"
-     y="206.96094"
-     id="text3019"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453125"
+     id="text3019"
+     y="206.96094"
+     x="89.453125"><tspan
+       id="tspan1"
        y="206.96094"
-       id="tspan1">2015</tspan></text>
-  <path
-     id="path838"
-     d="m 813.04953,1267.5384 86.47378,-0.7349 70.79581,27.6814 h 21.06727 l 25.72171,-10.5336 48.9936,-34.0506 19.1075,-17.1478 66.6314,-44.5842 59.5273,-37.9701 96.7624,-71.7757 23.7619,-14.943 97.0074,-48.2588 73.4905,-26.94647 53.4031,-17.39275 47.5238,-7.83898 71.0408,-8.08395 48.9936,-12.00345 34.5406,-11.75847 33.0707,-14.20816 64.6716,-34.78548 33.3157,-23.27199 24.7417,-12.49337 56.8327,-28.17135 55.3628,-19.35249 70.7958,-24.49682 155.7998,-78.38983 84.2691,-25.23173 12.0034,-6.85911 23.272,-25.47669 84.514,-211.16261 67.3663,-167.3133 16.4129,-24.00688 18.6175,-17.63771 91.1282,-50.46346 43.1144,-13.71822 42.3795,-10.28866 42.3795,-2.20472 289.0625,19.84243 78.1449,8.81886"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#247401;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       x="89.453125">2015</tspan></text>
 </svg>
