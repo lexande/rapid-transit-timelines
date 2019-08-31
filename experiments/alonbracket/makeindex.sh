@@ -69,7 +69,7 @@ else hed=$(echo $file | tr _ ' '); echo '<h4>'$hed'</h4>'; fi; done
 cat <<HEREDOC
 </form>
 <p>
-Based on frequent midday service (<a href="../../timelines/notes.html">notes</a>). Current as of August 2019 unless noted otherwise.<br>
+Based on frequent midday service (<a href="../../timelines/notes.html">notes</a>). Current as of August 2019.<br>
 Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (10 CSS pixels per km)
 <p>
 See also: <a href="/timelines">rapid transit timelines</a> - <a href="/timelines/misc/">miscellaneous timelines and maps</a>
