@@ -1,3 +1,8 @@
+#!/bin/bash
+START=$(basename $(ls *.svg | grep '^1\|^2' | head -n 1) .svg)
+END=$(basename $(ls *.svg | grep '^1\|^2' | tail -n 1) .svg)
+COUNT=$(expr 1 + \( $END - $START \))
+cat <<HEREDOC | sed -e"s/START/${START}/g; s/END/${END}/g; s/COUNT/${COUNT}/g;"
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head><title>Black Rock City Layout Timeline</title>
@@ -13,8 +18,8 @@ div#preloader img {
 }
 </style>
 <script language="JavaScript" type="text/javascript">
-start=1996;
-count=24;
+start=START;
+count=COUNT;
 step=1;
 index=count-1;
 function update() {
@@ -80,33 +85,14 @@ window.onhashchange=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img name="MAP" src="2019.svg" title="2019" alt="2019 map" width="508px" height="607px" style="border-width: 1px; border-style: solid">
+<img name="MAP" src="END.svg" title="END" alt="END map" width="508px" height="607px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
-<a href="#1996" onclick="gotoyear(1996)">1996</a>
-<a href="#1997" onclick="gotoyear(1997)">1997</a>
-<a href="#1998" onclick="gotoyear(1998)">1998</a>
-<a href="#1999" onclick="gotoyear(1999)">1999</a>
-<a href="#2000" onclick="gotoyear(2000)">2000</a>
-<a href="#2001" onclick="gotoyear(2001)">2001</a>
-<a href="#2002" onclick="gotoyear(2002)">2002</a>
-<a href="#2003" onclick="gotoyear(2003)">2003</a>
-<a href="#2004" onclick="gotoyear(2004)">2004</a>
-<a href="#2005" onclick="gotoyear(2005)">2005</a>
-<a href="#2006" onclick="gotoyear(2006)">2006</a>
-<a href="#2007" onclick="gotoyear(2007)">2007</a>
-<a href="#2008" onclick="gotoyear(2008)">2008</a>
-<a href="#2009" onclick="gotoyear(2009)">2009</a>
-<a href="#2010" onclick="gotoyear(2010)">2010</a>
-<a href="#2011" onclick="gotoyear(2011)">2011</a>
-<a href="#2012" onclick="gotoyear(2012)">2012</a>
-<a href="#2013" onclick="gotoyear(2013)">2013</a>
-<a href="#2014" onclick="gotoyear(2014)">2014</a>
-<a href="#2015" onclick="gotoyear(2015)">2015</a>
-<a href="#2016" onclick="gotoyear(2016)">2016</a>
-<a href="#2017" onclick="gotoyear(2017)">2017</a>
-<a href="#2018" onclick="gotoyear(2018)">2018</a>
-<a href="#2019" onclick="gotoyear(2019)">2019</a>
+HEREDOC
+for y in `seq $START $END`; do
+  echo "<a href=\"#${y}\" onclick=\"gotoyear(${y})\">${y}</a>"
+done
+cat <<HEREDOC
 <p>
 <a href="javascript:" onclick="prevmap()">one year earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">one year later (or press s)</a>
@@ -117,30 +103,11 @@ Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-wid
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
-<img src="1996.svg" width="1" height="1" alt="">
-<img src="1997.svg" width="1" height="1" alt="">
-<img src="1998.svg" width="1" height="1" alt="">
-<img src="1999.svg" width="1" height="1" alt="">
-<img src="2000.svg" width="1" height="1" alt="">
-<img src="2001.svg" width="1" height="1" alt="">
-<img src="2002.svg" width="1" height="1" alt="">
-<img src="2003.svg" width="1" height="1" alt="">
-<img src="2004.svg" width="1" height="1" alt="">
-<img src="2005.svg" width="1" height="1" alt="">
-<img src="2006.svg" width="1" height="1" alt="">
-<img src="2007.svg" width="1" height="1" alt="">
-<img src="2008.svg" width="1" height="1" alt="">
-<img src="2009.svg" width="1" height="1" alt="">
-<img src="2010.svg" width="1" height="1" alt="">
-<img src="2011.svg" width="1" height="1" alt="">
-<img src="2012.svg" width="1" height="1" alt="">
-<img src="2013.svg" width="1" height="1" alt="">
-<img src="2014.svg" width="1" height="1" alt="">
-<img src="2015.svg" width="1" height="1" alt="">
-<img src="2016.svg" width="1" height="1" alt="">
-<img src="2017.svg" width="1" height="1" alt="">
-<img src="2018.svg" width="1" height="1" alt="">
-<img src="2019.svg" width="1" height="1" alt="">
+HEREDOC
+for y in `seq $START $END`; do
+  echo '<img src="'${y}'.svg" width="1" height="1" alt="">'
+done
+cat <<HEREDOC
 </div>
 See also:
 <a href="../..">rapid transit timelines</a> - 
@@ -150,3 +117,4 @@ See also:
 copyright <a href="http://www.burningman.org">black rock city llc</a>.</font>
 </center>
 </body></html>
+HEREDOC
