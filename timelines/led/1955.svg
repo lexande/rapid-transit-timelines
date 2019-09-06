@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   width="2200"
-   viewBox="-50, 0, 2200, 3800"
-   height="3800"
+   width="2550"
+   viewBox="-50 0 2550 4000"
+   height="4000"
    id="svg2">
   <metadata
      id="metadata8">
@@ -28,23 +28,19 @@
   <image
      xlink:href="../streetmap/ledosm.png"
      id="image10"
-     height="3888.9167"
-     width="2029"
-     y="-48.916748"
-     x="30"
-     style="display:none;fill:#803300" />
-  <path
-     d="m 1001.7367,2165.6967 -2.2367,11.3032 -3.5,15.5 -14.89646,12.51 -76.10354,28.49 -39.5,34.5 -78.5,69.5 -46.5,29.5 -52.80719,20.4608 -14.69281,12.0392 -3,9 -12.72388,45.8619 -7.69187,7.5743 L 524,2541.4999 l -157.97958,64.594 -27.52042,35.906 -9,39 -25.5,85 -27.5,88.5 -15.5,54 -18.5,50.5 -4.5,194 1.50123,7.4257"
-     id="path3774"
-     style="fill:none;stroke:#e3173c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     height="4058"
+     width="3550.75"
+     y="-23.917007"
+     x="-1022.667"
+     style="display:none" />
   <text
      x="39.453125"
-     y="3697.9609"
+     y="3897.9609"
      id="text3776"
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="39.453125"
-       y="3697.9609"
+       y="3897.9609"
        id="tspan2">1955</tspan></text>
   <text
      x="39.453125"
@@ -55,4 +51,8 @@
        x="39.453125"
        y="206.96094"
        id="tspan1">1955</tspan></text>
+  <path
+     style="fill:none;stroke:#e3173c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3774"
+     d="m 1299.7508,2199.7357 -10.7961,19.5254 -6.3424,16.5354 -11.7308,12.9611 -78.2102,34.9013 -24.6562,13.3665 -43.2776,37.2966 -25.9125,14.4416 -49.7718,20.5933 -35.9406,16.8016 -18.12455,15.2323 -16.9571,22.3544 -14.3215,37.9328 -15.9946,39.3205 -29.5801,33.7396 -18.6584,13.8991 -200.77143,60.1092 -28.65942,12.284 -10.08624,7.9051 -18.23248,26.5389 -3.22712,11.5256 -9,39 -22.98411,86.0064 -24.73252,95.2929 -3.67532,18.2743 -31.83422,78.4264 -22.26232,45.5629 -5.58285,12.8403 -5.03968,15.9388 -0.51156,21.9687 0.45928,15.4821 21.89582,104.347 0.99506,7.2976" />
 </svg>
