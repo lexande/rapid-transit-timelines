@@ -80,7 +80,7 @@ x	Dubai		  200	  2009	2017	wikipedia list of metros
 x	Lyon		  198+	  1978	2017	wikipedia list of metros (excluding trams)
 x	København	  196	  1934	2013/16	tinyurl.com/y7bbh2lz (s-tog + oresund) + wikipedia metro
 x	Zürich		  193	  1976	2016	https://tinyurl.com/yanrqpmz
-x	Randstad	  192+	  1962	2016	wikipedia amsterdam + rotterdam metros + randstadrail 3/4
+x	Randstad	  192+	  1927	2016	wikipedia amsterdam + rotterdam metros + randstadrail 3/4
 x	Lisboa		  187+	  1926	2017/15	wikipedia metro + tinyurl.com/y9fkrzzc fertagus
 x	San Francisco	  184	  1917	2017	wikipedia (BART+Muni Metro) + APTA (VTA)
 x	Kuala Lumpur	  182	  1996	2017	wikipedia list of metros
@@ -196,6 +196,8 @@ k	Nottingham	   17.8	  1994	2017	wikipedia
 	Saarbrucken	   15.7	  1997	2016	www.saarbahn.de/ihre_werbung/werben_in_der_saarbahn
 u	Pittsburgh	   15.7	  1904	2018	https://data.wprdc.org/dataset/port
 	Dresden		   15.0	  2001	2017	wikipedia S-Bahn
+	Bergen		   14.9	  2010	2018	no.wikipedia
+	Tenerife	   14.7	  2007	2018	https://tinyurl.com/y2vt3d2l
 u	Saint Louis	   14.1	  1993	2017	APTA
 	Samara		   14.1	  1987	2017	wikipedia list of metros
 +	Wellington	   14-	  1902	2018	wikipedia PT in wellington
@@ -209,6 +211,7 @@ u	Sacramento	   11.2	  1987	2017	APTA
 	Alicante	   11.1	  1999	2018	es.wikipedia
 k	Cardiff		   11?	  1983	2017	wikipedia sum freq stations exc central+queen st
 	Niigata		   11?	  1997?	2015	wikipedia 2x sum stations to niitsu
+	Kagoshima	   10.4-  1912	2017	https://tinyurl.com/y4fvzszj p50
 	Granada		   10.2	  2017	2018	es.wikipedia
 	Volgograd	   10.0	  1984	2016	http://tinyurl.com/y6qw6vdv
 -	Lucknow		    9*	  2017	2017	wikipedia
@@ -233,16 +236,19 @@ u	San Juan	    4.8	  2005	2017	APTA
 u	Buffalo		    4.6	  1985	2017	APTA
 	Adana		    4.6?  2009	2011	http://tinyurl.com/y6o4vb8t
 	Neuchatel	    4?	  1981?	2011?	wikipedia trolleybuses, assume similar ridership/km
+	Bergamo		    3.4	  2009	2014	it.wikipedia
 	Tabriz		    3.3	  2015	2018	https://tinyurl.com/yy9cxahx
 u	Hartford	    3.3	  2015	2018	http://www.ct.gov/dot/cwp/view.asp?a=1386&Q=504888
 	Perugia		    2.8	  2008	2018	https://tinyurl.com/y3sz8qg2
 	Lugano		    2.7	  2007	2017	http://tinyurl.com/y3dmxb4s
+	Aarhus		    2.2*  2017	2018	https://tinyurl.com/y67mvnln
 -	Palembang	    2.2*  2018	2018	https://tinyurl.com/y2m4m5kq
 u	Detroit		    2.1	  1987	2017	APTA
 u	Providence	    1.9	  1914	2008	http://bit.ly/2oTss9c p25
 u	Norfolk		    1.3	  2011	2017	APTA
 	Takaoka		    1.2	  1966?	2017	ja.wikipedia
 u	Jacksonville	    1.0	  1989	2017	APTA
+	Trondheim	    0.9	  1924	2016	https://tinyurl.com/y6behzmd p12
 	Palma		    0.8	  2007	2015	http://tinyurl.com/y6scw6o5
 	Haifa		    0.7	  1959	2012	wikipedia
 -	Abuja		    ?	  2018	?
