@@ -56,6 +56,8 @@ function deselectall() {
 <h3>Streetcar Scale Comparison</h3>
 <span id="ADL" style="display: inline-block; vertical-align: middle">Adelaide<br>
   <img class="map" src="adl.svg" title="Adelaide" alt="Adelaide map" width="293px" height="266px"></span>
+<span id="ALG" style="display: none; vertical-align: middle">Alger<br>
+  <img class="map" src="alg.svg" title="Alger" alt="Alger map" width="500px" height="223px"></span>
 <span id="AMS" style="display: none; vertical-align: middle">Amsterdam<br>
   <img class="map" src="ams.svg" title="Amsterdam" alt="Amsterdam map" width="517px" height="434px"></span>
 <span id="ATL" style="display: inline-block; vertical-align: middle">Atlanta<br>
@@ -104,6 +106,8 @@ function deselectall() {
   <img class="map" src="khh.svg" title="Kaohsiung" alt="Kaohsiung map" width="174px" height="122px"></span>
 <span id="CCU" style="display: inline-block; vertical-align: middle">Kolkata<br>
   <img class="map" src="ccu.svg" title="Kolkata" alt="Kolkata map" width="272px" height="403px"></span>
+<span id="KBP" style="display: none; vertical-align: middle">Kyiv<br>
+  <img class="map" src="kbp.svg" title="Kyiv" alt="Kyiv map" width="783px" height="538px"></span>
 <span id="LIS" style="display: none; vertical-align: middle">Lisboa<br>
   <img class="map" src="lis.svg" title="Lisboa" alt="Lisboa map" width="293px" height="326px"></span>
 <span id="LIT" style="display: inline-block; vertical-align: middle">Little<br>Rock<br>
@@ -132,6 +136,8 @@ function deselectall() {
   <img class="map" src="phx.svg" title="Phoenix" alt="Phoenix map" width="804px" height="543px"></span>
 <span id="PDX" style="display: inline-block; vertical-align: middle">Portland<br>
   <img class="map" src="pdx.svg" title="Portland" alt="Portland map" width="141px" height="347px"></span>
+<span id="PRG" style="display: none; vertical-align: middle">Praha<br>
+  <img class="map" src="prg.svg" title="Praha" alt="Praha map" width="560px" height="462px"></span>
 <span id="FNJ" style="display: none; vertical-align: middle">Pyongyang<br>
   <img class="map" src="fnj.svg" title="Pyongyang" alt="Pyongyang map" width="364px" height="299px"></span>
 <span id="RIO" style="display: inline-block; vertical-align: middle">Rio de Janeiro<br>
@@ -148,6 +154,8 @@ function deselectall() {
   <img class="map" src="ssz.svg" title="Santos" alt="Santos map" width="315px" height="70px"></span>
 <span id="SEA" style="display: inline-block; vertical-align: middle">Seattle<br>
   <img class="map" src="sea.svg" title="Seattle" alt="Seattle map" width="70px" height="109px"></span>
+<span id="STO" style="display: none; vertical-align: middle">Stockholm<br>
+  <img class="map" src="sto.svg" title="Stockholm" alt="Stockholm map" width="370px" height="261px"></span>
 <span id="TCM" style="display: inline-block; vertical-align: middle">Tacoma<br>
   <img class="map" src="tcm.svg" title="Tacoma" alt="Tacoma map" width="49px" height="87px"></span>
 <span id="TPA" style="display: inline-block; vertical-align: middle">Tampa<br>
@@ -165,6 +173,7 @@ function deselectall() {
 <p>
 <form action="">Cities to show:
 <div style="display: inline-block"><input type="checkbox" id="ADLcheckbox" onclick="toggleshow('ADL')" checked><a href="javascript:listclick('ADL')">Adelaide</a></div>
+<div style="display: inline-block"><input type="checkbox" id="ALGcheckbox" onclick="toggleshow('ALG')"><a href="javascript:listclick('ALG')">Alger</a></div>
 <div style="display: inline-block"><input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')"><a href="javascript:listclick('AMS')">Amsterdam</a></div>
 <div style="display: inline-block"><input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked><a href="javascript:listclick('ATL')">Atlanta</a></div>
 <div style="display: inline-block"><input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')"><a href="javascript:listclick('BER')">Berlin</a></div>
@@ -189,6 +198,7 @@ function deselectall() {
 <div style="display: inline-block"><input type="checkbox" id="MCIcheckbox" onclick="toggleshow('MCI')" checked><a href="javascript:listclick('MCI')">Kansas City</a></div>
 <div style="display: inline-block"><input type="checkbox" id="KHHcheckbox" onclick="toggleshow('KHH')"><a href="javascript:listclick('KHH')">Kaohsiung</a></div>
 <div style="display: inline-block"><input type="checkbox" id="CCUcheckbox" onclick="toggleshow('CCU')" checked><a href="javascript:listclick('CCU')">Kolkata</a></div>
+<div style="display: inline-block"><input type="checkbox" id="KBPcheckbox" onclick="toggleshow('KBP')"><a href="javascript:listclick('KBP')">Kyiv</a></div>
 <div style="display: inline-block"><input type="checkbox" id="LIScheckbox" onclick="toggleshow('LIS')"><a href="javascript:listclick('LIS')">Lisboa</a></div>
 <div style="display: inline-block"><input type="checkbox" id="LITcheckbox" onclick="toggleshow('LIT')" checked><a href="javascript:listclick('LIT')">Little Rock</a></div>
 <div style="display: inline-block"><input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')" checked><a href="javascript:listclick('MDE')">Medellín</a></div>
@@ -203,6 +213,7 @@ function deselectall() {
 <div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="javascript:listclick('PHL')">Philadelphia</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PHXcheckbox" onclick="toggleshow('PHX')" checked><a href="javascript:listclick('PHX')">Phoenix</a></div>
 <div style="display: inline-block"><input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="javascript:listclick('PDX')">Portland</a></div>
+<div style="display: inline-block"><input type="checkbox" id="PRGcheckbox" onclick="toggleshow('PRG')"><a href="javascript:listclick('PRG')">Praha</a></div>
 <div style="display: inline-block"><input type="checkbox" id="FNJcheckbox" onclick="toggleshow('FNJ')"><a href="javascript:listclick('FNJ')">Pyongyang</a></div>
 <div style="display: inline-block"><input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')" checked><a href="javascript:listclick('RIO')">Rio de Janeiro</a></div>
 <div style="display: inline-block"><input type="checkbox" id="RTMcheckbox" onclick="toggleshow('RTM')"><a href="javascript:listclick('RTM')">Rotterdam / Den Haag</a></div>
@@ -211,6 +222,7 @@ function deselectall() {
 <div style="display: inline-block"><input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="javascript:listclick('LED')">Sankt-Peterburg</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SSZcheckbox" onclick="toggleshow('SSZ')" checked><a href="javascript:listclick('SSZ')">Santos</a></div>
 <div style="display: inline-block"><input type="checkbox" id="SEAcheckbox" onclick="toggleshow('SEA')" checked><a href="javascript:listclick('SEA')">Seattle</a></div>
+<div style="display: inline-block"><input type="checkbox" id="STOcheckbox" onclick="toggleshow('STO')"><a href="javascript:listclick('STO')">Stockholm</a></div>
 <div style="display: inline-block"><input type="checkbox" id="TCMcheckbox" onclick="toggleshow('TCM')" checked><a href="javascript:listclick('TCM')">Tacoma</a></div>
 <div style="display: inline-block"><input type="checkbox" id="TPAcheckbox" onclick="toggleshow('TPA')" checked><a href="javascript:listclick('TPA')">Tampa</a></div>
 <div style="display: inline-block"><input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')" checked><a href="javascript:listclick('YTO')">Toronto</a></div>
