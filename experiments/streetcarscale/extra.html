@@ -11,13 +11,69 @@ span {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+div#sidebar {
+	float: left;
+	background: #ffffff;
+	border: 1px solid;
+	width: 10.5em;
+	max-height: calc(100% - 22px);
+	top: 0;
+	left: 0;
+	margin: 5px;
+	padding: 5px;
+	position: fixed;
+	display: flex;
+	flex-flow: column;
+	text-align: left;
+}
+div#form {
+	flex: 1;
+	overflow: auto;
+}
+div#button a:link {
+	color: #000000;
+	text-decoration: none;
+}
+div#button a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+.headerfooter {
+	padding-left: calc(10.5em + 22px);
+	padding-right: calc(10.5em + 22px);
+	white-space: nowrap;
+}
+body {
+	text-align: center;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	/* styles for IE since flex is broken */
+	div#sidebar {
+		line-height: 1.2em;
+		display: block;
+		max-height: calc(100% - 22px);
+	}
+	div#form {
+		height: calc(100vh - 22px - 3.6em);
+	}
+}
 </style>
 <script language="JavaScript" type="text/javascript">
 function toggleshow(x) {
 	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
 	else document.getElementById(x).style.display = 'inline-block';
 }
-function listclick(x) {
+function toggleshowm(x) {
+	span = document.getElementById(x);
+	checkboxes = document.getElementsByClassName(x + "checkbox");
+	if (span.style.display == 'inline-block') {
+		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = false; }
+	} else {
+		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = true; }
+	}
+	toggleshow(x);
+}
+function sidebarclick(x) {
 	span = document.getElementById(x);
 	if (span.style.display == 'none') {
 		document.getElementById(x + "checkbox").click();
@@ -40,6 +96,26 @@ function deselectall() {
 		}
 	}
 }
+function togglesidebar() {
+	f = document.getElementById("form");
+	s = document.getElementById("showall");
+	h = document.getElementById("hideall");
+	a = document.getElementById("collapse");
+	m = document.getElementById("maps");
+	if (f.style.display == 'block') {
+		f.style.display = 'none';
+		s.style.display = 'none';
+		h.style.display = 'none';
+		a.innerHTML = "[+]";
+		m.style.paddingLeft = "0";
+	} else {
+		f.style.display = 'block';
+		s.style.display = 'block';
+		h.style.display = 'block';
+		a.innerHTML = "[&minus;]";
+		m.style.paddingLeft = "calc(10.5em + 22px)";
+	}
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -54,6 +130,7 @@ function deselectall() {
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <center>
 <h3>Streetcar Scale Comparison</h3>
+<div id="maps" style="padding-left: calc(10.5em + 22px);">
 <span id="ADL" style="display: inline-block; vertical-align: middle">Adelaide<br>
   <img class="map" src="adl.svg" title="Adelaide" alt="Adelaide map" width="293px" height="266px"></span>
 <span id="ALG" style="display: none; vertical-align: middle">Alger<br>
@@ -70,8 +147,8 @@ function deselectall() {
   <img class="map" src="bud.svg" title="Budapest" alt="Budapest map" width="598px" height="957px"></span>
 <span id="BUE" style="display: inline-block; vertical-align: middle">Buenos Aires<br>
   <img class="map" src="bue.svg" title="Buenos Aires" alt="Buenos Aires map" width="85px" height="181px"></span>
-<span id="CBG" style="display: inline-block; vertical-align: middle">Cambridge 1910<br>(horse)<br>
-  <img class="map" src="cbg.svg" title="Cambridge 1910" alt="Cambridge 1910 map" width="65px" height="65px"></span>
+<span id="CBG1910" style="display: inline-block; vertical-align: middle">Cambridge 1910<br>(horse)<br>
+  <img class="map" src="cbg1910.svg" title="Cambridge 1910" alt="Cambridge 1910 map" width="65px" height="65px"></span>
 <span id="CBR" style="display: inline-block; vertical-align: middle">Canberra<br>
   <img class="map" src="cbr.svg" title="Canberra" alt="Canberra map" width="87px" height="332px"></span>
 <span id="CLT" style="display: inline-block; vertical-align: middle">Charlotte<br>
@@ -82,6 +159,8 @@ function deselectall() {
   <img class="map" src="cvg.svg" title="Cincinnati" alt="Cincinnati map" width="43px" height="81px"></span>
 <span id="DAL" style="display: inline-block; vertical-align: middle">Dallas<br>
   <img class="map" src="dal.svg" title="Dallas" alt="Dallas map" width="120px" height="218px"></span>
+<span id="RTM" style="display: none; vertical-align: middle">Den Haag / Rotterdam<br>
+  <img class="map" src="rtm.svg" title="Den Haag / Rotterdam" alt="Den Haag / Rotterdam map" width="734px" height="930px"></span>
 <span id="DEN" style="display: inline-block; vertical-align: middle">Denver<br>
   <img class="map" src="den.svg" title="Denver" alt="Denver map" width="78px" height="76px"></span>
 <span id="DTT" style="display: inline-block; vertical-align: middle">Detroit<br>
@@ -126,8 +205,8 @@ function deselectall() {
   <img class="map" src="ntl.svg" title="Newcastle AU" alt="Newcastle AU map" width="100px" height="39px"></span>
 <span id="MSY" style="display: inline-block; vertical-align: middle">New Orleans<br>
   <img class="map" src="msy.svg" title="New Orleans" alt="New Orleans map" width="261px" height="254px"></span>
-<span id="NYC" style="display: inline-block; vertical-align: middle">New York (proposed)<br>
-  <img class="map" src="nyc.svg" title="New York" alt="New York map" width="352px" height="378px"></span>
+<span id="NYC-P" style="display: inline-block; vertical-align: middle">New York (proposed)<br>
+  <img class="map" src="nyc-p.svg" title="New York" alt="New York map" width="352px" height="378px"></span>
 <span id="OKC" style="display: inline-block; vertical-align: middle">Oklahoma<br>City<br>
   <img class="map" src="okc.svg" title="Oklahoma City" alt="Oklahoma City map" width="67px" height="81px"></span>
 <span id="OSL" style="display: none; vertical-align: middle">Oslo<br>
@@ -146,8 +225,6 @@ function deselectall() {
   <img class="map" src="fnj.svg" title="Pyongyang" alt="Pyongyang map" width="364px" height="299px"></span>
 <span id="RIO" style="display: inline-block; vertical-align: middle">Rio de Janeiro<br>
   <img class="map" src="rio.svg" title="Rio de Janeiro" alt="Rio de Janeiro map" width="277px" height="92px"></span>
-<span id="RTM" style="display: none; vertical-align: middle">Rotterdam / Den Haag<br>
-  <img class="map" src="rtm.svg" title="Rotterdam / Den Haag" alt="Rotterdam / Den Haag map" width="734px" height="930px"></span>
 <span id="SLC" style="display: inline-block; vertical-align: middle">Salt Lake City<br>
   <img class="map" src="slc.svg" title="Salt Lake City" alt="Salt Lake City map" width="402px" height="326px"></span>
 <span id="SFO" style="display: inline-block; vertical-align: middle">San Francisco<br>
@@ -174,84 +251,91 @@ function deselectall() {
   <img class="map" src="vce.svg" title="Venezia" alt="Venezia map" width="391px" height="326px"></span>
 <span id="WAS" style="display: inline-block; vertical-align: middle">Washington<br>
   <img class="map" src="was.svg" title="Washington" alt="Washington map" width="120px" height="44px"></span>
-<span id="ALO" style="display: inline-block; vertical-align: middle">Waterloo Iowa 1938<br>
-  <img class="map" src="alo.svg" title="Waterloo Iowa 1938" alt="Waterloo Iowa 1938 map" width="402px" height="228px"></span>
+<span id="ALO1938" style="display: inline-block; vertical-align: middle">Waterloo Iowa 1938<br>
+  <img class="map" src="alo1938.svg" title="Waterloo Iowa 1938" alt="Waterloo Iowa 1938 map" width="402px" height="228px"></span>
 <span id="VIE" style="display: none; vertical-align: middle">Wien<br>
   <img class="map" src="vie.svg" title="Wien" alt="Wien map" width="620px" height="1044px"></span>
-<p>
-<form action="">Cities to show:
-<div style="display: inline-block"><input type="checkbox" id="ADLcheckbox" onclick="toggleshow('ADL')" checked><a href="javascript:listclick('ADL')">Adelaide</a></div>
-<div style="display: inline-block"><input type="checkbox" id="ALGcheckbox" onclick="toggleshow('ALG')"><a href="javascript:listclick('ALG')">Alger</a></div>
-<div style="display: inline-block"><input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')"><a href="javascript:listclick('AMS')">Amsterdam</a></div>
-<div style="display: inline-block"><input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked><a href="javascript:listclick('ATL')">Atlanta</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')"><a href="javascript:listclick('BER')">Berlin</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BLKcheckbox" onclick="toggleshow('BLK')" checked><a href="javascript:listclick('BLK')">Blackpool</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BUDcheckbox" onclick="toggleshow('BUD')"><a href="javascript:listclick('BUD')">Budapest</a></div>
-<div style="display: inline-block"><input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')" checked><a href="javascript:listclick('BUE')">Buenos Aires</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CBGcheckbox" onclick="toggleshow('CBG')" checked><a href="javascript:listclick('CBG')">Cambridge 1910</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CBRcheckbox" onclick="toggleshow('CBR')" checked><a href="javascript:listclick('CBR')">Canberra</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="javascript:listclick('CLT')">Charlotte</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CHCcheckbox" onclick="toggleshow('CHC')" checked><a href="javascript:listclick('CHC')">Christchurch</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CVGcheckbox" onclick="toggleshow('CVG')" checked><a href="javascript:listclick('CVG')">Cincinnati</a></div>
-<div style="display: inline-block"><input type="checkbox" id="DALcheckbox" onclick="toggleshow('DAL')" checked><a href="javascript:listclick('DAL')">Dallas</a></div>
-<div style="display: inline-block"><input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')" checked><a href="javascript:listclick('DEN')">Denver</a></div>
-<div style="display: inline-block"><input type="checkbox" id="DTTcheckbox" onclick="toggleshow('DTT')" checked><a href="javascript:listclick('DTT')">Detroit</a></div>
-<div style="display: inline-block"><input type="checkbox" id="ELPcheckbox" onclick="toggleshow('ELP')" checked><a href="javascript:listclick('ELP')">El Paso</a></div>
-<div style="display: inline-block"><input type="checkbox" id="OOLcheckbox" onclick="toggleshow('OOL')" checked><a href="javascript:listclick('OOL')">Gold Coast</a></div>
-<div style="display: inline-block"><input type="checkbox" id="HELcheckbox" onclick="toggleshow('HEL')"><a href="javascript:listclick('HEL')">Helsinki</a></div>
-<div style="display: inline-block"><input type="checkbox" id="HIJcheckbox" onclick="toggleshow('HIJ')"><a href="javascript:listclick('HIJ')">Hiroshima</a></div>
-<div style="display: inline-block"><input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="javascript:listclick('HKG')">Hong Kong</a></div>
-<div style="display: inline-block"><input type="checkbox" id="HOUcheckbox" onclick="toggleshow('HOU')" checked><a href="javascript:listclick('HOU')">Houston</a></div>
-<div style="display: inline-block"><input type="checkbox" id="ALYcheckbox" onclick="toggleshow('ALY')" checked><a href="javascript:listclick('ALY')">Iskandariyya</a></div>
-<div style="display: inline-block"><input type="checkbox" id="JRScheckbox" onclick="toggleshow('JRS')" checked><a href="javascript:listclick('JRS')">Jerusalem</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MCIcheckbox" onclick="toggleshow('MCI')" checked><a href="javascript:listclick('MCI')">Kansas City</a></div>
-<div style="display: inline-block"><input type="checkbox" id="KHHcheckbox" onclick="toggleshow('KHH')"><a href="javascript:listclick('KHH')">Kaohsiung</a></div>
-<div style="display: inline-block"><input type="checkbox" id="CCUcheckbox" onclick="toggleshow('CCU')" checked><a href="javascript:listclick('CCU')">Kolkata</a></div>
-<div style="display: inline-block"><input type="checkbox" id="KBPcheckbox" onclick="toggleshow('KBP')"><a href="javascript:listclick('KBP')">Kyiv</a></div>
-<div style="display: inline-block"><input type="checkbox" id="LIScheckbox" onclick="toggleshow('LIS')"><a href="javascript:listclick('LIS')">Lisboa</a></div>
-<div style="display: inline-block"><input type="checkbox" id="LITcheckbox" onclick="toggleshow('LIT')" checked><a href="javascript:listclick('LIT')">Little Rock</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')" checked><a href="javascript:listclick('MDE')">Medellín</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked><a href="javascript:listclick('MEL')">Melbourne</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MEMcheckbox" onclick="toggleshow('MEM')" checked><a href="javascript:listclick('MEM')">Memphis</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MKEcheckbox" onclick="toggleshow('MKE')" checked><a href="javascript:listclick('MKE')">Milwaukee</a></div>
-<div style="display: inline-block"><input type="checkbox" id="NTLcheckbox" onclick="toggleshow('NTL')" checked><a href="javascript:listclick('NTL')">Newcastle AU</a></div>
-<div style="display: inline-block"><input type="checkbox" id="MSYcheckbox" onclick="toggleshow('MSY')" checked><a href="javascript:listclick('MSY')">New Orleans</a></div>
-<div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked><a href="javascript:listclick('NYC')">New York</a></div>
-<div style="display: inline-block"><input type="checkbox" id="OKCcheckbox" onclick="toggleshow('OKC')" checked><a href="javascript:listclick('OKC')">Oklahoma City</a></div>
-<div style="display: inline-block"><input type="checkbox" id="OSLcheckbox" onclick="toggleshow('OSL')"><a href="javascript:listclick('OSL')">Oslo</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')"><a href="javascript:listclick('PAR')">Paris</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="javascript:listclick('PHL')">Philadelphia</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PHXcheckbox" onclick="toggleshow('PHX')" checked><a href="javascript:listclick('PHX')">Phoenix</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="javascript:listclick('PDX')">Portland</a></div>
-<div style="display: inline-block"><input type="checkbox" id="PRGcheckbox" onclick="toggleshow('PRG')"><a href="javascript:listclick('PRG')">Praha</a></div>
-<div style="display: inline-block"><input type="checkbox" id="FNJcheckbox" onclick="toggleshow('FNJ')"><a href="javascript:listclick('FNJ')">Pyongyang</a></div>
-<div style="display: inline-block"><input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')" checked><a href="javascript:listclick('RIO')">Rio de Janeiro</a></div>
-<div style="display: inline-block"><input type="checkbox" id="RTMcheckbox" onclick="toggleshow('RTM')"><a href="javascript:listclick('RTM')">Rotterdam / Den Haag</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SLCcheckbox" onclick="toggleshow('SLC')" checked><a href="javascript:listclick('SLC')">Salt Lake City</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="javascript:listclick('SFO')">San Francisco</a></div>
-<div style="display: inline-block"><input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="javascript:listclick('LED')">Sankt-Peterburg</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SSZcheckbox" onclick="toggleshow('SSZ')" checked><a href="javascript:listclick('SSZ')">Santos</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SEAcheckbox" onclick="toggleshow('SEA')" checked><a href="javascript:listclick('SEA')">Seattle</a></div>
-<div style="display: inline-block"><input type="checkbox" id="SOFcheckbox" onclick="toggleshow('SOF')"><a href="javascript:listclick('SOF')">Sofiya</a></div>
-<div style="display: inline-block"><input type="checkbox" id="STOcheckbox" onclick="toggleshow('STO')"><a href="javascript:listclick('STO')">Stockholm</a></div>
-<div style="display: inline-block"><input type="checkbox" id="TCMcheckbox" onclick="toggleshow('TCM')" checked><a href="javascript:listclick('TCM')">Tacoma</a></div>
-<div style="display: inline-block"><input type="checkbox" id="TPAcheckbox" onclick="toggleshow('TPA')" checked><a href="javascript:listclick('TPA')">Tampa</a></div>
-<div style="display: inline-block"><input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')" checked><a href="javascript:listclick('YTO')">Toronto</a></div>
-<div style="display: inline-block"><input type="checkbox" id="TUScheckbox" onclick="toggleshow('TUS')" checked><a href="javascript:listclick('TUS')">Tucson</a></div>
-<div style="display: inline-block"><input type="checkbox" id="VCEcheckbox" onclick="toggleshow('VCE')"><a href="javascript:listclick('VCE')">Venezia</a></div>
-<div style="display: inline-block"><input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="javascript:listclick('WAS')">Washington</a></div>
-<div style="display: inline-block"><input type="checkbox" id="ALOcheckbox" onclick="toggleshow('ALO')" checked><a href="javascript:listclick('ALO')">Waterloo Iowa 1938</a></div>
-<div style="display: inline-block"><input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')"><a href="javascript:listclick('VIE')">Wien</a></div>
-</form>
-<a href="javascript:selectall()">show all</a>
-<a href="javascript:deselectall()">hide all</a>
-<p>
+<div id="sidebar">
+<div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
+<div style="padding-right: 2em;">Cities to show:</div>
+<div id="form" style="display: block;">
+<input type="checkbox" id="ADLcheckbox" onclick="toggleshow('ADL')" checked><a href="javascript:sidebarclick('ADL')">Adelaide</a><br>
+<input type="checkbox" id="ALGcheckbox" onclick="toggleshow('ALG')"><a href="javascript:sidebarclick('ALG')">Alger</a><br>
+<input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')"><a href="javascript:sidebarclick('AMS')">Amsterdam</a><br>
+<input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked><a href="javascript:sidebarclick('ATL')">Atlanta</a><br>
+<input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')"><a href="javascript:sidebarclick('BER')">Berlin</a><br>
+<input type="checkbox" id="BLKcheckbox" onclick="toggleshow('BLK')" checked><a href="javascript:sidebarclick('BLK')">Blackpool</a><br>
+<input type="checkbox" id="BUDcheckbox" onclick="toggleshow('BUD')"><a href="javascript:sidebarclick('BUD')">Budapest</a><br>
+<input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')" checked><a href="javascript:sidebarclick('BUE')">Buenos Aires</a><br>
+<input type="checkbox" id="CBG1910checkbox" onclick="toggleshow('CBG1910')" checked><a href="javascript:sidebarclick('CBG1910')">Cambridge 1910</a><br>
+<input type="checkbox" id="CBRcheckbox" onclick="toggleshow('CBR')" checked><a href="javascript:sidebarclick('CBR')">Canberra</a><br>
+<input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="javascript:sidebarclick('CLT')">Charlotte</a><br>
+<input type="checkbox" id="CHCcheckbox" onclick="toggleshow('CHC')" checked><a href="javascript:sidebarclick('CHC')">Christchurch</a><br>
+<input type="checkbox" id="CVGcheckbox" onclick="toggleshow('CVG')" checked><a href="javascript:sidebarclick('CVG')">Cincinnati</a><br>
+<input type="checkbox" id="DALcheckbox" onclick="toggleshow('DAL')" checked><a href="javascript:sidebarclick('DAL')">Dallas</a><br>
+<input type="checkbox" id="RTMcheckbox" class="RTMcheckbox" onclick="toggleshowm('RTM')"><a href="javascript:sidebarclick('RTM')">Den Haag</a><br>
+<input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')" checked><a href="javascript:sidebarclick('DEN')">Denver</a><br>
+<input type="checkbox" id="DTTcheckbox" onclick="toggleshow('DTT')" checked><a href="javascript:sidebarclick('DTT')">Detroit</a><br>
+<input type="checkbox" id="ELPcheckbox" onclick="toggleshow('ELP')" checked><a href="javascript:sidebarclick('ELP')">El Paso</a><br>
+<input type="checkbox" id="OOLcheckbox" onclick="toggleshow('OOL')" checked><a href="javascript:sidebarclick('OOL')">Gold Coast</a><br>
+<input type="checkbox" id="HELcheckbox" onclick="toggleshow('HEL')"><a href="javascript:sidebarclick('HEL')">Helsinki</a><br>
+<input type="checkbox" id="HIJcheckbox" onclick="toggleshow('HIJ')"><a href="javascript:sidebarclick('HIJ')">Hiroshima</a><br>
+<input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="javascript:sidebarclick('HKG')">Hong Kong</a><br>
+<input type="checkbox" id="HOUcheckbox" onclick="toggleshow('HOU')" checked><a href="javascript:sidebarclick('HOU')">Houston</a><br>
+<input type="checkbox" id="ALYcheckbox" onclick="toggleshow('ALY')" checked><a href="javascript:sidebarclick('ALY')">Iskandariyya</a><br>
+<input type="checkbox" id="JRScheckbox" onclick="toggleshow('JRS')" checked><a href="javascript:sidebarclick('JRS')">Jerusalem</a><br>
+<input type="checkbox" id="MCIcheckbox" onclick="toggleshow('MCI')" checked><a href="javascript:sidebarclick('MCI')">Kansas City</a><br>
+<input type="checkbox" id="KHHcheckbox" onclick="toggleshow('KHH')"><a href="javascript:sidebarclick('KHH')">Kaohsiung</a><br>
+<input type="checkbox" id="CCUcheckbox" onclick="toggleshow('CCU')" checked><a href="javascript:sidebarclick('CCU')">Kolkata</a><br>
+<input type="checkbox" id="KBPcheckbox" onclick="toggleshow('KBP')"><a href="javascript:sidebarclick('KBP')">Kyiv</a><br>
+<input type="checkbox" id="LIScheckbox" onclick="toggleshow('LIS')"><a href="javascript:sidebarclick('LIS')">Lisboa</a><br>
+<input type="checkbox" id="LITcheckbox" onclick="toggleshow('LIT')" checked><a href="javascript:sidebarclick('LIT')">Little Rock</a><br>
+<input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')" checked><a href="javascript:sidebarclick('MDE')">Medellín</a><br>
+<input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked><a href="javascript:sidebarclick('MEL')">Melbourne</a><br>
+<input type="checkbox" id="MEMcheckbox" onclick="toggleshow('MEM')" checked><a href="javascript:sidebarclick('MEM')">Memphis</a><br>
+<input type="checkbox" id="MKEcheckbox" onclick="toggleshow('MKE')" checked><a href="javascript:sidebarclick('MKE')">Milwaukee</a><br>
+<input type="checkbox" id="NTLcheckbox" onclick="toggleshow('NTL')" checked><a href="javascript:sidebarclick('NTL')">Newcastle AU</a><br>
+<input type="checkbox" id="MSYcheckbox" onclick="toggleshow('MSY')" checked><a href="javascript:sidebarclick('MSY')">New Orleans</a><br>
+<input type="checkbox" id="NYC-Pcheckbox" onclick="toggleshow('NYC-P')" checked><a href="javascript:sidebarclick('NYC-P')">New York</a><br>
+<input type="checkbox" id="OKCcheckbox" onclick="toggleshow('OKC')" checked><a href="javascript:sidebarclick('OKC')">Oklahoma City</a><br>
+<input type="checkbox" id="OSLcheckbox" onclick="toggleshow('OSL')"><a href="javascript:sidebarclick('OSL')">Oslo</a><br>
+<input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')"><a href="javascript:sidebarclick('PAR')">Paris</a><br>
+<input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="javascript:sidebarclick('PHL')">Philadelphia</a><br>
+<input type="checkbox" id="PHXcheckbox" onclick="toggleshow('PHX')" checked><a href="javascript:sidebarclick('PHX')">Phoenix</a><br>
+<input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="javascript:sidebarclick('PDX')">Portland</a><br>
+<input type="checkbox" id="PRGcheckbox" onclick="toggleshow('PRG')"><a href="javascript:sidebarclick('PRG')">Praha</a><br>
+<input type="checkbox" id="FNJcheckbox" onclick="toggleshow('FNJ')"><a href="javascript:sidebarclick('FNJ')">Pyongyang</a><br>
+<input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')" checked><a href="javascript:sidebarclick('RIO')">Rio de Janeiro</a><br>
+<input type="checkbox" id="RTMcheckbox1" class="RTMcheckbox" onclick="toggleshowm('RTM')"><a href="javascript:sidebarclick('RTM')">Rotterdam</a><br>
+<input type="checkbox" id="SLCcheckbox" onclick="toggleshow('SLC')" checked><a href="javascript:sidebarclick('SLC')">Salt Lake City</a><br>
+<input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="javascript:sidebarclick('SFO')">San Francisco</a><br>
+<input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="javascript:sidebarclick('LED')">Sankt-Peterburg</a><br>
+<input type="checkbox" id="SSZcheckbox" onclick="toggleshow('SSZ')" checked><a href="javascript:sidebarclick('SSZ')">Santos</a><br>
+<input type="checkbox" id="SEAcheckbox" onclick="toggleshow('SEA')" checked><a href="javascript:sidebarclick('SEA')">Seattle</a><br>
+<input type="checkbox" id="SOFcheckbox" onclick="toggleshow('SOF')"><a href="javascript:sidebarclick('SOF')">Sofiya</a><br>
+<input type="checkbox" id="STOcheckbox" onclick="toggleshow('STO')"><a href="javascript:sidebarclick('STO')">Stockholm</a><br>
+<input type="checkbox" id="TCMcheckbox" onclick="toggleshow('TCM')" checked><a href="javascript:sidebarclick('TCM')">Tacoma</a><br>
+<input type="checkbox" id="TPAcheckbox" onclick="toggleshow('TPA')" checked><a href="javascript:sidebarclick('TPA')">Tampa</a><br>
+<input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')" checked><a href="javascript:sidebarclick('YTO')">Toronto</a><br>
+<input type="checkbox" id="TUScheckbox" onclick="toggleshow('TUS')" checked><a href="javascript:sidebarclick('TUS')">Tucson</a><br>
+<input type="checkbox" id="VCEcheckbox" onclick="toggleshow('VCE')"><a href="javascript:sidebarclick('VCE')">Venezia</a><br>
+<input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="javascript:sidebarclick('WAS')">Washington</a><br>
+<input type="checkbox" id="ALO1938checkbox" onclick="toggleshow('ALO1938')" checked><a href="javascript:sidebarclick('ALO1938')">Waterloo Iowa 1938</a><br>
+<input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')"><a href="javascript:sidebarclick('VIE')">Wien</a><br>
+</div>
+<div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
+<div id="hideall" style="display: blcok;"><a href="javascript:deselectall()">hide all</a></div>
+</div>
+<br>
+<div class="headerfooter">
+<div style="white-space: normal;">
 Thick lines represent running in streets or with uncontrolled grade crossings; thin lines are sections with grade-separations or crossing gates.  Connecting rapid transit lines are shown in light gray, ferries in cyan.  All lines shown run at least every 20 minutes during the day on weekdays.  Maps current as of 2019.<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 See also: <a href="/timelines">rapid transit timelines</a> - <a href="/timelines/misc/">miscellaneous timelines and maps</a>
+</div>
 <p>
 <div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>) based on map data by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors and historical sources.</div>
 </body></html>
