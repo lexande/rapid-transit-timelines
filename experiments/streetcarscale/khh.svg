@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   id="svg2"
-   width="800"
+   viewBox="0 0 800 560"
    height="560"
-   viewBox="0 0 800 560">
+   width="800"
+   id="svg2"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,13 +26,13 @@
   <defs
      id="defs6" />
   <path
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path817"
      d="m 19.50001,46.4999 88,48.5 14,1 12.5,-2.5 9,-10 39.5,-80.5 8.5,-8 19.5,-5.5 32.5,-16 184.5,-66.5 364.5,29 206.99999,75 182,-21 49,-2 82,19 45.5,27.5 12,-0.5 178,-84.5 17,-2 21,3 14.5,11 37.5,38.5 26.5,25 27,35.5"
-     id="path817" />
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path819"
      d="m 419.50001,-2394.0001 12.5,24 81,219.5 98.5,199.5 25.5,47 10.5,27.5 3,29.5 -0.5,67 5,26 45,171.5 4,17 -8.5,30.5 -17,22 -30.5,18 -172.5,71.5 -15.5,13.5 -7,16 -4,22 -17,60.5 -2,14.5 4,133 3.5,37.5 7.5,14.5 3.5,38 43,67.5 75,88 8,14 -1,5.5 -4.5,15 -2.5,5 -54.5,54.5 -25.5,41.5 -36.5,88 -4,17 -5,184 10.5,56.5 -0.5,39.5 -15.5,211 -23.5,222 2,10.5 83,227.5 11,20 117,161.5 11.5,17 6,17.5 262,337.5 15.99999,13 28.5,10 13.5,0.5 120.5,4.5 16.5,5.5 14,14 28,33 32,36.5"
-     id="path819" />
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <image
      xlink:href="../../timelines/khh/./../streetmap/khhosm.png"
      width="2181"
@@ -43,7 +43,11 @@
      y="-2628.8572"
      style="display:none" />
   <path
-     id="path822"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#7cbd52;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 60.22735,49.8588 -8.6422,17.2844 43.21104,20.276 8.30981,-16.2873 99.053,47.8646 13.29571,0.6648 12.96331,-5.3183 8.64221,-10.969 3.98871,-6.9802 29.91534,-8.3098 10.63656,0.6648 13.96049,7.3126 6.64785,11.6337 2.65914,11.9662 v 9.9718 l -24.26466,48.5293 v 8.6422 l 3.98871,11.3013 10.30418,9.307 64.81656,31.2449 24.26466,-6.9802 92.40515,258.9338 8.9746,7.3127 10.30417,5.3183 11.96613,-0.3324 99.71779,-36.2308 13.6281,-8.3098 17.61681,-16.6197 95.06429,-100.0502 9.97178,-10.9689 6.98024,-17.9492"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#7cbd52;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path822" />
+  <path
+     id="path820"
+     d="m -29.957627,172.62712 c 15.80663,-16.07685 -4.513716,-70.34083 0.59322,-83.34746"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
