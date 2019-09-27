@@ -225,6 +225,8 @@ function togglesidebar() {
   <img class="map" src="nyc-p.svg" title="New York" alt="New York map" width="352px" height="378px"></span>
 <span id="OKC" style="display: inline-block; vertical-align: middle">Oklahoma<br>City<br>
   <img class="map" src="okc.svg" title="Oklahoma City" alt="Oklahoma City map" width="67px" height="81px"></span>
+<span id="OST" style="display: none; vertical-align: middle">Oostende<br>
+  <img class="map" src="ost.svg" title="Oostende" alt="Oostende map" width="1495px" height="913px"></span>
 <span id="OSL" style="display: none; vertical-align: middle">Oslo<br>
   <img class="map" src="osl.svg" title="Oslo" alt="Oslo map" width="207px" height="185px"></span>
 <span id="PAR" style="display: none; vertical-align: middle">Paris<br>
@@ -283,6 +285,8 @@ function togglesidebar() {
   <img class="map" src="vie.svg" title="Wien" alt="Wien map" width="620px" height="1044px"></span>
 <span id="ZAG" style="display: none; vertical-align: middle">Zagreb<br>
   <img class="map" src="zag.svg" title="Zagreb" alt="Zagreb map" width="457px" height="305px"></span>
+<span id="ZRH" style="display: none; vertical-align: middle">Zürich<br>
+  <img class="map" src="zrh.svg" title="Zürich" alt="Zürich map" width="734px" height="451px"></span>
 <div id="sidebar">
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
@@ -334,6 +338,7 @@ function togglesidebar() {
 <input type="checkbox" id="MSYcheckbox" onclick="toggleshow('MSY')" checked><a href="javascript:sidebarclick('MSY')">New Orleans</a><br>
 <input type="checkbox" id="NYC-Pcheckbox" onclick="toggleshow('NYC-P')" checked><a href="javascript:sidebarclick('NYC-P')">New York</a><br>
 <input type="checkbox" id="OKCcheckbox" onclick="toggleshow('OKC')" checked><a href="javascript:sidebarclick('OKC')">Oklahoma City</a><br>
+<input type="checkbox" id="OSTcheckbox" onclick="toggleshow('OST')"><a href="javascript:sidebarclick('OST')">Oostende</a><br>
 <input type="checkbox" id="OSLcheckbox" onclick="toggleshow('OSL')"><a href="javascript:sidebarclick('OSL')">Oslo</a><br>
 <input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')"><a href="javascript:sidebarclick('PAR')">Paris</a><br>
 <input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="javascript:sidebarclick('PHL')">Philadelphia</a><br>
@@ -364,6 +369,7 @@ function togglesidebar() {
 <input type="checkbox" id="ALO1938checkbox" onclick="toggleshow('ALO1938')" checked><a href="javascript:sidebarclick('ALO1938')">Waterloo Iowa 1938</a><br>
 <input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')"><a href="javascript:sidebarclick('VIE')">Wien</a><br>
 <input type="checkbox" id="ZAGcheckbox" onclick="toggleshow('ZAG')"><a href="javascript:sidebarclick('ZAG')">Zagreb</a><br>
+<input type="checkbox" id="ZRHcheckbox" onclick="toggleshow('ZRH')"><a href="javascript:sidebarclick('ZRH')">Zürich</a><br>
 </div>
 <div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
 <div id="hideall" style="display: blcok;"><a href="javascript:deselectall()">hide all</a></div>
