@@ -142,9 +142,9 @@ for city in $CITIES; do
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*30/138)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' ${city}.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
   if ( grep ^$city@ names >/dev/null); then
-    echo '<span id="'$UPPER'" style="display: none; vertical-align: middle">'$NAME'<br>'
-  else
     echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
+  else
+    echo '<span id="'$UPPER'" style="display: none; vertical-align: middle">'$NAME'<br>'
   fi
   echo '  <img class="map" src="'${city}.svg'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
 done
@@ -162,7 +162,7 @@ for city in $CITIES; do
     $name = `grep ^$city names`;
     $name =~ s/<br>/ /;
     $name =~ s/ \(.*//;
-    $show = ($name !~ /@/);
+    $show = ($name =~ /@/);
     $name =~ s/^.*\t//;
     chomp $name;
     if ( $name =~ / \/ / ) { 
