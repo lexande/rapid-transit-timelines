@@ -12,7 +12,7 @@ $(1): $(1)/uncropped $(1)/index.html $(subst uncropped/,,$(patsubst %.svg,%.svg.
 
 else
 $(1)/small/%.svg: $(1)/%.svg
-	mkdir -p small
+	mkdir -p $(1)/small
 	~/timelines/scripts/hideyear.pl $$< > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
 	svgo --disable=cleanupNumericValues $$@
@@ -45,4 +45,4 @@ rsync: all
 
 $(call WriteOverview,us.html,nyc chi bwi bos pvd pit phl lax sfo cle sea was atl san mia buf pdx sac dtt jax dal stl den slc msp clt las sju orf hfd,United States)
 $(call WriteOverview,uk.html,lon lpl gla ncl man pme bhx cwl szd nqt edi bfs,United Kingdom)
-$(call WriteMainIndex,index.html,lon nyc par qls mel ber lpl syd chi gla bwi bud bos vie osl tyo dus ncl pit osa phl lax ham cai yvr ngo bue fuk sfo mad hij bcn bom sto lis ams nap adl ath man cph mow rio got bru yto per rom led fkb kbp sea mil tbs str ymq maa bak sdj muc fra bfe mhg mex spk nue hel bjs fnj prg brn sel sao hrk scl haj was zrh gdl tas mrs yeg lyn bhx atl hkg buh bne tun evn yyc san ccs lil yow mia msq dub ccu mnl tsn poa rec pus goj ovb bhz pdx kwg sin kuf vlc ist dal goa bkk mty svx lej sha tls stl szd den waw kul bio mde tpe ank uio tae sof can slc thr izm bog bsb scn rns btz opo cgq dlc del lim oka jkt nqt kwj msp wuh tlv drs ckg bfs nkg kzn vap trn cjj vln mar tci akl khh czl xmn krk sdq ada svq dxb ayt bgo ctu she mhd xiy blr alg ala szv hgh vbs kmg hrb cgo pac csx ngb lpb ssa wux add ifn tao khn)
+$(call WriteMainIndex,index.html,lon nyc par qls mel ber lpl syd chi gla bwi bud bos vie osl tyo dus ncl pit osa phl lax ham cai yvr ngo bue fuk sfo mad hij bcn bom fsz sto lis ams nap adl ath man cph mow rio got bru yto per rom led fkb kbp sea mil tbs str ymq maa bak sdj muc fra bfe mhg mex spk nue hel bjs fnj prg brn sel sao hrk scl haj was zrh gdl tas mrs yeg lyn bhx atl hkg buh bne tun evn yyc san ccs lil yow mia msq dub ccu mnl tsn poa rec pus goj ovb bhz pdx kwg sac sin kuf vlc ist dal goa bkk mty svx lej sha tls stl szd den waw kul bio mde tpe ank uio tae sof can slc thr izm bog bsb scn rns btz opo cgq dlc del lim oka jkt nqt kwj msp wuh tlv drs ckg bfs nkg kzn vap trn cjj vln mar tci akl khh czl xmn krk sdq ada svq dxb ayt bgo ctu she mhd xiy blr alg ala szv hgh vbs kmg hrb cgo pac csx ngb lpb ssa wux add ifn tao khn)
