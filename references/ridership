@@ -1,264 +1,264 @@
 	city		 M/yr	  open	datayr	datasrc
-x	Tokyo		14990+	  1901	2017	http://www.train-media.net/report/1810/index.html
-x	Beijing		 3778	  1971	2017	wikipedia list of metros
-x	Shanghai	 3538	  1993	2017	wikipedia list of metros
-x	Hong Kong	 3487	  1979	2017	tinyurl.com/y369lqnp + wikipedia shenzhen
-x	Seoul		 3457	  1974	2017	wikipedia list of metros (subway+korail+sbundang+incheon)
-x	Paris		 3110	  1875	2010-15	fr.wikipedia (M ABT2)+ tinyurl.com/y7ftkj7m (BCDEHJLNUT4)
-x	Osaka		 3037+	  1933	2007	wikipedia transport in keihanshin
-x	Mumbai		 2908	  1925	2017	wikipedia (suburban+metro+monorail)
-x	Guangzhou	 2800	  1999	2017	wikipedia list of metros
-x	Moskva		 2442	  1935	2017	wikipedia list of metros
-x	São Paulo	 2146	  1957	2017/18	wikipedia list of metros + CPTM + tinyurl.com/y9yu8cgb
-x	New York	 1844	  1873	2017	wikipedia list of metros (subway+PATH) + APTA (HBLR+NCS)
-x	London		 1719+	  1836	2017	wikipedia underground+overground+DLR+tramlink
-x	México		 1634	  1969	2016	wikipedia list of metros + wikipedia list of NA ligthrail
-x	Cairo		 1314	  1910	2015	wikipedia list of metros
-x	Singapore	 1205	  1987	2017/16	wikipedia list of metros + LRT
-x	Nagoya		 1065	  1913	2016-18	tinyurl.com/y36lxkr4 + ja.wiki subway lines+linimo
-x	İstanbul	 1015	  1989	2018	tinyurl yyg3mw7x + tinyurl y4755wyr + tinyurl y6cwgtvj
-x	Berlin		  989	  1877	2017	wikipedia U-Bahn + tinyurl.com/y36tmzkf
-x	Nanjing		  977	  2005	2017	wikipedia list of metros
-x	Wuhan		  927	  2004	2017	wikipedia list of metros
-x	Delhi		  926	  2002	2018	wikipedia list of metros
-x	Madrid		  858	  1919	2017/16	wikipedia metro + https://tinyurl.com/ydhpsdsr cercanias
-x	Taipei		  789	  1996	2018	wikipedia list of metros (taipei+taoyuan)
-x	Chengdu		  782	  2010	2017	wikipedia list of metros
-x	Chongqing	  743	  2005	2017	wikipedia list of metros
-x	Sankt-Peterburg	  727	  1955	2017	wikipedia list of metros
-x	Tehran		  717	  1999	2015	wikipedia list of metros
-x	Bogotá		  702	  2000	2016	tinyurl.com/yxhbx399
-x	Buenos Aires	  692	  1913	2017	https://tinyurl.com/y2d6hh5l
-x	Santiago	  685	  1975	2017	wikipedia list of metros
-x	Milano		  653	  1964	2017	wikipedia list of metros + wikipedia Suburban Railway
-x	München		  628+	  1971	2017	de.wikipedia (U-Bahn+S-Bahn, excluding weekend S-bahn)
-x	Barcelona	  598	  1924	2017	tinyurl.com/yxdg4v4d
-x	Wien		  555+	  1898	2017-18	tinyurl y4sxqeav + tinyurl yytu9ezc + tinyurl yytarh6n
-x	Hamburg		  534	  1907	2017/15	de.wikipedia (U-Bahn+AKN) + tinyurl.com/y24rqqaz
-x	Rhein-Ruhr	  500+	  1901	2010-16	wikipedia S-bahn+stadtbahn köln+dortmund+wupper
-x	Kyiv		  496+	  1960	2018	wikipedia list of metros (excludes express trams)
-x	Jakarta		  480-	  2004	2017	wikipedia (KRL+transjakarta, includes infreq/nongradesep)
-x	Stockholm	  448	  1925	2013	wikipedia metro + tinyurl.com/yddysqt9 p19
-x	Praha		  436	  1974	2017	wikipedia list of metros
-x	Rio de Janeiro	  426	  1937	2017/16	wikipedia metro + supervia.com.br/pt-br/quem-somos
-x	Manila		  417	  1984	2017-18	tinyurl.com/yxpsuhev + wikipedia LRT-1 + LRT-2
-x	Budapest	  411+	  1896	2017	wikipedia list of metros (excludes HEV+rack railway)
-x	Xian		  408	  2011	2016	wikipedia list of metros
-x	Bangkok		  389+	  1990	2014-17	wikipedia list of metros BTS, articles airport rail + MRT
-x	Montréal	  368	  1966	2017	wikipedia list of metros
-x	Busan		  358	  1985	2017	wikipedia list of metros
-x	Caracas		  358	  1983	2017	wikipedia list of metros
-x	Tianjin		  352	  1984	2017	wikipedia list of metros
-x	Sydney		  351	  1892	2017	wikipedia (sydney trains+light rail)
-x	Roma		  345+	  1955	2012-17	it.wikipedia metro+lido + wikipedia FL1+FL3
-x	Hangzhou	  340	  2012	2017	wikipedia list of metros
-x	Frankfurt	  317	  1968	2017	de.wikipedia (U-Bahn+S-Bahn)
-x	Toronto		  304+	  1954	2017	wikipedia list of metros (excludes tunnel trams)
-x	Shenyang	  319	  2010	2017	wikipedia list of metros
-x	Sapporo		  290?	  1971	2015-16	wikipedia list of metros+ja.wiki 2x freq stations exc Sap
-x	Minsk		  284	  1984	2017	wikipedia list of metros
-x	Athina		  288	  1930	2015	wikipedia list of metros + wikipedia Athens Tram
-x	Fukuoka		  274+	  1914	2017	tinyurl ybd6hfdc + wikipedia m list, excludes JR+monorail
-x	Stuttgart	  268?	  1985	2016	tinyurl.com/y2pbetr5 using overall weekday-year ratio
-x	Lima		  263	  2010	2016/14	wikipedia (metro + el metropolitano)
-x	Zhengzhou	  252	  2013	2017	wikipedia list of metros
-x	Suzhou		  248	  2012	2017	wikipedia list of metros
-x	Boston		  244	  1897	2017	wikipedia lists + betterbus.mbta.com silver
-x	Belo Horizonte	  244	  1986	2015/16	wikipedia list of m + tinyurl.com/ya55swrc MOVE corridors
-x	Melbourne	  241+	  1878	2017	wikipedia rail in melbourne (excludes rapid trams 96+109)
-x	Chicago		  238	  1897	2017	wikipedia list of metros + tinyurl.com/y6697zgj
-x	Changsha	  233	  2014	2017	wikipedia list of metros
-x	Washington	  230	  1976	2017	wikipedia list of metros
-x	Bakı		  229	  1967	2017	wikipedia list of metros
-x	Chennai		  228	  1967	2016	wikipedia (suburan south + MRTS + metro)
-x	Medellín	  220	  1995	2016	https://tinyurl.com/ybjp4wws p18
-x	Kharkiv		  213	  1975	2017	wikipedia list of metros
-x	Warszawa	  211	  1963	2016	wikipedia list of metros + pl.wikipedia SKM
-x	Kolkata		  206	  1984	2018	wikipedia list of metros
-x	Izmir		  203	  2000	2016/17	wikipedia list of metros + tr.wikipedia IZBAN
-x	Dubai		  200	  2009	2017	wikipedia list of metros
-x	Lyon		  198+	  1978	2017	wikipedia list of metros (excluding trams)
-x	København	  196	  1934	2013/16	tinyurl.com/y7bbh2lz (s-tog + oresund) + wikipedia metro
-x	Zürich		  193	  1976	2016	https://tinyurl.com/yanrqpmz
-x	Randstad	  192+	  1927	2016	wikipedia amsterdam + rotterdam metros + randstadrail 3/4
-x	Lisboa		  187+	  1926	2017/15	wikipedia metro + tinyurl.com/y9fkrzzc fertagus
-x	San Francisco	  184	  1917	2017	wikipedia (BART+Muni Metro) + APTA (VTA)
-x	Kuala Lumpur	  182	  1996	2017	wikipedia list of metros
-x	Bucureşti	  179	  1979	2016	wikipedia list of metros
-x	Monterrey	  178	  1991	2017	wikipedia list of metros
-x	Hannover	  176	  1975	2016	de.wikipedia
-x	Philadelphia	  164	  1905	2018	APTA (heavy+light+regional+PATCO)
-x	Daegu		  163	  1997	2017	wikipedia list of metros
-x	Dalian		  157	  2003	2017	wikipedia list of metros
-x	Nürnberg	  155+	  1972	2015-17	de.wikipedia + tinyurl.com/y862s8v4 (exc weekend S-bahn)
-x	Qingdao		  153	  2015	2018	baidubaike
--	Hefei		  153	  2016	2018	wikipedia list of metros
-x	Bruxelles	  152+	  1952	2017	wikipedia list of metros (excluding RER + antwerpen)
-x	Vancouver	  151	  1912	2017	wikipedia list of metros
-x	Sendai		  141?	  1987	2016	wiki list of m+2x(ja.wiki stations to natori & tagajo)
-x	Hiroshima	  139	  1994	2013-16	wiki list of m+ja.wiki hiroden(miyajima)+2xfreq JR exc H
-x	Brisbane	  132	  1979	2011/16	wikipedia busways + citytrain
-x	Ankara		  131	  1996	2017	wikipedia list of metros
-x	Göteborg	  131	  1944	2018	se.wikipedia
-x	Kunming		  125	  2013	2018	wikipedia list of metros
-x	Karlsruhe	  120-	  1992	2015	http://tinyurl.com/y5zrbgx4
-x	Oslo		  118+	  1928	2017	wikipedia list of metros (excluding lokaltog)
-x	Tbilisi		  114+	  1966	2017	wikipedia list of metros (excludes cableways)
-x	Helsinki	  113+	  1975	2015-16	fi.wikipedia (excluding weekend commuter rail)
-x	Harbin		  113	  2013	2017	wikipedia list of metros
-x	Lille		  112	  1983	2016	fr.wikipedia (excludes trams)
-x	Ningbo		  112	  2014	2017	wikipedia list of metros
-x	Toulouse	  111	  1993	2016	wikipedia list of metros
-x	Nanchang	  110	  2015	2017	wikipedia list of metros
-x	Pyongyang	  110?	  1973	2007	wikipedia, citing "Inside North Korea" book
-x	Bengalaru	  109	  2011	2018	wikipedia list of metros
-x	Los Angeles	  108	  1907	2018	APTA (heavy+light)
-x	Recife		  106	  1985	2016	wikipedia list of metros
-x	Napoli		  105+	  1928	2013-16	tinyurl.com/ya2goqmj + it.wikipedia circumvesuvianna + L2
-x	Wuxi		  103	  2014	2018	wikipedia list of metros
-x	Quito		  103	  1996	2016	https://tinyurl.com/y9n6oyea
--	Nanning		  100*	  2016	2017	baidubaike
-x	Bilbao		  100	  1995	2017	eu.wikipedia (metro+cercanias)
-x	Guadalajara	   98.3	  1989	2017	wikipedia list of NA lightrail
-x	Bursa		   94.9	  2002	2016	http://tinyurl.com/yxfndbyz
-x	Mannheim	   94?	  1969	2017	tinyurl yxugrowg p5 (weight bus+tram total by vehicle-km)
-x	Calgary		   91.0	  1981	2018	APTA
-x	Sofiya		   89.7	  1998	2016	wikipedia list of metros
-x	Panamá		   81.5	  2014	2017	wikipedia list of metros
-x	Novosibirsk	   80.3	  1986	2017	wikipedia list of metros
--	Shijiazhuang	   81*	  2017	2017	baidubaike
-x	Changchun	   78.0	  2002	2017	baidubaike
-x	Santo Domingo	   76.5	  2009	2017	wikipedia list of metros
-x	Marseille	   75.9	  1977	2016	wikipedia list of metros
--	Hyderabad	   73*	  2017	2018	wikipedia
-x	Kaohsiung	   68.1	  2008	2018	wikipedia list of metros
-x	Atlanta		   67.4	  1979	2017	wikipedia list of metros
-x	Ottawa		   66.5?  1983	2016	tinyurl.com/y7dojeoz using overall weekday-year ratio
-x	Porto		   62.6	  2002	2018	pt.wikipedia
-x	Toshkent	   61.6	  1977	2017	wikipedia list of metros
--	Fuzhou		   60.9*  2016	2017	wikipedia list of metros
-x	Dublin		   60.8	  1984	2016/18	wikipedia (Luas) + https://tinyurl.com/ya6tdmhm
-x	Perth		   60.6	  1954	2017	wikipedia Transperth Trains
-x	Valencia ES	   60.1+  1988	2017	https://tinyurl.com/y9djyoq7
-x	Porto Alegre	   55.1	  1985	2017	wikipedia list of metros
-x	Manchester	   51.5?  1931	2017	wikipedia metrolink + oxford rd + salfords
-x	Yekaterinburg	   49.3	  1991	2017	wikipedia list of metros
-x	Mashhad		   47.5	  2011	2015	https://tinyurl.com/y8t9nfgj
-x	Lausanne	   47.3	  1877	2017	https://tinyurl.com/y5tnubzt p50
--	Dongguan	   46.1*  2016	2017	wikipedia list of metros
-x	Glasgow		   45+	  1893	2015	https://tinyurl.com/y7upsgxd p18,29 - wiki infreq stations
-x	La Paz		   44.2	  2014	2017	https://tinyurl.com/yb275ss6
-x	Torino		   42.5	  2006	2018	it.wikipedia
--	Guiyang		   42.1*  2017	2018	baidubaike
-x	Salvador	   42.0	  2014	2017	wikipedia list of metros
-x	Xiamen		   41.7*  2008	2018	baidubaike (excludes BRT)
-x	Addis Ababa	   41.4*  2015	2015	wikipedia
-x	Edmonton	   39.4	  1978	2018	APTA
-x	Daejeon		   39.0	  2006	2017	wikipedia list of metros
-x	Portland	   39.0	  1986	2018	APTA
-x	Birmingham	   39-	  1978	2015-17	wikipedia crosscity+sum moor st lines+midland metro
-x	Tel Aviv	   38-	  2004	2017	tinyurl.com/y455yw7r suburban lines (includes infreq)
-x	Liverpool	   37+	  1886	2015-17	wikipedia merseyrail + until Huyton
-x	San Diego	   37.1	  1981	2018	APTA
-x	Brasilia	   36.6	  2001	2017	wikipedia list of metros
-x	Newcastle	   36.4	  1904	2017	wikipedia
-x	Adelaide	   35.3	  1929	2017/15	tinyurl.com/yxs63dzd + wikipdia o-bahn
-x	Bielefeld	   34.7	  1991	2017	mobiel.de/unternehmen/zahlen-fakten/
-x	Rennes		   34.3	  2002	2016	wikipedia list of metros
-x	Denver		   33.3	  1994	2018	APTA
-x	Antalya		   32.8-  2009	2018	http://yolhaberi.com/ant-ray-gunde-60-bin-kisi-tasiyor/
-x	Alger		   30.0	  2011	2017	wikipedia list of metros
-x	Isfahan		   29	  2015	2019	https://tinyurl.com/y6avpz5z
-x	Dallas		   28.8	  1996	2018	APTA
-x	Miami		   28.1	  1984	2018	APTA
-x	Nizhny Novgorod	   27.6	  1985	2017	wikipedia list of metros
-x	Valencia VE	   27.4	  2006	2017	http://tinyurl.com/y6etgstn p6
-x	Kazan		   27.2	  2005	2017	wikipedia list of metros
-x	Auckland	   26.8	  2008	2018	https://tinyurl.com/yd5jd23w
-x	Seattle		   26.6	  1962	2018/14	tinyurl.com/y4jmuhqr + tinyurl.com/y2hhz8ro
-x	Bern		   26.3+  1974	2017	http://tinyurl.com/y6qrfw52
-x	Minneapolis	   25.0	  2004	2018	APTA
-x	Kryvyi Rih	   24?	  1986	2015	ru.wikipedia
-x	Krakow		   23-	  2008	2015	max capacity of trams using tunnel
-x	Leipzig		   22.1	  1992	2016	de.wikipedia S-Bahn
-x	Valparaíso	   19.5	  2005	2017	tinyurl.com/y432cvef
-x	Gwangju		   19.0	  2004	2017	wikipedia list of metros
--	Urumqi		   18.6*  2018	2018	baidubaike
-x	Baltimore	   18.2	  1895	2017	APTA
-x	Okinawa		   18.1	  2002	2017	https://tinyurl.com/yxp64nvo
-x	Brescia		   18.1	  2013	2018	wikipedia list of metros
-x	Salt Lake City	   17.9	  1999	2018	APTA
-x	Nottingham	   17.8	  1994	2017	wikipedia
--	Kochi		   16*	  2017	2017	wikipedia
-x	Tunis		   16+	  1979	2016	https://tinyurl.com/y9vhu5ut
-x	Sevilla		   16.9	  2009	2018	wikipedia
-x	Maracaibo	   16.4	  2006	2018	http://tinyurl.com/y67zzhtz
-x	Yerevan		   16.2	  1981	2017	wikipedia list of metros
-x	Saarbrucken	   15.7	  2001	2016	www.saarbahn.de/ihre_werbung/werben_in_der_saarbahn
-x	Pittsburgh	   15.7	  1904	2018	https://data.wprdc.org/dataset/port
-x	Genova		   15.2+  1990	2015	it.wikipedia
-x	Dresden		   15.0	  2001	2017	wikipedia S-Bahn
-x	Bergen		   14.9	  2010	2018	no.wikipedia
-x	Tenerife	   14.7	  2007	2018	https://tinyurl.com/y2vt3d2l
-x	Adana		   14.6   2009	2011	wikipedia list of metros
-x	Samara		   14.1	  1987	2017	wikipedia list of metros
-+	Wellington	   14-	  1902	2018	wikipedia PT in wellington
-x	Belfast		   14-	  2005	2017	tinyurl y2lj6ofq minus enterprise tinyurl y4xder7g
-	Lorrach		   14-	  1997	2018	sbb-deutschland.de/sbb-gmbh/facts-and-figures/
-x	Almaty		   13.8	  2011	2017	wikipedia list of metros
-x	Saint Louis	   13.2	  1993	2018	APTA
-x	Sheffield	   12.3	  1994	2017	wikipedia
-x	Constantine	   12+	  2008	2012	gondola project
-x	Shizuoka	   11.5	  1908?	2015	jp.wikipedia Shizuoka Shimizu Line
-x	Alicante	   11.1	  1999	2018	es.wikipedia
-x	Cardiff		   11?	  1983	2017	wikipedia sum freq stations exc central+queen st
-	Niigata		   11?	  1997?	2015	wikipedia 2x sum stations to niitsu
-x	Sacramento	   10.5	  1987	2018	APTA
-	Kagoshima	   10.4-  1912	2017	https://tinyurl.com/y4fvzszj p50
-	Granada		   10.2	  2017	2018	es.wikipedia
-	Volgograd	   10.0	  1984	2016	http://tinyurl.com/y6qw6vdv
--	Lucknow		    9*	  2017	2017	wikipedia
-	Shiraz		    8.0	  2014	2017	wikipedia
-u	Cleveland	    7.9   1918	2018	APTA
-	Toyohashi	    7.7	  1996?	2015	https://tinyurl.com/y4ewd9bz
-	Dnipro		    7.5	  1995	2017	wikipedia list of metros
-	Rostock		    7.5	  1974	2012	https://tinyurl.com/yakjaqq8
-u	Charlotte	    7.4	  2004	2018	APTA
-	Jaipur		    7.2*  2015	2017	wikipedia list of metros
-	Fortaleza	    6.5	  2012	2017	wikipedia
-k	Edinburgh	    6.6	  2014	2017	wikipedia
-	Malaga		    6.3	  2014	2018	es.wikipedia
-	Aarau		    6.3	  1967?	2017	http://tinyurl.com/yy8afmm3
-	Catania		    5.8	  1999	2018	wikipedia list of metros
-	Charleroi	    5.6	  1976	2017	fr.wikipedia
-	Kassel		    5.6	  2007	2017	https://tinyurl.com/y9fjpf3y
-	Luzern		    5.6	  2004	2016	https://tinyurl.com/y4dydt7e to Hergiswil & Emmenbrucke
-k	Portsmouth	    5.2	  2012	2017	tinyurl.com/y3oc7a2n + wikipedia fratton thru havant
-u	San Juan	    5.2	  2005	2018	APTA
-u	Las Vegas	    4.8	  1995	2017	lvmonorail.com/corporate/ridership-information/
-u	Buffalo		    4.5	  1985	2018	APTA
-	Neuchatel	    4?	  1981?	2011?	wikipedia trolleybuses, assume similar ridership/km
-	Bergamo		    3.4	  2009	2014	it.wikipedia
-	Tabriz		    3.3	  2015	2018	https://tinyurl.com/yy9cxahx
-u	Hartford	    3.3	  2015	2018	http://www.ct.gov/dot/cwp/view.asp?a=1386&Q=504888
-	Perugia		    2.8	  2008	2018	https://tinyurl.com/y3sz8qg2
-	Lugano		    2.7	  2007	2017	http://tinyurl.com/y3dmxb4s
-	Aarhus		    2.2*  2017	2018	https://tinyurl.com/y67mvnln
--	Palembang	    2.2*  2018	2018	https://tinyurl.com/y2m4m5kq
-u	Detroit		    1.9	  1987	2018	APTA
-u	Providence	    1.9	  1914	2008	http://bit.ly/2oTss9c p25
-u	Norfolk		    1.5	  2011	2018	APTA
-	Takaoka		    1.2	  1966?	2017	ja.wikipedia
-	Trondheim	    0.9	  1924	2016	https://tinyurl.com/y6behzmd p12
-u	Jacksonville	    0.8	  1989	2017	APTA
-	Palma		    0.8	  2007	2015	http://tinyurl.com/y6scw6o5
-	Haifa		    0.7	  1959	2012	wikipedia
-        Skikda		    ?	  2008	?
+x	Tokyo	       14990+	  1901	2017	http://www.train-media.net/report/1810/index.html
+x	Beijing		3778	  1972	2017	wikipedia list of metros
+x	Shanghai	3538	  1993	2017	wikipedia list of metros
+x	Hong Kong	3487	  1979	2017	tinyurl.com/y369lqnp + wikipedia shenzhen
+x	Seoul		3457	  1974	2017	wikipedia list of metros (subway+korail+sbundang+incheon)
+x	Paris		3110	  1875	2010-15	fr.wikipedia (M ABT2)+ tinyurl.com/y7ftkj7m (BCDEHJLNUT4)
+x	Osaka		3037+	  1905	2007	wikipedia transport in keihanshin
+x	Mumbai		2908	  1925	2017	wikipedia (suburban+metro+monorail)
+x	Guangzhou	2800	  1999	2017	wikipedia list of metros
+x	Moskva		2442	  1935	2017	wikipedia list of metros
+x	São Paulo	2146	  1974	2017/18	wikipedia list of metros + CPTM + tinyurl.com/y9yu8cgb
+x	New York	1844	  1875	2017	wikipedia list of metros (subway+PATH) + APTA (HBLR+NCS)
+x	London		1719+	  1838	2017	wikipedia underground+overground+DLR+tramlink
+x	México		1634	  1969	2016	wikipedia list of metros + wikipedia list of NA ligthrail
+x	Qahirah		1314	  1910	2015	wikipedia list of metros
+x	Singapore	1205	  1987	2017/16	wikipedia list of metros + LRT
+x	Nagoya		1065	  1913	2016-18	tinyurl.com/y36lxkr4 + ja.wiki subway lines+linimo
+x	İstanbul	1015	  1989	2018	tinyurl yyg3mw7x + tinyurl y4755wyr + tinyurl y6cwgtvj
+x	Berlin		 989	  1882	2017	wikipedia U-Bahn + tinyurl.com/y36tmzkf
+x	Nanjing		 977	  2005	2017	wikipedia list of metros
+x	Wuhan		 927	  2004	2017	wikipedia list of metros
+x	Delhi		 926	  2002	2018	wikipedia list of metros
+x	Madrid		 858	  1919	2017/16	wikipedia metro + https://tinyurl.com/ydhpsdsr cercanias
+x	Taipei		 789	  1996	2018	wikipedia list of metros (taipei+taoyuan)
+x	Chengdu		 782	  2010	2017	wikipedia list of metros
+x	Chongqing	 743	  2005	2017	wikipedia list of metros
+x	Sankt-Peterburg	 727	  1955	2017	wikipedia list of metros
+x	Tehran		 717	  2000	2015	wikipedia list of metros
+x	Bogotá		 702	  2000	2016	tinyurl.com/yxhbx399
+x	Buenos Aires	 692	  1913	2017	https://tinyurl.com/y2d6hh5l
+x	Santiago	 685	  1975	2017	wikipedia list of metros
+x	Milano		 653	  1964	2017	wikipedia list of metros + wikipedia Suburban Railway
+x	München		 628+	  1968	2017	de.wikipedia (U-Bahn+S-Bahn, excluding weekend S-bahn)
+x	Barcelona	 598	  1924	2017	tinyurl.com/yxdg4v4d
+x	Wien		 555+	  1898	2017-18	tinyurl y4sxqeav + tinyurl yytu9ezc + tinyurl yytarh6n
+x	Hamburg		 534	  1907	2017/15	de.wikipedia (U-Bahn+AKN) + tinyurl.com/y24rqqaz
+x	Rhein-Ruhr	 500+	  1901	2010-16	wikipedia S-bahn+stadtbahn köln+dortmund+wupper
+x	Kyiv		 496+	  1960	2018	wikipedia list of metros (excludes express trams)
+x	Jakarta		 480-	  2004	2017	wikipedia (KRL+transjakarta, includes infreq/nongradesep)
+x	Stockholm	 448	  1925	2013	wikipedia metro + tinyurl.com/yddysqt9 p19
+x	Praha		 436	  1974	2017	wikipedia list of metros
+x	Rio de Janeiro	 426	  1937	2017/16	wikipedia metro + supervia.com.br/pt-br/quem-somos
+x	Manila		 417	  1984	2017-18	tinyurl.com/yxpsuhev + wikipedia LRT-1 + LRT-2
+x	Budapest	 411+	  1896	2017	wikipedia list of metros (excludes HEV+rack railway)
+x	Xi'an		 408	  2011	2016	wikipedia list of metros
+x	Bangkok		 389+	  1990	2014-17	wikipedia list of metros BTS, articles airport rail + MRT
+x	Montréal	 368	  1966	2017	wikipedia list of metros
+x	Busan		 358	  1985	2017	wikipedia list of metros
+x	Caracas		 358	  1983	2017	wikipedia list of metros
+x	Tianjin		 352	  1984	2017	wikipedia list of metros
+x	Sydney		 351	  1892	2017	wikipedia (sydney trains+light rail)
+x	Roma		 345+	  1955	2012-17	it.wikipedia metro+lido + wikipedia FL1+FL3
+x	Hangzhou	 340	  2012	2017	wikipedia list of metros
+x	Frankfurt	 317	  1968	2017	de.wikipedia (U-Bahn+S-Bahn)
+x	Toronto		 304+	  1954	2017	wikipedia list of metros (excludes tunnel trams)
+x	Shenyang	 319	  2010	2017	wikipedia list of metros
+x	Sapporo		 290?	  1971	2015-16	wikipedia list of metros+ja.wiki 2x freq stations exc Sap
+x	Minsk		 284	  1984	2017	wikipedia list of metros
+x	Athína		 288	  1930	2015	wikipedia list of metros + wikipedia Athens Tram
+x	Fukuoka		 274+	  1914	2017	tinyurl ybd6hfdc + wikipedia m list, excludes JR+monorail
+x	Stuttgart	 268?	  1966	2016	tinyurl.com/y2pbetr5 using overall weekday-year ratio
+x	Lima		 263	  2003	2016/14	wikipedia (metro + el metropolitano)
+x	Zhengzhou	 252	  2013	2017	wikipedia list of metros
+x	Suzhou		 248	  2012	2017	wikipedia list of metros
+x	Boston		 244	  1897	2017	wikipedia lists + betterbus.mbta.com silver
+x	Belo Horizonte	 244	  1986	2015/16	wikipedia list of m + tinyurl.com/ya55swrc MOVE corridors
+x	Melbourne	 241+	  1879	2017	wikipedia rail in melbourne (excludes rapid trams 96+109)
+x	Chicago		 238	  1892	2017	wikipedia list of metros + tinyurl.com/y6697zgj
+x	Changsha	 233	  2014	2017	wikipedia list of metros
+x	Washington	 230	  1976	2017	wikipedia list of metros
+x	Bakı		 229	  1967	2017	wikipedia list of metros
+x	Chennai		 228	  1967	2016	wikipedia (suburan south + MRTS + metro)
+x	Medellín	 220	  1995	2016	https://tinyurl.com/ybjp4wws p18
+x	Kharkiv		 213	  1975	2017	wikipedia list of metros
+x	Warszawa	 211	  1995	2016	wikipedia list of metros + pl.wikipedia SKM
+x	Kolkata		 206	  1984	2018	wikipedia list of metros
+x	İzmir		 203	  2000	2016/17	wikipedia list of metros + tr.wikipedia IZBAN
+x	Dubai		 200	  2009	2017	wikipedia list of metros
+x	Lyon		 198+	  1978	2017	wikipedia list of metros (excluding trams)
+x	København	 196	  1934	2013/16	tinyurl.com/y7bbh2lz (s-tog + oresund) + wikipedia metro
+x	Zürich		 193	  1976	2016	https://tinyurl.com/yanrqpmz
+x	Randstad	 192+	  1927	2016	wikipedia amsterdam + rotterdam metros + randstadrail 3/4
+x	Lisboa		 187+	  1926	2017/15	wikipedia metro + tinyurl.com/y9fkrzzc fertagus
+x	San Francisco	 184	  1918	2017	wikipedia (BART+Muni Metro) + APTA (VTA)
+x	Kuala Lumpur	 182	  1995	2017	wikipedia list of metros
+x	Bucureşti	 179	  1979	2016	wikipedia list of metros
+x	Monterrey	 178	  1991	2017	wikipedia list of metros
+x	Hannover	 176	  1975	2016	de.wikipedia
+x	Philadelphia	 164	  1905	2018	APTA (heavy+light+regional+PATCO)
+x	Daegu		 163	  1997	2017	wikipedia list of metros
+x	Dalian		 157	  2002	2017	wikipedia list of metros
+x	Nürnberg	 155+	  1972	2015-17	de.wikipedia + tinyurl.com/y862s8v4 (exc weekend S-bahn)
+-	Hefei		 153	  2016	2018	wikipedia list of metros
+x	Qingdao		 153	  2015	2018	baidubaike
+x	Bruxelles	 152+	  1952	2017	wikipedia list of metros (excluding RER + antwerpen)
+x	Vancouver	 151	  1912	2017	wikipedia list of metros
+x	Sendai		 141?	  1968	2016	wiki list of m+2x(ja.wiki stations to natori & tagajo)
+x	Hiroshima	 139	  1922	2013-16	wiki list of m+ja.wiki hiroden(miyajima)+2xfreq JR exc H
+x	Brisbane	 132	  1979	2011/16	wikipedia busways + citytrain
+x	Ankara		 131	  1996	2017	wikipedia list of metros
+x	Göteborg	 131	  1944	2018	se.wikipedia
+x	Kunming		 125	  2013	2018	wikipedia list of metros
+x	Karlsruhe	 120-	  1958	2015	http://tinyurl.com/y5zrbgx4
+x	Oslo		 118+	  1898	2017	wikipedia list of metros (excluding lokaltog)
+x	Tbilisi		 114+	  1966	2017	wikipedia list of metros (excludes cableways)
+x	Helsinki	 113+	  1972	2015-16	fi.wikipedia (excluding weekend commuter rail)
+x	Harbin		 113	  2013	2017	wikipedia list of metros
+x	Lille		 112	  1983	2016	fr.wikipedia (excludes trams)
+x	Ningbo		 112	  2014	2017	wikipedia list of metros
+x	Toulouse	 111	  1993	2016	wikipedia list of metros
+x	Nanchang	 110	  2015	2017	wikipedia list of metros
+x	Pyongyang	 110?	  1973	2007	wikipedia, citing "Inside North Korea" book
+x	Bengaluru	 109	  2011	2018	wikipedia list of metros
+x	Los Angeles	 108	  1906	2018	APTA (heavy+light)
+x	Recife		 106	  1985	2016	wikipedia list of metros
+x	Napoli		 105+	  1928	2013-16	tinyurl.com/ya2goqmj + it.wikipedia circumvesuvianna + L2
+x	Wuxi		 103	  2014	2018	wikipedia list of metros
+x	Quito		 103	  1996	2016	https://tinyurl.com/y9n6oyea
+-	Nanning		 100*	  2016	2017	baidubaike
+x	Bilbao		 100	  1995	2017	eu.wikipedia (metro+cercanias)
+x	Guadalajara	  98.3	  1976	2017	wikipedia list of NA lightrail
+x	Bursa		  94.9	  2002	2016	http://tinyurl.com/yxfndbyz
+x	Mannheim	  94?	  1969	2017	tinyurl yxugrowg p5 (weight bus+tram total by vehicle-km)
+x	Calgary		  91.0	  1981	2018	APTA
+x	Sofiya		  89.7+	  1964	2016	wikipedia list of metros
+x	Panamá		  81.5	  2014	2017	wikipedia list of metros
+-	Shijiazhuang	  81*	  2017	2017	baidubaike
+x	Novosibirsk	  80.3	  1986	2017	wikipedia list of metros
+x	Changchun	  78.0	  2002	2017	baidubaike
+x	Santo Domingo	  76.5	  2008	2017	wikipedia list of metros
+x	Marseille	  75.9	  1977	2016	wikipedia list of metros
+-	Hyderabad	  73*	  2017	2018	wikipedia
+x	Kaohsiung	  68.1	  2008	2018	wikipedia list of metros
+x	Atlanta		  67.4	  1979	2017	wikipedia list of metros
+x	Ottawa		  66.5?	  1983	2016	tinyurl.com/y7dojeoz using overall weekday-year ratio
+x	Porto		  62.6	  2002	2018	pt.wikipedia
+x	Toshkent	  61.6	  1977	2017	wikipedia list of metros
+-	Fuzhou		  60.9*	  2016	2017	wikipedia list of metros
+x	Dublin		  60.8	  1984	2016/18	wikipedia (Luas) + https://tinyurl.com/ya6tdmhm
+x	Perth		  60.6	  1954	2017	wikipedia Transperth Trains
+x	València ES	  60.1+	  1988	2017	https://tinyurl.com/y9djyoq7
+x	Porto Alegre	  55.1	  1985	2017	wikipedia list of metros
+x	Manchester	  51.5?	  1931	2017	wikipedia metrolink + oxford rd + salfords
+x	Yekaterinburg	  49.3	  1991	2017	wikipedia list of metros
+x	Mashhad		  47.5	  2011	2015	https://tinyurl.com/y8t9nfgj
+x	Lausanne	  47.3	  1877	2017	https://tinyurl.com/y5tnubzt p50
+-	Dongguan	  46.1*	  2016	2017	wikipedia list of metros
+x	Glasgow		  45+	  1892	2015	https://tinyurl.com/y7upsgxd p18,29 - wiki infreq stations
+x	La Paz		  44.2	  2014	2017	https://tinyurl.com/yb275ss6
+x	Torino		  42.5	  2006	2018	it.wikipedia
+-	Guiyang		  42.1*	  2017	2018	baidubaike
+x	Salvador	  42.0	  2014	2017	wikipedia list of metros
+x	Xiamen		  41.7*	  2008	2018	baidubaike (excludes BRT)
+x	Addis Ababa	  41.4*	  2015	2015	wikipedia
+x	Edmonton	  39.4	  1978	2018	APTA
+x	Daejeon		  39.0	  2006	2017	wikipedia list of metros
+x	Portland	  39.0	  1986	2018	APTA
+x	Birmingham	  39-	  1978	2015-17	wikipedia crosscity+sum moor st lines+midland metro
+x	Tel Aviv	  38-	  2004	2017	tinyurl.com/y455yw7r suburban lines (includes infreq)
+x	Liverpool	  37+	  1886	2015-17	wikipedia merseyrail + until Huyton
+x	San Diego	  37.1	  1981	2018	APTA
+x	Brasília	  36.6	  2001	2017	wikipedia list of metros
+x	Newcastle	  36.4	  1904	2017	wikipedia
+x	Adelaide	  35.3	  1929	2017/15	tinyurl.com/yxs63dzd + wikipdia o-bahn
+x	Bielefeld	  34.7	  1969	2017	mobiel.de/unternehmen/zahlen-fakten/
+x	Rennes		  34.3	  2002	2016	wikipedia list of metros
+x	Denver		  33.3	  1994	2018	APTA
+x	Antalya		  32.8-	  2009	2018	http://yolhaberi.com/ant-ray-gunde-60-bin-kisi-tasiyor/
+x	Alger		  30.0	  2011	2017	wikipedia list of metros
+x	Esfahan		  29	  2015	2019	https://tinyurl.com/y6avpz5z
+x	Dallas		  28.8	  1989	2018	APTA
+x	Miami		  28.1	  1984	2018	APTA
+x	Nizhny Novgorod	  27.6	  1985	2017	wikipedia list of metros
+x	Valencia VE	  27.4	  2006	2017	http://tinyurl.com/y6etgstn p6
+x	Kazan		  27.2	  2005	2017	wikipedia list of metros
+x	Auckland	  26.8	  2008	2018	https://tinyurl.com/yd5jd23w
+x	Seattle		  26.6	  1962	2018/14	tinyurl.com/y4jmuhqr + tinyurl.com/y2hhz8ro
+x	Bern		  26.3+	  1974	2017	http://tinyurl.com/y6qrfw52
+x	Minneapolis	  25.0	  2004	2018	APTA
+x	Kryvyi Rih	  24?	  1986	2015	ru.wikipedia
+x	Kraków		  23-	  2008	2015	max capacity of trams using tunnel
+x	Leipzig		  22.1	  1992	2016	de.wikipedia S-Bahn
+x	Valparaíso	  19.5	  2005	2017	tinyurl.com/y432cvef
+x	Gwangju		  19.0	  2004	2017	wikipedia list of metros
+-	Urumqi		  18.6*	  2018	2018	baidubaike
+x	Baltimore	  18.2	  1893	2017	APTA
+x	Naha		  18.1	  2003	2017	https://tinyurl.com/yxp64nvo
+x	Brescia		  18.1	  2013	2018	wikipedia list of metros
+x	Salt Lake City	  17.9	  1999	2018	APTA
+x	Nottingham	  17.8	  2004	2017	wikipedia
+x	Tunis		  16+	  1979	2016	https://tinyurl.com/y9vhu5ut
+x	Sevilla		  16.9	  2009	2018	wikipedia
+x	Maracaibo	  16.4	  2006	2018	http://tinyurl.com/y67zzhtz
+x	Yerevan		  16.2	  1981	2017	wikipedia list of metros
+-	Kochi		  16*	  2017	2017	wikipedia
+x	Saarbrücken	  15.7	  2001	2016	www.saarbahn.de/ihre_werbung/werben_in_der_saarbahn
+x	Pittsburgh	  15.7	  1904	2018	https://data.wprdc.org/dataset/port
+x	Genova		  15.2+	  1990	2015	it.wikipedia
+x	Dresden		  15.0	  2004	2017	wikipedia S-Bahn
+x	Bergen		  14.9	  2010	2018	no.wikipedia
+x	Tenerife	  14.7	  2007	2018	https://tinyurl.com/y2vt3d2l
+x	Adana		  14.6	  2009	2011	wikipedia list of metros
+x	Samara		  14.1	  1987	2017	wikipedia list of metros
+x	Belfast		  14-	  2005	2017	tinyurl y2lj6ofq minus enterprise tinyurl y4xder7g
+	Lorrach		  14-	  1997	2018	sbb-deutschland.de/sbb-gmbh/facts-and-figures/
++	Wellington	  14-	  2018	2018	wikipedia PT in wellington
+x	Almaty		  13.8	  2011	2017	wikipedia list of metros
+x	Saint Louis	  13.2	  1993	2018	APTA
+x	Sheffield	  12.3	  1994	2017	wikipedia
+x	Constantine	  12+	  2008	2012	gondola project
+x	Shizuoka	  11.5	  1925	2015	jp.wikipedia Shizuoka Shimizu Line
+x	Alicante	  11.1	  2007	2018	es.wikipedia
+x	Cardiff		  11?	  1986	2017	wikipedia sum freq stations exc central+queen st
+	Niigata		  11?	  1997?	2015	wikipedia 2x sum stations to niitsu
+x	Sacramento	  10.5	  1987	2018	APTA
+	Kagoshima	  10.4-	  1912	2017	https://tinyurl.com/y4fvzszj p50
+	Granada		  10.2	  2017	2018	es.wikipedia
+	Volgograd	  10.0	  1984	2016	http://tinyurl.com/y6qw6vdv
+-	Lucknow		   9*	  2017	2017	wikipedia
+	Shiraz		   8.0	  2014	2017	wikipedia
+u	Cleveland	   7.9	  1920	2018	APTA
+	Toyohashi	   7.7	  1996?	2015	https://tinyurl.com/y4ewd9bz
+	Dnipro		   7.5	  1995	2017	wikipedia list of metros
+	Rostock		   7.5	  1974	2012	https://tinyurl.com/yakjaqq8
+u	Charlotte	   7.4	  2004	2018	APTA
+	Fortaleza	   6.5	  2012	2017	wikipedia
+k	Edinburgh	   6.6	  2004	2017	wikipedia
+	Malaga		   6.3	  2014	2018	es.wikipedia
+	Aarau		   6.3	  1967?	2017	http://tinyurl.com/yy8afmm3
+	Jaipur		   6.2	  2015	2018	wikipedia list of metros
+	Catania		   5.8	  1999	2018	wikipedia list of metros
+	Charleroi	   5.6	  1976	2017	fr.wikipedia
+	Kassel		   5.6	  2007	2017	https://tinyurl.com/y9fjpf3y
+	Luzern		   5.6	  2004	2016	https://tinyurl.com/y4dydt7e to Hergiswil & Emmenbrucke
+k	Portsmouth	   5.2	  1938	2017	tinyurl.com/y3oc7a2n + wikipedia fratton thru havant
+u	San Juan	   5.2	  2005	2018	APTA
+u	Las Vegas	   4.8	  2004	2017	lvmonorail.com/corporate/ridership-information/
+u	Buffalo		   4.5	  1985	2018	APTA
+	Neuchatel	   4?	  1981?	2011?	wikipedia trolleybuses, assume similar ridership/km
+	Bergamo		   3.4	  2009	2014	it.wikipedia
+	Tabriz		   3.3	  2015	2018	https://tinyurl.com/yy9cxahx
+u	Hartford	   3.3	  2015	2018	http://www.ct.gov/dot/cwp/view.asp?a=1386&Q=504888
+	Perugia		   2.8	  2008	2018	https://tinyurl.com/y3sz8qg2
+	Lugano		   2.7	  2007	2017	http://tinyurl.com/y3dmxb4s
+-	Aarhus		   2.2*	  2017	2018	https://tinyurl.com/y67mvnln
+-	Palembang	   2.2*	  2018	2018	https://tinyurl.com/y2m4m5kq
+u	Detroit		   1.9	  1987	2018	APTA
+u	Providence	   1.9	  1914	2008	http://bit.ly/2oTss9c p25
+u	Norfolk		   1.5	  2011	2018	APTA
+	Takaoka		   1.2	  1966?	2017	ja.wikipedia
+	Trondheim	   0.9	  1924	2016	https://tinyurl.com/y6behzmd p12
+u	Jacksonville	   0.8	  1989	2017	APTA
+	Palma		   0.8	  2007	2015	http://tinyurl.com/y6scw6o5
+	Haifa		   0.7	  1959	2012	wikipedia
+	Skikda		    ?	  2008	?
 -	Abuja		    ?	  2018	?
 -	Geneve		    ?	  2018	?
 -	Bristol		    ?	  2018	?
--	Nice		    ?	  2019	?
 +	Waterloo CA	    ?	  2019	?
+-	Nice		    ?	  2019	?
 -	Wenzhou		    ?	  2019	?
 -	Lanzhou		    ?	  2019	?
 -	Doha		    ?	  2019	?
