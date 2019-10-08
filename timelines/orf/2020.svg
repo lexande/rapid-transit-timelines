@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="1619"
-   height="600"
-   viewBox="0, 0, 1619, 600"
-   id="svg2">
+   id="svg2"
+   viewBox="0 0 1650 650"
+   height="650"
+   width="1650"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -28,28 +26,28 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="file:///home/alexander/timelines/timelines/orf/../streetmap/orfosm.png"
-     x="0"
+     xlink:href="../streetmap/orfosm.png"
+     x="50"
      y="210.33331"
      width="1619"
      height="539.66669"
      id="image10"
      style="display:none" />
   <path
-     d="m 368.84211,512.02105 13.6421,-18.18947 25.76842,-7.07369 4.54737,-4.0421 3.53684,-2.02106 1.51579,-12.12631 5.05263,-6.06316 5.5579,-0.50526 10.10526,9.6 9.6,2.02105 20.71579,2.02105 17.68421,-10.61052 12.63158,-6.06316 47.49474,-2.02106 212.21052,-4.0421 23.24211,5.05263 154.61053,49.01053 42.4421,12.12631 24.7579,2.02106 123.2842,4.0421 L 1488,533.2421"
+     style="fill:none;stroke:#00559e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3006"
-     style="fill:none;stroke:#00559e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 418.84211,512.02105 13.6421,-18.18947 25.76842,-7.07369 4.54737,-4.0421 3.53684,-2.02106 1.51579,-12.12631 5.05263,-6.06316 5.5579,-0.50526 10.10526,9.6 9.6,2.02105 20.71579,2.02105 17.68421,-10.61052 12.63158,-6.06316 47.49474,-2.02106 212.21052,-4.0421 23.24211,5.05263 154.61053,49.01053 42.4421,12.12631 24.7579,2.02106 123.2842,4.0421 L 1538,533.2421" />
   <path
-     d="m 370.3579,510.50526 -7.07369,0.50526 -44.96842,-38.4 -10.61053,-19.2 -11.62105,-6.06316 -29.81053,-2.02105 -4.0421,-4.54737 -7.57895,-12.63158 -0.50526,-5.05263 24.25263,-59.11579 -1.01053,-4.54736 -23.2421,-11.62106 -17.17895,2.52632 -4.0421,-2.52632 -0.50527,-7.07368 -4.54737,-1.01053 -57.6,3.03158 -8.08421,-3.53684 -29.81052,-20.21053 -31.83158,-50.52631 -16.673686,-12.63158"
+     style="fill:none;stroke:#00559e;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
      id="path3776"
-     style="fill:none;stroke:#00559e;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
+     d="m 420.3579,510.50526 -7.07369,0.50526 -44.96842,-38.4 -10.61053,-19.2 -11.62105,-6.06316 -29.81053,-2.02105 -4.0421,-4.54737 -7.57895,-12.63158 -0.50526,-5.05263 24.25263,-59.11579 -1.01053,-4.54736 -23.2421,-11.62106 -17.17895,2.52632 -4.0421,-2.52632 -0.50527,-7.07368 -4.54737,-1.01053 -57.6,3.03158 -8.08421,-3.53684 -29.81052,-20.21053 -31.83158,-50.52631 -16.67369,-12.63158" />
   <text
-     x="89.453125"
-     y="206.96094"
-     id="text3778"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
+     id="text3778"
+     y="206.96094"
+     x="89.453125"><tspan
+       id="tspan1"
        y="206.96094"
-       id="tspan1">2020</tspan></text>
+       x="89.453125">2020</tspan></text>
 </svg>
