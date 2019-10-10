@@ -33,7 +33,7 @@ x 1918-02-03 San Francisco
 x 1919-10-17 Madrid
 x 1920-04-11 Cleveland
 x 1922-08-22 Hiroshima
-_ 1924-10-12 Toyama
+x 1924-10-12 Toyama
 x 1924-12-30 Barcelona
 x 1925-02-03 Mumbai
 x 1925-04-01 Shizuoka
@@ -47,7 +47,7 @@ x 1931-05-11 Manchester
 x 1934-04-03 København
 x 1935-05-15 Moskva
 x 1937-07-10 Rio de Janeiro
-k 1938-07-03 Portsmouth
+x 1938-07-03 Portsmouth
 x 1940-05-09 Napoli
 x 1944-06-26 Göteborg
 x 1952-10-05 Bruxelles
@@ -96,6 +96,7 @@ x 1977-11-22 Marseille
 x 1978-04-22 Edmonton
 x 1978-05-02 Lyon
 x 1978-05-08 Birmingham
+x 1978-__-__ Lugano
 x 1979-06-30 Atlanta
 x 1979-10-01 Hong Kong / Shenzhen
 x 1979-11-16 Bucureşti
@@ -118,7 +119,7 @@ x 1984-12-01 Manila
 x 1984-12-28 Tianjin
 x 1985-03-02 Porto Alegre
 x 1985-03-11 Recife
-u 1985-05-10 Buffalo
+x 1985-05-10 Buffalo
 x 1985-07-19 Busan
 x 1985-11-20 Nizhny Novgorod
 x 1986-01-07 Novosibirsk
@@ -127,7 +128,7 @@ x 1986-09-08 Portland
 x 1986-09-29 Cardiff
 x 1986-12-26 Kryvyi Rih
 x 1987-03-21 Sacramento
-u 1987-07-31 Detroit
+x 1987-07-31 Detroit
 x 1987-11-07 Singapore
 x 1987-12-26 Samara
 x 1988-10-08 València ES
@@ -146,6 +147,7 @@ x 1993-07-31 Saint Louis
 x 1994-03-21 Sheffield
 x 1994-10-07 Denver
 x 1995-04-07 Warszawa
+x 1995-05-27 Kassel
 x 1995-08-28 Kuala Lumpur
 x 1995-11-11 Bilbao
 x 1995-11-30 Medellín
@@ -176,12 +178,12 @@ x 2004-03-09 Nottingham
 x 2004-04-28 Gwangju
 x 2004-06-26 Minneapolis
 x 2004-06-28 Charlotte
-u 2004-07-15 Las Vegas
+x 2004-07-15 Las Vegas
 x 2004-07-28 Wuhan
 x 2004-10-10 Tel Aviv
 x 2004-12-12 Dresden
 x 2004-12-__ Edinburgh
-u 2005-04-19 San Juan
+x 2005-04-19 San Juan
 x 2005-06-18 Chongqing
 x 2005-08-01 Belfast
 x 2005-08-27 Nanjing
@@ -191,8 +193,10 @@ x 2006-02-04 Torino
 x 2006-03-16 Daejeon
 x 2006-11-18 Valencia VE
 x 2006-11-25 Maracaibo
+x 2006-12-20 Luzern
 x 2007-06-02 Tenerife
 x 2007-06-15 Alicante
+x 2008-01-28 Perugia
 x 2008-02-02 Auckland
 x 2008-03-09 Kaohsiung
 x 2008-06-__ Constantine
@@ -207,7 +211,7 @@ x 2009-12-25 Antalya
 x 2010-06-22 Bergen
 x 2010-09-10 Chengdu
 x 2010-09-27 Shenyang
-u 2011-02-02 Norfolk
+x 2011-02-02 Norfolk
 x 2011-04-24 Mashhad
 x 2011-09-16 Xi'an
 x 2011-09-22 Málaga
@@ -228,8 +232,9 @@ x 2014-06-11 Salvador
 x 2014-07-01 Wuxi
 x 2014-10-01 Fortaleza
 x 2014-10-11 Shiraz
-u 2015-03-28 Hartford
+x 2015-03-28 Hartford
 x 2015-06-03 Jaipur
+x 2015-08-28 Tabriz
 x 2015-09-20 Addis Ababa
 x 2015-10-15 Esfahan
 x 2015-12-16 Qingdao
