@@ -1,4 +1,4 @@
-all: $(wildcard ???) index.html us.html uk.html
+all: $(wildcard ???) index.html
 
 define WriteRules
 ifeq ($(wildcard $(1)/cropscript.pl),$(1)/cropscript.pl)
@@ -25,14 +25,6 @@ $(1): $(1)/index.html $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) $(subst 
 endif
 endef
 
-define WriteOverview
-$(1): $(patsubst %,%/small/2015.svg,$(2)) ~/timelines/scripts/makeoverview.sh ~/timelines/scripts/boilerplate/part4; ~/timelines/scripts/makeoverview.sh $(2) | sed -e"s!UNTITLED!$(3)!; s!<a href=.$(1).>\(.*\)<.a>!\1!" > $(1)
-endef
-
-define WriteMainIndex
-$(1): $(patsubst %,%/small/2015.svg,$(2)) $(wildcard ???/s) $(wildcard ???/name) ~/timelines/scripts/makemainindex.sh ~/timelines/scripts/boilerplate/part4; ~/timelines/scripts/makemainindex.sh $(2) > $(1)
-endef
-
 %.svg.gz : %.svg
 	gzip -f --keep $<
 
@@ -43,6 +35,5 @@ $(foreach dir, $(wildcard ??? ???/uncropped), $(eval $(call WriteRules, $(dir)))
 rsync: all
 	rsync -4Pav ~/timelines/timelines ~/timelines/experiments --exclude '*streetmap*' --exclude '*osm*.png' --exclude '*azimuth*' arapp_arapp@ssh.phx.nearlyfreespeech.net:.	
 
-$(call WriteOverview,us.html,nyc chi bos pit phl lax sfo cle sea was atl san bwi mia buf pdx sac dtt jax dal stl den slc msp clt las sju orf hfd,United States)
-$(call WriteOverview,uk.html,lon lpl gla ncl man pme bhx cwl szd nqt edi bfs,United Kingdom)
-$(call WriteMainIndex,index.html,lon nyc par mel ber lpl syd chi gla bud bos vie osl tyo dus ncl pit osa phl lax ham cai tak koj yvr ngo bue fuk sfo mad cle hij toy bcn bom fsz sto lis myj adl ath man cph mow rio pme nap got bru yto per rom led fkb kbp sea ams mil sof tbs str ymq maa bak sdj muc fra bfe mhg mex spk nue hel bjs fnj prg brn sel sao rlg hrk scl haj was crl zrh gdl tas mrs yeg lyn bhx lug atl hkg buh bne tun evn yyc san ccs lil bwi yow mia msq dub ccu bsl vog mnl tsn poa rec buf pus goj ovb bhz pdx cwl kwg sac dtt sin kuf vlc ist dal goa bkk mty svx qls lej sha tls stl szd den waw ksf kul bio mde dnk tpe ank uio tae cta can slc thr izm bog bsb scn rns btz opo cgq dlc del lim oka jkt nqt kwj msp clt las wuh tlv drs edi sju ckg bfs nkg kzn vap trn cjj vln mar eml tci alc peg akl khh czl xmn krk zda sdq ada svq dxb ayt bgo ctu she orf mhd xiy agp blr alg ala szv hgh vbs kmg hrb cgo pac csx ngb lpb ssa wux for syz hfd jai tbz add ifn tao khn)
+index.html: $(wildcard ???/small/2015.svg) $(wildcard ???/s) $(wildcard ???/name) ../scripts/makemainindex.sh ../scripts/boilerplate/part4 Makefile
+	~/timelines/scripts/makemainindex.sh lon nyc par mel ber lpl syd chi gla bud bos vie osl tyo dus ncl pit osa phl lax ham cai tak koj yvr ngo bue fuk sfo mad cle hij toy bcn bom fsz sto lis myj adl ath man cph mow rio pme nap got bru yto per rom led fkb kbp sea ams mil sof tbs str ymq maa bak sdj muc fra bfe mhg mex spk nue hel bjs fnj prg brn sel sao rlg hrk scl haj was crl zrh gdl tas mrs yeg lyn bhx lug atl hkg buh bne tun evn yyc san ccs lil bwi yow mia msq dub ccu bsl vog mnl tsn poa rec buf pus goj ovb bhz pdx cwl kwg sac dtt sin kuf vlc ist jax dal goa bkk mty svx qls lej sha tls stl szd den waw ksf kul bio mde dnk tpe ank uio tae cta can slc thr izm bog bsb scn rns btz opo cgq dlc del lim oka jkt nqt kwj msp clt las wuh tlv drs edi sju ckg bfs nkg kzn vap trn cjj vln mar eml tci alc peg akl khh czl xmn krk zda sdq ada svq dxb ayt bgo ctu she orf mhd xiy agp blr alg ala szv hgh vbs kmg hrb cgo pac csx ngb lpb ssa wux for syz hfd jai tbz add ifn tao khn > $@

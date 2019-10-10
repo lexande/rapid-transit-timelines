@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   width="550"
-   height="550"
-   viewBox="0, 0, 550, 550"
+   width="1200"
+   height="700"
+   viewBox="0 0 1200 700"
    id="svg2">
   <metadata
      id="metadata8">
@@ -29,23 +27,23 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/jaxosm.png"
-     style="display:none"
      id="image10"
      height="583"
      width="583"
-     y="217"
-     x="-150" />
+     y="267"
+     x="200"
+     style="display:none" />
   <path
-     d="m 281.53907,337.33212 -14.95511,-3.48045 -43.50747,-0.46921 -58.73507,-14.13992 -15.22761,-10.33303 -12.5084,-3.26306"
+     d="m 630.90124,387.18368 -14.31728,-3.33201 -43.50747,-0.46921 -58.73507,-14.13992 -15.22761,-10.33303 -12.5084,-3.26306"
      id="path2987"
-     style="fill:none;stroke:#1d5391;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#1d5391;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
-     x="89.453148"
-     y="206.96094"
+     x="89.45314"
+     y="206.96092"
      id="text2985"
      xml:space="preserve"
-     style="font-size:143.99989319px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453148"
-       y="206.96094"
+     style="font-style:normal;font-weight:normal;font-size:143.99989319px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.45314"
+       y="206.96092"
        id="tspan1">1990</tspan></text>
 </svg>

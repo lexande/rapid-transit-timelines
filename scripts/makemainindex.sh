@@ -354,10 +354,6 @@ Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-wid
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
-More comprehensive lists (including minor/low-ridership cities) for specific countries:
-<a href="us.html">US</a>
-<a href="uk.html">UK</a>
-<p>
 See also: <a href="misc">miscellaneous timelines and maps</a>
 <div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> based on map data 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/"><img alt="CC-BY-SA" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/80x15.png"></a>
