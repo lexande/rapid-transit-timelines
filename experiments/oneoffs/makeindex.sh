@@ -38,9 +38,9 @@ HEREDOC
 for file in $@; do
   if [ -f $file ]; then
     city=`basename $file .svg`
-    NAME=`grep ^$city names | awk -F"\t" '{print $2}'`
+    NAME=`grep ^$city names | awk -F"\t" '{print $3}'`
     SNAME=`echo $NAME | sed -e's/<br>.*//'`
-    URL=`grep ^$city names | awk -F"\t" '{print $3}'`
+    URL=`grep ^$city names | awk -F"\t" '{print $4}'`
     UPPER=$(echo $city | tr 'a-z' 'A-Z')
     NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
     W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/138)}")
