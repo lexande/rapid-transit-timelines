@@ -295,11 +295,11 @@ for city in $@; do
   if [ -f $city/s ]; then
     echo '<span id="'$UPPER'" style="display: inline-block;"><a href="'$city'">'$NAME'</a><br>' \
     | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
-    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="'$city'/small/2015.svg" title="2015" alt="2015 map" width="'$W'" height="'$H'"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
+    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="'$city'/small/2015.svg" title="2015" alt="2015 map" width="'${W}px'" height="'${H}px'"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
   else
     echo '<span id="'$UPPER'" style="display: none;"><a href="'$city'">'$NAME'</a><br>' \
     | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
-    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="about:blank" title="2015" alt="2015 map" width="'$W'" height="'$H'"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
+    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="about:blank" title="2015" alt="2015 map" width="'${W}px'" height="'${H}px'"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
   fi
 done
 
