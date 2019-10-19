@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
-   height="280"
-   width="270"
-   viewBox="0 0 270 280"
-   version="1.1">
+   version="1.1"
+   viewBox="0 0 325 300"
+   width="325"
+   height="300"
+   id="svg2">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,19 +26,19 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../../timelines/cle/./../streetmap/cltosm.png"
+     xlink:href="../timelines/cle/./../streetmap/cltosm.png"
      id="image10"
-     height="2206"
-     width="1103"
-     y="-266"
-     x="-750"
+     height="3309"
+     width="2206"
+     y="-1359"
+     x="-725"
      style="display:none" />
   <path
-     style="fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m -466,1888 -13,-89 -2,-60 8,-27 25,-54 67,-148 2,-28 -9,-42 -26,-167 v -38 l 19,-112 -1,-39 -7,-26 2,-90 -7,-84 -17,-88 5,-73 10,-51 31,-71 49,-96 163,-248 23,-35 28,-23 58,-52 40,-29 43,-32 200.58263,-180.09587"
      id="path2987"
-     d="m -491,1878 -13,-89 -2,-60 8,-27 25,-54 67,-148 2,-28 -9,-42 -26,-167 0,-38 19,-112 -1,-39 -7,-26 2,-90 -7,-84 -17,-88 5,-73 10,-51 31,-71 49,-96 163,-248 23,-35 28,-23 58,-52 40,-29 L 0,76 76,10" />
+     style="fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     id="path4137"
-     d="m 43.77962,55.7881 61.746,65.5812 27.61312,24.1615 90.12615,88.9756 3.83516,-0.3835 11.50546,-11.889"
-     style="fill:none;fill-rule:evenodd;stroke:#f9c923;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-rule:evenodd;stroke:#f9c923;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 63.326508,60.754459 67.199112,70.614841 27.61312,24.1615 90.12615,88.9756 3.83516,-0.3835 11.50546,-11.889"
+     id="path4137" />
 </svg>

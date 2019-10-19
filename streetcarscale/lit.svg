@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="250"
-   height="125"
-   viewBox="0 0 250 125"
-   id="svg2">
+   id="svg2"
+   viewBox="0 0 300 175"
+   height="175"
+   width="300"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -28,15 +26,15 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="file:///home/alexander/timelines/experiments/streetcarscale/streetmap/litosm.png"
-     x="-100"
-     y="-142.5"
+     xlink:href="streetmap/litosm.png"
+     x="-85"
+     y="-112.5"
      width="555"
      height="277.5"
      id="image10"
      style="display:none" />
   <path
-     d="M 144.88421,61.23158 41.13684,43.71579 l -0.67368,-2.3579 1.34737,-11.78947 3.36842,-2.35789 100.37894,18.52631 1.34737,2.69474 -4.37894,25.93684 0.67368,1.68421 35.03158,6.06316 L 213.6,83.8 l 18.18947,0.33684 0.33685,7.41053"
+     style="fill:none;stroke:#046b33;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path2987"
-     style="fill:none;stroke:#046b33;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="M 159.88421,91.23158 56.13684,73.71579 l -0.67368,-2.3579 1.34737,-11.78947 3.36842,-2.35789 100.37894,18.52631 1.34737,2.69474 -4.37894,25.93684 0.67368,1.68421 35.03158,6.06316 L 228.6,113.8 l 18.18947,0.33684 0.33685,7.41053" />
 </svg>

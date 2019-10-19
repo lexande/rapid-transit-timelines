@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 330 310"
-   height="310"
-   width="330"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="350"
+   height="325"
+   viewBox="0 0 350 325">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,20 +26,20 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="streetmap/streetmap/mkeosm.png"
+     xlink:href="streetmap/mkeosm.png"
      width="493.10001"
      height="493.10001"
      preserveAspectRatio="none"
      id="image10"
-     x="-150"
-     y="-23.100006"
+     x="-140"
+     y="-13.100006"
      style="display:none" />
   <path
-     id="path817"
-     d="m 56.33136,244.30109 v 10.16316 l 1.34231,1.15055 h 42.95374 8.43734 l 7.67031,-1.53406 20.70984,-3.83516 h 15.14886 l 1.53407,-1.91757 -8.43735,-108.91842 1.72582,-2.68461 15.72414,-1.53406 22.43566,-1.53406 1.91758,-3.06813 -3.06813,-45.8301 0.19176,-33.94112 1.91758,-2.68461 87.05803,1.15054 9.77964,6.32801"
-     style="opacity:1;fill:none;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#008fde;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#008fde;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 66.33136,254.30109 v 10.16316 l 1.34231,1.15055 h 42.95374 8.43734 l 7.67031,-1.53406 20.70984,-3.83516 h 15.14886 l 1.53407,-1.91757 -8.43735,-108.91842 1.72582,-2.68461 15.72414,-1.53406 22.43566,-1.53406 1.91758,-3.06813 -3.06813,-45.8301 0.19176,-33.94112 1.91758,-2.68461 87.05803,1.15054 9.77964,6.32801"
+     id="path817" />
   <path
-     id="path819"
-     d="m 162.75693,135.19092 -2.3011,4.79395 7.86206,105.85028 -2.30108,3.06813 -13.42305,1.3423"
-     style="opacity:1;fill:none;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#008fde;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#008fde;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 172.75693,145.19092 -2.3011,4.79395 7.86206,105.85028 -2.30108,3.06813 -13.42305,1.3423"
+     id="path819" />
 </svg>

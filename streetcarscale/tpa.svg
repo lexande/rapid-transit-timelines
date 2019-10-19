@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 375 420"
-   height="420"
-   width="375"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="375"
+   height="425"
+   viewBox="0 0 375 425">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,7 +26,7 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="streetmap/streetmap/tpaosm.png"
+     xlink:href="streetmap/tpaosm.png"
      width="596.09998"
      height="596.09998"
      preserveAspectRatio="none"
@@ -35,7 +35,7 @@
      y="-151.09998"
      style="display:none" />
   <path
-     id="path817"
-     d="m 55.576271,308.59324 20.338979,51.79661 5.69492,3.25424 6.50847,1.35593 46.37289,-12.74576 4.06779,-2.71187 0.54238,-14.37288 2.44067,-3.52542 33.08475,0.81356 27.11864,-8.94916 2.16949,-4.33898 2.1695,-11.38983 3.52542,-149.9661 -2.16949,-93.55932 3.79661,-1.89831 111.72881,0.81356"
-     style="opacity:1;fill:none;fill-opacity:0.03137255;fill-rule:nonzero;stroke:#b30738;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:0.03137255;fill-rule:nonzero;stroke:#b30738;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 55.576275,308.59324 20.33898,51.79661 5.69492,3.25424 6.50847,1.35593 46.372895,-12.74576 4.06779,-2.71187 0.54238,-14.37288 2.44067,-3.52542 33.08475,0.81356 27.11864,-8.94916 2.16949,-4.33898 2.1695,-11.38983 3.52542,-149.9661 -2.16949,-93.55932 3.79661,-1.89831 111.72881,0.81356"
+     id="path817" />
 </svg>

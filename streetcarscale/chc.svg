@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
-   height="120"
-   width="180"
-   viewBox="0 0 180 120"
-   version="1.1">
+   version="1.1"
+   viewBox="0 0 250 200"
+   width="250"
+   height="200"
+   id="svg2">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,18 +27,18 @@
      id="defs6" />
   <image
      xlink:href="streetmap/chcosm.png"
-     x="-90"
-     y="-166"
+     x="-55"
+     y="-120.99971"
      width="247.99992"
      height="248"
      id="image10"
      style="display:none" />
   <path
-     style="fill:none;stroke:#ac2a1d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 63.499967,101.00029 h 85.499973 l 17,-8 15.49999,8.5 8,-0.5 -0.5,-16.5 -0.5,-2.5 0.5,-15 -125.146411,0.135621 -1.348297,1.078637 -1.078636,30.471509 3.505571,3.235913"
      id="path2987"
-     d="m 28.499967,56 85.499973,0 17,-8 15.49999,8.5 8,-0.5 -0.5,-16.5 -0.5,-2.5 0.5,-15 -125.146411,0.135621 -1.348297,1.078637 -1.078636,30.471509 3.505571,3.235912" />
+     style="fill:none;stroke:#ac2a1d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     id="path4195"
-     d="m 100.04357,56.65202 -2.426932,3.235912 0.26966,23.190705 -0.539319,4.044891 2.426933,2.426934 45.842078,0.539318 11.59535,10.24706 -27.23559,-28.044577 0,-5.662847 16.71887,-9.438078"
-     style="fill:none;fill-rule:evenodd;stroke:#ac2a1d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-rule:evenodd;stroke:#ac2a1d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 135.04357,101.65231 -2.42693,3.23591 0.26966,23.19071 -0.53932,4.04489 2.42693,2.42693 45.84208,0.53932 11.59535,10.24706 -27.23559,-28.04458 v -5.66284 l 16.71887,-9.43808"
+     id="path4195" />
 </svg>
