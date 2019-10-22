@@ -6,6 +6,7 @@ QNC	 391m	funicular	4	1890-10-27	1981-06-29*
 PRG	 397m	funicular	3	1891-07-25	1974-05-09*
 LYN	 427m	funicular	2	1900-09-06	1978-05-02*	connected to 783m+near 514m lines
 BAK	 455m	funicular	2	1960-06-02	1967-11-25*
+GRZ	 470m	tram gradesep	2	2006-12-01	never*
 SCL	 485m	funicular	3	1925-04-25	1975-09-15*
 LYN	 489m	funicular	2	1862-06-03	1978-05-02*	near later 512m line below
 PIT	 490m	funicular	2	1872-__-__	1904-12-09*	near later 806m line below
@@ -33,6 +34,7 @@ ZRH	 800m	funicular	3?	1899-07-05	1976-09-25*
 PIT	 806m	funicular	2	1890-08-15	1904-12-09*	near earlier 490m line above
 NAP	 824m	funicular	3	1891-05-30	1940-05-09*	near earlier & later lines
 EML	 839m	funicular	3	1902-05-05	2006-12-10*
+INN	 839m	funicular	3	1906-09-12	never*		replaced by 1838m line
 BGO	 844m	funicular	5	1918-01-15	2010-06-22
 WAS	 860m	tram gradesep 	2	1949-12-14	1976-03-27*	plus 220m opposite dir
 CRL	 870m	tram gradesep	2	1976-06-21*	1982-06-21	ext to 2000m 1980-06-30
@@ -78,6 +80,7 @@ CZL	1730m	cableway	3	2008-06-__	2013-07-04*	latter is 1960m+1640m thru
 IFN	1790m	bus gradesep	3	2013-05-28*	2014-09-15	merge with 1380m line
 HFA	1830m	funicular	6	1959-10-06	never*
 CAG	1830m	tram gradesep	3	2015-02-14	never*
+INN	1838m	funicular	4	2007-12-01	never*		replaced earlier 839m line
 GOT	1840m	tram gradesep	4	1944-06-26	1955-08-01*
 LNZ	1860m	tram tunnel	4	2004-08-31*	never		ext within 7yr, see 2130m below
 SOF	2000m	tram gradesep	3	1964-__-__*	1998-01-28	+50m 1972, +650m thru 1979

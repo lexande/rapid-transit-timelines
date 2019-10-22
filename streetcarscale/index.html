@@ -193,8 +193,12 @@ function togglesidebar() {
   <img class="map" src="elp.svg" title="El Paso" alt="El Paso map" width="87px" height="114px"></span>
 <span id="FLR" style="display: none; vertical-align: middle">Firenze<br>
   <img class="map" src="flr.svg" title="Firenze" alt="Firenze map" width="217px" height="190px"></span>
+<span id="GMD" style="display: none; vertical-align: middle">Gmunden<br>
+  <img class="map" src="gmd.svg" title="Gmunden" alt="Gmunden map" width="103px" height="70px"></span>
 <span id="OOL" style="display: inline-block; vertical-align: middle">Gold Coast<br>
   <img class="map" src="ool.svg" title="Gold Coast" alt="Gold Coast map" width="304px" height="391px"></span>
+<span id="GRZ" style="display: none; vertical-align: middle">Graz<br>
+  <img class="map" src="grz.svg" title="Graz" alt="Graz map" width="250px" height="277px"></span>
 <span id="CAN" style="display: none; vertical-align: middle">Guangzhou<br>
   <img class="map" src="can.svg" title="Guangzhou" alt="Guangzhou map" width="223px" height="65px"></span>
 <span id="HKD" style="display: none; vertical-align: middle">Hakodate<br>
@@ -209,6 +213,8 @@ function togglesidebar() {
   <img class="map" src="hou.svg" title="Houston" alt="Houston map" width="332px" height="561px"></span>
 <span id="HIA" style="display: none; vertical-align: middle">Huai'an<br>
   <img class="map" src="hia.svg" title="Huai'an" alt="Huai'an map" width="397px" height="397px"></span>
+<span id="INN" style="display: none; vertical-align: middle">Innsbruck<br>
+  <img class="map" src="inn.svg" title="Innsbruck" alt="Innsbruck map" width="261px" height="114px"></span>
 <span id="ALY" style="display: inline-block; vertical-align: middle">Iskandariyya<br>
   <img class="map" src="aly.svg" title="Iskandariyya" alt="Iskandariyya map" width="413px" height="370px"></span>
 <span id="IST" style="display: none; vertical-align: middle">İstanbul<br>
@@ -233,6 +239,8 @@ function togglesidebar() {
   <img class="map" src="kmj.svg" title="Kumamoto" alt="Kumamoto map" width="234px" height="158px"></span>
 <span id="KBP" style="display: none; vertical-align: middle">Kyiv<br>
   <img class="map" src="kbp.svg" title="Kyiv" alt="Kyiv map" width="783px" height="538px"></span>
+<span id="LNZ" style="display: none; vertical-align: middle">Linz<br>
+  <img class="map" src="lnz.svg" title="Linz" alt="Linz map" width="315px" height="418px"></span>
 <span id="LIS" style="display: none; vertical-align: middle">Lisboa<br>
   <img class="map" src="lis.svg" title="Lisboa" alt="Lisboa map" width="293px" height="326px"></span>
 <span id="LIT" style="display: inline-block; vertical-align: middle">Little<br>Rock<br>
@@ -422,7 +430,9 @@ function togglesidebar() {
 <input type="checkbox" id="DTTcheckbox" onclick="toggleshow('DTT')" checked><a href="javascript:sidebarclick('DTT')">Detroit</a><br>
 <input type="checkbox" id="ELPcheckbox" onclick="toggleshow('ELP')" checked><a href="javascript:sidebarclick('ELP')">El Paso</a><br>
 <input type="checkbox" id="FLRcheckbox" onclick="toggleshow('FLR')"><a href="javascript:sidebarclick('FLR')">Firenze</a><br>
+<input type="checkbox" id="GMDcheckbox" onclick="toggleshow('GMD')"><a href="javascript:sidebarclick('GMD')">Gmunden</a><br>
 <input type="checkbox" id="OOLcheckbox" onclick="toggleshow('OOL')" checked><a href="javascript:sidebarclick('OOL')">Gold Coast</a><br>
+<input type="checkbox" id="GRZcheckbox" onclick="toggleshow('GRZ')"><a href="javascript:sidebarclick('GRZ')">Graz</a><br>
 <input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')"><a href="javascript:sidebarclick('CAN')">Guangzhou</a><br>
 <input type="checkbox" id="HKDcheckbox" onclick="toggleshow('HKD')"><a href="javascript:sidebarclick('HKD')">Hakodate</a><br>
 <input type="checkbox" id="HELcheckbox" onclick="toggleshow('HEL')"><a href="javascript:sidebarclick('HEL')">Helsinki</a><br>
@@ -430,6 +440,7 @@ function togglesidebar() {
 <input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="javascript:sidebarclick('HKG')">Hong Kong</a><br>
 <input type="checkbox" id="HOUcheckbox" onclick="toggleshow('HOU')" checked><a href="javascript:sidebarclick('HOU')">Houston</a><br>
 <input type="checkbox" id="HIAcheckbox" onclick="toggleshow('HIA')"><a href="javascript:sidebarclick('HIA')">Huai'an</a><br>
+<input type="checkbox" id="INNcheckbox" onclick="toggleshow('INN')"><a href="javascript:sidebarclick('INN')">Innsbruck</a><br>
 <input type="checkbox" id="ALYcheckbox" onclick="toggleshow('ALY')" checked><a href="javascript:sidebarclick('ALY')">Iskandariyya</a><br>
 <input type="checkbox" id="ISTcheckbox" onclick="toggleshow('IST')"><a href="javascript:sidebarclick('IST')">İstanbul</a><br>
 <input type="checkbox" id="KOJcheckbox" onclick="toggleshow('KOJ')"><a href="javascript:sidebarclick('KOJ')">Kagoshima</a><br>
@@ -442,6 +453,7 @@ function togglesidebar() {
 <input type="checkbox" id="KRKcheckbox" onclick="toggleshow('KRK')"><a href="javascript:sidebarclick('KRK')">Kraków</a><br>
 <input type="checkbox" id="KMJcheckbox" onclick="toggleshow('KMJ')"><a href="javascript:sidebarclick('KMJ')">Kumamoto</a><br>
 <input type="checkbox" id="KBPcheckbox" onclick="toggleshow('KBP')"><a href="javascript:sidebarclick('KBP')">Kyiv</a><br>
+<input type="checkbox" id="LNZcheckbox" onclick="toggleshow('LNZ')"><a href="javascript:sidebarclick('LNZ')">Linz</a><br>
 <input type="checkbox" id="LIScheckbox" onclick="toggleshow('LIS')"><a href="javascript:sidebarclick('LIS')">Lisboa</a><br>
 <input type="checkbox" id="LITcheckbox" onclick="toggleshow('LIT')" checked><a href="javascript:sidebarclick('LIT')">Little Rock</a><br>
 <input type="checkbox" id="LUXcheckbox" onclick="toggleshow('LUX')"><a href="javascript:sidebarclick('LUX')">Luxembourg</a><br>
