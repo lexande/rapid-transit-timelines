@@ -79,11 +79,13 @@ IFN	1790m	bus gradesep	3	2013-05-28*	2014-09-15	merge with 1380m line
 HFA	1830m	funicular	6	1959-10-06	never*
 CAG	1830m	tram gradesep	3	2015-02-14	never*
 GOT	1840m	tram gradesep	4	1944-06-26	1955-08-01*
-SOF	2000m	tram gradesep	3	1964-__-__*	1998-01-28	slightly longer from 1972
+LNZ	1860m	tram tunnel	4	2004-08-31*	never		ext within 7yr, see 2130m below
+SOF	2000m	tram gradesep	3	1964-__-__*	1998-01-28	+50m 1972, +650m thru 1979
 SKI	2010m	cableway	3	2009-07-__*	never
-DAL	2210m	peoplemover	3	1989-06-18*	1996-06-14	2210m line never extended
 YVR 	2120m	tram gradesep	4	1912-12-02*	1985-12-11	plus 1060m thru-routed line
 HAJ	2130m	tram tunnel	4	1975-09-26*	1976-04-04	extended within 1yr
+LNZ	2130m	tram tunnel	2	2011-08-13	never
+DAL	2200m	peoplemover	3	1989-06-18*	1996-06-14	2210m line never extended
 AMS	2210m	tram gradesep	4	1962-09-09*	1970-05-31
 TCI	2270m	tram gradesep	4	2007-06-02*	never		1070m+1200m thru
 LPB	2400m	cableway	3	2014-05-30*	2014-09-15
