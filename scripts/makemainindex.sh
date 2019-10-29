@@ -3,7 +3,12 @@ cat <<HEREDOC
 <!DOCTYPE HTML>
 <html>
 <head><title>Rapid Transit Timelines and Scale Comparison</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rapid Transit Timelines and Scale Comparison" />
+<meta property="og:image" content="https://alexander.co.tz/timelines/preview.png" />
+<meta property="og:description" content="Maps every 5 years, 1840-2015" />
+<meta name="twitter:card" content="summary_large_image" />
 <style type="text/css">
 div#preloader {
 	position: absolute;
@@ -165,7 +170,7 @@ function toggleshow(x) {
 	if (span.style.display == 'inline-block') {
 		mapimg = document.getElementById(x + "map");
 		span.style.display = 'none';
-		if (mapimg.tagName.toUpperCase() == "IMG") mapimg.src = "about:blank";
+		if (mapimg.tagName.toUpperCase() == "IMG") mapimg.src = "/0";
 		imgs = prediv.getElementsByTagName("img");
 		for (var i=0; i < imgs.length; i++) {
 			prediv.removeChild(imgs[i]);
@@ -299,7 +304,7 @@ for city in $@; do
   else
     echo '<span id="'$UPPER'" style="display: none;"><a href="'$city'">'$NAME'</a><br>' \
     | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
-    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="about:blank" title="2015" alt="2015 map" width="'${W}px'" height="'${H}px'"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
+    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="/0" title="2015" alt="2015 map" width="'${W}px'" height="'${H}px'"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
   fi
 done
 
