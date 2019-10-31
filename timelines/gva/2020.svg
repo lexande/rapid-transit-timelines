@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 1500 2500"
-   height="2500"
-   width="1500"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="1500"
+   height="2500"
+   viewBox="0 0 1500 2500">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,24 +27,28 @@
      id="defs6" />
   <image
      style="display:none"
-     y="-85.5"
-     x="-675"
-     id="image10"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/gvaosm.png"
-     preserveAspectRatio="none"
+     width="2335"
      height="3035.5"
-     width="2335" />
+     preserveAspectRatio="none"
+     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/gvaosm.png"
+     id="image10"
+     x="-675"
+     y="-85.5" />
   <path
-     id="path836"
+     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#004b87;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 868.0748,129.33906 -16.2035,69.79984 -18.6964,43.6249 -35.5232,43.6249 -145.7703,144.2554 -40.1017,48.0339 -17.1865,27.7627 -1.7627,33.9322 17.6271,120.3051 26,62.5762 1.7627,23.356 0.8814,85.4915 -10.1356,30.4068 -46.7119,106.644 -35.6949,59.4916 -19.8305,26 -20.7118,14.983 -33.9323,21.5932 -16.7457,21.1526 -11.017,21.5932 -7.4915,42.3051 2.6441,130.4407 -4.8475,68.7457 -16.7457,71.3899 3.9661,59.4915 -13.2204,55.9661 3.9661,155.1186 -2.644,18.9492 -12.7797,27.7627 -55.5254,71.3898 -26.44071,12.339 -63.8983,10.1356 -37.89831,-5.7288 -20.71186,1.322 -17.62712,10.1356 -12.77966,15.4237 -4.84746,26 2.20339,49.7966 39.22034,110.1695 4.84746,22.9153 -1.32204,59.0508 -4.84745,26.4407 4.40677,102.2373 5.72882,22.0339 7.49152,13.2203 22.91526,18.5085 31.72881,15.8644 30.84746,12.7797 19.83051,4.8474 26.88137,-3.5254 18.9491,-10.1356 60.3729,-65.661 22.0339,-30.4068 45.3898,-90.3389 8.8136,-27.3221 -0.8813,-18.9491 -3.0848,-32.6102 3.0848,-16.7458 13.2203,-27.7627 22.9152,-16.7457 26.8814,-15.8644 14.5424,-15.8645 23.3559,-38.3389 31.2881,-30.8475 32.6102,-24.2373 36.5763,-15.4237 28.2034,-4.4068 24.2373,7.0509 139.2542,77.1186 32.6102,22.4746 20.2712,6.1695 57.7288,3.5254 37.8983,-6.1695 18.9491,5.2881 76.678,41.4238 20.7119,3.9661 42.7457,-4.4068 91.661,-15.4237 21.1526,-11.4577 76.6779,-63.8983"
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#004b87;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path836" />
   <text
-     x="89.453133"
-     y="206.96094"
-     id="text2992"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453133"
+     id="text2992"
+     y="206.96094"
+     x="89.453133"><tspan
+       id="tspan1"
        y="206.96094"
-       id="tspan1">2020</tspan></text>
+       x="89.453133">2020</tspan></text>
+  <path
+     id="path819"
+     d="m 883.88348,2509.3632 42.60243,130.1481"
+     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#87251c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
