@@ -32,8 +32,6 @@ function toggleshow(x) {
 <center>
 <h3>One-off Rapid Transit Maps for Scale Comparison with <a href="/timelines">Timelines</a></h3>
 <h4>Past:</h4>
-<span id="NYC" style="display: inline-block; vertical-align: middle"><a href="http://www.columbia.edu/~brennan/abandoned/38st.html">New York<br><small>(horse)</small><br>
-  <img class="map" src="nyc.svg" title="New York" alt="New York map" width="141px" height="249px"></a></span>
 <span id="MKC" style="display: inline-block; vertical-align: middle"><a href="https://www.google.com/maps/d/edit?mid=1-dWVmBPsK_iqijuEYQoCXc1x6AAErheS">Kansas City<br>
   <img class="map" src="mkc.svg" title="Kansas City" alt="Kansas City map" width="217px" height="174px"></a></span>
 <span id="SUX" style="display: inline-block; vertical-align: middle"><a href="https://www.google.com/maps/d/edit?mid=1kT0FCz8_uQ5Wssyp-BMm4YdjW_M">Sioux City<br>
@@ -42,29 +40,25 @@ function toggleshow(x) {
   <img class="map" src="lou.svg" title="Louisville" alt="Louisville map" width="185px" height="185px"></a></span>
 <span id="ROC" style="display: inline-block; vertical-align: middle"><a href="https://www.google.com/maps/d/edit?mid=1n4qMzGkFYLaFLhk_QA2E1dBVVyY">Rochester<br>
   <img class="map" src="roc.svg" title="Rochester" alt="Rochester map" width="293px" height="304px"></a></span>
-<span id="IND" style="display: inline-block; vertical-align: middle">Indianapolis<br>
-  <img class="map" src="ind.svg" title="Indianapolis" alt="Indianapolis map" width="120px" height="98px"></span>
+<span id="IND" style="display: inline-block; vertical-align: middle"><a href="https://www.google.com/maps/d/viewer?mid=1Iq_dnlCJRc2mt7Rb8jKlv5tWunNDt6vo">Indianapolis<br>
+  <img class="map" src="ind.svg" title="Indianapolis" alt="Indianapolis map" width="120px" height="120px"></a></span>
 <h4>Special-Purpose:</h4>
-<span id="DWS" style="display: inline-block; vertical-align: middle">Disneyworld<br><small>(modulo stop spacing)</small><br>
-  <img class="map" src="dws.svg" title="Disneyworld" alt="Disneyworld map" width="152px" height="217px"></span>
+<span id="DWS" style="display: inline-block; vertical-align: middle">Disneyworld<br><small>(ignoring stop spacing)</small><br>
+  <img class="map" src="dws.svg" title="Disneyworld" alt="Disneyworld map" width="185px" height="305px"></span>
 <span id="QCA" style="display: inline-block; vertical-align: middle">Makkah<br><small>(7 days/year)</small><br>
   <img class="map" src="qca.svg" title="Makkah" alt="Makkah map" width="370px" height="348px"></span>
 <span id="MGW" style="display: inline-block; vertical-align: middle">Morgantown<br><small>(~195 days/year)</small><br>
-  <img class="map" src="mgw.svg" title="Morgantown" alt="Morgantown map" width="120px" height="153px"></span>
-<span id="IND" style="display: inline-block; vertical-align: middle">Indianapolis<br>
-  <img class="map" src="ind.svg" title="Indianapolis" alt="Indianapolis map" width="120px" height="98px"></span>
+  <img class="map" src="mgw.svg" title="Morgantown" alt="Morgantown map" width="120px" height="164px"></span>
 <p>
 <!--<form action="">Cities to show:
-<div style="display: inline-block"><input type="checkbox" id="NYCcheckbox" onclick="toggleshow('NYC')" checked>http://www.columbia.edu/~brennan/abandoned/38st.html</div>
-<div style="display: inline-block"><input type="checkbox" id="MKCcheckbox" onclick="toggleshow('MKC')" checked>https://www.google.com/maps/d/edit?mid=1-dWVmBPsK_iqijuEYQoCXc1x6AAErheS</div>
-<div style="display: inline-block"><input type="checkbox" id="SUXcheckbox" onclick="toggleshow('SUX')" checked>https://www.google.com/maps/d/edit?mid=1kT0FCz8_uQ5Wssyp-BMm4YdjW_M</div>
-<div style="display: inline-block"><input type="checkbox" id="LOUcheckbox" onclick="toggleshow('LOU')" checked>https://www.google.com/maps/d/edit?mid=12o6afFYwKujZ8AnFOrfSuj6kO9k</div>
-<div style="display: inline-block"><input type="checkbox" id="ROCcheckbox" onclick="toggleshow('ROC')" checked>https://www.google.com/maps/d/edit?mid=1n4qMzGkFYLaFLhk_QA2E1dBVVyY</div>
+<div style="display: inline-block"><input type="checkbox" id="MKCcheckbox" onclick="toggleshow('MKC')" checked>Kansas City</div>
+<div style="display: inline-block"><input type="checkbox" id="SUXcheckbox" onclick="toggleshow('SUX')" checked>Sioux City</div>
+<div style="display: inline-block"><input type="checkbox" id="LOUcheckbox" onclick="toggleshow('LOU')" checked>Louisville</div>
+<div style="display: inline-block"><input type="checkbox" id="ROCcheckbox" onclick="toggleshow('ROC')" checked>Rochester</div>
 <div style="display: inline-block"><input type="checkbox" id="INDcheckbox" onclick="toggleshow('IND')" checked>Indianapolis</div>
-<div style="display: inline-block"><input type="checkbox" id="DWScheckbox" onclick="toggleshow('DWS')" checked>Disneyworld<br><small>(modulo stop spacing)</small></div>
-<div style="display: inline-block"><input type="checkbox" id="QCAcheckbox" onclick="toggleshow('QCA')" checked>Makkah<br><small>(7 days/year)</small></div>
-<div style="display: inline-block"><input type="checkbox" id="MGWcheckbox" onclick="toggleshow('MGW')" checked>Morgantown<br><small>(~195 days/year)</small></div>
-<div style="display: inline-block"><input type="checkbox" id="INDcheckbox" onclick="toggleshow('IND')" checked>Indianapolis</div>
+<div style="display: inline-block"><input type="checkbox" id="DWScheckbox" onclick="toggleshow('DWS')" checked>Disneyworld</div>
+<div style="display: inline-block"><input type="checkbox" id="QCAcheckbox" onclick="toggleshow('QCA')" checked>Makkah</div>
+<div style="display: inline-block"><input type="checkbox" id="MGWcheckbox" onclick="toggleshow('MGW')" checked>Morgantown</div>
 </form>-->
 <a href=".">smaller versions</a>
 <p>

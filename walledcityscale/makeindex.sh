@@ -3,6 +3,9 @@ cat <<HEREDOC
 <html>
 <head><title>Ancient Walled City Scale Comparison</title>
 <style type="text/css">
+body {
+	text-align: center;
+}
 span {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -46,7 +49,6 @@ function deselectall() {
   })();
 </script>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<center>
 <h3>Ancient Walled City Scale Comparison</h3>
 HEREDOC
 sortedcities=`echo $@ | perl -wpe's/([a-z]+)(-?[0-9]+).svg ?/$2 $1\n/g' | sort -g | awk '{print $2$1}'`

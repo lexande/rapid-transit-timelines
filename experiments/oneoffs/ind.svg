@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -8,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
+   id="svg2"
+   viewBox="0 0 550 550"
+   height="550"
    width="550"
-   height="450"
-   viewBox="0, 0, 550, 450"
-   id="svg2">
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -28,24 +26,24 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="/home/alexander/timelines/timelines/streetmap/../streetmap/indosm.png"
+     xlink:href="../../timelines/streetmap/../streetmap/indosm.png"
      x="190"
-     y="191"
+     y="216"
      width="259"
      height="259"
      id="image10"
      style="display:none" />
   <path
-     d="m 342,237.5 7.5,4 2.5,5.5 -1,84 -4.5,4.5 -76.5,1 -9,4.5 -14.5,13.5 -14.5,2.5 -11.5,7.5 -8.5,14.5 -1.5,18.5 1,8.5 -4,4.5 -19.5,0"
+     style="fill:none;stroke:#981e32;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path2987"
-     style="fill:none;stroke:#981e32;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 342,262.5 7.5,4 2.5,5.5 -1,84 -4.5,4.5 -76.5,1 -9,4.5 -14.5,13.5 -14.5,2.5 -11.5,7.5 -8.5,14.5 -1.5,18.5 1,8.5 -4,4.5 H 188" />
   <text
-     x="89.453125"
-     y="206.96094"
-     id="text2984"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
-       x="89.453125"
+     id="text2984"
+     y="206.96094"
+     x="89.453125"><tspan
+       id="tspan1"
        y="206.96094"
-       id="tspan1">2015</tspan></text>
+       x="89.453125">2015</tspan></text>
 </svg>
