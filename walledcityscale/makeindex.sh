@@ -49,24 +49,31 @@ function deselectall() {
 <center>
 <h3>Ancient Walled City Scale Comparison</h3>
 HEREDOC
-for file in $@; do
-  city=`basename $file .svg`
+sortedcities=`echo $@ | perl -wpe's/([a-z]+)(-?[0-9]+).svg ?/$2 $1\n/g' | sort -g | awk '{print $2$1}'`
+for city in $sortedcities; do
   NAME=`grep ^$city names | sed -e's/.*\t//'`
   SNAME=`echo $NAME | sed -e's/<br>.*//; s/,//'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
-  NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
+  NATIVEW=$(grep '^   width="' ${city}.svg | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*0.6)}")
-  H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
-  echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
-  echo '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
+  H=$(awk "BEGIN{print int(0.5+$(grep ' height=' ${city}.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
+  if ( grep ^$city! names >/dev/null ); then 
+    echo '<span id="'$UPPER'" style="display: none; vertical-align: middle">'$NAME'<br>'
+  else
+    echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
+  fi
+  echo '  <img class="map" src="'${city}'.svg" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
 done
 echo '<p>'
 echo '<form action="">Cities to show:'
-for file in $@; do
-  city=`basename $file .svg`
+for city in $sortedcities; do
   NAME=`grep ^$city names | sed -e's/.*\t//; s/<br>.*//; s/,//;'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
-  echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked>$NAME</div>"
+  if ( grep ^$city! names >/dev/null ); then 
+    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\">$NAME</div>"
+  else
+    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked>$NAME</div>"
+  fi
 done
 cat <<HEREDOC
 </form>
