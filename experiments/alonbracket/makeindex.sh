@@ -50,7 +50,7 @@ for file in $@; do if [ -f $file ]; then
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*10/138)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
   echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
-  echo '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
+  echo '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'" height="'$H'"></span>'
   if [ $n = 1 ]; then
     echo '<br>'
     n=0

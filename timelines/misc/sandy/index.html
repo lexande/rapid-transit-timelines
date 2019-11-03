@@ -19,37 +19,38 @@ step=1;
 index=0;
 function update() {
         num = start+step*index;
-	document["MAP"].src=num + ".svg";
+	map = document.getElementById("map");
+	map.src=num + ".svg";
         if (num < 7) { 
-		document["MAP"].title="Oct " + (num+25);
-		document["MAP"].alt="Oct " + (num+25) + " map";
+		map.title="Oct " + (num+25);
+		map.alt="Oct " + (num+25) + " map";
         } else if ( num < 20) {
-		document["MAP"].title="Nov " + (num-6);
-		document["MAP"].alt="Nov " + (num-6) + " map";
+		map.title="Nov " + (num-6);
+		map.alt="Nov " + (num-6) + " map";
         } else if (num < 23) {
-                document["MAP"].title="Nov " + (num*7 - 126);
-                document["MAP"].alt="Nov " + (num*7 - 126) + " map";
+                map.title="Nov " + (num*7 - 126);
+                map.alt="Nov " + (num*7 - 126) + " map";
 	} else if (num < 27 ) {
-                document["MAP"].title="Dec " + (num*7 - 156);
-                document["MAP"].alt="Dec " + (num*7 - 156) + " map";
+                map.title="Dec " + (num*7 - 156);
+                map.alt="Dec " + (num*7 - 156) + " map";
         } else if ( num == 27 ) {
-                document["MAP"].title="mid-January";
-                document["MAP"].alt="January map";
+                map.title="mid-January";
+                map.alt="January map";
 	} else if ( num == 28 ) {
-                document["MAP"].title="mid-February";
-                document["MAP"].alt="February map";
+                map.title="mid-February";
+                map.alt="February map";
         } else if ( num == 29 ) {
-                document["MAP"].title="mid-March";
-                document["MAP"].alt="March map";
+                map.title="mid-March";
+                map.alt="March map";
         } else if ( num == 30 ) {
-                document["MAP"].title="mid-April";
-                document["MAP"].alt="April map";
+                map.title="mid-April";
+                map.alt="April map";
         } else if ( num == 31 ) {
-                document["MAP"].title="mid-May";
-                document["MAP"].alt="May map";
+                map.title="mid-May";
+                map.alt="May map";
         } else if ( num == 32 ) {
-                document["MAP"].title="mid-June";
-                document["MAP"].alt="June map";
+                map.title="mid-June";
+                map.alt="June map";
         }
 	location.replace("#" + (start+step*index));
 }
@@ -99,7 +100,7 @@ window.onhashchange=function() {
 <a href="javascript:" onclick="nextmap()">next day (or press s)</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img name="MAP" src="1.svg" title="Oct 26" alt="Oct 26 map" width="1165px" height="1165px" style="border-width: 1px; border-style: solid">
+<img id="map" src="1.svg" title="Oct 26" alt="Oct 26 map" width="1165" height="1165" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#1" onclick="gotoyear(1)">Oct 26</a>

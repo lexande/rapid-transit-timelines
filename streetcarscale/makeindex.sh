@@ -129,7 +129,6 @@ function togglesidebar() {
   })();
 </script>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<center>
 <h3>Streetcar Scale Comparison</h3>
 <div id="maps" style="padding-left: calc(10.5em + 22px);">
 HEREDOC
@@ -146,9 +145,10 @@ for city in $CITIES; do
   else
     echo '<span id="'$UPPER'" style="display: none; vertical-align: middle">'$NAME'<br>'
   fi
-  echo '  <img class="map" src="'${city}.svg'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
+  echo '  <img class="map" src="'${city}.svg'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'" height="'$H'"></span>'
 done
 cat <<HEREDOC
+</div>
 <div id="sidebar">
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
@@ -186,13 +186,13 @@ done | sort | sed -e's/.* <input/<input/;'
 cat <<HEREDOC
 </div>
 <div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
-<div id="hideall" style="display: blcok;"><a href="javascript:deselectall()">hide all</a></div>
+<div id="hideall" style="display: block;"><a href="javascript:deselectall()">hide all</a></div>
 </div>
 <br>
 <div class="headerfooter">
 <div style="white-space: normal;">
 Thick lines represent running in streets or with uncontrolled or light-controlled grade crossings; thin lines are sections with grade-separations or crossing gates.  Connecting rapid transit lines are shown in light gray, ferries in cyan.  All lines shown run at least every 20 minutes during the day on weekdays.  Maps current as of 2019.<br>
-Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
+Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)</div>
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>

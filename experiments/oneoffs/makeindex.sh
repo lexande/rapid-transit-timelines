@@ -50,7 +50,7 @@ for file in $@; do
       echo -n '<a href="'$URL'">'
     fi
     echo $NAME'<br>'
-    echo -n '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px">'
+    echo -n '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'" height="'$H'">'
     if [ ! -z "$URL" ]; then
       echo '</a></span>'
     else

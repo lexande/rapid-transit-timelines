@@ -11,6 +11,9 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+img {
+	border: 1px solid;
+}
 body {
 	text-align: center;
 }
@@ -21,9 +24,10 @@ count=3;
 step=25;
 index=count-1;
 function update() {
-	document["MAP"].src=(start+step*index) + ".svg";
-	document["MAP"].title=start+step*index;
-	document["MAP"].alt=start+step*index + " map";
+	map = document.getElementById("map");
+	map.src=(start+step*index) + ".svg";
+	map.title=start+step*index;
+	map.alt=start+step*index + " map";
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -84,7 +88,7 @@ window.onhashchange=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img name="MAP" src="2010.svg" title="2010" alt="2010 map" width="2558px" height="3565px" style="border-width: 1px; border-style: solid">
+<img id="map" src="2010.svg" title="2010" alt="2010 map" width="2558" height="3565">
 </a>
 <p>
 <a href="#1960" onclick="gotoyear(1960)">1960</a>

@@ -18,9 +18,10 @@ count=9;
 step=10;
 index=count-1;
 function update() {
-	document["MAP"].src=(start+step*index) + ".svg";
-	document["MAP"].title=start+step*index;
-	document["MAP"].alt=start+step*index + " map";
+	map = document.getElementById("map");
+	map.src=(start+step*index) + ".svg";
+	map.title=start+step*index;
+	map.alt=start+step*index + " map";
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -80,7 +81,7 @@ window.onhashchange=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img name="MAP" src="2010.svg" title="2010" alt="2010 map" width="1200px" height="1200px">
+<img id="map" src="2010.svg" title="2010" alt="2010 map" width="1200" height="1200">
 </a>
 <p>
 <a href="#1930" onclick="gotoyear(1930)">1930</a>

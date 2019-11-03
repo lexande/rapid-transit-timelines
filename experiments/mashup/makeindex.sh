@@ -64,7 +64,7 @@ for city in $sortedcities; do
   else
     echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
   fi
-  echo '  <img class="map" src="'${city}'.svg" title="'$SNAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></span>'
+  echo '  <img class="map" src="'${city}'.svg" title="'$SNAME'" alt="'$SNAME' map" width="'$W'" height="'$H'"></span>'
 done
 echo '<p>'
 echo '<form action="">Cities to show:'

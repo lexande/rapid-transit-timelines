@@ -95,7 +95,7 @@ for file in $@; do
       fi
       echo '<span id="'$city'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
       echo '<a href="javascript:next('\'$city\'');">'
-      echo '<img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'px" height="'$H'px"></a><small>'
+      echo '<img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'" height="'$H'"></a><small>'
     fi
     echo -n '<br><a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'','$index');">'$SUBNAME'</a>'
     if [ ! -z "$URL" ]; then

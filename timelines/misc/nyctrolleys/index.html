@@ -11,6 +11,12 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+img {
+	border: 1px solid;
+}
+body {
+	text-align: center;
+}
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1932;
@@ -18,9 +24,10 @@ count=26;
 step=1;
 index=0;
 function update() {
-	document["MAP"].src=(start+step*index) + ".svg";
-	document["MAP"].title=start+step*index;
-	document["MAP"].alt=start+step*index + " map";
+	map = document.getElementById("map");
+	map.src=(start+step*index) + ".svg";
+	map.title=start+step*index;
+	map.alt=start+step*index + " map";
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -73,14 +80,13 @@ window.onhashchange=function() {
   })();
 </script>
 </head><body>
-<center>
 <a href="javascript:" onclick="prevmap()">one year earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">one year later (or press s)</a>
 <br>
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onlick="nextmap()">
-<img name="MAP" src="1932.svg" title="1932" alt="1932 map" width="1165px" height="1165px" style="border-width: 1px; border-style: solid">
+<img id="map" src="1932.svg" title="1932" alt="1932 map" width="1165" height="1165">
 </a>
 <p>
 <a href="#1932" onclick="gotoyear(1932)">1932</a>
@@ -153,5 +159,4 @@ Google maps: <a href="https://www.google.com/maps/d/viewer?mid=1YF-6azqoHFeCqTrt
 <a href="/timelines/misc/">miscellaneous timelines and maps</a>
 <p>
 <div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>) based on map data by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors and historical sources.</div>
-</center>
 </body></html>

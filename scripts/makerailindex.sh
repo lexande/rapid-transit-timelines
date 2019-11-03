@@ -24,6 +24,9 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+img {
+	border: 1px solid;
+}
 body {
 	text-align: center;
 }
@@ -34,12 +37,13 @@ count=COUNT;
 step=25;
 index=count-1;
 function update() {
-	document["MAP"].src=(start+step*index) + ".svg";
-	document["MAP"].title=start+step*index;
-	document["MAP"].alt=start+step*index + " map";
+	map = document.getElementById("map");
+	map.src=(start+step*index) + ".svg";
+	map.title=start+step*index;
+	map.alt=start+step*index + " map";
 HEREDOC
 if [ $SCALE = 1.5 ]; then
-  echo '	document.getElementById("LINK").href="large.html#" + (start+step*index);'
+  echo '	document.getElementById("link").href="large.html#" + (start+step*index);'
 fi
 cat << HEREDOC
 	location.replace("#" + (start+step*index));
@@ -109,11 +113,11 @@ cat <<HEREDOC
 <p>
 HEREDOC
 if [ $SCALE = 1.5 ]; then
-  echo '<a id="LINK" href="large.html">'
+  echo '<a id="link" href="large.html">'
 else
   echo '<a href="javascript:" onclick="nextmap()">'
 fi 
-echo '<img name="MAP" src="2010.svg" title="2010" alt="2010 map" width="'${W}'px" height="'${H}'px" style="border-width: 1px; border-style: solid">'
+echo '<img id="map" src="2010.svg" title="2010" alt="2010 map" width="'${W}'" height="'${H}'">'
 echo '</a>'
 echo '<p>'
 for year in $(seq $START 25 $END); do

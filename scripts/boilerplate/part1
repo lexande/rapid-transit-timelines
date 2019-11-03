@@ -11,6 +11,9 @@ div#preloader {
 div#preloader img {
 	display: block;
 }
+img {
+	border: 1px solid;
+}
 body {
 	text-align: center;
 }
@@ -83,6 +86,6 @@ window.onhashchange=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img id="map" src="DISPLAY.svg" title="DISPLAY" alt="DISPLAY map" width="WIDTHpx" height="HEIGHTpx" style="border-width: 1px; border-style: solid">
+<img id="map" src="DISPLAY.svg" title="DISPLAY" alt="DISPLAY map" width="WIDTH" height="HEIGHT">
 </a>
 <p>
