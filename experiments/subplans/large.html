@@ -13,10 +13,6 @@ span {
 }
 </style>
 <script language="JavaScript" type="text/javascript">
-function toggleshow(x) {
-	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
-	else document.getElementById(x).style.display = 'inline-block';
-}
 posdict = {};
 function setsrc(x, url, pos) {
         document.getElementById(x + "map").src = url;
@@ -144,7 +140,6 @@ document.onkeydown=function(keypress) {
 <img class="map" src="msy1959.svg" id="msymap" title="New Orleans" alt=" map" width="609" height="294"></a><small>
 <br><a class="setsrc" href="javascript:setsrc('msy','msy1959.svg',0);">1959 proposal</a> (<a href="https://babel.hathitrust.org/cgi/pt?id=uiug.30112117747748">info</a>)
 </small></span><p>
-</form>-->
 <a href=".">smaller versions</a>
 <p>
 Based on planned frequent midday service (<a href="notes.html">notes</a>).<br>

@@ -16,10 +16,6 @@ span {
 }
 </style>
 <script language="JavaScript" type="text/javascript">
-function toggleshow(x) {
-	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
-	else document.getElementById(x).style.display = 'inline-block';
-}
 posdict = {};
 function setsrc(x, url, pos) {
         document.getElementById(x + "map").src = url;
@@ -126,7 +122,6 @@ See also: <a href="/timelines">rapid transit timelines</a> - <a href="/timelines
 HEREDOC
 elif [ $SCALE = 30 ]; then
   cat <<HEREDOC
-</form>-->
 <a href=".">smaller versions</a>
 <p>
 Based on planned frequent midday service (<a href="notes.html">notes</a>).<br>
