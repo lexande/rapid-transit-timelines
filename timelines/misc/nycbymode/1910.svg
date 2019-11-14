@@ -26,8 +26,8 @@
   <defs
      id="defs6" />
   <g
-     style="display:none"
-     id="g1301">
+     id="g1301"
+     style="display:none">
     <image
        xlink:href="../../streetmap/nycosm.png"
        x="-2304"
@@ -1413,7 +1413,7 @@
      d="m 2936.7285,3301.3822 -20.7285,11.618 -42.5,44 -31.5538,35.9133 -27.9462,-24.9133 -32.5,35.5 -43,14 -27.5,26 -104.3872,57.3067 -40.4841,6.4195 -10.6276,1.4348 -50.5477,25.5641 -38.9534,28.5011 -20.5863,8.2807 -25.3999,8.607 -56.8072,11.3753 -218.4243,14.3723"
      id="1933-12-03_Liberty_Ave" />
   <path
-     style="opacity:0.95999995;fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="opacity:1;fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2900,3232.0002 35,66.5 1.7285,2.882 25.4138,-11.3876 1.3577,2.0056 82.5,148 79.5,179 98.5,168.5 30,52.5 14,121.5 222,163 56,74.5 25.5487,34.3091 20.5827,51.8115 5.6779,290.6409 -13.84,-3.1939 -27.3252,-2.839 -31.5837,-1.0646 0.3549,22.0021 9.759,39.5683 -1.0127,8.223 -34.1197,17.3279 -24.7194,17.6308 -16.5329,20.995 -3.6822,5.3695 -6.574,15.8312 -11.6589,20.3748 -15.6575,19.0806 -57.009,39.1185 -15.6969,16.783 -19.3836,28.1084 -103.9347,84.1049 -4.9682,2.1292 -70.4601,11.7413 -86.3454,7.9542 -60.3856,-3.2154 -54.2867,19.0072 -101.3162,15.0821 -34.9549,-7.2749 -14.3724,-3.9036 -11.7108,1.4195 -10.4472,5.0811 -5.5734,6.552 1.2042,32.1418 -39.5047,6.7672 -80.0476,45.4189 -134.5001,53.4487 -3.513,-6.5242 -59.7221,22.5839 -11.5429,-25.8461 -138.2906,61.3553"
      id="1933-11-11_Rockaway_Hook_Creek" />
   <path
@@ -2282,10 +2282,6 @@
      id="path39209" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m -1714.4617,3966.5092 77.2874,-53.4487 69.5084,37.1381"
-     id="path40879" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m -1532.7862,3968.7676 21.0784,10.5392"
      id="path40881" />
   <path
@@ -2319,5 +2315,9 @@
   <path
      id="path19381"
      d="m 3526,3040.0002 58.679,-16.4525"
+     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path40879"
+     d="m -1714.4621,3966.5088 43.5874,-29.3539 70.2519,-2.4476 13.5683,5.1318 19.3882,10.3591"
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
