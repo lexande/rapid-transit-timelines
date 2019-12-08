@@ -14,9 +14,9 @@ div#preloader img {
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1920;
-count=10;
+count=11;
 step=10;
-index=count-1;
+index=count-2;
 function update() {
 	map = document.getElementById("map");
 	map.src=(start+step*index) + ".svg";
@@ -94,6 +94,7 @@ window.onhashchange=function() {
 <a href="#1990" onclick="gotoyear(1990)">1990</a>
 <a href="#2000" onclick="gotoyear(2000)">2000</a>
 <a href="#2010" onclick="gotoyear(2010)">2010</a>
+<a href="#2020" onclick="gotoyear(2020)">2020</a>
 <p>
 <a href="javascript:" onclick="prevmap()">ten years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">ten years later (or press s)</a>
@@ -116,6 +117,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="1990.svg" width="1" height="1" alt="">
 <img src="2000.svg" width="1" height="1" alt="">
 <img src="2010.svg" width="1" height="1" alt="">
+<img src="2020.svg" width="1" height="1" alt="">
 </div>
 See also:
 <a href="/ttimeline">Boston rapid transit timeline</a> -
