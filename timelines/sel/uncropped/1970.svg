@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   viewBox="0, 0, 7600, 10200"
-   width="7600"
+   width="13250"
    height="10200"
+   viewBox="0 0 13250 10200"
    id="svg2">
   <metadata
      id="metadata8">
@@ -26,33 +26,33 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="file:///home/alexander/timelines/timelines/sel/../streetmap/selosm.png"
+     style="display:none"
+     x="-32.5"
+     y="40"
+     width="13375"
+     height="10165"
      id="image10"
-     height="6420"
-     width="6955"
-     y="2180.0005"
-     x="0"
-     style="display:none" />
-  <text
-     x="89.453178"
-     y="206.96094"
-     id="text3859"
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453178"
-       y="206.96094"
-       id="tspan1">1970</tspan></text>
-  <text
-     x="89.453125"
-     y="10097.961"
-     id="text3863"
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453125"
-       y="10097.961"
-       id="tspan2">1970</tspan></text>
+     xlink:href="file:///home/lexande/timelines/experiments/alonbracket/../../timelines/sel/uncropped/./../../streetmap/selosm.png" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-     d="m 4595.9507,4669.3639 42.1155,66.4598"
-     id="path4772" />
+     id="path4772"
+     d="m 6970.9507,4669.3639 42.1155,66.4598"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
+     id="text3652"
+     y="206.96094"
+     x="89.453125"><tspan
+       id="tspan1"
+       y="206.96094"
+       x="89.453125">1970</tspan></text>
+  <text
+     style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
+     id="text3652-1"
+     y="10097.961"
+     x="89.453125"><tspan
+       id="tspan2"
+       y="10097.961"
+       x="89.453125">1970</tspan></text>
 </svg>
