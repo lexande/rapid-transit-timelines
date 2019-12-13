@@ -8,3 +8,5 @@ index.html: name cities ~/timelines/scripts/makerailindex.sh ~/timelines/scripts
 
 large.html: name cities ~/timelines/scripts/makerailindex.sh ~/timelines/scripts/boilerplate/part4 $(wildcard *.svg)
 	~/timelines/scripts/makerailindex.sh . 5 > $@
+
+.SECONDARY:
