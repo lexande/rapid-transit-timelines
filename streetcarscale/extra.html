@@ -328,6 +328,8 @@ function togglesidebar() {
   <img class="map" src="orn.svg" title="Oran" alt="Oran map" width="255" height="244"></span>
 <span id="OSI" style="display: none; vertical-align: middle">Osijek<br>
   <img class="map" src="osi.svg" title="Osijek" alt="Osijek map" width="288" height="98"></span>
+<span id="UKK" style="display: none; vertical-align: middle">Óskemen<br>
+  <img class="map" src="ukk.svg" title="Óskemen" alt="Óskemen map" width="212" height="217"></span>
 <span id="OSL" style="display: none; vertical-align: middle">Oslo<br>
   <img class="map" src="osl.svg" title="Oslo" alt="Oslo map" width="207" height="185"></span>
 <span id="OGX" style="display: none; vertical-align: middle">Ouargla<br>
@@ -338,6 +340,8 @@ function togglesidebar() {
   <img class="map" src="pmo.svg" title="Palermo" alt="Palermo map" width="337" height="179"></span>
 <span id="PAR" style="display: none; vertical-align: middle">Paris<br>
   <img class="map" src="par.svg" title="Paris" alt="Paris map" width="891" height="913"></span>
+<span id="PWQ" style="display: none; vertical-align: middle">Pavlodar<br>
+  <img class="map" src="pwq.svg" title="Pavlodar" alt="Pavlodar map" width="277" height="353"></span>
 <span id="PHL" style="display: inline-block; vertical-align: middle">Philadelphia<br>
   <img class="map" src="phl.svg" title="Philadelphia" alt="Philadelphia map" width="685" height="310"></span>
 <span id="PHX" style="display: inline-block; vertical-align: middle">Phoenix<br>
@@ -362,6 +366,8 @@ function togglesidebar() {
   <img class="map" src="ebu.svg" title="Saint-Étienne" alt="Saint-Étienne map" width="125" height="266"></span>
 <span id="SLC" style="display: inline-block; vertical-align: middle">Salt Lake City<br>
   <img class="map" src="slc.svg" title="Salt Lake City" alt="Salt Lake City map" width="408" height="326"></span>
+<span id="SKD" style="display: none; vertical-align: middle">Samarkand<br>
+  <img class="map" src="skd.svg" title="Samarkand" alt="Samarkand map" width="185" height="190"></span>
 <span id="SFO" style="display: inline-block; vertical-align: middle">San Francisco<br>
   <img class="map" src="sfo.svg" title="San Francisco" alt="San Francisco map" width="348" height="359"></span>
 <span id="LED" style="display: none; vertical-align: middle">Sankt-Peterburg<br>
@@ -402,6 +408,8 @@ function togglesidebar() {
   <img class="map" src="tll.svg" title="Tallinn" alt="Tallinn map" width="277" height="201"></span>
 <span id="TPA" style="display: inline-block; vertical-align: middle">Tampa<br>
   <img class="map" src="tpa.svg" title="Tampa" alt="Tampa map" width="82" height="93"></span>
+<span id="KGF" style="display: none; vertical-align: middle">Temirtaý<br>
+  <img class="map" src="kgf.svg" title="Temirtaý" alt="Temirtaý map" width="261" height="87"></span>
 <span id="TSN" style="display: none; vertical-align: middle">Tianjin<br>
   <img class="map" src="tsn.svg" title="Tianjin" alt="Tianjin map" width="92" height="238"></span>
 <span id="TRN" style="display: none; vertical-align: middle">Torino<br>
@@ -550,11 +558,13 @@ function togglesidebar() {
 <input type="checkbox" id="OSTcheckbox" onclick="toggleshow('OST')"><a href="javascript:sidebarclick('OST')">Oostende</a><br>
 <input type="checkbox" id="ORNcheckbox" onclick="toggleshow('ORN')"><a href="javascript:sidebarclick('ORN')">Oran</a><br>
 <input type="checkbox" id="OSIcheckbox" onclick="toggleshow('OSI')"><a href="javascript:sidebarclick('OSI')">Osijek</a><br>
+<input type="checkbox" id="UKKcheckbox" onclick="toggleshow('UKK')"><a href="javascript:sidebarclick('UKK')">Óskemen</a><br>
 <input type="checkbox" id="OSLcheckbox" onclick="toggleshow('OSL')"><a href="javascript:sidebarclick('OSL')">Oslo</a><br>
 <input type="checkbox" id="OGXcheckbox" onclick="toggleshow('OGX')"><a href="javascript:sidebarclick('OGX')">Ouargla</a><br>
 <input type="checkbox" id="QPAcheckbox" onclick="toggleshow('QPA')"><a href="javascript:sidebarclick('QPA')">Padova</a><br>
 <input type="checkbox" id="PMOcheckbox" onclick="toggleshow('PMO')"><a href="javascript:sidebarclick('PMO')">Palermo</a><br>
 <input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')"><a href="javascript:sidebarclick('PAR')">Paris</a><br>
+<input type="checkbox" id="PWQcheckbox" onclick="toggleshow('PWQ')"><a href="javascript:sidebarclick('PWQ')">Pavlodar</a><br>
 <input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="javascript:sidebarclick('PHL')">Philadelphia</a><br>
 <input type="checkbox" id="PHXcheckbox" onclick="toggleshow('PHX')" checked><a href="javascript:sidebarclick('PHX')">Phoenix</a><br>
 <input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="javascript:sidebarclick('PDX')">Portland</a><br>
@@ -568,6 +578,7 @@ function togglesidebar() {
 <input type="checkbox" id="RTMcheckbox1" class="RTMcheckbox" onclick="toggleshowm('RTM')"><a href="javascript:sidebarclick('RTM')">Rotterdam</a><br>
 <input type="checkbox" id="EBUcheckbox" onclick="toggleshow('EBU')"><a href="javascript:sidebarclick('EBU')">Saint-Étienne</a><br>
 <input type="checkbox" id="SLCcheckbox" onclick="toggleshow('SLC')" checked><a href="javascript:sidebarclick('SLC')">Salt Lake City</a><br>
+<input type="checkbox" id="SKDcheckbox" onclick="toggleshow('SKD')"><a href="javascript:sidebarclick('SKD')">Samarkand</a><br>
 <input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="javascript:sidebarclick('SFO')">San Francisco</a><br>
 <input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="javascript:sidebarclick('LED')">Sankt-Peterburg</a><br>
 <input type="checkbox" id="SSZcheckbox" onclick="toggleshow('SSZ')" checked><a href="javascript:sidebarclick('SSZ')">Santos</a><br>
@@ -588,6 +599,7 @@ function togglesidebar() {
 <input type="checkbox" id="TCMcheckbox" onclick="toggleshow('TCM')" checked><a href="javascript:sidebarclick('TCM')">Tacoma</a><br>
 <input type="checkbox" id="TLLcheckbox" onclick="toggleshow('TLL')"><a href="javascript:sidebarclick('TLL')">Tallinn</a><br>
 <input type="checkbox" id="TPAcheckbox" onclick="toggleshow('TPA')" checked><a href="javascript:sidebarclick('TPA')">Tampa</a><br>
+<input type="checkbox" id="KGFcheckbox" onclick="toggleshow('KGF')"><a href="javascript:sidebarclick('KGF')">Temirtaý</a><br>
 <input type="checkbox" id="TSNcheckbox" onclick="toggleshow('TSN')"><a href="javascript:sidebarclick('TSN')">Tianjin</a><br>
 <input type="checkbox" id="TRNcheckbox" onclick="toggleshow('TRN')"><a href="javascript:sidebarclick('TRN')">Torino</a><br>
 <input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')" checked><a href="javascript:sidebarclick('YTO')">Toronto</a><br>

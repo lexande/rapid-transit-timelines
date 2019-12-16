@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="0 0 1200 400"
+   height="400"
+   width="1200"
+   id="svg2"
+   version="1.1">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <image
+     xlink:href="streetmap/kgfosm.png"
+     width="1300"
+     height="650"
+     preserveAspectRatio="none"
+     id="image10"
+     x="-110"
+     y="-125"
+     style="display:none" />
+  <path
+     id="path836"
+     d="m 74.66273,339.47436 9.77965,-5.75274 v -6.04037 l -3.73928,-10.06728 -14.09419,-18.12111 2.01345,-5.17746 38.54332,-25.8873 -43.72078,-46.88477 53.78806,-52.92515 55.80151,-10.64255 -7.76619,-45.73423 87.72918,-41.99496 267.21446,46.88478 24.16148,12.94365 98.94701,52.92514 100.09755,85.14046 6.04037,-1.72582 16.68293,-14.95711 1.15054,-7.19092 3.73928,-19.55929 6.61564,-6.90328 81.11354,-73.63498 6.61564,-2.01346 10.35492,3.45164 100.38518,13.51892 17.8335,-2.87636 90.8932,-19.84693 8.0538,2.30109 7.7662,6.04037 23.5862,30.20185 10.6426,6.90328 14.0941,4.31455"
+     style="opacity:1;fill:none;fill-opacity:0;fill-rule:nonzero;stroke:#00aa66;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</svg>
