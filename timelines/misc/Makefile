@@ -6,7 +6,11 @@ bymode: $(bymode)
 regrail = nerail carail
 regrail: $(regrail)
 
-$(bymode) brc sandy nyctrolleys: $(patsubst %.svg,%.svg.gz,$(wildcard $@/*.svg))
+define gzipRule
+$(1): $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg))
+endef
+
+$(foreach dir, $(bymode) brc sandy nyctrolleys, $(eval $(call gzipRule, $(dir))))
 
 hsr: $(patsubst %.svg,%.svg.gz,$(wildcard hsr/?/*.svg))
 
