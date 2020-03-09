@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
+   viewBox="0 0 5500 5400"
+   height="5400"
+   width="5500"
    id="svg2"
-   width="4750"
-   height="2700"
-   viewBox="0 0 4750 2700">
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,30 +26,38 @@
   <defs
      id="defs6" />
   <image
-     style="display:none"
+     xlink:href="../../timelines/streetmap/../streetmap/bkkosm.png"
      width="5573"
      height="3933.8823"
      preserveAspectRatio="none"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/bkkosm.png"
      id="image10"
-     x="-850"
-     y="-1183.8823" />
+     x="-100"
+     y="166.11719"
+     style="display:none" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1361.3506,1161.6704 -70.7586,-5.7528 -29.3389,7.4786 -24.7368,1.7258 -35.6669,0.5753 -47.1724,-8.6291 -34.5164,6.328 -73.0598,-48.323 -204.7973,-46.0218"
-     id="path4527" />
+     id="path4527"
+     d="m 2111.3506,2511.6699 -70.7586,-5.7528 -29.3389,7.4786 -24.7368,1.7258 -35.6669,0.5753 -47.1724,-8.6291 -34.5164,6.328 -73.0598,-48.323 -204.7973,-46.0218"
+     style="fill:none;fill-rule:evenodd;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1361.3506,1161.6704 46.0219,12.656 93.7695,3.4516 56.3768,1.7259 68.4575,-4.027 138.6409,24.7368 353.7931,76.5113 75.3608,13.2313 13.8066,-2.3011 32.7905,-93.7695 6.9033,-10.3549 185.238,-174.3079 21.2851,-23.0109 20.7099,-7.4785 30.4895,-4.0269 23.0109,-1.7259 24.1615,-6.9032 370.476,-41.4197 33.3659,-5.1775 16.6829,-6.328 32.7906,-25.312"
-     id="path4529" />
+     id="path4529"
+     d="m 2111.3506,2511.6699 46.0219,12.656 93.7695,3.4516 56.3768,1.7259 68.4575,-4.027 138.6409,24.7368 353.7931,76.5113 75.3608,13.2313 13.8066,-2.3011 32.7905,-93.7695 6.9033,-10.3549 185.238,-174.3079 21.2851,-23.0109 20.7099,-7.4785 30.4895,-4.0269 23.0109,-1.7259 24.1615,-6.9032 370.476,-41.4197 33.3659,-5.1775 16.6829,-6.328 32.7906,-25.312"
+     style="fill:none;fill-rule:evenodd;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:179.99992371px;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     x="89.453133"
+     y="5297.9609"
+     id="text3639"
      xml:space="preserve"
-     id="text3000"
+     style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453133"
+       y="5297.9609"
+       id="tspan2">1990</tspan></text>
+  <text
+     x="89.453133"
      y="206.96094"
-     x="89.453133"><tspan
-       style="line-height:179.99992371px"
-       id="tspan1"
+     id="text3639-3"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453133"
        y="206.96094"
-       x="89.453133">1990</tspan></text>
+       id="tspan1">1990</tspan></text>
 </svg>
