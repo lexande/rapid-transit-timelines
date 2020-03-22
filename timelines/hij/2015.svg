@@ -9,8 +9,8 @@
    version="1.1"
    id="svg2"
    width="8000"
-   height="5550"
-   viewBox="0 0 8000 5550">
+   height="5650"
+   viewBox="0 -100 8000 5650">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -65,12 +65,12 @@
        id="tspan2">2015</tspan></text>
   <text
      x="89.453125"
-     y="206.96094"
+     y="106.96094"
      id="text3817"
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="89.453125"
-       y="206.96094"
+       y="106.96094"
        id="tspan1">2015</tspan></text>
   <path
      style="opacity:1;fill:none;fill-opacity:0;fill-rule:nonzero;stroke:#fa052a;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -80,4 +80,13 @@
      style="opacity:1;fill:none;fill-opacity:0;fill-rule:nonzero;stroke:#0473bd;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 712.07314,3623.852 -50.93447,103.6472 -12.33898,40.8135 -58.37288,55.5255 -42.23729,24.2033 -41.76271,48.4068 -18.50847,23.7288 -23.25424,10.9153 -58.37288,17.0847 -48.88135,29.4238 -62.64407,16.1356 -14.23729,11.3898 -17.55932,21.8305 -26.57627,34.1695 -51.25424,113.4237 -17.55932,23.7288 -26.57627,20.8814 -6.64407,15.661 -4.27118,18.9831 v 21.3559 l -16.1356,69.2881 v 21.8305 l 12.81356,30.8475 4.27119,44.6102 83.52542,371.1186 10.44068,29.8983 37.01695,64.5424 6.64407,25.6271 v 22.3051 l -1.89831,19.9322 -24.20339,95.8644 v 17.0847 l 5.69492,21.8306 11.8644,23.7288 3.79662,32.2712 -4.74577,33.6949 -46.98305,131.9322"
      id="path1572" />
+
+  <path
+     id="path845"
+     d="m 1466.2096,3695.8671 39.7537,-60.7997"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path847"
+     d="m 1506.483,3630.6503 -19.747,-147.0627"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
