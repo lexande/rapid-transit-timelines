@@ -26,29 +26,29 @@
   <defs
      id="defs6" />
   <image
-     style="display:none"
+     xlink:href="../../streetmap/tyo2osm.png"
      y="-779.40039"
      x="9556.5996"
      id="image10"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/tyo2osm.png"
      preserveAspectRatio="none"
      height="15629.4"
-     width="5484" />
+     width="5484"
+     style="display:none" />
   <image
+     xlink:href="../../streetmap/tyo1osm.png"
      width="6306.6001"
      height="15629.4"
      preserveAspectRatio="none"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/tyo1osm.png"
      id="image4552"
      x="3250"
      y="-779.40039"
      style="display:none" />
   <image
+     xlink:href="../../streetmap/tyo3osm.png"
      style="display:none"
      width="6032.3999"
      height="15629.4"
      preserveAspectRatio="none"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/tyo3osm.png"
      id="image4601"
      x="15040.6"
      y="-779.40039" />
@@ -108,10 +108,6 @@
      id="path4748"
      d="m 13861,7344 -124.714,13.0074 -42.786,12.9926 -27,-6.5 -83.5,-66 -28,-13.5 -31,-15 -116,-136 -41,-28.5 -101.5,-108.5 -90.5,-32 -83.5,-66 -122.5,-33.5 -22.5,-10 -51.5,14 h -25.5 l -21.5,-14 -49,6 -13.5,-9 -18.5,-19 -53.5,-152.5 9,-36 13.207,-23.4393 80.232,-122.5858 11.561,-35.9749 -19,-59.5 -10,-8.5 -100.5,-19 -30.5,-19.5 -61.5,-154.5 -28.5,-27 -88,-72 -12,-3 -21,-2 -36.5,-25 -44.5,-23 -31,-26.5 -26,-12 -37,1 -46.5,-10 -36.5,-17 -78.5,-74 -285.5,-160.5 -92.5,-90.5 -72.5,-54 -8.5,-15.5 -4.5,-65.5 -9.5,-45 -9.5,-7.5 -44,-14.75 -45,-29 -47,-12 -22.75,-14.5 -18.5,-20.75 -12.5,-17.25 -59.25,-37 -10.5,-16.25 -5.5,-27 -9.5,-14.25 -63,-48 -127,-63.5"
      style="fill:none;fill-rule:evenodd;stroke:#ecb404;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#c04c09;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 11973.5,5822 -25.889,-2.5 -72.879,64.4393 -26.328,18.4749 -23.879,9.0858 -123.775,18.875 -115.75,4.125 -193.5,26 -33.5,-1.5 -39.5,-14 -116.5,-79 -101.5,-27 -49.5,-15.5 -107.293,-29 -90.207,-46.5 -35.25,-4.3785 -202.233,25.1022"
-     id="path4750" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#0033cc;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 13494.5,6336 10.682,-13.1137 10.085,-2.2218 25.65,16.1669 62.944,22.2099 22.501,-0.025 17.685,-5.5492 25.922,-1.9171 24.531,-11.5503 18.25,-22.5 12.5,-28.75 7.553,-70.1893 21.793,-34.4394 7.647,-21.8535 10.06,-72.2678 -13.353,-44.3536 3.646,-17.0857 5.293,-16.0858 20.611,-24.7249 3,-14.5 -4.75,-31.75 -45.5,-99.5 -17,-13.25 -26.25,-8.5 -21.5,4 -50.5,11.25 -19.75,-3 -14,-12.25 -9.25,-17.75 4.159,-16.4948 19.195,-63.9749 26.879,-35.7929 54.017,-74.9874 6.75,-21 0.5,-23.5 -6,-27.25 -22,-24.5 -247.25,-169.75 -58.75,-74.25 -5.25,-26.5 113.561,-374.068 62.646,-94.25 18.293,-44.432 4.25,-24.5 19.75,-261.75 -6.25,-51.5 -117.922,-297.0074 -28.567,-146.6736 -45.37,-260.8154 -11.962,-35.0452 -88.679,-228.9584 -5.75,-61.25 11.75,-161.25 -217.75,-910.5 -13.5,-23 -24,-20.25 -143.5,-74.5 -21,-20.5 -7.75,-19.5 -169,-553.5 -24.5,-36.25 -117.794,-78.3578 -190.062,-125.9852 -366.826,-342.74521 -12.403,-25.52041 -0.07,-16.43147 29.493,-76.81082"
@@ -586,4 +582,8 @@
      id="path6471"
      d="m 9616.5,12078.5 -14.5,29 -13,81.5 1,44 -2.5,20 -11,26 -8.5,10 -12,44 2,4 7.5,8.5 v 10.5 l -16,25.5 0.5,14 20,22 11,18.5 10,3 18,31.5 18.3788,13.425 11.1643,0.817"
      style="fill:none;fill-rule:evenodd;stroke:#00a54f;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#ecb404;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 10616.638,5773.5773 -131.719,14.0775 -198.253,-99.7728 -211.918,-260.8894 -20.117,-14.6739 -30.288,-10.1037"
+     id="path4635-3" />
 </svg>
