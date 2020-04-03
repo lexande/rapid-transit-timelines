@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<head><title>Jakarta Rapid Transit Timeline</title>
+<head><title>Tehran Rapid Transit Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <style type="text/css">
 div#preloader {
@@ -19,8 +19,8 @@ body {
 }
 </style>
 <script type="text/javascript">
-start=2005;
-count=4;
+start=1980;
+count=9;
 step=5;
 index=count-2;
 function update() {
@@ -86,9 +86,14 @@ window.onhashchange=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img id="map" src="2015.svg" title="2015" alt="2015 map" width="859" height="1609">
+<img id="map" src="2015.svg" title="2015" alt="2015 map" width="2304" height="1543">
 </a>
 <p>
+<a href="#1980" onclick="gotoyear(1980)">1980</a>
+<a href="#1985" onclick="gotoyear(1985)">1985</a>
+<a href="#1990" onclick="gotoyear(1990)">1990</a>
+<a href="#1995" onclick="gotoyear(1995)">1995</a>
+<a href="#2000" onclick="gotoyear(2000)">2000</a>
 <a href="#2005" onclick="gotoyear(2005)">2005</a>
 <a href="#2010" onclick="gotoyear(2010)">2010</a>
 <a href="#2015" onclick="gotoyear(2015)">2015</a>
@@ -97,21 +102,26 @@ window.onhashchange=function() {
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).<br>
+Based on frequent midday service at the end of the year in question (<a href="../../notes.html">notes</a>).<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
+<img src="1980.svg" width="1" height="1" alt="">
+<img src="1985.svg" width="1" height="1" alt="">
+<img src="1990.svg" width="1" height="1" alt="">
+<img src="1995.svg" width="1" height="1" alt="">
+<img src="2000.svg" width="1" height="1" alt="">
 <img src="2005.svg" width="1" height="1" alt="">
 <img src="2010.svg" width="1" height="1" alt="">
 <img src="2015.svg" width="1" height="1" alt="">
 <img src="2020.svg" width="1" height="1" alt="">
 </div>
-See also: <a href="../../subtimeline">New York</a> -
-<a href="../../ttimeline">Boston</a> -
-<a href="../lon">London</a> -
-<a href="../">more cities</a>
+See also: <a href="../../../subtimeline">New York</a> -
+<a href="../../../ttimeline">Boston</a> -
+<a href="../../lon">London</a> -
+<a href="../../">more cities</a>
 <p>
 <div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>) based on map data by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors and historical sources.</div>
 </body></html>
