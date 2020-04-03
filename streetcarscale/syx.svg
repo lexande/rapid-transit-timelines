@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 250 450"
-   height="450"
-   width="250"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="275"
+   height="500"
+   viewBox="0 0 275 500">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,15 +27,15 @@
      id="defs6" />
   <image
      xlink:href="streetmap/syxosm.png"
-     width="552.90002"
-     height="1105.8"
+     width="641.09998"
+     height="1282.2"
      preserveAspectRatio="none"
      id="image10"
-     x="-125"
-     y="-130.80005"
+     x="-150"
+     y="-157.19995"
      style="display:none" />
   <path
-     id="path836"
-     d="m 145.37846,72.97139 -18.79226,-0.76703 -8.43735,-4.21867 -48.70647,-0.38351 -3.45164,6.13624 20.70984,105.85029 11.12195,28.76367 21.86039,25.31203 29.53069,26.46257 16.10766,14.19007 19.9428,32.98234 -8.82085,13.03953 -23.39445,47.93944 -16.10765,16.87468"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#fd0810;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#fd0810;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 163.5099,79.077622 -21.79005,-0.889388 -9.7833,-4.891643 -56.47624,-0.444688 -4.002256,7.115108 24.013526,122.735789 12.89615,33.35212 25.34761,29.34987 34.2415,30.68394 18.6772,16.45371 23.12412,38.24376 -10.22797,15.11963 -27.12639,55.58686 -18.67719,19.56657"
+     id="path836" />
 </svg>
