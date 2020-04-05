@@ -11,6 +11,9 @@ span {
         margin-left: 10px;
         margin-right: 10px;
 }
+body {
+	text-align: center;
+}
 </style>
 <script language="JavaScript" type="text/javascript">
 posdict = {};
@@ -67,7 +70,7 @@ document.onkeydown=function(keypress) {
   })();
 </script>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<center>
+</head><body>
 <h3>Unrealised Rapid Transit Plans</h3>
 <span id="nyc" style="display: inline-block; vertical-align: middle">New York<br>
 <a href="javascript:next('nyc');">
@@ -79,14 +82,14 @@ document.onkeydown=function(keypress) {
 <br><a class="setsrc" href="javascript:setsrc('nyc','../../subtimeline/small/1965.svg',4);">1965 actual</a>
 <br><a class="setsrc" href="javascript:setsrc('nyc','nyc1968.svg',5);">1968 proposal</a> (<a href="https://en.wikipedia.org/wiki/Program_for_Action">info</a>)
 <br><a class="setsrc" href="javascript:setsrc('nyc','../../subtimeline/small/2020.svg',6);">2020 actual</a>
-</small></span>
+<br>(<a href="../../subtimeline">timeline</a>)</small></span>
 <span id="chi" style="display: inline-block; vertical-align: middle">Chicago<br>
 <a href="javascript:next('chi');">
 <img class="map" src="../../timelines/chi/small/1975.svg" id="chimap" title="Chicago" alt=" map" width="935" height="1229"></a><small>
 <br><a class="setsrc" href="javascript:setsrc('chi','../../timelines/chi/small/1975.svg',0);">1975 actual</a>
 <br><a class="setsrc" href="javascript:setsrc('chi','chi1976.svg',1);">1976 proposal</a> (<a href="http://www.chicago-l.org/plans/CUTD.html">info</a>)
 <br><a class="setsrc" href="javascript:setsrc('chi','../../timelines/chi/small/2020.svg',2);">2020 actual</a>
-</small></span>
+<br>(<a href="../../timelines/chi">timeline</a>)</small></span>
 <span id="bos" style="display: inline-block; vertical-align: middle">Boston<br>
 <a href="javascript:next('bos');">
 <img class="map" src="bos1892.svg" id="bosmap" title="Boston" alt=" map" width="707" height="816"></a><small>
@@ -96,20 +99,14 @@ document.onkeydown=function(keypress) {
 <br><a class="setsrc" href="javascript:setsrc('bos','../../ttimeline/small/1945.svg',3);">1945 actual</a>
 <br><a class="setsrc" href="javascript:setsrc('bos','bos1945.svg',4);">1945 proposal</a> (<a href="https://commons.wikimedia.org/wiki/File:1945_BERy_extensions_map.jpg">info</a>)
 <br><a class="setsrc" href="javascript:setsrc('bos','../../ttimeline/small/2020.svg',5);">2020 actual</a>
-</small></span>
+<br>(<a href="../../ttimeline">timeline</a>)</small></span>
 <span id="sfo" style="display: inline-block; vertical-align: middle">San Francisco<br>
 <a href="javascript:next('sfo');">
 <img class="map" src="sfo1961.svg" id="sfomap" title="San Francisco" alt=" map" width="2022" height="2674"></a><small>
 <br><a class="setsrc" href="javascript:setsrc('sfo','sfo1961.svg',0);">1961 proposal</a> (<a href="https://www.flickr.com/photos/walkingsf/4952714444/in/album-72157622518181915/">info</a>)
 <br><a class="setsrc" href="javascript:setsrc('sfo','sfo1966.svg',1);">1966 proposal</a> (<a href="https://www.flickr.com/photos/walkingsf/4408099420/in/album-72157622518181915/">info</a>)
 <br><a class="setsrc" href="javascript:setsrc('sfo','actualsfo2015.svg',2);">2015 actual</a>
-</small></span>
-<span id="zrh" style="display: inline-block; vertical-align: middle">Zürich<br>
-<a href="javascript:next('zrh');">
-<img class="map" src="zrh1973.svg" id="zrhmap" title="Zürich" alt=" map" width="1239" height="1152"></a><small>
-<br><a class="setsrc" href="javascript:setsrc('zrh','zrh1973.svg',0);">1973 proposal</a>
-<br><a class="setsrc" href="javascript:setsrc('zrh','../../timelines/zrh/small/2015.svg',1);">2015 actual</a> (<a href="https://en.wikipedia.org/wiki/Z%C3%BCrich_Underground_Railway">info</a>)
-</small></span>
+<br>(<a href="../../timelines/sfo">timeline</a>)</small></span>
 <span id="sea" style="display: inline-block; vertical-align: middle">Seattle<br>
 <a href="javascript:next('sea');">
 <img class="map" src="sea1970.svg" id="seamap" title="Seattle" alt=" map" width="870" height="2512"></a><small>
@@ -119,7 +116,20 @@ document.onkeydown=function(keypress) {
 <br><a class="setsrc" href="javascript:setsrc('sea','actualsea2020.svg',3);">2020 actual</a>
 <br><a class="setsrc" href="javascript:setsrc('sea','sea2024.svg',4);">2024 projected</a>
 <br><a class="setsrc" href="javascript:setsrc('sea','sea2041.svg',5);">2041 projected</a> (<a href="https://www.soundtransit.org/system-expansion">info</a>)
-</small></span>
+<br>(<a href="../../timelines/sea">timeline</a>)</small></span>
+<span id="man" style="display: inline-block; vertical-align: middle">Manchester<br>
+<a href="javascript:next('man');">
+<img class="map" src="actualman1970.svg" id="manmap" title="Manchester" alt=" map" width="728" height="1239"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('man','actualman1970.svg',0);">1970 actual</a>
+<br><a class="setsrc" href="javascript:setsrc('man','man1971.svg',1);">1971 proposal</a> (<a href="https://en.wikipedia.org/wiki/Picc-Vic_tunnel">info</a>)
+<br><a class="setsrc" href="javascript:setsrc('man','actualman2020.svg',2);">2020 actual</a>
+<br>(<a href="../../timelines/man">timeline</a>)</small></span>
+<span id="zrh" style="display: inline-block; vertical-align: middle">Zürich<br>
+<a href="javascript:next('zrh');">
+<img class="map" src="zrh1973.svg" id="zrhmap" title="Zürich" alt=" map" width="1239" height="1250"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('zrh','zrh1973.svg',0);">1973 proposal</a> (<a href="https://en.wikipedia.org/wiki/Z%C3%BCrich_Underground_Railway">info</a>)
+<br><a class="setsrc" href="javascript:setsrc('zrh','../../timelines/zrh/small/2020.svg',1);">2020 actual</a>
+<br>(<a href="../../timelines/zrh">timeline</a>)</small></span>
 <span id="hnl" style="display: inline-block; vertical-align: middle">Honolulu<br>
 <a href="javascript:next('hnl');">
 <img class="map" src="hnl2020.svg" id="hnlmap" title="Honolulu" alt=" map" width="717" height="445"></a><small>
@@ -130,7 +140,7 @@ document.onkeydown=function(keypress) {
 <a href="javascript:next('pvd');">
 <img class="map" src="pvd1914.svg" id="pvdmap" title="Providence" alt=" map" width="261" height="218"></a><small>
 <br><a class="setsrc" href="javascript:setsrc('pvd','pvd1914.svg',0);">1914 proposal</a> (<a href="https://books.google.com/books?id=5toRAQAAMAAJ&&pg=PA627">info</a>)
-</small></span>
+<br>(<a href="../../timelines/pvd">timeline</a>)</small></span>
 <span id="cvg" style="display: inline-block; vertical-align: middle">Cincinnati<br>
 <a href="javascript:next('cvg');">
 <img class="map" src="cvg1920.svg" id="cvgmap" title="Cincinnati" alt=" map" width="304" height="315"></a><small>
@@ -145,7 +155,8 @@ document.onkeydown=function(keypress) {
 <a href="javascript:next('msy');">
 <img class="map" src="msy1959.svg" id="msymap" title="New Orleans" alt=" map" width="609" height="294"></a><small>
 <br><a class="setsrc" href="javascript:setsrc('msy','msy1959.svg',0);">1959 proposal</a> (<a href="https://babel.hathitrust.org/cgi/pt?id=uiug.30112117747748">info</a>)
-</small></span><p>
+</small></span>
+<p>
 <a href=".">smaller versions</a>
 <p>
 Based on planned frequent midday service (<a href="notes.html">notes</a>).<br>

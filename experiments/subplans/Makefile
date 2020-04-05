@@ -3,8 +3,21 @@ all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
 %.svg.gz : %.svg
 	gzip -f --keep $<
 
+NYC="../../subtimeline/small/1890.svg nyc1891.svg ../../subtimeline/small/1935.svg nyc1939.svg ../../subtimeline/small/1965.svg nyc1968.svg ../../subtimeline/small/2020.svg"
+CHI="../../timelines/chi/small/1975.svg chi1976.svg ../../timelines/chi/small/2020.svg"
+BOS="bos1892.svg ../../ttimeline/small/1915.svg  bos1917.svg ../../ttimeline/small/1945.svg bos1945.svg ../../ttimeline/small/2020.svg"
+SFO="sfo1961.svg sfo1966.svg actualsfo2015.svg"
+SEA="sea1970.svg actualsea2000.svg sea2002.svg actualsea2020.svg sea2024.svg sea2041.svg"
+ZRH="zrh1973.svg ../../timelines/zrh/small/2020.svg"
+HNL="hnl2020.svg hnl2025.svg"
+PVD="pvd1914.svg"
+CVG="cvg1920.svg"
+HAV="hav1921.svg"
+MSY="msy1959.svg"
+MAN="actualman1970.svg man1971.svg actualman2020.svg"
+
 index.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/boilerplate/part4
-	./makeindex.sh 10 ../../subtimeline/small/1890.svg nyc1891.svg ../../subtimeline/small/1935.svg nyc1939.svg ../../subtimeline/small/1965.svg nyc1968.svg ../../subtimeline/small/2020.svg ../../timelines/chi/small/1975.svg chi1976.svg ../../timelines/chi/small/2020.svg bos1892.svg ../../ttimeline/small/1915.svg  bos1917.svg ../../ttimeline/small/1945.svg bos1945.svg ../../ttimeline/small/2020.svg '<br>' sfo1961.svg sfo1966.svg actualsfo2015.svg zrh1973.svg ../../timelines/zrh/small/2015.svg sea1970.svg actualsea2000.svg sea2002.svg actualsea2020.svg sea2024.svg sea2041.svg '<br>' hnl2020.svg hnl2025.svg pvd1914.svg cvg1920.svg hav1921.svg msy1959.svg > $@
+	./makeindex.sh 10 $(NYC) $(CHI) $(BOS) '<br>' $(SFO) $(SEA) $(MAN) $(ZRH) '<br>' $(HNL) $(PVD) $(CVG) $(HAV) $(MSY) > $@
 
 large.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/boilerplate/part4
-	./makeindex.sh 30 ../../subtimeline/small/1890.svg nyc1891.svg ../../subtimeline/small/1935.svg nyc1939.svg ../../subtimeline/small/1965.svg nyc1968.svg ../../subtimeline/small/2020.svg ../../timelines/chi/small/1975.svg chi1976.svg ../../timelines/chi/small/2020.svg bos1892.svg ../../ttimeline/small/1915.svg  bos1917.svg ../../ttimeline/small/1945.svg bos1945.svg ../../ttimeline/small/2020.svg sfo1961.svg sfo1966.svg actualsfo2015.svg zrh1973.svg ../../timelines/zrh/small/2015.svg sea1970.svg actualsea2000.svg sea2002.svg actualsea2020.svg sea2024.svg sea2041.svg hnl2020.svg hnl2025.svg pvd1914.svg cvg1920.svg hav1921.svg msy1959.svg > $@
+	./makeindex.sh 30 $(NYC) $(CHI) $(BOS) $(SFO) $(SEA) $(MAN) $(ZRH) $(HNL) $(PVD) $(CVG) $(HAV) $(MSY) > $@

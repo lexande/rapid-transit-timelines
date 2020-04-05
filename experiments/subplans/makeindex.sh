@@ -14,6 +14,9 @@ span {
         margin-left: 10px;
         margin-right: 10px;
 }
+body {
+	text-align: center;
+}
 </style>
 <script language="JavaScript" type="text/javascript">
 posdict = {};
@@ -70,11 +73,11 @@ document.onkeydown=function(keypress) {
   })();
 </script>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<center>
+</head><body>
 <h3>Unrealised Rapid Transit Plans</h3>
 HEREDOC
 oldcity=""
-for file in $@; do
+for file in $@ '<p>'; do
   if [ -f $file ]; then
     city=`grep ^$file names | awk -F"\t" '{print $2}'`
     NAME=`grep ^$file names | awk -F"\t" '{print $3}'`
@@ -87,6 +90,9 @@ for file in $@; do
       H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $altfile | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
       index=0
       if [ ! -z $oldcity ]; then
+        if [ -d ../../timelines/$oldcity ]; then
+          echo -n '<br>(<a href="../../timelines/'$oldcity'">timeline</a>)'
+        fi
         echo "</small></span>"
       fi
       echo '<span id="'$city'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
@@ -103,12 +109,15 @@ for file in $@; do
     index=$(expr $index + 1)
   else
     if [ ! -z $oldcity ]; then
+      if [ -d ../../timelines/$oldcity ]; then
+        echo -n '<br>(<a href="../../timelines/'$oldcity'">timeline</a>)'
+      fi
       echo "</small></span>"
+      unset oldcity
     fi
     echo $file
   fi
-done
-echo '</small></span><p>'
+done | sed -e's!timelines/nyc!subtimeline!g; s!timelines/bos!ttimeline!g;'
 if [ $SCALE = 10 ]; then
   cat <<HEREDOC
 <a href="large.html">larger versions</a>
