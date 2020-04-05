@@ -20,9 +20,9 @@ body {
 </style>
 <script type="text/javascript">
 start=1840;
-count=36;
+count=37;
 step=5;
-index=count-1;
+index=count-2;
 function update() {
 	map = document.getElementById("map");
 	map.src=(start+step*index) + ".svg";
@@ -125,6 +125,7 @@ window.onhashchange=function() {
 <a href="#2005" onclick="gotoyear(2005)">2005</a>
 <a href="#2010" onclick="gotoyear(2010)">2010</a>
 <a href="#2015" onclick="gotoyear(2015)">2015</a>
+<a href="#2020" onclick="gotoyear(2020)">2020</a>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
@@ -173,6 +174,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="2005.svg" width="1" height="1" alt="">
 <img src="2010.svg" width="1" height="1" alt="">
 <img src="2015.svg" width="1" height="1" alt="">
+<img src="2020.svg" width="1" height="1" alt="">
 </div>
 See also: <a href="../../subtimeline">New York</a> -
 <a href="../../ttimeline">Boston</a> -
