@@ -22,7 +22,7 @@ body {
 start=2010;
 count=3;
 step=5;
-index=count-2;
+index=count-1;
 function update() {
 	map = document.getElementById("map");
 	map.src=(start+step*index) + ".svg";
@@ -86,7 +86,7 @@ window.onhashchange=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img id="map" src="2015.svg" title="2015" alt="2015 map" width="391" height="337">
+<img id="map" src="2020.svg" title="2020" alt="2020 map" width="391" height="337">
 </a>
 <p>
 <a href="#2010" onclick="gotoyear(2010)">2010</a>

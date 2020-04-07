@@ -15,13 +15,8 @@ else
 	COUNT=$(expr 1 + \( $END - $START \) / 5)
 	SNAME="five years"
 fi
-if [ $END == 2020 ] && [ $START != 2020 ]; then
-	INDEX="count-2"
-	DISPLAY=$(expr $END - $STEP)
-else
-	INDEX="count-1"
-	DISPLAY=$END
-fi
+INDEX="count-1"
+DISPLAY=$END
 
 if [ $(basename $(pwd)) == 'uncropped' ]; then
 	CITYNAME=`cat ../name | sed -e's/<br>/ /'`

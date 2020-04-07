@@ -22,7 +22,7 @@ body {
 start=1935;
 count=18;
 step=5;
-index=count-2;
+index=count-1;
 function update() {
 	map = document.getElementById("map");
 	map.src=(start+step*index) + ".svg";
@@ -86,7 +86,7 @@ window.onhashchange=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img id="map" src="2015.svg" title="2015" alt="2015 map" width="2163" height="1978">
+<img id="map" src="2020.svg" title="2020" alt="2020 map" width="2163" height="1978">
 </a>
 <p>
 <a href="#1935" onclick="gotoyear(1935)">1935</a>
@@ -110,8 +110,6 @@ window.onhashchange=function() {
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
-<p>
-<a href="uncropped">click here for uncropped version</a>
 <p>
 Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
