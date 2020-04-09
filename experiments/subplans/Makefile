@@ -17,8 +17,8 @@ HAV="hav1921.svg"
 MSY="msy1959.svg"
 MAN="actualman1970.svg man1971.svg actualman2020.svg"
 
-index.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/boilerplate/part4 Makefile
+index.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4 Makefile
 	./makeindex.sh 10 $(NYC) $(BOS) $(PIT) $(CHI) '<br>' $(SFO) $(SEA) '<br>' $(MAN) $(ZRH) '<br>' $(HNL) $(PVD) $(CVG) $(HAV) $(MSY) > $@
 
-large.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/boilerplate/part4 Makefile
+large.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4 Makefile
 	./makeindex.sh 30 $(NYC) $(BOS) $(PIT) $(CHI) $(SFO) $(SEA) $(MAN) $(ZRH) $(HNL) $(PVD) $(CVG) $(HAV) $(MSY) > $@

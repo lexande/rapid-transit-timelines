@@ -192,4 +192,4 @@ cat <<HEREDOC
 <a href="../..">other rapid transit timelines</a> -
 <a href="..">miscellaneous timelines and maps</a>
 HEREDOC
-cat ~/timelines/scripts/boilerplate/part4
+cat ~/timelines/scripts/template/part4

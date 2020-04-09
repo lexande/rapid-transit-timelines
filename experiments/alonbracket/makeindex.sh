@@ -74,4 +74,4 @@ Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-wid
 <p>
 See also: <a href="/timelines">rapid transit timelines</a> - <a href="/timelines/misc/">miscellaneous timelines and maps</a>
 HEREDOC
-cat ~/timelines/scripts/boilerplate/part4
+cat ~/timelines/scripts/template/part4

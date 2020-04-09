@@ -141,4 +141,4 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 See also: <a href="/timelines">rapid transit timelines</a> - <a href="/timelines/misc/">miscellaneous timelines and maps</a>
 HEREDOC
 fi
-cat ~/timelines/scripts/boilerplate/part4
+cat ~/timelines/scripts/template/part4
