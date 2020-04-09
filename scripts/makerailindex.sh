@@ -8,13 +8,27 @@ NATIVEW=$(grep '^   width=' $1/${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
 W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' $1/${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*${SCALE}/17.25)}")
 H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' $1/${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*$W/$NATIVEW)}")
 DIRNAME=$(basename $(realpath $1))
+PREVDIM=$(file preview.gif | sed -e's/.* \([0-9]* x [0-9]*\).*/\1/')
 cat <<HEREDOC | sed -e"s/START/${START}/g;
 s/COUNT/${COUNT}/g; 
-s!NAME!${NAME}!g;"
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+s!NAME!${NAME}!g;
+s/URL/${DIRNAME}/g;
+s/PREVW/${PREVDIM% x*}/g;
+s/PREVH/${PREVDIM#*x }/g;
+s/START/${START}/g;
+s/END/${END}/g;"
+<!DOCTYPE HTML>
 <html>
 <head><title>NAME Passenger Rail Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="NAME Passenger Rail Timeline" />
+<meta property="og:image" content="https://alexander.co.tz/timelines/misc/URL/preview.gif" />
+<meta property="og:image:width" content="PREVW" />
+<meta property="og:image:height" content="PREVH" />
+<meta property="og:url" content="https://alexander.co.tz/timelines/misc/URL/preview.gif" />
+<meta property="og:description" content="Maps every 25 years, START-END" />
+<meta name="twitter:card" content="summary_large_image" />
 <style type="text/css">
 div#preloader {
 	position: absolute;

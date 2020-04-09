@@ -18,7 +18,7 @@ fi
 INDEX="count-1"
 DISPLAY=$END
 
-if [ $(basename $(pwd)) == 'uncropped' ]; then
+if [ $(basename ${PWD}) == 'uncropped' ]; then
 	CITYNAME=`cat ../name | sed -e's/<br>/ /'`
 else
 	CITYNAME=`cat name | sed -e's/<br>/ /'`
@@ -27,7 +27,20 @@ NATIVEW=$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
 W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*30/138)}")
 H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*$W/$NATIVEW)}")
 
+if [ $(basename ${PWD}) == 'nyc' ]; then
+	URL="subtimeline"
+elif [ $(basename ${PWD}) == 'bos' ]; then
+	URL="ttimeline"
+elif [ $(basename ${PWD}) == 'uncropped' ]; then
+	URL=timelines/$(basename ${PWD%/*})/uncropped
+else
+	URL=timelines/$(basename ${PWD})
+fi
+
+PREVDIM=$(file preview.gif | sed -e's/.* \([0-9]* x [0-9]*\).*/\1/')
+
 sed -e"s/START/${START}/g; 
+s/END/${END}/g;
 s/STEP/${STEP}/g; 
 s/COUNT/${COUNT}/g; 
 s!CITYNAME!${CITYNAME}!g;
@@ -35,7 +48,10 @@ s/DISPLAY/${DISPLAY}/g;
 s/INDEX/${INDEX}/g;
 s/SNAME/${SNAME}/g;
 s/WIDTH/${W}/g;
-s/HEIGHT/${H}/g;" ~/timelines/scripts/boilerplate/part1 > index.html
+s/HEIGHT/${H}/g;
+s/PREVW/${PREVDIM% x*}/g;
+s/PREVH/${PREVDIM#*x }/g;
+s!URL!${URL}!g;" ~/timelines/scripts/boilerplate/part1 > index.html
 for year in $(seq $START $STEP $END); do
 	echo \<a href=\"#${year}\" onclick=\"gotoyear\(${year}\)\"\>${year}\</a\> >> index.html
 done
@@ -50,14 +66,14 @@ done
 sed -e"s!<a href=.*>${CITYNAME}</a>!${CITYNAME}!" ~/timelines/scripts/boilerplate/part3 >> index.html
 if [ -f seealso ]; then
 	cat seealso >> index.html
-elif [ $(basename $(pwd)) == 'uncropped' ] && [ -f ../seealso ]; then
+elif [ $(basename ${PWD}) == 'uncropped' ] && [ -f ../seealso ]; then
 	cat ../seealso >> index.html
 fi
 cat ~/timelines/scripts/boilerplate/part4 >> index.html
-if [ $(basename $(pwd)) == 'uncropped' ]; then
+if [ $(basename ${PWD}) == 'uncropped' ]; then
 	sed -e's!\.\.!\.\./\.\.!' -i index.html
 fi
-if [ $(basename $(pwd)) == 'nyc' -o $(basename $(pwd)) == 'bos' ]; then
+if [ $(basename ${PWD}) == 'nyc' -o $(basename ${PWD}) == 'bos' ]; then
 	sed -e's!\.\./\.\.!!; s!\.\.!/timelines!' -i index.html
 fi
 popd
