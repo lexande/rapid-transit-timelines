@@ -1,4 +1,4 @@
-all: $(patsubst routes%,%.svg.gz,$(wildcard routes????))
+all: $(patsubst routes%,%.svg.gz,$(wildcard routes????)) $(patsubst routes%,%.svg,$(wildcard routes????))
 
 %.svg : routes% scripts/makeyear.sh scripts/path.pl scripts/circ.pl
 	scripts/makeyear.sh $*
@@ -7,4 +7,3 @@ all: $(patsubst routes%,%.svg.gz,$(wildcard routes????))
 	gzip -f --keep $<
 
 .PHONY: all
-.SECONDARY:

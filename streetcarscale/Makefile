@@ -8,3 +8,5 @@ index.html: names makeindex.sh $(wildcard ???.svg) ~/timelines/scripts/template/
 
 extra.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4
 	./makeindex.sh $(wildcard *.svg) > $@
+
+.PHONY: all

@@ -12,4 +12,4 @@ large.html: name cities ~/timelines/scripts/makerailindex.sh ~/timelines/scripts
 preview.gif: $(wildcard *.svg)
 	~/timelines/scripts/previewgif.sh .
 
-.SECONDARY:
+.PHONY: all

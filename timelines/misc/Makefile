@@ -21,4 +21,3 @@ $(regrail) nycflights:
 	gzip -f --keep $<
 
 .PHONY: all bymode $(bymode) regrail $(regrail) hsr nyctrolleys nycflights brc
-.SECONDARY:
