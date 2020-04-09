@@ -2,6 +2,10 @@ cat <<HEREDOC
 <!DOCTYPE HTML>
 <html>
 <head><title>Streetcar Scale Comparison</title>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Streetcar Scale Comparison" />
+<meta property="og:image" content="https://alexander.co.tz/streetcarscale/preview.png" />
+<meta name="twitter:card" content="summary_large_image" />
 <style type="text/css">
 span {
 	margin-top: 10px;
