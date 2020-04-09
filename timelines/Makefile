@@ -6,10 +6,10 @@ $(1)/small/%.svg: ;
 $(1)/%.svg:: $(1)/uncropped/%.svg $(1)/cropscript.pl
 	$(1)/cropscript.pl $$< > $$@
 
-$(1)/index.html: $(1)/name $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg))) $(subst uncropped/,,$(wildcard $(1)/uncropped/*.svg)) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/boilerplate/*) $(wildcard $(1)/seealso)
+$(1)/index.html: $(1)/name $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg)) $(wildcard $(1)/uncropped/*.svg)) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/boilerplate/*) $(wildcard $(1)/seealso)
 	~/timelines/scripts/makeindex.sh $(1)
 
-$(1): $(1)/uncropped $(1)/index.html $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg))) $(subst uncropped/,,$(wildcard $(1)/uncropped/*.svg))
+$(1): $(1)/uncropped $(1)/index.html $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg)) $(wildcard $(1)/uncropped/*.svg))
 
 else
 $(1)/small/%.svg: $(1)/%.svg
@@ -18,10 +18,10 @@ $(1)/small/%.svg: $(1)/%.svg
 	~/timelines/scripts/from-year-range.sh $(1)
 	svgo --disable=cleanupNumericValues $$@
 
-$(1)/index.html: $(wildcard $(1)/name $(1)/../name) $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/boilerplate/*) $(wildcard $(1)/seealso $(1)/../seealso)
+$(1)/index.html: $(wildcard $(1)/name $(1)/../name $(1)/seealso $(1)/../seealso) $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/boilerplate/*)
 	~/timelines/scripts/makeindex.sh $(1)
 
-$(1): $(1)/index.html $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) $(subst $(1),$(1)/small, $(wildcard $(1)/*.svg)) $(patsubst %.svg,%.svg.gz,$(subst $(1),$(1)/small, $(wildcard $(1)/*.svg)))
+$(1): $(1)/index.html $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) $(subst $(1),$(1)/small, $(wildcard $(1)/*.svg) $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)))
 
 endif
 endef
