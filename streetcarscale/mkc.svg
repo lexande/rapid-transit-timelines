@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 175 500"
-   height="500"
-   width="175"
+   id="svg2"
    version="1.1"
-   id="svg2">
+   width="200"
+   height="500"
+   viewBox="0 0 200 500">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -31,11 +31,11 @@
      height="1047"
      preserveAspectRatio="none"
      id="image10"
-     x="-806"
+     x="-800"
      y="-507"
      style="display:none" />
   <path
-     id="path4138"
-     d="m 77.325819,94.594901 2.167418,-2.438351 38.742653,-9.753394 2.16743,-1.354638 -5.68948,-23.028853 -2.16742,-0.541855 -41.722866,11.108034 -0.541855,2.709278 8.940616,30.343898 9.753395,27.90555 -0.812784,98.34675 -4.063918,65.29357 -6.231334,147.92651 -2.980204,3.52206"
-     style="fill:none;fill-rule:evenodd;stroke:#0081d6;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-rule:evenodd;stroke:#0081d6;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 83.325819,94.594901 2.167418,-2.438351 38.742653,-9.753394 2.16743,-1.354638 -5.68948,-23.028853 -2.16742,-0.541855 -41.722866,11.108034 -0.541855,2.709278 8.940616,30.343898 9.753395,27.90555 -0.812784,98.34675 -4.063918,65.29357 -6.231334,147.92651 -2.980204,3.52206"
+     id="path4138" />
 </svg>

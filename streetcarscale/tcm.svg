@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   id="svg2"
-   viewBox="0 0 225 400"
+   version="1.1"
+   width="250"
    height="400"
-   width="225"
-   version="1.1">
+   viewBox="0 0 250 400"
+   id="svg2">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,14 +27,14 @@
      id="defs6" />
   <image
      xlink:href="streetmap/tcmosm.png"
-     x="-80"
+     x="-75"
      y="-58"
      width="458"
      height="458"
      id="image10"
      style="display:none" />
   <path
-     style="fill:none;stroke:#f9a51b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     d="m 65.5,64.5 20.5,129 10.5,15.5 20,121.5 75,-12"
      id="path2987"
-     d="m 60.5,64.5 20.5,129 10.5,15.5 20,121.5 75,-12" />
+     style="fill:none;stroke:#f9a51b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
