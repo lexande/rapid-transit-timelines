@@ -13,6 +13,10 @@ for i in *.svg; do
   convert ${i}.png ${i}.gif
 done
 echo ""
-gifsicle -l -d 100 --colors 256 `ls *.svg.gif | tail -n1` *.svg.gif > ../$1/preview.gif
+if [ `ls *.svg.gif | wc -l` -gt 1 ]; then
+  gifsicle -l -d 100 --colors 256 `ls *.svg.gif | tail -n1` *.svg.gif > ../$1/preview.gif
+else
+  mv *.svg.gif ../$1/preview.gif
+fi
 cd ..
 rm -r anim
