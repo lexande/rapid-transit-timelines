@@ -1,9 +1,9 @@
 cat <<HEREDOC
 <!DOCTYPE HTML>
 <html>
-<head><title>Ancient Walled City Scale Comparison</title>
+<head><title>Pre-Industrial Walled City Scale Comparison</title>
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Ancient Walled City Scale Comparison" />
+<meta property="og:title" content="Pre-Industrial Walled City Scale Comparison" />
 <meta property="og:image" content="https://alexander.co.tz/walledcityscale/preview.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <style type="text/css">
@@ -53,7 +53,7 @@ function deselectall() {
   })();
 </script>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<h3>Ancient Walled City Scale Comparison</h3>
+<h3>Pre-Industrial Walled City Scale Comparison</h3>
 HEREDOC
 sortedcities=`echo $@ | perl -wpe's/([a-z]+)(-?[0-9]+).svg ?/$2 $1\n/g' | sort -g | awk '{print $2$1}'`
 for city in $sortedcities; do
