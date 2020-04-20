@@ -136,15 +136,15 @@ function togglesidebar() {
 <h3>Streetcar Scale Comparison</h3>
 <div id="maps" style="padding-left: calc(10.5em + 22px);">
 HEREDOC
-CITIES=$(for file in $@; do grep ^`basename $file .svg` names | sed -e's/<br>/ /; s/ (.*//; s/\(.*\)@*\t\(.*\)/\2 \1/;'; done | sort | sed -e's/.* //; s/@//;')
+CITIES=$(for file in $@; do grep -P "^`basename $file .svg`@?\t" names | sed -e's/<br>/ /; s/ (.*//; s/\(.*\)@*\t\(.*\)/\2 \1/; s/\(.*\) \([0-9]*\) \(.*\)/\2 \1 \3/;'; done | sort -n | sed -e's/.* //; s/@//;')
 for city in $CITIES; do
-  NAME=`grep ^$city names | sed -e's/.*\t//'`
+  NAME=`grep -P "^$city@?\t" names | sed -e's/.*\t//'`
   SNAME=`echo $NAME | sed -e's/<br>/ /; s/ (.*//;'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   NATIVEW=$(grep '^   width="' ${city}.svg | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*30/138)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' ${city}.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
-  if ( grep ^$city@ names >/dev/null); then
+  if ( grep -P "^$city@\t" names >/dev/null); then
     echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
   else
     echo '<span id="'$UPPER'" style="display: none; vertical-align: middle">'$NAME'<br>'
@@ -163,7 +163,7 @@ for city in $CITIES; do
     $city = $ARGV[0];
     $upper = $city;
     $upper =~ tr/a-z/A-Z/;
-    $name = `grep ^$city names`;
+    $name = `grep -P "^$city@?\t" names`;
     $name =~ s/<br>/ /;
     $name =~ s/ \(.*//;
     $show = ($name =~ /@/);
@@ -180,13 +180,14 @@ for city in $CITIES; do
       $id += 1;
       }
     } else {
+      $sortname = $name =~ s/(.*) ([0-9]*)/$2 $1/r;
       if ($show) {
-	print "$name <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
+	print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
       } else {
-	print "$name <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
+	print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
       }
     }' $city
-done | sort | sed -e's/.* <input/<input/;'
+done | sort -n | sed -e's/.* <input/<input/;'
 cat <<HEREDOC
 </div>
 <div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>

@@ -190,8 +190,6 @@ function togglesidebar() {
   <img class="map" src="cfr.svg" title="Caen" alt="Caen map" width="109" height="234"></span>
 <span id="CAG" style="display: none; vertical-align: middle">Cagliari<br>
   <img class="map" src="cag.svg" title="Cagliari" alt="Cagliari map" width="71" height="202"></span>
-<span id="CBG1910" style="display: inline-block; vertical-align: middle">Cambridge 1910<br>(horse)<br>
-  <img class="map" src="cbg1910.svg" title="Cambridge 1910" alt="Cambridge 1910 map" width="65" height="65"></span>
 <span id="CBR" style="display: inline-block; vertical-align: middle">Canberra<br>
   <img class="map" src="cbr.svg" title="Canberra" alt="Canberra map" width="87" height="332"></span>
 <span id="CMN" style="display: none; vertical-align: middle">Casablanca<br>
@@ -478,8 +476,6 @@ function togglesidebar() {
   <img class="map" src="waw.svg" title="Warszawa" alt="Warszawa map" width="484" height="576"></span>
 <span id="WAS" style="display: inline-block; vertical-align: middle">Washington<br>
   <img class="map" src="was.svg" title="Washington" alt="Washington map" width="120" height="44"></span>
-<span id="ALO1910" style="display: inline-block; vertical-align: middle">Waterloo Iowa 1910<br>
-  <img class="map" src="alo1910.svg" title="Waterloo Iowa 1910" alt="Waterloo Iowa 1910 map" width="408" height="223"></span>
 <span id="VIE" style="display: none; vertical-align: middle">Wien<br>
   <img class="map" src="vie.svg" title="Wien" alt="Wien map" width="620" height="1044"></span>
 <span id="WUH" style="display: none; vertical-align: middle">Wuhan<br>
@@ -494,6 +490,14 @@ function togglesidebar() {
   <img class="map" src="zuh.svg" title="Zhuhai" alt="Zhuhai map" width="245" height="120"></span>
 <span id="ZRH" style="display: none; vertical-align: middle">Zürich<br>
   <img class="map" src="zrh.svg" title="Zürich" alt="Zürich map" width="734" height="451"></span>
+<span id="CBG1910" style="display: inline-block; vertical-align: middle">Cambridge 1910<br>(horse)<br>
+  <img class="map" src="cbg1910.svg" title="Cambridge 1910" alt="Cambridge 1910 map" width="65" height="65"></span>
+<span id="ALO1910" style="display: inline-block; vertical-align: middle">Waterloo Iowa 1910<br>
+  <img class="map" src="alo1910.svg" title="Waterloo Iowa 1910" alt="Waterloo Iowa 1910 map" width="408" height="223"></span>
+<span id="BJS1935" style="display: inline-block; vertical-align: middle">Beijing 1935<br>
+  <img class="map" src="bjs1935.svg" title="Beijing 1935" alt="Beijing 1935 map" width="190" height="212"></span>
+<span id="SHA1935" style="display: inline-block; vertical-align: middle">Shanghai 1935<br>
+  <img class="map" src="sha1935.svg" title="Shanghai 1935" alt="Shanghai 1935 map" width="353" height="272"></span>
 </div>
 <div id="sidebar">
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
@@ -527,7 +531,6 @@ function togglesidebar() {
 <input type="checkbox" id="BTZcheckbox" onclick="toggleshow('BTZ')"><a href="javascript:sidebarclick('BTZ')">Bursa</a><br>
 <input type="checkbox" id="CFRcheckbox" onclick="toggleshow('CFR')"><a href="javascript:sidebarclick('CFR')">Caen</a><br>
 <input type="checkbox" id="CAGcheckbox" onclick="toggleshow('CAG')"><a href="javascript:sidebarclick('CAG')">Cagliari</a><br>
-<input type="checkbox" id="CBG1910checkbox" onclick="toggleshow('CBG1910')" checked><a href="javascript:sidebarclick('CBG1910')">Cambridge 1910</a><br>
 <input type="checkbox" id="CBRcheckbox" onclick="toggleshow('CBR')" checked><a href="javascript:sidebarclick('CBR')">Canberra</a><br>
 <input type="checkbox" id="CMNcheckbox" onclick="toggleshow('CMN')"><a href="javascript:sidebarclick('CMN')">Casablanca</a><br>
 <input type="checkbox" id="CGQcheckbox" onclick="toggleshow('CGQ')"><a href="javascript:sidebarclick('CGQ')">Changchun</a><br>
@@ -672,7 +675,6 @@ function togglesidebar() {
 <input type="checkbox" id="VITcheckbox" onclick="toggleshow('VIT')"><a href="javascript:sidebarclick('VIT')">Vitoria-Gasteiz</a><br>
 <input type="checkbox" id="WAWcheckbox" onclick="toggleshow('WAW')"><a href="javascript:sidebarclick('WAW')">Warszawa</a><br>
 <input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="javascript:sidebarclick('WAS')">Washington</a><br>
-<input type="checkbox" id="ALO1910checkbox" onclick="toggleshow('ALO1910')" checked><a href="javascript:sidebarclick('ALO1910')">Waterloo Iowa 1910</a><br>
 <input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')"><a href="javascript:sidebarclick('VIE')">Wien</a><br>
 <input type="checkbox" id="WUHcheckbox" onclick="toggleshow('WUH')"><a href="javascript:sidebarclick('WUH')">Wuhan</a><br>
 <input type="checkbox" id="JRScheckbox" onclick="toggleshow('JRS')" checked><a href="javascript:sidebarclick('JRS')">Yerushalayim</a><br>
@@ -680,6 +682,10 @@ function togglesidebar() {
 <input type="checkbox" id="ZAZcheckbox" onclick="toggleshow('ZAZ')"><a href="javascript:sidebarclick('ZAZ')">Zaragoza</a><br>
 <input type="checkbox" id="ZUHcheckbox" onclick="toggleshow('ZUH')"><a href="javascript:sidebarclick('ZUH')">Zhuhai</a><br>
 <input type="checkbox" id="ZRHcheckbox" onclick="toggleshow('ZRH')"><a href="javascript:sidebarclick('ZRH')">Zürich</a><br>
+<input type="checkbox" id="CBG1910checkbox" onclick="toggleshow('CBG1910')" checked><a href="javascript:sidebarclick('CBG1910')">Cambridge 1910</a><br>
+<input type="checkbox" id="ALO1910checkbox" onclick="toggleshow('ALO1910')" checked><a href="javascript:sidebarclick('ALO1910')">Waterloo Iowa 1910</a><br>
+<input type="checkbox" id="BJS1935checkbox" onclick="toggleshow('BJS1935')" checked><a href="javascript:sidebarclick('BJS1935')">Beijing 1935</a><br>
+<input type="checkbox" id="SHA1935checkbox" onclick="toggleshow('SHA1935')" checked><a href="javascript:sidebarclick('SHA1935')">Shanghai 1935</a><br>
 </div>
 <div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
 <div id="hideall" style="display: block;"><a href="javascript:deselectall()">hide all</a></div>
