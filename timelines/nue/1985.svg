@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 3550 3000"
-   height="3000"
-   width="3550"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="3550"
+   height="3000"
+   viewBox="0 0 3550 3000">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,29 +26,37 @@
   <defs
      id="defs6" />
   <image
+     xlink:href="../streetmap/nueosm.png"
      style="display:none"
      y="48.125"
      x="0"
      id="image10"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/nueosm.png"
      preserveAspectRatio="none"
      height="2851.875"
      width="3510" />
   <path
-     id="path4533"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ee1d23;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1055.1217,1231.0356 2.3565,-4.0502 10.253,-33.5876 13.0815,-65.4074 21.2132,-34.6482 36.9741,-42.5922 19,-42.5 12.5,-7.75 15.5,-1.5 40.514,15.4634"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ee1d23;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path4533" />
   <path
-     id="path4587"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0166a5;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 481.76431,669.52801 489.75,674 l 96,32.75 14.5,5 19.75,3 79.75,39.5 17,3.5 113.75,62.5 111.25,54.25 228.75,116 21.75,5.75 35.5,12.75 12.75,-0.75 19.5,-11 26.25,-24 20,-11 19,-5.75 14.5,1.25 7.25,4.25 11.25,17 23.75,36 12.25,26.75 3.5,15.5 -4.5,17.5 -17.75,25 -2.75,12 5.75,24 41.25,80 17.25,21.75 3.5,11.75 -3,46.25 1.25,12.75 10.5,38.25 12.75,20 12,12.5 24.25,20.25 77,51 37.75,20.75 34,15.5 19.25,10.5 10,10 5.25,5.75 6.75,1 12,-2 18.25,-4.75 13.25,0.25 13,4.25 11.5,9 45.25,58 39.75,44.25 37.75,38.75 59.75,79.5 5.75,5.75 24.5,16.75 8.75,7.25 8.5,10.25"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0166a5;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path4587" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     xml:space="preserve"
-     id="text3019"
+     x="89.453125"
      y="206.96094"
-     x="89.453125"><tspan
-       id="tspan1"
+     id="text3019"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453125"
        y="206.96094"
-       x="89.453125">1985</tspan></text>
+       id="tspan1">1985</tspan></text>
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#951881;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1517.6772,1229.0789 14.3249,17.7144 2.528,5.8988 0.7023,6.3201 2.1067,4.073 2.6685,1.5449 26.685,-1.8258 7.5842,2.3876 8.2864,0.1405"
+     id="path1410" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#951881;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1517.6772,1229.0789 -9.5339,-13.3077 -22.643,-28.8004 -3.9724,-10.3284 -4.3697,-25.4237 -0.3973,-29.5948 -9.6456,-16.2613 -10.674,-13.483 0.4213,-3.7921 8.9887,-26.1233 1.264,-23.5951 -1.6429,-13.5038 -1.1525,-3.4595 -4.4365,-0.8142 -10.9297,6.3885 -23.6919,-0.2682 -17.3182,-1.5931 -10.8847,-3.0196 -0.8819,-3.4174 9.6203,-28.12014 6.2129,-14.8272 6.7532,-8.64 16.1898,-17.6296 3.6758,-7.9926 8.6935,-24.0365 10.1364,-13.57533 4.5355,-9.7631 0.7022,-22.0121 0.6972,-12.9282 23.8716,-35.92306 111.4504,-170.95653 5.3363,-9.54982 2.112,-6.93587 3.0787,-1.29104 12.3146,3.4759"
+     id="path825-6" />
 </svg>
