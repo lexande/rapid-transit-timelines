@@ -172,12 +172,16 @@ function togglesidebar() {
   <img class="map" src="bio.svg" title="Bilbao" alt="Bilbao map" width="98" height="76"></span>
 <span id="BLK" style="display: inline-block; vertical-align: middle">Blackpool<br>
   <img class="map" src="blk.svg" title="Blackpool" alt="Blackpool map" width="130" height="525"></span>
+<span id="BNJ" style="display: none; vertical-align: middle">Bonn<br>
+  <img class="map" src="bnj.svg" title="Bonn" alt="Bonn map" width="174" height="228"></span>
 <span id="BOD" style="display: none; vertical-align: middle">Bordeaux<br>
   <img class="map" src="bod.svg" title="Bordeaux" alt="Bordeaux map" width="408" height="506"></span>
 <span id="BTS" style="display: none; vertical-align: middle">Bratislava<br>
   <img class="map" src="bts.svg" title="Bratislava" alt="Bratislava map" width="299" height="332"></span>
 <span id="BWE" style="display: none; vertical-align: middle">Braunschweig<br>
   <img class="map" src="bwe.svg" title="Braunschweig" alt="Braunschweig map" width="261" height="435"></span>
+<span id="BRE" style="display: none; vertical-align: middle">Bremen<br>
+  <img class="map" src="bre.svg" title="Bremen" alt="Bremen map" width="473" height="462"></span>
 <span id="BES" style="display: none; vertical-align: middle">Brest FR<br>
   <img class="map" src="bes.svg" title="Brest FR" alt="Brest FR map" width="272" height="212"></span>
 <span id="BRU" style="display: none; vertical-align: middle">Bruxelles<br>
@@ -438,6 +442,8 @@ function togglesidebar() {
   <img class="map" src="sto.svg" title="Stockholm" alt="Stockholm map" width="370" height="261"></span>
 <span id="SXB" style="display: none; vertical-align: middle">Strasbourg<br>
   <img class="map" src="sxb.svg" title="Strasbourg" alt="Strasbourg map" width="310" height="277"></span>
+<span id="STR" style="display: none; vertical-align: middle">Stuttgart<br>
+  <img class="map" src="str.svg" title="Stuttgart" alt="Stuttgart map" width="43" height="75"></span>
 <span id="SYD" style="display: inline-block; vertical-align: middle">Sydney<br>
   <img class="map" src="syd.svg" title="Sydney" alt="Sydney map" width="147" height="229"></span>
 <span id="TCM" style="display: inline-block; vertical-align: middle">Tacoma<br>
@@ -486,6 +492,8 @@ function togglesidebar() {
   <img class="map" src="vie.svg" title="Wien" alt="Wien map" width="620" height="1044"></span>
 <span id="WUH" style="display: none; vertical-align: middle">Wuhan<br>
   <img class="map" src="wuh.svg" title="Wuhan" alt="Wuhan map" width="293" height="342"></span>
+<span id="ILH" style="display: none; vertical-align: middle">Würzburg<br>
+  <img class="map" src="ilh.svg" title="Würzburg" alt="Würzburg map" width="190" height="299"></span>
 <span id="JRS" style="display: inline-block; vertical-align: middle">Yerushalayim<br>
   <img class="map" src="jrs.svg" title="Yerushalayim" alt="Yerushalayim map" width="196" height="223"></span>
 <span id="ZAG" style="display: none; vertical-align: middle">Zagreb<br>
@@ -528,9 +536,11 @@ function togglesidebar() {
 <input type="checkbox" id="QBQcheckbox" onclick="toggleshow('QBQ')"><a href="javascript:sidebarclick('QBQ')">Besançon</a><br>
 <input type="checkbox" id="BIOcheckbox" onclick="toggleshow('BIO')"><a href="javascript:sidebarclick('BIO')">Bilbao</a><br>
 <input type="checkbox" id="BLKcheckbox" onclick="toggleshow('BLK')" checked><a href="javascript:sidebarclick('BLK')">Blackpool</a><br>
+<input type="checkbox" id="BNJcheckbox" onclick="toggleshow('BNJ')"><a href="javascript:sidebarclick('BNJ')">Bonn</a><br>
 <input type="checkbox" id="BODcheckbox" onclick="toggleshow('BOD')"><a href="javascript:sidebarclick('BOD')">Bordeaux</a><br>
 <input type="checkbox" id="BTScheckbox" onclick="toggleshow('BTS')"><a href="javascript:sidebarclick('BTS')">Bratislava</a><br>
 <input type="checkbox" id="BWEcheckbox" onclick="toggleshow('BWE')"><a href="javascript:sidebarclick('BWE')">Braunschweig</a><br>
+<input type="checkbox" id="BREcheckbox" onclick="toggleshow('BRE')"><a href="javascript:sidebarclick('BRE')">Bremen</a><br>
 <input type="checkbox" id="BEScheckbox" onclick="toggleshow('BES')"><a href="javascript:sidebarclick('BES')">Brest FR</a><br>
 <input type="checkbox" id="BRUcheckbox" onclick="toggleshow('BRU')"><a href="javascript:sidebarclick('BRU')">Bruxelles</a><br>
 <input type="checkbox" id="BUHcheckbox" onclick="toggleshow('BUH')"><a href="javascript:sidebarclick('BUH')">Bucureşti</a><br>
@@ -662,6 +672,7 @@ function togglesidebar() {
 <input type="checkbox" id="SOFcheckbox" onclick="toggleshow('SOF')"><a href="javascript:sidebarclick('SOF')">Sofiya</a><br>
 <input type="checkbox" id="STOcheckbox" onclick="toggleshow('STO')"><a href="javascript:sidebarclick('STO')">Stockholm</a><br>
 <input type="checkbox" id="SXBcheckbox" onclick="toggleshow('SXB')"><a href="javascript:sidebarclick('SXB')">Strasbourg</a><br>
+<input type="checkbox" id="STRcheckbox" onclick="toggleshow('STR')"><a href="javascript:sidebarclick('STR')">Stuttgart</a><br>
 <input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')" checked><a href="javascript:sidebarclick('SYD')">Sydney</a><br>
 <input type="checkbox" id="TCMcheckbox" onclick="toggleshow('TCM')" checked><a href="javascript:sidebarclick('TCM')">Tacoma</a><br>
 <input type="checkbox" id="TLLcheckbox" onclick="toggleshow('TLL')"><a href="javascript:sidebarclick('TLL')">Tallinn</a><br>
@@ -686,6 +697,7 @@ function togglesidebar() {
 <input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="javascript:sidebarclick('WAS')">Washington</a><br>
 <input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')"><a href="javascript:sidebarclick('VIE')">Wien</a><br>
 <input type="checkbox" id="WUHcheckbox" onclick="toggleshow('WUH')"><a href="javascript:sidebarclick('WUH')">Wuhan</a><br>
+<input type="checkbox" id="ILHcheckbox" onclick="toggleshow('ILH')"><a href="javascript:sidebarclick('ILH')">Würzburg</a><br>
 <input type="checkbox" id="JRScheckbox" onclick="toggleshow('JRS')" checked><a href="javascript:sidebarclick('JRS')">Yerushalayim</a><br>
 <input type="checkbox" id="ZAGcheckbox" onclick="toggleshow('ZAG')"><a href="javascript:sidebarclick('ZAG')">Zagreb</a><br>
 <input type="checkbox" id="ZAZcheckbox" onclick="toggleshow('ZAZ')"><a href="javascript:sidebarclick('ZAZ')">Zaragoza</a><br>
