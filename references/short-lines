@@ -9,6 +9,7 @@ BES	 420m	cableway	2	2016-11-19	never*
 LYN	 427m	funicular	2	1900-09-06	1978-05-02*	connected to 783m+near 514m lines
 BAK	 455m	funicular	2	1960-06-02	1967-11-25*
 GRZ	 470m	tram gradesep	2	2006-12-01	never*
+HDB	 471m	funicular	3	1890-03-30	never*
 SCL	 485m	funicular	3	1925-04-25	1975-09-15*
 LYN	 489m	funicular	2	1862-06-03	1978-05-02*	near later 512m line below
 PIT	 490m	funicular	2	1872-__-__	1904-12-09*	near later 806m line below
@@ -47,7 +48,8 @@ FLR	 920m	tram gradesep	2	2010-02-14	never*
 BOS	 940m	tram subway	2	1897-09-01*	1899-01-01?	ext >2km within 2yr, >3km 4yr
 FLR	 970m	tram gradesep	2	2019-02-11	never*		separate from 920m line above
 EIN	 990m	bus gradesep	2	2004-09-05	never*
-BGY	1020m	tram gradesep	2	2009-04-25	never*
+BGY	1020m	tram gradesep	2	2009-04-25	never*		connected with 471m line above
+HDB	1020m	funicular	2	1907-06-01	never*
 JAX	1050m	monorail	3	1989-05-31	1998-10-31	reopened as 1520m below
 LFQJ	1080m	bus gradesep	2	2008-__-__	never*
 AGB	1106m	tram gradesep	2	2001-06-10	2009-12-13*
