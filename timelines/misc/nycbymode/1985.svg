@@ -26,8 +26,8 @@
   <defs
      id="defs6" />
   <g
-     id="g1301"
-     style="display:none">
+     style="display:none"
+     id="g1301">
     <image
        xlink:href="../../streetmap/nycosm.png"
        style="fill:#ff0000"
@@ -157,7 +157,7 @@
   <path
      style="fill:none;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3619"
-     d="m 433.00032,3176.9996 19,-26 23,-31 17,-17 16,-13 20,-23 50,-90 10,-14 11,-3.5 159,68.5 224.00004,91 32.00004,12 14,16 93,43 154,115 72,55 320,239 56,43 107,-19 24,-6 187,-77 7,-9 -20,-76 4,-8 23,-11 50,-17 88,-17 54,-3 24,-9 43,-18 44,-10 62,-2 23,-12 43,-38 30,-19 31,-8 22.992,-6.0307 45.008,-13.4693 29.5,-9.5 49,-6.5 28.0046,-0.5895" />
+     d="m 433.00032,3176.9996 19,-26 23,-31 17,-17 16,-13 20,-23 50,-90 10,-14 11,-3.5 159,68.5 224.00004,91 32.00004,12 14,16 93,43 154,115 72,55 320,239 56,43 107,-19 24,-6 187,-77 7,-9 -20,-76 4,-8 23,-11 50,-17 88,-17 54,-3 24,-9 43,-18 44,-10 62,-2 23,-12 43,-38 30,-19 31,-8 22.992,-6.0307" />
   <path
      style="fill:none;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path7470"
@@ -359,7 +359,7 @@
        id="tspan1"
        y="222.96094"
        x="-1702.5474"
-       style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none">1980</tspan></text>
+       style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none">1985</tspan></text>
   <path
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 616.726,3054.532 -0.7361,-11.8212 3.9036,-11.7108 30.6966,-78.6044 2.3066,-11.3559 1.2421,-12.7754 -4.4359,-10.6462"
@@ -408,12 +408,13 @@
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m -1549.2957,2614.7221 -1.2046,-5.722 -6,-9.5 -29.5,-14.5 -15,-8.5 -5.5,-9 -6,-17.5 0.5,-19.5 12.5,-20.5 13,-11 1,-10 1,-10.5 -6,-23.5 -5.5,-18 -4.5,-19.5 3,-28.5 14,-39 27.5,-33.5 13,-23 29,-55 6.5,-16.5 -2.5,-18 -10,-44 4,-15 9,-25 24.5,-45 6.5,-12.4999 -0.5,-13.5 -1.3104,-6.2896"
      id="path3650" />
+
+  <path
+     id="path1203"
+     d="m 1119.1245,1944.8917 194.6694,-351.5573 8.2875,-6.6888 37.8727,-19.8406 12.555,-7.9844 16.0912,-14.2185 33.601,-65.153 24.2175,-33.2459 19.4448,-23.5904 128.2895,-106.7093 19.5728,-21.7057 15.6889,-31.8392 155.8865,-367.08167 38.4181,-71.8209 19.4848,-33.5083 23.8386,-25.3442 109.595,-79.6712 21.3293,-15.997 17.879,-22.4585 33.7505,-63.7997 9.8384,-29.867 71.4011,-215.6083 24.2499,-46.2464 23.3478,-49.2117 32.2617,-63.13146 62.8588,-121.012498 37.0753,-59.5965999"
+     style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1119.1245,1944.8917 194.6694,-351.5573 8.2875,-6.6888 37.8727,-19.8406 12.555,-7.9844 16.0912,-14.2185 33.601,-65.153 24.2175,-33.2459 19.4448,-23.5904 128.2895,-106.7093 19.5728,-21.7057 15.6889,-31.8392 155.8865,-367.08167 38.4181,-71.8209 19.4848,-33.5083 23.8386,-25.3442 109.595,-79.6712 21.3293,-15.997 17.879,-22.4585 33.7505,-63.7997 9.8384,-29.867 71.4011,-215.6083 24.2499,-46.2464 23.3478,-49.2117 32.2617,-63.13146 62.8588,-121.012498 37.0753,-59.5965999"
-     id="path1203" />
-  <path
-     id="path1205"
      d="m 1422.2016,1479.4492 4.6734,-16.5438 -0.7985,-11.977 -5.2344,-14.9047 -68.7566,-119.7696 -7.6298,-19.7842 -0.7097,-20.8488 11.399,-50.2751 15.9262,-78.8986 16.0427,-45.7506 24.8564,-62.663 22.5382,-36.1129 54.0256,-75.13977 24.3088,-38.5037 10.3801,-35.6647 8.6943,-17.6549 58.1105,-60.5946 12.3318,-17.3887 22.1796,-64.4982 4.6134,-22.1795 -1.9518,-19.8729 -7.6298,-24.3975 -13.1304,-15.7919 -13.2189,-10.38 -57.0459,-23.0667 -28.2123,-1.5083 -11.4447,-6.3877 -34.4226,-40.6329 -5.2345,-12.7754 -0.9564,-17.93075"
-     style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path1205" />
 </svg>
