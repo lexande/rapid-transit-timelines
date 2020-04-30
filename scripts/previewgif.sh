@@ -1,10 +1,12 @@
 #!/bin/bash
 mkdir -p anim
+nonempty=false
 for i in $1/*.svg; do
-  ~/timelines/scripts/hideyear.pl $i > anim/`basename $i`
+  if grep 'stroke-width:[2-5]' $i | grep -v 'stroke:none' >/dev/null; then nonempty=true; fi
+  if $nonempty; then ~/timelines/scripts/hideyear.pl $i > anim/`basename $i`; fi
 done
 cd anim
-for i in *.svg; do
+for i in `ls *.svg | sort -g`; do
   echo -n "$i "
   width=$(grep '^   width=' $i | sed -e's/   width="\(.*\)"/\1/')
   height=$(grep '^   height=' $i | sed -e's/   height="\(.*\)"/\1/')
