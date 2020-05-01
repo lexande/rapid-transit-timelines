@@ -1,4 +1,5 @@
 city	length	type		stops	open		>3km open	notes
+DRS	 275m	funicular	2	1901-05-06	2004-12-12*
 ZRH	 305m	funicular	4?	1901-04-04	1976-09-25*
 FKB	 315m	funicular	2	1888-05-01	1958-04-18*
 PIT	 340m	funicular	2	1888-06-23	1904-12-09*
@@ -20,6 +21,7 @@ LYN	 512m	funicular	2	1891-04-12	1978-05-02*	near earlier 489m line above
 RIO	 513m	funicular	2	1877-03-13	1937-07-10*
 LYN	 514m	funicular	2	1900-12-06	1978-05-02*	connected to 670m, near 427m lines
 STR	 536m	funicular	3	1929-10-30	1966-05-10*
+DRS	 547m	funicular	2	1895-10-26	2004-12-12*
 PRG	 600m	tram gradesep	2	1971-01-03	1974-05-09*
 PIT	 610m	funicular	2	1888-03-05	1904-12-09*
 LGG	 620m	bus gradesep	2	19__-__-__	never*
@@ -59,6 +61,7 @@ CLE	1120m	tram subway	2	1918-__-__	1920-04-11*	1918 line never extended
 BCN	1130m	funicular	2	1901-10-29	1924-12-30*
 ZAG	1140m	tram gradesep	3	1950-__-__	never*
 BRN	1161m	funicular	3	1899-09-12	1974-05-26*
+DRS	1165m	tram gradesep	3	1985-10-04*	2004-12-12	extended >2km within 3yr 
 TRD	1180m	tram gradesep	3	1924-07-18	never*
 PHL	1190m	tram subway	3	1905-12-18*	1907-03-04*	extended within 2yr
 ORN	1220m	tram gradesep	3	2013-05-02	never*
@@ -69,7 +72,7 @@ SZW	1293m	tram gradesep	3	1974-10-06*	1984-04-07	extended within 10yr
 WAW	1280m	tram bridgedeck	2	1959-07-31	1995-04-07*
 Serfaus	1300m	hoverfunicular	4	1985-12-14	never*
 QAR	1300m	mainline trunk	2	1970-05-31	2008-12-14*
-ZCS	1314	tram gradesepm	3	1966-__-__?	never*
+ZCS	1314m	tram gradesepm	3	1966-__-__?	never*
 RIX	1320m	tram gradesep	4	1979-__-__	never*
 ZRH	1328m	rack		4	1971-09-29	1976-09-25*	replaced 800m line above
 AMS	1340m	tram gradesep	3	1927-07-15	1970-05-31
