@@ -54,16 +54,18 @@ EIN	 990m	bus gradesep	2	2004-09-05	never*
 BGY	1020m	tram gradesep	2	2009-04-25	never*		connected with 471m line above
 HDB	1020m	funicular	2	1907-06-01	never*
 JAX	1050m	monorail	3	1989-05-31	1998-10-31	reopened as 1520m below
+BFE	1050m	tram gradesep	2?	1971-09-21	1991-04-28	thru with 1600m below
 LFQJ	1080m	bus gradesep	2	2008-__-__	never*
 AGB	1106m	tram gradesep	2	2001-06-10	2009-12-13*
 MDZ	1110m	tram gradesep	2	2012-10-08	never*		temporarily longer 2019-05-07?
 CLE	1120m	tram subway	2	1918-__-__	1920-04-11*	1918 line never extended
 BCN	1130m	funicular	2	1901-10-29	1924-12-30*
 ZAG	1140m	tram gradesep	3	1950-__-__	never*
+ERF	1150m	tram gradesep	2	1987-10-06	never*
 BRN	1161m	funicular	3	1899-09-12	1974-05-26*
 DRS	1165m	tram gradesep	3	1985-10-04*	2004-12-12	extended >2km within 3yr 
 TRD	1180m	tram gradesep	3	1924-07-18	never*
-PHL	1190m	tram subway	3	1905-12-18*	1907-03-04*	extended within 2yr
+PHL	1190m	tram subway	3	1905-12-18*	1907-03-04	extended within 2yr
 ORN	1220m	tram gradesep	3	2013-05-02	never*
 KRK	1220m	tram gradesep	2	1962-__-__	2008-12-11*	plus 220m loop c. 2003
 NAP	1234m	funicular	4	1928-10-28	1940-05-09*	near earlier 500m+824m lines above
@@ -87,10 +89,10 @@ BRE	1490m	tram gradesep	3	1967-06-18*	1968-__-__	extended within 1-2yr
 NUE	1507m	tram gradesep	3	1938-09-04	1970-11-04*	950m trackshare w/1442m line above
 JAX	1520m	monorail	4	1997-12-17*	1998-10-31	extended within 1yr
 EDI	1530m	bus gradesep	4	2004-12-__	2014-05-31*	1530m line closed & replaced
-BFE	1600m	tram gradesep	3	1969-05-30*	1991-04-28	plus 1050m thru-run 1971-09-21
+BFE	1600m	tram gradesep	3	1969-05-30*	1991-04-28	+1050m above, ext to 2950m below
 SEA	1620m	monorail	2	1962-03-24	1990-09-15*
 BGO	1650m	tram gradesep	2	2010-06-22*	2013-06-22	extended within 3yr
-CZ_	1660m	tram gradesep	3	1982-10-05*	never
+CZ_	1660m	tram gradesep	3	1982-10-05	never*
 KYA	1690m	tram gradesep	3	1992-09-28*	never		thru with 1340m 1996-04-19 (4yr)
 PBC	1710m	bus gradesep	2	2013-01-16	never*
 CBG	1730m	bus gradesep	2	2011-08-07	never*
@@ -119,3 +121,4 @@ BWE	2550m	tram gradesep	5	1970-08-24*	1999-08-29	latter is +1060m thru
 FSZ	2560m	tram ROW	5	1925-04-01*	1930-03-31	thru-routed with two 2km+ lines
 KCO	2720m	tram ROW	5	2019-02-11*	never
 UIO	2860m	tbus gradesep	5	1996-21-21*	never
+BFE	2950m	tram gradesep	5	1978-04-01	1991-04-28	thru with 1050m above

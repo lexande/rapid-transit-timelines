@@ -238,6 +238,8 @@ function togglesidebar() {
   <img class="map" src="dus.svg" title="Düsseldorf" alt="Düsseldorf map" width="446" height="479"></span>
 <span id="ELP" style="display: inline-block; vertical-align: middle">El Paso<br>
   <img class="map" src="elp.svg" title="El Paso" alt="El Paso map" width="87" height="114"></span>
+<span id="ERF" style="display: none; vertical-align: middle">Erfurt<br>
+  <img class="map" src="erf.svg" title="Erfurt" alt="Erfurt map" width="315" height="282"></span>
 <span id="ESK" style="display: none; vertical-align: middle">Eskişehir<br>
   <img class="map" src="esk.svg" title="Eskişehir" alt="Eskişehir map" width="435" height="212"></span>
 <span id="FLR" style="display: none; vertical-align: middle">Firenze<br>
@@ -256,12 +258,16 @@ function togglesidebar() {
   <img class="map" src="gva.svg" title="Genève" alt="Genève map" width="435" height="245"></span>
 <span id="GNE" style="display: none; vertical-align: middle">Gent<br>
   <img class="map" src="gne.svg" title="Gent" alt="Gent map" width="196" height="392"></span>
+<span id="GR_" style="display: none; vertical-align: middle">Gera<br>
+  <img class="map" src="gr_.svg" title="Gera" alt="Gera map" width="130" height="255"></span>
 <span id="GM_" style="display: none; vertical-align: middle">Gmunden<br>
   <img class="map" src="gm_.svg" title="Gmunden" alt="Gmunden map" width="103" height="70"></span>
 <span id="OOL" style="display: inline-block; vertical-align: middle">Gold Coast<br>
   <img class="map" src="ool.svg" title="Gold Coast" alt="Gold Coast map" width="304" height="391"></span>
 <span id="GZ_" style="display: none; vertical-align: middle">Görlitz<br>
   <img class="map" src="gz_.svg" title="Görlitz" alt="Görlitz map" width="125" height="185"></span>
+<span id="GT_" style="display: none; vertical-align: middle">Gotha<br>
+  <img class="map" src="gt_.svg" title="Gotha" alt="Gotha map" width="125" height="136"></span>
 <span id="GRZ" style="display: none; vertical-align: middle">Graz<br>
   <img class="map" src="grz.svg" title="Graz" alt="Graz map" width="250" height="277"></span>
 <span id="GNB" style="display: none; vertical-align: middle">Grenoble<br>
@@ -294,6 +300,8 @@ function togglesidebar() {
   <img class="map" src="ist.svg" title="İstanbul" alt="İstanbul map" width="451" height="217"></span>
 <span id="IZM" style="display: none; vertical-align: middle">İzmir<br>
   <img class="map" src="izm.svg" title="İzmir" alt="İzmir map" width="310" height="305"></span>
+<span id="JN_" style="display: none; vertical-align: middle">Jena<br>
+  <img class="map" src="jn_.svg" title="Jena" alt="Jena map" width="152" height="266"></span>
 <span id="KOJ" style="display: none; vertical-align: middle">Kagoshima<br>
   <img class="map" src="koj.svg" title="Kagoshima" alt="Kagoshima map" width="103" height="168"></span>
 <span id="MKC" style="display: inline-block; vertical-align: middle">Kansas<br>City<br>
@@ -382,6 +390,8 @@ function togglesidebar() {
   <img class="map" src="msy.svg" title="New Orleans" alt="New Orleans map" width="250" height="223"></span>
 <span id="NCE" style="display: none; vertical-align: middle">Nice<br>
   <img class="map" src="nce.svg" title="Nice" alt="Nice map" width="266" height="261"></span>
+<span id="NH_" style="display: none; vertical-align: middle">Nordhausen<br>
+  <img class="map" src="nh_.svg" title="Nordhausen" alt="Nordhausen map" width="103" height="98"></span>
 <span id="NRK" style="display: none; vertical-align: middle">Norrköping<br>
   <img class="map" src="nrk.svg" title="Norrköping" alt="Norrköping map" width="207" height="218"></span>
 <span id="NUE" style="display: none; vertical-align: middle">Nürnberg<br>
@@ -599,6 +609,7 @@ function togglesidebar() {
 <input type="checkbox" id="DRScheckbox" onclick="toggleshow('DRS')"><a href="javascript:sidebarclick('DRS')">Dresden</a><br>
 <input type="checkbox" id="DUScheckbox" onclick="toggleshow('DUS')"><a href="javascript:sidebarclick('DUS')">Düsseldorf</a><br>
 <input type="checkbox" id="ELPcheckbox" onclick="toggleshow('ELP')" checked><a href="javascript:sidebarclick('ELP')">El Paso</a><br>
+<input type="checkbox" id="ERFcheckbox" onclick="toggleshow('ERF')"><a href="javascript:sidebarclick('ERF')">Erfurt</a><br>
 <input type="checkbox" id="ESKcheckbox" onclick="toggleshow('ESK')"><a href="javascript:sidebarclick('ESK')">Eskişehir</a><br>
 <input type="checkbox" id="FLRcheckbox" onclick="toggleshow('FLR')"><a href="javascript:sidebarclick('FLR')">Firenze</a><br>
 <input type="checkbox" id="FUOcheckbox" onclick="toggleshow('FUO')"><a href="javascript:sidebarclick('FUO')">Foshan</a><br>
@@ -608,9 +619,11 @@ function togglesidebar() {
 <input type="checkbox" id="GZTcheckbox" onclick="toggleshow('GZT')"><a href="javascript:sidebarclick('GZT')">Gaziantep</a><br>
 <input type="checkbox" id="GVAcheckbox" onclick="toggleshow('GVA')"><a href="javascript:sidebarclick('GVA')">Genève</a><br>
 <input type="checkbox" id="GNEcheckbox" onclick="toggleshow('GNE')"><a href="javascript:sidebarclick('GNE')">Gent</a><br>
+<input type="checkbox" id="GR_checkbox" onclick="toggleshow('GR_')"><a href="javascript:sidebarclick('GR_')">Gera</a><br>
 <input type="checkbox" id="GM_checkbox" onclick="toggleshow('GM_')"><a href="javascript:sidebarclick('GM_')">Gmunden</a><br>
 <input type="checkbox" id="OOLcheckbox" onclick="toggleshow('OOL')" checked><a href="javascript:sidebarclick('OOL')">Gold Coast</a><br>
 <input type="checkbox" id="GZ_checkbox" onclick="toggleshow('GZ_')"><a href="javascript:sidebarclick('GZ_')">Görlitz</a><br>
+<input type="checkbox" id="GT_checkbox" onclick="toggleshow('GT_')"><a href="javascript:sidebarclick('GT_')">Gotha</a><br>
 <input type="checkbox" id="GRZcheckbox" onclick="toggleshow('GRZ')"><a href="javascript:sidebarclick('GRZ')">Graz</a><br>
 <input type="checkbox" id="GNBcheckbox" onclick="toggleshow('GNB')"><a href="javascript:sidebarclick('GNB')">Grenoble</a><br>
 <input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')"><a href="javascript:sidebarclick('CAN')">Guangzhou</a><br>
@@ -627,6 +640,7 @@ function togglesidebar() {
 <input type="checkbox" id="ALYcheckbox" onclick="toggleshow('ALY')" checked><a href="javascript:sidebarclick('ALY')">Iskandariyya</a><br>
 <input type="checkbox" id="ISTcheckbox" onclick="toggleshow('IST')"><a href="javascript:sidebarclick('IST')">İstanbul</a><br>
 <input type="checkbox" id="IZMcheckbox" onclick="toggleshow('IZM')"><a href="javascript:sidebarclick('IZM')">İzmir</a><br>
+<input type="checkbox" id="JN_checkbox" onclick="toggleshow('JN_')"><a href="javascript:sidebarclick('JN_')">Jena</a><br>
 <input type="checkbox" id="KOJcheckbox" onclick="toggleshow('KOJ')"><a href="javascript:sidebarclick('KOJ')">Kagoshima</a><br>
 <input type="checkbox" id="MKCcheckbox" onclick="toggleshow('MKC')" checked><a href="javascript:sidebarclick('MKC')">Kansas City</a><br>
 <input type="checkbox" id="KHHcheckbox" onclick="toggleshow('KHH')"><a href="javascript:sidebarclick('KHH')">Kaohsiung</a><br>
@@ -672,6 +686,7 @@ function togglesidebar() {
 <input type="checkbox" id="NTLcheckbox" onclick="toggleshow('NTL')" checked><a href="javascript:sidebarclick('NTL')">Newcastle AU</a><br>
 <input type="checkbox" id="MSYcheckbox" onclick="toggleshow('MSY')" checked><a href="javascript:sidebarclick('MSY')">New Orleans</a><br>
 <input type="checkbox" id="NCEcheckbox" onclick="toggleshow('NCE')"><a href="javascript:sidebarclick('NCE')">Nice</a><br>
+<input type="checkbox" id="NH_checkbox" onclick="toggleshow('NH_')"><a href="javascript:sidebarclick('NH_')">Nordhausen</a><br>
 <input type="checkbox" id="NRKcheckbox" onclick="toggleshow('NRK')"><a href="javascript:sidebarclick('NRK')">Norrköping</a><br>
 <input type="checkbox" id="NUEcheckbox" onclick="toggleshow('NUE')"><a href="javascript:sidebarclick('NUE')">Nürnberg</a><br>
 <input type="checkbox" id="OKJcheckbox" onclick="toggleshow('OKJ')"><a href="javascript:sidebarclick('OKJ')">Okayama</a><br>
