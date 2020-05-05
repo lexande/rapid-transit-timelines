@@ -226,6 +226,8 @@ function togglesidebar() {
   <img class="map" src="rtm.svg" title="Den Haag / Rotterdam" alt="Den Haag / Rotterdam map" width="734" height="930"></span>
 <span id="DEN" style="display: inline-block; vertical-align: middle">Denver<br>
   <img class="map" src="den.svg" title="Denver" alt="Denver map" width="82" height="77"></span>
+<span id="DS_" style="display: none; vertical-align: middle">Dessau<br>
+  <img class="map" src="ds_.svg" title="Dessau" alt="Dessau map" width="158" height="169"></span>
 <span id="DTT" style="display: inline-block; vertical-align: middle">Detroit<br>
   <img class="map" src="dtt.svg" title="Detroit" alt="Detroit map" width="98" height="169"></span>
 <span id="DIJ" style="display: none; vertical-align: middle">Dijon<br>
@@ -276,6 +278,10 @@ function togglesidebar() {
   <img class="map" src="can.svg" title="Guangzhou" alt="Guangzhou map" width="223" height="65"></span>
 <span id="HKD" style="display: none; vertical-align: middle">Hakodate<br>
   <img class="map" src="hkd.svg" title="Hakodate" alt="Hakodate map" width="239" height="152"></span>
+<span id="HS_" style="display: none; vertical-align: middle">Halberstadt<br>
+  <img class="map" src="hs_.svg" title="Halberstadt" alt="Halberstadt map" width="103" height="108"></span>
+<span id="HL_" style="display: none; vertical-align: middle">Halle<br>
+  <img class="map" src="hl_.svg" title="Halle" alt="Halle map" width="326" height="342"></span>
 <span id="HAJ" style="display: none; vertical-align: middle">Hannover<br>
   <img class="map" src="haj.svg" title="Hannover" alt="Hannover map" width="565" height="701"></span>
 <span id="MHG" style="display: none; vertical-align: middle">Heidelberg / Mannheim<br>
@@ -348,6 +354,8 @@ function togglesidebar() {
   <img class="map" src="lux.svg" title="Luxembourg" alt="Luxembourg map" width="147" height="98"></span>
 <span id="LYN" style="display: none; vertical-align: middle">Lyon<br>
   <img class="map" src="lyn.svg" title="Lyon" alt="Lyon map" width="353" height="358"></span>
+<span id="CSO" style="display: none; vertical-align: middle">Magdeburg<br>
+  <img class="map" src="cso.svg" title="Magdeburg" alt="Magdeburg map" width="255" height="537"></span>
 <span id="MRS" style="display: none; vertical-align: middle">Marseille<br>
   <img class="map" src="mrs.svg" title="Marseille" alt="Marseille map" width="511" height="141"></span>
 <span id="MYJ" style="display: none; vertical-align: middle">Matsuyama<br>
@@ -611,6 +619,7 @@ function togglesidebar() {
 <input type="checkbox" id="DALcheckbox" onclick="toggleshow('DAL')" checked><a href="javascript:sidebarclick('DAL')">Dallas</a><br>
 <input type="checkbox" id="RTMcheckbox" class="RTMcheckbox" onclick="toggleshowm('RTM')"><a href="javascript:sidebarclick('RTM')">Den Haag</a><br>
 <input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')" checked><a href="javascript:sidebarclick('DEN')">Denver</a><br>
+<input type="checkbox" id="DS_checkbox" onclick="toggleshow('DS_')"><a href="javascript:sidebarclick('DS_')">Dessau</a><br>
 <input type="checkbox" id="DTTcheckbox" onclick="toggleshow('DTT')" checked><a href="javascript:sidebarclick('DTT')">Detroit</a><br>
 <input type="checkbox" id="DIJcheckbox" onclick="toggleshow('DIJ')"><a href="javascript:sidebarclick('DIJ')">Dijon</a><br>
 <input type="checkbox" id="DOHcheckbox" onclick="toggleshow('DOH')"><a href="javascript:sidebarclick('DOH')">Doha</a><br>
@@ -636,6 +645,8 @@ function togglesidebar() {
 <input type="checkbox" id="GNBcheckbox" onclick="toggleshow('GNB')"><a href="javascript:sidebarclick('GNB')">Grenoble</a><br>
 <input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')"><a href="javascript:sidebarclick('CAN')">Guangzhou</a><br>
 <input type="checkbox" id="HKDcheckbox" onclick="toggleshow('HKD')"><a href="javascript:sidebarclick('HKD')">Hakodate</a><br>
+<input type="checkbox" id="HS_checkbox" onclick="toggleshow('HS_')"><a href="javascript:sidebarclick('HS_')">Halberstadt</a><br>
+<input type="checkbox" id="HL_checkbox" onclick="toggleshow('HL_')"><a href="javascript:sidebarclick('HL_')">Halle</a><br>
 <input type="checkbox" id="HAJcheckbox" onclick="toggleshow('HAJ')"><a href="javascript:sidebarclick('HAJ')">Hannover</a><br>
 <input type="checkbox" id="MHGcheckbox" class="MHGcheckbox" onclick="toggleshowm('MHG')"><a href="javascript:sidebarclick('MHG')">Heidelberg</a><br>
 <input type="checkbox" id="HB_checkbox" onclick="toggleshow('HB_')"><a href="javascript:sidebarclick('HB_')">Heilbronn</a><br>
@@ -672,6 +683,7 @@ function togglesidebar() {
 <input type="checkbox" id="LITcheckbox" onclick="toggleshow('LIT')" checked><a href="javascript:sidebarclick('LIT')">Little Rock</a><br>
 <input type="checkbox" id="LUXcheckbox" onclick="toggleshow('LUX')"><a href="javascript:sidebarclick('LUX')">Luxembourg</a><br>
 <input type="checkbox" id="LYNcheckbox" onclick="toggleshow('LYN')"><a href="javascript:sidebarclick('LYN')">Lyon</a><br>
+<input type="checkbox" id="CSOcheckbox" onclick="toggleshow('CSO')"><a href="javascript:sidebarclick('CSO')">Magdeburg</a><br>
 <input type="checkbox" id="MHGcheckbox1" class="MHGcheckbox" onclick="toggleshowm('MHG')"><a href="javascript:sidebarclick('MHG')">Mannheim</a><br>
 <input type="checkbox" id="MRScheckbox" onclick="toggleshow('MRS')"><a href="javascript:sidebarclick('MRS')">Marseille</a><br>
 <input type="checkbox" id="MYJcheckbox" onclick="toggleshow('MYJ')"><a href="javascript:sidebarclick('MYJ')">Matsuyama</a><br>
