@@ -5,10 +5,10 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="New York Nonstop Flights Timeline" />
 <meta property="og:image" content="https://alexander.co.tz/timelines/misc/nycflights/preview.gif" />
-<meta property="og:image:width" content="60" />
+<meta property="og:image:width" content="600" />
 <meta property="og:image:height" content="600" />
 <meta property="og:url" content="https://alexander.co.tz/timelines/misc/nycflights/preview.gif" />
-<meta property="og:description" content="Maps every 10 years, 1930-2010" />
+<meta property="og:description" content="Maps every 5 years, 1930-2015" />
 <meta name="twitter:card" content="summary_large_image" />
 <style type="text/css">
 div#preloader {
@@ -22,8 +22,8 @@ div#preloader img {
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1930;
-count=9;
-step=10;
+count=18;
+step=5;
 index=count-1;
 function update() {
 	map = document.getElementById("map");
@@ -83,27 +83,36 @@ window.onhashchange=function() {
 </script>
 </head><body>
 <center>
-<a href="javascript:" onclick="prevmap()">ten years earlier (or press a)</a> ---
-<a href="javascript:" onclick="nextmap()">ten years later (or press s)</a>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <br>
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img id="map" src="2010.svg" title="2010" alt="2010 map" width="1200" height="1200">
+<img id="map" src="2015.svg" title="2015" alt="2015 map" width="1200" height="1200">
 </a>
 <p>
 <a href="#1930" onclick="gotoyear(1930)">1930</a>
+<a href="#1935" onclick="gotoyear(1935)">1935</a>
 <a href="#1940" onclick="gotoyear(1940)">1940</a>
+<a href="#1945" onclick="gotoyear(1945)">1945</a>
 <a href="#1950" onclick="gotoyear(1950)">1950</a>
+<a href="#1955" onclick="gotoyear(1955)">1955</a>
 <a href="#1960" onclick="gotoyear(1960)">1960</a>
+<a href="#1965" onclick="gotoyear(1965)">1965</a>
 <a href="#1970" onclick="gotoyear(1970)">1970</a>
+<a href="#1975" onclick="gotoyear(1975)">1975</a>
 <a href="#1980" onclick="gotoyear(1980)">1980</a>
+<a href="#1985" onclick="gotoyear(1985)">1985</a>
 <a href="#1990" onclick="gotoyear(1990)">1990</a>
+<a href="#1995" onclick="gotoyear(1995)">1995</a>
 <a href="#2000" onclick="gotoyear(2000)">2000</a>
+<a href="#2005" onclick="gotoyear(2005)">2005</a>
 <a href="#2010" onclick="gotoyear(2010)">2010</a>
+<a href="#2015" onclick="gotoyear(2015)">2015</a>
 <p>
-<a href="javascript:" onclick="prevmap()">ten years earlier (or press a)</a> --- 
-<a href="javascript:" onclick="nextmap()">ten years later (or press s)</a>
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
+<a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
 Based on regularly-scheduled nonstop service from Kennedy (Idlewild), LaGuardia (North Beach), and Newark airports at the end of the year in question.<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10000 km (0.03 CSS pixels per km) along radials
@@ -112,14 +121,23 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 <div id="preloader">
 <img src="1930.svg" width="1" height="1" alt="">
+<img src="1935.svg" width="1" height="1" alt="">
 <img src="1940.svg" width="1" height="1" alt="">
+<img src="1945.svg" width="1" height="1" alt="">
 <img src="1950.svg" width="1" height="1" alt="">
+<img src="1955.svg" width="1" height="1" alt="">
 <img src="1960.svg" width="1" height="1" alt="">
+<img src="1965.svg" width="1" height="1" alt="">
 <img src="1970.svg" width="1" height="1" alt="">
+<img src="1975.svg" width="1" height="1" alt="">
 <img src="1980.svg" width="1" height="1" alt="">
+<img src="1985.svg" width="1" height="1" alt="">
 <img src="1990.svg" width="1" height="1" alt="">
+<img src="1995.svg" width="1" height="1" alt="">
 <img src="2000.svg" width="1" height="1" alt="">
+<img src="2005.svg" width="1" height="1" alt="">
 <img src="2010.svg" width="1" height="1" alt="">
+<img src="2015.svg" width="1" height="1" alt="">
 </div>
 See also:
 <a href="/timelines">historic rapid transit timelines</a> -

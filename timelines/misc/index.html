@@ -49,10 +49,10 @@ a:link.map-wrap {
 }
 </style>
 <script>
-mapyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 1910, "carail": 1910, "nycbymode": 1950, "bosbymode": 1950, "sfobymode": 1950, "nyctrolleys": 1945, "sandy": 8, "nycflights": 2010 };
+mapyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 1910, "carail": 1910, "nycbymode": 1950, "bosbymode": 1950, "sfobymode": 1950, "nyctrolleys": 1945, "sandy": 8, "nycflights": 2015 };
 minyr = { "hsr/a": 1965, "hsr/e": 1965, "nerail": 1835, "carail": 1835, "nycbymode": 1840, "bosbymode": 1840, "sfobymode": 1840, "nyctrolleys": 1932, "sandy": 1, "nycflights": 1930 };
-maxyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 2010, "carail": 2010, "nycbymode": 2020, "bosbymode": 2020, "sfobymode": 2020, "nyctrolleys": 1957, "sandy": 32, "nycflights": 2010 };
-step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "nycbymode": 10, "bosbymode": 10, "sfobymode": 10, "nyctrolleys": 1, "sandy": 1, "nycflights": 10 }
+maxyr = { "hsr/a": 2015, "hsr/e": 2015, "nerail": 2010, "carail": 2010, "nycbymode": 2020, "bosbymode": 2020, "sfobymode": 2020, "nyctrolleys": 1957, "sandy": 32, "nycflights": 2015 };
+step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "nycbymode": 10, "bosbymode": 10, "sfobymode": 10, "nyctrolleys": 1, "sandy": 1, "nycflights": 5 }
 function nextmap() {
 	for (map in mapyr) {
 		if (mapyr[map] == maxyr[map]) {
@@ -108,7 +108,7 @@ document.onkeydown=function(keypress) {
     <a href="carail">California<br>
     <img id="carailmap" src="carail/1910.svg" width="296" height="390" alt="sample California passenger rail map"></a></span></span><br>
 <span class="supercell">
-  City rail (including streetcar) and trolleybus timelines, 1840-2010:<br>
+  City rail (including streetcar) and trolleybus timelines, 1840-2020:<br>
   <span class="innercell">
     <a href="nycbymode">New York<br>
     <img id="nycbymodemap" src="nycbymode/1950.svg" width="388" height="388" alt="sample New York rail & trolleybus map"></a></span>
@@ -126,8 +126,8 @@ document.onkeydown=function(keypress) {
     <a href="sandy">Hurricane Sandy rapid transit recovery,<br>October 2012-June 2013<br>
     <img id="sandymap" src="sandy/8.svg" width="388" height="388" alt="sample Hurricane Sandy map"></a></span>
   <span class="medcell">
-    <a href="nycflights">Nonstop flights from New York,<br>1930-2010<br>
-    <img id="nycflightsmap" src="nycflights/2010.svg" width="400" height="400" alt="sample New York nonstop flight map"></a></span>
+    <a href="nycflights">Nonstop flights from New York,<br>1930-2015<br>
+    <img id="nycflightsmap" src="nycflights/2015.svg" width="400" height="400" alt="sample New York nonstop flight map"></a></span>
 </span>
 </div>
 <h3>Other maps:</h3>
@@ -164,8 +164,8 @@ Google maps:
 <li>
   Trolley systems in 1932:<ul>
 <li><a href="https://www.google.com/maps/d/viewer?mid=1YF-6azqoHFeCqTrtNDDWmKsFTRU">New York Area</a>
-<li><a href="https://www.google.com/maps/d/viewer?mid=1nQ-9vr-XDdkJR3Nc3nfjeiksuCY">San Francisco Area</a>
 <li><a href="https://www.google.com/maps/d/viewer?mid=19mApGyHiIT2qbGbE3R_qqjtSLxR6UMXm">Boston Area</a>
+<li><a href="https://www.google.com/maps/d/viewer?mid=1nQ-9vr-XDdkJR3Nc3nfjeiksuCY">San Francisco Area</a>
 </ul>
 <li>
   <a href="https://www.google.com/maps/d/viewer?mid=1dHRvqE8gEzzcc_AGAYBj1q-X-WH_CekB">All trolley lines in North America, 1957</a>
