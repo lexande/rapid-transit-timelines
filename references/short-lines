@@ -51,6 +51,7 @@ FLR	 920m	tram gradesep	2	2010-02-14	never*
 BOS	 940m	tram subway	2	1897-09-01*	1899-01-01?	ext >2km within 2yr, >3km 4yr
 FLR	 970m	tram gradesep	2	2019-02-11	never*		separate from 920m line above
 EIN	 990m	bus gradesep	2	2004-09-05	never*
+MO_	1008m	tram gradesep	2	1978-__-__	never		272m shared w/ 2170m line below
 BGY	1020m	tram gradesep	2	2009-04-25	never*		connected with 471m line above
 HDB	1020m	funicular	2	1907-06-01	never*
 JAX	1050m	monorail	3	1989-05-31	1998-10-31	reopened as 1520m below
@@ -112,6 +113,7 @@ YVR 	2120m	tram gradesep	4	1912-12-02*	1985-12-11	plus 1060m thru-routed line
 SXB	2120m	tram tunnel	3	1994-11-25*	never		ignoring a bus-only grade xing
 HAJ	2130m	tram tunnel	4	1975-09-26*	1976-04-04	extended within 1yr
 LNZ	2130m	tram tunnel	2	2011-08-13	never
+MO_	2170m	tram gradesep	2	1978-05-05*	never		272m shared w/1008m line above
 DAL	2200m	peoplemover	3	1989-06-18*	1996-06-14	2200m line never extended
 AMS	2210m	tram gradesep	4	1962-09-09*	1970-05-31
 IND	2250m	peoplemover	3	2003-06-28	never		closed 2019-02-06
