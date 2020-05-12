@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 1600 1850"
-   height="1850"
-   width="1600"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="850"
+   height="2000"
+   viewBox="0 0 850 2000">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,25 +26,25 @@
   <defs
      id="defs6" />
   <image
-     style="display:none"
-     y="8"
-     x="-450"
+     xlink:href="../streetmap/svxosm.png"
+     y="158"
+     x="-800"
      id="image10"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/svxosm.png"
      preserveAspectRatio="none"
      height="3692"
-     width="1846" />
+     width="1846"
+     style="display:none" />
   <path
-     id="path817"
-     d="m 769.661,117.6271 5.4237,77.2881 -8.4745,138.3051 -12.2034,168.1356 -1.3559,17.9661 -15.2543,34.2373 -82.0339,234.2373 -1.6949,19.661 -6.1017,142.0339 -15.5932,100.339 16.6102,86.1017 29.1525,152.5424 43.7288,205.4237 13.8983,77.2881 22.0339,56.2712 18.6441,23.3899 28.8135,24.4067 27.4577,15.2543 44.0678,16.6101 53.2203,18.6441"
-     style="opacity:1;fill:none;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#038674;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:0.0784314;fill-rule:nonzero;stroke:#038674;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 419.661,267.6271 5.4237,77.2881 -8.4745,138.3051 -12.2034,168.1356 -1.3559,17.9661 -15.2543,34.2373 -82.0339,234.2373 -1.6949,19.661 -6.1017,142.0339 -15.5932,100.339 16.6102,86.1017 29.1525,152.5424 43.7288,205.4237 13.8983,77.2881 22.0339,56.2712 18.6441,23.3899 28.8135,24.4067 27.4577,15.2543 44.0678,16.6101 53.2203,18.6441"
+     id="path817" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     xml:space="preserve"
+     x="89.453125"
+     y="206.961"
      id="text3818"
-     y="206.96094"
-     x="89.453133"><tspan
-       id="tspan1"
-       y="206.96094"
-       x="89.453133">2020</tspan></text>
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453125"
+       y="206.961"
+       id="tspan1">2020</tspan></text>
 </svg>
