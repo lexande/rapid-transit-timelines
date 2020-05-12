@@ -11,7 +11,7 @@ for i in `ls *.svg | sort -g`; do
   width=$(grep '^   width=' $i | sed -e's/   width="\(.*\)"/\1/')
   height=$(grep '^   height=' $i | sed -e's/   height="\(.*\)"/\1/')
   sed -e's!href=".*osm.png"!href="/dev/null"!' $i > osmless-${i}
-  inkscape -b ffffff -w 600 -e ${i}.png osmless-${i} >/dev/null 
+  inkscape -b '#ffffff' -y 255 -w 600 -o ${i}.png osmless-${i} >/dev/null 2>&1
   convert ${i}.png ${i}.gif
 done
 echo ""
