@@ -14,14 +14,13 @@ div#preloader img {
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1996;
-count=24;
+count=25;
 step=1;
 index=count-1;
 function update() {
-	map = document.getElementById("map");
-	map.src=(start+step*index) + ".svg";
-	map.title=start+step*index;
-	map.alt=start+step*index + " map";
+	document["MAP"].src=(start+step*index) + ".svg";
+	document["MAP"].title=start+step*index;
+	document["MAP"].alt=start+step*index + " map";
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -81,7 +80,7 @@ window.onhashchange=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img id="map" src="2019.svg" title="2019" alt="2019 map" width="508" height="607" style="border-width: 1px; border-style: solid">
+<img name="MAP" src="2020.svg" title="2020" alt="2020 map" width="508px" height="607px" style="border-width: 1px; border-style: solid">
 </a>
 <p>
 <a href="#1996" onclick="gotoyear(1996)">1996</a>
@@ -108,6 +107,7 @@ window.onhashchange=function() {
 <a href="#2017" onclick="gotoyear(2017)">2017</a>
 <a href="#2018" onclick="gotoyear(2018)">2018</a>
 <a href="#2019" onclick="gotoyear(2019)">2019</a>
+<a href="#2020" onclick="gotoyear(2020)">2020</a>
 <p>
 <a href="javascript:" onclick="prevmap()">one year earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">one year later (or press s)</a>
@@ -142,6 +142,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="2017.svg" width="1" height="1" alt="">
 <img src="2018.svg" width="1" height="1" alt="">
 <img src="2019.svg" width="1" height="1" alt="">
+<img src="2020.svg" width="1" height="1" alt="">
 </div>
 See also:
 <a href="../..">rapid transit timelines</a> - 
