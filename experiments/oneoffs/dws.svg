@@ -6,10 +6,10 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   width="850"
+   id="svg2"
    height="1400"
-   id="svg2">
+   width="850"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -33,32 +33,28 @@
      id="image10"
      style="display:none" />
   <path
-     d="m 335,504.5 -10.5,-8 -48.5,-2 -9,-3.5 -9,-27 2,-17.5 13,-23 16,-6.5 15.5,7 9,20.5 33.5,88.5 18,48 16,27 26,84 26,91 14,40 19,20 25,17 25,-3 32,-16 14,-6 17,2 25,9 51,-5 15,11 2,16 -0.5,25.5 8,11 10,13 4,9.5 -2.5,9.5 -5.5,8.5 -9,4.5 h -10 l -7,-3.5 -8,-8 -1.5,-11 6.5,-15 9.5,-11 6,-7.5"
-     id="path3757"
-     style="fill:none;stroke:#1d96d7;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     d="m 272,425 52.5,-85.5 6,-23 -1,-39 -7.5,-11 -12,-3.5 -17.5,3.5 -40,15.5 -12.5,2 -21,-4 -12.5,-3 -17.5,2 -39.5,29 -6,8 v 16.5 l 13.5,98 4,7.5 12,6 54,15.5 15.5,1 10,-6.5 9.5,-10"
+     style="fill:none;stroke:#1d96d7;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3759"
-     style="fill:none;stroke:#1d96d7;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     d="m 272,425 52.5,-85.5 6,-23 -1,-39 -7.5,-11 -12,-3.5 -17.5,3.5 -40,15.5 -12.5,2 -21,-4 -12.5,-3 -17.5,2 -39.5,29 -6,8 v 16.5 l 13.5,98 4,7.5 12,6 54,15.5 15.5,1 10,-6.5 9.5,-10 z" />
   <text
-     x="89.453102"
-     y="206.96097"
-     id="text2984"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453102"
+     id="text2984"
+     y="206.96097"
+     x="89.453102"><tspan
+       id="tspan1"
        y="206.96097"
-       id="tspan1">2020</tspan></text>
+       x="89.453102">2020</tspan></text>
   <path
-     id="path817"
+     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#204076;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 617.26695,984.46186 -15.09534,104.60804 141.41949,-35.7521 -8.20974,97.1928"
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#204076;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path817" />
   <path
-     id="path819"
+     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#204076;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 731.14407,1152.8941 -165.25424,0.7945"
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#204076;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path819" />
   <path
-     id="path821"
+     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#204076;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 734.32204,1156.3369 -12.71187,128.7076"
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#204076;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path821" />
 </svg>
