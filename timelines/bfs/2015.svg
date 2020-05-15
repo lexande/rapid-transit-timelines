@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
+   viewBox="0 0 7150 4000"
+   height="4000"
+   width="7150"
    id="svg2"
-   width="3550"
-   height="2600"
-   viewBox="0 0 3550 2600">
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,25 +26,25 @@
   <defs
      id="defs6" />
   <image
-     style="display:none"
+     xlink:href="../streetmap/bfsosm.png"
      width="7040.5708"
      height="3911.428"
      preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/bfsosm.png"
      id="image10"
-     x="-3575"
-     y="38.572021" />
+     x="0"
+     y="38.572021"
+     style="display:none" />
   <path
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#004b8e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1082.515,1260.3856 -21.356,8.0678 -32.2712,18.0339 -12.5762,8.7796 -6.4068,10.4407 v 9.9661 l 3.5593,10.9152 7.8305,7.356 55.0509,24.4407 12.1017,-0.2373 30.3729,-7.1187 15.4237,0.4746 19.6949,5.9322 19.4576,-0.4746 15.8983,-5.6949 16.1356,-12.5763 43.4238,-58.6101 6.1694,-12.1017 0.4746,-23.017"
-     id="path836" />
+     id="path836"
+     d="m 4657.515,1260.3856 -21.356,8.0678 -32.2712,18.0339 -12.5762,8.7796 -6.4068,10.4407 v 9.9661 l 3.5593,10.9152 7.8305,7.356 55.0509,24.4407 12.1017,-0.2373 30.3729,-7.1187 15.4237,0.4746 19.6949,5.9322 19.4576,-0.4746 15.8983,-5.6949 16.1356,-12.5763 43.4238,-58.6101 6.1694,-12.1017 0.4746,-23.017"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#004b8e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     xml:space="preserve"
-     id="text3769"
+     x="89.453125"
      y="206.96094"
-     x="89.453133"><tspan
-       id="tspan1"
+     id="text3769"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="89.453125"
        y="206.96094"
-       x="89.453133">2015</tspan></text>
+       id="tspan1">2015</tspan></text>
 </svg>
