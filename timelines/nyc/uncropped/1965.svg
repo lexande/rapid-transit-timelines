@@ -50,7 +50,7 @@
      id="path3638"
      d="m 3037.839,2545.8475 7.9701,-10.2929 L 3066.5,2525 l 14.746,-5.9765 11.2286,-11.4811 18.7712,-20.2288 22.2034,-10.2797 83.0508,-5.5339 17.178,-8.0678 51.8809,-80.4826 6.2886,-5.5598 8.6694,0.6356 121.5255,77.1865 25.6864,8.4661 27.0085,14.9322 181.0508,101.6186 55.8305,32.1356 46.4661,34.8051 27.7119,31.8305 9.678,46.7712 21.822,19.2796 167.2119,82.4661 99.4491,49.1187 32.9407,38.2797 57.6017,32.8559" />
   <image
-     xlink:href="../streetmap/nycosm.png"
+     xlink:href="../../streetmap/nycosm.png"
      style="display:none"
      id="image12"
      height="5376"
@@ -300,7 +300,15 @@
      d="m 2459.0003,3496 -43,89 -28,55 -6.1716,16.2825 1.5374,14.1109 4.6342,8.6066 92.9445,69.6517 31.0555,13.3483 109.3988,69.2696 3.2547,11.3727 -45.8727,70.8633 0.8773,17.4044 43.3419,31.59 11.5,79.25 1.75,13.25 -5.2668,10.6337 -42.0518,23.1069 L 2583,4092"
      style="fill:none;stroke:#f7931d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     style="fill:none;stroke:#0c3d91;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path3670"
-     d="m 1504.9999,4149.9999 -15.5,12 -9,23.5 -8,28 0.5,19.5 11,73 -4.5,22 -8,20.5 3.5,62 7,20.5 11.5,19.5 18.5,33 8,16.5 v 20 l -9,15.5 -23,17.5 -16,23.5 -33,77 -16,31.5 -19,34 -28,45 -19.5,32.5 -7,23 -17,52 -11,23.5 -20,29 -47,45.5 -78.5,76.5 -136,130 -92.50012,88.5 -38,53.5 -26.5,34 -22.5,23.5 -101.7497,110.7499 -22.75,20.25 -30.5,20.75 -36,17 -55,10.25 -14,6.25 -18.4091,11.0429" />
+     id="path956"
+     d="m 762.13049,5482.5703 -3.38046,3.6795 -22.75,20.25 -30.5,20.75 -36.00002,17 -55,10.25 -14,6.25 -18.4091,11.0429"
+     style="fill:none;stroke:#0c3d91;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path954"
+     d="m 1154.9984,5066.0749 -114.9985,109.925 -92.5002,88.5 -38,53.5 -26.5,34 -22.5,23.5 -98.36921,107.0704"
+     style="fill:none;stroke:#0c3d91;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path73"
+     d="m 1504.9999,4149.9999 -15.5,12 -9,23.5 -8,28 0.5,19.5 11,73 -4.5,22 -8,20.5 3.5,62 7,20.5 11.5,19.5 18.5,33 8,16.5 v 20 l -9,15.5 -23,17.5 -16,23.5 -33,77 -16,31.5 -19,34 -28,45 -19.5,32.5 -7,23 -17,52 -11,23.5 -20,29 -47,45.5 -78.5,76.5 -21.0015,20.075"
+     style="fill:none;stroke:#0c3d91;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
