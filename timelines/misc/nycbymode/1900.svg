@@ -25,6 +25,14 @@
   </metadata>
   <defs
      id="defs6" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 814.29893,3525.2697 17.51984,12.6358 12.53183,3.7566 226.2941,62.2462 35.6023,9.7927 17.034,3.194 526.986,36.1972 54.2955,7.4523 h 34.4227 l 40.1006,-3.9036 45.0689,-8.517 39.3909,-9.5815 143.0137,-52.5212 588.0244,-220.731 303.4163,-114.269 171.0487,-55.0053 515.6303,-163.5964"
+     id="path926" />
+  <path
+     id="path29219"
+     d="m 1053.0935,3663.1255 18.9067,-72.1257 -1.6591,-11.6134 -0.3409,-1.3659 -139.6627,-38.108 -144.3611,-75.9284 -17.0706,-10.7469 -78.2797,-43.5525 -14.6372,-7.6132 -6.513,-7.4686 -4.5219,-13.606 -6.4031,-35.9365"
+     style="fill:none;stroke:#800080;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <g
      style="display:none"
      id="g1301">
@@ -243,10 +251,6 @@
      d="m 822.41566,3533.2199 8.57434,16.6256 3.43892,5.7577 -4.42305,9.0266 -23.75093,47.6255 -32.50374,63.6366 -10.50186,16.2528 -94.51119,146.1311 -108.4888,137.6068 -26.7527,33.8492"
      style="fill:none;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     style="fill:none;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path3621"
-     d="m 1033.2271,5179.5176 -2.4149,-32.1907 59.6938,-111.054 0.7565,-55.528 -38.749,-275.4981 -52.75284,-356.2472 -28.49067,-208.7229 1.63004,-21.4751 33.11907,-142.8095 1.8813,-25.9842 -10.57612,-80.3526 -0.0515,-9.652 2.63598,-4.6528 4.59164,-6.8509 67.5,-257.5 -2,-14 L 1069,3575" />
-  <path
      style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path7444-76"
      d="m 1501.5004,1510.4996 35.5,-26 28,-34 21.5,-42.5 26.5,-10 14,-35.5 32.5,-109 26,-52 37,-65.4999 16.5,-33 20.5,-49 10.4348,-29.1699" />
@@ -370,10 +374,6 @@
      id="path3628-3"
      d="m 1690.9503,3652.7175 14.3817,71.387 2.5496,4.7581 4.1558,0.9352 69.963,-13.7984"
      style="fill:none;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 814.29893,3525.2697 17.51984,12.6358 12.53183,3.7566 226.2941,62.2462 35.6023,9.7927 17.034,3.194 526.986,36.1972 54.2955,7.4523 h 34.4227 l 40.1006,-3.9036 45.0689,-8.517 39.3909,-9.5815 143.0137,-52.5212 588.0244,-220.731 303.4163,-114.269 171.0487,-55.0053 515.6303,-163.5964"
-     id="path926" />
   <path
      id="path919"
      d="m 2188.3348,3172.1933 21.5424,3.5644 17.7353,9.1889 16.3568,16.2149 8.5169,9.5816 17.9211,26.438 52.6986,87.2988 12.0657,24.1313 67.4259,185.2437 18.4029,53.1445 74,201 c 20.3248,57.6802 42.8702,114.5816 60.9998,173 l 74.9998,370.9999 66,343 10,40 69,208 13,26 26,18 32,6 101,-15 54,-19 62,3 86,-8 72.0001,-12 70,-56 35,-29 7.8477,-11.1176 10.5037,-15.7358 16.8125,-18.0671 57.2128,-39.3965 14.8361,-17.5827 11.1785,-19.6955 7.4524,-17.5662 3.3713,-4.9682"
@@ -1305,10 +1305,6 @@
      d="m 1439.9999,2479.5 73.5621,-20.3155 20.8596,-1.0606 56.215,13.0814 6.7175,1.0607 2.8758,0.5189"
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     id="path5126"
-     d="m 672.67473,3304.6083 0.43772,-26.5045 -25.33984,-26.8334 -138.76103,-146.3962 -7.51183,-8.3737"
-     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 401.8664,3257.3399 4.64697,-7.5634 2.61599,-5.5346 -5.24906,-30.1199 -4.11295,-12.8677"
      id="1936-02-12_Broadway__Manhattan_" />
@@ -2133,10 +2129,6 @@
      d="m 1685.8893,2953.9777 -2.216,-9.5187"
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="1955-11-30 63 - Coney Island Ave-3"
-     d="m 872.1263,5189.2429 30.3732,4.7573 25.5,9.5 16.2472,4.0168 5.7528,-22.5168 58.1956,-17.1602 17.1147,-39.8279 -2.8103,-35.5119 -0.7904,-15.2991 -13.2096,-255.7008 -7.5,-117.5 -48.00001,-341.5 -63.5,-283.5 -19.99999,-98 -15,-56 -58.5,-37.5" />
-  <path
      style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m -385.03353,4250.6393 -45.2548,7.2478 -12.0208,19.4454 -11.137,14.6725 -15.9099,5.8336 -6.3639,10.2531 -9.546,1.2374 -4.773,3.7123 -1.7677,7.7782 -5.8337,1.2374 -7.6013,-3.0052 -9.1924,-9.0156 -4.2427,-0.5303 -7.9549,3.7123 -16.9706,-2.6516 -10.9601,2.4748 -7.955,-1.0606 -12.9047,-12.1976 -21.2132,-1.591 -17.6777,-2.6517 -24.2184,-5.48 -139.3,-1.591 -129.57733,13.6118 -3.3588,-2.6517 -9.1924,-45.078 -1.1362,-4.9472"
      id="path9113" />
@@ -2216,4 +2208,24 @@
      id="path19259-9"
      d="m -1394.5176,2915.8106 24.4836,-65.9494 -6.7175,-2.6516 29.3449,-50.0278 14.073,-17.2925 -0.7947,-6.5147"
      style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path6523"
+     d="m 1057.8845,5097.0323 32.6218,-60.7592 0.7565,-55.528 -38.749,-275.4981 -52.7529,-356.2472 -28.4906,-208.7229 1.63,-21.4751 33.1191,-142.8095 1.8813,-25.9842 -10.5762,-80.3526 -0.052,-9.652 2.636,-4.6528 4.5917,-6.8509 48.5933,-185.3743"
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1057.8845,5097.0323 -27.0723,50.2946 2.4149,32.1907"
+     id="path6519" />
+  <path
+     d="m 872.1267,5189.2429 30.3733,4.7573 25.5,9.5 16.2472,4.0168 5.7528,-22.5168 70.1084,-20.6732 7.6548,-11.1929 -5.2632,-60.6339 -14,-271 -7.5,-117.5 -48,-341.5 -63.5,-283.5 -20,-98 -15,-56 -61.9607,-39.821"
+     id="1955-11-30 63 - Coney Island Ave"
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path28618"
+     d="m 658.5509,3345.0604 -4.3167,-20.6113 -0.7642,-18.536 2.6537,-10.7558"
+     style="fill:none;stroke:#800080;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     id="path5126"
+     d="m 672.67473,3304.6083 0.43772,-26.5045 -25.33984,-26.8334 L 506.476,3102.048"
+     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
