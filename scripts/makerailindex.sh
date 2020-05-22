@@ -167,6 +167,9 @@ for link in nerail carail; do
   echo -n '<a href="../'$link'">'`cat ~/timelines/timelines/misc/${link}/name`' passenger rail timeline</a>'
 done
 echo ''
+if [ -f seealso ]; then
+  cat seealso
+fi
 echo '<br>'
 first=1
 for city in `cat $1/cities`; do
