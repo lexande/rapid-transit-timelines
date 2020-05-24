@@ -26,7 +26,7 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/nycosm.png"
+     xlink:href="../../streetmap/nycosm.png"
      id="image12"
      height="5376"
      width="5888"
@@ -272,11 +272,19 @@
      id="path3055"
      d="m 2603.7728,2485.9556 -46.1574,83.7588 -5.0311,9.3274" />
   <path
+     style="fill:none;stroke:#006000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 2385.7591,4088.8532 -6.5717,-5.257 -4.6673,-9.1903 -9.0444,-14.9436 -41.4477,-33.2607 -1.489,-4.1579 0.358,-10.081"
+     id="path6283" />
+  <path
+     d="m 2573.5734,5191.3104 -2.5596,-20.063 -5.1225,-47.0067 5.1258,-25.6326 0.9832,-31.609 -9.5,-25 -19.5,-22 -34.3729,-21.4492 -49.5768,-41.8257 -24.5503,-30.4116 -14.2881,-47.0932 -89.9916,-79.7034 -41.9321,-30.0254 -0.3305,-4.9491 36.9236,-49.034 11.8038,-21.9222 0.8149,-8.315 -4.1704,-32.0666 16.6704,-73.2046 53,-242 11,-98 4,-86 -1.2191,-15.1742 -5.6705,-30.2356 -25.3516,-19.7361"
+     id="path9400"
+     style="fill:none;stroke:#006000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
      style="fill:none;stroke:#800000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 2821.0015,5149.9974 -5.0015,10.0029 -91,27 -63,-6 -5.4886,-0.3988 -3.4088,1.3911 -2.0103,2.1984 -3.5219,16.2422"
+     d="m 2821.0015,5149.9975 -5.0015,10.0029 -91.0001,27 -63,-6 -5.4886,-0.3988 -3.4088,1.3911 -2.0103,2.1984 -3.5219,16.2422"
      id="path953" />
   <path
      style="fill:none;stroke:#800000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 2787.5486,3863.5218 8.7994,91.4475 -3.348,23.031 -35,155 31,216 52,357 39,276 1,48 -59.9985,119.9971"
+     d="m 2787.5486,3863.5219 8.7994,91.4475 -3.348,23.0309 -35,155 31,216 52,357 39,276.0001 1,48 -59.9985,119.9971"
      id="path3606" />
 </svg>

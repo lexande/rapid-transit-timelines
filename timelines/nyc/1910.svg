@@ -26,7 +26,7 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/nycosm.png"
+     xlink:href="../../streetmap/nycosm.png"
      id="image12"
      height="5376"
      width="5888"
@@ -336,11 +336,11 @@
      id="path3055-2"
      style="fill:none;stroke:#ffaaaa;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     style="fill:none;stroke:#800000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 2821.0015,5149.9975 -5.0015,10.0029 -91,27 -63,-6 -5.4886,-0.3988 -3.4088,1.3911 -2.0103,2.1984 -3.5219,16.2422"
-     id="path953" />
+     id="path953"
+     d="m 2821.0015,5149.9976 -5.0015,10.0029 -91.0001,27 -63,-6 -5.4886,-0.3988 -3.4088,1.3911 -2.0103,2.1984 -3.5219,16.2422"
+     style="fill:none;stroke:#800000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     style="fill:none;stroke:#800000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 2787.5486,3863.5218 8.7994,91.4475 -3.348,23.031 -35,155 31,216 52,357 39,276.0001 1,48 -59.9985,119.9971"
-     id="path3606" />
+     id="path3606"
+     d="m 2787.5486,3863.522 8.7994,91.4475 -3.348,23.0308 -35,155 31,216 52,357 39,276.0002 1,48 -59.9985,119.9971"
+     style="fill:none;stroke:#800000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
