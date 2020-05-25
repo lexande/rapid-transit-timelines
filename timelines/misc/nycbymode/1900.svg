@@ -828,8 +828,8 @@
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path14002"
-     d="M 455.7648,4652.7691 414.9545,4706 l 46.8432,37.6165 16.679,13.8401 56.4248,39.036 92.84136,83.3885 1.02251,1.4261 13.73493,45.0059 3.81948,4.7314 20.73082,25.6802 49.5768,41.8256 34.37292,21.4493"
-     style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     d="m 421.203,4626.03 -40.761,52.204 81.3557,65.3825 16.679,13.8401 56.4248,39.036 92.84136,83.3885 1.02251,1.4261 13.73493,45.0059 3.81948,4.7314 20.73082,25.6802 49.5768,41.8256 34.37292,21.4493"
+     style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path14004"
      d="m 543.6846,5235.4775 24.8423,4.7677 34.8797,-0.2509 27.6027,-3.2621 19.5727,-6.0224 73.5234,-27.8536 39.64738,-5.7715 18.06722,-2.5093 12.26707,1.5577 1.80122,-59.7673 38.61243,-5.5274 18.18551,0.2689 5.13603,-21.8894 10.17931,3.0162"
@@ -1040,7 +1040,7 @@
      style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path1364"
-     d="m -1755.6111,2598.1286 -26.8249,73.2954 -34.1003,126.2085 -6.3376,21.8633"
+     d="m -1755.6111,2598.1286 -26.8249,73.2954 -34.1003,126.2085 5.3568,1.5159"
      style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path5171"
@@ -1338,7 +1338,7 @@
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 801.94334,2340.7722 -33.17247,-18.6546 -60.98066,-32.9668 5.10697,-8.9334 55.4404,-100.6794"
+     d="m 742.41179,2226.6191 25.92579,-47.0811"
      id="path24032" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1394,12 +1394,8 @@
      style="opacity:1;fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path8315"
-     d="m 992.33264,1761.3535 16.24336,-29.4861"
+     d="m 992.33264,1761.3535 11.26136,-20.4424"
      style="opacity:1;fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="1936-04-01_116th_St_Crosstown"
-     d="m 1009.9052,1732.5842 13.0894,7.0584 37.7677,-68.4082 2.2379,1.2659 83.5,47 85.1236,47.0056 123.3764,69.4944"
-     style="opacity:1;fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path10090"
      d="m 408.3893,3013.9661 33.1806,4.9682 73.8136,45.7786 9.2267,26.2606"
@@ -1866,7 +1862,7 @@
      id="path24028" />
   <path
      id="path8301"
-     d="m 391.93744,3107.122 25.58326,11.3156 5.74533,-32.6255 10.42607,-57.3118 17.882,-117.9373 10.93353,-82.4869 3.84644,-20.7009 7.02018,-25.4663 11.67465,-57.5696 0.23384,-44.1539 2.93539,-5.322 19.83898,-37.6539 139.03572,-247.6618 52.09718,-96.4587 5.60515,-4.4041 60.1679,-109.6182 -0.63625,-82.8449 9.14428,-16.1772"
+     d="m 391.93744,3107.122 25.58326,11.3156 5.74533,-32.6255 10.42607,-57.3118 17.882,-117.9373 10.93353,-82.4869 3.84644,-20.7009 7.02018,-25.4663 11.67465,-57.5696 0.23384,-44.1539 2.93539,-5.322 19.83898,-37.6539 139.03572,-247.6618 52.09718,-96.4587 2.56999,-4.704 5.075,-3.416 58.12806,-105.9023 -0.63625,-82.8449 9.14428,-16.1772"
      style="fill:none;fill-rule:evenodd;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path10984"
@@ -2206,8 +2202,8 @@
      id="path25301" />
   <path
      id="path8297"
-     d="m 767.6094,2324.8917 -64.01222,-34.638 -2.41164,-1.3304 2.40743,-3.9864 64.778,-118.1614 223.96167,-405.422"
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     d="m 769.05664,2322.2534 -63.57505,-34.4202 -1.88862,-2.8963 64.778,-118.1614 223.96167,-405.422"
+     style="opacity:1;fill:none;fill-opacity:0.396078;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path8311"
      d="m 1180.0404,1880.1169 -79.7525,143.9052 -69.9204,128.8215 -186.76608,335.5338 -106.99664,188.728 -1.69403,3.0692 -53.84035,-29.0563"
@@ -2260,4 +2256,8 @@
      id="path2750"
      d="m 908.4997,3388.6348 -4,-0.1479 -56.92361,-1.4643 -46.96397,-2.6556 1.96151,22.118 -107.31553,-3.367 -16.94699,-0.6734 -11.91655,-2.0092 -4.16922,2.0646 -3.41129,7.9436 -12.19635,33.5695 -83.99067,-28.4025 -57.62733,157.8894 -1.4888,3.7528 -10.5112,-3.2528 -90,100 -8.273,9.2564 33.35805,31.2288 -0.70974,2.8389 22.71186,7.4524"
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="1936-04-01_116th_St_Crosstown-7"
+     d="m 1355.0002,1836.0003 -123.3764,-69.4944 -85.1236,-47.0056 -83.5,-47 -2.2379,-1.2659 -37.7677,68.4082 -5.3182,9.4308 -14.0824,-8.1623"
+     style="opacity:1;fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
