@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 2900 2400"
-   height="2400"
-   width="2900"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="2900"
+   height="2950"
+   viewBox="0 0 2900 2950">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,29 +26,33 @@
   <defs
      id="defs6" />
   <image
-     style="display:none"
+     xlink:href="../streetmap/sjwosm.png"
      y="-97"
      x="-1025"
      id="image10"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/sjwosm.png"
      preserveAspectRatio="none"
      height="3072"
-     width="4096" />
+     width="4096"
+     style="display:none" />
   <path
-     id="path836"
+     id="path835"
+     d="m 1192.9874,2809.0875 -70.9866,-406.8296 -5.1159,-12.9052 -10.9376,-9.7805 -28.9207,-10.8999 -7.7502,-8.5179 -4.0549,-11.4257 -4.8435,-27.7269 1.1548,-12.4015 19.7928,-84.465 16.6016,-29.3591 35.8951,-22.2749 106.5277,-30.0078 66.2609,-16.3772 44.3849,-26.7998 6.3266,-13.4092 -6.5786,-745.845 5.1433,-32.6425 135.4237,-300.9584 6.3017,-30.1341 24.7836,-270.68187 17.4662,-60.94025"
+     style="fill:none;stroke:#fec30a;stroke-width:5;stroke-linejoin:round;stroke-opacity:1" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#5ba7c9;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 598.4213,1242.852 345.164,5.7528 10.9302,6.9033 5.7527,10.3549 2.3011,86.8663 -12.0807,91.4684 -2.3011,395.2128 9.7796,59.8284 -1.1505,20.1346 -8.0539,55.2262 -0.5752,249.6686 9.2043,20.7099 14.9571,8.0538 24.7368,6.9033 39.1186,7.4785"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#5ba7c9;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path836" />
   <path
-     id="path838"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#a21005;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 127.2724,1822.7276 123.6838,-4.6022 580.4508,-35.0917 153.0227,-8.6291 h 94.9201 l 66.7317,-5.1775 310.0723,13.2313 789.275,-23.5862 17.8335,2.8764 10.9302,6.328 9.2043,13.2313 5.1775,12.0807 5.7527,24.1615 9.2044,18.984 19.5593,13.8066 21.8604,5.7527 49.4735,6.9033 302.5937,-8.0538 14.3819,-6.3281 6.328,-5.7527 5.1774,-14.3818 2.8764,-52.9252 -8.6291,-253.1202 -6.9033,-368.7502 -5.1774,-92.619 -14.3819,-54.651 -59.8284,-140.3667 -70.7586,-117.3557 -12.0807,-78.8125 -2.3011,-55.2262 9.2043,-25.8873 63.2801,-102.9739 6.9033,-31.6401 1.7258,-44.8713 1.1505,-278.43227"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#a21005;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     id="path838" />
   <text
-     x="89.453133"
-     y="206.96094"
-     id="text2847"
+     style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="89.453133"
+     id="text2847"
+     y="206.96094"
+     x="89.453133"><tspan
+       id="tspan1"
        y="206.96094"
-       id="tspan1">2020</tspan></text>
+       x="89.453133">2020</tspan></text>
 </svg>
