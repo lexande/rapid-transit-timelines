@@ -16,9 +16,10 @@ CVG="cvg1920.svg"
 HAV="hav1921.svg"
 MSY="msy1959.svg"
 MAN="aman1970.svg man1971.svg aman2020.svg"
+CRL="crl2009.svg ../../timelines/crl/small/2020.svg"
 
 index.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4 Makefile
-	./makeindex.sh 10 $(NYC) $(BOS) $(PIT) $(CHI) '<br>' $(SFO) $(SEA) '<br>' $(MAN) $(ZRH) '<br>' $(HNL) $(PVD) $(CVG) $(HAV) $(MSY) > $@
+	./makeindex.sh 10 $(NYC) $(BOS) $(PIT) $(CHI) '<br>' $(SFO) $(SEA) '<br>' $(MAN) $(ZRH) $(CRL) '<br>' $(HNL) $(PVD) $(CVG) $(HAV) $(MSY) > $@
 
 large.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4 Makefile
-	./makeindex.sh 30 $(NYC) $(BOS) $(PIT) $(CHI) $(SFO) $(SEA) $(MAN) $(ZRH) $(HNL) $(PVD) $(CVG) $(HAV) $(MSY) > $@
+	./makeindex.sh 30 $(NYC) $(BOS) $(PIT) $(CHI) $(SFO) $(SEA) $(MAN) $(ZRH) $(CRL) $(HNL) $(PVD) $(CVG) $(HAV) $(MSY) > $@
