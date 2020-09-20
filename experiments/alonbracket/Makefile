@@ -1,4 +1,4 @@
-all: worst16.html roundof16.html roundof32.html roundof64.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
+all: semifinals.html quarterfinals.html worst16.html roundof16.html roundof32.html roundof64.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
 
 %.svg.gz : %.svg
 	gzip -f --keep $<
@@ -11,6 +11,12 @@ roundof32.html: Makefile makeindex.sh $(wildcard *.svg) ~/timelines/scripts/temp
 
 roundof16.html: Makefile makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4
 	./makeindex.sh Americas_Region: nyc.svg scl.svg chi.svg sao.svg Democratic_Europe_Region: par.svg mad.svg lon.svg ber.svg Undemocratic_Afroeurasia_Region: bjs.svg mow.svg sha.svg szx.svg Democratic_Asia/Pacific_Region: tyo.svg ngo.svg osa.svg sel.svg | sed -e's/NNN/16/' > $@
+
+quarterfinals.html: Makefile makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4
+	./makeindex.sh nyc.svg chi.svg par.svg lon.svg mow.svg sha.svg tyo.svg sel.svg | sed -e's/Round of NNN/Quarterfinals/' > $@
+
+semifinals.html: Makefile makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4
+	./makeindex.sh nyc.svg par.svg mow.svg tyo.svg | sed -e's/Round of NNN/Semifinals/' > $@
 
 worst16.html: Makefile makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4
 	./makeindex.sh Southeast_US_Region: jax.svg clt.svg orf.svg sju.svg Rest_of_US_Region: dtt.svg cle.svg buf.svg las.svg European_Union_Region: pmi.svg cta.svg peg.svg crl.svg Rest_of_World_Region: toy.svg for.svg edi.svg dnk.svg Quarterfinals: jax.svg orf.svg dtt.svg las.svg pmi.svg crl.svg for.svg edi.svg Semifinals: jax.svg dtt.svg crl.svg for.svg Final: dtt.svg crl.svg | sed -e's/Rapid Transit Bracket: Round of NNN/Worst Rapid Transit Bracket: Round of 16/' > $@
