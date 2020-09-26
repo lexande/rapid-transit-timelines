@@ -1,4 +1,4 @@
-targets = timelines streetcarscale walledcityscale timelines/misc experiments/alonbracket experiments/oneoffs experiments/subplans experiments/mashup
+targets = timelines streetcarscale walledcityscale timelines/misc experiments/oneoffs experiments/subplans experiments/mashup
 
 all: $(targets)
 
