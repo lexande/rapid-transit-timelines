@@ -50,6 +50,7 @@ CDT	 890m	tbus gradesep	2	2014-12-20	never*
 PEN	 907m	funicular	2	1923-10-21	never*		connected with 1313m line below
 FLR	 920m	tram gradesep	2	2010-02-14	never*
 BOS	 940m	tram subway	2	1897-09-01*	1899-01-01?	ext >2km within 2yr, >3km 4yr
+KTW	 944m	tram gradesep	2	1970-__-__	never		no thru-running with 1148m below
 FLR	 970m	tram gradesep	2	2019-02-11	never*		separate from 920m line above
 EIN	 990m	bus gradesep	2	2004-09-05	never*
 MO_	1008m	tram gradesep	2	1978-__-__	never		272m shared w/ 2170m line below
@@ -62,6 +63,7 @@ AGB	1106m	tram gradesep	2	2001-06-10	2009-12-13*
 MDZ	1110m	tram gradesep	2	2012-10-08	never*		temporarily longer 2019-05-07?
 CLE	1120m	tram subway	2	1918-__-__	1920-04-11*	1918 line never extended
 BCN	1130m	funicular	2	1901-10-29	1924-12-30*
+KTW	1148m	tram gradesep	2	1980-07-21*	never		ext to 2780m within 3yr
 ZAG	1140m	tram gradesep	3	1950-__-__	never*
 ERF	1150m	tram gradesep	2	1987-10-06	never*
 BRN	1161m	funicular	3	1899-09-12	1974-05-26*
@@ -134,4 +136,4 @@ UIO	2860m	tbus gradesep	5	1996-21-21*	never
 BFE	2950m	tram gradesep	5	1978-04-01	1991-04-28	thru with 1050m above
 
 streetcarscale under 3km:
-CLT 2030m, SVQ 2070m, STR 2200m, DOH 2430m, TCM 2520m, LIT 2560m, NTL 2680m, MEM 2760m
+CLT 2030m, SVQ 2070m, STR 2200m, DOH 2430m, TCM 2520m, LIT 2560m, IST 2570m, NTL 2680m, MEM 2760m
