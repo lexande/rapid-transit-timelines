@@ -88,20 +88,20 @@
      id="g4322">
     <image
        xlink:href="osm/crosm.png"
-       style="stroke:#808000"
-       id="image10"
-       height="8960"
-       width="11008"
+       x="0"
        y="-100"
-       x="0" />
+       width="11008"
+       height="8960"
+       id="image10"
+       style="stroke:#808000" />
     <image
        xlink:href="osm/raillayerosm.png"
-       style="opacity:0.8;stroke:#008080"
-       id="image4320"
-       height="8960"
-       width="11008"
+       x="0"
        y="-100"
-       x="0" />
+       width="11008"
+       height="8960"
+       id="image4320"
+       style="opacity:0.8;stroke:#008080" />
   </g>
   <path
      style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -120,9 +120,9 @@
      id="path3759"
      d="M 6261.247,477.13173 6263.5,463.5 6261,457 l 1,-11.5 -14.5,-13 -12.5,-1 -21.5,-19.5 -22.5,-10 -38,-9.5 -98,-111.5 -66.5,-76.5 -30,-14.5 -3.5,-9.5 9.5,-16 14.5,-17.5" />
   <path
-     style="fill:none;stroke:#008080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     style="fill:none;stroke:#008080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3979"
-     d="m 5707.0944,4196.5705 56.1794,0.4142 36.0625,15.2028 13.435,21.9203 31.1127,10.9602" />
+     d="m 5707.0944,4196.5705 56.1794,0.4142 28.0812,11.8381" />
   <text
      style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
@@ -149,9 +149,9 @@
      id="path7270"
      d="m 4186.9317,5546.5 -7.75,0.75" />
   <path
-     style="fill:none;stroke:#00dd00;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     style="fill:none;stroke:#00dd00;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3946"
-     d="m 5845.312,4240.5825 -29.812,-11.3328 -13.1379,-21.165 -9.2867,-4.0035 5.1019,-20.3883 -21.6773,-68.1932 -32.1637,-92.3556 -4.3363,-6.6444" />
+     d="m 5740,4016.4997 4.3363,6.6444 32.1637,92.3556 21.6773,68.1932 -5.1019,20.3883 -1.0891,2.427" />
   <path
      style="fill:none;stroke:#00dd00;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path4680"
