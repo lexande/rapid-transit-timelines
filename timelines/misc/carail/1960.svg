@@ -38,21 +38,21 @@
      transform="translate(200.00001)">
     <image
        xlink:href="osm/osm.png"
-       width="9570.3115"
-       height="12304.689"
-       preserveAspectRatio="none"
-       id="image4235"
+       y="-204.68909"
        x="-564.31201"
-       y="-204.68909" />
+       id="image4235"
+       preserveAspectRatio="none"
+       height="12304.689"
+       width="9570.3115" />
     <image
        xlink:href="osm/raillayerosm.png"
-       style="opacity:0.8"
-       width="9570.3115"
-       height="12304.688"
-       preserveAspectRatio="none"
-       id="image4234"
+       y="-204.68784"
        x="-564.31201"
-       y="-204.68784" />
+       id="image4234"
+       preserveAspectRatio="none"
+       height="12304.688"
+       width="9570.3115"
+       style="opacity:0.8" />
   </g>
   <path
      d="m 799.147,1790.39 6.12627,-6.783 4.80651,-11.7492 0.53406,-12.2833 -0.53406,-12.8174 -19.2261,-77.4384 -11.74927,-36.85 -27.23694,-40.5883 -20.82824,-20.2942 -19.76014,-21.3623 -6.40869,-16.0218 0,-26.7028"
@@ -176,26 +176,6 @@
      style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path5983-3"
      d="m 7133.8572,9006.2035 -9.613,-0.5341 -6.4087,13.3519" />
-  <path
-     d="m 539.94706,1938.6085 -0.64003,0.32 -1.21606,-0.832 -1.15206,-0.32 -4.86425,0.384 -0.57602,-0.064 -0.25602,-0.448 -0.19201,-2.6882 -0.32001,-0.448 -19.45698,1.0241 -31.55358,1.7921 -0.32002,0.448 0.51203,10.2405 -0.25602,0.384 -1.02405,0.064 -0.32001,-0.32 -0.19201,-3.0081 0.32001,-0.3841 0.96005,-0.064 0.25601,-0.32"
-     id="path3592"
-     style="fill:none;stroke:#d31345;stroke-width:0.125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     d="m 540.01106,1938.3525 -1.02405,1.9201 -1.9201,2.1761 -3.13615,3.1362 -1.8561,2.3681 -1.28006,2.8161 -0.19201,1.7921 -0.19201,5.6323 0.44802,0.64 4.09621,2.0481 1.02405,1.2161 1.47207,3.0082 2.36812,2.1121 3.39217,1.728 4.0322,1.6641 9.08845,2.3682 1.07919,0.2931 0.56262,-0.4485 -0.0329,-1.0162"
-     id="path3594"
-     style="fill:none;stroke:#d31345;stroke-width:0.125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     d="m 530.66659,1950.7691 -3.84019,7.0404 -1.02405,2.5601 -0.32001,8.0644 -0.32002,11.2646 0.51202,1.6641 4.73624,6.0163 2.94415,3.7762 0.83204,0.32 9.9845,-0.128 0.51203,0.448 0.128,1.6641 0.44802,0.256 9.28025,-0.086"
-     id="path3602"
-     style="fill:none;stroke:#d31345;stroke-width:0.125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     d="m 539.81905,1938.7365 3.00815,-4.0322 3.77619,-5.4402 3.20016,-3.2642 4.86424,-4.6722 4.48022,-3.7762 17.53687,-15.6808 3.64819,-2.7521 1.79209,-0.8321 2.88015,-0.64 2.68814,-1.3441 8.89643,-9.2164 9.21646,-9.5365 4.94959,-5.0347 8.6831,-8.47 7.36037,-7.4244 13.76069,-13.6326 3.5682,-3.6622 0.85559,0.021 2.61656,2.6808 0,0.576 -0.89604,0.8321 -0.57603,0 -2.81614,-2.7522 -0.70404,0.128"
-     id="path2818"
-     style="fill:none;stroke:#d31345;stroke-width:0.125;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     d="m 585.56854,1897.3649 -0.56323,0.2816 -2.88015,0.64 -1.79209,0.8321 -3.64819,2.7521 -17.53687,15.6808 -4.48022,3.7762 -4.86424,4.6722 -3.20016,3.2642 -3.77619,5.4402 -3.00815,4.0322"
-     id="path2979"
-     style="fill:none;stroke:#d31345;stroke-width:0.625;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2814.5783,2136.6897 7.4214,7.81 10.5,26.5 12,14.5 298,333.5 61.5,66 23.5,34 12,9.5 414.9999,191 18.5,15 597,614 196,237 41,25.5 60.5,52 155,176.5 75,84 294,334.5 38.5,20.5 12,17.5 139,262 90,169 189.5,1024.5 74,376 14,30 31.5,33 217.5,200 23,18 41,12.5"
