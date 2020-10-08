@@ -88,41 +88,37 @@
      id="g4322">
     <image
        xlink:href="osm/crosm.png"
-       x="0"
-       y="-100"
-       width="11008"
-       height="8960"
+       style="stroke:#808000"
        id="image10"
-       style="stroke:#808000" />
+       height="8960"
+       width="11008"
+       y="-100"
+       x="0" />
     <image
        xlink:href="osm/raillayerosm.png"
-       x="0"
-       y="-100"
-       width="11008"
-       height="8960"
+       style="opacity:0.8;stroke:#008080"
        id="image4320"
-       style="opacity:0.8;stroke:#008080" />
+       height="8960"
+       width="11008"
+       y="-100"
+       x="0" />
   </g>
   <path
      style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3953"
-     d="M 2078,6967.5858 V 6978 l -3,7 -11,-0.5 -6.5,7 -20,21 -23,17.5 -4.5,25 -16.5,15.5 -19,3.5 -14,10.5 -12.5,-1.5 -4.5,3.5" />
+     d="m 2062.7666,6967.934 -35.6941,15.9153 -0.4686,17.4927 5.7157,6.5355 -0.6677,9.0721 L 2014.5,7030 l -4.5,25 -16.5,15.5 -19,3.5 -14,10.5 -12.5,-1.5 -4.5,3.5" />
   <path
      style="fill:none;stroke:#b3b3b3;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path5542"
      d="m 9105.5,1246 14.5,-8.5 10,-10 11,-5.5 6.5,3.5 2,5.5 0,11.5 7.5,8.5 9.5,11 6.5,29 10.5,7 28,-5 20.5,-11 22,-6 23.5,-10.5 12.5,-11 21.5,-24 31.5,-11.5 18.5,-2.5 19.5,10 70.5,3 12,6 45,-4 26.5,3 12.5,7.5 24,2.5 29,1.5 8,-7.5 8,-15 10.5,-6.5 33,-3.5 29,-12.5 30.5,-2 15.5,2.5 33.5,-8 19.5,-11 20.5,-9 21,1 8,-6.5 23.5,-23 5,-20 0.5,-19 4.5,-9 12,-6.5 14,-13.5 61.5,-11 37.5,-11.5 54.5,-2 36,5.5 16.5,12 33.5,3.5 13.5,-2.5 18.5,3 5.5,1.5 4.5,-9" />
   <path
-     style="fill:none;stroke:#008080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     style="fill:none;stroke:#008080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3958"
-     d="m 5573.5,4355 36,-67 16,-39.5 29,-36 0.3154,-11.7402 L 5709,4196" />
+     d="m 5573.5,4355 36,-67 16,-39.5 29,-36" />
   <path
      style="fill:none;stroke:#000060;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3759"
      d="M 6261.247,477.13173 6263.5,463.5 6261,457 l 1,-11.5 -14.5,-13 -12.5,-1 -21.5,-19.5 -22.5,-10 -38,-9.5 -98,-111.5 -66.5,-76.5 -30,-14.5 -3.5,-9.5 9.5,-16 14.5,-17.5" />
-  <path
-     style="fill:none;stroke:#008080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path3979"
-     d="m 5707.0944,4196.5705 56.1794,0.4142 28.0812,11.8381" />
   <text
      style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
@@ -171,7 +167,7 @@
   <path
      style="fill:none;stroke:#c83771;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3937"
-     d="m 2042.964,6788.3185 -0.9641,3.6812 -9,7 3,36 6,13.5 -4,13 12.5,31 9.5,3 15,26 15.641,9.1743 -0.2933,23.1707" />
+     d="m 2042.964,6788.3185 -0.9641,3.6812 -9,7 3,36 6,13.5 -4,13 12.5,31 9.5,3 15,26 2.4155,8.094 0.2492,5.3152" />
   <text
      style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
