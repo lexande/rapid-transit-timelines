@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../../../streetmap/bososm.png"
-     x="-249.69321"
-     y="-998.76392"
-     width="3995.0769"
-     height="4744.1538"
+     style="display:none;stroke:#00dd00"
      id="image12"
-     style="display:none;stroke:#00dd00" />
+     height="4744.1538"
+     width="3995.0769"
+     y="-998.76392"
+     x="-249.69321" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 541.325,1863.9193 -33.51188,50.5371 -19.86228,22.5934 -25.5727,36.2487 -10.4277,12.4139 -28.45974,19.3658 -13.3425,8.778 -36.5164,24.9294 -30.1962,31.9518 -63.2014,69.5216 -20.3649,22.1205 -12.6403,31.9518 -3.5112,25.9828 -0.9678,22.4353 -3.5,110.25 -10.375,59.875 -24.99996,130.625 -5.48884,27.6031 -6.29035,17.5181 -36.34051,35.1291 -23.1739,27.7384 -61.4458,44.9432 -42.8365,29.494 -21.7694,7.7247 -59.6902,12.6402 -51.2634,12.9914 -28.4406,17.2049 -12.9914,15.8003 -102.1756,152.0345"
@@ -1286,4 +1286,16 @@
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linejoin:round"
      d="m 1123.0556,-634.25221 4.0737,11.12883 26.0627,34.33598"
      id="path1144" />
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linejoin:round"
+     d="m 3503.906,3021.2397 16.3312,-4.42 74.9809,-10.0042 78.439,-36.903 70.4818,-19.1001"
+     id="path5038" />
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linejoin:round"
+     d="m 3606.0385,3002.9819 4.0749,-22.8081 -3.7235,-20.1571 24.7501,-60.3197 -7.2649,-25.0048 14.0325,-14.7927 62.7116,-20.7422 10.4506,-1.5908 8.9972,-3.789 22.9591,-8.4292"
+     id="path5041" />
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linejoin:round"
+     d="m 3562.4363,3042.9758 -0.2322,-31.4518"
+     id="path5053" />
 </svg>
