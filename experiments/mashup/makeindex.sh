@@ -1,7 +1,7 @@
 cat <<HEREDOC
 <!DOCTYPE HTML>
 <html>
-<head><title>Ancient Walled City & Modern Rapid Transit Scale Comparison</title>
+<head><title>Pre-Industrial Walled City & Modern Rapid Transit Scale Comparison</title>
 <style type="text/css">
 body {
 	text-align: center;
@@ -72,9 +72,9 @@ for city in $sortedcities; do
   NAME=`grep ^$city names | sed -e's/.*\t//; s/<br>.*//; s/,//;'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
   if ( grep ^$city! names >/dev/null ); then
-    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\">$NAME</div>"
+    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" autocomplete=\"off\">$NAME</div>"
   else
-    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked>$NAME</div>"
+    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" autocomplete=\"off\" checked>$NAME</div>"
   fi
 done
 cat <<HEREDOC

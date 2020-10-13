@@ -67,7 +67,7 @@ for file in $@; do
     city=`basename $file .svg`
     NAME=`grep ^$city names | awk -F"\t" '{print $3}' | sed -e's/<br>.*//'`
     UPPER=$(echo $city | tr 'a-z' 'A-Z')
-    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" checked>$NAME</div>"
+    echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" autocomplete=\"off\" checked>$NAME</div>"
   fi
 done
 if [ $SCALE = 10 ]; then

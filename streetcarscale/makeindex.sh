@@ -65,23 +65,20 @@ body {
 </style>
 <script language="JavaScript" type="text/javascript">
 function toggleshow(x) {
-	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
-	else document.getElementById(x).style.display = 'inline-block';
-}
-function toggleshowm(x) {
 	span = document.getElementById(x);
 	checkboxes = document.getElementsByClassName(x + "checkbox");
 	if (span.style.display == 'inline-block') {
+		span.style.display = 'none';
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = false; }
 	} else {
+		span.style.display = 'inline-block';
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = true; }
 	}
-	toggleshow(x);
 }
 function sidebarclick(x) {
 	span = document.getElementById(x);
 	if (span.style.display == 'none') {
-		document.getElementById(x + "checkbox").click();
+		toggleshow(x);
 	}
 	span.scrollIntoView();
 }
@@ -89,7 +86,7 @@ function selectall() {
 	spans = document.getElementsByTagName("span");
 	for (var i=0; i < spans.length; i++) {
 		if (spans[i].style.display == 'none') {
-			document.getElementById(spans[i].id + "checkbox").click();
+			toggleshow(spans[i].id);
 		}
 	}
 }
@@ -97,7 +94,7 @@ function deselectall() {
 	spans = document.getElementsByTagName("span");
 	for (var i=0; i < spans.length; i++) {
 		if (spans[i].style.display == 'inline-block') {
-			document.getElementById(spans[i].id + "checkbox").click();
+			toggleshow(spans[i].id);
 		}
 	}
 }
@@ -169,22 +166,12 @@ for city in $CITIES; do
     $show = ($name =~ /@/);
     $name =~ s/^.*\t//;
     chomp $name;
-    if ( $name =~ / \/ / ) { 
-      $id = "";
-      foreach ( split(/ \/ /, $name) ) {
-	if ($show) {
-	  print "$_ <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshowm(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
-	} else {
-	  print "$_ <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshowm(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
-	}
-      $id += 1;
-      }
-    } else {
-      $sortname = $name =~ s/(.*) ([0-9]*)/$2 $1/r;
+    foreach ( split(/ \/ /, $name) ) {
+      $sortname = $_ =~ s/(.*) ([0-9]*)/$2 $1/r;
       if ($show) {
-	print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
+        print "$sortname <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       } else {
-	print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
+        print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       }
     }' $city
 done | sort -n | sed -e's/.* <input/<input/;'

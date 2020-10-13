@@ -222,7 +222,7 @@ function deselectall() {
 	spans = document.getElementsByTagName("span");
 	for (var i=0; i < spans.length; i++) {
 		if (spans[i].style.display == 'inline-block') {
-			document.getElementById(spans[i].id + "checkbox").click();
+			toggleshow(spans[i].id);
 		}
 	}
 }
@@ -260,14 +260,14 @@ window.onload=function() {
 }
 function clicktohide() {
 	citylist.forEach(function (city) {
-		imgaelt = document.getElementById(city).getElementsByTagName("a")[1];
-		imgaelt.href = "javascript:toggleshow('" + city + "')"
+		imga = document.getElementById(city).getElementsByTagName("a")[1];
+		imga.href = "javascript:toggleshow('" + city + "')"
 	});
 }
 function unclicktohide() {
 	citylist.forEach(function (city) {
-		elt = document.getElementById(city);
-		elt.getElementsByTagName("a")[1].href = elt.getElementsByTagName("a")[0].href;
+		span = document.getElementById(city);
+		span.getElementsByTagName("a")[1].href = span.getElementsByTagName("a")[0].href;
 	});
 }
 </script>
@@ -335,9 +335,9 @@ for city in $@; do
     chomp $name;
     foreach ( split(/ \/ /, $name) ) {
       if (-e "$city/s") {
-        print "$_ <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
+        print "$_ <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       } else {
-        print "$_ <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
+        print "$_ <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       }
     }' $city
 done | sort | sed -e's/.* <input/<input/;'
@@ -373,13 +373,4 @@ for city in $@; do
   fi
   echo '</div>'
 done
-echo '</div><script type="text/javascript">'
-echo -n '['
-for city in $@; do echo -n '"'$city'",'; done | tr 'a-z' 'A-Z' | sed -e's/,$/].forEach(function(city) {/'
-cat <<HEREDOC
-	if ((document.getElementsByClassName(city + "checkbox")[0].checked && document.getElementById(city).style.display == "none") || (!document.getElementsByClassName(city + "checkbox")[0].checked && document.getElementById(city).style.display == "inline-block")) {
-		toggleshow(city);
-	}
-});
-</script></body></html>
-HEREDOC
+echo '</div></body></html>'

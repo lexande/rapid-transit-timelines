@@ -64,23 +64,20 @@ body {
 </style>
 <script language="JavaScript" type="text/javascript">
 function toggleshow(x) {
-	if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
-	else document.getElementById(x).style.display = 'inline-block';
-}
-function toggleshowm(x) {
 	span = document.getElementById(x);
 	checkboxes = document.getElementsByClassName(x + "checkbox");
 	if (span.style.display == 'inline-block') {
+		span.style.display = 'none';
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = false; }
 	} else {
+		span.style.display = 'inline-block';
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = true; }
 	}
-	toggleshow(x);
 }
 function sidebarclick(x) {
 	span = document.getElementById(x);
 	if (span.style.display == 'none') {
-		document.getElementById(x + "checkbox").click();
+		toggleshow(x);
 	}
 	span.scrollIntoView();
 }
@@ -88,7 +85,7 @@ function selectall() {
 	spans = document.getElementsByTagName("span");
 	for (var i=0; i < spans.length; i++) {
 		if (spans[i].style.display == 'none') {
-			document.getElementById(spans[i].id + "checkbox").click();
+			toggleshow(spans[i].id);
 		}
 	}
 }
@@ -96,7 +93,7 @@ function deselectall() {
 	spans = document.getElementsByTagName("span");
 	for (var i=0; i < spans.length; i++) {
 		if (spans[i].style.display == 'inline-block') {
-			document.getElementById(spans[i].id + "checkbox").click();
+			toggleshow(spans[i].id);
 		}
 	}
 }
@@ -617,247 +614,247 @@ function togglesidebar() {
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
 <div id="form" style="display: block;">
-<input type="checkbox" id="ADLcheckbox" onclick="toggleshow('ADL')" checked><a href="javascript:sidebarclick('ADL')">Adelaide</a><br>
-<input type="checkbox" id="ALGcheckbox" onclick="toggleshow('ALG')"><a href="javascript:sidebarclick('ALG')">Alger</a><br>
-<input type="checkbox" id="AMScheckbox" onclick="toggleshow('AMS')"><a href="javascript:sidebarclick('AMS')">Amsterdam</a><br>
-<input type="checkbox" id="ANEcheckbox" onclick="toggleshow('ANE')"><a href="javascript:sidebarclick('ANE')">Angers</a><br>
-<input type="checkbox" id="AYTcheckbox" onclick="toggleshow('AYT')"><a href="javascript:sidebarclick('AYT')">Antalya</a><br>
-<input type="checkbox" id="ANRcheckbox" onclick="toggleshow('ANR')"><a href="javascript:sidebarclick('ANR')">Antwerpen</a><br>
-<input type="checkbox" id="ATLcheckbox" onclick="toggleshow('ATL')" checked><a href="javascript:sidebarclick('ATL')">Atlanta</a><br>
-<input type="checkbox" id="AGBcheckbox" onclick="toggleshow('AGB')"><a href="javascript:sidebarclick('AGB')">Augsburg</a><br>
-<input type="checkbox" id="AVNcheckbox" onclick="toggleshow('AVN')"><a href="javascript:sidebarclick('AVN')">Avignon</a><br>
-<input type="checkbox" id="BCNcheckbox" onclick="toggleshow('BCN')"><a href="javascript:sidebarclick('BCN')">Barcelona</a><br>
-<input type="checkbox" id="BSLcheckbox" onclick="toggleshow('BSL')"><a href="javascript:sidebarclick('BSL')">Basel</a><br>
-<input type="checkbox" id="BJScheckbox" onclick="toggleshow('BJS')"><a href="javascript:sidebarclick('BJS')">Beijing</a><br>
-<input type="checkbox" id="BEGcheckbox" onclick="toggleshow('BEG')"><a href="javascript:sidebarclick('BEG')">Beograd</a><br>
-<input type="checkbox" id="BGYcheckbox" onclick="toggleshow('BGY')"><a href="javascript:sidebarclick('BGY')">Bergamo</a><br>
-<input type="checkbox" id="BERcheckbox" onclick="toggleshow('BER')"><a href="javascript:sidebarclick('BER')">Berlin</a><br>
-<input type="checkbox" id="BRNcheckbox" onclick="toggleshow('BRN')"><a href="javascript:sidebarclick('BRN')">Bern</a><br>
-<input type="checkbox" id="QBQcheckbox" onclick="toggleshow('QBQ')"><a href="javascript:sidebarclick('QBQ')">Besançon</a><br>
-<input type="checkbox" id="BIOcheckbox" onclick="toggleshow('BIO')"><a href="javascript:sidebarclick('BIO')">Bilbao</a><br>
-<input type="checkbox" id="BLKcheckbox" onclick="toggleshow('BLK')" checked><a href="javascript:sidebarclick('BLK')">Blackpool</a><br>
-<input type="checkbox" id="BNJcheckbox" onclick="toggleshow('BNJ')"><a href="javascript:sidebarclick('BNJ')">Bonn</a><br>
-<input type="checkbox" id="BODcheckbox" onclick="toggleshow('BOD')"><a href="javascript:sidebarclick('BOD')">Bordeaux</a><br>
-<input type="checkbox" id="BD_checkbox" onclick="toggleshow('BD_')"><a href="javascript:sidebarclick('BD_')">Brandenburg</a><br>
-<input type="checkbox" id="BTScheckbox" onclick="toggleshow('BTS')"><a href="javascript:sidebarclick('BTS')">Bratislava</a><br>
-<input type="checkbox" id="BWEcheckbox" onclick="toggleshow('BWE')"><a href="javascript:sidebarclick('BWE')">Braunschweig</a><br>
-<input type="checkbox" id="BREcheckbox" onclick="toggleshow('BRE')"><a href="javascript:sidebarclick('BRE')">Bremen</a><br>
-<input type="checkbox" id="BEScheckbox" onclick="toggleshow('BES')"><a href="javascript:sidebarclick('BES')">Brest FR</a><br>
-<input type="checkbox" id="BRQcheckbox" onclick="toggleshow('BRQ')"><a href="javascript:sidebarclick('BRQ')">Brno</a><br>
-<input type="checkbox" id="BRUcheckbox" onclick="toggleshow('BRU')"><a href="javascript:sidebarclick('BRU')">Bruxelles</a><br>
-<input type="checkbox" id="BUHcheckbox" onclick="toggleshow('BUH')"><a href="javascript:sidebarclick('BUH')">Bucureşti</a><br>
-<input type="checkbox" id="BUDcheckbox" onclick="toggleshow('BUD')"><a href="javascript:sidebarclick('BUD')">Budapest</a><br>
-<input type="checkbox" id="BUEcheckbox" onclick="toggleshow('BUE')" checked><a href="javascript:sidebarclick('BUE')">Buenos Aires</a><br>
-<input type="checkbox" id="BTZcheckbox" onclick="toggleshow('BTZ')"><a href="javascript:sidebarclick('BTZ')">Bursa</a><br>
-<input type="checkbox" id="BZGcheckbox" onclick="toggleshow('BZG')"><a href="javascript:sidebarclick('BZG')">Bydgoszcz</a><br>
-<input type="checkbox" id="CFRcheckbox" onclick="toggleshow('CFR')"><a href="javascript:sidebarclick('CFR')">Caen</a><br>
-<input type="checkbox" id="CAGcheckbox" onclick="toggleshow('CAG')"><a href="javascript:sidebarclick('CAG')">Cagliari</a><br>
-<input type="checkbox" id="CBRcheckbox" onclick="toggleshow('CBR')" checked><a href="javascript:sidebarclick('CBR')">Canberra</a><br>
-<input type="checkbox" id="CMNcheckbox" onclick="toggleshow('CMN')"><a href="javascript:sidebarclick('CMN')">Casablanca</a><br>
-<input type="checkbox" id="CGQcheckbox" onclick="toggleshow('CGQ')"><a href="javascript:sidebarclick('CGQ')">Changchun</a><br>
-<input type="checkbox" id="CLTcheckbox" onclick="toggleshow('CLT')" checked><a href="javascript:sidebarclick('CLT')">Charlotte</a><br>
-<input type="checkbox" id="CZ_checkbox" onclick="toggleshow('CZ_')"><a href="javascript:sidebarclick('CZ_')">Chemnitz</a><br>
-<input type="checkbox" id="CHCcheckbox" onclick="toggleshow('CHC')" checked><a href="javascript:sidebarclick('CHC')">Christchurch</a><br>
-<input type="checkbox" id="CVGcheckbox" onclick="toggleshow('CVG')" checked><a href="javascript:sidebarclick('CVG')">Cincinnati</a><br>
-<input type="checkbox" id="CFEcheckbox" onclick="toggleshow('CFE')"><a href="javascript:sidebarclick('CFE')">Clermont-Ferrand</a><br>
-<input type="checkbox" id="CBUcheckbox" onclick="toggleshow('CBU')"><a href="javascript:sidebarclick('CBU')">Cottbus</a><br>
-<input type="checkbox" id="CZWcheckbox" onclick="toggleshow('CZW')"><a href="javascript:sidebarclick('CZW')">Częstochowa</a><br>
-<input type="checkbox" id="DLCcheckbox" onclick="toggleshow('DLC')"><a href="javascript:sidebarclick('DLC')">Dalian</a><br>
-<input type="checkbox" id="DALcheckbox" onclick="toggleshow('DAL')" checked><a href="javascript:sidebarclick('DAL')">Dallas</a><br>
-<input type="checkbox" id="ZCScheckbox" onclick="toggleshow('ZCS')"><a href="javascript:sidebarclick('ZCS')">Darmstadt</a><br>
-<input type="checkbox" id="DEBcheckbox" onclick="toggleshow('DEB')"><a href="javascript:sidebarclick('DEB')">Debrecen</a><br>
-<input type="checkbox" id="RTMcheckbox" class="RTMcheckbox" onclick="toggleshowm('RTM')"><a href="javascript:sidebarclick('RTM')">Den Haag</a><br>
-<input type="checkbox" id="DENcheckbox" onclick="toggleshow('DEN')" checked><a href="javascript:sidebarclick('DEN')">Denver</a><br>
-<input type="checkbox" id="DS_checkbox" onclick="toggleshow('DS_')"><a href="javascript:sidebarclick('DS_')">Dessau</a><br>
-<input type="checkbox" id="DTTcheckbox" onclick="toggleshow('DTT')" checked><a href="javascript:sidebarclick('DTT')">Detroit</a><br>
-<input type="checkbox" id="DIJcheckbox" onclick="toggleshow('DIJ')"><a href="javascript:sidebarclick('DIJ')">Dijon</a><br>
-<input type="checkbox" id="DOHcheckbox" onclick="toggleshow('DOH')"><a href="javascript:sidebarclick('DOH')">Doha</a><br>
-<input type="checkbox" id="DRScheckbox" onclick="toggleshow('DRS')"><a href="javascript:sidebarclick('DRS')">Dresden</a><br>
-<input type="checkbox" id="DUScheckbox" onclick="toggleshow('DUS')"><a href="javascript:sidebarclick('DUS')">Düsseldorf</a><br>
-<input type="checkbox" id="EB_checkbox" onclick="toggleshow('EB_')"><a href="javascript:sidebarclick('EB_')">Elbląg</a><br>
-<input type="checkbox" id="ELPcheckbox" onclick="toggleshow('ELP')" checked><a href="javascript:sidebarclick('ELP')">El Paso</a><br>
-<input type="checkbox" id="ERFcheckbox" onclick="toggleshow('ERF')"><a href="javascript:sidebarclick('ERF')">Erfurt</a><br>
-<input type="checkbox" id="ESKcheckbox" onclick="toggleshow('ESK')"><a href="javascript:sidebarclick('ESK')">Eskişehir</a><br>
-<input type="checkbox" id="FLRcheckbox" onclick="toggleshow('FLR')"><a href="javascript:sidebarclick('FLR')">Firenze</a><br>
-<input type="checkbox" id="FUOcheckbox" onclick="toggleshow('FUO')"><a href="javascript:sidebarclick('FUO')">Foshan</a><br>
-<input type="checkbox" id="FRAcheckbox" onclick="toggleshow('FRA')"><a href="javascript:sidebarclick('FRA')">Frankfurt</a><br>
-<input type="checkbox" id="FO_checkbox" onclick="toggleshow('FO_')"><a href="javascript:sidebarclick('FO_')">Frankfurt Oder</a><br>
-<input type="checkbox" id="QFBcheckbox" onclick="toggleshow('QFB')"><a href="javascript:sidebarclick('QFB')">Freiburg</a><br>
-<input type="checkbox" id="GZTcheckbox" onclick="toggleshow('GZT')"><a href="javascript:sidebarclick('GZT')">Gaziantep</a><br>
-<input type="checkbox" id="GDNcheckbox" onclick="toggleshow('GDN')"><a href="javascript:sidebarclick('GDN')">Gdańsk</a><br>
-<input type="checkbox" id="GVAcheckbox" onclick="toggleshow('GVA')"><a href="javascript:sidebarclick('GVA')">Genève</a><br>
-<input type="checkbox" id="GNEcheckbox" onclick="toggleshow('GNE')"><a href="javascript:sidebarclick('GNE')">Gent</a><br>
-<input type="checkbox" id="GR_checkbox" onclick="toggleshow('GR_')"><a href="javascript:sidebarclick('GR_')">Gera</a><br>
-<input type="checkbox" id="GM_checkbox" onclick="toggleshow('GM_')"><a href="javascript:sidebarclick('GM_')">Gmunden</a><br>
-<input type="checkbox" id="OOLcheckbox" onclick="toggleshow('OOL')" checked><a href="javascript:sidebarclick('OOL')">Gold Coast</a><br>
-<input type="checkbox" id="GZ_checkbox" onclick="toggleshow('GZ_')"><a href="javascript:sidebarclick('GZ_')">Görlitz</a><br>
-<input type="checkbox" id="GT_checkbox" onclick="toggleshow('GT_')"><a href="javascript:sidebarclick('GT_')">Gotha</a><br>
-<input type="checkbox" id="GRZcheckbox" onclick="toggleshow('GRZ')"><a href="javascript:sidebarclick('GRZ')">Graz</a><br>
-<input type="checkbox" id="GNBcheckbox" onclick="toggleshow('GNB')"><a href="javascript:sidebarclick('GNB')">Grenoble</a><br>
-<input type="checkbox" id="GD_checkbox" onclick="toggleshow('GD_')"><a href="javascript:sidebarclick('GD_')">Grudziądz</a><br>
-<input type="checkbox" id="CANcheckbox" onclick="toggleshow('CAN')"><a href="javascript:sidebarclick('CAN')">Guangzhou</a><br>
-<input type="checkbox" id="HKDcheckbox" onclick="toggleshow('HKD')"><a href="javascript:sidebarclick('HKD')">Hakodate</a><br>
-<input type="checkbox" id="HS_checkbox" onclick="toggleshow('HS_')"><a href="javascript:sidebarclick('HS_')">Halberstadt</a><br>
-<input type="checkbox" id="HL_checkbox" onclick="toggleshow('HL_')"><a href="javascript:sidebarclick('HL_')">Halle</a><br>
-<input type="checkbox" id="HAJcheckbox" onclick="toggleshow('HAJ')"><a href="javascript:sidebarclick('HAJ')">Hannover</a><br>
-<input type="checkbox" id="MHGcheckbox" class="MHGcheckbox" onclick="toggleshowm('MHG')"><a href="javascript:sidebarclick('MHG')">Heidelberg</a><br>
-<input type="checkbox" id="HB_checkbox" onclick="toggleshow('HB_')"><a href="javascript:sidebarclick('HB_')">Heilbronn</a><br>
-<input type="checkbox" id="HELcheckbox" onclick="toggleshow('HEL')"><a href="javascript:sidebarclick('HEL')">Helsinki</a><br>
-<input type="checkbox" id="HIJcheckbox" onclick="toggleshow('HIJ')"><a href="javascript:sidebarclick('HIJ')">Hiroshima</a><br>
-<input type="checkbox" id="HKGcheckbox" onclick="toggleshow('HKG')" checked><a href="javascript:sidebarclick('HKG')">Hong Kong</a><br>
-<input type="checkbox" id="HOUcheckbox" onclick="toggleshow('HOU')" checked><a href="javascript:sidebarclick('HOU')">Houston</a><br>
-<input type="checkbox" id="HIAcheckbox" onclick="toggleshow('HIA')"><a href="javascript:sidebarclick('HIA')">Huai'an</a><br>
-<input type="checkbox" id="INNcheckbox" onclick="toggleshow('INN')"><a href="javascript:sidebarclick('INN')">Innsbruck</a><br>
-<input type="checkbox" id="ALYcheckbox" onclick="toggleshow('ALY')" checked><a href="javascript:sidebarclick('ALY')">Iskandariyya</a><br>
-<input type="checkbox" id="ISTcheckbox" onclick="toggleshow('IST')"><a href="javascript:sidebarclick('IST')">İstanbul</a><br>
-<input type="checkbox" id="IZMcheckbox" onclick="toggleshow('IZM')"><a href="javascript:sidebarclick('IZM')">İzmir</a><br>
-<input type="checkbox" id="JN_checkbox" onclick="toggleshow('JN_')"><a href="javascript:sidebarclick('JN_')">Jena</a><br>
-<input type="checkbox" id="KOJcheckbox" onclick="toggleshow('KOJ')"><a href="javascript:sidebarclick('KOJ')">Kagoshima</a><br>
-<input type="checkbox" id="MKCcheckbox" onclick="toggleshow('MKC')" checked><a href="javascript:sidebarclick('MKC')">Kansas City</a><br>
-<input type="checkbox" id="KHHcheckbox" onclick="toggleshow('KHH')"><a href="javascript:sidebarclick('KHH')">Kaohsiung</a><br>
-<input type="checkbox" id="FKBcheckbox" onclick="toggleshow('FKB')"><a href="javascript:sidebarclick('FKB')">Karlsruhe</a><br>
-<input type="checkbox" id="KSFcheckbox" onclick="toggleshow('KSF')"><a href="javascript:sidebarclick('KSF')">Kassel</a><br>
-<input type="checkbox" id="KTWcheckbox" onclick="toggleshow('KTW')"><a href="javascript:sidebarclick('KTW')">Katowice</a><br>
-<input type="checkbox" id="ASRcheckbox" onclick="toggleshow('ASR')"><a href="javascript:sidebarclick('ASR')">Kayseri</a><br>
-<input type="checkbox" id="HRKcheckbox" onclick="toggleshow('HRK')"><a href="javascript:sidebarclick('HRK')">Kharkiv</a><br>
-<input type="checkbox" id="KCZcheckbox" onclick="toggleshow('KCZ')"><a href="javascript:sidebarclick('KCZ')">Kochi JP</a><br>
-<input type="checkbox" id="CCUcheckbox" onclick="toggleshow('CCU')" checked><a href="javascript:sidebarclick('CCU')">Kolkata</a><br>
-<input type="checkbox" id="KYAcheckbox" onclick="toggleshow('KYA')"><a href="javascript:sidebarclick('KYA')">Konya</a><br>
-<input type="checkbox" id="KSCcheckbox" onclick="toggleshow('KSC')"><a href="javascript:sidebarclick('KSC')">Košice</a><br>
-<input type="checkbox" id="KRKcheckbox" onclick="toggleshow('KRK')"><a href="javascript:sidebarclick('KRK')">Kraków</a><br>
-<input type="checkbox" id="KF_checkbox" onclick="toggleshow('KF_')"><a href="javascript:sidebarclick('KF_')">Krefeld</a><br>
-<input type="checkbox" id="KMJcheckbox" onclick="toggleshow('KMJ')"><a href="javascript:sidebarclick('KMJ')">Kumamoto</a><br>
-<input type="checkbox" id="KBPcheckbox" onclick="toggleshow('KBP')"><a href="javascript:sidebarclick('KBP')">Kyiv</a><br>
-<input type="checkbox" id="LEHcheckbox" onclick="toggleshow('LEH')"><a href="javascript:sidebarclick('LEH')">Le Havre</a><br>
-<input type="checkbox" id="LEJcheckbox" onclick="toggleshow('LEJ')"><a href="javascript:sidebarclick('LEJ')">Leipzig</a><br>
-<input type="checkbox" id="LMEcheckbox" onclick="toggleshow('LME')"><a href="javascript:sidebarclick('LME')">Le Mans</a><br>
-<input type="checkbox" id="LB_checkbox" onclick="toggleshow('LB_')"><a href="javascript:sidebarclick('LB_')">Liberec</a><br>
-<input type="checkbox" id="LNZcheckbox" onclick="toggleshow('LNZ')"><a href="javascript:sidebarclick('LNZ')">Linz</a><br>
-<input type="checkbox" id="LIScheckbox" onclick="toggleshow('LIS')"><a href="javascript:sidebarclick('LIS')">Lisboa</a><br>
-<input type="checkbox" id="LITcheckbox" onclick="toggleshow('LIT')" checked><a href="javascript:sidebarclick('LIT')">Little Rock</a><br>
-<input type="checkbox" id="LCJcheckbox" onclick="toggleshow('LCJ')"><a href="javascript:sidebarclick('LCJ')">Łódź</a><br>
-<input type="checkbox" id="LUXcheckbox" onclick="toggleshow('LUX')"><a href="javascript:sidebarclick('LUX')">Luxembourg</a><br>
-<input type="checkbox" id="LYNcheckbox" onclick="toggleshow('LYN')"><a href="javascript:sidebarclick('LYN')">Lyon</a><br>
-<input type="checkbox" id="CSOcheckbox" onclick="toggleshow('CSO')"><a href="javascript:sidebarclick('CSO')">Magdeburg</a><br>
-<input type="checkbox" id="QMZcheckbox" onclick="toggleshow('QMZ')"><a href="javascript:sidebarclick('QMZ')">Mainz</a><br>
-<input type="checkbox" id="MHGcheckbox1" class="MHGcheckbox" onclick="toggleshowm('MHG')"><a href="javascript:sidebarclick('MHG')">Mannheim</a><br>
-<input type="checkbox" id="MRScheckbox" onclick="toggleshow('MRS')"><a href="javascript:sidebarclick('MRS')">Marseille</a><br>
-<input type="checkbox" id="MYJcheckbox" onclick="toggleshow('MYJ')"><a href="javascript:sidebarclick('MYJ')">Matsuyama</a><br>
-<input type="checkbox" id="MDEcheckbox" onclick="toggleshow('MDE')" checked><a href="javascript:sidebarclick('MDE')">Medellín</a><br>
-<input type="checkbox" id="MELcheckbox" onclick="toggleshow('MEL')" checked><a href="javascript:sidebarclick('MEL')">Melbourne</a><br>
-<input type="checkbox" id="MEMcheckbox" onclick="toggleshow('MEM')" checked><a href="javascript:sidebarclick('MEM')">Memphis</a><br>
-<input type="checkbox" id="MDZcheckbox" onclick="toggleshow('MDZ')" checked><a href="javascript:sidebarclick('MDZ')">Mendoza</a><br>
-<input type="checkbox" id="QMEcheckbox" onclick="toggleshow('QME')"><a href="javascript:sidebarclick('QME')">Messina</a><br>
-<input type="checkbox" id="MILcheckbox" onclick="toggleshow('MIL')"><a href="javascript:sidebarclick('MIL')">Milano</a><br>
-<input type="checkbox" id="MKEcheckbox" onclick="toggleshow('MKE')" checked><a href="javascript:sidebarclick('MKE')">Milwaukee</a><br>
-<input type="checkbox" id="MSQcheckbox" onclick="toggleshow('MSQ')"><a href="javascript:sidebarclick('MSQ')">Minsk</a><br>
-<input type="checkbox" id="MCQcheckbox" onclick="toggleshow('MCQ')"><a href="javascript:sidebarclick('MCQ')">Miskolc</a><br>
-<input type="checkbox" id="MPLcheckbox" onclick="toggleshow('MPL')"><a href="javascript:sidebarclick('MPL')">Montpellier</a><br>
-<input type="checkbox" id="MOWcheckbox" onclick="toggleshow('MOW')"><a href="javascript:sidebarclick('MOW')">Moskva</a><br>
-<input type="checkbox" id="MLHcheckbox" onclick="toggleshow('MLH')"><a href="javascript:sidebarclick('MLH')">Mulhouse</a><br>
-<input type="checkbox" id="MUCcheckbox" onclick="toggleshow('MUC')"><a href="javascript:sidebarclick('MUC')">München</a><br>
-<input type="checkbox" id="RMUcheckbox" onclick="toggleshow('RMU')"><a href="javascript:sidebarclick('RMU')">Murcia</a><br>
-<input type="checkbox" id="NGScheckbox" onclick="toggleshow('NGS')"><a href="javascript:sidebarclick('NGS')">Nagasaki</a><br>
-<input type="checkbox" id="NKGcheckbox" onclick="toggleshow('NKG')"><a href="javascript:sidebarclick('NKG')">Nanjing</a><br>
-<input type="checkbox" id="NTEcheckbox" onclick="toggleshow('NTE')"><a href="javascript:sidebarclick('NTE')">Nantes</a><br>
-<input type="checkbox" id="NTLcheckbox" onclick="toggleshow('NTL')" checked><a href="javascript:sidebarclick('NTL')">Newcastle AU</a><br>
-<input type="checkbox" id="MSYcheckbox" onclick="toggleshow('MSY')" checked><a href="javascript:sidebarclick('MSY')">New Orleans</a><br>
-<input type="checkbox" id="NCEcheckbox" onclick="toggleshow('NCE')"><a href="javascript:sidebarclick('NCE')">Nice</a><br>
-<input type="checkbox" id="NH_checkbox" onclick="toggleshow('NH_')"><a href="javascript:sidebarclick('NH_')">Nordhausen</a><br>
-<input type="checkbox" id="NRKcheckbox" onclick="toggleshow('NRK')"><a href="javascript:sidebarclick('NRK')">Norrköping</a><br>
-<input type="checkbox" id="NUEcheckbox" onclick="toggleshow('NUE')"><a href="javascript:sidebarclick('NUE')">Nürnberg</a><br>
-<input type="checkbox" id="OKJcheckbox" onclick="toggleshow('OKJ')"><a href="javascript:sidebarclick('OKJ')">Okayama</a><br>
-<input type="checkbox" id="OKCcheckbox" onclick="toggleshow('OKC')" checked><a href="javascript:sidebarclick('OKC')">Oklahoma City</a><br>
-<input type="checkbox" id="OLOcheckbox" onclick="toggleshow('OLO')"><a href="javascript:sidebarclick('OLO')">Olomouc</a><br>
-<input type="checkbox" id="OZ_checkbox" onclick="toggleshow('OZ_')"><a href="javascript:sidebarclick('OZ_')">Olsztyn</a><br>
-<input type="checkbox" id="OSTcheckbox" onclick="toggleshow('OST')"><a href="javascript:sidebarclick('OST')">Oostende</a><br>
-<input type="checkbox" id="ORNcheckbox" onclick="toggleshow('ORN')"><a href="javascript:sidebarclick('ORN')">Oran</a><br>
-<input type="checkbox" id="OREcheckbox" onclick="toggleshow('ORE')"><a href="javascript:sidebarclick('ORE')">Orléans</a><br>
-<input type="checkbox" id="OSIcheckbox" onclick="toggleshow('OSI')"><a href="javascript:sidebarclick('OSI')">Osijek</a><br>
-<input type="checkbox" id="UKKcheckbox" onclick="toggleshow('UKK')"><a href="javascript:sidebarclick('UKK')">Óskemen</a><br>
-<input type="checkbox" id="OSLcheckbox" onclick="toggleshow('OSL')"><a href="javascript:sidebarclick('OSL')">Oslo</a><br>
-<input type="checkbox" id="OGXcheckbox" onclick="toggleshow('OGX')"><a href="javascript:sidebarclick('OGX')">Ouargla</a><br>
-<input type="checkbox" id="QPAcheckbox" onclick="toggleshow('QPA')"><a href="javascript:sidebarclick('QPA')">Padova</a><br>
-<input type="checkbox" id="PMOcheckbox" onclick="toggleshow('PMO')"><a href="javascript:sidebarclick('PMO')">Palermo</a><br>
-<input type="checkbox" id="PARcheckbox" onclick="toggleshow('PAR')"><a href="javascript:sidebarclick('PAR')">Paris</a><br>
-<input type="checkbox" id="PWQcheckbox" onclick="toggleshow('PWQ')"><a href="javascript:sidebarclick('PWQ')">Pavlodar</a><br>
-<input type="checkbox" id="PHLcheckbox" onclick="toggleshow('PHL')" checked><a href="javascript:sidebarclick('PHL')">Philadelphia</a><br>
-<input type="checkbox" id="PHXcheckbox" onclick="toggleshow('PHX')" checked><a href="javascript:sidebarclick('PHX')">Phoenix</a><br>
-<input type="checkbox" id="HOQcheckbox" onclick="toggleshow('HOQ')"><a href="javascript:sidebarclick('HOQ')">Plauen</a><br>
-<input type="checkbox" id="PZ_checkbox" onclick="toggleshow('PZ_')"><a href="javascript:sidebarclick('PZ_')">Plzeň</a><br>
-<input type="checkbox" id="PDXcheckbox" onclick="toggleshow('PDX')" checked><a href="javascript:sidebarclick('PDX')">Portland</a><br>
-<input type="checkbox" id="PD_checkbox" onclick="toggleshow('PD_')"><a href="javascript:sidebarclick('PD_')">Potsdam</a><br>
-<input type="checkbox" id="POZcheckbox" onclick="toggleshow('POZ')"><a href="javascript:sidebarclick('POZ')">Poznań</a><br>
-<input type="checkbox" id="PRGcheckbox" onclick="toggleshow('PRG')"><a href="javascript:sidebarclick('PRG')">Praha</a><br>
-<input type="checkbox" id="FNJcheckbox" onclick="toggleshow('FNJ')"><a href="javascript:sidebarclick('FNJ')">Pyongyang</a><br>
-<input type="checkbox" id="TAOcheckbox" onclick="toggleshow('TAO')"><a href="javascript:sidebarclick('TAO')">Qingdao</a><br>
-<input type="checkbox" id="RBAcheckbox" onclick="toggleshow('RBA')"><a href="javascript:sidebarclick('RBA')">Rabat</a><br>
-<input type="checkbox" id="RHEcheckbox" onclick="toggleshow('RHE')"><a href="javascript:sidebarclick('RHE')">Reims</a><br>
-<input type="checkbox" id="RIXcheckbox" onclick="toggleshow('RIX')"><a href="javascript:sidebarclick('RIX')">Riga</a><br>
-<input type="checkbox" id="RIOcheckbox" onclick="toggleshow('RIO')" checked><a href="javascript:sidebarclick('RIO')">Rio de Janeiro</a><br>
-<input type="checkbox" id="ROMcheckbox" onclick="toggleshow('ROM')"><a href="javascript:sidebarclick('ROM')">Roma</a><br>
-<input type="checkbox" id="RLGcheckbox" onclick="toggleshow('RLG')"><a href="javascript:sidebarclick('RLG')">Rostock</a><br>
-<input type="checkbox" id="RTMcheckbox1" class="RTMcheckbox" onclick="toggleshowm('RTM')"><a href="javascript:sidebarclick('RTM')">Rotterdam</a><br>
-<input type="checkbox" id="EBUcheckbox" onclick="toggleshow('EBU')"><a href="javascript:sidebarclick('EBU')">Saint-Étienne</a><br>
-<input type="checkbox" id="SLCcheckbox" onclick="toggleshow('SLC')" checked><a href="javascript:sidebarclick('SLC')">Salt Lake City</a><br>
-<input type="checkbox" id="SKDcheckbox" onclick="toggleshow('SKD')"><a href="javascript:sidebarclick('SKD')">Samarkand</a><br>
-<input type="checkbox" id="SFOcheckbox" onclick="toggleshow('SFO')" checked><a href="javascript:sidebarclick('SFO')">San Francisco</a><br>
-<input type="checkbox" id="LEDcheckbox" onclick="toggleshow('LED')"><a href="javascript:sidebarclick('LED')">Sankt-Peterburg</a><br>
-<input type="checkbox" id="SSZcheckbox" onclick="toggleshow('SSZ')" checked><a href="javascript:sidebarclick('SSZ')">Santos</a><br>
-<input type="checkbox" id="SYXcheckbox" onclick="toggleshow('SYX')"><a href="javascript:sidebarclick('SYX')">Sanya</a><br>
-<input type="checkbox" id="SPKcheckbox" onclick="toggleshow('SPK')"><a href="javascript:sidebarclick('SPK')">Sapporo</a><br>
-<input type="checkbox" id="SJJcheckbox" onclick="toggleshow('SJJ')"><a href="javascript:sidebarclick('SJJ')">Sarajevo</a><br>
-<input type="checkbox" id="SEAcheckbox" onclick="toggleshow('SEA')" checked><a href="javascript:sidebarclick('SEA')">Seattle</a><br>
-<input type="checkbox" id="QSFcheckbox" onclick="toggleshow('QSF')"><a href="javascript:sidebarclick('QSF')">Sétif</a><br>
-<input type="checkbox" id="SVQcheckbox" onclick="toggleshow('SVQ')"><a href="javascript:sidebarclick('SVQ')">Sevilla</a><br>
-<input type="checkbox" id="SHAcheckbox" onclick="toggleshow('SHA')"><a href="javascript:sidebarclick('SHA')">Shanghai</a><br>
-<input type="checkbox" id="SHEcheckbox" onclick="toggleshow('SHE')"><a href="javascript:sidebarclick('SHE')">Shenyang</a><br>
-<input type="checkbox" id="SZXcheckbox" onclick="toggleshow('SZX')"><a href="javascript:sidebarclick('SZX')">Shenzhen</a><br>
-<input type="checkbox" id="BFWcheckbox" onclick="toggleshow('BFW')"><a href="javascript:sidebarclick('BFW')">Sidi Bel Abbès</a><br>
-<input type="checkbox" id="SOFcheckbox" onclick="toggleshow('SOF')"><a href="javascript:sidebarclick('SOF')">Sofiya</a><br>
-<input type="checkbox" id="STOcheckbox" onclick="toggleshow('STO')"><a href="javascript:sidebarclick('STO')">Stockholm</a><br>
-<input type="checkbox" id="SXBcheckbox" onclick="toggleshow('SXB')"><a href="javascript:sidebarclick('SXB')">Strasbourg</a><br>
-<input type="checkbox" id="STRcheckbox" onclick="toggleshow('STR')"><a href="javascript:sidebarclick('STR')">Stuttgart</a><br>
-<input type="checkbox" id="SYDcheckbox" onclick="toggleshow('SYD')" checked><a href="javascript:sidebarclick('SYD')">Sydney</a><br>
-<input type="checkbox" id="SZZcheckbox" onclick="toggleshow('SZZ')"><a href="javascript:sidebarclick('SZZ')">Szczecin</a><br>
-<input type="checkbox" id="SZ_checkbox" onclick="toggleshow('SZ_')"><a href="javascript:sidebarclick('SZ_')">Szeged</a><br>
-<input type="checkbox" id="TCMcheckbox" onclick="toggleshow('TCM')" checked><a href="javascript:sidebarclick('TCM')">Tacoma</a><br>
-<input type="checkbox" id="TLLcheckbox" onclick="toggleshow('TLL')"><a href="javascript:sidebarclick('TLL')">Tallinn</a><br>
-<input type="checkbox" id="TPAcheckbox" onclick="toggleshow('TPA')" checked><a href="javascript:sidebarclick('TPA')">Tampa</a><br>
-<input type="checkbox" id="KGFcheckbox" onclick="toggleshow('KGF')"><a href="javascript:sidebarclick('KGF')">Temirtaý</a><br>
-<input type="checkbox" id="TSNcheckbox" onclick="toggleshow('TSN')"><a href="javascript:sidebarclick('TSN')">Tianjin</a><br>
-<input type="checkbox" id="TRNcheckbox" onclick="toggleshow('TRN')"><a href="javascript:sidebarclick('TRN')">Torino</a><br>
-<input type="checkbox" id="YTOcheckbox" onclick="toggleshow('YTO')" checked><a href="javascript:sidebarclick('YTO')">Toronto</a><br>
-<input type="checkbox" id="TN_checkbox" onclick="toggleshow('TN_')"><a href="javascript:sidebarclick('TN_')">Toruń</a><br>
-<input type="checkbox" id="TLScheckbox" onclick="toggleshow('TLS')"><a href="javascript:sidebarclick('TLS')">Toulouse</a><br>
-<input type="checkbox" id="TUFcheckbox" onclick="toggleshow('TUF')"><a href="javascript:sidebarclick('TUF')">Tours</a><br>
-<input type="checkbox" id="TOYcheckbox" onclick="toggleshow('TOY')"><a href="javascript:sidebarclick('TOY')">Toyama</a><br>
-<input type="checkbox" id="TY_checkbox" onclick="toggleshow('TY_')"><a href="javascript:sidebarclick('TY_')">Toyohashi</a><br>
-<input type="checkbox" id="TRDcheckbox" onclick="toggleshow('TRD')"><a href="javascript:sidebarclick('TRD')">Trondheim</a><br>
-<input type="checkbox" id="TUScheckbox" onclick="toggleshow('TUS')" checked><a href="javascript:sidebarclick('TUS')">Tucson</a><br>
-<input type="checkbox" id="TUNcheckbox" onclick="toggleshow('TUN')"><a href="javascript:sidebarclick('TUN')">Tunis</a><br>
-<input type="checkbox" id="QULcheckbox" onclick="toggleshow('QUL')"><a href="javascript:sidebarclick('QUL')">Ulm</a><br>
-<input type="checkbox" id="UTCcheckbox" onclick="toggleshow('UTC')"><a href="javascript:sidebarclick('UTC')">Utrecht</a><br>
-<input type="checkbox" id="VLCcheckbox" onclick="toggleshow('VLC')"><a href="javascript:sidebarclick('VLC')">Valéncia ES</a><br>
-<input type="checkbox" id="XVScheckbox" onclick="toggleshow('XVS')"><a href="javascript:sidebarclick('XVS')">Valenciennes</a><br>
-<input type="checkbox" id="VCEcheckbox" onclick="toggleshow('VCE')"><a href="javascript:sidebarclick('VCE')">Venezia</a><br>
-<input type="checkbox" id="VITcheckbox" onclick="toggleshow('VIT')"><a href="javascript:sidebarclick('VIT')">Vitoria-Gasteiz</a><br>
-<input type="checkbox" id="WAWcheckbox" onclick="toggleshow('WAW')"><a href="javascript:sidebarclick('WAW')">Warszawa</a><br>
-<input type="checkbox" id="WAScheckbox" onclick="toggleshow('WAS')" checked><a href="javascript:sidebarclick('WAS')">Washington</a><br>
-<input type="checkbox" id="VIEcheckbox" onclick="toggleshow('VIE')"><a href="javascript:sidebarclick('VIE')">Wien</a><br>
-<input type="checkbox" id="WROcheckbox" onclick="toggleshow('WRO')"><a href="javascript:sidebarclick('WRO')">Wrocław</a><br>
-<input type="checkbox" id="WUHcheckbox" onclick="toggleshow('WUH')"><a href="javascript:sidebarclick('WUH')">Wuhan</a><br>
-<input type="checkbox" id="WZ_checkbox" onclick="toggleshow('WZ_')"><a href="javascript:sidebarclick('WZ_')">Würzburg</a><br>
-<input type="checkbox" id="JRScheckbox" onclick="toggleshow('JRS')" checked><a href="javascript:sidebarclick('JRS')">Yerushalayim</a><br>
-<input type="checkbox" id="ZAGcheckbox" onclick="toggleshow('ZAG')"><a href="javascript:sidebarclick('ZAG')">Zagreb</a><br>
-<input type="checkbox" id="ZAZcheckbox" onclick="toggleshow('ZAZ')"><a href="javascript:sidebarclick('ZAZ')">Zaragoza</a><br>
-<input type="checkbox" id="ZUHcheckbox" onclick="toggleshow('ZUH')"><a href="javascript:sidebarclick('ZUH')">Zhuhai</a><br>
-<input type="checkbox" id="ZRHcheckbox" onclick="toggleshow('ZRH')"><a href="javascript:sidebarclick('ZRH')">Zürich</a><br>
-<input type="checkbox" id="ZW_checkbox" onclick="toggleshow('ZW_')"><a href="javascript:sidebarclick('ZW_')">Zwickau</a><br>
-<input type="checkbox" id="CBG1910checkbox" onclick="toggleshow('CBG1910')" checked><a href="javascript:sidebarclick('CBG1910')">Cambridge 1910</a><br>
-<input type="checkbox" id="ALO1910checkbox" onclick="toggleshow('ALO1910')" checked><a href="javascript:sidebarclick('ALO1910')">Waterloo US 1910</a><br>
-<input type="checkbox" id="BJS1935checkbox" onclick="toggleshow('BJS1935')" checked><a href="javascript:sidebarclick('BJS1935')">Beijing 1935</a><br>
-<input type="checkbox" id="SHA1935checkbox" onclick="toggleshow('SHA1935')" checked><a href="javascript:sidebarclick('SHA1935')">Shanghai 1935</a><br>
+<input type="checkbox" class="ADLcheckbox" onclick="toggleshow('ADL')" autocomplete="off" checked><a href="javascript:sidebarclick('ADL')">Adelaide</a><br>
+<input type="checkbox" id="ALGcheckbox" class="ALGcheckbox" onclick="toggleshow('ALG')" autocomplete="off"><a href="javascript:sidebarclick('ALG')">Alger</a><br>
+<input type="checkbox" id="AMScheckbox" class="AMScheckbox" onclick="toggleshow('AMS')" autocomplete="off"><a href="javascript:sidebarclick('AMS')">Amsterdam</a><br>
+<input type="checkbox" id="ANEcheckbox" class="ANEcheckbox" onclick="toggleshow('ANE')" autocomplete="off"><a href="javascript:sidebarclick('ANE')">Angers</a><br>
+<input type="checkbox" id="AYTcheckbox" class="AYTcheckbox" onclick="toggleshow('AYT')" autocomplete="off"><a href="javascript:sidebarclick('AYT')">Antalya</a><br>
+<input type="checkbox" id="ANRcheckbox" class="ANRcheckbox" onclick="toggleshow('ANR')" autocomplete="off"><a href="javascript:sidebarclick('ANR')">Antwerpen</a><br>
+<input type="checkbox" class="ATLcheckbox" onclick="toggleshow('ATL')" autocomplete="off" checked><a href="javascript:sidebarclick('ATL')">Atlanta</a><br>
+<input type="checkbox" id="AGBcheckbox" class="AGBcheckbox" onclick="toggleshow('AGB')" autocomplete="off"><a href="javascript:sidebarclick('AGB')">Augsburg</a><br>
+<input type="checkbox" id="AVNcheckbox" class="AVNcheckbox" onclick="toggleshow('AVN')" autocomplete="off"><a href="javascript:sidebarclick('AVN')">Avignon</a><br>
+<input type="checkbox" id="BCNcheckbox" class="BCNcheckbox" onclick="toggleshow('BCN')" autocomplete="off"><a href="javascript:sidebarclick('BCN')">Barcelona</a><br>
+<input type="checkbox" id="BSLcheckbox" class="BSLcheckbox" onclick="toggleshow('BSL')" autocomplete="off"><a href="javascript:sidebarclick('BSL')">Basel</a><br>
+<input type="checkbox" id="BJScheckbox" class="BJScheckbox" onclick="toggleshow('BJS')" autocomplete="off"><a href="javascript:sidebarclick('BJS')">Beijing</a><br>
+<input type="checkbox" id="BEGcheckbox" class="BEGcheckbox" onclick="toggleshow('BEG')" autocomplete="off"><a href="javascript:sidebarclick('BEG')">Beograd</a><br>
+<input type="checkbox" id="BGYcheckbox" class="BGYcheckbox" onclick="toggleshow('BGY')" autocomplete="off"><a href="javascript:sidebarclick('BGY')">Bergamo</a><br>
+<input type="checkbox" id="BERcheckbox" class="BERcheckbox" onclick="toggleshow('BER')" autocomplete="off"><a href="javascript:sidebarclick('BER')">Berlin</a><br>
+<input type="checkbox" id="BRNcheckbox" class="BRNcheckbox" onclick="toggleshow('BRN')" autocomplete="off"><a href="javascript:sidebarclick('BRN')">Bern</a><br>
+<input type="checkbox" id="QBQcheckbox" class="QBQcheckbox" onclick="toggleshow('QBQ')" autocomplete="off"><a href="javascript:sidebarclick('QBQ')">Besançon</a><br>
+<input type="checkbox" id="BIOcheckbox" class="BIOcheckbox" onclick="toggleshow('BIO')" autocomplete="off"><a href="javascript:sidebarclick('BIO')">Bilbao</a><br>
+<input type="checkbox" class="BLKcheckbox" onclick="toggleshow('BLK')" autocomplete="off" checked><a href="javascript:sidebarclick('BLK')">Blackpool</a><br>
+<input type="checkbox" id="BNJcheckbox" class="BNJcheckbox" onclick="toggleshow('BNJ')" autocomplete="off"><a href="javascript:sidebarclick('BNJ')">Bonn</a><br>
+<input type="checkbox" id="BODcheckbox" class="BODcheckbox" onclick="toggleshow('BOD')" autocomplete="off"><a href="javascript:sidebarclick('BOD')">Bordeaux</a><br>
+<input type="checkbox" id="BD_checkbox" class="BD_checkbox" onclick="toggleshow('BD_')" autocomplete="off"><a href="javascript:sidebarclick('BD_')">Brandenburg</a><br>
+<input type="checkbox" id="BTScheckbox" class="BTScheckbox" onclick="toggleshow('BTS')" autocomplete="off"><a href="javascript:sidebarclick('BTS')">Bratislava</a><br>
+<input type="checkbox" id="BWEcheckbox" class="BWEcheckbox" onclick="toggleshow('BWE')" autocomplete="off"><a href="javascript:sidebarclick('BWE')">Braunschweig</a><br>
+<input type="checkbox" id="BREcheckbox" class="BREcheckbox" onclick="toggleshow('BRE')" autocomplete="off"><a href="javascript:sidebarclick('BRE')">Bremen</a><br>
+<input type="checkbox" id="BEScheckbox" class="BEScheckbox" onclick="toggleshow('BES')" autocomplete="off"><a href="javascript:sidebarclick('BES')">Brest FR</a><br>
+<input type="checkbox" id="BRQcheckbox" class="BRQcheckbox" onclick="toggleshow('BRQ')" autocomplete="off"><a href="javascript:sidebarclick('BRQ')">Brno</a><br>
+<input type="checkbox" id="BRUcheckbox" class="BRUcheckbox" onclick="toggleshow('BRU')" autocomplete="off"><a href="javascript:sidebarclick('BRU')">Bruxelles</a><br>
+<input type="checkbox" id="BUHcheckbox" class="BUHcheckbox" onclick="toggleshow('BUH')" autocomplete="off"><a href="javascript:sidebarclick('BUH')">Bucureşti</a><br>
+<input type="checkbox" id="BUDcheckbox" class="BUDcheckbox" onclick="toggleshow('BUD')" autocomplete="off"><a href="javascript:sidebarclick('BUD')">Budapest</a><br>
+<input type="checkbox" class="BUEcheckbox" onclick="toggleshow('BUE')" autocomplete="off" checked><a href="javascript:sidebarclick('BUE')">Buenos Aires</a><br>
+<input type="checkbox" id="BTZcheckbox" class="BTZcheckbox" onclick="toggleshow('BTZ')" autocomplete="off"><a href="javascript:sidebarclick('BTZ')">Bursa</a><br>
+<input type="checkbox" id="BZGcheckbox" class="BZGcheckbox" onclick="toggleshow('BZG')" autocomplete="off"><a href="javascript:sidebarclick('BZG')">Bydgoszcz</a><br>
+<input type="checkbox" id="CFRcheckbox" class="CFRcheckbox" onclick="toggleshow('CFR')" autocomplete="off"><a href="javascript:sidebarclick('CFR')">Caen</a><br>
+<input type="checkbox" id="CAGcheckbox" class="CAGcheckbox" onclick="toggleshow('CAG')" autocomplete="off"><a href="javascript:sidebarclick('CAG')">Cagliari</a><br>
+<input type="checkbox" class="CBRcheckbox" onclick="toggleshow('CBR')" autocomplete="off" checked><a href="javascript:sidebarclick('CBR')">Canberra</a><br>
+<input type="checkbox" id="CMNcheckbox" class="CMNcheckbox" onclick="toggleshow('CMN')" autocomplete="off"><a href="javascript:sidebarclick('CMN')">Casablanca</a><br>
+<input type="checkbox" id="CGQcheckbox" class="CGQcheckbox" onclick="toggleshow('CGQ')" autocomplete="off"><a href="javascript:sidebarclick('CGQ')">Changchun</a><br>
+<input type="checkbox" class="CLTcheckbox" onclick="toggleshow('CLT')" autocomplete="off" checked><a href="javascript:sidebarclick('CLT')">Charlotte</a><br>
+<input type="checkbox" id="CZ_checkbox" class="CZ_checkbox" onclick="toggleshow('CZ_')" autocomplete="off"><a href="javascript:sidebarclick('CZ_')">Chemnitz</a><br>
+<input type="checkbox" class="CHCcheckbox" onclick="toggleshow('CHC')" autocomplete="off" checked><a href="javascript:sidebarclick('CHC')">Christchurch</a><br>
+<input type="checkbox" class="CVGcheckbox" onclick="toggleshow('CVG')" autocomplete="off" checked><a href="javascript:sidebarclick('CVG')">Cincinnati</a><br>
+<input type="checkbox" id="CFEcheckbox" class="CFEcheckbox" onclick="toggleshow('CFE')" autocomplete="off"><a href="javascript:sidebarclick('CFE')">Clermont-Ferrand</a><br>
+<input type="checkbox" id="CBUcheckbox" class="CBUcheckbox" onclick="toggleshow('CBU')" autocomplete="off"><a href="javascript:sidebarclick('CBU')">Cottbus</a><br>
+<input type="checkbox" id="CZWcheckbox" class="CZWcheckbox" onclick="toggleshow('CZW')" autocomplete="off"><a href="javascript:sidebarclick('CZW')">Częstochowa</a><br>
+<input type="checkbox" id="DLCcheckbox" class="DLCcheckbox" onclick="toggleshow('DLC')" autocomplete="off"><a href="javascript:sidebarclick('DLC')">Dalian</a><br>
+<input type="checkbox" class="DALcheckbox" onclick="toggleshow('DAL')" autocomplete="off" checked><a href="javascript:sidebarclick('DAL')">Dallas</a><br>
+<input type="checkbox" id="ZCScheckbox" class="ZCScheckbox" onclick="toggleshow('ZCS')" autocomplete="off"><a href="javascript:sidebarclick('ZCS')">Darmstadt</a><br>
+<input type="checkbox" id="DEBcheckbox" class="DEBcheckbox" onclick="toggleshow('DEB')" autocomplete="off"><a href="javascript:sidebarclick('DEB')">Debrecen</a><br>
+<input type="checkbox" id="RTMcheckbox" class="RTMcheckbox" onclick="toggleshow('RTM')" autocomplete="off"><a href="javascript:sidebarclick('RTM')">Den Haag</a><br>
+<input type="checkbox" class="DENcheckbox" onclick="toggleshow('DEN')" autocomplete="off" checked><a href="javascript:sidebarclick('DEN')">Denver</a><br>
+<input type="checkbox" id="DS_checkbox" class="DS_checkbox" onclick="toggleshow('DS_')" autocomplete="off"><a href="javascript:sidebarclick('DS_')">Dessau</a><br>
+<input type="checkbox" class="DTTcheckbox" onclick="toggleshow('DTT')" autocomplete="off" checked><a href="javascript:sidebarclick('DTT')">Detroit</a><br>
+<input type="checkbox" id="DIJcheckbox" class="DIJcheckbox" onclick="toggleshow('DIJ')" autocomplete="off"><a href="javascript:sidebarclick('DIJ')">Dijon</a><br>
+<input type="checkbox" id="DOHcheckbox" class="DOHcheckbox" onclick="toggleshow('DOH')" autocomplete="off"><a href="javascript:sidebarclick('DOH')">Doha</a><br>
+<input type="checkbox" id="DRScheckbox" class="DRScheckbox" onclick="toggleshow('DRS')" autocomplete="off"><a href="javascript:sidebarclick('DRS')">Dresden</a><br>
+<input type="checkbox" id="DUScheckbox" class="DUScheckbox" onclick="toggleshow('DUS')" autocomplete="off"><a href="javascript:sidebarclick('DUS')">Düsseldorf</a><br>
+<input type="checkbox" id="EB_checkbox" class="EB_checkbox" onclick="toggleshow('EB_')" autocomplete="off"><a href="javascript:sidebarclick('EB_')">Elbląg</a><br>
+<input type="checkbox" class="ELPcheckbox" onclick="toggleshow('ELP')" autocomplete="off" checked><a href="javascript:sidebarclick('ELP')">El Paso</a><br>
+<input type="checkbox" id="ERFcheckbox" class="ERFcheckbox" onclick="toggleshow('ERF')" autocomplete="off"><a href="javascript:sidebarclick('ERF')">Erfurt</a><br>
+<input type="checkbox" id="ESKcheckbox" class="ESKcheckbox" onclick="toggleshow('ESK')" autocomplete="off"><a href="javascript:sidebarclick('ESK')">Eskişehir</a><br>
+<input type="checkbox" id="FLRcheckbox" class="FLRcheckbox" onclick="toggleshow('FLR')" autocomplete="off"><a href="javascript:sidebarclick('FLR')">Firenze</a><br>
+<input type="checkbox" id="FUOcheckbox" class="FUOcheckbox" onclick="toggleshow('FUO')" autocomplete="off"><a href="javascript:sidebarclick('FUO')">Foshan</a><br>
+<input type="checkbox" id="FRAcheckbox" class="FRAcheckbox" onclick="toggleshow('FRA')" autocomplete="off"><a href="javascript:sidebarclick('FRA')">Frankfurt</a><br>
+<input type="checkbox" id="FO_checkbox" class="FO_checkbox" onclick="toggleshow('FO_')" autocomplete="off"><a href="javascript:sidebarclick('FO_')">Frankfurt Oder</a><br>
+<input type="checkbox" id="QFBcheckbox" class="QFBcheckbox" onclick="toggleshow('QFB')" autocomplete="off"><a href="javascript:sidebarclick('QFB')">Freiburg</a><br>
+<input type="checkbox" id="GZTcheckbox" class="GZTcheckbox" onclick="toggleshow('GZT')" autocomplete="off"><a href="javascript:sidebarclick('GZT')">Gaziantep</a><br>
+<input type="checkbox" id="GDNcheckbox" class="GDNcheckbox" onclick="toggleshow('GDN')" autocomplete="off"><a href="javascript:sidebarclick('GDN')">Gdańsk</a><br>
+<input type="checkbox" id="GVAcheckbox" class="GVAcheckbox" onclick="toggleshow('GVA')" autocomplete="off"><a href="javascript:sidebarclick('GVA')">Genève</a><br>
+<input type="checkbox" id="GNEcheckbox" class="GNEcheckbox" onclick="toggleshow('GNE')" autocomplete="off"><a href="javascript:sidebarclick('GNE')">Gent</a><br>
+<input type="checkbox" id="GR_checkbox" class="GR_checkbox" onclick="toggleshow('GR_')" autocomplete="off"><a href="javascript:sidebarclick('GR_')">Gera</a><br>
+<input type="checkbox" id="GM_checkbox" class="GM_checkbox" onclick="toggleshow('GM_')" autocomplete="off"><a href="javascript:sidebarclick('GM_')">Gmunden</a><br>
+<input type="checkbox" class="OOLcheckbox" onclick="toggleshow('OOL')" autocomplete="off" checked><a href="javascript:sidebarclick('OOL')">Gold Coast</a><br>
+<input type="checkbox" id="GZ_checkbox" class="GZ_checkbox" onclick="toggleshow('GZ_')" autocomplete="off"><a href="javascript:sidebarclick('GZ_')">Görlitz</a><br>
+<input type="checkbox" id="GT_checkbox" class="GT_checkbox" onclick="toggleshow('GT_')" autocomplete="off"><a href="javascript:sidebarclick('GT_')">Gotha</a><br>
+<input type="checkbox" id="GRZcheckbox" class="GRZcheckbox" onclick="toggleshow('GRZ')" autocomplete="off"><a href="javascript:sidebarclick('GRZ')">Graz</a><br>
+<input type="checkbox" id="GNBcheckbox" class="GNBcheckbox" onclick="toggleshow('GNB')" autocomplete="off"><a href="javascript:sidebarclick('GNB')">Grenoble</a><br>
+<input type="checkbox" id="GD_checkbox" class="GD_checkbox" onclick="toggleshow('GD_')" autocomplete="off"><a href="javascript:sidebarclick('GD_')">Grudziądz</a><br>
+<input type="checkbox" id="CANcheckbox" class="CANcheckbox" onclick="toggleshow('CAN')" autocomplete="off"><a href="javascript:sidebarclick('CAN')">Guangzhou</a><br>
+<input type="checkbox" id="HKDcheckbox" class="HKDcheckbox" onclick="toggleshow('HKD')" autocomplete="off"><a href="javascript:sidebarclick('HKD')">Hakodate</a><br>
+<input type="checkbox" id="HS_checkbox" class="HS_checkbox" onclick="toggleshow('HS_')" autocomplete="off"><a href="javascript:sidebarclick('HS_')">Halberstadt</a><br>
+<input type="checkbox" id="HL_checkbox" class="HL_checkbox" onclick="toggleshow('HL_')" autocomplete="off"><a href="javascript:sidebarclick('HL_')">Halle</a><br>
+<input type="checkbox" id="HAJcheckbox" class="HAJcheckbox" onclick="toggleshow('HAJ')" autocomplete="off"><a href="javascript:sidebarclick('HAJ')">Hannover</a><br>
+<input type="checkbox" id="MHGcheckbox" class="MHGcheckbox" onclick="toggleshow('MHG')" autocomplete="off"><a href="javascript:sidebarclick('MHG')">Heidelberg</a><br>
+<input type="checkbox" id="HB_checkbox" class="HB_checkbox" onclick="toggleshow('HB_')" autocomplete="off"><a href="javascript:sidebarclick('HB_')">Heilbronn</a><br>
+<input type="checkbox" id="HELcheckbox" class="HELcheckbox" onclick="toggleshow('HEL')" autocomplete="off"><a href="javascript:sidebarclick('HEL')">Helsinki</a><br>
+<input type="checkbox" id="HIJcheckbox" class="HIJcheckbox" onclick="toggleshow('HIJ')" autocomplete="off"><a href="javascript:sidebarclick('HIJ')">Hiroshima</a><br>
+<input type="checkbox" class="HKGcheckbox" onclick="toggleshow('HKG')" autocomplete="off" checked><a href="javascript:sidebarclick('HKG')">Hong Kong</a><br>
+<input type="checkbox" class="HOUcheckbox" onclick="toggleshow('HOU')" autocomplete="off" checked><a href="javascript:sidebarclick('HOU')">Houston</a><br>
+<input type="checkbox" id="HIAcheckbox" class="HIAcheckbox" onclick="toggleshow('HIA')" autocomplete="off"><a href="javascript:sidebarclick('HIA')">Huai'an</a><br>
+<input type="checkbox" id="INNcheckbox" class="INNcheckbox" onclick="toggleshow('INN')" autocomplete="off"><a href="javascript:sidebarclick('INN')">Innsbruck</a><br>
+<input type="checkbox" class="ALYcheckbox" onclick="toggleshow('ALY')" autocomplete="off" checked><a href="javascript:sidebarclick('ALY')">Iskandariyya</a><br>
+<input type="checkbox" id="ISTcheckbox" class="ISTcheckbox" onclick="toggleshow('IST')" autocomplete="off"><a href="javascript:sidebarclick('IST')">İstanbul</a><br>
+<input type="checkbox" id="IZMcheckbox" class="IZMcheckbox" onclick="toggleshow('IZM')" autocomplete="off"><a href="javascript:sidebarclick('IZM')">İzmir</a><br>
+<input type="checkbox" id="JN_checkbox" class="JN_checkbox" onclick="toggleshow('JN_')" autocomplete="off"><a href="javascript:sidebarclick('JN_')">Jena</a><br>
+<input type="checkbox" id="KOJcheckbox" class="KOJcheckbox" onclick="toggleshow('KOJ')" autocomplete="off"><a href="javascript:sidebarclick('KOJ')">Kagoshima</a><br>
+<input type="checkbox" class="MKCcheckbox" onclick="toggleshow('MKC')" autocomplete="off" checked><a href="javascript:sidebarclick('MKC')">Kansas City</a><br>
+<input type="checkbox" id="KHHcheckbox" class="KHHcheckbox" onclick="toggleshow('KHH')" autocomplete="off"><a href="javascript:sidebarclick('KHH')">Kaohsiung</a><br>
+<input type="checkbox" id="FKBcheckbox" class="FKBcheckbox" onclick="toggleshow('FKB')" autocomplete="off"><a href="javascript:sidebarclick('FKB')">Karlsruhe</a><br>
+<input type="checkbox" id="KSFcheckbox" class="KSFcheckbox" onclick="toggleshow('KSF')" autocomplete="off"><a href="javascript:sidebarclick('KSF')">Kassel</a><br>
+<input type="checkbox" id="KTWcheckbox" class="KTWcheckbox" onclick="toggleshow('KTW')" autocomplete="off"><a href="javascript:sidebarclick('KTW')">Katowice</a><br>
+<input type="checkbox" id="ASRcheckbox" class="ASRcheckbox" onclick="toggleshow('ASR')" autocomplete="off"><a href="javascript:sidebarclick('ASR')">Kayseri</a><br>
+<input type="checkbox" id="HRKcheckbox" class="HRKcheckbox" onclick="toggleshow('HRK')" autocomplete="off"><a href="javascript:sidebarclick('HRK')">Kharkiv</a><br>
+<input type="checkbox" id="KCZcheckbox" class="KCZcheckbox" onclick="toggleshow('KCZ')" autocomplete="off"><a href="javascript:sidebarclick('KCZ')">Kochi JP</a><br>
+<input type="checkbox" class="CCUcheckbox" onclick="toggleshow('CCU')" autocomplete="off" checked><a href="javascript:sidebarclick('CCU')">Kolkata</a><br>
+<input type="checkbox" id="KYAcheckbox" class="KYAcheckbox" onclick="toggleshow('KYA')" autocomplete="off"><a href="javascript:sidebarclick('KYA')">Konya</a><br>
+<input type="checkbox" id="KSCcheckbox" class="KSCcheckbox" onclick="toggleshow('KSC')" autocomplete="off"><a href="javascript:sidebarclick('KSC')">Košice</a><br>
+<input type="checkbox" id="KRKcheckbox" class="KRKcheckbox" onclick="toggleshow('KRK')" autocomplete="off"><a href="javascript:sidebarclick('KRK')">Kraków</a><br>
+<input type="checkbox" id="KF_checkbox" class="KF_checkbox" onclick="toggleshow('KF_')" autocomplete="off"><a href="javascript:sidebarclick('KF_')">Krefeld</a><br>
+<input type="checkbox" id="KMJcheckbox" class="KMJcheckbox" onclick="toggleshow('KMJ')" autocomplete="off"><a href="javascript:sidebarclick('KMJ')">Kumamoto</a><br>
+<input type="checkbox" id="KBPcheckbox" class="KBPcheckbox" onclick="toggleshow('KBP')" autocomplete="off"><a href="javascript:sidebarclick('KBP')">Kyiv</a><br>
+<input type="checkbox" id="LEHcheckbox" class="LEHcheckbox" onclick="toggleshow('LEH')" autocomplete="off"><a href="javascript:sidebarclick('LEH')">Le Havre</a><br>
+<input type="checkbox" id="LEJcheckbox" class="LEJcheckbox" onclick="toggleshow('LEJ')" autocomplete="off"><a href="javascript:sidebarclick('LEJ')">Leipzig</a><br>
+<input type="checkbox" id="LMEcheckbox" class="LMEcheckbox" onclick="toggleshow('LME')" autocomplete="off"><a href="javascript:sidebarclick('LME')">Le Mans</a><br>
+<input type="checkbox" id="LB_checkbox" class="LB_checkbox" onclick="toggleshow('LB_')" autocomplete="off"><a href="javascript:sidebarclick('LB_')">Liberec</a><br>
+<input type="checkbox" id="LNZcheckbox" class="LNZcheckbox" onclick="toggleshow('LNZ')" autocomplete="off"><a href="javascript:sidebarclick('LNZ')">Linz</a><br>
+<input type="checkbox" id="LIScheckbox" class="LIScheckbox" onclick="toggleshow('LIS')" autocomplete="off"><a href="javascript:sidebarclick('LIS')">Lisboa</a><br>
+<input type="checkbox" class="LITcheckbox" onclick="toggleshow('LIT')" autocomplete="off" checked><a href="javascript:sidebarclick('LIT')">Little Rock</a><br>
+<input type="checkbox" id="LCJcheckbox" class="LCJcheckbox" onclick="toggleshow('LCJ')" autocomplete="off"><a href="javascript:sidebarclick('LCJ')">Łódź</a><br>
+<input type="checkbox" id="LUXcheckbox" class="LUXcheckbox" onclick="toggleshow('LUX')" autocomplete="off"><a href="javascript:sidebarclick('LUX')">Luxembourg</a><br>
+<input type="checkbox" id="LYNcheckbox" class="LYNcheckbox" onclick="toggleshow('LYN')" autocomplete="off"><a href="javascript:sidebarclick('LYN')">Lyon</a><br>
+<input type="checkbox" id="CSOcheckbox" class="CSOcheckbox" onclick="toggleshow('CSO')" autocomplete="off"><a href="javascript:sidebarclick('CSO')">Magdeburg</a><br>
+<input type="checkbox" id="QMZcheckbox" class="QMZcheckbox" onclick="toggleshow('QMZ')" autocomplete="off"><a href="javascript:sidebarclick('QMZ')">Mainz</a><br>
+<input type="checkbox" id="MHGcheckbox" class="MHGcheckbox" onclick="toggleshow('MHG')" autocomplete="off"><a href="javascript:sidebarclick('MHG')">Mannheim</a><br>
+<input type="checkbox" id="MRScheckbox" class="MRScheckbox" onclick="toggleshow('MRS')" autocomplete="off"><a href="javascript:sidebarclick('MRS')">Marseille</a><br>
+<input type="checkbox" id="MYJcheckbox" class="MYJcheckbox" onclick="toggleshow('MYJ')" autocomplete="off"><a href="javascript:sidebarclick('MYJ')">Matsuyama</a><br>
+<input type="checkbox" class="MDEcheckbox" onclick="toggleshow('MDE')" autocomplete="off" checked><a href="javascript:sidebarclick('MDE')">Medellín</a><br>
+<input type="checkbox" class="MELcheckbox" onclick="toggleshow('MEL')" autocomplete="off" checked><a href="javascript:sidebarclick('MEL')">Melbourne</a><br>
+<input type="checkbox" class="MEMcheckbox" onclick="toggleshow('MEM')" autocomplete="off" checked><a href="javascript:sidebarclick('MEM')">Memphis</a><br>
+<input type="checkbox" class="MDZcheckbox" onclick="toggleshow('MDZ')" autocomplete="off" checked><a href="javascript:sidebarclick('MDZ')">Mendoza</a><br>
+<input type="checkbox" id="QMEcheckbox" class="QMEcheckbox" onclick="toggleshow('QME')" autocomplete="off"><a href="javascript:sidebarclick('QME')">Messina</a><br>
+<input type="checkbox" id="MILcheckbox" class="MILcheckbox" onclick="toggleshow('MIL')" autocomplete="off"><a href="javascript:sidebarclick('MIL')">Milano</a><br>
+<input type="checkbox" class="MKEcheckbox" onclick="toggleshow('MKE')" autocomplete="off" checked><a href="javascript:sidebarclick('MKE')">Milwaukee</a><br>
+<input type="checkbox" id="MSQcheckbox" class="MSQcheckbox" onclick="toggleshow('MSQ')" autocomplete="off"><a href="javascript:sidebarclick('MSQ')">Minsk</a><br>
+<input type="checkbox" id="MCQcheckbox" class="MCQcheckbox" onclick="toggleshow('MCQ')" autocomplete="off"><a href="javascript:sidebarclick('MCQ')">Miskolc</a><br>
+<input type="checkbox" id="MPLcheckbox" class="MPLcheckbox" onclick="toggleshow('MPL')" autocomplete="off"><a href="javascript:sidebarclick('MPL')">Montpellier</a><br>
+<input type="checkbox" id="MOWcheckbox" class="MOWcheckbox" onclick="toggleshow('MOW')" autocomplete="off"><a href="javascript:sidebarclick('MOW')">Moskva</a><br>
+<input type="checkbox" id="MLHcheckbox" class="MLHcheckbox" onclick="toggleshow('MLH')" autocomplete="off"><a href="javascript:sidebarclick('MLH')">Mulhouse</a><br>
+<input type="checkbox" id="MUCcheckbox" class="MUCcheckbox" onclick="toggleshow('MUC')" autocomplete="off"><a href="javascript:sidebarclick('MUC')">München</a><br>
+<input type="checkbox" id="RMUcheckbox" class="RMUcheckbox" onclick="toggleshow('RMU')" autocomplete="off"><a href="javascript:sidebarclick('RMU')">Murcia</a><br>
+<input type="checkbox" id="NGScheckbox" class="NGScheckbox" onclick="toggleshow('NGS')" autocomplete="off"><a href="javascript:sidebarclick('NGS')">Nagasaki</a><br>
+<input type="checkbox" id="NKGcheckbox" class="NKGcheckbox" onclick="toggleshow('NKG')" autocomplete="off"><a href="javascript:sidebarclick('NKG')">Nanjing</a><br>
+<input type="checkbox" id="NTEcheckbox" class="NTEcheckbox" onclick="toggleshow('NTE')" autocomplete="off"><a href="javascript:sidebarclick('NTE')">Nantes</a><br>
+<input type="checkbox" class="NTLcheckbox" onclick="toggleshow('NTL')" autocomplete="off" checked><a href="javascript:sidebarclick('NTL')">Newcastle AU</a><br>
+<input type="checkbox" class="MSYcheckbox" onclick="toggleshow('MSY')" autocomplete="off" checked><a href="javascript:sidebarclick('MSY')">New Orleans</a><br>
+<input type="checkbox" id="NCEcheckbox" class="NCEcheckbox" onclick="toggleshow('NCE')" autocomplete="off"><a href="javascript:sidebarclick('NCE')">Nice</a><br>
+<input type="checkbox" id="NH_checkbox" class="NH_checkbox" onclick="toggleshow('NH_')" autocomplete="off"><a href="javascript:sidebarclick('NH_')">Nordhausen</a><br>
+<input type="checkbox" id="NRKcheckbox" class="NRKcheckbox" onclick="toggleshow('NRK')" autocomplete="off"><a href="javascript:sidebarclick('NRK')">Norrköping</a><br>
+<input type="checkbox" id="NUEcheckbox" class="NUEcheckbox" onclick="toggleshow('NUE')" autocomplete="off"><a href="javascript:sidebarclick('NUE')">Nürnberg</a><br>
+<input type="checkbox" id="OKJcheckbox" class="OKJcheckbox" onclick="toggleshow('OKJ')" autocomplete="off"><a href="javascript:sidebarclick('OKJ')">Okayama</a><br>
+<input type="checkbox" class="OKCcheckbox" onclick="toggleshow('OKC')" autocomplete="off" checked><a href="javascript:sidebarclick('OKC')">Oklahoma City</a><br>
+<input type="checkbox" id="OLOcheckbox" class="OLOcheckbox" onclick="toggleshow('OLO')" autocomplete="off"><a href="javascript:sidebarclick('OLO')">Olomouc</a><br>
+<input type="checkbox" id="OZ_checkbox" class="OZ_checkbox" onclick="toggleshow('OZ_')" autocomplete="off"><a href="javascript:sidebarclick('OZ_')">Olsztyn</a><br>
+<input type="checkbox" id="OSTcheckbox" class="OSTcheckbox" onclick="toggleshow('OST')" autocomplete="off"><a href="javascript:sidebarclick('OST')">Oostende</a><br>
+<input type="checkbox" id="ORNcheckbox" class="ORNcheckbox" onclick="toggleshow('ORN')" autocomplete="off"><a href="javascript:sidebarclick('ORN')">Oran</a><br>
+<input type="checkbox" id="OREcheckbox" class="OREcheckbox" onclick="toggleshow('ORE')" autocomplete="off"><a href="javascript:sidebarclick('ORE')">Orléans</a><br>
+<input type="checkbox" id="OSIcheckbox" class="OSIcheckbox" onclick="toggleshow('OSI')" autocomplete="off"><a href="javascript:sidebarclick('OSI')">Osijek</a><br>
+<input type="checkbox" id="UKKcheckbox" class="UKKcheckbox" onclick="toggleshow('UKK')" autocomplete="off"><a href="javascript:sidebarclick('UKK')">Óskemen</a><br>
+<input type="checkbox" id="OSLcheckbox" class="OSLcheckbox" onclick="toggleshow('OSL')" autocomplete="off"><a href="javascript:sidebarclick('OSL')">Oslo</a><br>
+<input type="checkbox" id="OGXcheckbox" class="OGXcheckbox" onclick="toggleshow('OGX')" autocomplete="off"><a href="javascript:sidebarclick('OGX')">Ouargla</a><br>
+<input type="checkbox" id="QPAcheckbox" class="QPAcheckbox" onclick="toggleshow('QPA')" autocomplete="off"><a href="javascript:sidebarclick('QPA')">Padova</a><br>
+<input type="checkbox" id="PMOcheckbox" class="PMOcheckbox" onclick="toggleshow('PMO')" autocomplete="off"><a href="javascript:sidebarclick('PMO')">Palermo</a><br>
+<input type="checkbox" id="PARcheckbox" class="PARcheckbox" onclick="toggleshow('PAR')" autocomplete="off"><a href="javascript:sidebarclick('PAR')">Paris</a><br>
+<input type="checkbox" id="PWQcheckbox" class="PWQcheckbox" onclick="toggleshow('PWQ')" autocomplete="off"><a href="javascript:sidebarclick('PWQ')">Pavlodar</a><br>
+<input type="checkbox" class="PHLcheckbox" onclick="toggleshow('PHL')" autocomplete="off" checked><a href="javascript:sidebarclick('PHL')">Philadelphia</a><br>
+<input type="checkbox" class="PHXcheckbox" onclick="toggleshow('PHX')" autocomplete="off" checked><a href="javascript:sidebarclick('PHX')">Phoenix</a><br>
+<input type="checkbox" id="HOQcheckbox" class="HOQcheckbox" onclick="toggleshow('HOQ')" autocomplete="off"><a href="javascript:sidebarclick('HOQ')">Plauen</a><br>
+<input type="checkbox" id="PZ_checkbox" class="PZ_checkbox" onclick="toggleshow('PZ_')" autocomplete="off"><a href="javascript:sidebarclick('PZ_')">Plzeň</a><br>
+<input type="checkbox" class="PDXcheckbox" onclick="toggleshow('PDX')" autocomplete="off" checked><a href="javascript:sidebarclick('PDX')">Portland</a><br>
+<input type="checkbox" id="PD_checkbox" class="PD_checkbox" onclick="toggleshow('PD_')" autocomplete="off"><a href="javascript:sidebarclick('PD_')">Potsdam</a><br>
+<input type="checkbox" id="POZcheckbox" class="POZcheckbox" onclick="toggleshow('POZ')" autocomplete="off"><a href="javascript:sidebarclick('POZ')">Poznań</a><br>
+<input type="checkbox" id="PRGcheckbox" class="PRGcheckbox" onclick="toggleshow('PRG')" autocomplete="off"><a href="javascript:sidebarclick('PRG')">Praha</a><br>
+<input type="checkbox" id="FNJcheckbox" class="FNJcheckbox" onclick="toggleshow('FNJ')" autocomplete="off"><a href="javascript:sidebarclick('FNJ')">Pyongyang</a><br>
+<input type="checkbox" id="TAOcheckbox" class="TAOcheckbox" onclick="toggleshow('TAO')" autocomplete="off"><a href="javascript:sidebarclick('TAO')">Qingdao</a><br>
+<input type="checkbox" id="RBAcheckbox" class="RBAcheckbox" onclick="toggleshow('RBA')" autocomplete="off"><a href="javascript:sidebarclick('RBA')">Rabat</a><br>
+<input type="checkbox" id="RHEcheckbox" class="RHEcheckbox" onclick="toggleshow('RHE')" autocomplete="off"><a href="javascript:sidebarclick('RHE')">Reims</a><br>
+<input type="checkbox" id="RIXcheckbox" class="RIXcheckbox" onclick="toggleshow('RIX')" autocomplete="off"><a href="javascript:sidebarclick('RIX')">Riga</a><br>
+<input type="checkbox" class="RIOcheckbox" onclick="toggleshow('RIO')" autocomplete="off" checked><a href="javascript:sidebarclick('RIO')">Rio de Janeiro</a><br>
+<input type="checkbox" id="ROMcheckbox" class="ROMcheckbox" onclick="toggleshow('ROM')" autocomplete="off"><a href="javascript:sidebarclick('ROM')">Roma</a><br>
+<input type="checkbox" id="RLGcheckbox" class="RLGcheckbox" onclick="toggleshow('RLG')" autocomplete="off"><a href="javascript:sidebarclick('RLG')">Rostock</a><br>
+<input type="checkbox" id="RTMcheckbox" class="RTMcheckbox" onclick="toggleshow('RTM')" autocomplete="off"><a href="javascript:sidebarclick('RTM')">Rotterdam</a><br>
+<input type="checkbox" id="EBUcheckbox" class="EBUcheckbox" onclick="toggleshow('EBU')" autocomplete="off"><a href="javascript:sidebarclick('EBU')">Saint-Étienne</a><br>
+<input type="checkbox" class="SLCcheckbox" onclick="toggleshow('SLC')" autocomplete="off" checked><a href="javascript:sidebarclick('SLC')">Salt Lake City</a><br>
+<input type="checkbox" id="SKDcheckbox" class="SKDcheckbox" onclick="toggleshow('SKD')" autocomplete="off"><a href="javascript:sidebarclick('SKD')">Samarkand</a><br>
+<input type="checkbox" class="SFOcheckbox" onclick="toggleshow('SFO')" autocomplete="off" checked><a href="javascript:sidebarclick('SFO')">San Francisco</a><br>
+<input type="checkbox" id="LEDcheckbox" class="LEDcheckbox" onclick="toggleshow('LED')" autocomplete="off"><a href="javascript:sidebarclick('LED')">Sankt-Peterburg</a><br>
+<input type="checkbox" class="SSZcheckbox" onclick="toggleshow('SSZ')" autocomplete="off" checked><a href="javascript:sidebarclick('SSZ')">Santos</a><br>
+<input type="checkbox" id="SYXcheckbox" class="SYXcheckbox" onclick="toggleshow('SYX')" autocomplete="off"><a href="javascript:sidebarclick('SYX')">Sanya</a><br>
+<input type="checkbox" id="SPKcheckbox" class="SPKcheckbox" onclick="toggleshow('SPK')" autocomplete="off"><a href="javascript:sidebarclick('SPK')">Sapporo</a><br>
+<input type="checkbox" id="SJJcheckbox" class="SJJcheckbox" onclick="toggleshow('SJJ')" autocomplete="off"><a href="javascript:sidebarclick('SJJ')">Sarajevo</a><br>
+<input type="checkbox" class="SEAcheckbox" onclick="toggleshow('SEA')" autocomplete="off" checked><a href="javascript:sidebarclick('SEA')">Seattle</a><br>
+<input type="checkbox" id="QSFcheckbox" class="QSFcheckbox" onclick="toggleshow('QSF')" autocomplete="off"><a href="javascript:sidebarclick('QSF')">Sétif</a><br>
+<input type="checkbox" id="SVQcheckbox" class="SVQcheckbox" onclick="toggleshow('SVQ')" autocomplete="off"><a href="javascript:sidebarclick('SVQ')">Sevilla</a><br>
+<input type="checkbox" id="SHAcheckbox" class="SHAcheckbox" onclick="toggleshow('SHA')" autocomplete="off"><a href="javascript:sidebarclick('SHA')">Shanghai</a><br>
+<input type="checkbox" id="SHEcheckbox" class="SHEcheckbox" onclick="toggleshow('SHE')" autocomplete="off"><a href="javascript:sidebarclick('SHE')">Shenyang</a><br>
+<input type="checkbox" id="SZXcheckbox" class="SZXcheckbox" onclick="toggleshow('SZX')" autocomplete="off"><a href="javascript:sidebarclick('SZX')">Shenzhen</a><br>
+<input type="checkbox" id="BFWcheckbox" class="BFWcheckbox" onclick="toggleshow('BFW')" autocomplete="off"><a href="javascript:sidebarclick('BFW')">Sidi Bel Abbès</a><br>
+<input type="checkbox" id="SOFcheckbox" class="SOFcheckbox" onclick="toggleshow('SOF')" autocomplete="off"><a href="javascript:sidebarclick('SOF')">Sofiya</a><br>
+<input type="checkbox" id="STOcheckbox" class="STOcheckbox" onclick="toggleshow('STO')" autocomplete="off"><a href="javascript:sidebarclick('STO')">Stockholm</a><br>
+<input type="checkbox" id="SXBcheckbox" class="SXBcheckbox" onclick="toggleshow('SXB')" autocomplete="off"><a href="javascript:sidebarclick('SXB')">Strasbourg</a><br>
+<input type="checkbox" id="STRcheckbox" class="STRcheckbox" onclick="toggleshow('STR')" autocomplete="off"><a href="javascript:sidebarclick('STR')">Stuttgart</a><br>
+<input type="checkbox" class="SYDcheckbox" onclick="toggleshow('SYD')" autocomplete="off" checked><a href="javascript:sidebarclick('SYD')">Sydney</a><br>
+<input type="checkbox" id="SZZcheckbox" class="SZZcheckbox" onclick="toggleshow('SZZ')" autocomplete="off"><a href="javascript:sidebarclick('SZZ')">Szczecin</a><br>
+<input type="checkbox" id="SZ_checkbox" class="SZ_checkbox" onclick="toggleshow('SZ_')" autocomplete="off"><a href="javascript:sidebarclick('SZ_')">Szeged</a><br>
+<input type="checkbox" class="TCMcheckbox" onclick="toggleshow('TCM')" autocomplete="off" checked><a href="javascript:sidebarclick('TCM')">Tacoma</a><br>
+<input type="checkbox" id="TLLcheckbox" class="TLLcheckbox" onclick="toggleshow('TLL')" autocomplete="off"><a href="javascript:sidebarclick('TLL')">Tallinn</a><br>
+<input type="checkbox" class="TPAcheckbox" onclick="toggleshow('TPA')" autocomplete="off" checked><a href="javascript:sidebarclick('TPA')">Tampa</a><br>
+<input type="checkbox" id="KGFcheckbox" class="KGFcheckbox" onclick="toggleshow('KGF')" autocomplete="off"><a href="javascript:sidebarclick('KGF')">Temirtaý</a><br>
+<input type="checkbox" id="TSNcheckbox" class="TSNcheckbox" onclick="toggleshow('TSN')" autocomplete="off"><a href="javascript:sidebarclick('TSN')">Tianjin</a><br>
+<input type="checkbox" id="TRNcheckbox" class="TRNcheckbox" onclick="toggleshow('TRN')" autocomplete="off"><a href="javascript:sidebarclick('TRN')">Torino</a><br>
+<input type="checkbox" class="YTOcheckbox" onclick="toggleshow('YTO')" autocomplete="off" checked><a href="javascript:sidebarclick('YTO')">Toronto</a><br>
+<input type="checkbox" id="TN_checkbox" class="TN_checkbox" onclick="toggleshow('TN_')" autocomplete="off"><a href="javascript:sidebarclick('TN_')">Toruń</a><br>
+<input type="checkbox" id="TLScheckbox" class="TLScheckbox" onclick="toggleshow('TLS')" autocomplete="off"><a href="javascript:sidebarclick('TLS')">Toulouse</a><br>
+<input type="checkbox" id="TUFcheckbox" class="TUFcheckbox" onclick="toggleshow('TUF')" autocomplete="off"><a href="javascript:sidebarclick('TUF')">Tours</a><br>
+<input type="checkbox" id="TOYcheckbox" class="TOYcheckbox" onclick="toggleshow('TOY')" autocomplete="off"><a href="javascript:sidebarclick('TOY')">Toyama</a><br>
+<input type="checkbox" id="TY_checkbox" class="TY_checkbox" onclick="toggleshow('TY_')" autocomplete="off"><a href="javascript:sidebarclick('TY_')">Toyohashi</a><br>
+<input type="checkbox" id="TRDcheckbox" class="TRDcheckbox" onclick="toggleshow('TRD')" autocomplete="off"><a href="javascript:sidebarclick('TRD')">Trondheim</a><br>
+<input type="checkbox" class="TUScheckbox" onclick="toggleshow('TUS')" autocomplete="off" checked><a href="javascript:sidebarclick('TUS')">Tucson</a><br>
+<input type="checkbox" id="TUNcheckbox" class="TUNcheckbox" onclick="toggleshow('TUN')" autocomplete="off"><a href="javascript:sidebarclick('TUN')">Tunis</a><br>
+<input type="checkbox" id="QULcheckbox" class="QULcheckbox" onclick="toggleshow('QUL')" autocomplete="off"><a href="javascript:sidebarclick('QUL')">Ulm</a><br>
+<input type="checkbox" id="UTCcheckbox" class="UTCcheckbox" onclick="toggleshow('UTC')" autocomplete="off"><a href="javascript:sidebarclick('UTC')">Utrecht</a><br>
+<input type="checkbox" id="VLCcheckbox" class="VLCcheckbox" onclick="toggleshow('VLC')" autocomplete="off"><a href="javascript:sidebarclick('VLC')">Valéncia ES</a><br>
+<input type="checkbox" id="XVScheckbox" class="XVScheckbox" onclick="toggleshow('XVS')" autocomplete="off"><a href="javascript:sidebarclick('XVS')">Valenciennes</a><br>
+<input type="checkbox" id="VCEcheckbox" class="VCEcheckbox" onclick="toggleshow('VCE')" autocomplete="off"><a href="javascript:sidebarclick('VCE')">Venezia</a><br>
+<input type="checkbox" id="VITcheckbox" class="VITcheckbox" onclick="toggleshow('VIT')" autocomplete="off"><a href="javascript:sidebarclick('VIT')">Vitoria-Gasteiz</a><br>
+<input type="checkbox" id="WAWcheckbox" class="WAWcheckbox" onclick="toggleshow('WAW')" autocomplete="off"><a href="javascript:sidebarclick('WAW')">Warszawa</a><br>
+<input type="checkbox" class="WAScheckbox" onclick="toggleshow('WAS')" autocomplete="off" checked><a href="javascript:sidebarclick('WAS')">Washington</a><br>
+<input type="checkbox" id="VIEcheckbox" class="VIEcheckbox" onclick="toggleshow('VIE')" autocomplete="off"><a href="javascript:sidebarclick('VIE')">Wien</a><br>
+<input type="checkbox" id="WROcheckbox" class="WROcheckbox" onclick="toggleshow('WRO')" autocomplete="off"><a href="javascript:sidebarclick('WRO')">Wrocław</a><br>
+<input type="checkbox" id="WUHcheckbox" class="WUHcheckbox" onclick="toggleshow('WUH')" autocomplete="off"><a href="javascript:sidebarclick('WUH')">Wuhan</a><br>
+<input type="checkbox" id="WZ_checkbox" class="WZ_checkbox" onclick="toggleshow('WZ_')" autocomplete="off"><a href="javascript:sidebarclick('WZ_')">Würzburg</a><br>
+<input type="checkbox" class="JRScheckbox" onclick="toggleshow('JRS')" autocomplete="off" checked><a href="javascript:sidebarclick('JRS')">Yerushalayim</a><br>
+<input type="checkbox" id="ZAGcheckbox" class="ZAGcheckbox" onclick="toggleshow('ZAG')" autocomplete="off"><a href="javascript:sidebarclick('ZAG')">Zagreb</a><br>
+<input type="checkbox" id="ZAZcheckbox" class="ZAZcheckbox" onclick="toggleshow('ZAZ')" autocomplete="off"><a href="javascript:sidebarclick('ZAZ')">Zaragoza</a><br>
+<input type="checkbox" id="ZUHcheckbox" class="ZUHcheckbox" onclick="toggleshow('ZUH')" autocomplete="off"><a href="javascript:sidebarclick('ZUH')">Zhuhai</a><br>
+<input type="checkbox" id="ZRHcheckbox" class="ZRHcheckbox" onclick="toggleshow('ZRH')" autocomplete="off"><a href="javascript:sidebarclick('ZRH')">Zürich</a><br>
+<input type="checkbox" id="ZW_checkbox" class="ZW_checkbox" onclick="toggleshow('ZW_')" autocomplete="off"><a href="javascript:sidebarclick('ZW_')">Zwickau</a><br>
+<input type="checkbox" class="CBG1910checkbox" onclick="toggleshow('CBG1910')" autocomplete="off" checked><a href="javascript:sidebarclick('CBG1910')">Cambridge 1910</a><br>
+<input type="checkbox" class="ALO1910checkbox" onclick="toggleshow('ALO1910')" autocomplete="off" checked><a href="javascript:sidebarclick('ALO1910')">Waterloo US 1910</a><br>
+<input type="checkbox" class="BJS1935checkbox" onclick="toggleshow('BJS1935')" autocomplete="off" checked><a href="javascript:sidebarclick('BJS1935')">Beijing 1935</a><br>
+<input type="checkbox" class="SHA1935checkbox" onclick="toggleshow('SHA1935')" autocomplete="off" checked><a href="javascript:sidebarclick('SHA1935')">Shanghai 1935</a><br>
 </div>
 <div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
 <div id="hideall" style="display: block;"><a href="javascript:deselectall()">hide all</a></div>
