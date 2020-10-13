@@ -26,13 +26,13 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../../../streetmap/bososm.png"
-     x="-249.69321"
-     y="-998.76392"
-     width="3995.0769"
-     height="4744.1538"
+     xlink:href="../../streetmap/bososm.png"
+     style="display:none;fill:none;stroke:none"
      id="image12"
-     style="display:none;fill:none;stroke:none" />
+     height="4744.1538"
+     width="3995.0769"
+     y="-998.76392"
+     x="-249.69321" />
   <path
      id="path865"
      d="m 1379.6878,-249.80502 -49.8047,175.195317 -6.25,13.08593 -9.5703,15.625 -21.0938,25.78125 -12.8906,24.0234395 -6.25,20.8984405 -2.1484,28.90625 2.3437,37.5 6.25,26.367193 10.5469,21.875 11.1328,17.96875 259.9609,286.32811 23.0468,25.3906 16.211,28.125 114.0625,208.3985 19.3359,28.9062 18.5547,17.1875 98.4375,58.2031 18.9453,18.5547 58.7891,83.2031 55.0799,74.3541 51.7507,49.21394 30.1399,20.7994 30.4608,21.8345 66.556,32.8154 25.0498,14.741 19.4651,23.8347"
@@ -483,10 +483,6 @@
      style="fill:none;fill-rule:evenodd;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1574.3492,1017.3254 -4.1364,2.2221 -13.483,2.1067"
      id="path2876" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:0.03137255;fill-rule:nonzero;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1589.6791,980.86523 124.0711,-35.89539"
-     id="path19808" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 600.83453,1351.1286 -49.5844,12.8705 -78.75001,13.5 -85.75,24.25 -266.49998,33.5 -36.250002,7.25 -18,7.75 -15.75,10.25 -15,16.25 -27.4999998,41.75 -12.99999,15 -19.7500002,16.5 -20.75,13.5 -59.749998,26 -25.25,13.5 -18.5,19.25 -15.50001,24 -7.75,35.5 7.5,71.5 -2.25,29.75 -3.75,24.7501 -51.75,172.25 -5,16.25 -16.5,24.25"
