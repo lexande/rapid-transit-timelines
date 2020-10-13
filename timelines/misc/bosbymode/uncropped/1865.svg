@@ -26,17 +26,21 @@
   <defs
      id="defs6" />
   <path
+     id="path2719-7"
+     d="m 1336.8548,735.05371 -11.4363,-7.4 -9.4182,-11.77274 -10.7637,-27.24546 -36.6636,-105.95459 -29.9364,-85.10003 -4.3727,-28.25456 -13.1182,-26.57274 -18.5,-20.85455 -6.3909,-17.82728 -6.0546,-31.95456 -7.7364,-13.79091 -11.7727,-13.45455 -11.4364,-6.72728 -54.8272,-29.26364 -29.9364,-17.49092 -17.4909,-5.71818 -31.2819,-5.04546 -14.4636,-5.71819 -12.1091,-9.08182 -46.7546,-44.73638 -11.7727,-4.70909 -17.8273,-4.03637 -14.8,-0.33636 -77.0273,9.41819 h -12.4455 l -22.8728,-3.36364 -72.6545,-9.08182 -9.4182,-1.68182 -21.8637,-9.75455 -74.67272,-36.66365 -9.75455,-8.74546 -13.45455,-16.81819 -83.41821,-139.59095"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
      style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
      d="m 2906.1147,3572.9361 20.4824,-165.8125 c 0.019,-0.1588 0.013,-0.3196 -0.018,-0.4765 l -7.8047,-39.0156 c -0.028,-0.1374 -0.074,-0.2702 -0.1386,-0.3946 l -56.5352,-109.1738 -14.5195,-36.7852 -2.8926,-35.666 28.248,-151.9609 v -0.01 l 13.6543,-75.1015 c 0.032,-0.1675 0.036,-0.3392 0.01,-0.5078 l -4.877,-30.2364 c -0.021,-0.1307 -0.059,-0.2582 -0.1133,-0.3789 l -13.6562,-30.2363 c -0.019,-0.043 -0.041,-0.086 -0.064,-0.127 l -19.5078,-34.1367 c -0.035,-0.062 -0.074,-0.1213 -0.1172,-0.1777 l -219.4531,-281.8731 -63.25,-82.7129 -18.4531,-52.4453 c -0.046,-0.1313 -0.1108,-0.2555 -0.1914,-0.3691 l -26.334,-37.0645 c -0.024,-0.034 -0.049,-0.066 -0.076,-0.098 l -198.8945,-235.9434 -24.1817,-40.625 -3.5984,-20.8484 14.8399,-99.3404 12.009,-35.8937 16.3029,-57.7428 -4.9719,-89.7694 -2.6055,-50.8107 -2.6087,-84.4895 -2.7749,-21.2266 -6.6712,-15.2866 -42.8482,-95.617 -33.9593,-45.3622 -0.3732,-21.1495 4.137,-21.8222 20.5657,-37.9948 -0.9915,-16.5371 6.601,-28.5109"
      id="path875" />
   <image
      xlink:href="../../../streetmap/bososm.png"
-     x="-249.69321"
-     y="-998.76392"
-     width="3995.0769"
-     height="4744.1538"
+     style="display:none;fill:none;stroke:none"
      id="image12"
-     style="display:none;fill:none;stroke:none" />
+     height="4744.1538"
+     width="3995.0769"
+     y="-998.76392"
+     x="-249.69321" />
   <path
      id="path865"
      d="m 1379.6878,-249.80502 -49.8047,175.195317 -6.25,13.08593 -9.5703,15.625 -21.0938,25.78125 -12.8906,24.0234395 -6.25,20.8984405 -2.1484,28.90625 2.3437,37.5 6.25,26.367193 10.5469,21.875 11.1328,17.96875 259.9609,286.32811 23.0468,25.3906 16.211,28.125 114.0625,208.3985 19.3359,28.9062 18.5547,17.1875 98.4375,58.2031 18.9453,18.5547 58.7891,83.2031 55.0799,74.3541 51.7507,49.21394 30.1399,20.7994 30.4608,21.8345 66.556,32.8154 25.0498,14.741 19.4651,23.8347"
@@ -115,10 +119,6 @@
      style="fill:none;fill-rule:evenodd;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1529.771,963.85571 6.8383,9.4608 17.9545,11.8901 5.2045,1.3081 12.2701,8.8759"
      id="path4510" />
-  <path
-     id="path2719"
-     d="m 510.40904,-4.273852 83.41821,139.590962 13.45455,16.81819 9.75455,8.74546 74.67276,36.66365 21.86364,9.75455 9.41819,1.68182 72.65457,9.08182 22.87274,3.36364 h 12.44546 l 77.0273,-9.41819 14.80001,0.33636 17.82728,4.03637 11.77273,4.70909 46.75456,44.73638 12.10911,9.08182 14.4636,5.71819 31.2819,5.04546 17.4909,5.71818 29.9364,17.49092 54.8272,29.26364 11.4364,6.72728 11.7727,13.45455 7.7364,13.79091 6.0546,31.95456 6.3909,17.82728 18.5,20.85455 13.1182,26.57274 4.3727,28.25456 29.9364,85.10003 8.588,24.81847 12.1858,12.80985 14.7361,9.76665 85.2922,10.581 109.9532,9.78347 38.1187,8.6698 61.5731,21.84852 109.6399,37.3411 22.0853,9.95524"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path3686"
      d="m 1358.1896,1324.5454 -143.378,71.2014"
