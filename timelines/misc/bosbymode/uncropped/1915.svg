@@ -31,12 +31,12 @@
      id="path937-3" />
   <image
      xlink:href="../../../streetmap/bososm.png"
-     style="display:none;stroke:#00dd00"
-     id="image12"
-     height="4744.1538"
-     width="3995.0769"
+     x="-249.69321"
      y="-998.76392"
-     x="-249.69321" />
+     width="3995.0769"
+     height="4744.1538"
+     id="image12"
+     style="display:none;stroke:#00dd00" />
   <path
      d="m 2162.3321,1134.045 12.0208,-9.1924 3.8154,1.0606 22.4012,32.9154"
      id="path6630"
@@ -1302,4 +1302,8 @@
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linejoin:round"
      d="m 3562.4362,3042.9758 -0.2322,-31.4518"
      id="path5053" />
+  <path
+     style="fill:none;stroke:#999999;stroke-width:3;stroke-linejoin:round;stroke-opacity:1"
+     d="m 3253.1698,1032.0256 9.5346,16.3513 v 10.8435 l -12.2777,23.3015 -4.0813,11.2195 1.4714,8.9282 6.6377,8.1766 18.8442,14.0251 4.07,8.1327 -12.787,34.3407 -8.808,42.5538 -3.4516,11.8463 20.5934,60.4678"
+     id="path12887" />
 </svg>
