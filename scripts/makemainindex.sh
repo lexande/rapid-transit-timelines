@@ -167,6 +167,7 @@ function prevmap() {
 function toggleshow(x) {
 	span = document.getElementById(x);
 	prediv = document.getElementById(x + "pre");
+	checkboxes = document.getElementsByClassName(x + "checkbox");
 	if (span.style.display == 'inline-block') {
 		mapimg = document.getElementById(x + "map");
 		span.style.display = 'none';
@@ -175,6 +176,7 @@ function toggleshow(x) {
 		for (var i=0; i < imgs.length; i++) {
 			prediv.removeChild(imgs[i]);
 		}
+		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = false; }
 	} else {
 		update(x);
 		for (var i = citystartyears[x.toLowerCase()]; i < start + count*step; i+=step) {
@@ -184,17 +186,8 @@ function toggleshow(x) {
 			prediv.appendChild(img);
 		}
 		span.style.display = 'inline-block';
-	}
-}
-function toggleshowm(x) {
-	span = document.getElementById(x);
-	checkboxes = document.getElementsByClassName(x + "checkbox");
-	if (span.style.display == 'inline-block') {
-		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = false; }
-	} else {
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = true; }
 	}
-	toggleshow(x);
 }
 function togglesidebar() {
 	f = document.getElementById("form");
@@ -220,7 +213,7 @@ function selectall(i) {
 	spans = document.getElementsByTagName("span");
 	if (i < spans.length) {
 		if (spans[i].style.display == 'none') {
-			document.getElementById(spans[i].id + "checkbox").click();
+			toggleshow(spans[i].id);
 		}
 		setTimeout(function(){ selectall(i+1) }, 10);
 	}
@@ -236,7 +229,7 @@ function deselectall() {
 function sidebarclick(x) {
 	span = document.getElementById(x);
 	if (span.style.display == 'none') {
-		document.getElementById(x + "checkbox").click();
+		toggleshow(x);
 	}
 	span.scrollIntoView();
 }
@@ -262,8 +255,20 @@ window.onload=function() {
 	inyear = parseInt(location.hash.substring(1));
 	if( start < inyear & inyear < start+step*count & !(inyear % step) ) {
 		index = (inyear-start)/step;
-		update();
+		updateall();
 	}
+}
+function clicktohide() {
+	citylist.forEach(function (city) {
+		imgaelt = document.getElementById(city).getElementsByTagName("a")[1];
+		imgaelt.href = "javascript:toggleshow('" + city + "')"
+	});
+}
+function unclicktohide() {
+	citylist.forEach(function (city) {
+		elt = document.getElementById(city);
+		elt.getElementsByTagName("a")[1].href = elt.getElementsByTagName("a")[0].href;
+	});
 }
 </script>
 <script type="text/javascript">
@@ -328,21 +333,11 @@ for city in $@; do
     $name = `cat $city/name`;
     $name =~ s/<br>/ /;
     chomp $name;
-    if ( $name =~ / \/ / ) { 
-      $id = "";
-      foreach ( split(/ \/ /, $name) ) {
-        if (-e "$city/s") {
-          print "$_ <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshowm(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
-        } else {
-          print "$_ <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshowm(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
-        }
-      $id += 1;
-      }
-    } else {
+    foreach ( split(/ \/ /, $name) ) {
       if (-e "$city/s") {
-        print "$name <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
+        print "$_ <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       } else {
-        print "$name <input type=\"checkbox\" id=\"${upper}checkbox${id}\" onclick=\"toggleshow(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">${name}</a><br>\n";
+        print "$_ <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       }
     }' $city
 done | sort | sed -e's/.* <input/<input/;'
@@ -382,7 +377,7 @@ echo '</div><script type="text/javascript">'
 echo -n '['
 for city in $@; do echo -n '"'$city'",'; done | tr 'a-z' 'A-Z' | sed -e's/,$/].forEach(function(city) {/'
 cat <<HEREDOC
-	if ((document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "none") || (!document.getElementById(city + "checkbox").checked && document.getElementById(city).style.display == "inline-block")) {
+	if ((document.getElementsByClassName(city + "checkbox")[0].checked && document.getElementById(city).style.display == "none") || (!document.getElementsByClassName(city + "checkbox")[0].checked && document.getElementById(city).style.display == "inline-block")) {
 		toggleshow(city);
 	}
 });
