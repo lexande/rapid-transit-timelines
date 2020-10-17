@@ -30,13 +30,13 @@
      d="m 2589.6294,2371.6159 3.2235,7.6346 14.0815,14.2512 6.447,11.7063 2.2055,16.7961 -1.6965,17.4746 0.1696,14.5905 2.7145,5.5987"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ee2e24;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <image
-     xlink:href=".././../streetmap/lonosm.png"
-     id="image12"
-     height="5255.7139"
-     width="7358"
-     y="-755.25702"
+     xlink:href="../../streetmap/lonosm.png"
+     style="display:none"
      x="-100"
-     style="display:none" />
+     y="-755.25702"
+     width="7358"
+     height="5255.7139"
+     id="image12" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#532e63;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 328.99965,3004.5 -24.5,28 -8.5,17.5 -5.5,24.5 2.5,23.5 12.5,35.5 18.5,24 22,21 14.5,9.5 28,5 29.5,1.5 15.5,-6 13.5,-10 23,-25.5"
@@ -403,4 +403,8 @@
      d="m 4698,1897 -27.5,37 -22,29 -30.5,30.5 -29.5,24.5 -26.2511,19.3892 L 4537,2058 l -8.151,10.3212 -3.349,15.1788 8,16.5 17,44 23.5,56 14,37.5 6,30 10,54.5 8.5,52 5.5,27 2.5,6.5 -4.5,8"
      id="path4323"
      style="fill:none;stroke:#02b1b0;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#80c242;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 3377.5,12743.625 -5.625,-16.125 -3.625,-32.25 1.5,-9.75 5.5,-10 9.875,-6.875 17.25,-8.125 29.875,-9.625 29,-4.375 13.875,-5 28.5,-15.25 16.375,-11.125 22.875,-23.875 14.5,-18.875 9.125,-18.125 12.25,-24.5 10.25,-15.5 14.5,-18 18.75,-17.25 64,-57.25 44.25,-34.75 18.25,-12 24.75,-12.75 16.5,-10.25 52,-46.75 31,-20 22.5,-11.75 21.25,-8.25 25,-9 23.75,-3 56.5,-3.75 21,-2.5 28.75,-6.25 30.5,-12 29.25,-8 30,-4.5 37.5,0.5 20.5,4.25 54.25,12.25 29.25,2 31.75,0.75 27.75,-3.75 30.5,-3.75 38,-11 42.75,-5 93.25,-15.25 36,-13.75 23.75,-6.75 27,0.25 41,9 32,3.75 28.75,-1.5 26,-5 25.25,-9 20.5,-11.5 17,-15.25 11.5,-7.5"
+     id="path1123" />
 </svg>
