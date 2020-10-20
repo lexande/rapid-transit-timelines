@@ -8,8 +8,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="6500"
-   height="5400"
-   viewBox="-300 0 6500 5400"
+   height="6000"
+   viewBox="-300 -600 6500 6000"
    id="svg2">
   <metadata
      id="metadata8">
@@ -26,25 +26,21 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="./../streetmap/madosm.png"
-     id="image10"
-     height="6937.7729"
-     width="10021.227"
-     y="-1491.725"
+     xlink:href="../streetmap/madosm.png"
+     style="display:none"
      x="-1559.7729"
-     style="display:none" />
+     y="-1491.725"
+     width="10021.227"
+     height="6937.7729"
+     id="image10" />
   <path
      style="fill:none;stroke:#f29f9c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4385"
-     d="m 2508.5,2674.73 12,50.5 22,84.5 17,33 40,43.5 47.5,31.5 52.5,17.5 51,3 35.5,-5 65.5,-18 70,-24.5 267.5,-80 27.5,-10.5 45,-33 16.5,-29 34,-85 15.5,-26 42.5,-36.5 87,-75 196.5,-157 126.5,-102 28,-27 48,-95.5 23,-43 42,-55 49.5,-45 51,-35 79.5,-33.5 64.5,-18 344,-98.5 232,-66.5 43,-14.5 335.5,-96.5 259.5,-115 724.2421,-317.4321" />
+     d="m 2509,2673.73 11.5,51.5 22,84.5 17,33 40,43.5 47.5,31.5 52.5,17.5 51,3 35.5,-5 65.5,-18 70,-24.5 267.5,-80 27.5,-10.5 45,-33 16.5,-29 34,-85 15.5,-26 42.5,-36.5 87,-75 196.5,-157 126.5,-102 28,-27 48,-95.5 23,-43 42,-55 49.5,-45 51,-35 79.5,-33.5 64.5,-18 344,-98.5 232,-66.5 43,-14.5 335.5,-96.5 259.5,-115 724.2421,-317.4321" />
   <path
      style="fill:none;stroke:#f29f9c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4310"
-     d="m 2318.5,2470.23 37.5,46.5 21,19.5 32,14 30.5,16.5 34,26 23.5,38.5 12,42.5 -0.5,41 -12.5,30 -74.5,94.5 -18.5,34.5 -2,21 5,39 36.5,90 6,55.5 -3,36 -8,37 -13.5,28 -27,35 -11,26.5 -2,33 -1.5,44.5 -9.5,34 -18.5,17 -21.5,9.5 -92.5,30.5 -31,26 -25.5,28 -22,9 -61.5,1.5 -53.0113,-1.5668" />
-  <path
-     style="fill:none;stroke:#f29f9c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path4243"
-     d="m 2405,1455.23 18,-60 17.5,-49.5 10.5,-28.5 11.5,-32 5.5,-23.5 -5,-31.5 -55.5,-196.0001 -9,-46.5 -14,-74.5 -3.5,-43.5 -4,-100 -4.5,-34 -10,-31 -18,-25 -37,-25.5 -33,-30.5 -21,-35.5 -17.5,-56.5 -26.5,-37 -6,-26.5 6,-27 4,-25 -12.5,-33 -14.0213,-29.51862" />
+     d="m 2318.5,2470.23 37.5,46.5 21,19.5 32,14 30.5,16.5 34,26 23.5,38.5 12,42.5" />
   <path
      d="m 2320.4999,2472.23 -25.5,-35 -9.5,-17 -16.5,-88.5 0.5,-22 9.5,-47.5 19,-46.5 10.5,-30.5 22.5,-115.5 -0.5,-23 -3,-18 -14,-29 -16,-43.5 -4.7282,-15.2011 -13.6412,-24.6053 7.5031,-95.5996 8.4654,-23.4749 25.9009,-48.1191 20.5,-46 15,-35.5 17.5,-56 12.5,-52 2,-23 3,-33.5 14.5,-50"
      id="path3763"
@@ -103,12 +99,12 @@
      style="fill:none;stroke:#51c7f4;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
      x="-210.54691"
-     y="206.96094"
+     y="-393.0391"
      id="text3914"
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="-210.54691"
-       y="206.96094"
+       y="-393.03909"
        id="tspan1">1985</tspan></text>
   <text
      x="-210.54691"
