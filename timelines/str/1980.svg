@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
+     xlink:href="../streetmap/strosm.png"
      style="display:none"
-     width="4002"
-     height="3335"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/strosm.png"
-     id="image10"
+     y="90"
      x="0"
-     y="90" />
+     id="image10"
+     preserveAspectRatio="none"
+     height="3335"
+     width="5441.3159" />
   <path
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00aeef;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2414.7097,2101.6916 12.9437,-6.1123 39.9096,-10.4268 29.303,-6.8314 4.1347,1.4382 7.91,-1.2584 5.3932,-3.5955 23.5503,-46.5611 19.0559,-27.5053 37.213,-33.0782 12.4043,-16.3594 24.4492,-31.2804 17.4379,-17.0785 52.4937,-114.6951 22.8312,-46.9207 59.1453,-49.7971"
@@ -120,7 +120,7 @@
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00aeef;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path5377"
-     d="M 2383.8285,1987.8289 2518,1933.5 l 10,-8.5 67.5,-93 68,-112.5 15.5,-22 60,-47.25 47.25,-32.25 60.5,-57.75 82.5,-54.5 23.5,-4.25 16,0.5 187.25,54.25 18.2023,2.3417 14.4957,-1.0607 14.4957,-3.8891 13.7886,-9.8995 11.6673,-15.5563 3.5355,-21.2132 -1.0607,-17.6777 -7.071,-16.617 -11.3137,-11.6673 -45.6084,-38.5373 -11.6673,-19.799 -3.8891,-20.8596 4.2427,-20.1526 6.3639,-10.253 9.546,-9.8995 15.2028,-10.2531 278.9536,-79.5495 87.6812,-41.7193 98.2879,-40.3051 194.1008,-42.4264"
+     d="M 2383.8285,1987.8289 2518,1933.5 l 10,-8.5 67.5,-93 68,-112.5 15.5,-22 60,-47.25 47.25,-32.25 60.5,-57.75 82.5,-54.5 23.5,-4.25 16,0.5 187.25,54.25"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#59af41;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00aeef;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -140,8 +140,8 @@
      id="text3019"
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="-510.5469"
-       y="-643.0391"
+       x="-510.54691"
+       y="-643.03912"
        id="tspan1">1980</tspan></text>
   <path
      id="path8169"
@@ -151,4 +151,8 @@
      id="path8171"
      d="m 2271.97,1917.0648 -4.22,-1.5648 12,-9.25 45.25,-1.75 11,9.75"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00aeef;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path6193"
+     d="m 3155.9998,1556.2496 47.5,35.25 16.5,20.5 15,24.5 38.5,82.5 61.5,120.5 15.5,21 25,20.5 33,34.5 21,37.5 13,33 74.5,136.5 28,46.5 19,51 11.5,43.5 8,34.5 6.5,41.5 8.5,21 17,25 26.5,23 24,13 72,15 66.5,19.5 40.7779,17.8729"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#59af41;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
