@@ -26,18 +26,14 @@
   <defs
      id="defs6" />
   <image
-     width="4850"
-     height="3573.6843"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/naposm.png"
-     id="image10"
-     x="75"
+     xlink:href="../streetmap/naposm.png"
+     style="display:none"
      y="26.315674"
-     style="display:none" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:0.38039216;fill-rule:nonzero;stroke:#92ceab;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 2462.3713,2070.2348 -42.0287,19.1675 -127.8426,69.8477 -71.625,41.5 -66.125,45.375 -27.5,19.5 L 1992,2346 l -17.75,9.25 -32.25,7.75 -79.75,22.5 -5,3.25 -15.25,39.5 -8.5,10.25 -15,8.75 -53.75,18 -76.75,36.375 -117.375,56.625 -10.25,2.125 -42,-3.25 -12.625,-4.625 -67,-42.25 -28.5,-7 -186.75,-6.75 -20,-3.25 -14.5,-6.5 -26.75,-27.25 -11.75,-4.5 -106.5,-7.25 -14.5,-5.5 -10.5,-11.5 -2.25,-11.25 0.25,-24.25 -3.75,-13 L 1001,2367 980.25,2345.75 953,2327 l -26.25,-8.75 -18.5,-12.5 -35.5,-26 -15.75,-7.75 -26.75,-3.5 h -16.5 l -13.75,3.75 -27,22.25 -13.5,7.25 -20.25,4.5 -91,7.5 -19,5 -65,27.25 -19,12 -39,25.25 -16.5,14.25 -36.5,51 -12,13.25 -23,23.75 -12.75,11.25 -18.5,9.75 -16.5,1 -23.5,-2.25 -32.75,1 -12,3.25 -75.75,33.5 -18,11.75 -25.5,27.5 -19.25,14.25 -37,17.5"
-     id="path1430" />
+     x="75"
+     id="image10"
+     preserveAspectRatio="none"
+     height="3573.6843"
+     width="4850" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.38039216;fill-rule:nonzero;stroke:#f69323;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 2345.75,2112.25 2458,2061.5"
