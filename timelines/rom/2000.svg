@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
-     width="5527"
-     height="7034.3638"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/romosm.png"
-     id="image10"
-     x="0"
+     xlink:href="../streetmap/romosm.png"
+     style="display:none"
      y="0.63623047"
-     style="display:none" />
+     x="0"
+     id="image10"
+     preserveAspectRatio="none"
+     height="7034.3636"
+     width="5527" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#f37027;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2014,3958 46.5,40 35,7 40.5,17 16,39.5 27,15.5 23,1 50,-14.5 25,-19.5 35,-29 15.5,-6.5 54,-65 17.5,-3.5 13.5,2 230,-75.5 12,4.5 15.5,-2.5 43,-15.5 28,19 41,51 28,26 9.5,21.5 41.5,27.5 94,17.5 20,2 26,14.5 14.5,23.5 35,114 38.5,97 233,253.5 32.5,17.5 14,19 43.5,30 15.5,8 87.5,6.5 52.5,20.5 199.5,147 88.5,82 60,56 61,33.5"
@@ -89,7 +89,7 @@
   <path
      id="path4556"
      d="m 4241.7501,4603.5 41.25,17 28.5,-0.5 15.5458,-1.4706"
-     style="fill:none;fill-rule:evenodd;stroke:#f7d304;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-rule:evenodd;stroke:#f7d304;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#60b22f;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2719.9997,3854.4998 23,-66.5 12,-41.5 16,-51 5,-41 v -18 l 9.5,-25.5 33.5,-33 42.5,-16.5 20,-9 13.5,-10.5 33.5,-33.5 7.5,-13 5.5,-21.4999 6,-38.5 1,-75 -6,-14.5 -29,-26 -16.5,-24.5 -40.5,-27.5 -7.5,-13 -17.5,-68.5 16,-75 21.5,-34 19.5,-63 25,-132 5,-39.5 -6,-42 5,-48.5 6.5,-58 2,-31 2.5,-38.5 23.5,-49.5 3.5,-19.5 -4.5,-8.5 -35.5,-31 h -10 l -12,3 h -11.5 l -16.5388,-24.7009"
