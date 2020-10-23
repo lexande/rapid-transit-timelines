@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
+     xlink:href="../streetmap/milosm.png"
      style="display:none"
-     y="-73.899902"
-     x="-100"
-     id="image10"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/milosm.png"
-     preserveAspectRatio="none"
+     width="4734"
      height="4023.8999"
-     width="4734" />
+     preserveAspectRatio="none"
+     id="image10"
+     x="-100"
+     y="-73.899902" />
   <path
      id="path4510"
      d="m 2568.621,3473.7636 -33.5876,25.4558 -7.7782,2.1213 -14.4956,-3.1819 -53.3866,-28.2843 L 2121,3245 l -285.5,-247.5 -5,-8 V 2975 l 7,-13 -0.5,-50.5 67,-92.5 2.5,-10.5 -4,-48.5 85.5,-127.5 3,-28 v -22 l -3,-15.5 -5,-11.5 -47,-31 -59.5671,-22.8248"
@@ -63,4 +63,9 @@
        x="89.453133"
        y="206.96094"
        id="tspan1">1995</tspan></text>
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#1957a0;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1516.8428,2343.5683 3.6572,13.9321 8.0003,44 3.0935,69.0279 10.6066,68.5894 -4.9498,46.669 -2.1213,57.9828 4.9498,21.9203 53.7401,70.7107 14.1421,29.6985 36.0625,54.4472 49.9767,53.9541"
+     id="path4506-3" />
+
 </svg>
