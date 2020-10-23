@@ -28,11 +28,11 @@
   <image
      xlink:href="../streetmap/bcnosm.png"
      style="display:none"
-     id="image10"
-     height="6076.3638"
-     width="8608.182"
+     x="-100"
      y="-26.36377"
-     x="-100" />
+     width="8608.1816"
+     height="6076.3638"
+     id="image10" />
   <path
      d="m 5148.1006,3338.227 18.4449,2 20,-7 6,3 64.5,72.5 23.2402,24.1953"
      id="path3842"
@@ -51,7 +51,7 @@
        y="206.96094"
        id="tspan1">1960</tspan></text>
   <path
-     d="m 5345.5455,2818.727 -6.5,-10 -67,-8 -29,-4.5 -15.5,-24.5 -10.5,-29.5 -0.1612,-21.6213 -10.3388,-17.3787 -10,-6.5 -66.2761,0"
+     d="m 5130.2694,2696.727 h 66.2761 l 10,6.5 10.3388,17.3787 0.1612,21.6213 10.5,29.5 15.5,24.5 29,4.5 67,8 6.5,10 v 23.3693"
      id="path3836"
      style="fill:none;stroke:#287dc2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -96,7 +96,7 @@
      d="m 1317,204.5 8.5,-3.5 10,-1 11.5,2.5"
      id="path4287" />
   <path
-     d="m 5314.0559,2685.1516 -3.7426,11.1967 18.2322,31.8787 20,46.5 5.5,18 1.5,16 0,28.5 -0.5,115.5 1.5,90.5 -1.7071,165.7158 -13.0459,24.0814 -66.3658,63.4264 -39.8812,16.2764 -169,81.5 -149.5,149 -10.5,2.5 -142,-5.5 -11.5,6.5 -13,29.5 -2.4925,2.5601"
+     d="m 5310.3133,2696.3483 18.2322,31.8787 20,46.5 5.5,18 1.5,16 v 28.5 l -0.5,115.5 1.5,90.5 -1.7071,165.7158 -13.0459,24.0814 -66.3658,63.4264 -39.8812,16.2764 -169,81.5 -149.5,149 -10.5,2.5 -142,-5.5 -11.5,6.5 -13,29.5 -2.4925,2.5601"
      id="path3865"
      style="fill:none;stroke:#e22739;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -107,4 +107,8 @@
      style="fill:none;stroke:#e22739;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3865-7"
      d="m 4740.0455,3576.227 -35,46 -21,18 -7.3002,3.6501" />
+  <path
+     d="m 4911.5455,3144.227 -17,1.5 -17.5,8.5 -18.5,15.5 -18,14.5 -19.5,9 -22.5,4 -139.5,-0.5 -11,-5 -16.5,-16"
+     id="path3784-6"
+     style="fill:none;stroke:#114681;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>

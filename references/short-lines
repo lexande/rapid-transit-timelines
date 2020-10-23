@@ -14,7 +14,7 @@ HDB	 471m	funicular	3	1890-03-30	never*
 SCL	 485m	funicular	3	1925-04-25	1975-09-15*
 LYN	 489m	funicular	2	1862-06-03	1978-05-02*	near later 512m line below
 PIT	 490m	funicular	2	1872-__-__	1904-12-09*	near later 806m line below
-NAP	 500m	funicular	4	1889-10-15	1940-05-09*	near later 824m+1234m lines below
+NAP	 500m	funicular	4	1889-10-15	1945-09-15*	near later 824m+1234m lines below
 TBS	 501m	funicular	2	1905-03-27	1966-01-11*	plus later cableways
 PRG	 510m	funicular	3	1932-06-05	1974-05-09*	replaced 397m line above
 LYN	 512m	funicular	2	1891-04-12	1978-05-02*	near earlier 489m line above
@@ -39,7 +39,7 @@ TPA	 760m	hoverfunicular	2	1985-06-27	never*		closed 1995-01-16
 LYN	 783m	funicular	3	1878-08-08	1978-05-02*	connected to later 427m line
 ZRH	 800m	funicular	3?	1899-07-05	1976-09-25*
 PIT	 806m	funicular	2	1890-08-15	1904-12-09*	near earlier 490m line above
-NAP	 824m	funicular	3	1891-05-30	1940-05-09*	near earlier & later lines
+NAP	 824m	funicular	3	1891-05-30	1945-09-15*	near earlier & later lines
 EML	 839m	funicular	3	1902-05-05	2006-12-10*
 INN	 839m	funicular	3	1906-09-12	never*		replaced by 1838m line
 BGO	 844m	funicular	5	1918-01-15	2010-06-22
@@ -72,7 +72,7 @@ TRD	1180m	tram gradesep	3	1924-07-18	never*
 PHL	1190m	tram subway	3	1905-12-18*	1907-03-04	extended within 2yr
 ORN	1220m	tram gradesep	3	2013-05-02	never*
 KRK	1220m	tram gradesep	2	1962-__-__	2008-12-11*	plus 220m loop c. 2003
-NAP	1234m	funicular	4	1928-10-28	1940-05-09*	near earlier 500m+824m lines above
+NAP	1234m	funicular	4	1928-10-28	1945-09-15*	near earlier 500m+824m lines above
 BOG	1290m	bus gradesep	2	2000-12-04*	2002-08-06	extended within 2yr
 SZW	1293m	tram gradesep	3	1974-10-06*	1984-04-07	extended within 10yr
 WAW	1280m	tram bridgedeck	2	1959-07-31	1975-01-__*
@@ -109,6 +109,7 @@ HFA	1830m	funicular	6	1959-10-06	never*
 CAG	1830m	tram gradesep	3	2015-02-14	never*
 INN	1838m	funicular	4	2007-12-01	never*		replaced earlier 839m line
 GOT	1840m	tram gradesep	4	1944-06-26	1955-08-01*
+VLC	1850m	freq narrow gg	2	1917-__-__	1918-03-30*
 LNZ	1860m	tram tunnel	4	2004-08-31*	never		ext within 7yr, see 2130m below
 NTE	1900m	tram gradesep	3	1985-01-07	never*
 WAW	1940m	tram gradesep	2	1963-12-08	1975-01-__*

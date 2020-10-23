@@ -26,19 +26,23 @@
   <defs
      id="defs6" />
   <image
-     x="-100"
-     y="-26.36377"
-     width="8608.1816"
-     height="6076.3638"
+     xlink:href="../streetmap/bcnosm.png"
+     style="display:none"
      id="image10"
-     xlink:href="file:///home/alexander/timelines/timelines/bcn/../streetmap/bcnosm.png"
-     style="display:none" />
+     height="6076.3638"
+     width="8608.1816"
+     y="-26.36377"
+     x="-100" />
+  <path
+     d="m 5145.0455,3382.727 -20,-2 -130,-129.5 -4,-18 -12.5,-28.5 -39,-49.5 -10.5,-6 -17.5,-5 -17,1.5 -17.5,8.5 -18.5,15.5 -18,14.5 -19.5,9 -22.5,4 -139.5,-0.5 -11,-5 -16.5,-16"
+     id="path3784-6"
+     style="fill:none;stroke:#114681;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="m 5148.1006,3338.227 18.4449,2 20,-7 6,3 64.5,72.5 23.2402,24.1953"
      id="path3842"
      style="fill:none;stroke:#3bb255;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 5145.0455,3382.727 -20,-2 -130,-129.5 -4,-18 -12.5,-28.5 -39,-49.5 -10.5,-6 -20.5,-5 -19.5,-7.5 -28.5,-18 -18,-8.5 -34,-22.5 -9,-12 -26,-72.5"
+     d="m 4908.5455,3144.227 -19.5,-7.5 -28.5,-18 -18,-8.5 -34,-22.5 -9,-12 -26,-72.5"
      id="path3784"
      style="fill:none;stroke:#114681;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
