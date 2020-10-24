@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg2"
+   width="775"
+   height="825"
+   viewBox="0 0 775 825">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="g10">
+    <image
+       xlink:href="streetmap/kgdosm.png"
+       style="display:none"
+       y="-40"
+       x="-85"
+       id="image12"
+       preserveAspectRatio="none"
+       height="974.90002"
+       width="974.90002" />
+    <path
+       style="fill:none;stroke:#f2595b;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 55.13913,209.9615 19.04884,2.25843 22.42385,-5.6252 h 8.99496 l 9.2184,-5.10686 2.40502,-11.8397 3.10803,-4.08296 19.76956,-6.41815 5.10356,-6.51623 15.82096,-12.68768 213.79128,-80.39069 10.03241,-2.91199 23.59724,-8.54366 17.87889,19.55885 35.80874,54.31678 14.62075,15.85671 10.80692,24.61632 -0.91044,15.84289 -3.77791,18.67485 2.16204,5.20269 10.91707,4.60104 9.27855,9.544 4.80457,8.35765 50.98567,-16.48817 46.15954,-8.6785 h 11.24197 l 30.38888,-5.39257 21.26974,-0.27229 20.22507,-14.03034 21.26074,2.47782 5.08982,4.50254 1.99078,8.52363 -0.76561,25.0492 1.11124,25.62367 -1.85978,8.48126 -11.30343,16.67081 -6.57669,11.94026 -4.87732,18.37618 -1.41002,16.12431 1.02539,15.59339 1.99984,16.53996 -3.87553,10.05999 0.52394,11.0788 -2.47526,3.94588 -60.28114,6.67558 -2.12627,2.3971 -3.95208,33.12296 4.43061,14.45174 8.12462,13.8255 3.11395,9.16281 0.60305,21.21823 6.35264,18.70135 8.06192,16.19684 3.51144,4.83785 -10.03606,26.09544 10.26452,6.58814 51.38731,49.98539 -12.58223,141.79825"
+       id="path855" />
+  </g>
+</svg>
