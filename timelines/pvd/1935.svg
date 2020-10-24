@@ -27,13 +27,13 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/pvdosm.png"
-     width="1258"
-     height="2012.8"
-     preserveAspectRatio="none"
-     id="image10"
-     x="-125"
+     style="display:none"
      y="-52.800049"
-     style="display:none" />
+     x="-125"
+     id="image10"
+     preserveAspectRatio="none"
+     height="2012.8"
+     width="1258" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 659.94249,855.08288 11.23814,-4.06521 78.81008,-8.52802"
@@ -76,4 +76,16 @@
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 877.95286,808.83209 1.54926,-2.38347 -27.88665,-106.54131 -7.74629,-38.85064 -2.97935,-55.29661 8.81886,-28.72087"
      id="path1529" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1007.6833,868.8325 110.3921,84.8548 5.4298,-0.9379 7.307,-24.68702 26.5502,-60.7128 15.5978,-21.0055 12.895,-41.89209"
+     id="path859" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 966.89737,847.59682 40.78593,21.23568 5.5149,-1.90072 33.6794,-29.02584 106.4124,-43.84708 28.0615,12.12531 4.5037,-1.73218 34.9901,-62.35873 44.344,-81.06635 18.0148,-30.48649 9.3538,-3.11794 17.3218,7.62163 18.7077,1.38575 5.1965,3.81081 19.0541,109.47421 5.1965,9.70025 38.801,47.46192"
+     id="path827" />
+  <path
+     id="path848"
+     d="m 1209.0571,762.96416 -2.0084,-16.79753 -7.851,-14.0588 -2.3736,-12.41557 -0.5477,-16.43237 -5.1123,-17.34527 -42.1764,-38.52478 -8.3988,-15.88462 v -8.21618 l 5.1123,-25.1963 -3.2865,-23.18789 3.6517,-33.96023"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
