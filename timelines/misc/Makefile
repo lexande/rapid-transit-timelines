@@ -1,6 +1,6 @@
-all: hsr bymode regrail sandy nyctrolleys nycflights 
+all: hsr bymode regrail sandy nyctrolleys nycflights ivytunnels
 
-bymode = nycbymode bosbymode sfobymode harvardtunnel
+bymode = nycbymode bosbymode sfobymode
 bymode: $(bymode)
 
 regrail = nerail carail
@@ -17,10 +17,12 @@ $(foreach dir, $(bymode) brc sandy nyctrolleys, $(eval $(call gzipRule, $(dir)))
 
 hsr: $(patsubst %.svg,%.svg.gz,$(wildcard hsr/?/*.svg))
 
+ivytunnels: $(patsubst %.svg,%.svg.gz,$(wildcard ivytunnels/?/*.svg))
+
 $(regrail) nycflights:
 	$(MAKE) --directory=$@
 
 %.svg.gz : %.svg
 	gzip -f --keep $<
 
-.PHONY: all bymode $(bymode) regrail $(regrail) hsr nyctrolleys nycflights brc
+.PHONY: all bymode $(bymode) regrail $(regrail) hsr ivytunnels nyctrolleys nycflights brc
