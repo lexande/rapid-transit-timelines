@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/pvdosm.png"
-     style="display:none"
-     y="-52.800049"
-     x="-125"
-     id="image10"
-     preserveAspectRatio="none"
+     xlink:href="../../../streetmap/pvdosm.png"
+     width="1258"
      height="2012.8"
-     width="1258" />
+     preserveAspectRatio="none"
+     id="image10"
+     x="-125"
+     y="-52.800049"
+     style="display:none" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 659.94249,855.08288 11.23814,-4.06521 78.81008,-8.52802"
@@ -94,6 +94,6 @@
      id="path5182" />
   <path
      id="path4186-3"
-     d="m 648.97423,858.00369 -4.34711,10.78896 -26.58879,27.03487 -2.37288,0.74153 -3.18663,-3.35859 v -2.72656 l 31.09322,-29.88725 11.9549,-5.66284 5.71528,0.36703"
+     d="m 644.62712,868.79265 -26.58879,27.03487 -2.37288,0.74153 -3.18663,-3.35859 v -2.72656 l 31.09322,-29.88725 11.9549,-5.66284 5.71528,0.36703"
      style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
 </svg>
