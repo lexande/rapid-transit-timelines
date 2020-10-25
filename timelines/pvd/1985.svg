@@ -27,13 +27,13 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/pvdosm.png"
-     width="1258"
-     height="2012.8"
-     preserveAspectRatio="none"
-     id="image10"
-     x="-125"
+     style="display:none"
      y="-52.800049"
-     style="display:none" />
+     x="-125"
+     id="image10"
+     preserveAspectRatio="none"
+     height="2012.8"
+     width="1258" />
   <path
      id="path4176"
      d="m 659.94249,855.08288 11.23814,-4.06521 78.81008,-8.52802"
@@ -41,10 +41,6 @@
   <path
      id="path4178"
      d="m 749.1278,842.77725 2.01346,1.4382 0.43145,4.0269 1.29437,1.1506 10.35492,-1.1506"
-     style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
-  <path
-     id="path4186"
-     d="m 648.97423,858.00369 -4.34711,10.78896 -26.58879,27.03487 0.0509,3.36038"
      style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <text
      x="89.453125"
@@ -57,10 +53,6 @@
        id="tspan1"
        style="font-size:144px">1985</tspan></text>
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
-     d="m 737.43663,1484.0718 -5.87413,-9.7568 -5.13072,-32.697 -23.85737,-112.8636 -27.13447,-132.5264 -1.44193,-32.3778 0.65542,-58.8569 3.01495,-39.4564 5.63663,-56.7596 -21.36676,-39.5875 -1.31085,-26.7412 -1.83518,-4.3258 -33.29544,-30.28055 -9.83133,-11.2732 -3.18663,-3.35859 v -2.72656 l 31.09322,-29.88725 11.9549,-5.66284 5.71528,0.36703"
-     id="path5432" />
-  <path
      id="path5180"
      d="m 763.222,848.24235 1.61751,-2.3362 -0.18891,-2.16044 -0.99715,-7.44026 -5.95218,-58.09751 -15.01589,-23.35805"
      style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
@@ -72,4 +64,8 @@
      style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
      d="m 748.84017,842.77725 2.01345,-1.582 -0.43159,-3.45135 -7.73693,-84.0058 -2.9661,-36.33474 62.6589,-169.9947 98.893,-266.81494 2.9661,-75.93221 -7.7119,-14.23729 6.5254,-75.9322 3.5594,-2.37288 h 11.8644 l 18.1674,-28.697045 2.5211,-0.44491 3.3729,2.83051 2.4852,-0.45763 2.0763,-4.2267"
      id="path6421" />
+  <path
+     id="path4186"
+     d="m 648.97441,858.00388 -4.34711,10.78896 -26.58879,27.03487 -2.37288,0.74153 -3.18663,-3.35859 v -2.72656 l 31.09322,-29.88725 11.9549,-5.66284 5.71528,0.36703"
+     style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
 </svg>

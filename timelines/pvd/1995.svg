@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
-     width="1258"
-     height="2012.8"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/pvdosm.png"
-     id="image10"
-     x="-125"
+     xlink:href="../streetmap/pvdosm.png"
+     style="display:none"
      y="-52.800049"
-     style="display:none" />
+     x="-125"
+     id="image10"
+     preserveAspectRatio="none"
+     height="2012.8"
+     width="1258" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 659.94249,855.08288 11.23814,-4.06521 78.81008,-8.52802"
@@ -42,10 +42,6 @@
      style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
      d="m 749.1278,842.77725 2.01346,1.4382 0.43145,4.0269 1.29437,1.1506 10.35492,-1.1506"
      id="path4178" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
-     d="m 661.24222,855.30084 -4.93605,-2.28507 -2.11973,-4.96882 -3.05085,-0.6102 -8.13559,3.4576 -6.69491,4.56781 0.0572,2.97883 8.06144,6.89406 0.20339,3.4576 -26.58879,27.03487 0.0509,3.36038"
-     id="path4186" />
   <text
      style="font-style:normal;font-weight:normal;font-size:12px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
@@ -57,10 +53,6 @@
        y="136.96094"
        x="89.453125">1995</tspan></text>
   <path
-     id="path5432"
-     d="m 737.43663,1484.0718 -5.87413,-9.7568 -5.13072,-32.697 -23.85737,-112.8636 -27.13447,-132.5264 -1.44193,-32.3778 0.65542,-58.8569 3.01495,-39.4564 5.63663,-56.7596 -21.36676,-39.5875 -1.31085,-26.7412 -1.83518,-4.3258 -33.29544,-30.28055 -9.83133,-11.2732 -3.18663,-3.35859 v -2.72656 l 31.09322,-29.88725 11.9549,-5.66284 5.71528,0.36703"
-     style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
-  <path
      style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
      d="m 763.222,848.24235 1.61751,-2.3362 -0.18891,-2.16044 -0.99715,-7.44026 -5.95218,-58.09751 -15.01589,-23.35805"
      id="path5180" />
@@ -71,5 +63,13 @@
   <path
      id="path6421"
      d="m 748.84017,842.77725 2.01345,-1.582 -0.43159,-3.45135 -7.73693,-84.0058 -2.9661,-36.33474 62.6589,-169.9947 98.893,-266.81494 2.9661,-75.93221 -7.7119,-14.23729 6.5254,-75.9322 3.5594,-2.37288 h 11.8644 l 18.1674,-28.697045 2.5211,-0.44491 3.3729,2.83051 2.4852,-0.45763 2.0763,-4.2267"
+     style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     d="m 661.24222,855.30084 -4.93605,-2.28507 -2.11973,-4.96882 -3.05085,-0.6102 -8.13559,3.4576 -6.69491,4.56781 0.0572,2.97883 8.06144,6.89406 0.20339,3.4576"
+     id="path4186-6" />
+  <path
+     id="path4186-3"
+     d="m 644.62712,868.79265 -26.58879,27.03487 -2.37288,0.74153 -3.18663,-3.35859 v -2.72656 l 31.09322,-29.88725 11.9549,-5.66284 5.71528,0.36703"
      style="fill:none;fill-rule:evenodd;stroke:#0c2d3c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
 </svg>
