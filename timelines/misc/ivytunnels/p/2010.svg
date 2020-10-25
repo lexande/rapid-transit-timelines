@@ -27,13 +27,13 @@
      id="defs6" />
   <image
      xlink:href="../../../streetmap/pvdosm.png"
-     style="display:none"
-     width="2264.3999"
-     height="3270.8"
-     preserveAspectRatio="none"
-     id="image10"
+     y="-304.39999"
      x="-377.39999"
-     y="-304.39999" />
+     id="image10"
+     preserveAspectRatio="none"
+     height="3270.8"
+     width="2264.3999"
+     style="display:none" />
   <path
      id="path4178"
      d="m 749.1278,842.77725 2.01346,1.4382 0.43145,4.0269 13.16426,-1.35145 -1.08352,-10.58545 -5.95218,-58.09751 -15.01589,-23.35805"
@@ -160,4 +160,8 @@
      style="fill:none;stroke:#999999;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 587.12052,882.6233 -4.9553,-11.0492 34.67125,-16.2456 7.07956,-0.8325 10.78815,2.9147"
      id="path3665" />
+  <path
+     style="fill:none;stroke:#999999;stroke-width:3;stroke-linejoin:round;stroke-opacity:1"
+     d="m 676.53021,1088.3168 -11.60156,-3.7978 -5.9626,0.5991 -4.08306,2.7518 0.41093,3.6381 4.44109,0.1373 0.32127,-6.7159"
+     id="path1518" />
 </svg>
