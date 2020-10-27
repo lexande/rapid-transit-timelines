@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/caiosm.png"
-     id="image10"
-     height="5258.25"
-     width="3213.375"
-     y="-158.25"
+     style="display:none"
      x="-160"
-     style="display:none" />
+     y="-158.25"
+     width="3213.375"
+     height="5258.25"
+     id="image10" />
   <path
      style="fill:none;stroke:#eb151f;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3006"
@@ -79,10 +79,6 @@
        id="tspan1"
        y="206.96094"
        x="39.453125">2000</tspan></text>
-  <path
-     id="path5322"
-     d="m 1819.5,1358 8.5,11.5 -19.5,38 -9.5,31 -4.5,19.5 -48,33.5 -3,5.5 20.5,31.5 7,33.5 7,51 9.5,7.5 343.5,-42"
-     style="fill:none;fill-rule:evenodd;stroke:#808000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
      d="m 756.01852,1699.7747 -5.0649,8.7791 -7.4285,7.0909 -8.1038,1.0129 -8.7791,-1.6883 -7.4285,2.026 -140.8038,155.6607 -10.4674,8.4415 -16.2076,5.7402"
      id="path2994"
