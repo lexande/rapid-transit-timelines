@@ -3,7 +3,7 @@ all: hsr bymode regrail sandy nyctrolleys nycflights ivytunnels
 bymode = nycbymode bosbymode sfobymode
 bymode: $(bymode)
 
-regrail = nerail carail
+regrail = nerail carail gbrail
 regrail: $(regrail)
 
 define gzipRule
