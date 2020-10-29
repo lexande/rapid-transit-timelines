@@ -32,11 +32,11 @@
   <image
      xlink:href="../../streetmap/lonosm.png"
      style="display:none"
-     x="-4725.0288"
-     y="-7482.5708"
-     width="12823.943"
+     id="image12"
      height="15977.371"
-     id="image12" />
+     width="12823.943"
+     y="-7482.5708"
+     x="-4725.0288" />
   <path
      d="m 3353,2599.75 -35.5,73.5 -3,25.5 8,31 3.5,31.5 -2.5,37.5"
      id="path4708"
@@ -180,7 +180,7 @@
        id="tspan1">1990</tspan></text>
   <text
      x="-1110.5469"
-     y="12947.9609"
+     y="12947.961"
      id="text3019-6"
      xml:space="preserve"
      style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"><tspan
@@ -319,4 +319,12 @@
      style="fill:none;stroke:#176fc1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4599-0-3"
      d="m 4592.5008,3053.9999 10.5,12.5 6.5,14.75 1,14.5 -11.5,31.25 -2,23 12.5,23 26,19 42,27.5 32.5,32 8.4997,8.5" />
+  <path
+     d="m 6611.9992,3126.9999 67.5,122 19.5,26 15.5,12 25.5,13.5 43.5,11.5 23,10.5 15.5,11.5 15,8"
+     id="path4595-7-3"
+     style="fill:none;stroke:#176fc1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#176fc1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path4597-7"
+     d="m 6269.5009,3070.4999 68.4996,6.5 152,5.5 73.5,1.5 15.5,5.5 17,11 L 6612,3127" />
 </svg>
