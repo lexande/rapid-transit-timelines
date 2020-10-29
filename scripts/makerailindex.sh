@@ -142,7 +142,7 @@ cat <<HEREDOC
 <a href="javascript:" onclick="prevmap()">25 years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">25 years later (or press s)</a>
 <p>
-Showing those lines with at least three trains per direction each weekday.  Lines coloured by operator (<a href="colours.html">key</a>).<br>
+Showing rail lines with at least three trains each weekday.  Lines coloured by operator (<a href="colours.html">key</a>).  Local streetcars not shown.<br>
 HEREDOC
 echo 'Scale: <svg width="'`echo 100*${SCALE} | bc`'px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> ≈ 100 km (approximately '${SCALE}' CSS pixels per km)'
 cat <<HEREDOC
