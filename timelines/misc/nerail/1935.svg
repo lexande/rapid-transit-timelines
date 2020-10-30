@@ -249,21 +249,25 @@
      style="display:none;stroke:#808000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none">
     <image
        xlink:href="osm/crosm.png"
-       x="0"
-       y="-100"
-       width="11008"
-       height="8960"
+       style="stroke:#808000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="image10"
-       style="stroke:#808000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+       height="8960"
+       width="11008"
+       y="-100"
+       x="0" />
     <image
        xlink:href="osm/raillayerosm.png"
-       x="0"
-       y="-100"
-       width="11008"
-       height="8960"
+       style="opacity:0.8;stroke:#808000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="image4320"
-       style="opacity:0.8;stroke:#808000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+       height="8960"
+       width="11008"
+       y="-100"
+       x="0" />
   </g>
+  <path
+     style="fill:none;stroke:#a0ff00;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path6116"
+     d="m 3157.5,3220.9996 -3,-8 30.5,-32.5 10.5,-13.5 24,-28.5 18.5,-9 5.5,-13 18,-8 6,-11.5 12.5,0.5 14.5,-3 8,-15 1,-14 7,-5 18.5,0.5 10,-9 4.5,-16.5 7,-2 20.278,-10.3129 14.1421,-2.4749 9.546,-38.5373 21.5667,-8.1317 0.7071,-12.3744 27.5772,-12.3744 19.799,-19.4454 3.5356,-4.9498 -4.5962,-12.3743" />
   <path
      d="m 1515.429,7686.0679 -0.8965,7.4143 4.25,10.9822 -2,13.7678 -7.1213,6.7573 -8.0754,-0.6464 -9.4142,-2.086 -6.4142,1.9142 -11.5,15.5 -14.5,20 -1.5,25.5 2.2929,47.5607 -8.2929,15.4393 -7,16 -13.1716,10.5251 -22.9748,-2.2928 -35.2323,-2.5 -18.2322,1.6465 -45.5607,15.2071"
      id="path3949"
