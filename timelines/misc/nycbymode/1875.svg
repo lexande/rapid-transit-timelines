@@ -30,21 +30,21 @@
      style="display:none">
     <image
        xlink:href="../../streetmap/nycosm.png"
-       x="-2304"
-       y="0"
-       width="5888"
-       height="5376"
+       style="fill:#ff0000"
        id="image10"
-       style="fill:#ff0000" />
+       height="5376"
+       width="5888"
+       y="0"
+       x="-2304" />
     <image
        xlink:href="railosm.png"
-       y="0"
-       x="-2304"
-       id="image1296"
-       preserveAspectRatio="none"
-       height="5376"
+       style="opacity:0.5;stroke:none"
        width="5888"
-       style="opacity:0.5;stroke:none" />
+       height="5376"
+       preserveAspectRatio="none"
+       id="image1296"
+       x="-2304"
+       y="0" />
   </g>
   <path
      id="path10777"
@@ -802,10 +802,6 @@
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 572.0312,2982.2685 -13.74265,-9.3757 -61.39688,-42.2116 -8.76362,11.874 -52.39259,-7.2966"
      id="path42855" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m -233.729,3047.8262 60.456,62.4856 96.4999,-87.6737"
-     id="path43805" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 800.6121,3384.367 -3.2342,-44.1866"
