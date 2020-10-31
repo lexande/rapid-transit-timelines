@@ -30,21 +30,21 @@
      style="display:none">
     <image
        xlink:href="../../streetmap/nycosm.png"
-       x="-2304"
-       y="0"
-       width="5888"
-       height="5376"
+       style="fill:#ff0000"
        id="image10"
-       style="fill:#ff0000" />
+       height="5376"
+       width="5888"
+       y="0"
+       x="-2304" />
     <image
        xlink:href="railosm.png"
-       y="0"
-       x="-2304"
-       id="image1296"
-       preserveAspectRatio="none"
-       height="5376"
+       style="opacity:0.5;stroke:none"
        width="5888"
-       style="opacity:0.5;stroke:none" />
+       height="5376"
+       preserveAspectRatio="none"
+       id="image1296"
+       x="-2304"
+       y="0" />
   </g>
   <path
      id="path11107"
@@ -993,10 +993,6 @@
        x="-1752.5469"
        style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none">1870</tspan></text>
   <path
-     style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1676.5915,3658.8194 4.447,26.2687 35.0486,171.4803 12.1268,61.0091"
-     id="path1232" />
-  <path
      id="path3650-6"
      d="m -2166.0445,2174.4691 8.4688,-16.5023 85.4564,42.407 31.6779,28.1186 57.1623,29.4193 75.7563,82.5517 13.3392,13.8425 20.6379,12.0807 54.1117,22.1481 29.4468,21.1413 15.3527,4.0269 30.7051,15.8559 46.8129,20.638 48.3954,23.9092 48.764,27.9107 71.2229,45.2015 73.6009,20.4292 11.6331,10.3531"
      style="fill:none;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
@@ -1148,4 +1144,8 @@
      id="path28406-0"
      d="m 239.92521,2138.8831 60.4326,36.8089 0.2527,5.3301 -18.6245,32.2154 2.7685,18.6245 -0.6292,17.9952 -8.6831,29.6985 -22.148,46.3095 -19.1278,34.858 -22.1661,95.7775 42,10 -59.9772,257.0222 -1.5101,7.0471 -1.0015,4.5221"
      style="fill:none;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1686.3275,3620.2829 -6.4711,51.236 1.1821,13.5689 35.0486,171.4803 12.1268,61.0091"
+     id="path1232" />
 </svg>
