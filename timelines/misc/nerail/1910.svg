@@ -81,20 +81,20 @@
      id="g4322">
     <image
        xlink:href="osm/crosm.png"
-       style="stroke:#808000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       id="image10"
-       height="8960"
-       width="11008"
+       x="0"
        y="-100"
-       x="0" />
+       width="11008"
+       height="8960"
+       id="image10"
+       style="stroke:#808000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
     <image
        xlink:href="osm/raillayerosm.png"
-       style="opacity:0.8;stroke:#808000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       id="image4320"
-       height="8960"
-       width="11008"
+       x="0"
        y="-100"
-       x="0" />
+       width="11008"
+       height="8960"
+       id="image4320"
+       style="opacity:0.8;stroke:#808000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
   </g>
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -408,10 +408,6 @@
      style="fill:none;stroke:#006000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3942"
      d="m 5344,4244 -14,9.5 -4.5,21 -12.5,6.5 -17,14.5 -23.5,16.5 -132,21 -10,-5.5 -20,-17 -15.5,1 -4,-5 -4,-40 -10,-19.5 -9,-3 -21.5,13 -2,11 -15,2 -21.5,18.5 -29.5,18.5 -16.5,1 -13,-22 -13,-4.5 -1,-20 -7,-16 -5.5,-7" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-     d="m 5705.1209,3859.0919 3.9595,-14.3716 -10.1188,-30.2099 -0.1467,-9.3856 3.2263,-17.3047 11.4387,-7.6258 16.1315,-14.9583 3.8129,-4.1062 2.7863,-8.5057 2.933,-42.6751"
-     id="path4741" />
   <path
      style="fill:none;stroke:#006000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3944"

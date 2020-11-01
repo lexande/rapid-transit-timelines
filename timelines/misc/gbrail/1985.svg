@@ -55,21 +55,21 @@
      style="display:none">
     <image
        xlink:href="osm/osm.png"
-       width="8824"
-       height="10294.667"
-       preserveAspectRatio="none"
-       id="image10"
+       y="-4.6669922"
        x="0"
-       y="-4.6669922" />
+       id="image10"
+       preserveAspectRatio="none"
+       height="10294.667"
+       width="8824" />
     <image
        xlink:href="osm/raillayerosm.png"
-       y="-4.6669922"
-       x="1.4928165e-12"
-       id="image863"
-       preserveAspectRatio="none"
-       height="10294.667"
+       style="opacity:0.8"
        width="8824"
-       style="opacity:0.8" />
+       height="10294.667"
+       preserveAspectRatio="none"
+       id="image863"
+       x="1.4928165e-12"
+       y="-4.6669922" />
   </g>
   <path
      style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -1509,10 +1509,6 @@
      id="path22250"
      d="m 3642.5,5590.75 34.639,-17.3678 30.5193,-22.0257 11.8417,-18.1065"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ee1d23;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     style="opacity:0.99918;fill:none;stroke:#223440;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-     d="m 1371.3404,4327.0248 12.3934,-0.1714 5.3464,-6.8778 6.6262,-1.3702 10.8647,2.9858 8.6515,-3.9109 -0.2312,-8.7655 -3.6489,-3.2479 -5.9603,-1.8537 4.7399,-5.1248 1.8518,-13.8345 -1.6532,-6.438 7.6937,-10.9565 5.3627,-2.3299 6.1229,-10.2511 1.2939,-10.6231 5.3381,2.1819 -0.053,-11.7346 7.5467,-11.7463 0.515,-4.909 6.8558,-8.917 -14.2976,-13.0432 -1.8184,-5.1548 3.9913,-1.5577 7.5181,7.4034 8.6744,2.2524 5.9736,6.1567 6.963,-4.9725 4.6158,-13.1834 2.772,-2.8848 1.8374,-15.9585 2.6214,-6.5186 -8.4879,-4.1226 6.3315,-8.1566 v -7.2261 l -2.0999,-8.0306 -5.8763,-6.4767 3.5757,-13.4448 0.5389,-12.6711 14.0841,-7.5057 4.4103,-0.086 2.6483,-4.8475 9.2169,8.757 9.9994,1.353 8.0257,-6.9533 -1.7276,-18.3747 -20.0323,-24.2242 -1.9969,-6.5341 -14.0583,-12.9722 -11.2529,-3.6061 -0.6218,-6.6236 -7.511,-6.7323"
-     id="path3900" />
   <path
      style="opacity:0.99918;fill:none;stroke:#ee1d23;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
      d="m 6310.5798,9579.8317 -13.92,-52.941 -6.459,-2.4625"
