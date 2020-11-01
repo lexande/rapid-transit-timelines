@@ -26,13 +26,13 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/nycosm.png"
-     id="image12"
-     height="5376"
-     width="5888"
-     y="0"
+     xlink:href="../../streetmap/nycosm.png"
+     style="display:none"
      x="-512"
-     style="display:none" />
+     y="0"
+     width="5888"
+     height="5376"
+     id="image12" />
   <path
      style="fill:none;stroke:#f7931d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3622-5"
@@ -286,11 +286,7 @@
   <path
      style="fill:none;stroke:#009174;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3705"
-     d="m 1094.584,3723.876 14.4156,-22.3764 79.5,-124 45,-68.5 23,-29 111,-112 74,-77.5 19,-16 84,-53 32,-12.5 75.5,-46 15,-11.5 41,-33.5" />
-  <path
-     style="fill:none;stroke:#009174;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     id="path4056"
-     d="m 1661.4998,3155.9996 -17.5,4 -30,-5.5 -282,-91.5" />
+     d="m 1094.584,3723.876 14.4156,-22.3764 79.5,-124 45,-68.5 23,-29 111,-112 74,-77.5 19,-16 84,-53 32,-12.5 75.5,-46 15,-11.5 17.3075,-11.4043" />
   <path
      style="fill:none;stroke:#cd1b19;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path5582"
@@ -302,7 +298,7 @@
   <path
      style="fill:none;stroke:#009174;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3707"
-     d="m 1707.9993,3117.9999 2.6997,-2.5257 1.3347,-4.1822 -0.7119,-8.1865 -5.8728,-26.072 1.5503,-5.0336 5.0356,-4.3074 7.6085,-2.2138 9.3559,1.0212 26,11.5 11,-6 6,-16.5 5,-2.5 38.5,7 29.742,3.3302 10.758,3.1698 5.5,5 3,7 1.0003,0.4997 35.5,5.5 41,6.5 5,-3.5 6.5,-54.5 -4.5,-14.5 5.9237,-43.7119 -1.2966,-3.411 -26.9659,-9.5763 -8.8093,-0.7118 -2.0466,-2.7585 2.4915,-46.7161 1.449,-3.8178 7.7542,-15.2966 2.1443,-25.1194" />
+     d="m 1929.6439,2867.3802 -2.1443,25.1194 -7.7542,15.2966 -1.449,3.8178 -2.4915,46.7161 2.0466,2.7585 8.8093,0.7118 26.9659,9.5763 1.2966,3.411 -5.9237,43.7119 4.5,14.5 -6.5,54.5 -5,3.5 -41,-6.5 -35.5,-5.5 -1.0003,-0.4997 -3,-7 -5.5,-5 -10.758,-3.1698 -29.742,-3.3302 -38.5,-7 -5,2.5 -6,16.5 -11,6 -26,-11.5 -9.3559,-1.0212 -7.6085,2.2138 -5.0356,4.3074 -1.5503,5.0336 5.8728,26.072 0.7119,8.1865 -1.3347,4.1822 -2.6997,2.5257 -23.6922,22.0954" />
   <path
      d="m 4390.0001,3106.9999 43.4195,29.4436 34.9759,83.4282 31.0887,77.08 8.8118,7.6671 14.358,1.7842 159.4348,-58.8708"
      id="path3620"
