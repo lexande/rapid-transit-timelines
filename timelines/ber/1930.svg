@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/berosm.png"
-     style="display:none"
-     id="image12"
-     height="7191.667"
-     width="7397.1431"
+     x="-2537.8569"
      y="-1282.8571"
-     x="-2537.8569" />
+     width="7397.1431"
+     height="7191.667"
+     id="image12"
+     style="display:none" />
   <path
      style="fill:none;stroke:#1b5ea4;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3592"
@@ -203,4 +203,8 @@
      style="fill:none;stroke:#008940;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3641"
      d="m 2661.7925,1479.3466 41.2903,14.7992 14.495,4.5095 68.2876,44.4514 75.374,45.0955 23.192,14.1728 21.9035,21.9036 57.98,24.4804 52.8262,39.2975 37.3649,41.8745 23.8362,20.6151 76.0182,55.4031 101.1429,74.7298 152.6807,109.5177 115.96,83.1047 55.4031,41.2302 50.2493,26.4131 41.8744,9.0191 30.2785,1.9327 57.3357,-5.1538 52.182,4.5096 38.0092,7.0864 36.0764,1.2885 65.7107,3.2211 149.4595,6.4422 81.8162,5.798 82.4604,11.596 317.4996,52.8155 237.5,39 33,11.5 29,15 36.5,30 28.5,38.5 22,52.5 27,43 23,22.5 38.5,27 38.5,13 89,15 30.5,13.5 25.5,18.5 23.5,29" />
+  <path
+     style="opacity:0.99918;fill:none;stroke:#bc90c1;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 2720.3062,1648.9926 6.4944,8.6362 0.086,2.8854 -1.339,3.5782 -39.1519,29.0219 -4.8178,0.8253 -8.6456,-3.761"
+     id="path1621" />
 </svg>

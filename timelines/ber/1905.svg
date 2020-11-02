@@ -19,20 +19,28 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
+  <path
+     style="opacity:0.99918;fill:none;stroke:#bc90c1;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 2720.3057,1648.9931 6.4944,8.6362 0.086,2.8854 -1.339,3.5782 -39.1519,29.0219 -4.8178,0.8253 -10.0187,-4.3583"
+     id="path1621" />
+  <path
+     style="opacity:0.99918;fill:none;stroke:#bc90c1;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 2720.3057,1648.9931 -17.3888,-21.2082 -26.8559,-5.8894 -16.7712,-5.8488 -24.2925,-13.1007 -17.6547,-12.3549 -27.5693,-32.3241 -58.3341,-29.4974 -49.8591,-27.4393 -76.2214,-33.5225 -67.3602,-39.4848 -4.9456,-15.0531 -31.6003,-29.0909 -0.4161,-3.0051 5.9505,-7.818 -0.3023,-2.9562 -22.3196,-14.7828"
+     id="path1623" />
   <image
-     xlink:href="../../streetmap/berosm.png"
-     style="display:none"
-     id="image12"
-     height="7191.667"
-     width="7397.1431"
+     xlink:href="../streetmap/berosm.png"
+     x="-2537.8569"
      y="-1282.8571"
-     x="-2537.8569" />
+     width="7397.1432"
+     height="7191.667"
+     id="image12"
+     style="display:none" />
   <path
      d="m 1731.1374,1516.3048 -0.4555,-14.577 9.1106,-51.9309 19.1324,-58.3083 7.2886,-15.4882 7.8835,-10.0476"
      id="path3627-2"
@@ -139,7 +147,6 @@
      d="m 2401.2661,1975.3791 -119.1811,29.6342 -77.9508,16.7498 -22.5478,6.4422 -36.0765,8.3749 -97.2775,13.5286 -33.4996,1.2885 -41.2302,-16.7498 -30.2784,-14.8171 -38.0091,-26.4131 -26.4131,-15.4613 -38.6534,-15.4614 -36.7206,-8.3749 -53.4705,-3.2211 -40.586,1.9327 -27.7015,-13.5287 -19.3267,-22.5477 -16.7498,-45.7398 -16.1055,-22.5478 -23.192,-15.4613 -8.2942,-4.8601"
      id="path7931"
      style="fill:none;stroke:#008940;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-
   <path
      style="fill:none;stroke:#008940;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3641"
