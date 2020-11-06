@@ -30,21 +30,21 @@
      style="display:none">
     <image
        xlink:href="../../streetmap/nycosm.png"
-       x="-2304"
-       y="0"
-       width="5888"
-       height="5376"
+       style="fill:#ff0000"
        id="image10"
-       style="fill:#ff0000" />
+       height="5376"
+       width="5888"
+       y="0"
+       x="-2304" />
     <image
        xlink:href="railosm.png"
-       y="0"
-       x="-2304"
-       id="image1296"
-       preserveAspectRatio="none"
-       height="5376"
+       style="opacity:0.5;stroke:#0000ff"
        width="5888"
-       style="opacity:0.5;stroke:#0000ff" />
+       height="5376"
+       preserveAspectRatio="none"
+       id="image1296"
+       x="-2304"
+       y="0" />
   </g>
   <path
      style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -180,7 +180,7 @@
      id="path934-3-2" />
   <path
      id="path32978-3"
-     d="m 2015.9634,3583.3596 -5.1457,-27.68 -155.9666,64.0545 -23.0668,6.2103 -101.3161,17.9211 -63.633,-48.6482 -313.2443,-233.5906 -81.963,-63.1306 -149.4118,-111.1746 -92.4444,-42.7622 -31.1079,-16.2747 -19.1358,-6.4782 -54.7987,-7.7662"
+     d="m 924.7293,3114.0402 54.7987,7.7662 19.1358,6.4782 31.1079,16.2747 92.4444,42.7622 149.4118,111.1746 81.963,63.1306 313.2443,233.5906 63.633,48.6482 101.3161,-17.9211 23.0668,-6.2103 155.9666,-64.0545 4.4375,23.8703 325.9497,-122.366 14.7216,0.7168 8.4453,2.3032 10.1727,5.9655 10.6663,11.1649"
      style="opacity:1;fill:none;fill-opacity:0.396078;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -200,7 +200,7 @@
      style="fill:none;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path919-6"
-     d="m 2188.3349,3172.1929 21.5424,3.5644 17.7353,9.1889 16.3568,16.2149 8.5169,9.5816 17.9211,26.438 52.6986,87.2988 12.0657,24.1313 49.8507,128.3246 20.7187,56.933 18.2204,52.7278 74.2961,201.6068 60.4973,172.1952 72.2452,371.6007 69.1223,342.7112 9.8341,39.8723 68.9892,207.8113 -1.0306,10.9337 -6.8924,35.4529 -17.7091,19.9075 -58.2745,32.4407 -68.8854,33.4911 -172.2467,68.7174"
+     d="m 2188.3349,3172.1929 21.5424,3.5644 17.7353,9.1889 16.3568,16.2149 8.5169,9.5816 17.9211,26.438 52.6986,87.2988 12.0657,24.1313 49.8507,128.3246 20.7187,56.933 18.2204,52.7278 74.2961,201.6068 60.4973,172.1952 75.175,371.5096 66.1925,342.8023 9.8341,39.8723 68.9892,207.8113 -1.0306,10.9337 -6.8924,35.4529 -17.7091,19.9075 -58.2745,32.4407 -68.8854,33.4911 -172.2467,68.7174"
      style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"

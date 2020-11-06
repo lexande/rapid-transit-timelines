@@ -34,21 +34,21 @@
      id="g1301">
     <image
        xlink:href="../../streetmap/nycosm.png"
-       x="-2304"
-       y="0"
-       width="5888"
-       height="5376"
+       style="fill:#ff0000"
        id="image10"
-       style="fill:#ff0000" />
+       height="5376"
+       width="5888"
+       y="0"
+       x="-2304" />
     <image
        xlink:href="railosm.png"
-       y="0"
-       x="-2304"
-       id="image1296"
-       preserveAspectRatio="none"
-       height="5376"
+       style="opacity:0.5"
        width="5888"
-       style="opacity:0.5" />
+       height="5376"
+       preserveAspectRatio="none"
+       id="image1296"
+       x="-2304"
+       y="0" />
   </g>
   <path
      id="path31756"
@@ -861,10 +861,6 @@
   <path
      id="path14006"
      d="m 868.0016,5112.2341 54.0662,13.0482 169.8067,-44.714 66.1252,-8.0683"
-     style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="path14008"
-     d="m 492.1393,4765.9735 43.64941,-54.8278 -3.72619,-29.8093 58.3766,-264.5578 17.74361,-78.4269 10.82231,-97.3274 3.90496,-86.4968 -1.2421,-31.9385"
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path14010"
@@ -2364,4 +2360,8 @@
      id="path33463"
      d="M 2617.4996,2392.0001 2645.26,2381.835"
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 492.13933,4765.9735 43.6494,-54.8278 8.8967,-17.5599 0.6849,-10.2976 -6.0466,-34.8589 51.1154,-231.6507 17.7436,-78.4269 10.8224,-97.3274 3.9049,-86.4968 -1.2421,-31.9385"
+     id="path14008-3" />
 </svg>
