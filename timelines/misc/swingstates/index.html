@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Tipping Point States Timeline</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Tipping Point States Timeline" />
+<meta property="og:image" content="https://alexander.co.tz/timelines/misc/swingstates/preview.gif" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="594" />
+<meta property="og:url" content="https://alexander.co.tz/timelines/misc/swingstates/preview.gif" />
+<meta property="og:description" content="1928-2016" />
+<meta name="twitter:card" content="summary_large_image" />
+<style type="text/css">
+div#preloader {
+	position: absolute;
+	left: -9999px;
+	top:  -9999px;
+}
+div#preloader img {
+	display: block;
+}
+img {
+	border: 1px solid;
+}
+body {
+	text-align: center;
+}
+</style>
+<script type="text/javascript">
+start=1928;
+count=23;
+step=4;
+index=count-1;
+function update() {
+	map = document.getElementById("map");
+	map.src=(start+step*index) + ".svg";
+	map.title=start+step*index;
+	map.alt=start+step*index + " map";
+	location.replace("#" + (start+step*index));
+}
+function nextmap() {
+	index=(index+1)%count;
+	update();
+}
+function prevmap() {
+	index=(index+count-1)%count;
+	update();
+}
+document.onkeydown=function(keypress) {
+	if(keypress.which == 65) { prevmap(); }
+	if(keypress.which == 83) { nextmap(); }
+}
+function gotoyear(x) {
+	inyear = parseInt(x);
+	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
+		index = (inyear-start)/step;
+		update();
+	}
+}
+intervalID=0;
+function startanim() {
+	intervalID = setInterval(nextmap, 1000);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = stopanim;
+	animbutton.innerText = "click here to stop animation";
+}
+function stopanim() {
+	clearInterval(intervalID);
+	animbutton = document.getElementById("animbutton");
+	animbutton.onclick = startanim;
+	animbutton.innerText = "click here to animate";
+}
+window.onload=function() {
+	gotoyear(location.hash.substring(1));
+}
+window.onhashchange=function() {
+	gotoyear(location.hash.substring(1));
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19998781-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body>
+<a href="javascript:" onclick="prevmap()">previous election (or press a)</a> ---
+<a href="javascript:" onclick="nextmap()">next election (or press s)</a>
+<br>
+<a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
+<p>
+<a href="javascript:" onclick="nextmap()">
+<img id="map" src="2016.svg" title="2016" alt="2016 map" width="1020" height="593">
+</a>
+<p>
+<a href="1928" onclick="gotoyear(1928)">1928</a>
+<a href="1932" onclick="gotoyear(1932)">1932</a>
+<a href="1936" onclick="gotoyear(1936)">1936</a>
+<a href="1940" onclick="gotoyear(1940)">1940</a>
+<a href="1944" onclick="gotoyear(1944)">1944</a>
+<a href="1948" onclick="gotoyear(1948)">1948</a>
+<a href="1952" onclick="gotoyear(1952)">1952</a>
+<a href="1956" onclick="gotoyear(1956)">1956</a>
+<a href="1960" onclick="gotoyear(1960)">1960</a>
+<a href="1964" onclick="gotoyear(1964)">1964</a>
+<a href="1968" onclick="gotoyear(1968)">1968</a>
+<a href="1972" onclick="gotoyear(1972)">1972</a>
+<a href="1976" onclick="gotoyear(1976)">1976</a>
+<a href="1980" onclick="gotoyear(1980)">1980</a>
+<a href="1984" onclick="gotoyear(1984)">1984</a>
+<a href="1988" onclick="gotoyear(1988)">1988</a>
+<a href="1992" onclick="gotoyear(1992)">1992</a>
+<a href="1996" onclick="gotoyear(1996)">1996</a>
+<a href="2000" onclick="gotoyear(2000)">2000</a>
+<a href="2004" onclick="gotoyear(2004)">2004</a>
+<a href="2008" onclick="gotoyear(2008)">2008</a>
+<a href="2012" onclick="gotoyear(2012)">2012</a>
+<a href="2016" onclick="gotoyear(2016)">2016</a>
+<p>
+<a href="javascript:" onclick="prevmap()">previous election (or press a)</a> ---
+<a href="javascript:" onclick="nextmap()">next election (or press s)</a>
+<p>
+Tipping point states in purple, next two most Democratic states in blue, next two most Republican in red.<br>
+Please send any corrections or questions to threestationsquare at gmail dot com.
+<p>
+<div id="preloader">
+<img src="1928.svg" width="1" height="1" alt="">
+<img src="1932.svg" width="1" height="1" alt="">
+<img src="1936.svg" width="1" height="1" alt="">
+<img src="1940.svg" width="1" height="1" alt="">
+<img src="1944.svg" width="1" height="1" alt="">
+<img src="1948.svg" width="1" height="1" alt="">
+<img src="1952.svg" width="1" height="1" alt="">
+<img src="1956.svg" width="1" height="1" alt="">
+<img src="1960.svg" width="1" height="1" alt="">
+<img src="1964.svg" width="1" height="1" alt="">
+<img src="1968.svg" width="1" height="1" alt="">
+<img src="1972.svg" width="1" height="1" alt="">
+<img src="1976.svg" width="1" height="1" alt="">
+<img src="1980.svg" width="1" height="1" alt="">
+<img src="1984.svg" width="1" height="1" alt="">
+<img src="1988.svg" width="1" height="1" alt="">
+<img src="1992.svg" width="1" height="1" alt="">
+<img src="1996.svg" width="1" height="1" alt="">
+<img src="2000.svg" width="1" height="1" alt="">
+<img src="2004.svg" width="1" height="1" alt="">
+<img src="2008.svg" width="1" height="1" alt="">
+<img src="2012.svg" width="1" height="1" alt="">
+<img src="2016.svg" width="1" height="1" alt="">
+</div>
+See also:
+<a href="/timelines">historic rapid transit timelines</a> -
+<a href="/timelines/misc">miscellaneous timelines and maps</a>
+<p>
+<div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>) based on maps by <a href="https://commons.wikimedia.org/wiki/United_States_presidential_election_maps">Wikimedia</a> contributors.</div>
+</body></html>
