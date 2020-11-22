@@ -1,6 +1,6 @@
 #!/bin/bash
 for i in `seq $1 $2`; do
-	mkdir $i; cd $i
+	mkdir -p $i; cd $i
 	for j in `seq $3 $4`; do
 	echo https://c.tile.openstreetmap.org/14/$i/$j.png
 	done | xargs wget -U "base maps for https://alexander.co.tz/timelines/ contact threestationsquare@gmail.com" -T 60 -c; cd ..
