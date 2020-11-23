@@ -16,6 +16,8 @@ div#preloader {
 	top:  -9999px;
 }
 div#preloader img {
+	width: 1px;
+	height: 1px;
 	display: block;
 }
 a:link.map-wrap {
@@ -166,24 +168,24 @@ function prevmap() {
 }
 function toggleshow(x) {
 	span = document.getElementById(x);
-	prediv = document.getElementById(x + "pre");
 	checkboxes = document.getElementsByClassName(x + "checkbox");
 	if (span.style.display == 'inline-block') {
 		mapimg = document.getElementById(x + "map");
 		span.style.display = 'none';
 		if (mapimg.tagName.toUpperCase() == "IMG") mapimg.src = "/0";
-		imgs = prediv.getElementsByTagName("img");
-		for (var i=0; i < imgs.length; i++) {
-			prediv.removeChild(imgs[i]);
-		}
+		prediv = document.getElementById(x + "pre");
+		prediv.parentNode.removeChild(prediv);
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = false; }
 	} else {
 		update(x);
 		for (var i = citystartyears[x.toLowerCase()]; i < start + count*step; i+=step) {
+			prediv = document.createElement("div");
+			prediv.id = x + "pre";
 			img = document.createElement("img");
 			img.src = x.toLowerCase() + '/small/' + i + '.svg';
 			img.width = "1"; img.height = "1"; img.alt = "";
 			prediv.appendChild(img);
+			document.getElementById("preloader").appendChild(prediv);
 		}
 		span.style.display = 'inline-block';
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = true; }
@@ -215,7 +217,7 @@ function selectall(i) {
 		if (spans[i].style.display == 'none') {
 			toggleshow(spans[i].id);
 		}
-		setTimeout(function(){ selectall(i+1) }, 10);
+		setTimeout(function(){ selectall(i+1) }, 1);
 	}
 }
 function deselectall() {
@@ -361,16 +363,14 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors and his
 </div>
 <div id=preloader>
 HEREDOC
-for city in $@; do
+for city in $@; do if [ -f $city/s ]; then
   UPPER=`echo $city | tr 'a-z' 'A-Z'`
   echo '<div id="'$UPPER'pre">'
-  if [ -f $city/s ]; then
-    for yr in $(seq ${start} 5 2020); do
-      if [ -f $city/small/$yr.svg ]; then
-        echo '<img src="'${city}'/small/'${yr}'.svg" width="1" height="1" alt="">'
-      fi
-    done
-  fi
+  for yr in $(seq ${start} 5 2020); do
+    if [ -f $city/small/$yr.svg ]; then
+      echo '<img src="'${city}'/small/'${yr}'.svg" alt="">'
+    fi
+  done
   echo '</div>'
-done
+fi; done
 echo '</div></body></html>'

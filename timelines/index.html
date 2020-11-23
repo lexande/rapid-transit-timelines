@@ -14,6 +14,8 @@ div#preloader {
 	top:  -9999px;
 }
 div#preloader img {
+	width: 1px;
+	height: 1px;
 	display: block;
 }
 a:link.map-wrap {
@@ -150,24 +152,24 @@ function prevmap() {
 }
 function toggleshow(x) {
 	span = document.getElementById(x);
-	prediv = document.getElementById(x + "pre");
 	checkboxes = document.getElementsByClassName(x + "checkbox");
 	if (span.style.display == 'inline-block') {
 		mapimg = document.getElementById(x + "map");
 		span.style.display = 'none';
 		if (mapimg.tagName.toUpperCase() == "IMG") mapimg.src = "/0";
-		imgs = prediv.getElementsByTagName("img");
-		for (var i=0; i < imgs.length; i++) {
-			prediv.removeChild(imgs[i]);
-		}
+		prediv = document.getElementById(x + "pre");
+		prediv.parentNode.removeChild(prediv);
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = false; }
 	} else {
 		update(x);
 		for (var i = citystartyears[x.toLowerCase()]; i < start + count*step; i+=step) {
+			prediv = document.createElement("div");
+			prediv.id = x + "pre";
 			img = document.createElement("img");
 			img.src = x.toLowerCase() + '/small/' + i + '.svg';
 			img.width = "1"; img.height = "1"; img.alt = "";
 			prediv.appendChild(img);
+			document.getElementById("preloader").appendChild(prediv);
 		}
 		span.style.display = 'inline-block';
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = true; }
@@ -199,7 +201,7 @@ function selectall(i) {
 		if (spans[i].style.display == 'none') {
 			toggleshow(spans[i].id);
 		}
-		setTimeout(function(){ selectall(i+1) }, 10);
+		setTimeout(function(){ selectall(i+1) }, 1);
 	}
 }
 function deselectall() {
@@ -1196,1057 +1198,515 @@ by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors and his
 </div>
 <div id=preloader>
 <div id="LONpre">
-<img src="lon/small/1840.svg" width="1" height="1" alt="">
-<img src="lon/small/1845.svg" width="1" height="1" alt="">
-<img src="lon/small/1850.svg" width="1" height="1" alt="">
-<img src="lon/small/1855.svg" width="1" height="1" alt="">
-<img src="lon/small/1860.svg" width="1" height="1" alt="">
-<img src="lon/small/1865.svg" width="1" height="1" alt="">
-<img src="lon/small/1870.svg" width="1" height="1" alt="">
-<img src="lon/small/1875.svg" width="1" height="1" alt="">
-<img src="lon/small/1880.svg" width="1" height="1" alt="">
-<img src="lon/small/1885.svg" width="1" height="1" alt="">
-<img src="lon/small/1890.svg" width="1" height="1" alt="">
-<img src="lon/small/1895.svg" width="1" height="1" alt="">
-<img src="lon/small/1900.svg" width="1" height="1" alt="">
-<img src="lon/small/1905.svg" width="1" height="1" alt="">
-<img src="lon/small/1910.svg" width="1" height="1" alt="">
-<img src="lon/small/1915.svg" width="1" height="1" alt="">
-<img src="lon/small/1920.svg" width="1" height="1" alt="">
-<img src="lon/small/1925.svg" width="1" height="1" alt="">
-<img src="lon/small/1930.svg" width="1" height="1" alt="">
-<img src="lon/small/1935.svg" width="1" height="1" alt="">
-<img src="lon/small/1940.svg" width="1" height="1" alt="">
-<img src="lon/small/1945.svg" width="1" height="1" alt="">
-<img src="lon/small/1950.svg" width="1" height="1" alt="">
-<img src="lon/small/1955.svg" width="1" height="1" alt="">
-<img src="lon/small/1960.svg" width="1" height="1" alt="">
-<img src="lon/small/1965.svg" width="1" height="1" alt="">
-<img src="lon/small/1970.svg" width="1" height="1" alt="">
-<img src="lon/small/1975.svg" width="1" height="1" alt="">
-<img src="lon/small/1980.svg" width="1" height="1" alt="">
-<img src="lon/small/1985.svg" width="1" height="1" alt="">
-<img src="lon/small/1990.svg" width="1" height="1" alt="">
-<img src="lon/small/1995.svg" width="1" height="1" alt="">
-<img src="lon/small/2000.svg" width="1" height="1" alt="">
-<img src="lon/small/2005.svg" width="1" height="1" alt="">
-<img src="lon/small/2010.svg" width="1" height="1" alt="">
-<img src="lon/small/2015.svg" width="1" height="1" alt="">
-<img src="lon/small/2020.svg" width="1" height="1" alt="">
+<img src="lon/small/1840.svg" alt="">
+<img src="lon/small/1845.svg" alt="">
+<img src="lon/small/1850.svg" alt="">
+<img src="lon/small/1855.svg" alt="">
+<img src="lon/small/1860.svg" alt="">
+<img src="lon/small/1865.svg" alt="">
+<img src="lon/small/1870.svg" alt="">
+<img src="lon/small/1875.svg" alt="">
+<img src="lon/small/1880.svg" alt="">
+<img src="lon/small/1885.svg" alt="">
+<img src="lon/small/1890.svg" alt="">
+<img src="lon/small/1895.svg" alt="">
+<img src="lon/small/1900.svg" alt="">
+<img src="lon/small/1905.svg" alt="">
+<img src="lon/small/1910.svg" alt="">
+<img src="lon/small/1915.svg" alt="">
+<img src="lon/small/1920.svg" alt="">
+<img src="lon/small/1925.svg" alt="">
+<img src="lon/small/1930.svg" alt="">
+<img src="lon/small/1935.svg" alt="">
+<img src="lon/small/1940.svg" alt="">
+<img src="lon/small/1945.svg" alt="">
+<img src="lon/small/1950.svg" alt="">
+<img src="lon/small/1955.svg" alt="">
+<img src="lon/small/1960.svg" alt="">
+<img src="lon/small/1965.svg" alt="">
+<img src="lon/small/1970.svg" alt="">
+<img src="lon/small/1975.svg" alt="">
+<img src="lon/small/1980.svg" alt="">
+<img src="lon/small/1985.svg" alt="">
+<img src="lon/small/1990.svg" alt="">
+<img src="lon/small/1995.svg" alt="">
+<img src="lon/small/2000.svg" alt="">
+<img src="lon/small/2005.svg" alt="">
+<img src="lon/small/2010.svg" alt="">
+<img src="lon/small/2015.svg" alt="">
+<img src="lon/small/2020.svg" alt="">
 </div>
 <div id="NYCpre">
-<img src="nyc/small/1875.svg" width="1" height="1" alt="">
-<img src="nyc/small/1880.svg" width="1" height="1" alt="">
-<img src="nyc/small/1885.svg" width="1" height="1" alt="">
-<img src="nyc/small/1890.svg" width="1" height="1" alt="">
-<img src="nyc/small/1895.svg" width="1" height="1" alt="">
-<img src="nyc/small/1900.svg" width="1" height="1" alt="">
-<img src="nyc/small/1905.svg" width="1" height="1" alt="">
-<img src="nyc/small/1910.svg" width="1" height="1" alt="">
-<img src="nyc/small/1915.svg" width="1" height="1" alt="">
-<img src="nyc/small/1920.svg" width="1" height="1" alt="">
-<img src="nyc/small/1925.svg" width="1" height="1" alt="">
-<img src="nyc/small/1930.svg" width="1" height="1" alt="">
-<img src="nyc/small/1935.svg" width="1" height="1" alt="">
-<img src="nyc/small/1940.svg" width="1" height="1" alt="">
-<img src="nyc/small/1945.svg" width="1" height="1" alt="">
-<img src="nyc/small/1950.svg" width="1" height="1" alt="">
-<img src="nyc/small/1955.svg" width="1" height="1" alt="">
-<img src="nyc/small/1960.svg" width="1" height="1" alt="">
-<img src="nyc/small/1965.svg" width="1" height="1" alt="">
-<img src="nyc/small/1970.svg" width="1" height="1" alt="">
-<img src="nyc/small/1975.svg" width="1" height="1" alt="">
-<img src="nyc/small/1980.svg" width="1" height="1" alt="">
-<img src="nyc/small/1985.svg" width="1" height="1" alt="">
-<img src="nyc/small/1990.svg" width="1" height="1" alt="">
-<img src="nyc/small/1995.svg" width="1" height="1" alt="">
-<img src="nyc/small/2000.svg" width="1" height="1" alt="">
-<img src="nyc/small/2005.svg" width="1" height="1" alt="">
-<img src="nyc/small/2010.svg" width="1" height="1" alt="">
-<img src="nyc/small/2015.svg" width="1" height="1" alt="">
-<img src="nyc/small/2020.svg" width="1" height="1" alt="">
+<img src="nyc/small/1875.svg" alt="">
+<img src="nyc/small/1880.svg" alt="">
+<img src="nyc/small/1885.svg" alt="">
+<img src="nyc/small/1890.svg" alt="">
+<img src="nyc/small/1895.svg" alt="">
+<img src="nyc/small/1900.svg" alt="">
+<img src="nyc/small/1905.svg" alt="">
+<img src="nyc/small/1910.svg" alt="">
+<img src="nyc/small/1915.svg" alt="">
+<img src="nyc/small/1920.svg" alt="">
+<img src="nyc/small/1925.svg" alt="">
+<img src="nyc/small/1930.svg" alt="">
+<img src="nyc/small/1935.svg" alt="">
+<img src="nyc/small/1940.svg" alt="">
+<img src="nyc/small/1945.svg" alt="">
+<img src="nyc/small/1950.svg" alt="">
+<img src="nyc/small/1955.svg" alt="">
+<img src="nyc/small/1960.svg" alt="">
+<img src="nyc/small/1965.svg" alt="">
+<img src="nyc/small/1970.svg" alt="">
+<img src="nyc/small/1975.svg" alt="">
+<img src="nyc/small/1980.svg" alt="">
+<img src="nyc/small/1985.svg" alt="">
+<img src="nyc/small/1990.svg" alt="">
+<img src="nyc/small/1995.svg" alt="">
+<img src="nyc/small/2000.svg" alt="">
+<img src="nyc/small/2005.svg" alt="">
+<img src="nyc/small/2010.svg" alt="">
+<img src="nyc/small/2015.svg" alt="">
+<img src="nyc/small/2020.svg" alt="">
 </div>
 <div id="PARpre">
-<img src="par/small/1875.svg" width="1" height="1" alt="">
-<img src="par/small/1880.svg" width="1" height="1" alt="">
-<img src="par/small/1885.svg" width="1" height="1" alt="">
-<img src="par/small/1890.svg" width="1" height="1" alt="">
-<img src="par/small/1895.svg" width="1" height="1" alt="">
-<img src="par/small/1900.svg" width="1" height="1" alt="">
-<img src="par/small/1905.svg" width="1" height="1" alt="">
-<img src="par/small/1910.svg" width="1" height="1" alt="">
-<img src="par/small/1915.svg" width="1" height="1" alt="">
-<img src="par/small/1920.svg" width="1" height="1" alt="">
-<img src="par/small/1925.svg" width="1" height="1" alt="">
-<img src="par/small/1930.svg" width="1" height="1" alt="">
-<img src="par/small/1935.svg" width="1" height="1" alt="">
-<img src="par/small/1940.svg" width="1" height="1" alt="">
-<img src="par/small/1945.svg" width="1" height="1" alt="">
-<img src="par/small/1950.svg" width="1" height="1" alt="">
-<img src="par/small/1955.svg" width="1" height="1" alt="">
-<img src="par/small/1960.svg" width="1" height="1" alt="">
-<img src="par/small/1965.svg" width="1" height="1" alt="">
-<img src="par/small/1970.svg" width="1" height="1" alt="">
-<img src="par/small/1975.svg" width="1" height="1" alt="">
-<img src="par/small/1980.svg" width="1" height="1" alt="">
-<img src="par/small/1985.svg" width="1" height="1" alt="">
-<img src="par/small/1990.svg" width="1" height="1" alt="">
-<img src="par/small/1995.svg" width="1" height="1" alt="">
-<img src="par/small/2000.svg" width="1" height="1" alt="">
-<img src="par/small/2005.svg" width="1" height="1" alt="">
-<img src="par/small/2010.svg" width="1" height="1" alt="">
-<img src="par/small/2015.svg" width="1" height="1" alt="">
-<img src="par/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="MELpre">
+<img src="par/small/1875.svg" alt="">
+<img src="par/small/1880.svg" alt="">
+<img src="par/small/1885.svg" alt="">
+<img src="par/small/1890.svg" alt="">
+<img src="par/small/1895.svg" alt="">
+<img src="par/small/1900.svg" alt="">
+<img src="par/small/1905.svg" alt="">
+<img src="par/small/1910.svg" alt="">
+<img src="par/small/1915.svg" alt="">
+<img src="par/small/1920.svg" alt="">
+<img src="par/small/1925.svg" alt="">
+<img src="par/small/1930.svg" alt="">
+<img src="par/small/1935.svg" alt="">
+<img src="par/small/1940.svg" alt="">
+<img src="par/small/1945.svg" alt="">
+<img src="par/small/1950.svg" alt="">
+<img src="par/small/1955.svg" alt="">
+<img src="par/small/1960.svg" alt="">
+<img src="par/small/1965.svg" alt="">
+<img src="par/small/1970.svg" alt="">
+<img src="par/small/1975.svg" alt="">
+<img src="par/small/1980.svg" alt="">
+<img src="par/small/1985.svg" alt="">
+<img src="par/small/1990.svg" alt="">
+<img src="par/small/1995.svg" alt="">
+<img src="par/small/2000.svg" alt="">
+<img src="par/small/2005.svg" alt="">
+<img src="par/small/2010.svg" alt="">
+<img src="par/small/2015.svg" alt="">
+<img src="par/small/2020.svg" alt="">
 </div>
 <div id="BERpre">
-<img src="ber/small/1885.svg" width="1" height="1" alt="">
-<img src="ber/small/1890.svg" width="1" height="1" alt="">
-<img src="ber/small/1895.svg" width="1" height="1" alt="">
-<img src="ber/small/1900.svg" width="1" height="1" alt="">
-<img src="ber/small/1905.svg" width="1" height="1" alt="">
-<img src="ber/small/1910.svg" width="1" height="1" alt="">
-<img src="ber/small/1915.svg" width="1" height="1" alt="">
-<img src="ber/small/1920.svg" width="1" height="1" alt="">
-<img src="ber/small/1925.svg" width="1" height="1" alt="">
-<img src="ber/small/1930.svg" width="1" height="1" alt="">
-<img src="ber/small/1935.svg" width="1" height="1" alt="">
-<img src="ber/small/1940.svg" width="1" height="1" alt="">
-<img src="ber/small/1945.svg" width="1" height="1" alt="">
-<img src="ber/small/1950.svg" width="1" height="1" alt="">
-<img src="ber/small/1955.svg" width="1" height="1" alt="">
-<img src="ber/small/1960.svg" width="1" height="1" alt="">
-<img src="ber/small/1965.svg" width="1" height="1" alt="">
-<img src="ber/small/1970.svg" width="1" height="1" alt="">
-<img src="ber/small/1975.svg" width="1" height="1" alt="">
-<img src="ber/small/1980.svg" width="1" height="1" alt="">
-<img src="ber/small/1985.svg" width="1" height="1" alt="">
-<img src="ber/small/1990.svg" width="1" height="1" alt="">
-<img src="ber/small/1995.svg" width="1" height="1" alt="">
-<img src="ber/small/2000.svg" width="1" height="1" alt="">
-<img src="ber/small/2005.svg" width="1" height="1" alt="">
-<img src="ber/small/2010.svg" width="1" height="1" alt="">
-<img src="ber/small/2015.svg" width="1" height="1" alt="">
-<img src="ber/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="LPLpre">
+<img src="ber/small/1885.svg" alt="">
+<img src="ber/small/1890.svg" alt="">
+<img src="ber/small/1895.svg" alt="">
+<img src="ber/small/1900.svg" alt="">
+<img src="ber/small/1905.svg" alt="">
+<img src="ber/small/1910.svg" alt="">
+<img src="ber/small/1915.svg" alt="">
+<img src="ber/small/1920.svg" alt="">
+<img src="ber/small/1925.svg" alt="">
+<img src="ber/small/1930.svg" alt="">
+<img src="ber/small/1935.svg" alt="">
+<img src="ber/small/1940.svg" alt="">
+<img src="ber/small/1945.svg" alt="">
+<img src="ber/small/1950.svg" alt="">
+<img src="ber/small/1955.svg" alt="">
+<img src="ber/small/1960.svg" alt="">
+<img src="ber/small/1965.svg" alt="">
+<img src="ber/small/1970.svg" alt="">
+<img src="ber/small/1975.svg" alt="">
+<img src="ber/small/1980.svg" alt="">
+<img src="ber/small/1985.svg" alt="">
+<img src="ber/small/1990.svg" alt="">
+<img src="ber/small/1995.svg" alt="">
+<img src="ber/small/2000.svg" alt="">
+<img src="ber/small/2005.svg" alt="">
+<img src="ber/small/2010.svg" alt="">
+<img src="ber/small/2015.svg" alt="">
+<img src="ber/small/2020.svg" alt="">
 </div>
 <div id="SYDpre">
-<img src="syd/small/1895.svg" width="1" height="1" alt="">
-<img src="syd/small/1900.svg" width="1" height="1" alt="">
-<img src="syd/small/1905.svg" width="1" height="1" alt="">
-<img src="syd/small/1910.svg" width="1" height="1" alt="">
-<img src="syd/small/1915.svg" width="1" height="1" alt="">
-<img src="syd/small/1920.svg" width="1" height="1" alt="">
-<img src="syd/small/1925.svg" width="1" height="1" alt="">
-<img src="syd/small/1930.svg" width="1" height="1" alt="">
-<img src="syd/small/1935.svg" width="1" height="1" alt="">
-<img src="syd/small/1940.svg" width="1" height="1" alt="">
-<img src="syd/small/1945.svg" width="1" height="1" alt="">
-<img src="syd/small/1950.svg" width="1" height="1" alt="">
-<img src="syd/small/1955.svg" width="1" height="1" alt="">
-<img src="syd/small/1960.svg" width="1" height="1" alt="">
-<img src="syd/small/1965.svg" width="1" height="1" alt="">
-<img src="syd/small/1970.svg" width="1" height="1" alt="">
-<img src="syd/small/1975.svg" width="1" height="1" alt="">
-<img src="syd/small/1980.svg" width="1" height="1" alt="">
-<img src="syd/small/1985.svg" width="1" height="1" alt="">
-<img src="syd/small/1990.svg" width="1" height="1" alt="">
-<img src="syd/small/1995.svg" width="1" height="1" alt="">
-<img src="syd/small/2000.svg" width="1" height="1" alt="">
-<img src="syd/small/2005.svg" width="1" height="1" alt="">
-<img src="syd/small/2010.svg" width="1" height="1" alt="">
-<img src="syd/small/2015.svg" width="1" height="1" alt="">
-<img src="syd/small/2020.svg" width="1" height="1" alt="">
+<img src="syd/small/1895.svg" alt="">
+<img src="syd/small/1900.svg" alt="">
+<img src="syd/small/1905.svg" alt="">
+<img src="syd/small/1910.svg" alt="">
+<img src="syd/small/1915.svg" alt="">
+<img src="syd/small/1920.svg" alt="">
+<img src="syd/small/1925.svg" alt="">
+<img src="syd/small/1930.svg" alt="">
+<img src="syd/small/1935.svg" alt="">
+<img src="syd/small/1940.svg" alt="">
+<img src="syd/small/1945.svg" alt="">
+<img src="syd/small/1950.svg" alt="">
+<img src="syd/small/1955.svg" alt="">
+<img src="syd/small/1960.svg" alt="">
+<img src="syd/small/1965.svg" alt="">
+<img src="syd/small/1970.svg" alt="">
+<img src="syd/small/1975.svg" alt="">
+<img src="syd/small/1980.svg" alt="">
+<img src="syd/small/1985.svg" alt="">
+<img src="syd/small/1990.svg" alt="">
+<img src="syd/small/1995.svg" alt="">
+<img src="syd/small/2000.svg" alt="">
+<img src="syd/small/2005.svg" alt="">
+<img src="syd/small/2010.svg" alt="">
+<img src="syd/small/2015.svg" alt="">
+<img src="syd/small/2020.svg" alt="">
 </div>
 <div id="CHIpre">
-<img src="chi/small/1895.svg" width="1" height="1" alt="">
-<img src="chi/small/1900.svg" width="1" height="1" alt="">
-<img src="chi/small/1905.svg" width="1" height="1" alt="">
-<img src="chi/small/1910.svg" width="1" height="1" alt="">
-<img src="chi/small/1915.svg" width="1" height="1" alt="">
-<img src="chi/small/1920.svg" width="1" height="1" alt="">
-<img src="chi/small/1925.svg" width="1" height="1" alt="">
-<img src="chi/small/1930.svg" width="1" height="1" alt="">
-<img src="chi/small/1935.svg" width="1" height="1" alt="">
-<img src="chi/small/1940.svg" width="1" height="1" alt="">
-<img src="chi/small/1945.svg" width="1" height="1" alt="">
-<img src="chi/small/1950.svg" width="1" height="1" alt="">
-<img src="chi/small/1955.svg" width="1" height="1" alt="">
-<img src="chi/small/1960.svg" width="1" height="1" alt="">
-<img src="chi/small/1965.svg" width="1" height="1" alt="">
-<img src="chi/small/1970.svg" width="1" height="1" alt="">
-<img src="chi/small/1975.svg" width="1" height="1" alt="">
-<img src="chi/small/1980.svg" width="1" height="1" alt="">
-<img src="chi/small/1985.svg" width="1" height="1" alt="">
-<img src="chi/small/1990.svg" width="1" height="1" alt="">
-<img src="chi/small/1995.svg" width="1" height="1" alt="">
-<img src="chi/small/2000.svg" width="1" height="1" alt="">
-<img src="chi/small/2005.svg" width="1" height="1" alt="">
-<img src="chi/small/2010.svg" width="1" height="1" alt="">
-<img src="chi/small/2015.svg" width="1" height="1" alt="">
-<img src="chi/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="BUDpre">
-</div>
-<div id="GLApre">
+<img src="chi/small/1895.svg" alt="">
+<img src="chi/small/1900.svg" alt="">
+<img src="chi/small/1905.svg" alt="">
+<img src="chi/small/1910.svg" alt="">
+<img src="chi/small/1915.svg" alt="">
+<img src="chi/small/1920.svg" alt="">
+<img src="chi/small/1925.svg" alt="">
+<img src="chi/small/1930.svg" alt="">
+<img src="chi/small/1935.svg" alt="">
+<img src="chi/small/1940.svg" alt="">
+<img src="chi/small/1945.svg" alt="">
+<img src="chi/small/1950.svg" alt="">
+<img src="chi/small/1955.svg" alt="">
+<img src="chi/small/1960.svg" alt="">
+<img src="chi/small/1965.svg" alt="">
+<img src="chi/small/1970.svg" alt="">
+<img src="chi/small/1975.svg" alt="">
+<img src="chi/small/1980.svg" alt="">
+<img src="chi/small/1985.svg" alt="">
+<img src="chi/small/1990.svg" alt="">
+<img src="chi/small/1995.svg" alt="">
+<img src="chi/small/2000.svg" alt="">
+<img src="chi/small/2005.svg" alt="">
+<img src="chi/small/2010.svg" alt="">
+<img src="chi/small/2015.svg" alt="">
+<img src="chi/small/2020.svg" alt="">
 </div>
 <div id="BOSpre">
-<img src="bos/small/1900.svg" width="1" height="1" alt="">
-<img src="bos/small/1905.svg" width="1" height="1" alt="">
-<img src="bos/small/1910.svg" width="1" height="1" alt="">
-<img src="bos/small/1915.svg" width="1" height="1" alt="">
-<img src="bos/small/1920.svg" width="1" height="1" alt="">
-<img src="bos/small/1925.svg" width="1" height="1" alt="">
-<img src="bos/small/1930.svg" width="1" height="1" alt="">
-<img src="bos/small/1935.svg" width="1" height="1" alt="">
-<img src="bos/small/1940.svg" width="1" height="1" alt="">
-<img src="bos/small/1945.svg" width="1" height="1" alt="">
-<img src="bos/small/1950.svg" width="1" height="1" alt="">
-<img src="bos/small/1955.svg" width="1" height="1" alt="">
-<img src="bos/small/1960.svg" width="1" height="1" alt="">
-<img src="bos/small/1965.svg" width="1" height="1" alt="">
-<img src="bos/small/1970.svg" width="1" height="1" alt="">
-<img src="bos/small/1975.svg" width="1" height="1" alt="">
-<img src="bos/small/1980.svg" width="1" height="1" alt="">
-<img src="bos/small/1985.svg" width="1" height="1" alt="">
-<img src="bos/small/1990.svg" width="1" height="1" alt="">
-<img src="bos/small/1995.svg" width="1" height="1" alt="">
-<img src="bos/small/2000.svg" width="1" height="1" alt="">
-<img src="bos/small/2005.svg" width="1" height="1" alt="">
-<img src="bos/small/2010.svg" width="1" height="1" alt="">
-<img src="bos/small/2015.svg" width="1" height="1" alt="">
-<img src="bos/small/2020.svg" width="1" height="1" alt="">
+<img src="bos/small/1900.svg" alt="">
+<img src="bos/small/1905.svg" alt="">
+<img src="bos/small/1910.svg" alt="">
+<img src="bos/small/1915.svg" alt="">
+<img src="bos/small/1920.svg" alt="">
+<img src="bos/small/1925.svg" alt="">
+<img src="bos/small/1930.svg" alt="">
+<img src="bos/small/1935.svg" alt="">
+<img src="bos/small/1940.svg" alt="">
+<img src="bos/small/1945.svg" alt="">
+<img src="bos/small/1950.svg" alt="">
+<img src="bos/small/1955.svg" alt="">
+<img src="bos/small/1960.svg" alt="">
+<img src="bos/small/1965.svg" alt="">
+<img src="bos/small/1970.svg" alt="">
+<img src="bos/small/1975.svg" alt="">
+<img src="bos/small/1980.svg" alt="">
+<img src="bos/small/1985.svg" alt="">
+<img src="bos/small/1990.svg" alt="">
+<img src="bos/small/1995.svg" alt="">
+<img src="bos/small/2000.svg" alt="">
+<img src="bos/small/2005.svg" alt="">
+<img src="bos/small/2010.svg" alt="">
+<img src="bos/small/2015.svg" alt="">
+<img src="bos/small/2020.svg" alt="">
 </div>
 <div id="VIEpre">
-<img src="vie/small/1900.svg" width="1" height="1" alt="">
-<img src="vie/small/1905.svg" width="1" height="1" alt="">
-<img src="vie/small/1910.svg" width="1" height="1" alt="">
-<img src="vie/small/1915.svg" width="1" height="1" alt="">
-<img src="vie/small/1920.svg" width="1" height="1" alt="">
-<img src="vie/small/1925.svg" width="1" height="1" alt="">
-<img src="vie/small/1930.svg" width="1" height="1" alt="">
-<img src="vie/small/1935.svg" width="1" height="1" alt="">
-<img src="vie/small/1940.svg" width="1" height="1" alt="">
-<img src="vie/small/1945.svg" width="1" height="1" alt="">
-<img src="vie/small/1950.svg" width="1" height="1" alt="">
-<img src="vie/small/1955.svg" width="1" height="1" alt="">
-<img src="vie/small/1960.svg" width="1" height="1" alt="">
-<img src="vie/small/1965.svg" width="1" height="1" alt="">
-<img src="vie/small/1970.svg" width="1" height="1" alt="">
-<img src="vie/small/1975.svg" width="1" height="1" alt="">
-<img src="vie/small/1980.svg" width="1" height="1" alt="">
-<img src="vie/small/1985.svg" width="1" height="1" alt="">
-<img src="vie/small/1990.svg" width="1" height="1" alt="">
-<img src="vie/small/1995.svg" width="1" height="1" alt="">
-<img src="vie/small/2000.svg" width="1" height="1" alt="">
-<img src="vie/small/2005.svg" width="1" height="1" alt="">
-<img src="vie/small/2010.svg" width="1" height="1" alt="">
-<img src="vie/small/2015.svg" width="1" height="1" alt="">
-<img src="vie/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="OSLpre">
+<img src="vie/small/1900.svg" alt="">
+<img src="vie/small/1905.svg" alt="">
+<img src="vie/small/1910.svg" alt="">
+<img src="vie/small/1915.svg" alt="">
+<img src="vie/small/1920.svg" alt="">
+<img src="vie/small/1925.svg" alt="">
+<img src="vie/small/1930.svg" alt="">
+<img src="vie/small/1935.svg" alt="">
+<img src="vie/small/1940.svg" alt="">
+<img src="vie/small/1945.svg" alt="">
+<img src="vie/small/1950.svg" alt="">
+<img src="vie/small/1955.svg" alt="">
+<img src="vie/small/1960.svg" alt="">
+<img src="vie/small/1965.svg" alt="">
+<img src="vie/small/1970.svg" alt="">
+<img src="vie/small/1975.svg" alt="">
+<img src="vie/small/1980.svg" alt="">
+<img src="vie/small/1985.svg" alt="">
+<img src="vie/small/1990.svg" alt="">
+<img src="vie/small/1995.svg" alt="">
+<img src="vie/small/2000.svg" alt="">
+<img src="vie/small/2005.svg" alt="">
+<img src="vie/small/2010.svg" alt="">
+<img src="vie/small/2015.svg" alt="">
+<img src="vie/small/2020.svg" alt="">
 </div>
 <div id="TYOpre">
-<img src="tyo/small/1905.svg" width="1" height="1" alt="">
-<img src="tyo/small/1910.svg" width="1" height="1" alt="">
-<img src="tyo/small/1915.svg" width="1" height="1" alt="">
-<img src="tyo/small/1920.svg" width="1" height="1" alt="">
-<img src="tyo/small/1925.svg" width="1" height="1" alt="">
-<img src="tyo/small/1930.svg" width="1" height="1" alt="">
-<img src="tyo/small/1935.svg" width="1" height="1" alt="">
-<img src="tyo/small/1940.svg" width="1" height="1" alt="">
-<img src="tyo/small/1945.svg" width="1" height="1" alt="">
-<img src="tyo/small/1950.svg" width="1" height="1" alt="">
-<img src="tyo/small/1955.svg" width="1" height="1" alt="">
-<img src="tyo/small/1960.svg" width="1" height="1" alt="">
-<img src="tyo/small/1965.svg" width="1" height="1" alt="">
-<img src="tyo/small/1970.svg" width="1" height="1" alt="">
-<img src="tyo/small/1975.svg" width="1" height="1" alt="">
-<img src="tyo/small/1980.svg" width="1" height="1" alt="">
-<img src="tyo/small/1985.svg" width="1" height="1" alt="">
-<img src="tyo/small/1990.svg" width="1" height="1" alt="">
-<img src="tyo/small/1995.svg" width="1" height="1" alt="">
-<img src="tyo/small/2000.svg" width="1" height="1" alt="">
-<img src="tyo/small/2005.svg" width="1" height="1" alt="">
-<img src="tyo/small/2010.svg" width="1" height="1" alt="">
-<img src="tyo/small/2015.svg" width="1" height="1" alt="">
-<img src="tyo/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="DUSpre">
-</div>
-<div id="NCLpre">
-</div>
-<div id="PITpre">
+<img src="tyo/small/1905.svg" alt="">
+<img src="tyo/small/1910.svg" alt="">
+<img src="tyo/small/1915.svg" alt="">
+<img src="tyo/small/1920.svg" alt="">
+<img src="tyo/small/1925.svg" alt="">
+<img src="tyo/small/1930.svg" alt="">
+<img src="tyo/small/1935.svg" alt="">
+<img src="tyo/small/1940.svg" alt="">
+<img src="tyo/small/1945.svg" alt="">
+<img src="tyo/small/1950.svg" alt="">
+<img src="tyo/small/1955.svg" alt="">
+<img src="tyo/small/1960.svg" alt="">
+<img src="tyo/small/1965.svg" alt="">
+<img src="tyo/small/1970.svg" alt="">
+<img src="tyo/small/1975.svg" alt="">
+<img src="tyo/small/1980.svg" alt="">
+<img src="tyo/small/1985.svg" alt="">
+<img src="tyo/small/1990.svg" alt="">
+<img src="tyo/small/1995.svg" alt="">
+<img src="tyo/small/2000.svg" alt="">
+<img src="tyo/small/2005.svg" alt="">
+<img src="tyo/small/2010.svg" alt="">
+<img src="tyo/small/2015.svg" alt="">
+<img src="tyo/small/2020.svg" alt="">
 </div>
 <div id="OSApre">
-<img src="osa/small/1905.svg" width="1" height="1" alt="">
-<img src="osa/small/1910.svg" width="1" height="1" alt="">
-<img src="osa/small/1915.svg" width="1" height="1" alt="">
-<img src="osa/small/1920.svg" width="1" height="1" alt="">
-<img src="osa/small/1925.svg" width="1" height="1" alt="">
-<img src="osa/small/1930.svg" width="1" height="1" alt="">
-<img src="osa/small/1935.svg" width="1" height="1" alt="">
-<img src="osa/small/1940.svg" width="1" height="1" alt="">
-<img src="osa/small/1945.svg" width="1" height="1" alt="">
-<img src="osa/small/1950.svg" width="1" height="1" alt="">
-<img src="osa/small/1955.svg" width="1" height="1" alt="">
-<img src="osa/small/1960.svg" width="1" height="1" alt="">
-<img src="osa/small/1965.svg" width="1" height="1" alt="">
-<img src="osa/small/1970.svg" width="1" height="1" alt="">
-<img src="osa/small/1975.svg" width="1" height="1" alt="">
-<img src="osa/small/1980.svg" width="1" height="1" alt="">
-<img src="osa/small/1985.svg" width="1" height="1" alt="">
-<img src="osa/small/1990.svg" width="1" height="1" alt="">
-<img src="osa/small/1995.svg" width="1" height="1" alt="">
-<img src="osa/small/2000.svg" width="1" height="1" alt="">
-<img src="osa/small/2005.svg" width="1" height="1" alt="">
-<img src="osa/small/2010.svg" width="1" height="1" alt="">
-<img src="osa/small/2015.svg" width="1" height="1" alt="">
-<img src="osa/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="PHLpre">
-</div>
-<div id="LAXpre">
-</div>
-<div id="HAMpre">
-</div>
-<div id="CAIpre">
-</div>
-<div id="TAKpre">
-</div>
-<div id="KOJpre">
-</div>
-<div id="YVRpre">
-</div>
-<div id="NGOpre">
-</div>
-<div id="BUEpre">
-</div>
-<div id="FUKpre">
+<img src="osa/small/1905.svg" alt="">
+<img src="osa/small/1910.svg" alt="">
+<img src="osa/small/1915.svg" alt="">
+<img src="osa/small/1920.svg" alt="">
+<img src="osa/small/1925.svg" alt="">
+<img src="osa/small/1930.svg" alt="">
+<img src="osa/small/1935.svg" alt="">
+<img src="osa/small/1940.svg" alt="">
+<img src="osa/small/1945.svg" alt="">
+<img src="osa/small/1950.svg" alt="">
+<img src="osa/small/1955.svg" alt="">
+<img src="osa/small/1960.svg" alt="">
+<img src="osa/small/1965.svg" alt="">
+<img src="osa/small/1970.svg" alt="">
+<img src="osa/small/1975.svg" alt="">
+<img src="osa/small/1980.svg" alt="">
+<img src="osa/small/1985.svg" alt="">
+<img src="osa/small/1990.svg" alt="">
+<img src="osa/small/1995.svg" alt="">
+<img src="osa/small/2000.svg" alt="">
+<img src="osa/small/2005.svg" alt="">
+<img src="osa/small/2010.svg" alt="">
+<img src="osa/small/2015.svg" alt="">
+<img src="osa/small/2020.svg" alt="">
 </div>
 <div id="SFOpre">
-<img src="sfo/small/1920.svg" width="1" height="1" alt="">
-<img src="sfo/small/1925.svg" width="1" height="1" alt="">
-<img src="sfo/small/1930.svg" width="1" height="1" alt="">
-<img src="sfo/small/1935.svg" width="1" height="1" alt="">
-<img src="sfo/small/1940.svg" width="1" height="1" alt="">
-<img src="sfo/small/1945.svg" width="1" height="1" alt="">
-<img src="sfo/small/1950.svg" width="1" height="1" alt="">
-<img src="sfo/small/1955.svg" width="1" height="1" alt="">
-<img src="sfo/small/1960.svg" width="1" height="1" alt="">
-<img src="sfo/small/1965.svg" width="1" height="1" alt="">
-<img src="sfo/small/1970.svg" width="1" height="1" alt="">
-<img src="sfo/small/1975.svg" width="1" height="1" alt="">
-<img src="sfo/small/1980.svg" width="1" height="1" alt="">
-<img src="sfo/small/1985.svg" width="1" height="1" alt="">
-<img src="sfo/small/1990.svg" width="1" height="1" alt="">
-<img src="sfo/small/1995.svg" width="1" height="1" alt="">
-<img src="sfo/small/2000.svg" width="1" height="1" alt="">
-<img src="sfo/small/2005.svg" width="1" height="1" alt="">
-<img src="sfo/small/2010.svg" width="1" height="1" alt="">
-<img src="sfo/small/2015.svg" width="1" height="1" alt="">
-<img src="sfo/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="VLCpre">
+<img src="sfo/small/1920.svg" alt="">
+<img src="sfo/small/1925.svg" alt="">
+<img src="sfo/small/1930.svg" alt="">
+<img src="sfo/small/1935.svg" alt="">
+<img src="sfo/small/1940.svg" alt="">
+<img src="sfo/small/1945.svg" alt="">
+<img src="sfo/small/1950.svg" alt="">
+<img src="sfo/small/1955.svg" alt="">
+<img src="sfo/small/1960.svg" alt="">
+<img src="sfo/small/1965.svg" alt="">
+<img src="sfo/small/1970.svg" alt="">
+<img src="sfo/small/1975.svg" alt="">
+<img src="sfo/small/1980.svg" alt="">
+<img src="sfo/small/1985.svg" alt="">
+<img src="sfo/small/1990.svg" alt="">
+<img src="sfo/small/1995.svg" alt="">
+<img src="sfo/small/2000.svg" alt="">
+<img src="sfo/small/2005.svg" alt="">
+<img src="sfo/small/2010.svg" alt="">
+<img src="sfo/small/2015.svg" alt="">
+<img src="sfo/small/2020.svg" alt="">
 </div>
 <div id="MADpre">
-<img src="mad/small/1920.svg" width="1" height="1" alt="">
-<img src="mad/small/1925.svg" width="1" height="1" alt="">
-<img src="mad/small/1930.svg" width="1" height="1" alt="">
-<img src="mad/small/1935.svg" width="1" height="1" alt="">
-<img src="mad/small/1940.svg" width="1" height="1" alt="">
-<img src="mad/small/1945.svg" width="1" height="1" alt="">
-<img src="mad/small/1950.svg" width="1" height="1" alt="">
-<img src="mad/small/1955.svg" width="1" height="1" alt="">
-<img src="mad/small/1960.svg" width="1" height="1" alt="">
-<img src="mad/small/1965.svg" width="1" height="1" alt="">
-<img src="mad/small/1970.svg" width="1" height="1" alt="">
-<img src="mad/small/1975.svg" width="1" height="1" alt="">
-<img src="mad/small/1980.svg" width="1" height="1" alt="">
-<img src="mad/small/1985.svg" width="1" height="1" alt="">
-<img src="mad/small/1990.svg" width="1" height="1" alt="">
-<img src="mad/small/1995.svg" width="1" height="1" alt="">
-<img src="mad/small/2000.svg" width="1" height="1" alt="">
-<img src="mad/small/2005.svg" width="1" height="1" alt="">
-<img src="mad/small/2010.svg" width="1" height="1" alt="">
-<img src="mad/small/2015.svg" width="1" height="1" alt="">
-<img src="mad/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="CLEpre">
-</div>
-<div id="HIJpre">
-</div>
-<div id="TOYpre">
-</div>
-<div id="BCNpre">
-</div>
-<div id="BOMpre">
-</div>
-<div id="FSZpre">
-</div>
-<div id="STOpre">
-</div>
-<div id="MYJpre">
-</div>
-<div id="ADLpre">
-</div>
-<div id="ATHpre">
-</div>
-<div id="MANpre">
-</div>
-<div id="CPHpre">
+<img src="mad/small/1920.svg" alt="">
+<img src="mad/small/1925.svg" alt="">
+<img src="mad/small/1930.svg" alt="">
+<img src="mad/small/1935.svg" alt="">
+<img src="mad/small/1940.svg" alt="">
+<img src="mad/small/1945.svg" alt="">
+<img src="mad/small/1950.svg" alt="">
+<img src="mad/small/1955.svg" alt="">
+<img src="mad/small/1960.svg" alt="">
+<img src="mad/small/1965.svg" alt="">
+<img src="mad/small/1970.svg" alt="">
+<img src="mad/small/1975.svg" alt="">
+<img src="mad/small/1980.svg" alt="">
+<img src="mad/small/1985.svg" alt="">
+<img src="mad/small/1990.svg" alt="">
+<img src="mad/small/1995.svg" alt="">
+<img src="mad/small/2000.svg" alt="">
+<img src="mad/small/2005.svg" alt="">
+<img src="mad/small/2010.svg" alt="">
+<img src="mad/small/2015.svg" alt="">
+<img src="mad/small/2020.svg" alt="">
 </div>
 <div id="MOWpre">
-<img src="mow/small/1935.svg" width="1" height="1" alt="">
-<img src="mow/small/1940.svg" width="1" height="1" alt="">
-<img src="mow/small/1945.svg" width="1" height="1" alt="">
-<img src="mow/small/1950.svg" width="1" height="1" alt="">
-<img src="mow/small/1955.svg" width="1" height="1" alt="">
-<img src="mow/small/1960.svg" width="1" height="1" alt="">
-<img src="mow/small/1965.svg" width="1" height="1" alt="">
-<img src="mow/small/1970.svg" width="1" height="1" alt="">
-<img src="mow/small/1975.svg" width="1" height="1" alt="">
-<img src="mow/small/1980.svg" width="1" height="1" alt="">
-<img src="mow/small/1985.svg" width="1" height="1" alt="">
-<img src="mow/small/1990.svg" width="1" height="1" alt="">
-<img src="mow/small/1995.svg" width="1" height="1" alt="">
-<img src="mow/small/2000.svg" width="1" height="1" alt="">
-<img src="mow/small/2005.svg" width="1" height="1" alt="">
-<img src="mow/small/2010.svg" width="1" height="1" alt="">
-<img src="mow/small/2015.svg" width="1" height="1" alt="">
-<img src="mow/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="RIOpre">
-</div>
-<div id="PMEpre">
-</div>
-<div id="NAPpre">
-</div>
-<div id="BRQpre">
-</div>
-<div id="BRUpre">
-</div>
-<div id="YTOpre">
-</div>
-<div id="PERpre">
-</div>
-<div id="ROMpre">
-</div>
-<div id="GOTpre">
-</div>
-<div id="LEDpre">
-</div>
-<div id="FKBpre">
+<img src="mow/small/1935.svg" alt="">
+<img src="mow/small/1940.svg" alt="">
+<img src="mow/small/1945.svg" alt="">
+<img src="mow/small/1950.svg" alt="">
+<img src="mow/small/1955.svg" alt="">
+<img src="mow/small/1960.svg" alt="">
+<img src="mow/small/1965.svg" alt="">
+<img src="mow/small/1970.svg" alt="">
+<img src="mow/small/1975.svg" alt="">
+<img src="mow/small/1980.svg" alt="">
+<img src="mow/small/1985.svg" alt="">
+<img src="mow/small/1990.svg" alt="">
+<img src="mow/small/1995.svg" alt="">
+<img src="mow/small/2000.svg" alt="">
+<img src="mow/small/2005.svg" alt="">
+<img src="mow/small/2010.svg" alt="">
+<img src="mow/small/2015.svg" alt="">
+<img src="mow/small/2020.svg" alt="">
 </div>
 <div id="MILpre">
-<img src="mil/small/1960.svg" width="1" height="1" alt="">
-<img src="mil/small/1965.svg" width="1" height="1" alt="">
-<img src="mil/small/1970.svg" width="1" height="1" alt="">
-<img src="mil/small/1975.svg" width="1" height="1" alt="">
-<img src="mil/small/1980.svg" width="1" height="1" alt="">
-<img src="mil/small/1985.svg" width="1" height="1" alt="">
-<img src="mil/small/1990.svg" width="1" height="1" alt="">
-<img src="mil/small/1995.svg" width="1" height="1" alt="">
-<img src="mil/small/2000.svg" width="1" height="1" alt="">
-<img src="mil/small/2005.svg" width="1" height="1" alt="">
-<img src="mil/small/2010.svg" width="1" height="1" alt="">
-<img src="mil/small/2015.svg" width="1" height="1" alt="">
-<img src="mil/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="LISpre">
-</div>
-<div id="KBPpre">
-</div>
-<div id="AMSpre">
-</div>
-<div id="SOFpre">
-</div>
-<div id="BRNpre">
-</div>
-<div id="TBSpre">
-</div>
-<div id="YMQpre">
-</div>
-<div id="MAApre">
-</div>
-<div id="BREpre">
-</div>
-<div id="BAKpre">
-</div>
-<div id="SDJpre">
-</div>
-<div id="FRApre">
-</div>
-<div id="BFEpre">
-</div>
-<div id="MHGpre">
+<img src="mil/small/1960.svg" alt="">
+<img src="mil/small/1965.svg" alt="">
+<img src="mil/small/1970.svg" alt="">
+<img src="mil/small/1975.svg" alt="">
+<img src="mil/small/1980.svg" alt="">
+<img src="mil/small/1985.svg" alt="">
+<img src="mil/small/1990.svg" alt="">
+<img src="mil/small/1995.svg" alt="">
+<img src="mil/small/2000.svg" alt="">
+<img src="mil/small/2005.svg" alt="">
+<img src="mil/small/2010.svg" alt="">
+<img src="mil/small/2015.svg" alt="">
+<img src="mil/small/2020.svg" alt="">
 </div>
 <div id="MEXpre">
-<img src="mex/small/1970.svg" width="1" height="1" alt="">
-<img src="mex/small/1975.svg" width="1" height="1" alt="">
-<img src="mex/small/1980.svg" width="1" height="1" alt="">
-<img src="mex/small/1985.svg" width="1" height="1" alt="">
-<img src="mex/small/1990.svg" width="1" height="1" alt="">
-<img src="mex/small/1995.svg" width="1" height="1" alt="">
-<img src="mex/small/2000.svg" width="1" height="1" alt="">
-<img src="mex/small/2005.svg" width="1" height="1" alt="">
-<img src="mex/small/2010.svg" width="1" height="1" alt="">
-<img src="mex/small/2015.svg" width="1" height="1" alt="">
-<img src="mex/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="BWEpre">
-</div>
-<div id="NUEpre">
+<img src="mex/small/1970.svg" alt="">
+<img src="mex/small/1975.svg" alt="">
+<img src="mex/small/1980.svg" alt="">
+<img src="mex/small/1985.svg" alt="">
+<img src="mex/small/1990.svg" alt="">
+<img src="mex/small/1995.svg" alt="">
+<img src="mex/small/2000.svg" alt="">
+<img src="mex/small/2005.svg" alt="">
+<img src="mex/small/2010.svg" alt="">
+<img src="mex/small/2015.svg" alt="">
+<img src="mex/small/2020.svg" alt="">
 </div>
 <div id="MUCpre">
-<img src="muc/small/1975.svg" width="1" height="1" alt="">
-<img src="muc/small/1980.svg" width="1" height="1" alt="">
-<img src="muc/small/1985.svg" width="1" height="1" alt="">
-<img src="muc/small/1990.svg" width="1" height="1" alt="">
-<img src="muc/small/1995.svg" width="1" height="1" alt="">
-<img src="muc/small/2000.svg" width="1" height="1" alt="">
-<img src="muc/small/2005.svg" width="1" height="1" alt="">
-<img src="muc/small/2010.svg" width="1" height="1" alt="">
-<img src="muc/small/2015.svg" width="1" height="1" alt="">
-<img src="muc/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="SPKpre">
-</div>
-<div id="STRpre">
-</div>
-<div id="HELpre">
+<img src="muc/small/1975.svg" alt="">
+<img src="muc/small/1980.svg" alt="">
+<img src="muc/small/1985.svg" alt="">
+<img src="muc/small/1990.svg" alt="">
+<img src="muc/small/1995.svg" alt="">
+<img src="muc/small/2000.svg" alt="">
+<img src="muc/small/2005.svg" alt="">
+<img src="muc/small/2010.svg" alt="">
+<img src="muc/small/2015.svg" alt="">
+<img src="muc/small/2020.svg" alt="">
 </div>
 <div id="BJSpre">
-<img src="bjs/small/1975.svg" width="1" height="1" alt="">
-<img src="bjs/small/1980.svg" width="1" height="1" alt="">
-<img src="bjs/small/1985.svg" width="1" height="1" alt="">
-<img src="bjs/small/1990.svg" width="1" height="1" alt="">
-<img src="bjs/small/1995.svg" width="1" height="1" alt="">
-<img src="bjs/small/2000.svg" width="1" height="1" alt="">
-<img src="bjs/small/2005.svg" width="1" height="1" alt="">
-<img src="bjs/small/2010.svg" width="1" height="1" alt="">
-<img src="bjs/small/2015.svg" width="1" height="1" alt="">
-<img src="bjs/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="FNJpre">
-</div>
-<div id="PRGpre">
+<img src="bjs/small/1975.svg" alt="">
+<img src="bjs/small/1980.svg" alt="">
+<img src="bjs/small/1985.svg" alt="">
+<img src="bjs/small/1990.svg" alt="">
+<img src="bjs/small/1995.svg" alt="">
+<img src="bjs/small/2000.svg" alt="">
+<img src="bjs/small/2005.svg" alt="">
+<img src="bjs/small/2010.svg" alt="">
+<img src="bjs/small/2015.svg" alt="">
+<img src="bjs/small/2020.svg" alt="">
 </div>
 <div id="SELpre">
-<img src="sel/small/1965.svg" width="1" height="1" alt="">
-<img src="sel/small/1970.svg" width="1" height="1" alt="">
-<img src="sel/small/1975.svg" width="1" height="1" alt="">
-<img src="sel/small/1980.svg" width="1" height="1" alt="">
-<img src="sel/small/1985.svg" width="1" height="1" alt="">
-<img src="sel/small/1990.svg" width="1" height="1" alt="">
-<img src="sel/small/1995.svg" width="1" height="1" alt="">
-<img src="sel/small/2000.svg" width="1" height="1" alt="">
-<img src="sel/small/2005.svg" width="1" height="1" alt="">
-<img src="sel/small/2010.svg" width="1" height="1" alt="">
-<img src="sel/small/2015.svg" width="1" height="1" alt="">
-<img src="sel/small/2020.svg" width="1" height="1" alt="">
+<img src="sel/small/1965.svg" alt="">
+<img src="sel/small/1970.svg" alt="">
+<img src="sel/small/1975.svg" alt="">
+<img src="sel/small/1980.svg" alt="">
+<img src="sel/small/1985.svg" alt="">
+<img src="sel/small/1990.svg" alt="">
+<img src="sel/small/1995.svg" alt="">
+<img src="sel/small/2000.svg" alt="">
+<img src="sel/small/2005.svg" alt="">
+<img src="sel/small/2010.svg" alt="">
+<img src="sel/small/2015.svg" alt="">
+<img src="sel/small/2020.svg" alt="">
 </div>
 <div id="SAOpre">
-<img src="sao/small/1975.svg" width="1" height="1" alt="">
-<img src="sao/small/1980.svg" width="1" height="1" alt="">
-<img src="sao/small/1985.svg" width="1" height="1" alt="">
-<img src="sao/small/1990.svg" width="1" height="1" alt="">
-<img src="sao/small/1995.svg" width="1" height="1" alt="">
-<img src="sao/small/2000.svg" width="1" height="1" alt="">
-<img src="sao/small/2005.svg" width="1" height="1" alt="">
-<img src="sao/small/2010.svg" width="1" height="1" alt="">
-<img src="sao/small/2015.svg" width="1" height="1" alt="">
-<img src="sao/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="RLGpre">
-</div>
-<div id="SZWpre">
-</div>
-<div id="WAWpre">
-</div>
-<div id="HRKpre">
-</div>
-<div id="SCLpre">
-</div>
-<div id="HAJpre">
-</div>
-<div id="BIOpre">
+<img src="sao/small/1975.svg" alt="">
+<img src="sao/small/1980.svg" alt="">
+<img src="sao/small/1985.svg" alt="">
+<img src="sao/small/1990.svg" alt="">
+<img src="sao/small/1995.svg" alt="">
+<img src="sao/small/2000.svg" alt="">
+<img src="sao/small/2005.svg" alt="">
+<img src="sao/small/2010.svg" alt="">
+<img src="sao/small/2015.svg" alt="">
+<img src="sao/small/2020.svg" alt="">
 </div>
 <div id="WASpre">
-<img src="was/small/1950.svg" width="1" height="1" alt="">
-<img src="was/small/1955.svg" width="1" height="1" alt="">
-<img src="was/small/1960.svg" width="1" height="1" alt="">
-<img src="was/small/1965.svg" width="1" height="1" alt="">
-<img src="was/small/1970.svg" width="1" height="1" alt="">
-<img src="was/small/1975.svg" width="1" height="1" alt="">
-<img src="was/small/1980.svg" width="1" height="1" alt="">
-<img src="was/small/1985.svg" width="1" height="1" alt="">
-<img src="was/small/1990.svg" width="1" height="1" alt="">
-<img src="was/small/1995.svg" width="1" height="1" alt="">
-<img src="was/small/2000.svg" width="1" height="1" alt="">
-<img src="was/small/2005.svg" width="1" height="1" alt="">
-<img src="was/small/2010.svg" width="1" height="1" alt="">
-<img src="was/small/2015.svg" width="1" height="1" alt="">
-<img src="was/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="CRLpre">
-</div>
-<div id="ZRHpre">
-</div>
-<div id="GDLpre">
-</div>
-<div id="TASpre">
-</div>
-<div id="MRSpre">
-</div>
-<div id="GDNpre">
-</div>
-<div id="YEGpre">
-</div>
-<div id="LYNpre">
-</div>
-<div id="MO_pre">
-</div>
-<div id="BHXpre">
-</div>
-<div id="OSRpre">
-</div>
-<div id="LUGpre">
-</div>
-<div id="ATLpre">
+<img src="was/small/1950.svg" alt="">
+<img src="was/small/1955.svg" alt="">
+<img src="was/small/1960.svg" alt="">
+<img src="was/small/1965.svg" alt="">
+<img src="was/small/1970.svg" alt="">
+<img src="was/small/1975.svg" alt="">
+<img src="was/small/1980.svg" alt="">
+<img src="was/small/1985.svg" alt="">
+<img src="was/small/1990.svg" alt="">
+<img src="was/small/1995.svg" alt="">
+<img src="was/small/2000.svg" alt="">
+<img src="was/small/2005.svg" alt="">
+<img src="was/small/2010.svg" alt="">
+<img src="was/small/2015.svg" alt="">
+<img src="was/small/2020.svg" alt="">
 </div>
 <div id="HKGpre">
-<img src="hkg/small/1890.svg" width="1" height="1" alt="">
-<img src="hkg/small/1895.svg" width="1" height="1" alt="">
-<img src="hkg/small/1900.svg" width="1" height="1" alt="">
-<img src="hkg/small/1905.svg" width="1" height="1" alt="">
-<img src="hkg/small/1910.svg" width="1" height="1" alt="">
-<img src="hkg/small/1915.svg" width="1" height="1" alt="">
-<img src="hkg/small/1920.svg" width="1" height="1" alt="">
-<img src="hkg/small/1925.svg" width="1" height="1" alt="">
-<img src="hkg/small/1930.svg" width="1" height="1" alt="">
-<img src="hkg/small/1935.svg" width="1" height="1" alt="">
-<img src="hkg/small/1940.svg" width="1" height="1" alt="">
-<img src="hkg/small/1945.svg" width="1" height="1" alt="">
-<img src="hkg/small/1950.svg" width="1" height="1" alt="">
-<img src="hkg/small/1955.svg" width="1" height="1" alt="">
-<img src="hkg/small/1960.svg" width="1" height="1" alt="">
-<img src="hkg/small/1965.svg" width="1" height="1" alt="">
-<img src="hkg/small/1970.svg" width="1" height="1" alt="">
-<img src="hkg/small/1975.svg" width="1" height="1" alt="">
-<img src="hkg/small/1980.svg" width="1" height="1" alt="">
-<img src="hkg/small/1985.svg" width="1" height="1" alt="">
-<img src="hkg/small/1990.svg" width="1" height="1" alt="">
-<img src="hkg/small/1995.svg" width="1" height="1" alt="">
-<img src="hkg/small/2000.svg" width="1" height="1" alt="">
-<img src="hkg/small/2005.svg" width="1" height="1" alt="">
-<img src="hkg/small/2010.svg" width="1" height="1" alt="">
-<img src="hkg/small/2015.svg" width="1" height="1" alt="">
-<img src="hkg/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="BUHpre">
-</div>
-<div id="BNEpre">
-</div>
-<div id="TUNpre">
-</div>
-<div id="KTWpre">
-</div>
-<div id="EVNpre">
-</div>
-<div id="YYCpre">
-</div>
-<div id="QNCpre">
-</div>
-<div id="SANpre">
-</div>
-<div id="CCSpre">
-</div>
-<div id="LILpre">
-</div>
-<div id="BWIpre">
-</div>
-<div id="YOWpre">
-</div>
-<div id="MIApre">
-</div>
-<div id="MSQpre">
-</div>
-<div id="DUBpre">
-</div>
-<div id="CCUpre">
-</div>
-<div id="BSLpre">
-</div>
-<div id="VOGpre">
-</div>
-<div id="MNLpre">
-</div>
-<div id="TSNpre">
-</div>
-<div id="POApre">
-</div>
-<div id="RECpre">
-</div>
-<div id="BUFpre">
-</div>
-<div id="PUSpre">
-</div>
-<div id="POZpre">
-</div>
-<div id="DRSpre">
-</div>
-<div id="GOJpre">
-</div>
-<div id="OVBpre">
-</div>
-<div id="BHZpre">
-</div>
-<div id="PDXpre">
-</div>
-<div id="CWLpre">
-</div>
-<div id="KWGpre">
-</div>
-<div id="SACpre">
-</div>
-<div id="DTTpre">
+<img src="hkg/small/1890.svg" alt="">
+<img src="hkg/small/1895.svg" alt="">
+<img src="hkg/small/1900.svg" alt="">
+<img src="hkg/small/1905.svg" alt="">
+<img src="hkg/small/1910.svg" alt="">
+<img src="hkg/small/1915.svg" alt="">
+<img src="hkg/small/1920.svg" alt="">
+<img src="hkg/small/1925.svg" alt="">
+<img src="hkg/small/1930.svg" alt="">
+<img src="hkg/small/1935.svg" alt="">
+<img src="hkg/small/1940.svg" alt="">
+<img src="hkg/small/1945.svg" alt="">
+<img src="hkg/small/1950.svg" alt="">
+<img src="hkg/small/1955.svg" alt="">
+<img src="hkg/small/1960.svg" alt="">
+<img src="hkg/small/1965.svg" alt="">
+<img src="hkg/small/1970.svg" alt="">
+<img src="hkg/small/1975.svg" alt="">
+<img src="hkg/small/1980.svg" alt="">
+<img src="hkg/small/1985.svg" alt="">
+<img src="hkg/small/1990.svg" alt="">
+<img src="hkg/small/1995.svg" alt="">
+<img src="hkg/small/2000.svg" alt="">
+<img src="hkg/small/2005.svg" alt="">
+<img src="hkg/small/2010.svg" alt="">
+<img src="hkg/small/2015.svg" alt="">
+<img src="hkg/small/2020.svg" alt="">
 </div>
 <div id="SINpre">
-<img src="sin/small/1975.svg" width="1" height="1" alt="">
-<img src="sin/small/1980.svg" width="1" height="1" alt="">
-<img src="sin/small/1985.svg" width="1" height="1" alt="">
-<img src="sin/small/1990.svg" width="1" height="1" alt="">
-<img src="sin/small/1995.svg" width="1" height="1" alt="">
-<img src="sin/small/2000.svg" width="1" height="1" alt="">
-<img src="sin/small/2005.svg" width="1" height="1" alt="">
-<img src="sin/small/2010.svg" width="1" height="1" alt="">
-<img src="sin/small/2015.svg" width="1" height="1" alt="">
-<img src="sin/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="KUFpre">
-</div>
-<div id="ISTpre">
-</div>
-<div id="DALpre">
-</div>
-<div id="GOApre">
-</div>
-<div id="SEApre">
-</div>
-<div id="BKKpre">
-</div>
-<div id="MTYpre">
-</div>
-<div id="SVXpre">
-</div>
-<div id="QLSpre">
-</div>
-<div id="LEJpre">
-</div>
-<div id="KYApre">
+<img src="sin/small/1975.svg" alt="">
+<img src="sin/small/1980.svg" alt="">
+<img src="sin/small/1985.svg" alt="">
+<img src="sin/small/1990.svg" alt="">
+<img src="sin/small/1995.svg" alt="">
+<img src="sin/small/2000.svg" alt="">
+<img src="sin/small/2005.svg" alt="">
+<img src="sin/small/2010.svg" alt="">
+<img src="sin/small/2015.svg" alt="">
+<img src="sin/small/2020.svg" alt="">
 </div>
 <div id="SHApre">
-<img src="sha/small/1995.svg" width="1" height="1" alt="">
-<img src="sha/small/2000.svg" width="1" height="1" alt="">
-<img src="sha/small/2005.svg" width="1" height="1" alt="">
-<img src="sha/small/2010.svg" width="1" height="1" alt="">
-<img src="sha/small/2015.svg" width="1" height="1" alt="">
-<img src="sha/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="TLSpre">
-</div>
-<div id="STLpre">
-</div>
-<div id="SZDpre">
-</div>
-<div id="DENpre">
-</div>
-<div id="SXBpre">
-</div>
-<div id="UROpre">
-</div>
-<div id="KSFpre">
-</div>
-<div id="KULpre">
-</div>
-<div id="MDEpre">
-</div>
-<div id="DNKpre">
+<img src="sha/small/1995.svg" alt="">
+<img src="sha/small/2000.svg" alt="">
+<img src="sha/small/2005.svg" alt="">
+<img src="sha/small/2010.svg" alt="">
+<img src="sha/small/2015.svg" alt="">
+<img src="sha/small/2020.svg" alt="">
 </div>
 <div id="TPEpre">
-<img src="tpe/small/2000.svg" width="1" height="1" alt="">
-<img src="tpe/small/2005.svg" width="1" height="1" alt="">
-<img src="tpe/small/2010.svg" width="1" height="1" alt="">
-<img src="tpe/small/2015.svg" width="1" height="1" alt="">
-<img src="tpe/small/2020.svg" width="1" height="1" alt="">
-</div>
-<div id="ANKpre">
-</div>
-<div id="UIOpre">
-</div>
-<div id="TAEpre">
-</div>
-<div id="JAXpre">
-</div>
-<div id="CTApre">
-</div>
-<div id="CANpre">
-</div>
-<div id="SLCpre">
-</div>
-<div id="THRpre">
-</div>
-<div id="IZMpre">
-</div>
-<div id="BOGpre">
-</div>
-<div id="BSBpre">
-</div>
-<div id="SCNpre">
-</div>
-<div id="RNSpre">
-</div>
-<div id="BTZpre">
-</div>
-<div id="OPOpre">
-</div>
-<div id="CGQpre">
-</div>
-<div id="DLCpre">
-</div>
-<div id="DELpre">
-</div>
-<div id="LIMpre">
-</div>
-<div id="OKApre">
-</div>
-<div id="JKTpre">
-</div>
-<div id="NQTpre">
-</div>
-<div id="KWJpre">
-</div>
-<div id="MSPpre">
-</div>
-<div id="CLTpre">
-</div>
-<div id="LASpre">
-</div>
-<div id="WUHpre">
-</div>
-<div id="LNZpre">
-</div>
-<div id="TLVpre">
-</div>
-<div id="SJUpre">
-</div>
-<div id="CKGpre">
-</div>
-<div id="BFSpre">
-</div>
-<div id="NKGpre">
-</div>
-<div id="KZNpre">
-</div>
-<div id="VAPpre">
-</div>
-<div id="TRNpre">
-</div>
-<div id="CJJpre">
-</div>
-<div id="VLNpre">
-</div>
-<div id="MARpre">
-</div>
-<div id="EMLpre">
-</div>
-<div id="GUApre">
-</div>
-<div id="PMIpre">
-</div>
-<div id="TCIpre">
-</div>
-<div id="ALCpre">
-</div>
-<div id="PEGpre">
-</div>
-<div id="AKLpre">
-</div>
-<div id="KHHpre">
-</div>
-<div id="XMNpre">
-</div>
-<div id="KRKpre">
-</div>
-<div id="ZDApre">
-</div>
-<div id="QARpre">
-</div>
-<div id="SDQpre">
-</div>
-<div id="ADApre">
-</div>
-<div id="SVQpre">
-</div>
-<div id="SKIpre">
-</div>
-<div id="JNBpre">
-</div>
-<div id="DXBpre">
-</div>
-<div id="AGBpre">
-</div>
-<div id="GRQpre">
-</div>
-<div id="AYTpre">
-</div>
-<div id="BGOpre">
-</div>
-<div id="CTUpre">
-</div>
-<div id="SHEpre">
-</div>
-<div id="SZFpre">
-</div>
-<div id="MLHpre">
-</div>
-<div id="ORFpre">
-</div>
-<div id="MHDpre">
-</div>
-<div id="XIYpre">
-</div>
-<div id="AGPpre">
-</div>
-<div id="BLRpre">
-</div>
-<div id="ALGpre">
-</div>
-<div id="ALApre">
-</div>
-<div id="YWGpre">
-</div>
-<div id="SZVpre">
-</div>
-<div id="HGHpre">
-</div>
-<div id="LHEpre">
-</div>
-<div id="VBSpre">
-</div>
-<div id="KMGpre">
-</div>
-<div id="IFNpre">
-</div>
-<div id="CZLpre">
-</div>
-<div id="HRBpre">
-</div>
-<div id="CGOpre">
-</div>
-<div id="PACpre">
-</div>
-<div id="CSXpre">
-</div>
-<div id="NGBpre">
-</div>
-<div id="LPBpre">
-</div>
-<div id="EDIpre">
-</div>
-<div id="SSApre">
-</div>
-<div id="WUXpre">
-</div>
-<div id="FORpre">
-</div>
-<div id="SYZpre">
-</div>
-<div id="HFDpre">
-</div>
-<div id="JAIpre">
-</div>
-<div id="ISBpre">
-</div>
-<div id="PC_pre">
-</div>
-<div id="TBZpre">
-</div>
-<div id="SZZpre">
-</div>
-<div id="ADDpre">
-</div>
-<div id="TAOpre">
-</div>
-<div id="KHNpre">
-</div>
-<div id="FOCpre">
-</div>
-<div id="NNGpre">
-</div>
-<div id="BODpre">
-</div>
-<div id="HFEpre">
-</div>
-<div id="MUXpre">
-</div>
-<div id="SJWpre">
-</div>
-<div id="COKpre">
-</div>
-<div id="LKOpre">
-</div>
-<div id="GRXpre">
-</div>
-<div id="HYDpre">
-</div>
-<div id="KWEpre">
-</div>
-<div id="ABVpre">
-</div>
-<div id="WLGpre">
-</div>
-<div id="PLMpre">
-</div>
-<div id="BRSpre">
-</div>
-<div id="URCpre">
-</div>
-<div id="GVApre">
-</div>
-<div id="WNZpre">
-</div>
-<div id="KCOpre">
-</div>
-<div id="TNApre">
-</div>
-<div id="AARpre">
-</div>
-<div id="DOHpre">
-</div>
-<div id="YKFpre">
-</div>
-<div id="LHWpre">
-</div>
-<div id="NCEpre">
-</div>
-<div id="CZXpre">
-</div>
-<div id="XUZpre">
-</div>
-<div id="RMIpre">
-</div>
-<div id="MFMpre">
-</div>
-<div id="HETpre">
-</div>
-<div id="MRUpre">
-</div>
-<div id="THQpre">
-</div>
-<div id="TXGpre">
+<img src="tpe/small/2000.svg" alt="">
+<img src="tpe/small/2005.svg" alt="">
+<img src="tpe/small/2010.svg" alt="">
+<img src="tpe/small/2015.svg" alt="">
+<img src="tpe/small/2020.svg" alt="">
 </div>
 </div></body></html>
