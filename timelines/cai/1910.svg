@@ -27,16 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/caiosm.png"
-     id="image10"
-     height="5258.25"
-     width="3213.375"
-     y="-158.25"
+     style="display:none"
      x="-160"
-     style="display:none" />
-  <path
-     style="fill:none;stroke:#808000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path3778"
-     d="m 754.5,1701 140.5,-63 56.5,-28 45.5,-22 24,-16.5 43,-45.5 20.5,-16 39.5,-22.5 77.5,-39 26,-9.5 32,-3 12,-4.5 23.5,-13 93.5,-67.5 119,-74 29,-11.5 29.5,-7.5 20.5,-4" />
+     y="-158.25"
+     width="3213.375"
+     height="5258.25"
+     id="image10" />
   <text
      style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
@@ -63,4 +59,12 @@
      id="path4181"
      d="m 1585.8499,1254.0395 22.921,3.8201 25.7862,7.6404 27.6963,11.4605 54.4375,38.2018 44.4095,31.0389 27.6962,16.7132 26.7413,18.1459 30.0838,17.6683 28.1738,3.8201 41.0669,-2.8651 71.1507,-12.8931 93.5943,-36.2916"
      style="fill:none;fill-rule:evenodd;stroke:#808000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     style="fill:none;stroke:#808000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3778-3"
+     d="m 754.5,1701 140.5,-63 56.5,-28 45.5,-22 24,-16.5 43,-45.5 20.5,-16 39.5,-22.5 77.5,-39 26,-9.5 32,-3 12,-4.5 23.5,-13 93.5,-67.5 119,-74 29,-11.5 29.5,-7.5 20.5,-4 16,-8" />
+  <path
+     style="fill:none;stroke:#808000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     id="path3782"
+     d="m 1783.5439,1191.9616 21.2497,30.0839 3.5814,4.0589 0.079,4.812 -1.9456,1.5732 -14.2688,13.5173 -11.6472,0.9772 -29.9693,27.2108 -20.8506,15.5127 -5.8639,-1.3832 -29.2272,-42.3048 -7.8352,-3.9182 -26.4691,-12.4912 -16.8766,-0.1102 -23.5,8 -21,9.5" />
 </svg>

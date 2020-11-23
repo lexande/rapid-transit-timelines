@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/caiosm.png"
-     id="image10"
-     height="5258.25"
-     width="3213.375"
-     y="-158.25"
+     style="display:none"
      x="-160"
-     style="display:none" />
+     y="-158.25"
+     width="3213.375"
+     height="5258.25"
+     id="image10" />
   <path
      d="m 754.5,1701 140.5,-63 56.5,-28 45.5,-22 24,-16.5 43,-45.5 20.5,-16 39.5,-22.5 77.5,-39 26,-9.5 32,-3 12,-4.5 23.5,-13 93.5,-67.5 119,-74 29,-11.5 29.5,-7.5 20.5,-4 16,-8"
      id="path3778"
@@ -76,13 +76,7 @@
      id="path2994"
      style="fill:none;stroke:#808000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
-     id="path7606"
-     d="m 1897.1941,1177.1585 9.5504,2.8651 140.3914,122.7231 31.994,35.8141 0.955,63.9879 1.4326,2.3877 138.0038,15.7582"
-     style="fill:none;fill-rule:evenodd;stroke:#808000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
-
-  <path
      d="m 646.78968,1997.36 -23.30732,92.2294 -20.98236,95.4104 -12,18 -27,39 -5.5,16 -5.5,36 -4.5,25.5 -32.5,129 -1,23.5 3,52 -15,86.5 -3,36.5 3,26 23,45 31,36.5 33,42.5 103.5,159.5 114.5,187.5 136.5,216 22,27 29,24 92.5,64 28,22 22.5,20.5 23.5,34 42,85.5 89,176.5 18.5,23 36.5,38.5 11.5,20.5 198.5,471 95,196 86.5,140 47,78.5 104.5,138.5 10.5,19 1,39"
      id="path3776"
      style="fill:none;stroke:#308ccb;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-
 </svg>
