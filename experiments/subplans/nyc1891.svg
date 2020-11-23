@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../../timelines/streetmap/nycosm.png"
-     style="display:none;fill:#501616"
-     id="image12"
-     height="5376"
-     width="5888"
+     x="-512"
      y="0"
-     x="-512" />
+     width="5888"
+     height="5376"
+     id="image12"
+     style="display:none;fill:#501616" />
   <path
      style="fill:none;stroke:#ff0080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path7444-8"
@@ -228,19 +228,19 @@
      d="m 2214.459,2916.1582 35.5156,3.6738 96.3496,90.8262 -23.4316,39.6523 c -0.035,0.059 -0.068,0.1198 -0.098,0.1817 l -9.8047,20.2207 -17.7871,15.334 -1.4353,2.7293 -0.3775,6.6696 6.3096,8.272"
      style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#800000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
   <path
-     d="m 2421.0034,4117.0471 -41.816,-33.4505 -4.6673,-9.1903 -9.0444,-14.9436 -41.4477,-33.2607 -1.489,-4.1579 0.358,-10.081"
-     id="path6283"
-     style="fill:none;stroke:#006000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     style="fill:none;stroke:#006000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path3616"
-     d="m 2646.6317,5200.1986 6.8309,-31.0619 1.2326,-13.1372 7.2543,-68.9661 -10.8316,-114.033 2.8824,-28.0009 20,-180 -3,-26 -70,-479 -2.6949,-14.9746 -4.6271,-5.339" />
-  <path
-     style="fill:none;stroke:#006000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path6848"
-     d="m 2420.0003,4116.4995 13,5 11,0.5 64,50.5 82.5,65 5.0847,4.4407" />
-  <path
      style="fill:none;stroke:#800000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3606"
      d="m 2787.5486,3863.5218 5.4514,114.4785 -35,155 31,216 52,357 39,276 1,48 -65,130 -1,18" />
+  <path
+     id="path6283"
+     d="m 2385.7591,4088.8532 -6.5717,-5.257 -4.6673,-9.1903 -9.0444,-14.9436 -41.4477,-33.2607 -1.489,-4.1579 0.358,-10.081"
+     style="fill:none;stroke:#006000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="path894"
+     d="m 2385.7591,4088.8534 35.2443,28.1935 11.9969,4.4524 11,0.5 64,50.5 82.5,65 5.0847,4.4407"
+     style="fill:none;stroke:#006000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#006000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3616"
+     d="m 2646.6317,5200.1984 6.8309,-31.0619 1.2326,-13.1372 7.2543,-68.9661 -10.8316,-114.033 2.8824,-28.0009 20,-180 -3,-26 -70,-479 -2.6949,-14.9746 -4.6271,-5.339" />
 </svg>
