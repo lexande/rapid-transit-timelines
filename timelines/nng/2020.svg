@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
-   width="3800"
-   height="2850"
-   viewBox="0 0 3800 2850">
+   width="4300"
+   height="2950"
+   viewBox="0 0 4300 2950">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,21 +26,25 @@
   <defs
      id="defs6" />
   <image
+     xlink:href="../streetmap/nngosm.png"
      style="display:none"
-     width="4044"
-     height="3421.8462"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/nngosm.png"
-     id="image10"
+     y="-246.84619"
      x="-225"
-     y="-246.84619" />
+     id="image10"
+     preserveAspectRatio="none"
+     height="3421.8462"
+     width="4666.1538" />
+  <path
+     style="opacity:0.99918;fill:none;stroke:#c1d60f;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 1020.2342,2045.1846 61.1723,24.0338 149.2947,49.4017 30.3303,5.3944 322.9212,0.4716 85.3551,0.9385 29.8312,7.6482 72.9992,20.3968 35.0972,5.0007 176.0007,-0.8444 28.2285,-4.7144 66.859,-25.975 20.0836,-4.4385 39.6945,4.3239 74.7244,-0.9485 53.2768,7.43 26.2355,-0.3015 84.8824,-11.4409 95.9187,-29.5589 53.8059,-23.0442 80.8388,-44.5046 31.8122,-12.0261 34.5851,-7.0667 148.9705,4.8258 75.7373,2.1726 158.7915,26.2705 104.9918,18.5081 25.0021,11.6409 46.93,39.0543 134.46,123.4609 34.7175,17.1917 30.4722,9.3201 36.9349,-1.0063 101.4335,-21.3474 70.3967,-2.9752 43.2362,-6.9798 137.5867,-26.1944 21.3403,-7.3561 42.8451,-15.5433 197.0339,-40.8329 16.3549,-10.5044 26.5662,-29.1927 12.573,-8.2328 17.1199,-2.7161 32.3225,-0.025"
+     id="path836" />
   <path
      id="path816"
      d="m 1415.5,316.99994 89.5,-1 333,-18 79,-10.5 40.5,8.5 59.5,16.5 10.5,10.5 13,17.5 33,10.5 46,3.5 45.5,-7.5 95,-28 35.5,0.5 90,17 35,25.5 49,34 16,9 33.5,4.5 78,1 31,9 18.5,15 7.5,24.5 v 18.5 l -13.5,236 -15,49 3,131 3.5,12 30,72.5 8.5,36.49996 13,29.5 19.5,23.5 20,16 143.5,76 10,16.5 v 10 l -4.5,13.5 -19.5,34.5 -3.5,12 3,37.5 5,32 0.5,22.5 -7.5,21.5 -17,22 -84,87 -8,19 v 15 l 3,13.5 10,15.5 42,36.5 17.5,24.5 6.5,13 2.5,16.5 -1.5,37 4,18.5 16.5,26.5 31,50.5 44,72.5 7.5,23.5 2,24.5 2,37.5 5.5,194.5 7,41 17,36 17,22.5 30,32.5 20,37 7.5,28 2.5,42 v 327"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#86318c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0073be;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path818"
-     d="m 1832.5,116.99994 -15.5,218 71,319 17.5,54.5 14.5,28.5 152,246.5 9,30.99996 -1,20 -9.5,24 -4.5,32.5 5.9142,36.3536 67.9394,119.5 21.1464,56.818 -1.5,16.8284 -5.5,11 -81,87.5 -57.5,76.5 -7.5,24 8,478 6,33.5 8.5,19.5 50.5,54 19,38.5 7.5,40 6,145 9,27.5 34,35 38.5,35.5 18,24 24,52.5 13,18.5 22,24 37,36 11.5,17.5 25,81 21.5,32.5"
+     d="m 1832.5,116.99994 -15.5,218 71,319 17.5,54.5 14.5,28.5 152,246.5 9,30.99996 -1,20 -9.5,24 -4.5,32.5 5.9142,36.3536 67.9394,119.5 21.1464,56.818 -1.5,16.8284 -5.5,11 -81,87.5 -57.5,76.5 -7.5,24 8,478 6,33.5 8.5,19.5 50.5,54 19,38.5 7.5,40 6,145 9,27.5 34,35 38.5,35.5 18,24 24,52.5 13,18.5 22,24 37,36 11.5,17.5 25,81 21.5,32.5 54.0894,75.4391 13.5979,8.6492 10.7358,1.9712 14.6822,0.3015 37.065,-12.1489 398.9816,-111.6796 32.823,-5.7138 115.162,-17.9644 46.2577,0.5828 112.2154,5.4831"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#e4391f;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path820"
@@ -51,7 +55,7 @@
      y="206.96083"
      id="text3019"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="89.453186"
        y="206.96083"
        id="tspan1">2020</tspan></text>
