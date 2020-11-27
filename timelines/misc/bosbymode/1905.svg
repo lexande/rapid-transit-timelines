@@ -26,13 +26,13 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../../../streetmap/bososm.png"
-     x="-249.69321"
-     y="-998.76392"
-     width="3995.0769"
-     height="4744.1538"
+     xlink:href="../../streetmap/bososm.png"
+     style="display:none;stroke:#00dd00"
      id="image12"
-     style="display:none;stroke:#00dd00" />
+     height="4744.1538"
+     width="3995.0769"
+     y="-998.76392"
+     x="-249.69321" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 541.325,1863.9193 -33.51188,50.5371 -19.86228,22.5934 -25.5727,36.2487 -10.4277,12.4139 -28.45974,19.3658 -13.3425,8.778 -36.5164,24.9294 -30.1962,31.9518 -63.2014,69.5216 -20.3649,22.1205 -12.6403,31.9518 -3.5112,25.9828 -0.9678,22.4353 -3.5,110.25 -10.375,59.875 -24.99996,130.625 -5.48884,27.6031 -6.29035,17.5181 -36.34051,35.1291 -23.1739,27.7384 -61.4458,44.9432 -42.8365,29.494 -21.7694,7.7247 -59.6902,12.6402 -51.2634,12.9914 -28.4406,17.2049 -12.9914,15.8003 -102.1756,152.0345"
@@ -608,10 +608,6 @@
   <path
      id="path10406"
      d="m 1678.3572,1252.2692 77.808,-97.1897"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="path11148"
-     d="m 1121.623,975.5875 -3.6516,-37.9209 8.4268,-11.7975 2.2472,-45.78596 -29.2131,-60.95426 -5.8988,-3.08984 3.0898,-75.5608 -165.16634,-64.60589"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
