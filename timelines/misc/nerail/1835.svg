@@ -6,35 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg2"
    viewBox="0 10 11000 8850"
    height="8850"
    width="11000"
-   version="1.1"
-   sodipodi:docname="1835.svg"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1032"
-     id="namedview41"
-     showgrid="false"
-     inkscape:zoom="0.23490327"
-     inkscape:cx="8594.4826"
-     inkscape:cy="2388.9064"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg2" />
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -186,23 +162,21 @@
      style="display:none;stroke:#808000"
      id="g4322">
     <image
-       sodipodi:absref="/home/lexande/timelines/timelines/misc/nerail/osm/crosm.png"
        xlink:href="osm/crosm.png"
-       x="0"
-       y="-100"
-       width="11008"
-       height="8960"
+       style="stroke:#808000"
        id="image10"
-       style="stroke:#808000" />
-    <image
-       sodipodi:absref="/home/lexande/timelines/timelines/misc/nerail/osm/raillayerosm.png"
-       xlink:href="osm/raillayerosm.png"
-       x="0"
-       y="-100"
-       width="11008"
        height="8960"
+       width="11008"
+       y="-100"
+       x="0" />
+    <image
+       xlink:href="osm/raillayerosm.png"
+       style="opacity:0.8;stroke:#008080"
        id="image4320"
-       style="opacity:0.8;stroke:#008080" />
+       height="8960"
+       width="11008"
+       y="-100"
+       x="0" />
   </g>
   <path
      style="opacity:0.99918;fill:#ffffff;stroke:none;stroke-width:15;stroke-linejoin:round"
