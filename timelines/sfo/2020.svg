@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../../streetmap/sfoosm.png"
-     style="display:none"
-     x="0"
-     y="267"
-     width="9078"
+     id="image12"
      height="12015"
-     id="image12" />
+     width="9078"
+     y="267"
+     x="0"
+     style="display:none" />
   <path
      style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3857"
@@ -119,4 +119,32 @@
      id="path2184"
      d="M 6978.8757,9550.7849 6985.25,9547"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#02528a;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#d31345;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     id="path3594"
+     d="m 880,4743.9997 -0.24715,1.9155 -2.75285,12.5845 2.5,7.5 4.5,1 4,-3 6.25208,-10.4201" />
+  <path
+     style="fill:none;stroke:#d31345;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     id="path3604"
+     d="m 880,4743.9997 5,-6 20.5,0.5 5.5,-3" />
+  <path
+     style="fill:none;stroke:#d31345;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3002"
+     d="m 1158.75,4481.4996 -9.5,30.25 -43,42 -76.75,46.75 -7,14.5 -11,8.5" />
+  <path
+     style="fill:none;stroke:#d31345;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     d="m 894.25208,4753.5796 1.50227,-1.9109 7.74569,-3.669 39,-60.5 23.5,-39.5 6.5,-6 15,-12.5 23.99996,-6.0001"
+     id="path1516" />
+  <path
+     style="fill:none;stroke:#d31345;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     d="m 1158.75,4481.4996 5.25,-21.9999 5,-13.5 -2.5,-4 -34.5,2.5 -2,-3 -14,-193.5 4.5,-6.5 -0.5,-10.5 5,-5.5 v -17.5 l -2.5,-2.5 -5,-1 -3.5,-3.5 -0.1741,-2.994"
+     id="path851" />
+  <path
+     style="fill:none;stroke:#d31345;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1113.8259,4198.0057 -2.3259,-40.006 -2.629,-5.5209"
+     id="path855" />
+  <path
+     style="fill:none;stroke:#d31345;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     d="m 1108.871,4152.4788 -2.371,-4.9791 -2.5,-55 -5,-64.5"
+     id="path3596" />
 </svg>
