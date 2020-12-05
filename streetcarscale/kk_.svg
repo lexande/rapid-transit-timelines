@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg2"
+   width="1250"
+   height="1025"
+   viewBox="0 0 1250 1025">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="g10">
+    <image
+       xlink:href="streetmap/kk_osm.png"
+       style="display:none"
+       y="-50"
+       x="-480"
+       id="image12"
+       preserveAspectRatio="none"
+       height="1106.25"
+       width="1770" />
+    <path
+       style="opacity:0.99918;fill:none;stroke:#ab0101;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+       d="m 70.39945,239.47802 -7.31802,-5.86402 -6.51765,-38.85754 142.11131,-24.76734 14.40027,1.81927 7.71546,6.51657 13.08328,20.19641 4.4531,1.31491 195.68449,-28.50765 16.0971,1.37206 22.38071,4.80882 27.03165,-123.72847"
+       id="path855" />
+    <path
+       style="opacity:0.99918;fill:none;stroke:#ab0101;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+       d="m 472.4895,177.50951 -51.11492,236.07222 1.99391,12.72365 36.0423,53.25869 54.93317,62.13204 48.03744,47.65095 62.4642,47.44256 57.0005,45.29239 3.3533,6.59263 -2.8231,5.41485 -11.1404,12.94908 -0.077,4.31225 2.2863,3.95651 9.3704,3.06008 43.9421,23.24874 10.287,-0.43193 176.7232,-37.83219 23.2603,-7.25772 17.821,-2.85915 12.028,-5.31894 4.3752,0.57403 6.0201,6.91997 60.689,211.31305 1.5314,7.73945 2.62,3.00866 5.9057,0.83538 65.6666,-18.88195 -6.291,-20.83715 60.3067,-17.11189 27.9205,93.21713 -61.4002,17.9435 -20.536,-73.21159"
+       id="path857" />
+  </g>
+</svg>
