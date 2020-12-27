@@ -26,14 +26,18 @@
   <defs
      id="defs6" />
   <image
+     xlink:href="../timelines/streetmap/taoosm.png"
      style="display:none"
-     width="13094"
-     height="12821.208"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/taoosm.png"
-     id="image10"
+     y="-2646.208"
      x="-8200"
-     y="-2646.208" />
+     id="image10"
+     preserveAspectRatio="none"
+     height="12821.208"
+     width="13094" />
+  <path
+     style="opacity:0.99918;fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linejoin:round"
+     d="m 172.57447,500.89766 19.89195,-23.14188 12.36045,-12.1583 2.74583,-6.46476 5.34792,-60.75682 11.2614,-55.14779 3.83502,-337.3883221 9.51157,-18.0306199 260.95956,-211.224528"
+     id="path832" />
   <path
      id="path819"
      d="m 57.75953,281.5678 h 19.96822 l 13.77119,-5.1642 54.05191,-1.3771 10.32839,-141.8432 35.4608,-39.2479 14.11547,-4.8199 425.52966,7.9184 196.58369,-41.6578 29.60805,-1.3772 120.15359,14.4598 28.2309,-0.6886 60.249,-12.394"
