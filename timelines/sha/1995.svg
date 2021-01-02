@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   viewBox="-1150, 0, 12150, 7850"
-   width="12150"
+   id="svg2"
    height="7850"
-   id="svg2">
+   width="12150"
+   viewBox="-1150, 0, 12150, 7850"
+   version="1.1">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,33 +26,33 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../../streetmap/shaosm.png"
+     xlink:href="../streetmap/shaosm.png"
+     style="display:none"
      id="image10"
      height="8080.2578"
      width="11254.645"
      y="-187.35481"
-     x="-27.160999"
-     style="display:none" />
+     x="-27.160885" />
   <path
-     d="m 4705.5924,2560.6694 -13.3541,27.2092 -5.4008,12.6767 2.0981,12.4529 14.577,24.3846 13.987,12.7117 16.5004,1.8957 63,28 62,20 56,26 16,16 16,41 12,23 31,51 16,29 4,13 -8,15 -69,32 -69,39 -79,34 -63.4526,35.0677 -93.5474,43.9323 -17.4526,12.8375 -12.8027,15.59 -2.675,12.6499 -0.095,59.9477 -5.0231,13.1879 -40.9518,61.787 -68,105 -23,78 -10,67 -28.9575,311.3675 -3.6924,55.7427 -6.8549,44.7002 -19.5749,35.6802 -35.6781,29.9109 -63.0352,28.6217 -191.207,211.9768 -98,119 -114,132 -21,30 -96,148"
+     style="fill:none;stroke:#e70012;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3860"
-     style="fill:none;stroke:#e70012;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     d="m 4706.4973,2558.8258 -14.2589,29.0528 -5.4008,12.6767 2.0981,12.4529 14.577,25.3382 14.4969,13.3876 15.9905,3.7288 50.0957,16.8306 74.9043,29.6237 48.7039,24.3056 20.3338,19.1933 18.9623,37.5842 12,23 31,51 16,29 2.2984,10.3364 -2.0303,10.3477 -8.0395,9.4384 -65.2286,29.8775 -69,39 -79,34 -63.4526,35.0677 -93.5474,43.9323 -17.4526,12.8375 -12.8027,15.59 -2.675,12.6499 -0.095,59.9477 -5.0231,13.1879 -40.9518,61.787 -66.5462,100.1695 -6.4118,14.7369 -18.042,68.0936 -10,67 -28.9575,311.3675 -3.6924,55.7427 -6.8549,44.7002 -19.5749,35.6802 -35.6781,29.9109 -51.8165,25.5965 -17.4934,10.8588 -184.9323,204.1432 -98,119 -114,132 -15.2653,23.1168 -45.2824,73.9298 -56.5881,79.996" />
   <text
-     x="-1060.5469"
-     y="7747.9609"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
      id="text3866"
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="-1060.5469"
+     y="7747.9609"
+     x="-1060.5469"><tspan
+       id="tspan2"
        y="7747.9609"
-       id="tspan2">1995</tspan></text>
+       x="-1060.5469">1995</tspan></text>
   <text
-     x="-1060.5469"
-     y="206.96094"
-     id="text3870"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-       x="-1060.5469"
-       y="206.96094"
-       id="tspan1">1995</tspan></text>
+     id="text3870"
+     y="206.96118"
+     x="-1060.5469"><tspan
+       id="tspan1"
+       y="206.96118"
+       x="-1060.5469">1995</tspan></text>
 </svg>
