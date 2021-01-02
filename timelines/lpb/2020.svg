@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
-   width="2450"
+   width="2000"
    height="1150"
-   viewBox="0 0 2450 1150">
+   viewBox="0 0 2000 1150">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../../timelines/streetmap/lpbosm.png"
-     y="-44.500015"
-     x="-150"
-     id="image10"
-     preserveAspectRatio="none"
-     height="1294.5"
+     xlink:href="../streetmap/lpbosm.png"
+     style="display:none"
      width="2589"
-     style="display:none" />
+     height="1294.5"
+     preserveAspectRatio="none"
+     id="image10"
+     x="-150"
+     y="-44.500015" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#e40613;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 740.166,411.5 173.5,13 119,-103"
@@ -83,10 +83,6 @@
      id="path828"
      d="m 1382.1353,368.26873 128.7811,47.37766"
      style="opacity:1;fill:none;fill-opacity:0.03137255;fill-rule:nonzero;stroke:#8d6237;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="path830"
-     d="m 1880.9322,1046.4513 226.6147,-77.51859 256.4096,93.35539"
-     style="opacity:1;fill:none;fill-opacity:0.03137255;fill-rule:nonzero;stroke:#c7a219;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.03137255;fill-rule:nonzero;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1370.8581,217.23517 13.4308,302.64205 -3.4457,98.20095"

@@ -19,21 +19,21 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
   <image
-     width="2015"
-     height="2015"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/tbsosm.png"
-     id="image10"
-     x="-75"
+     xlink:href="../streetmap/tbsosm.png"
+     style="display:none"
      y="-65"
-     style="display:none" />
+     x="-75"
+     id="image10"
+     preserveAspectRatio="none"
+     height="2015"
+     width="2015" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.38039216;fill-rule:nonzero;stroke:#009933;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 861.545,1189.1052 -14.57363,-44.1043 -10.35492,-14.1901 -24.16148,-9.2044 -31.83179,-7.2868 -19.94281,5.3692 -23.39445,11.122 -6.51976,7.6703 -6.90328,22.2439 -6.13625,34.5164 -9.20438,15.3406 -10.73843,12.656 -11.88898,4.9857 -18.79226,1.9176 -24.545,-6.5197 -15.34062,-4.9857 -69.0328,-81.6889 -15.34062,-14.9571 -12.65601,-5.3692 -24.92851,-4.2186 -390.77136,52.5719 -156.67437,22.2136"
@@ -63,8 +63,4 @@
      style="opacity:1;fill:#000000;fill-opacity:0.38039216;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 373.11502,1355.9345 351.25464,1514.71"
      id="path942" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m -34.516399,1271.561 -2.684609,52.1581"
-     id="path1425" />
 </svg>

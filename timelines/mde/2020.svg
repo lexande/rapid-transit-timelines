@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/mdeosm.png"
-     id="image10"
-     height="3355"
-     width="2013"
-     y="-230"
+     style="display:none"
      x="50"
-     style="display:none" />
+     y="-230"
+     width="2013"
+     height="3355"
+     id="image10" />
   <path
      style="fill:none;stroke:#004385;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path2987"
@@ -58,10 +58,6 @@
        id="tspan1"
        y="206.96094"
        x="89.453171">2020</tspan></text>
-  <path
-     style="opacity:1;fill:none;fill-opacity:0.14117647;fill-rule:nonzero;stroke:#ec1d25;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 1144.3591,670.28601 1005.2039,652.22457 775.33104,579.15783"
-     id="path821" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.14117647;fill-rule:nonzero;stroke:#6e2b8c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1279.4094,1566.3798 12.3146,-2.0525 108.7792,-84.5604"
