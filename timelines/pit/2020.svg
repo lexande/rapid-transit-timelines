@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg2"
-   viewBox="100, 0, 2750, 2850"
-   height="2850"
-   width="2750"
+   viewBox="-800, -100, 3650, 2950"
+   height="2950"
+   width="3650"
    version="1.1">
   <metadata
      id="metadata8">
@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/pitosm.png"
-     id="image10"
-     height="2816"
-     width="2816"
-     y="34"
+     style="display:none"
      x="0"
-     style="display:none" />
+     y="34"
+     width="2816"
+     height="2816"
+     id="image10" />
   <path
      style="fill:none;stroke:#ec2c29;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path2987"
@@ -73,11 +73,11 @@
      style="font-size:143.99993896px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
      id="text3000"
-     y="206.96085"
-     x="189.43178"><tspan
+     y="106.96085"
+     x="-710.5469"><tspan
        id="tspan1"
-       y="206.96085"
-       x="189.43178">2020</tspan></text>
+       y="106.96085"
+       x="-710.5469">2020</tspan></text>
   <path
      id="path4497"
      d="m 1278.9526,522.11003 2.0069,1.26244 -17.1858,-9.26519 -9.6848,4.93341 -2.3079,4.39019 -24.1526,151.89684 -3.5851,9.81197 -43.3991,26.03946 -9.4346,18.68048 -5.8494,16.60488 0.7547,6.7929"
@@ -87,7 +87,7 @@
      d="m 1259.14,514.93974 6.0933,-2.79843 33.7206,-65.88536 34.3419,-69.06117 -0.7547,-3.20776 -16.4162,-8.30244 -3.0191,2.45299 -32.455,64.34388 1.8869,3.96253 13.5858,6.7929 1.1322,5.47206"
      style="fill:none;fill-rule:evenodd;stroke:#ee9e18;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
-     d="m 832.69734,1133.0028 -6.19723,18.997 -3.71323,18.957 -20.53481,26.6697 -6.45138,38.1782 9.19939,33.1951 -3,38.5 3.5,10 11,16 10,21 49,46 20.5,22 12,24 12.5,22 15.5,11 20.00014,13.5002 17,16 15.5,12.5 6,12"
-     id="path866"
-     style="fill:none;stroke:#ec2c29;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;stroke:#ec2c29;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path866-3"
+     d="m 832.69728,1133.0028 -6.1972,18.997 -3.7132,18.957 -20.53481,26.6697 -6.45138,38.1782 9.19939,33.1951 -3,38.5 3.5,10 11,16 10,21 49,46 20.5,22 12,24 12.5,22 15.49999,11 20,13.5 17,16 15.5,12.5 6,12 -2.25,6.25 -20,18 -5.5,34.5 -7,27.25 0.5,42.5 18.5,65.25 0.5,11.25 -12.25,19.25 -30.5,20.75 -33.49999,8 -50.5,8 -22,12 -47.49999,34 -13.5,17 -20.5,52 -4,12 -6.5,7.5 -7.5,2 -18,-1 -17,5.5 -12.5,1.5" />
 </svg>

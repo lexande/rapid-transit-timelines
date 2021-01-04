@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -29,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/miaosm.png"
-     style="display:none"
-     id="image12"
-     height="2736"
-     width="2128"
+     x="0"
      y="-10"
-     x="0" />
+     width="2128"
+     height="2736"
+     id="image12"
+     style="display:none" />
   <path
      d="m 91,234 52,-2 37,13 72,3 15,6 68,38 23,1 32,-4 170,-1 37,-13 82,-1 28,-5 95,-3 23,-6 38,-40 21,-9 35,-6 288,-11 20,9 14,11 8,16 3,35 16,404 6,21 19,15 24,6 115,-2 140,-4 19,6 15,17 6,14 7,282 1,60 5,17 45,36 13,7 20,-1 45,-8 90,0 17,4 15,13 4,24 5.9616,162.0455 L 1889,1470 l -1,27 -14,24 -177,137 -42,18 -536,219 -17,11 -820,736 -40,38"
      id="path2820"
@@ -61,11 +59,11 @@
        y="156.96088"
        id="tspan1">2015</tspan></text>
   <path
-     d="m 237.65255,2677.7966 41,-39.5 819.99995,-736 17,-11 536,-219 42,-18 177,-137 12.5,-22 0,-36.5 -8.0384,-122.9545 -5.4616,-162.5455 -3.5,-18.5 -14.5,-12 -17,-3.5 -87,0.5 -49.5,9 -18.5,-1 -16,-8.5 -42.5,-35 -5.5,-20.5 -2,-63.5 -5,-282.00004 -6,-14 -15,-17 -19,-6 -140,4 -115,2 -36,0 -133.5,3 -29.5,21.5 L 1056.5,743.5 l -16.5,8 -11.5,15.5 -11,40 2,155"
-     id="path2820-5"
-     style="fill:none;stroke:#f7941e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-  <path
      d="m 1014.5,951.5 0,15 -6,6.5 -38,1 -21.5,-8 -27.5,-0.5 -31.5,8 -18.5,1.5 -22,1.5 -23.5,-3.5 -72.5,3.5"
      id="path3777"
      style="fill:none;stroke:#005094;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+  <path
+     d="m 238.71776,2676.7008 39.93473,-38.4043 819.99991,-736 17,-11 536.0001,-218.9999 42,-18 177,-137 12.5,-22 v -36.5 l -8.0384,-122.9545 -5.4616,-162.5455 -3.5,-18.5 -14.5,-12 -17,-3.5 -87,0.5 -49.5,9 -18.5,-1 -16,-8.5 -42.5,-35 -5.5,-20.5 -2,-63.5 -6.5819,-277.37654 -5.6656,-13.27535 -13.419,-14.46151 -44.9478,-13.94604 -105.842,2.9115 -119.4962,2.28172 -40.0475,0.86618 -133.5001,3 -29.5,21.5 -58.1525,11.70344 -16.5,8 -11.5,15.5 -11,40 2,155"
+     id="path2820-5-3"
+     style="fill:none;stroke:#f7941e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>

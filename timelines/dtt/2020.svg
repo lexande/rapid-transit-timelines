@@ -27,16 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/dttosm.png"
-     id="image12"
-     height="997.20001"
-     width="498.60001"
-     y="-288.45001"
+     style="display:none"
      x="-90"
-     style="display:none" />
-  <path
-     style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path2818"
-     d="m 230.52857,309.10684 8.64919,-5.08776 3.05265,-1.52632 9.15796,6.1053 5.08775,13.22816 11.70184,21.36858 4.0702,1.52632 10.17551,-6.1053 5.08776,-10.68429 9.15796,-6.61408 13.22816,-5.59653 5.59653,1.52632 9.15796,19.33347 6.61408,5.59653 21.87735,45.7898 v 4.57898 l -11.19306,7.63163 -3.56143,0.50878 -12.21061,-5.59653 -8.14041,-0.50878 -31.54408,17.29837 -16.78959,9.15796 -2.54388,5.59653 9.66673,25.43878 0.50878,9.15795 -4.57898,4.57898 -42.73714,16.28082 h -19.33347 l -3.56143,-3.05265 -5.59653,-13.22817 3.05265,-5.08775 15.77204,-9.15796 13.73694,-10.68429 3.56143,-6.61408 -1.01755,-5.08775 -24.42123,-41.21082 -2.0351,-15.26326 v -35.61429 l 1.01755,-7.63163 -3.05265,-8.64919 4.0702,-11.19306 4.07021,-1.01755 8.14041,2.54388 z" />
+     y="-288.45001"
+     width="498.60001"
+     height="997.20001"
+     id="image12" />
   <text
      style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
