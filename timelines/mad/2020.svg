@@ -8,8 +8,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="6500"
-   height="6000"
-   viewBox="-300 -600 6500 6000"
+   height="6850"
+   viewBox="-300 -1450 6500 6850"
    id="svg2">
   <metadata
      id="metadata8">
@@ -26,13 +26,13 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="./../streetmap/madosm.png"
-     id="image10"
-     height="6937.7729"
-     width="10021.227"
-     y="-1491.725"
+     xlink:href="../streetmap/madosm.png"
+     style="display:none"
      x="-1559.7729"
-     style="display:none" />
+     y="-1491.725"
+     width="10021.227"
+     height="6937.7729"
+     id="image10" />
   <path
      style="fill:none;stroke:#f29f9c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4385"
@@ -155,12 +155,12 @@
      style="fill:none;stroke:#3971c1;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <text
      x="-210.54691"
-     y="-393.0391"
+     y="-1243.0391"
      id="text3914"
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="-210.54691"
-       y="-393.0391"
+       y="-1243.0391"
        id="tspan1">2020</tspan></text>
   <text
      x="-210.54691"
@@ -187,4 +187,8 @@
      style="fill:none;fill-rule:evenodd;stroke:#008a2e;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
      d="m 1523.4999,5298.48 5.25,-2.75 53.75,-195.25 4,-15.5 3,-4.5 9.5,-10.25 2.75,-13.75"
      id="path4318" />
+  <path
+     style="fill:none;stroke:#f29f9c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3767"
+     d="m 2172.5003,323.22984 -16,-17 -33,-5.5 -37.4999,2.5 -13,-10.5 -12,-27 -11,-42.5 -17,-77 -24,-96.999986 -3.5,-14.9998 2.5,-21.5 15.5,-30 22,-37.5 13,-28.5 5,-26.500014 10,-62.49999 1.5,-24.5 -16.5,-183.50004 -5,-21.99999 -10,-22.5 -39.5,-64 -34.5358,-66.59576 -4.9116,-33.66861 -10.2848,-79.67672 -9.7745,-21.60351 -29.2385,-36.6098 -54.4134,-60.09581 -8.3699,-23.05902 -2.4858,-28.92892 3.8743,-196.32777 5.1084,-31.125 12.9069,-20.8543 37.2867,-34.4674 13.9925,-24.6589 3.4116,-33.6431 -6.7114,-27.5798 -10.6446,-21.706 -14.1212,-11.1301 -19.1526,-9.2364 -29.6915,-5.6573 h -20.9576 l -51.9417,10.9075 -19.0106,-1.7336 -26.1103,-10.2472 -48.8468,-27.3472 -52.5168,-37.0008 -17.891,-4.8562 -18.7886,-1.681 -18.8911,1.3214 -22.1404,11.4464 -141.3918,108.2113 -16.867,6.9953 -22.494,1.4322 -75.3283,-0.2129" />
 </svg>
