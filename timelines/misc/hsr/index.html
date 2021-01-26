@@ -4,7 +4,7 @@
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <meta property="og:type" content="website" />
 <meta property="og:title" content="High Speed Rail Timelines" />
-<meta property="og:description" content="Maps every 5 years, 1865-2015" />
+<meta property="og:description" content="Maps every 5 years, 1965-2020" />
 <style type="text/css">
 div#preloader {
 	position: absolute;
@@ -31,11 +31,11 @@ body {
 </style>
 <script language="JavaScript" type="text/javascript">
 start=1965;
-count=11;
+count=12;
 step=5;
 index=count-1;
 function update() {
-	["A","E","N","U"].forEach(function(cont) {
+	["A","E","N","U","S"].forEach(function(cont) {
 		document[cont].src=(cont.toLowerCase() + '/' + (start+step*index) + ".svg");
 		document[cont].title=start+step*index;
 		document[cont].alt=start+step*index + " map";
@@ -98,22 +98,25 @@ window.onhashchange=function() {
 <br>
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
-<span id="A" style="display: inline-block; vertical-align: middle">Asia<br><a href="javascript:" onclick="nextmap()">
-  <img class="map" name="A" src="a/2015.svg" title="2015" alt="2015 map" width="1200" height="860"></a></span>
+<span id="A" style="display: inline-block; vertical-align: middle">East Asia<br><a href="javascript:" onclick="nextmap()">
+  <img class="map" name="A" src="a/2020.svg" title="2020" alt="2020 map" width="1200" height="860"></a></span>
 <span id="E" style="display: inline-block; vertical-align: middle">Europe<br><a href="javascript:" onclick="nextmap()">
-  <img class="map" name="E" src="e/2015.svg" title="2015" alt="2015 map" width="985" height="860"></a></span>
+  <img class="map" name="E" src="e/2020.svg" title="2020" alt="2020 map" width="985" height="860"></a></span>
 <br>
 <span id="N" style="display: inline-block; vertical-align: middle">Northeast US<br><a href="javascript:" onclick="nextmap()">
 
-  <img class="map" name="N" src="n/2015.svg" title="2015" alt="2015 map" width="150" height="123"></a></span>
+  <img class="map" name="N" src="n/2020.svg" title="2020" alt="2020 map" width="225" height="281"></a></span>
 <span id="U" style="display: inline-block; vertical-align: middle">Uzbekistan<br><a href="javascript:" onclick="nextmap()">
 
-  <img class="map" name="U" src="u/2015.svg" title="2015" alt="2015 map" width="125" height="81"></a></span>
+  <img class="map" name="U" src="u/2020.svg" title="2020" alt="2020 map" width="125" height="81"></a></span>
+<span id="U" style="display: inline-block; vertical-align: middle">Saudi Arabia<br><a href="javascript:" onclick="nextmap()">
+
+  <img class="map" name="S" src="s/2020.svg" title="2020" alt="2020 map" width="225" height="213"></a></span>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-Based on service at the end of the year in question, excluding seasonal services.<br>
+Based on weekday service at the end of the year in question, excluding seasonal and less-than-daily services.<br>
 Scale: <svg width="250px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> ≈ 1000 km (approximately 0.25 CSS pixels per km)
 <p>
 Lines are coloured based on the speed of the fastest service using them, measured by average scheduled speed between consecutive stops.
@@ -146,6 +149,7 @@ See also: <a href="/timelines/">historic rapid transit timelines</a> -
 <img src="a/2005.svg" width="1" height="1" alt="">
 <img src="a/2010.svg" width="1" height="1" alt="">
 <img src="a/2015.svg" width="1" height="1" alt="">
+<img src="a/2020.svg" width="1" height="1" alt="">
 <img src="e/1965.svg" width="1" height="1" alt="">
 <img src="e/1970.svg" width="1" height="1" alt="">
 <img src="e/1975.svg" width="1" height="1" alt="">
@@ -157,6 +161,7 @@ See also: <a href="/timelines/">historic rapid transit timelines</a> -
 <img src="e/2005.svg" width="1" height="1" alt="">
 <img src="e/2010.svg" width="1" height="1" alt="">
 <img src="e/2015.svg" width="1" height="1" alt="">
+<img src="e/2020.svg" width="1" height="1" alt="">
 <img src="n/1965.svg" width="1" height="1" alt="">
 <img src="n/1970.svg" width="1" height="1" alt="">
 <img src="n/1975.svg" width="1" height="1" alt="">
@@ -168,6 +173,7 @@ See also: <a href="/timelines/">historic rapid transit timelines</a> -
 <img src="n/2005.svg" width="1" height="1" alt="">
 <img src="n/2010.svg" width="1" height="1" alt="">
 <img src="n/2015.svg" width="1" height="1" alt="">
+<img src="n/2020.svg" width="1" height="1" alt="">
 <img src="u/1965.svg" width="1" height="1" alt="">
 <img src="u/1970.svg" width="1" height="1" alt="">
 <img src="u/1975.svg" width="1" height="1" alt="">
@@ -179,6 +185,20 @@ See also: <a href="/timelines/">historic rapid transit timelines</a> -
 <img src="u/2005.svg" width="1" height="1" alt="">
 <img src="u/2010.svg" width="1" height="1" alt="">
 <img src="u/2015.svg" width="1" height="1" alt="">
+<img src="u/2020.svg" width="1" height="1" alt="">
+<img src="s/1965.svg" width="1" height="1" alt="">
+<img src="s/1970.svg" width="1" height="1" alt="">
+<img src="s/1975.svg" width="1" height="1" alt="">
+<img src="s/1980.svg" width="1" height="1" alt="">
+<img src="s/1985.svg" width="1" height="1" alt="">
+<img src="s/1990.svg" width="1" height="1" alt="">
+<img src="s/1995.svg" width="1" height="1" alt="">
+<img src="s/2000.svg" width="1" height="1" alt="">
+<img src="s/2005.svg" width="1" height="1" alt="">
+<img src="s/2010.svg" width="1" height="1" alt="">
+<img src="s/2015.svg" width="1" height="1" alt="">
+<img src="s/2020.svg" width="1" height="1" alt="">
+</div>
 </div>
 <div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>) based on map data by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors and historical sources.</div>
 </body></html>

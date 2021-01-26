@@ -1,0 +1,434 @@
+JAPAN:			time	km	speed
+ShinHakodate-Kikonai	0:12	 35.6	178.00
+ SHakodate-ShinAomori	0:54	148.9	165.44
+Kikonai-OkutsugaruI	0:30	 74.8	149.60
+OkutsugaruI-ShinAomori	0:15	 38.5	154.00
+ShinAomori-Morioka	0:47	178.4	227.74
+Morioka-Sendai		0:39	171.1	263.23
+Sendai-Omiya		1:07	294.1	263.37
+Omiya-Tokyo		0:23	 31.3	 81.65
+
+Tokyo-Shinagawa		0:06	  6.8	 68.00
+Shinagawa-ShinYokohama	0:10	 18.7	112.20
+ShinYokohama-Nagoya	1:16	316.5	249.87
+Nagoya-Kyoto		0:33	134.3	244.18
+Kyoto-ShinOsaka		0:13	 39.1	180.47
+ShinOsaka-ShinKobe	0:12	 32.6	163.00
+ShinKobe-Okayama	0:32	128.3	233.27
+Okayama-Hiroshima	0:36	144.9	241.50
+Hiroshima-Kokura	0:45	192.0	256.00
+Kokura-Hakata		0:15	 55.9	223.60
+Hakata-Kumamoto		0:32	 98.2	184.13
+Kumamoto-KagoshimaChuo	0:43	158.6	221.30
+
+Omiya-Niigata		1:14	269.5	218.51
+
+Omiya-Nagano		0:56	194.7	208.61
+Nagano-Toyama		0:46	169.5	221.09
+Toyama-Kanazawa		0:18	 58.5	195.00
+
+
+TAIWAN:
+  Taipei-Taoyuan	0:17	 36.4	128.47
+Taipei-Banqiao		0:08	  7.0	 52.50
+Banqiao-Taichung	0:41	159.6	233.56
+Taichung-Zuoying	0:45	185.6	247.47
+
+
+KOREA:
+  Suseo-Daejeon		0:45	145	193.33
+Seoul-Daejeon		0:50	159.8	191.76
+Daejeon-Dondaegu	0:41	126.9	181.29
+Dondaegu-Busan		0:39	130.7	201.08
+
+  Suseo-Jije		0:20	 53.4	160.20
+  Jije-Iksan		0:41	144	210.73
+Yongsan-Iksan		1:01	208.1	204.69
+Iksan-GwangjuSongjeong	0:27	 97.8	217.33
+GwangjuSongjeong-Mokpo	0:31	 48.7	 94.26
+
+CheonanAsan-Seodaejeon	0:24	 64.8	162.00
+
+Dongdaegu-Pohang	0:35	 82.9	142.12
+
+Seoul-Cheongnyangni	0:19	 15.9	 50.21
+Cheongnyangni-Manjong	0:45	 91.1	121.47
+Manjong-Jinbu		0:24	 75.2	188.00
+Jinbu-Gangneung		0:17	 40.3	142.24
+
+
+CHINA mainlines:
+BeijingS-NanjingS	3:13   1018.6	316.66
+NanjingS-ShanghaiH	0:59	284.3	289.12
+  TianjinW-CangzhouW	0:33	104	189.10
+
+BeijingW-Shijiazhuang	1:07	280	250.75
+Shijiazhuang-ZhengzhouE	1:22	383	280.24
+ZhengzhouE-Wuhan	1:43	473	275.53
+Wuhan-ChangshaS		1:17	348	271.17
+ChangshaS-GuangzhouS	2:17	621	271.97
+GuangzhouS-ShenzhenN	0:29	102	211.03
+GuangzhouS-ShenzhenF	0:38	110	173.68
+
+JinanW-HefeiS		2:22	575.1	243.00
+HefeiS-Jingxian		0:48	195	243.75
+Jingxian-HuangshanN	0:29	111	229.66
+HuangshanN-Shangrao	0:42	162	231.43
+Shangrao-Nanping	0:30	115	230.00
+Nanping-Fuzhou		0:56	225	241.07
+
+ShanghaiH-HangzhouE	0:47	159	202.98
+  JiaxingS-Hangzhou	0:29	 85	175.86
+HangzhouE-NanchangW	2:13	582	262.56
+NanchangW-ChangshaS	1:19	342	259.75
+ChanshaS-HuaihuaS	1:22	332	242.93
+HuaihuaS-GuiyangN	1:32	374	243.91
+GuiyangN-KunmingS	1:59	463	233.45
+
+
+CHINA Manchuria:
+  Dalian-Bayuquan	0:53	166	187.92
+DalianN-ShenyangN	1:33	383	247.10
+ShenyangN-ChangchunW	1:04	298	279.38
+ChangchunW-HarbinW	0:54	240	266.67
+  SipingE-Changchun	0:33	115.5	210.00
+	
+HarbinW-Harbin		0:10	  7	 42.00
+Harbin-DaqingW		0:49	170	208.16
+DaqingW-QiqiharS	0:36	109	181.66
+
+Jiamusi-Harbin		1:57	340	174.36
+
+Suifenhe-Muleng		0:32	 70	131.25
+Muleng-Mudanjiang	0:30	 66	132.00
+Mudanjiang-Harbin	1:28	293	199.77
+
+Changchun-Songyuan	1:10	142	121.71
+Songyuan-Daan		0:27	 63	140.00
+Daan-Baicheng		0:51	147	172.94
+Baicheng-Wulanhaote	0:41	 83	121.46
+
+Changchun-Jilin		0:40	110.7	166.05
+Jilin-Dunhua		0:54	156.5	173.88
+Dunhua-YanjiW		0:38	112.3	177.32
+YanjiW-Hunchun		0:34	 90.5	159.71
+
+DalianN-Jinzhou		0:11	 14	 76.37
+Jinzhou-ZhuangheN	0:48	132	165.00
+ZhuangheN-DonggangN	0:37	109	176.76
+DonggangN-Dandong	0:16	 38	142.50
+
+Dandong-FengchengE	0:16	 44	165.00
+FengchengE-Benxi	0:31	102	197.42
+Benxi-ShenyangS		0:24	 61	152.50
+
+Shenyang-Fuxin		0:47	157	200.43
+  Shenyang-Tongliao	1:22	256	187.32
+Fuxin-Beipiao		0:22	 81	220.91
+Beipiao-Chaoyang	0:14	 37	158.57
+Chaoyang-Kazuo		0:18	 67	223.33
+Kazuo-ChengdexianN	0:33	133	241.82
+  Kazuo-Jianping	0:15	 29	116.00
+  Jianping-Ningcheng	0:13	 30	138.46
+  Ningcheng-Chifeng	0:31	100?	193.55
+ChengdexianN-ChengdeS	0:11	 29	158.18
+
+
+CHINA north:
+BeijingS-Tianjin	0:30	116.9	233.80
+thru to Binhai
+
+  Beijing-Qinhuangdao	2:15	294	130.67
+TianjinW-Qinhuangdao	1:09	266	231.30
+Qinhuangdao-Taian	1:44	305	175.96
+Taian-ShenyangN		0:38	 99	156.32
+  JinzhouS-ShenyangN	1:15	223	178.40
+  JinzhouS-Panjin	0:34	 98	172.94
+  Panjin-YingkouE	0:26	 89	205.38
+  YingkouE-DalianN	0:53	206	233.21
+
+BeijingN-Hohhot		2:17	468	204.96
+  Qinghe-Yanqing	0:26	 58	133.85
+Hohhot-Baotou		0:59	164	166.78
+
+TianjinW-BaodingE	0:59	157.9	160.58
+
+JinanW-Jinan		0:17
+Jinan-Weifang		1:13	200.3	164.63
+Weifang-QingdaoN	0:56	146.0	172.50
+  Weifang-YantaiS	1:32
+
+JinanW-JinanE		0:23
+JinanE-ZiboN		0:23	 82.3	214.70
+ZiboN-WeifangN		0:27	108.6	241.33
+WeifangN-QingdaoN	0:43	140.9	196.60
+
+BeijingS-JinanE		1:42	429	252.35
+JinanE-YantaiS		1:40	393	235.80
+YantaiS-Weihai		0:24	 72.9	182.25
+
+  QingdaoN-Yantai	1:08	200	176.47
+QingdaoN-Laiyang	0:33	100.3	182.36
+Laiyang-Weihai		0:46	159.3	207.78
+Weihai-Rongcheng	0:20	 41.5	124.50
+
+QingdaoN-RizhaoW	1:06	152	138.18
+RizhaoW-Lijiazhai	0:14	 30	128.57
+  RizhaoW-JunanN	0:20	 60	180.00
+Lijiazhai-LinyiN	0:20	 70	210.00
+LinyiN-QufuE		0:35	135	231.43
+
+RizhaoW-Lianyungang	0:41	101.2	148.09
+Lianyungang-HuaianE	0:44	135	184.09
+HuaianE-YangzhouE	0:39	136.5	210.00
+YangzhouE-Changzhou	0:40	123	184.50
+
+Lianyungang-Yancheng	1:11	195.4	165.13
+Yancheng-Dafeng		0:11	 23	125.45
+Dafeng-Dongtai		0:12	 36	180.00
+Dongtai-NantongW	0:26	 96	221.54
+NantongW-Zhangjiagang	0:15	 28	112.00
+Zhangjiagang-Changshu	0:09	 18	120.00
+Changshu-ShanghaiH	0:48	100	125.00
+  Yancheng-ShanghaiH	1:47	301	168.78 thru to ShanghaiS
+
+XuzhouE-Suqian		0:32	107	200.63
+Suqian-Yancheng		0:57	206	216.84
+
+DezhouE-HengshuiN	0:27	 89	197.78
+HengshuiN-GaochengS	0:24	 76	190.00
+GaochengS-Shijiazhuang	0:19	 40	126.32
+
+Shijiazhuang-TaiyuanS	1:21	208.2	154.22
+
+Zhangjiakou-YanggaoS	0:40	113	169.50
+YanggaoS-DatongS	0:20	 53	159.00
+DatongS-Taiyuan		1:48	280	155.55
+
+TaiyuanS-LingshiE	0:41	132	193.17
+LingshiE-LinfenW	0:34	101	178.24
+LinfenW-YunchengN	0:36	123	205.00
+YunchengN-WeinanN	0:46	160	208.69
+  Dali-XianN		0:37	106	171.89
+WeinanN-XianN		0:24	 55	137.50
+
+ZhengzhouE-XianN	1:48	523	290.56
+  Zhengzhou-XianN	1:49	505	277.98
+
+TaiyuanS-Jiaozuo	1:46	358	202.64
+Jiaozuo-Zhengzhou	0:37	 78	126.49
+
+ZhengzhouE-XuzhouE	1:28	361	246.14
+  ZhengzhouE-Xuzhou	1:48	345	192.22
+
+
+CHINA central:
+ZhengzhouE-Yuzhou	0:32	 97.7	183.19
+Yuzhou-PingdingshanW	0:18	 61.6	205.33
+PingdingshanW-NanyangE	0:28	108.8	233.14
+NanyangE-XiangyangE	0:34	126.1	222.53
+XiangyangE-GuchengN	0:23	 86	224.35
+GuchengN-Danjiangkou	0:11	 29	158.18
+  GuchengN-WudangshanW	0:20	 67	201.00
+Danjiangkou-Shiyan	0:19	 64	202.11
+
+WuhanH-SuizhouS		0:49	162	198.37
+SuizhouS-XiangyanE	0:30	119	238.00
+
+ZhengzhouE-ZhoukouE	0:50	177	212.40
+  ZhengzhouE-Linquan	1:13	274	225.21
+ZhoukouE-FuyangW	0:36	138	230.00
+
+Shangqiu-FuyangW	0:47	180	229.79
+  FuyangW-Hefei		0:56	220	235.71
+  Hefei-Feidong		0:14	 19	 81.43
+  Feidong-ChaohuE	0:18	 48	160.00
+FuyangW-HefeiS		1:07
+HefeiS-ChaohuE		0:21
+ChaohuE-Wuhu		0:19	 58	183.16
+Wuhu-Xuancheng		0:27	 70	155.56
+Xuancheng-HangzhouE	0:51	200	235.29
+
+Shanghai-NanjingS	1:15	290.8	232.64
+NanjingS-HefeiS		0:48	156.4	195.50
+  NanjingS-Hefei	0:51	156	183.53
+  Hefei-Shuijiahu	0:22	 69.2	188.73
+
+Shanghai-Suzhou		0:25	 84	201.60
+Suzhou-Wuxi		0:15	 42	168.00
+Wuxi-Nanjing		0:50	175	210.00
+  Wuxi-NanjingS		0:55	186	202.91
+
+NanjingS-HangzhouE	1:01	256	252.80	
+  Huzhou-Hangzhou	0:29	 76	157.24
+
+NanjingS-MaanshanE	0:16	 42	157.50
+MaanshanE-Wuhu		0:17	 43	151.76
+Wuhu-Tongling		0:26	 76	175.38
+Tongling-Anqing		0:29	 96	198.62
+
+HefeiS-WuhanH		1:44	372	214.62
+WuhanH-YichangE		1:43	291.8	169.98
+YichangE-Enshi		1:44	214	123.46
+Enshi-ChongqingN	2:15	339	150.67
+  Lichuan-ChongqingN	1:45	278	158.86
+ChongqingN-ChengduE	1:17	319	248.57
+  Shapingba-ChengduE	1:02	299
+  ChongqingN-Suining	1:12	157	130.83
+  Suining-ChengduE	0:56	146	156.43
+
+Emeishan-MeishanE	0:29	 80	165.52
+MeishanE-ChengduS	0:26	 74	170.77
+ChengduS-ChengduE	0:09	  8.5	 56.67
+
+ChengduS-GuiyangN	2:58	640	215.73
+  ChengduE-GuiyangN	3:06	648	209.03
+
+ChongqingW-GuiyangE	2:04	374?	180.97
+
+ChongqingN-WanzhouN	1:23	245	177.11
+
+WuhanW-Miaoshan		0:18	 22	 73.33
+Miaoshan-HenggouqiaoE	0:19	 55	173.68
+HenggouqiaoE-XianningS	0:10	 24	144.00
+
+Wuhan-Lushan		1:07	210	188.06
+  Wuhan-HuanggangW	0:24	 54	135.00
+  Wuhan-Jiujiang	1:18	223	171.54
+Lushan-NanchangW	0:24
+
+Jiujiang-JingdezhenN	0:59	151	153.56
+JingdezhenN-Wuyuan	0:27	 69	153.33
+
+HangzhouE-Qiandaohu	0:49	168	205.71
+Qiandaohu-HuangshanN	0:35	119	204.00
+
+ShanghaiL-Pudong	0:08⅙	 30.5	224.08
+
+
+CHINA south:
+HangzhouE-Ningbo	0:43	155	216.28
+Ningbo-Taizhou		0:54	152	168.89
+Taizhou-WenzhouS	0:42	123	175.71
+WenzhouS-Fuan		1:04	179	167.81
+  Fuding-Luoyuan	0:45	136	181.33
+Fuan-FuzhouS		0:45	119	158.66
+  Putian-Fuzhou		0:36	103	171.67
+FuzhouS-Quanzhou	0:51	155	182.35
+Quanzhou-XiamenN	0:25	 71	170.40
+  Quanzhou-Xiamen	0:46	111	144.78
+  Xiamen-Yunxiao	0:56	131	140.36
+XiamenN-Chaoshan	1:12	209	174.17
+Chaoshan-ShenzhenN	1:53	305	161.95
+
+Yiwu-Lishui		0:48	137.5	171.88
+Lishui-WenzhouS		0:35	 90	154.29
+
+Putian-SanmingN		1:07	191	171.05	
+  Fuzhou-SanmingN	1:10	193	165.43
+SanmingN-Taining	0:33	 96	174.55
+Taining-Fuzhou[J]	0:53	160	181.13
+Fuzhou[J]-NanchangW	0:37	 97	157.30
+  Fuzhou[J]-Nanchang	0:51	102	120.00
+
+XiamenN-Longyan		0:57	155	163.16
+  Xiamen-Longyan	1:13	168	138.08
+Longyan-Yudu		1:16	217	171.32
+Yudu-GanzhouW		0:27	 54	120.00
+GanzhouW-JianW		0:46	205.5	268.04
+  Yudu-XingguoW		0:27	105	233.33
+JianW-NanchangW		0:54	210	233.33
+  FengchengE-Nanchang	0:29	 67	138.62
+
+Longyan-SanmingN	1:07	191	171.04
+SanmingN-Nanping	0:46	156?	203.48
+
+Chaoshan-MeizhouW	0:40	122	183.00
+
+GuangzhouS-Zhongshan	0:26	 70	161.54
+  Shundexueyuan-Mingzhu	0:31	 86	166.45
+Zhongshan-Zhuihai	0:26	 46	106.15
+
+GuangzhouS-Yangjiang	1:19	222	168.61
+Yangjiang-ZhanjiangW	1:09	207	180.00
+
+GuangzhouS-GuiyangN	4:14	857	202.44
+  ZhaoqingE-GuilinN	1:47	368	206.36
+
+GuiyangN-Kaiyang too slow!
+
+GuangzhouS-NanningE	2:47	576	206.95
+  Guigang-Nanning	0:50	141	169.20
+
+HengyangE-Qidong	0:28	 73	156.43
+Qidong-Yongzhou		0:26	 62	143.08
+Yongzhou-Quanzhou	0:36	 90	150.00
+Quanzhou-GuilinN	0:42	109	155.71
+GuilinN-Liuzhou		1:13	164	134.79
+  Guilin-Liuzhou	1:07	155.5	139.25
+Liuzhou-NanningE	0:59	216	219.66
+
+HenyangE-Shaoyang	0:58	150	155.17
+  LoudiS-Shaoyang	0:40	 90	135.00
+Shaoyang-HuaihuaS	1:00	169	169.00
+
+NanningE-FangchenggangN	1:00	162.4	162.40
+
+NanningE-Beihai		1:14	199.4	161.68
+
+Nanning-Tianyang	1:00	192	192.00
+  NanningW-TiandongN	0:37	124	201.08
+  Pingguo-Baise		0:38	115	181.58
+Tianyang-Baise		0:16	 31	116.25
+Baise-KunmingS		2:14	486	217.61
+
+KunmingS-Kunming	0:18
+  Kunming-Dali		1:48	328	182.22
+Kunming-Lijiang		2:58	483?	162.81
+
+Kunming-Yongren		1:38	273?	167.14
+Yongren-PanzhihuaS	0:26	 54	124.62
+
+KunmingS-Yuxi		0:32	 79?	148.13
+
+AnshunW-Liupanshui	0:46	124.4	162.26
+
+Haikou-HaikouE		0:18	 24	 80.00
+HaikouE-Meilan		0:07	 14	120.00
+Meilan-Sanya		1:15	270	216.00
+  HaikouE-Qionghai	0:34	115	202.94
+
+HaikouE-Baimajing	0:51	126	148.24
+Baimajing-Dongfang	0:30	 90	180.00
+Dongfang-Huangliu	0:23	 67	174.78
+Huangliu-Ledong		0:07	 15	128.57
+Ledong-FenghuangA	0:19	 54	170.53
+FenghuangA-Sanya	0:07	  9	 77.14
+
+
+CHINA west:
+
+XianN-ChengduE		3:09	658	208.89
+
+XianN-PuchengE		0:43	106?	147.91
+PuchengE-Yanan		1:28	218	148.64
+
+XianN-Qingyang		1:08	234	206.47
+Qingyang-Yinchuan	1:54	384	202.11
+
+XianN-LanzhouW		2:30	568	225.20
+LanzhouW-Xining		1:09	188	163.48
+Xining-JiayuguanS	2:54	509	175.52
+JiayuguanS-LiuyuanS	1:43	289	168.35
+LiuyuanS-Hami		1:26	261	182.09
+Hami-TurpanN		1:38	372	227.76
+TurpanN-Urumqi		0:55	168	183.27
+
+Lanzhou-Hadapu		1:48	241	133.89
+Hadapu-Longnan		0:57	129	135.80
+Longnan-Guangyuan	1:00	139	139.00
+Guangyuan-NanchongN	1:26	188	131.16
+NanchongN-Wusheng	0:29	 57	117.93
+Wusheng-ChongqingN	0:57	108	113.68
+
+LanzhouW-ZhongchuanA	0:32	 60.3	113.06
