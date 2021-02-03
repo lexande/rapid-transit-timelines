@@ -27,20 +27,24 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/budosm.png"
-     y="-19.999512"
-     x="100.00039"
-     id="image10"
-     preserveAspectRatio="none"
-     height="4559.9995"
+     style="display:none"
      width="2735.9995"
-     style="display:none" />
+     height="4559.9995"
+     preserveAspectRatio="none"
+     id="image10"
+     x="100.00039"
+     y="-19.999512" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#4fa337;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 684.50029,2158.0002 63.5,6 35.99999,-3 36.50002,-9.5 40.99999,-12.5 37,-16.5 32.99999,-24 19,-22 11.5,-24 22.49999,-94.5 15,-29.9999 21.00003,-21 34.4999,-32.5 37,-47.5 10.5,-28 39.5,-28 75.5,-43 46.5,-13 16,-10 8,-12 30,-70 7,-10 22.5,-15"
      id="path4506" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#0063aa;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1430.5002,685.5004 -27,-5 -43.5,3 -28,11.5 -36,22.5 -11,12.99999 -176,641.49991 -47.5,91 -5.75,28.75 -1.5,150.75 0.75,51.5 8,18 29,37 139.5,90 560.9999,297.9999 39,10 41.5,3 45.5,-8 63.5,6 54.5,26"
+     d="m 1344.6119,1899.0846 447.8882,237.9156 39,10 41.5,3 45.5,-8 63.5,6 54.5,26"
+     id="path858" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#0063aa;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1430.5002,685.5004 -27,-5 -43.5,3 -28,11.5 -36,22.5 -11,12.99999 -166.4748,606.78161"
      id="path4508" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#e52d29;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -60,7 +64,7 @@
      id="path4541" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#ee741d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1180.0002,1930.0003 11.5,19.9999 18,58 2.5,16.5 5.5,39 1,22 v 24 l 4,17 16,22.5 4.5,14 v 13.5 l -5,28 -11,50.5 7.5,253 -4.5,14.5 -8,11 -16,12 -11,14 -2,12.5 v 16 l 3,27 -2.155,39.0052"
+     d="m 1227.0002,2255.0002 7.5,253 -4.5,14.5 -8,11 -16,12 -11,14 -2,12.5 v 16 l 3,27 -2.155,39.0052"
      id="path4543" />
   <path
      id="path4545"

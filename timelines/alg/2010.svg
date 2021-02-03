@@ -6,11 +6,11 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 1000 1900"
-   height="1900"
-   width="1000"
+   version="1.1"
    id="svg2"
-   version="1.1">
+   width="1650"
+   height="1900"
+   viewBox="0 0 1650 1900">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -26,25 +26,29 @@
   <defs
      id="defs6" />
   <image
-     y="208.59996"
-     x="0"
+     xlink:href="../streetmap/algosm.png"
+     y="-82.769287"
+     x="-300"
      id="image10"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/emlosm.png"
      preserveAspectRatio="none"
-     height="1841.4"
-     width="919.59998"
+     height="2432.7693"
+     width="3514"
      style="display:none" />
   <path
-     id="path842"
-     d="m 341.55753,841.05079 31.69092,54.2373 2.70862,23.05081 4.60466,12.4746 8.12587,14.1017"
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#00aad4;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 370.04959,305.33476 21.1413,-34.5164"
+     id="path840" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 843.3557,1270.2838 24.3772,-52.8532"
+     id="path842" />
   <text
      style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
-     id="text2994"
-     y="206.96092"
+     id="text3784"
+     y="206.96094"
      x="89.453133"><tspan
        id="tspan1"
-       y="206.96092"
-       x="89.453133">1920</tspan></text>
+       y="206.96094"
+       x="89.453133">2010</tspan></text>
 </svg>

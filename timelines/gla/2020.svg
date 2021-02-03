@@ -28,12 +28,12 @@
   <image
      xlink:href="../streetmap/glaosm.png"
      style="display:none"
-     y="256.96436"
-     x="0"
-     id="image10"
-     preserveAspectRatio="none"
+     width="5307"
      height="2843.0356"
-     width="5307" />
+     preserveAspectRatio="none"
+     id="image10"
+     x="0"
+     y="256.96436" />
   <path
      id="path4163"
      d="m 2417,1555.5 1.5,16.5 11,25 16,43.5 20,53.5 14,17 37.5,15.5 37,14 29,15.5 24.5,16 41.5,11.5 87,0.5 57,0 21.5,6 35,-14 27.5,-21 8.5,-14 16.5,-53.5 5,-22.5 21.5,-95 -2,-12.5 -8,-18 -16.5,-11.5 -32.5,-14.5 -5.5,-11.5 -25,-13.5 -132.5,-79 -23.5,1 -50,-19 -17.5,-4 -17,-0.5 -18.5,5.5 -12,14 -32,50.5 -11.5,4 -21.5,3 -35.5,-1 -14.5,11.5 -13.5,19.5 -20.5,42 -2,10.5 0.5,14"
@@ -45,10 +45,6 @@
   <path
      id="path4167"
      d="m 2329.5,1288 -10.5,-11.5 -10.5,-20 0.5,-18.5 31,-79.5 12.5,-42 -1.5,-24 -6.5,-30.5 -10,-20.5 -26,-25 -48,-32 -22,-25.5 -18,-18 -41.5,-20.5 -32,-8 -37,3 -35,5 -62.5,23 -29.5,-1 -74,-14.5 -45.5,-2.5 -36.5,5 -55.5,17 -30.5,3 -40,-2.5 -24.5,-10 -42.5,-29 -69.5,-29.5 -50,-8.5 -57.5,-25.5 -40,-20"
-     style="fill:none;fill-rule:evenodd;stroke:#0166b3;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="path4169"
-     d="m 2195,928.5 -19,-22.5 -9,-41.5 -3,-41 3.5,-23 12.5,-13 116.5,-65 27,-9 24.5,-9 19.5,-20.5 61.5,-102 8,-24 2,-34 -7,-38.5 -37,-109.5"
      style="fill:none;fill-rule:evenodd;stroke:#0166b3;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path4171"
@@ -68,8 +64,4 @@
        y="206.96103"
        x="89.453087"
        id="tspan1">2020</tspan></text>
-  <path
-     id="path4175-3"
-     d="m 2505,2191.5 18.5,-33.5 19,-34 23,-29 34,-28 139,-86.5 27.5,-18 5.6839,-8.6961 16.3655,-40.3142 38.6116,-29.1615 7.1361,-13.0829 7.5025,-30.6121 13.759,-28.3971 6.4172,-63.5166 20.1612,-116.7349"
-     style="fill:none;fill-rule:evenodd;stroke:#00aabc;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>

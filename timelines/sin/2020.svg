@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/sinosm.png"
-     id="image10"
-     height="3711.3999"
-     width="5735.7998"
-     y="9.7656251e-05"
+     style="display:none"
      x="-74.800003"
-     style="display:none" />
+     y="9.7656251e-05"
+     width="5735.7998"
+     height="3711.3999"
+     id="image10" />
   <path
      d="m 1789.3199,1337.327 2.7731,32.1534 -5.5932,25.4195 3,8 137.5,61 9,1 25.5,-8 34.5,-23 35,-11.5 8.5,1.5 15.5,23 8,3 44,-11 17.5,5 61,38.5 7,0.5 9,-7 21,-41 2,-39 -7,-12 -40.5,2 -6,-4.5 1.5,-17 12.5,-12 10.5,-9 11,-19.5 -2.5,-10.5 -6,-6.5 -51.5,-28.5 h -13 l -13.5,7.5 -27,28.5 -18,14 -8,14.5 -4.5,16 14.5,38 17,34 -5,11.5"
      id="path3788"
@@ -102,14 +102,6 @@
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2932.4023,3348.2213 -109.5924,-42.7558"
      id="path4502" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#fbbf16;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 5588.6121,1704.8994 -27.8866,64.5921"
-     id="path880" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#fbbf16;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 5536,1709 42,18"
-     id="path992" />
   <path
      d="m 4236.9998,993.3999 60,-116.5 -1,-13 -5.5,-11 -27,-13 -17,-1 -35.5,15.5 -14,15.5 -10,38.5 -45.5,96 -8,38 -1,6 4.5,6 43,17.5 17,-5"
      id="path3001"
