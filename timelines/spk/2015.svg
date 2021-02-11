@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
+     xlink:href="../streetmap/spkosm.png"
      style="display:none"
-     y="-657.54541"
-     x="-2900"
-     id="image10"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/spkosm.png"
-     preserveAspectRatio="none"
+     width="8137"
      height="6657.5454"
-     width="8137" />
+     preserveAspectRatio="none"
+     id="image10"
+     x="-2900"
+     y="-657.54541" />
   <path
      id="path4508"
      d="m 1480.9939,871.72599 86.7225,497.03621 -1.7258,12.0807 -5.1775,12.0808 -9.9235,7.3347 -12.0807,3.0202 -211.8444,39.6938 -12.9436,13.3751 -3.8831,14.2381 1.7258,12.5122 63.8553,339.9865 6.0404,6.9033 9.492,3.0201 101.3919,17.6897 4.746,4.3146 2.5888,9.492 6.4718,38.3995 6.9033,9.9234 177.328,149.7149 45.3027,31.9277 9.492,1.7258 10.355,-3.0202 12.5122,3.4516 17.6896,12.9437 10.3549,11.6493 6.9033,14.6695 26.7502,53.5004 13.3751,40.5567 46.1657,61.6981"
@@ -48,7 +48,7 @@
      style="fill:none;fill-rule:evenodd;stroke:#008000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path4565"
-     d="M 94,768.49999 822,1374 l 55.5,35 301.5,175.5 29,7 53,-14 41.5,-9 42,-6.5 223.5,5 124.5,-18 25,2.5 16,8 26.5,21 31.5,19 309,253.5 14,7.5 22,8.5 118.5,23.5 26.5,7"
+     d="M 94,768.49999 822,1374 l 55.5,35 301.5,175.5 29,7 53,-14 41.5,-9 42,-6.5 223.5,5 124.5,-18 25,2.5 16,8 26.5,21 31.5,19 222.7791,182.7654"
      style="fill:none;fill-rule:evenodd;stroke:#3bc228;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path4567"
@@ -62,7 +62,7 @@
      x="-510.5469"><tspan
        id="tspan1"
        y="206.96103"
-       x="-510.5469">2015</tspan></text>
+       x="-510.54691">2015</tspan></text>
   <path
      id="path5266"
      d="m 1100.9653,2129.6072 -85.56,148.4924"
