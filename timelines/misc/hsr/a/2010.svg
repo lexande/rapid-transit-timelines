@@ -56,13 +56,13 @@
      style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <image
      xlink:href="aosm.png"
-     width="15575.889"
-     height="9077.8525"
-     preserveAspectRatio="none"
-     id="image10"
-     x="-5102.5"
+     style="display:none"
      y="-1607.8525"
-     style="display:none" />
+     x="-5102.5"
+     id="image10"
+     preserveAspectRatio="none"
+     height="9077.8525"
+     width="15575.889" />
   <path
      id="path11011"
      d="m 5776.857,4040.49 -4.6069,-0.4902 -2.725,-2.8485 -2.7751,-2.9013 -0.25,-3.75 v -10.25 l -37,-9.75 -24.25,-7.25 -11.75,-2.5 -11,-0.75 -12.5,-4.25 -17.5,8.25 -8,0.75 -6,8.75 -27,-2 -16.7395,4.0232 -17.989,-4.2015 -28.834,-17.1372 L 5544.5,3984 l -14.4948,0.8403 -2.2552,1.4097 -0.8376,-3.111 -29.4268,-3.2155 v -5.4756 l 7.086,-2.4157 -0.05,-8.3244"
@@ -214,7 +214,7 @@
   <path
      id="path2100"
      d="m 7428.072,2995.2795 -4.547,-0.4545 -7.525,7.175 -9.75,19 -15.75,12.5 -35.25,32.25 -0.25,7.5"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff0055;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff00aa;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path2149"
      d="m 7427.4095,3303.5453 0.7472,4.1099 -2.1213,9.546 3.5356,13.7885 -6.364,10.9602 -14.8493,21.9203 -13.435,10.6066 -5.6568,8.8388 -2.8285,12.3744 4.5962,11.3137 -7.4246,15.2028 -1.4142,16.617 0.7071,12.3744 4.9498,4.5962 13.7885,30.7591 7.7782,8.1318 27.9307,10.6066"
