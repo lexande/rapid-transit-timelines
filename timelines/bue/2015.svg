@@ -26,21 +26,21 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="./../streetmap/bueosm.png"
-     id="image10"
-     height="7506"
-     width="7506"
-     y="0"
+     xlink:href="../streetmap/bueosm.png"
+     style="display:none"
      x="0"
-     style="display:none" />
+     y="0"
+     width="7506"
+     height="7506"
+     id="image10" />
+  <path
+     style="fill:none;stroke:#ffd203;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path2987-3"
+     d="m 4886.1921,3466.9218 10.6066,-36.0625 11.3137,-11.3137 15.2911,-3.3082 18.8562,4.3894 10.3641,-0.2855 103.0485,-24.2177 5.9102,-7.8735 -0.5825,-8.7501 -21.5,-67.5 -4.5,-34.5 -9.5,-60.5 -13.5,-62 -7.5,-28.5 -28.5,-112.5 -4,-20.5 -1.5,-31.5 -0.8693,-26.1154 14.1422,-79.196 17.6776,-65.7609 19.799,-60.1041 27.5772,-72.1249 31.8198,-26.1629" />
   <path
      id="path4500"
      d="m 928.91949,1063.652 476.21821,257.7066 25.9666,12.2484 27.4365,7.839 h 21.0673 l 477.688,-14.6981 954.8861,77.4099 19.5975,4.8994 21.0672,12.2484 260.6462,246.928 38.2151,39.1949 16.6578,13.7182 21.0673,7.349 144.0413,23.517 15.188,4.4094 13.7182,9.3088 318.9487,196.4645 18.6175,5.8793 21.0673,4.4094 23.027,0.4899 22.5371,-2.9396 24.0069,-6.8591 173.4375,-99.4571 33.3157,-17.6377 85.2489,-31.8459 18.6176,-2.9396 26.9465,1.9597 20.5773,10.7787 61.732,54.3829 46.054,27.9264 31.356,9.7987 27.4364,17.1478 281.7135,188.6255 106.8061,88.1886 40.1748,42.6244 95.0477,60.7522 30.866,31.8458 76.92,97.9873 55.4945,52.5195 105.3169,54.3906 41.2261,39.8403 32.9115,26.3292 92.8452,56.8158"
      style="fill:none;fill-rule:evenodd;stroke:#aa0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     style="fill:none;stroke:#ffd203;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path2987"
-     d="m 4886.1921,3466.9218 10.6066,-36.0625 11.3137,-11.3137 147.0783,-31.8198 5.8093,-8.2258 -21.5,-67.5 -4.5,-34.5 -9.5,-60.5 -13.5,-62 -7.5,-28.5 -28.5,-112.5 -4,-20.5 -1.5,-31.5 -0.8693,-26.1154 14.1422,-79.196 17.6776,-65.7609 19.799,-60.1041 27.5772,-72.1249 31.8198,-26.1629" />
   <path
      style="fill:none;stroke:#6d2281;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3778"
