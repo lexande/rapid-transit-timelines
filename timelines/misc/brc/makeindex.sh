@@ -7,6 +7,14 @@ cat <<HEREDOC | sed -e"s/START/${START}/g; s/END/${END}/g; s/COUNT/${COUNT}/g;"
 <html>
 <head><title>Black Rock City Layout Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Black Rock City Layout Timeline" />
+<meta property="og:image" content="https://alexander.co.tz/timelines/misc/brc/preview.gif" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="717" />
+<meta property="og:url" content="https://alexander.co.tz/timelines/misc/brc/preview.gif" />
+<meta property="og:description" content="Maps every year, START-END" />
+<meta name="twitter:card" content="summary_large_image" />
 <style type="text/css">
 div#preloader {
 	position: absolute;
