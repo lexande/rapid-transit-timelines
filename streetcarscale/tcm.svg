@@ -27,14 +27,14 @@
      id="defs6" />
   <image
      xlink:href="streetmap/tcmosm.png"
-     x="-75"
-     y="-58"
-     width="458"
-     height="458"
+     style="display:none"
      id="image10"
-     style="display:none" />
+     height="458"
+     width="458"
+     y="-58"
+     x="-75" />
   <path
      d="m 65.5,64.5 20.5,129 10.5,15.5 20,121.5 75,-12"
      id="path2987"
-     style="fill:none;stroke:#f9a51b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;stroke:#f48a00;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
