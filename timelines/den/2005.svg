@@ -27,16 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../streetmap/denosm.png"
-     id="image10"
-     height="3631.25"
-     width="2075"
-     y="-31.25"
-     x="2100"
-     style="display:none" />
-  <path
-     id="path3757"
-     d="m 2495.2129,439.51562 -13,1.5 c -0.477,0.0557 -0.9279,0.24757 -1.2988,0.55274 l -14,11.5 c -0.3295,0.27053 -0.5843,0.62082 -0.7403,1.01758 l -5.4238,13.80664 -4.1445,6.90625 -19.8828,15.0332 -8.2149,3.65039 -61.9277,-1.98047 -3.6056,1.22159 -2.5953,5.63322 0.3718,3.37375 10.749,24.76754 v 0.002 l 4.4883,92.25 c 0.01,0.16539 0.032,0.32961 0.072,0.49023 l 25.8711,102.49024 c 0.045,0.17847 0.1101,0.35139 0.1934,0.51562 L 2450,817 c 0,0.007 0.01,0.0144 0.012,0.0215 v 0.006 0.006 l 51.9414,121.86133 c 0.03,0.0698 0.062,0.13824 0.098,0.20508 l 20.873,38.76562 c 0.049,0.0898 0.1028,0.17657 0.1621,0.25977 l 16.9082,23.8711 v 0 0 l 14.998,36.998 v 0 l 8.0037,72.0028 L 2573,1188 l 1.5,28.5 -2,38.5 -25.5,121 -62.1451,306.4767 L 2385,2000 l -31.6596,149.5749 -12.6449,37.2378 L 2326,2269 l -28,130 -13,38 -33.0466,69.9894 -38.285,90.2384 L 2201,2691 l -29.7203,200 -24.3782,74.1398"
-     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#027035;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+     style="display:none"
+     x="25"
+     y="-1328.125"
+     width="6484.375"
+     height="5446.875"
+     id="image10" />
   <path
      id="path882"
      d="M 2492.5726,441.79793 2499.5,441.5 c 0.1326,3e-5 0.2595,0.0527 0.3535,0.14648 l 7.3262,7.32618 7.084,-0.94532 63.3808,-64.3789 4.6795,-0.60911 5.4709,5.46067 6.2051,-0.5 52.5,-53.5 37.5,-35 74.5,-76 0.5,-17"
@@ -52,7 +48,7 @@
      y="156.9609"
      x="89.453133"><tspan
        id="tspan1"
-       y="156.9609"
+       y="156.96091"
        x="89.453133">2005</tspan></text>
   <text
      style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -63,4 +59,8 @@
        id="tspan2"
        y="3897.9609"
        x="89.453133">2005</tspan></text>
+  <path
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#027035;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="m 2495.7873,444.48456 -12.2695,1.41406 -12.9278,10.62109 -5.2636,13.39453 c -0.05,0.12917 -0.1108,0.25395 -0.1818,0.37305 l -4.5,7.5 c -0.1649,0.27426 -0.3811,0.51428 -0.6367,0.70703 l -20.5,15.5 c -0.1523,0.11551 -0.3175,0.21312 -0.4922,0.29102 l -9,4 c -0.3445,0.15259 -0.719,0.22539 -1.0957,0.21289 l -62.5,-2 -6.0408,1.85853 0.3718,3.37375 10.749,24.76754 v 0.002 l 4.4883,92.25 0.072,0.49023 25.8711,102.49024 0.1934,0.51562 L 2450,817 l 0.012,0.0215 v 0.006 0.006 l 51.9414,121.86133 0.098,0.20508 20.873,38.76562 0.1621,0.25977 16.9082,23.8711 v 0 0 l 14.998,36.998 v 0 l 8.0037,72.0028 L 2573,1188 l 1.5,28.5 -2,38.5 -25.5,121 -62.1451,306.4767 L 2385,2000 l -31.6596,149.5749 -12.6449,37.2378 L 2326,2269 l -28,130 -13,38 -33.0466,69.9894 -38.285,90.2384 L 2201,2691 l -29.7203,200 -24.3782,74.1398"
+     id="path876" />
 </svg>
