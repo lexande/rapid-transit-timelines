@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
+     xlink:href="../timelines/streetmap/bweosm.png"
      style="display:none"
-     width="1239"
-     height="2065"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/bweosm.png"
-     id="image10"
+     y="-65"
      x="-35"
-     y="-65" />
+     id="image10"
+     preserveAspectRatio="none"
+     height="2065"
+     width="1239" />
   <path
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#dc003c;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 431.44068,256.94915 40,15.9322 12.37288,14.0678 7.28814,9.83051 2.20339,7.79661 -1.18644,4.57627 -3.05085,2.71186 -5.76271,2.20339 -3.22034,6.1017 -5.08475,12.71186 -1.52542,10.84746 2.88135,19.49152"
@@ -90,4 +90,8 @@
      id="path1961"
      d="m 734.53976,1106.7821 -8.25832,47.9769 -5.50555,21.2357 -8.84819,15.9267"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#dc003c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#dc003c;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 179.17458,1488.2352 24.99341,5.9226 28.95706,1.4806 2.48715,-3.0913 1.43759,-18.3931 3.96967,-41.0241 -1.49997,-33.8122 6.19984,-43.5758 6.32588,-22.6233 -0.63211,-12.8863 -4.91339,-13.2655 -14.62787,-15.3176 -13.53521,-12.9768 -1.01801,-7.488 4.29107,-7.9644"
+     id="path845" />
 </svg>

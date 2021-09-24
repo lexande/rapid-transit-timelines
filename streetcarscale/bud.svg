@@ -25,6 +25,15 @@
   </metadata>
   <defs
      id="defs6" />
+  <image
+     xlink:href="../timelines/streetmap/budosm.png"
+     style="display:none"
+     width="2735.9995"
+     height="4559.999"
+     preserveAspectRatio="none"
+     id="image10"
+     x="50.000355"
+     y="-1094.9995" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1387.5002,237.0003 -51.5,8.5 -38,21 -8,1.5 h -15.5 l -11,5 -8.5,8.5 -4.5,9.5 -4,18.5 -235,231.5 -1.9482,4.75 -0.3018,21.25 -2.25,3 -28.74994,6 -8.25,2.25 -2.75,6 -6.5,4"
@@ -35,21 +44,16 @@
      id="path4510" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1380.5002,-389.4996 -27,-5 -43.5,3 -28,11.5 -36,22.5 -11,12.99999 -176,641.49991 -47.5,91 -5.75,28.75 -1.5,150.75 0.75,51.5 8,18 29,37 139.5,90 560.9999,297.9999 39,10 41.5,3 45.5,-8 63.5,6 54.5,26"
+     d="m 1368.5994,863.38631 373.9007,198.61389 39,10 41.5,3 45.5,-8 63.5,6 54.5,26"
+     id="path909" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1380.5002,-389.4996 -27,-5 -43.5,3 -28,11.5 -36,22.5 -11,12.99999 L 1066.4875,269.71"
      id="path4508" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 634.50025,1083.0002 63.5,6 35.99999,-3 36.50002,-9.5 40.99999,-12.5 37,-16.5 32.99999,-24 19,-22 11.5,-24 22.49999,-94.5 15,-29.9999 21.00003,-21 34.49994,-32.5 37,-47.5 10.5,-28 39.5,-28 75.5,-43 46.5,-13 16,-10 8,-12 30,-70 7,-10 22.5,-15"
      id="path4506" />
-  <image
-     xlink:href="../../timelines/ams/./../streetmap/budosm.png"
-     y="-1094.9995"
-     x="50.000355"
-     id="image10"
-     preserveAspectRatio="none"
-     height="4559.9995"
-     width="2735.9995"
-     style="display:none" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#ed6e86;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2463.6128,349.8566 187.833,-84.868 48.0833,-27.9308"

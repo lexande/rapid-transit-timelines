@@ -131,12 +131,14 @@ function togglesidebar() {
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <h3>Streetcar Scale Comparison</h3>
 <div id="maps" style="padding-left: calc(10.5em + 22px);">
+<span id="ACS" style="display: none; vertical-align: middle">Achinsk<br>
+  <img class="map" src="acs.svg" title="Achinsk" alt="Achinsk map" width="201" height="212"></span>
 <span id="ADL" style="display: inline-block; vertical-align: middle">Adelaide<br>
   <img class="map" src="adl.svg" title="Adelaide" alt="Adelaide map" width="293" height="271"></span>
 <span id="ALG" style="display: none; vertical-align: middle">Alger<br>
   <img class="map" src="alg.svg" title="Alger" alt="Alger map" width="500" height="223"></span>
 <span id="AMS" style="display: none; vertical-align: middle">Amsterdam<br>
-  <img class="map" src="ams.svg" title="Amsterdam" alt="Amsterdam map" width="495" height="321"></span>
+  <img class="map" src="ams.svg" title="Amsterdam" alt="Amsterdam map" width="495" height="408"></span>
 <span id="ANE" style="display: none; vertical-align: middle">Angers<br>
   <img class="map" src="ane.svg" title="Angers" alt="Angers map" width="136" height="256"></span>
 <span id="AYT" style="display: none; vertical-align: middle">Antalya<br>
@@ -145,6 +147,8 @@ function togglesidebar() {
   <img class="map" src="anr.svg" title="Antwerpen" alt="Antwerpen map" width="462" height="353"></span>
 <span id="ARW" style="display: none; vertical-align: middle">Arad<br>
   <img class="map" src="arw.svg" title="Arad" alt="Arad map" width="190" height="223"></span>
+<span id="ATH" style="display: none; vertical-align: middle">Athína<br>
+  <img class="map" src="ath.svg" title="Athína" alt="Athína map" width="272" height="446"></span>
 <span id="ATL" style="display: inline-block; vertical-align: middle">Atlanta<br>
   <img class="map" src="atl.svg" title="Atlanta" alt="Atlanta map" width="76" height="43"></span>
 <span id="AGB" style="display: none; vertical-align: middle">Augsburg<br>
@@ -153,10 +157,12 @@ function togglesidebar() {
   <img class="map" src="avn.svg" title="Avignon" alt="Avignon map" width="130" height="81"></span>
 <span id="BCN" style="display: none; vertical-align: middle">Barcelona<br>
   <img class="map" src="bcn.svg" title="Barcelona" alt="Barcelona map" width="478" height="304"></span>
+<span id="BAX" style="display: none; vertical-align: middle">Barnaul<br>
+  <img class="map" src="bax.svg" title="Barnaul" alt="Barnaul map" width="364" height="413"></span>
 <span id="BSL" style="display: none; vertical-align: middle">Basel<br>
   <img class="map" src="bsl.svg" title="Basel" alt="Basel map" width="380" height="445"></span>
 <span id="BJS" style="display: none; vertical-align: middle">Beijing<br>
-  <img class="map" src="bjs.svg" title="Beijing" alt="Beijing map" width="250" height="98"></span>
+  <img class="map" src="bjs.svg" title="Beijing" alt="Beijing map" width="946" height="968"></span>
 <span id="BEG" style="display: none; vertical-align: middle">Beograd<br>
   <img class="map" src="beg.svg" title="Beograd" alt="Beograd map" width="375" height="337"></span>
 <span id="BGY" style="display: none; vertical-align: middle">Bergamo<br>
@@ -169,12 +175,16 @@ function togglesidebar() {
   <img class="map" src="qbq.svg" title="Besançon" alt="Besançon map" width="277" height="179"></span>
 <span id="BIO" style="display: none; vertical-align: middle">Bilbao<br>
   <img class="map" src="bio.svg" title="Bilbao" alt="Bilbao map" width="98" height="76"></span>
+<span id="BI_" style="display: none; vertical-align: middle">Biysk<br>
+  <img class="map" src="bi_.svg" title="Biysk" alt="Biysk map" width="380" height="255"></span>
 <span id="BLK" style="display: inline-block; vertical-align: middle">Blackpool<br>
   <img class="map" src="blk.svg" title="Blackpool" alt="Blackpool map" width="130" height="525"></span>
 <span id="BNJ" style="display: none; vertical-align: middle">Bonn<br>
   <img class="map" src="bnj.svg" title="Bonn" alt="Bonn map" width="174" height="228"></span>
 <span id="BOD" style="display: none; vertical-align: middle">Bordeaux<br>
   <img class="map" src="bod.svg" title="Bordeaux" alt="Bordeaux map" width="408" height="506"></span>
+<span id="GL_" style="display: none; vertical-align: middle">Brăila<br>
+  <img class="map" src="gl_.svg" title="Brăila" alt="Brăila map" width="109" height="240"></span>
 <span id="BD_" style="display: none; vertical-align: middle">Brandenburg<br>
   <img class="map" src="bd_.svg" title="Brandenburg" alt="Brandenburg map" width="234" height="147"></span>
 <span id="BTS" style="display: none; vertical-align: middle">Bratislava<br>
@@ -275,8 +285,6 @@ function togglesidebar() {
   <img class="map" src="fo_.svg" title="Frankfurt Oder" alt="Frankfurt Oder map" width="207" height="261"></span>
 <span id="QFB" style="display: none; vertical-align: middle">Freiburg<br>
   <img class="map" src="qfb.svg" title="Freiburg" alt="Freiburg map" width="261" height="261"></span>
-<span id="GL_" style="display: none; vertical-align: middle">Galaţi / Brăila<br>
-  <img class="map" src="gl_.svg" title="Galaţi / Brăila" alt="Galaţi / Brăila map" width="293" height="781"></span>
 <span id="GZT" style="display: none; vertical-align: middle">Gaziantep<br>
   <img class="map" src="gzt.svg" title="Gaziantep" alt="Gaziantep map" width="223" height="283"></span>
 <span id="GDN" style="display: none; vertical-align: middle">Gdańsk<br>
@@ -507,6 +515,8 @@ function togglesidebar() {
   <img class="map" src="pz_.svg" title="Plzeň" alt="Plzeň map" width="228" height="228"></span>
 <span id="PDX" style="display: inline-block; vertical-align: middle">Portland<br>
   <img class="map" src="pdx.svg" title="Portland" alt="Portland map" width="147" height="348"></span>
+<span id="OPO" style="display: none; vertical-align: middle">Porto<br>
+  <img class="map" src="opo.svg" title="Porto" alt="Porto map" width="185" height="141"></span>
 <span id="PD_" style="display: none; vertical-align: middle">Potsdam<br>
   <img class="map" src="pd_.svg" title="Potsdam" alt="Potsdam map" width="293" height="271"></span>
 <span id="POZ" style="display: none; vertical-align: middle">Poznań<br>
@@ -619,6 +629,8 @@ function togglesidebar() {
   <img class="map" src="vce.svg" title="Venezia" alt="Venezia map" width="391" height="326"></span>
 <span id="VIN" style="display: none; vertical-align: middle">Vinnytsia<br>
   <img class="map" src="vin.svg" title="Vinnytsia" alt="Vinnytsia map" width="288" height="141"></span>
+<span id="VTB" style="display: none; vertical-align: middle">Vitebsk<br>
+  <img class="map" src="vtb.svg" title="Vitebsk" alt="Vitebsk map" width="255" height="152"></span>
 <span id="VIT" style="display: none; vertical-align: middle">Vitoria-Gasteiz<br>
   <img class="map" src="vit.svg" title="Vitoria-Gasteiz" alt="Vitoria-Gasteiz map" width="109" height="136"></span>
 <span id="WAW" style="display: none; vertical-align: middle">Warszawa<br>
@@ -627,6 +639,8 @@ function togglesidebar() {
   <img class="map" src="was.svg" title="Washington" alt="Washington map" width="120" height="44"></span>
 <span id="VIE" style="display: none; vertical-align: middle">Wien<br>
   <img class="map" src="vie.svg" title="Wien" alt="Wien map" width="620" height="1044"></span>
+<span id="ESS" style="display: none; vertical-align: middle">Witten<br>
+  <img class="map" src="ess.svg" title="Witten" alt="Witten map" width="245" height="163"></span>
 <span id="WRO" style="display: none; vertical-align: middle">Wrocław<br>
   <img class="map" src="wro.svg" title="Wrocław" alt="Wrocław map" width="522" height="310"></span>
 <span id="WUH" style="display: none; vertical-align: middle">Wuhan<br>
@@ -658,6 +672,7 @@ function togglesidebar() {
 <div id="button" style="position: absolute; right: 5px;" onclick="togglesidebar()"><a id="collapse" href="javascript:">[&minus;]</a></div>
 <div style="padding-right: 2em;">Cities to show:</div>
 <div id="form" style="display: block;">
+<input type="checkbox" id="ACScheckbox" class="ACScheckbox" onclick="toggleshow('ACS')" autocomplete="off"><a href="javascript:sidebarclick('ACS')">Achinsk</a><br>
 <input type="checkbox" class="ADLcheckbox" onclick="toggleshow('ADL')" autocomplete="off" checked><a href="javascript:sidebarclick('ADL')">Adelaide</a><br>
 <input type="checkbox" id="ALGcheckbox" class="ALGcheckbox" onclick="toggleshow('ALG')" autocomplete="off"><a href="javascript:sidebarclick('ALG')">Alger</a><br>
 <input type="checkbox" id="AMScheckbox" class="AMScheckbox" onclick="toggleshow('AMS')" autocomplete="off"><a href="javascript:sidebarclick('AMS')">Amsterdam</a><br>
@@ -665,10 +680,12 @@ function togglesidebar() {
 <input type="checkbox" id="AYTcheckbox" class="AYTcheckbox" onclick="toggleshow('AYT')" autocomplete="off"><a href="javascript:sidebarclick('AYT')">Antalya</a><br>
 <input type="checkbox" id="ANRcheckbox" class="ANRcheckbox" onclick="toggleshow('ANR')" autocomplete="off"><a href="javascript:sidebarclick('ANR')">Antwerpen</a><br>
 <input type="checkbox" id="ARWcheckbox" class="ARWcheckbox" onclick="toggleshow('ARW')" autocomplete="off"><a href="javascript:sidebarclick('ARW')">Arad</a><br>
+<input type="checkbox" id="ATHcheckbox" class="ATHcheckbox" onclick="toggleshow('ATH')" autocomplete="off"><a href="javascript:sidebarclick('ATH')">Athína</a><br>
 <input type="checkbox" class="ATLcheckbox" onclick="toggleshow('ATL')" autocomplete="off" checked><a href="javascript:sidebarclick('ATL')">Atlanta</a><br>
 <input type="checkbox" id="AGBcheckbox" class="AGBcheckbox" onclick="toggleshow('AGB')" autocomplete="off"><a href="javascript:sidebarclick('AGB')">Augsburg</a><br>
 <input type="checkbox" id="AVNcheckbox" class="AVNcheckbox" onclick="toggleshow('AVN')" autocomplete="off"><a href="javascript:sidebarclick('AVN')">Avignon</a><br>
 <input type="checkbox" id="BCNcheckbox" class="BCNcheckbox" onclick="toggleshow('BCN')" autocomplete="off"><a href="javascript:sidebarclick('BCN')">Barcelona</a><br>
+<input type="checkbox" id="BAXcheckbox" class="BAXcheckbox" onclick="toggleshow('BAX')" autocomplete="off"><a href="javascript:sidebarclick('BAX')">Barnaul</a><br>
 <input type="checkbox" id="BSLcheckbox" class="BSLcheckbox" onclick="toggleshow('BSL')" autocomplete="off"><a href="javascript:sidebarclick('BSL')">Basel</a><br>
 <input type="checkbox" id="BJScheckbox" class="BJScheckbox" onclick="toggleshow('BJS')" autocomplete="off"><a href="javascript:sidebarclick('BJS')">Beijing</a><br>
 <input type="checkbox" id="BEGcheckbox" class="BEGcheckbox" onclick="toggleshow('BEG')" autocomplete="off"><a href="javascript:sidebarclick('BEG')">Beograd</a><br>
@@ -677,6 +694,7 @@ function togglesidebar() {
 <input type="checkbox" id="BRNcheckbox" class="BRNcheckbox" onclick="toggleshow('BRN')" autocomplete="off"><a href="javascript:sidebarclick('BRN')">Bern</a><br>
 <input type="checkbox" id="QBQcheckbox" class="QBQcheckbox" onclick="toggleshow('QBQ')" autocomplete="off"><a href="javascript:sidebarclick('QBQ')">Besançon</a><br>
 <input type="checkbox" id="BIOcheckbox" class="BIOcheckbox" onclick="toggleshow('BIO')" autocomplete="off"><a href="javascript:sidebarclick('BIO')">Bilbao</a><br>
+<input type="checkbox" id="BI_checkbox" class="BI_checkbox" onclick="toggleshow('BI_')" autocomplete="off"><a href="javascript:sidebarclick('BI_')">Biysk</a><br>
 <input type="checkbox" class="BLKcheckbox" onclick="toggleshow('BLK')" autocomplete="off" checked><a href="javascript:sidebarclick('BLK')">Blackpool</a><br>
 <input type="checkbox" id="BNJcheckbox" class="BNJcheckbox" onclick="toggleshow('BNJ')" autocomplete="off"><a href="javascript:sidebarclick('BNJ')">Bonn</a><br>
 <input type="checkbox" id="BODcheckbox" class="BODcheckbox" onclick="toggleshow('BOD')" autocomplete="off"><a href="javascript:sidebarclick('BOD')">Bordeaux</a><br>
@@ -731,7 +749,6 @@ function togglesidebar() {
 <input type="checkbox" id="FRAcheckbox" class="FRAcheckbox" onclick="toggleshow('FRA')" autocomplete="off"><a href="javascript:sidebarclick('FRA')">Frankfurt</a><br>
 <input type="checkbox" id="FO_checkbox" class="FO_checkbox" onclick="toggleshow('FO_')" autocomplete="off"><a href="javascript:sidebarclick('FO_')">Frankfurt Oder</a><br>
 <input type="checkbox" id="QFBcheckbox" class="QFBcheckbox" onclick="toggleshow('QFB')" autocomplete="off"><a href="javascript:sidebarclick('QFB')">Freiburg</a><br>
-<input type="checkbox" id="GL_checkbox" class="GL_checkbox" onclick="toggleshow('GL_')" autocomplete="off"><a href="javascript:sidebarclick('GL_')">Galaţi</a><br>
 <input type="checkbox" id="GZTcheckbox" class="GZTcheckbox" onclick="toggleshow('GZT')" autocomplete="off"><a href="javascript:sidebarclick('GZT')">Gaziantep</a><br>
 <input type="checkbox" id="GDNcheckbox" class="GDNcheckbox" onclick="toggleshow('GDN')" autocomplete="off"><a href="javascript:sidebarclick('GDN')">Gdańsk</a><br>
 <input type="checkbox" id="GVAcheckbox" class="GVAcheckbox" onclick="toggleshow('GVA')" autocomplete="off"><a href="javascript:sidebarclick('GVA')">Genève</a><br>
@@ -848,6 +865,7 @@ function togglesidebar() {
 <input type="checkbox" id="QPLcheckbox" class="QPLcheckbox" onclick="toggleshow('QPL')" autocomplete="off"><a href="javascript:sidebarclick('QPL')">Ploieşti</a><br>
 <input type="checkbox" id="PZ_checkbox" class="PZ_checkbox" onclick="toggleshow('PZ_')" autocomplete="off"><a href="javascript:sidebarclick('PZ_')">Plzeň</a><br>
 <input type="checkbox" class="PDXcheckbox" onclick="toggleshow('PDX')" autocomplete="off" checked><a href="javascript:sidebarclick('PDX')">Portland</a><br>
+<input type="checkbox" id="OPOcheckbox" class="OPOcheckbox" onclick="toggleshow('OPO')" autocomplete="off"><a href="javascript:sidebarclick('OPO')">Porto</a><br>
 <input type="checkbox" id="PD_checkbox" class="PD_checkbox" onclick="toggleshow('PD_')" autocomplete="off"><a href="javascript:sidebarclick('PD_')">Potsdam</a><br>
 <input type="checkbox" id="POZcheckbox" class="POZcheckbox" onclick="toggleshow('POZ')" autocomplete="off"><a href="javascript:sidebarclick('POZ')">Poznań</a><br>
 <input type="checkbox" id="PRGcheckbox" class="PRGcheckbox" onclick="toggleshow('PRG')" autocomplete="off"><a href="javascript:sidebarclick('PRG')">Praha</a><br>
@@ -905,10 +923,12 @@ function togglesidebar() {
 <input type="checkbox" id="XVScheckbox" class="XVScheckbox" onclick="toggleshow('XVS')" autocomplete="off"><a href="javascript:sidebarclick('XVS')">Valenciennes</a><br>
 <input type="checkbox" id="VCEcheckbox" class="VCEcheckbox" onclick="toggleshow('VCE')" autocomplete="off"><a href="javascript:sidebarclick('VCE')">Venezia</a><br>
 <input type="checkbox" id="VINcheckbox" class="VINcheckbox" onclick="toggleshow('VIN')" autocomplete="off"><a href="javascript:sidebarclick('VIN')">Vinnytsia</a><br>
+<input type="checkbox" id="VTBcheckbox" class="VTBcheckbox" onclick="toggleshow('VTB')" autocomplete="off"><a href="javascript:sidebarclick('VTB')">Vitebsk</a><br>
 <input type="checkbox" id="VITcheckbox" class="VITcheckbox" onclick="toggleshow('VIT')" autocomplete="off"><a href="javascript:sidebarclick('VIT')">Vitoria-Gasteiz</a><br>
 <input type="checkbox" id="WAWcheckbox" class="WAWcheckbox" onclick="toggleshow('WAW')" autocomplete="off"><a href="javascript:sidebarclick('WAW')">Warszawa</a><br>
 <input type="checkbox" class="WAScheckbox" onclick="toggleshow('WAS')" autocomplete="off" checked><a href="javascript:sidebarclick('WAS')">Washington</a><br>
 <input type="checkbox" id="VIEcheckbox" class="VIEcheckbox" onclick="toggleshow('VIE')" autocomplete="off"><a href="javascript:sidebarclick('VIE')">Wien</a><br>
+<input type="checkbox" id="ESScheckbox" class="ESScheckbox" onclick="toggleshow('ESS')" autocomplete="off"><a href="javascript:sidebarclick('ESS')">Witten</a><br>
 <input type="checkbox" id="WROcheckbox" class="WROcheckbox" onclick="toggleshow('WRO')" autocomplete="off"><a href="javascript:sidebarclick('WRO')">Wrocław</a><br>
 <input type="checkbox" id="WUHcheckbox" class="WUHcheckbox" onclick="toggleshow('WUH')" autocomplete="off"><a href="javascript:sidebarclick('WUH')">Wuhan</a><br>
 <input type="checkbox" id="WZ_checkbox" class="WZ_checkbox" onclick="toggleshow('WZ_')" autocomplete="off"><a href="javascript:sidebarclick('WZ_')">Würzburg</a><br>

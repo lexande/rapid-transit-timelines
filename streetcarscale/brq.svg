@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
-     style="display:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
-     width="1985"
-     height="2205.5557"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/brqosm.png"
-     id="image10"
+     xlink:href="../timelines/streetmap/brqosm.png"
+     y="-30.555664"
      x="-20"
-     y="-30.555664" />
+     id="image10"
+     preserveAspectRatio="none"
+     height="2205.5557"
+     width="1985"
+     style="display:none;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.5254902;fill-rule:nonzero;stroke:#005089;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1898.5365,678.3305 -9.3482,0.7191 -22.2918,2.8763 -8.1497,-1.6778 -10.0673,-5.9925 -5.9924,-6.7115 -11.9849,-24.4491 -6.9512,-7.4306 -7.6703,-3.8352 -9.8276,-0.9588 -11.0261,2.8764 -13.1833,7.6703 -25.1682,24.2094 -8.3895,13.4231 -7.6703,18.9361 -0.2397,9.1085 -0.4794,14.8612 -4.5542,12.4642 -11.9849,9.5879 -16.7788,5.9925 -81.9764,28.2842 -5.9924,5.0337 -5.0337,10.0673 -3.116,9.5878 1.6778,10.7864 5.2734,8.3894 8.8688,8.8688 12.2245,22.0522 5.5131,12.9436 1.4381,13.6628 -2.1572,13.6627 -3.5955,11.5055 -7.4306,11.026 -28.7637,31.1607 -21.0933,27.8048 -10.7864,5.9925 -17.7376,0.9588 -20.614,-6.9513 -17.9772,-8.3894 -43.3852,-28.7636 -10.0673,-3.8352 -40.0295,-2.8763 -15.82,-1.9176"
@@ -154,4 +154,12 @@
      id="path1971"
      d="m 1240.7131,681.08546 4.719,-13.76386 17.6964,5.70217"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#005089;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#005089;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 1108.4945,918.0277 -5.8001,-5.90697"
+     id="path861" />
+  <path
+     style="fill:none;stroke:#005089;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 1115.2133,918.24521 1.9681,4.33815 -2.4688,8.74556 2.2405,21.19584 14.8849,20.13645 11.4816,19.36246 31.332,83.18123 9.2545,33.5778 1.7547,40.8808 0.3137,9.3848"
+     id="path863" />
 </svg>

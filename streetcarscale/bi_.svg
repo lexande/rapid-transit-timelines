@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg2"
+   width="1750"
+   height="1175"
+   viewBox="0 0 1750 1175">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="g10">
+    <image
+       xlink:href="streetmap/bi_osm.png"
+       y="0"
+       x="-550"
+       id="image12"
+       style="display:none;image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="1437.3334"
+       width="2464" />
+    <path
+       style="fill:none;stroke:#271879;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+       d="m 1216.2673,78.691444 13.21,11.382905 9.7116,-11.970945 -12.1289,-10.549963 -109.5248,118.602879 -29.8872,-25.72207 -127.2304,139.94408 -74.258,51.76605 -61.5533,36.43972 -28.0618,27.84198 -31.6248,26.04158 -56.7052,28.28478 -261.36255,52.44378 -13.72279,4.32549 -82.78606,15.05263 -2.13367,4.59399 40.56503,205.25668 6.21732,43.99151 -214.4518,43.62855 11.13063,59.82072 6.52902,7.77842 35.0484,173.91339 -44.90653,12.51 -6.67303,2.7901 -12.80012,-0.4432 -45.15743,10.3831 -26.00858,-1.5162 -33.499,-160.77666 1.9764,-12.49675 30.4206,-71.47031 7.1956,-2.38106 77.284,-18.06032 -10.2367,-38.78232 -15.70579,-83.47692 3.32566,-5.84264 94.95217,-18.88091 4.69934,-12.94736 87.79977,-88.18956 10.29062,-4.18408"
+       id="path855" />
+    <path
+       style="fill:none;stroke:#271879;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+       d="m 960.4176,300.37833 27.2631,45.81614 26.5757,31.97067 95.4044,115.7676 11.1206,15.70729 41.8448,-26.62491 246.5959,-54.11462 3.0361,-4.18906 -27.5554,-121.0414 2.2964,-6.79429 305.9028,-67.41475 2.3772,-6.21361 -11.1786,-49.34658 4.7385,-6.0583"
+       id="path857" />
+  </g>
+</svg>

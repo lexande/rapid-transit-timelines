@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg2"
+   width="925"
+   height="975"
+   viewBox="0 0 925 975">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="g10">
+    <image
+       xlink:href="streetmap/acsosm.png"
+       y="0"
+       x="-275"
+       id="image12"
+       style="display:none;image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="936.42902"
+       width="1311.0006" />
+    <path
+       style="fill:none;stroke:#065a10;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+       d="m 60.825763,893.80298 -3.901023,6.17251 0.14553,1.7191 9.96079,7.45392 4.35431,0.56996 110.63709,-163.14948 79.29691,-115.97553 6.11293,-3.16768 74.25038,1.47389 4.68135,-4.14836 11.75922,-23.07291 31.80128,-42.8333 36.51612,-48.39407 10.638,-56.86454 4.61596,-8.41959 16.6245,-11.96693 32.91797,-17.82317 84.22747,-12.10684 49.60245,-1.19247 5.05546,-1.41449 230.03854,-266.33803 -8.3903,-22.54989 -26.336,-18.964304 -3.0727,-4.999306 0.6958,-6.85665 11.1785,-16.99498"
+       id="path837" />
+  </g>
+</svg>

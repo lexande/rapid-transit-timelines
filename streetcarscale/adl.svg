@@ -26,20 +26,16 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../timelines/streetmap/../streetmap/adlosm.png"
-     y="-4972.5381"
-     x="-440"
-     id="image10"
-     preserveAspectRatio="none"
-     height="9407.5381"
+     xlink:href="../timelines/streetmap/adlosm.png"
+     style="display:none"
      width="3597"
-     style="display:none" />
+     height="9407.5381"
+     preserveAspectRatio="none"
+     id="image10"
+     x="-440"
+     y="-4972.5381" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#e91938;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1179,585 -13,31 -19,27 -45,33.5 -100.5,60 -188,117.5 -270.5,167 -205.5,126 -20.5,10 -32.5,9 -31,5.5 -81,5"
-     id="path4171" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#e91938;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#e71939;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 62.5,1182.5 113,-6"
      id="path4173" />
   <path
@@ -51,11 +47,15 @@
      d="m 384,-412.5 249,233 276,256.5 27.5,32 62.5,108.5 10.9177,14.4471 L 1020,243.5"
      id="path4183" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#e91938;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#e71939;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1178.5,585 4.5,-15 -2.5,-66 2,-10.5 -5.5,-81.5 -9.5,-16 -0.5,-18.5 6,-13 -4,-83 -3.5,-3.5 -151,8.5 -103,-50 -4,-5 L 886.5,81 861,57.5"
      id="path4175" />
   <path
      id="path834"
      d="m 1165.5,278 130.6218,-6.6433"
-     style="opacity:1;fill:none;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#e91938;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#e71939;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#e71939;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1179,585 -13,31 -19,27 -45,33.5 -100.5,60 -188,117.5 -270.5,167 -205.5,126 -20.5,10 -32.5,9 -31,5.5 -81,5"
+     id="path4171" />
 </svg>
