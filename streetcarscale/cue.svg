@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg2"
+   width="1100"
+   height="725"
+   viewBox="0 0 1100 725">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="g10">
+    <image
+       xlink:href="streetmap/cueosm.png"
+       y="0"
+       x="-225"
+       id="image12"
+       style="display:none;image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="1011"
+       width="1348" />
+    <path
+       style="fill:none;stroke:#d50613;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+       d="m 59.41184,655.62564 1.16352,-30.98074 5.22375,-18.49984 93.61272,-175.1901 15.79257,-21.7698 21.42902,-21.13538 37.24882,-30.78643 11.95214,-16.08592 14.0686,-24.75146 14.49702,-23.09958 1.89873,-21.20638 1.17225,-29.71448 9.28548,-26.38141 12.22474,-1.14867 94.27711,15.59826 55.26816,20.79551 260.75545,64.93236 1.26213,-36.49962 141.39835,-94.74227 102.2722,-84.38183 7.6212,-4.442082 7.2867,-1.234638 13.6509,2.93864 7.3581,-1.308482 7.6352,-5.836727 7.4113,-16.732294 3.7102,-2.577679 7.4899,-0.203994 16.5061,4.947075 7.2545,-0.163967"
+       id="path855" />
+    <path
+       style="fill:none;stroke:#d50613;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+       d="m 286.75646,216.02412 5.23609,-18.70369 12.54466,-9.71031 10.41983,-2.10292 8.90011,9.00556 17.2422,2.52495 66.346,26.49504 240.96398,60.97242 3.33986,-15.95328 58.79486,11.15007"
+       id="path857" />
+  </g>
+</svg>

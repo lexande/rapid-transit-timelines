@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../timelines/streetmap/dalosm.png"
-     id="image10"
-     height="5674.6665"
-     width="4256"
-     y="-3564.6665"
+     style="display:none"
      x="-1480"
-     style="display:none" />
+     y="-3564.6665"
+     width="4256"
+     height="5674.6665"
+     id="image10" />
   <path
      style="fill:none;stroke:#f5ce2b;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3767"
@@ -80,15 +80,15 @@
      id="path2997"
      d="m 542.25006,445.99998 -8,-2.5 -46,-44.5 -9.5,-0.5 -22.5198,9.2557 L 440.50005,424" />
   <path
-     style="fill:none;stroke:#5e1028;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;stroke:#6f1931;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3785"
      d="m 446.12906,125.89428 -33.0621,-33.0622 -5.6356,2.2542 -48.4662,89.4182 1.5029,21.7909 -0.7514,12.0226 -15.0283,66.5001 -26.6752,91.2966 44.7091,42.4549 32.3281,33.5729 3.91684,-0.69121 8.9857,-10.13771 11.05932,-11.05932 -0.2304,-3.22564 -29.95233,-29.26112 -11.98093,-5.52966 -44.6981,-47.23252 -2.99523,-8.06409" />
   <path
-     style="fill:none;stroke:#5e1028;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;stroke:#6f1931;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3787"
      d="m 412.69126,92.45638 0.7514,-4.8842 11.6469,-10.5198 -11.6469,-11.6469 -38.3221,34.9407 -0.7514,2.63 6.0113,6.387 -39.0735,71.7599 0.3757,3.7571 18.034,19.9124" />
   <path
-     style="fill:none;stroke:#00a4e4;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;stroke:#ffa728;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path2996"
      d="m 283.03293,588.01461 6.59167,30.48649 -0.41198,7.00365 -99.69906,150.78453 -17.30314,16.47919 -35.43026,24.30679 -28.83857,30.07451 -29.662534,-2.88385 -5.043515,5.10527 1.303353,34.53887 -13.033536,24.76372 -0.651676,82.11128" />
 </svg>

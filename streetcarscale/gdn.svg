@@ -27,13 +27,13 @@
      id="defs6" />
   <image
      xlink:href="../timelines/streetmap/gdnosm.png"
-     y="-75"
-     x="-100"
-     id="image12"
-     preserveAspectRatio="none"
-     height="1770"
+     style="display:none"
      width="1770"
-     style="display:none" />
+     height="1770"
+     preserveAspectRatio="none"
+     id="image12"
+     x="-100"
+     y="-75" />
   <path
      id="path837"
      d="m 316.01285,358.53397 4.47983,19.58519 4.08278,15.55567 4.37983,12.72026 3.88802,4.26326 10.39381,5.76524 9.12564,13.76797 0.9022,4.32574 1.25353,6.92084 4.32348,5.86656 16.03697,14.75367 45.82543,47.33727 29.60088,31.02446 4.85211,6.78901 17.41301,30.3158"
@@ -100,6 +100,10 @@
      style="fill:none;stroke:#b90707;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
      id="path903"
-     d="m 214.85868,1063.2967 -38.67932,80.1544"
+     d="m 214.85868,1063.2967 -38.67932,80.1544 -13.46892,31.3369 -4.11628,20.2781 -12.67757,26.6538 -5.28279,22.8753 -10.54703,37.2711 -2.11582,22.4721 3.69174,17.792 15.38238,46.8867 1.53465,11.0346 -5.21712,15.3792 -13.85633,38.1195 -0.1745,6.8337 -4.55658,18.17 4.25518,5.3545 12.26471,0.5918"
      style="fill:none;stroke:#b90707;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+  <path
+     style="fill:none;stroke:#b90707;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 129.03037,1463.9086 -2.98442,3.5686 3.83644,20.3212 -0.44199,16.3555 -7.76453,21.1649"
+     id="path848" />
 </svg>

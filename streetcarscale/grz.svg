@@ -27,13 +27,13 @@
      id="defs6" />
   <image
      xlink:href="streetmap/grzosm.png"
-     width="1149"
-     height="1378.8"
-     preserveAspectRatio="none"
-     id="image10"
-     x="-50"
+     style="display:none"
      y="-88.800049"
-     style="display:none" />
+     x="-50"
+     id="image10"
+     preserveAspectRatio="none"
+     height="1378.8"
+     width="1149" />
   <path
      id="path836"
      d="m 449.32204,1208.4407 7.11864,5.2881 h 3.45763 l 17.08474,-5.2881 3.86441,-3.8644 2.64407,-5.6949 -3.05085,-23.7967"
@@ -70,4 +70,8 @@
      id="path852"
      d="m 287.01695,594.81351 -37.83051,6.91525 -17.28813,0.20339 -21.15255,-1.62712 -39.45762,-7.52542 -6.91526,34.37288 -75.45763,-14.64407 -19.32203,7.52543 -1.62712,5.8983 2.64407,117.96615 4.27119,6.305"
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#e30109;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#e30109;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 627.28814,772.3729 18.34348,48.39048 67.61845,129.71946 25.07246,2.04469 35.5738,6.52292 13.02403,6.84134 10.19445,15.65904 11.31174,19.89747 8.18717,10.9249 0.75728,4.4881 -1.68183,3.9284 -15.48351,8.6985 0.57602,5.0341 20.06919,11.0199 0.98914,4.0909 -8.07252,13.1555 -3.52965,0.974 -27.45801,-13.2669 -1.35332,-1.9746 0.3814,-4.7781 18.39775,-14.2548"
+     id="path841" />
 </svg>
