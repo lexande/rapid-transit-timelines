@@ -38,14 +38,14 @@
      d="m 573.5,315.24998 -41.5,31.75 -3.75,6.75 3,69.5 -0.75,9 -1.5,8.25 -3.5,4.25 -7,5.75 -17,3 -37,4.25 -21.5,2.5 -17.75,6.25 -11.75,7.25 -22,27.5 m 0,0 -4.25,10.5 8,58.25 L 342,700 219,997.75 l -19.5,45.5 -95.25,81 -8.75,6.25 -18,8.25 -39,4.25"
      id="path4510" />
   <image
-     xlink:href="../timelines/streetmap/../streetmap/lynosm.png"
-     y="-108.42859"
-     x="-215"
-     id="image10"
-     preserveAspectRatio="none"
-     height="1883.4286"
+     xlink:href="../timelines/streetmap/lynosm.png"
+     style="display:none"
      width="3296"
-     style="display:none" />
+     height="1883.4286"
+     preserveAspectRatio="none"
+     id="image10"
+     x="-215"
+     y="-108.42859" />
   <path
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 244.75,85.24998 -36.75,40.5 -16,18.75 -6.5,17.25 -0.25,13.75 4.25,18 26.25,50 -0.25,4.5 3.5,5.5 4,1.25 17.25,-1.5 8.5,6.25 18,28.75 13.25,22.5 1.25,7 -5.75,15.25 2.875,20.75"
@@ -90,4 +90,8 @@
      id="path4549-3"
      d="m 2412,383.74998 -21.25,-4 -3.5,-2.5 -0.5,-9 -1.25,-4.5 -6.25,-2.25 -63.25,-11 -516.5,-91 -19,-5.75 -15.75,-9 -12,-12 -22.25,-16.75 -11,-5.25 -22,-0.5 -13.5,3 -56.75,32.25 -17,10.5 -102.5,86.25 -19.5,13.25 -14,8 -232.25,83.75 -132.25,47 -283.50003,56.75 -13.25,4 -15,11.25 -16.06995,12.10249 -11.60565,4.85013 -12.64497,2.77149 -13.68427,1.38575 -74.48404,5.19656 -8.83415,-0.34643 -19.28404,-3.43778"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#7c4099;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#7c4099;stroke-width:1;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 1829.1569,263.96241 2.4685,6.2695 0.266,31.4757 3.0745,9.03102 1.0911,35.71915"
+     id="path845" />
 </svg>

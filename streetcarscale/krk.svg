@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
-     style="display:none"
-     width="2599.636"
-     height="1733.0909"
-     preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/krkosm.png"
-     id="image10"
+     xlink:href="../timelines/streetmap/krkosm.png"
+     y="-233.09094"
      x="-110"
-     y="-233.09094" />
+     id="image10"
+     preserveAspectRatio="none"
+     height="1733.0909"
+     width="2599.636"
+     style="display:none" />
   <path
      id="path847"
      d="m 694.02583,485.76273 3.52543,9.7627 v 7.8644 l -1.76272,12.0678 1.89831,32.8136 1.35593,15.4576 2.0339,3.3898 4.88136,3.5255 7.8644,1.0847 27.52543,-1.2203 19.66101,2.7118 60.74577,18.0339 4.33898,2.8475 2.16949,5.5593 5.04547,12.38458"
@@ -102,14 +102,6 @@
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#c52720;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1405.2196,490.77883 192.9019,27.81923 12.2025,2.98807 5.4457,-15.4666 246.6005,-101.43989 14.7173,-0.6866 10.8266,-0.3139 -6.5599,-129.58654 -2.6846,-2.3011 -46.0219,-1.53406 -13.6148,-3.83516 -20.5181,3.06813 -1.9176,-5.36922"
      id="path901" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#c52720;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1610.324,521.58613 14.6849,6.2105 64.2712,19.5254 124.4745,34.9831 54.2373,-1.6272"
-     id="path905" />
-  <path
-     id="path880"
-     d="m 1867.9919,580.67793 27.5255,-4.6101 28.2034,-4.2034 4.3389,0.4068 2.5763,3.1186 0.678,16.2712"
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#c52720;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path907"
      d="m 2042.3648,628.40683 -37.9661,1.0847 -7.322,-0.6779 -37.6949,-13.2882 -9.4916,-5.4237 -18.5762,-18.4407 -13.5174,-15.81357 -21.3983,-30.72034 -35.3813,-59.11017 -1.2712,-9.5339 1.2712,-10.38136 5.7203,-9.74576 17.5847,-23.72881 4.6611,-11.01695 -1.069,-17.93103"

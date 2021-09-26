@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg2"
+   width="1075"
+   height="1500"
+   viewBox="0 0 1075 1500">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="g10">
+    <image
+       xlink:href="streetmap/mz_osm.png"
+       y="-160"
+       x="-30"
+       id="image12"
+       style="display:none;image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="2478.3999"
+       width="1549" />
+    <path
+       style="fill:none;stroke:#008000;stroke-width:5;stroke-linejoin:round"
+       d="m 61.785587,64.4911 0.23937,25.21428 3.866404,2.9632 134.014339,2.87969 20.63727,2.66713 48.63732,18.18335 9.33543,5.64089 39.04993,32.83716 63.64078,57.4901 15.50215,16.99517 4.27936,12.70497 -0.15878,148.801 2.96651,9.12684 15.46247,18.7981 15.23775,27.29891 40.48346,38.90517 16.87628,21.73854 44.62713,41.2679 14.72094,24.34563 19.71128,35.96546 33.32589,36.02265 49.79676,71.67203 37.33437,38.95115 32.0216,33.67115 15.139,22.81349 9.48343,23.29299 35.65442,134.90425 15.38649,109.2698 11.64211,25.9006 155.14052,269.6882 20.18633,28.5279 24.905,31.0287"
+       id="path873" />
+  </g>
+</svg>

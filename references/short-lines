@@ -59,7 +59,7 @@ JAX	1050m	monorail	3	1989-05-31	1998-10-31	reopened as 1520m below
 BFE	1050m	tram gradesep	2?	1971-09-21	1991-04-28	thru with 1600m below
 LFQJ	1080m	bus gradesep	2	2008-__-__	never*
 AGB	1106m	tram gradesep	2	2001-06-10	2009-12-13*
-MDZ	1110m	tram gradesep	2	2012-10-08	never*		temporarily longer 2019-05-07?
+MDZ	1110m	tram gradesep	2	2012-10-08*	never		thru with +1200m within 10yr
 CLE	1120m	tram subway	2	1918-__-__	1920-04-11*	1918 line never extended
 BCN	1130m	funicular	2	1901-10-29	1924-12-30*
 KTW	1148m	tram gradesep	2	1980-07-21*	never		ext to 2780m within 3yr
@@ -69,6 +69,7 @@ BRN	1161m	funicular	3	1899-09-12	1974-05-26*
 DRS	1165m	tram gradesep	3	1985-10-04*	2004-12-12	extended >2km within 3yr 
 TRD	1180m	tram gradesep	3	1924-07-18	never*
 PHL	1190m	tram subway	3	1905-12-18*	1907-03-04	extended within 2yr
+MDZ	1200m	tram gradesep	2	2019-05-07	never		thru with 1110m above
 ORN	1220m	tram gradesep	3	2013-05-02	never*
 KRK	1220m	tram gradesep	2	1962-__-__	2008-12-11*	plus 220m loop c. 2003
 NAP	1234m	funicular	4	1928-10-28	1945-09-15*	near earlier 500m+824m lines above
@@ -140,4 +141,4 @@ UIO	2860m	tbus gradesep	5	1996-21-21*	never
 BFE	2950m	tram gradesep	5	1978-04-01	1991-04-28	thru with 1050m above
 
 streetcarscale under 3km:
-SVQ 2070m, STR 2200m, DOH 2430m, TCM 2520m, LIT 2560m, NTL 2680m, MEM 2760m
+SVQ 2070m, STR 2200m, DOH 2430m, TCM 2520m, NTL 2680m, MEM 2760m
