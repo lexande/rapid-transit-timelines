@@ -20,7 +20,7 @@ div#sidebar {
 	float: left;
 	background: #ffffff;
 	border: 1px solid;
-	width: 10.5em;
+	width: 11.2em;
 	max-height: calc(100% - 22px);
 	top: 0;
 	left: 0;
@@ -44,8 +44,8 @@ div#button a:visited {
 	text-decoration: none;
 }
 .headerfooter {
-	padding-left: calc(10.5em + 22px);
-	padding-right: calc(10.5em + 22px);
+	padding-left: calc(11.2em + 22px);
+	padding-right: calc(11.2em + 22px);
 	white-space: nowrap;
 }
 body {
