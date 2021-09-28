@@ -271,8 +271,8 @@ function togglesidebar() {
   <img class="map" src="dok.svg" title="Donetsk" alt="Donetsk map" width="576" height="375"></span>
 <span id="DRS" style="display: none; vertical-align: middle">Dresden<br>
   <img class="map" src="drs.svg" title="Dresden" alt="Dresden map" width="511" height="511"></span>
-<span id="DUS" style="display: none; vertical-align: middle">Düsseldorf<br>
-  <img class="map" src="dus.svg" title="Düsseldorf" alt="Düsseldorf map" width="446" height="533"></span>
+<span id="DUS" style="display: none; vertical-align: middle">Düsseldorf / Ruhr<br>
+  <img class="map" src="dus.svg" title="Düsseldorf / Ruhr" alt="Düsseldorf / Ruhr map" width="1783" height="1424"></span>
 <span id="EB_" style="display: none; vertical-align: middle">Elbląg<br>
   <img class="map" src="eb_.svg" title="Elbląg" alt="Elbląg map" width="125" height="168"></span>
 <span id="ERF" style="display: none; vertical-align: middle">Erfurt<br>
@@ -401,8 +401,6 @@ function togglesidebar() {
   <img class="map" src="krr.svg" title="Krasnodar" alt="Krasnodar map" width="522" height="266"></span>
 <span id="KJA" style="display: none; vertical-align: middle">Krasnoyarsk<br>
   <img class="map" src="kja.svg" title="Krasnoyarsk" alt="Krasnoyarsk map" width="293" height="179"></span>
-<span id="KF_" style="display: none; vertical-align: middle">Krefeld<br>
-  <img class="map" src="kf_.svg" title="Krefeld" alt="Krefeld map" width="364" height="272"></span>
 <span id="KWG" style="display: none; vertical-align: middle">Kryvyi Rih<br>
   <img class="map" src="kwg.svg" title="Kryvyi Rih" alt="Kryvyi Rih map" width="413" height="315"></span>
 <span id="KMJ" style="display: none; vertical-align: middle">Kumamoto<br>
@@ -691,8 +689,6 @@ function togglesidebar() {
   <img class="map" src="was.svg" title="Washington" alt="Washington map" width="120" height="44"></span>
 <span id="VIE" style="display: none; vertical-align: middle">Wien<br>
   <img class="map" src="vie.svg" title="Wien" alt="Wien map" width="620" height="1044"></span>
-<span id="ESS" style="display: none; vertical-align: middle">Witten<br>
-  <img class="map" src="ess.svg" title="Witten" alt="Witten map" width="245" height="163"></span>
 <span id="WRO" style="display: none; vertical-align: middle">Wrocław<br>
   <img class="map" src="wro.svg" title="Wrocław" alt="Wrocław map" width="522" height="310"></span>
 <span id="WUH" style="display: none; vertical-align: middle">Wuhan<br>
@@ -859,7 +855,6 @@ function togglesidebar() {
 <input type="checkbox" id="KRKcheckbox" class="KRKcheckbox" onclick="toggleshow('KRK')" autocomplete="off"><a href="javascript:sidebarclick('KRK')">Kraków</a><br>
 <input type="checkbox" id="KRRcheckbox" class="KRRcheckbox" onclick="toggleshow('KRR')" autocomplete="off"><a href="javascript:sidebarclick('KRR')">Krasnodar</a><br>
 <input type="checkbox" id="KJAcheckbox" class="KJAcheckbox" onclick="toggleshow('KJA')" autocomplete="off"><a href="javascript:sidebarclick('KJA')">Krasnoyarsk</a><br>
-<input type="checkbox" id="KF_checkbox" class="KF_checkbox" onclick="toggleshow('KF_')" autocomplete="off"><a href="javascript:sidebarclick('KF_')">Krefeld</a><br>
 <input type="checkbox" id="KWGcheckbox" class="KWGcheckbox" onclick="toggleshow('KWG')" autocomplete="off"><a href="javascript:sidebarclick('KWG')">Kryvyi Rih</a><br>
 <input type="checkbox" id="KMJcheckbox" class="KMJcheckbox" onclick="toggleshow('KMJ')" autocomplete="off"><a href="javascript:sidebarclick('KMJ')">Kumamoto</a><br>
 <input type="checkbox" id="URScheckbox" class="URScheckbox" onclick="toggleshow('URS')" autocomplete="off"><a href="javascript:sidebarclick('URS')">Kursk</a><br>
@@ -956,6 +951,7 @@ function togglesidebar() {
 <input type="checkbox" id="ROMcheckbox" class="ROMcheckbox" onclick="toggleshow('ROM')" autocomplete="off"><a href="javascript:sidebarclick('ROM')">Roma</a><br>
 <input type="checkbox" id="RLGcheckbox" class="RLGcheckbox" onclick="toggleshow('RLG')" autocomplete="off"><a href="javascript:sidebarclick('RLG')">Rostock</a><br>
 <input type="checkbox" id="RTMcheckbox" class="RTMcheckbox" onclick="toggleshow('RTM')" autocomplete="off"><a href="javascript:sidebarclick('RTM')">Rotterdam</a><br>
+<input type="checkbox" id="DUScheckbox" class="DUScheckbox" onclick="toggleshow('DUS')" autocomplete="off"><a href="javascript:sidebarclick('DUS')">Ruhr</a><br>
 <input type="checkbox" id="EBUcheckbox" class="EBUcheckbox" onclick="toggleshow('EBU')" autocomplete="off"><a href="javascript:sidebarclick('EBU')">Saint-Étienne</a><br>
 <input type="checkbox" class="SLCcheckbox" onclick="toggleshow('SLC')" autocomplete="off" checked><a href="javascript:sidebarclick('SLC')">Salt Lake City</a><br>
 <input type="checkbox" id="SKDcheckbox" class="SKDcheckbox" onclick="toggleshow('SKD')" autocomplete="off"><a href="javascript:sidebarclick('SKD')">Samarkand</a><br>
@@ -1006,7 +1002,6 @@ function togglesidebar() {
 <input type="checkbox" id="WAWcheckbox" class="WAWcheckbox" onclick="toggleshow('WAW')" autocomplete="off"><a href="javascript:sidebarclick('WAW')">Warszawa</a><br>
 <input type="checkbox" class="WAScheckbox" onclick="toggleshow('WAS')" autocomplete="off" checked><a href="javascript:sidebarclick('WAS')">Washington</a><br>
 <input type="checkbox" id="VIEcheckbox" class="VIEcheckbox" onclick="toggleshow('VIE')" autocomplete="off"><a href="javascript:sidebarclick('VIE')">Wien</a><br>
-<input type="checkbox" id="ESScheckbox" class="ESScheckbox" onclick="toggleshow('ESS')" autocomplete="off"><a href="javascript:sidebarclick('ESS')">Witten</a><br>
 <input type="checkbox" id="WROcheckbox" class="WROcheckbox" onclick="toggleshow('WRO')" autocomplete="off"><a href="javascript:sidebarclick('WRO')">Wrocław</a><br>
 <input type="checkbox" id="WUHcheckbox" class="WUHcheckbox" onclick="toggleshow('WUH')" autocomplete="off"><a href="javascript:sidebarclick('WUH')">Wuhan</a><br>
 <input type="checkbox" id="WZ_checkbox" class="WZ_checkbox" onclick="toggleshow('WZ_')" autocomplete="off"><a href="javascript:sidebarclick('WZ_')">Würzburg</a><br>
