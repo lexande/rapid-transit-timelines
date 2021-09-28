@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   id="svg2"
+   width="375"
+   height="375"
+   viewBox="0 0 375 375">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="g10">
+    <image
+       xlink:href="streetmap/nc_osm.png"
+       y="-1125"
+       x="-65"
+       id="image12"
+       style="display:none;image-rendering:optimizeSpeed"
+       preserveAspectRatio="none"
+       height="1598.45"
+       width="913.40002" />
+    <path
+       style="fill:none;stroke:#088a4b;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+       d="m 71.08782,59.3048 0.15183,52.5187 27.50999,50.2819 1.97922,7.5311 26.80518,48.9833 82.82054,-44.8928 27.44614,53.0497 24.77035,-11.4627 45.55667,89.0403"
+       id="path855" />
+  </g>
+</svg>
