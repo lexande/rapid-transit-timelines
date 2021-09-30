@@ -27,16 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../timelines/streetmap/pdxosm.png"
-     id="image10"
-     height="2836.8889"
-     width="6383"
-     y="-411.88892"
+     style="display:none;stroke-linejoin:round"
      x="-3200"
-     style="display:none;stroke-linejoin:round" />
-  <path
-     style="fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path3809"
-     d="m 234.0641,1347.7229 134.3503,3.5355" />
+     y="-411.88892"
+     width="6383"
+     height="2836.8889"
+     id="image10" />
   <path
      style="fill:none;stroke:#018752;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path2987-4"
@@ -46,11 +42,11 @@
      id="path2987"
      d="m 573,878 57,1 99.07839,-7.68221 26.23305,-3.8411 L 773,852 l 20,-33 11,-10 22,-3 56.5,17 73,27 57,53.5 20.5,11 17.5,2 22.5,-3.5 28,-12.5 131,-98 25,-12 32.5,-2.5 40.5,16.5 81.5,42.5 36.5,4.5 47,-7 27.5,9 6,29.5 -5.5,32.5 -3,69 2,6.5" />
   <path
-     style="fill:none;stroke:#0169aa;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     style="fill:none;stroke:#0169aa;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
      id="path3757"
      d="m 1521.5,989 4,3.5 730,7.5 203.5,2 23.5,4 21,7 37,21.5 109,65" />
   <path
-     style="fill:none;stroke:#0169aa;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;stroke:#0169aa;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3759"
      d="m 2648.5,1099 269.5,164 37,23 33.5,11.5 33.5,10 48.5,1.5 25,7" />
   <path
@@ -58,7 +54,7 @@
      id="path3761"
      d="m 136.36135,1064.4843 -5.40002,0.7968 -52.749466,-19.6815 -13.711864,-0.1 -9,8 -14.5,39 -14,19 -22,16 -79.5,42.5 -34,7 -212.5,9.5 -32,2.5 -35.5,9.5 -66,25 -52.5,18.5 -50,7.5 -47.5,1.5 -42.5,-5 -48.5,-8.5 -43,-13.5 -51,-28.5 -37,-20 h -7 l -5,4.5 -1,5 12,10.5 26,15 3,14.5 -10.5,17.5 -24.5,29.5 -45,36.5 -26,19 -13.5,16.5 -9.5,25 -2,44.5 -6.5,25.5 -13,14.5 -20.5,5.5 -51,1 -11.5,7 -10,14 -38.5,1.5 -23.5,7.5 -9,0.5 -215.5,-123.5 -288.5,-211.5 -31,-22.5 -523,-239.5 -41.5,-16 -45,-2 -144,0.5 -20.5,3.5 -251.5,70.5 -21.5,11 -62.5,43 -39,13.5 -26.5,-1 -22,-2" />
   <path
-     style="fill:none;stroke:#0169aa;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+     style="fill:none;stroke:#0169aa;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
      id="path3763"
      d="m -2844.5,1014 -225,-2.5 -2,-2.5 -1.5,-14" />
   <path
@@ -97,26 +93,6 @@
      style="fill:none;stroke:#018752;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3854"
      d="M 347.9142,929.6893 343.25,927 l -1.5,-5 -16.0178,-2.8787 -5.2071,-7.6642 -6.9519,0.6339 -1.0732,1.909 2,70 -3.75,13.75 -28.75,74.5 -37.3839,97.1642 -11.566,29.2858 v 6.3639 l 3.3588,1.2375 5.6568,-2.4749 5.3033,-14.3189 75.6604,-197.8131 -1.0105,-70.9084 2.4248,-3.8682" />
-  <text
-     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-linejoin:round;"
-     xml:space="preserve"
-     id="text3120"
-     y="2322.9609"
-     x="-3035.5469"><tspan
-       style="stroke-linejoin:round;"
-       id="tspan2"
-       y="2322.9609"
-       x="-3035.5469">2010</tspan></text>
-  <text
-     style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-linejoin:round;"
-     xml:space="preserve"
-     id="text3124"
-     y="-168.03931"
-     x="-3035.5469"><tspan
-       style="stroke-linejoin:round;"
-       id="tspan1"
-       y="-168.03931"
-       x="-3035.5469">2010</tspan></text>
   <path
      style="fill:none;stroke:#fbd154;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3773"

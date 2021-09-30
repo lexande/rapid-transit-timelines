@@ -168,7 +168,7 @@ function togglesidebar() {
 <span id="BGY" style="display: none; vertical-align: middle">Bergamo<br>
   <img class="map" src="bgy.svg" title="Bergamo" alt="Bergamo map" width="310" height="250"></span>
 <span id="BER" style="display: none; vertical-align: middle">Berlin<br>
-  <img class="map" src="ber.svg" title="Berlin" alt="Berlin map" width="1130" height="837"></span>
+  <img class="map" src="ber.svg" title="Berlin" alt="Berlin map" width="1793" height="891"></span>
 <span id="BRN" style="display: none; vertical-align: middle">Bern<br>
   <img class="map" src="brn.svg" title="Bern" alt="Bern map" width="457" height="163"></span>
 <span id="QBQ" style="display: none; vertical-align: middle">Besançon<br>
@@ -552,9 +552,11 @@ function togglesidebar() {
 <span id="PAR" style="display: none; vertical-align: middle">Paris<br>
   <img class="map" src="par.svg" title="Paris" alt="Paris map" width="913" height="913"></span>
 <span id="PWQ" style="display: none; vertical-align: middle">Pavlodar<br>
-  <img class="map" src="pwq.svg" title="Pavlodar" alt="Pavlodar map" width="277" height="353"></span>
+  <img class="map" src="pwq.svg" title="Pavlodar" alt="Pavlodar map" width="234" height="234"></span>
+<span id="PEE" style="display: none; vertical-align: middle">Perm<br>
+  <img class="map" src="pee.svg" title="Perm" alt="Perm map" width="353" height="380"></span>
 <span id="PHL" style="display: inline-block; vertical-align: middle">Philadelphia<br>
-  <img class="map" src="phl.svg" title="Philadelphia" alt="Philadelphia map" width="685" height="310"></span>
+  <img class="map" src="phl.svg" title="Philadelphia" alt="Philadelphia map" width="614" height="310"></span>
 <span id="PHX" style="display: inline-block; vertical-align: middle">Phoenix<br>
   <img class="map" src="phx.svg" title="Phoenix" alt="Phoenix map" width="804" height="543"></span>
 <span id="HOQ" style="display: none; vertical-align: middle">Plauen<br>
@@ -567,16 +569,20 @@ function togglesidebar() {
   <img class="map" src="pdx.svg" title="Portland" alt="Portland map" width="147" height="348"></span>
 <span id="OPO" style="display: none; vertical-align: middle">Porto<br>
   <img class="map" src="opo.svg" title="Porto" alt="Porto map" width="185" height="141"></span>
-<span id="PD_" style="display: none; vertical-align: middle">Potsdam<br>
-  <img class="map" src="pd_.svg" title="Potsdam" alt="Potsdam map" width="293" height="271"></span>
 <span id="POZ" style="display: none; vertical-align: middle">Poznań<br>
   <img class="map" src="poz.svg" title="Poznań" alt="Poznań map" width="370" height="348"></span>
 <span id="PRG" style="display: none; vertical-align: middle">Praha<br>
   <img class="map" src="prg.svg" title="Praha" alt="Praha map" width="560" height="462"></span>
+<span id="PK_" style="display: none; vertical-align: middle">Prokopyevsk<br>
+  <img class="map" src="pk_.svg" title="Prokopyevsk" alt="Prokopyevsk map" width="451" height="212"></span>
+<span id="PY_" style="display: none; vertical-align: middle">Pyatigorsk<br>
+  <img class="map" src="py_.svg" title="Pyatigorsk" alt="Pyatigorsk map" width="364" height="141"></span>
 <span id="FNJ" style="display: none; vertical-align: middle">Pyongyang<br>
   <img class="map" src="fnj.svg" title="Pyongyang" alt="Pyongyang map" width="364" height="299"></span>
 <span id="TAO" style="display: none; vertical-align: middle">Qingdao<br>
   <img class="map" src="tao.svg" title="Qingdao" alt="Qingdao map" width="245" height="76"></span>
+<span id="QB_" style="display: none; vertical-align: middle">Qiubei<br>
+  <img class="map" src="qb_.svg" title="Qiubei" alt="Qiubei map" width="98" height="343"></span>
 <span id="RBA" style="display: none; vertical-align: middle">Rabat<br>
   <img class="map" src="rba.svg" title="Rabat" alt="Rabat map" width="245" height="267"></span>
 <span id="RHE" style="display: none; vertical-align: middle">Reims<br>
@@ -932,6 +938,7 @@ function togglesidebar() {
 <input type="checkbox" id="PMOcheckbox" class="PMOcheckbox" onclick="toggleshow('PMO')" autocomplete="off"><a href="javascript:sidebarclick('PMO')">Palermo</a><br>
 <input type="checkbox" id="PARcheckbox" class="PARcheckbox" onclick="toggleshow('PAR')" autocomplete="off"><a href="javascript:sidebarclick('PAR')">Paris</a><br>
 <input type="checkbox" id="PWQcheckbox" class="PWQcheckbox" onclick="toggleshow('PWQ')" autocomplete="off"><a href="javascript:sidebarclick('PWQ')">Pavlodar</a><br>
+<input type="checkbox" id="PEEcheckbox" class="PEEcheckbox" onclick="toggleshow('PEE')" autocomplete="off"><a href="javascript:sidebarclick('PEE')">Perm</a><br>
 <input type="checkbox" class="PHLcheckbox" onclick="toggleshow('PHL')" autocomplete="off" checked><a href="javascript:sidebarclick('PHL')">Philadelphia</a><br>
 <input type="checkbox" class="PHXcheckbox" onclick="toggleshow('PHX')" autocomplete="off" checked><a href="javascript:sidebarclick('PHX')">Phoenix</a><br>
 <input type="checkbox" id="HOQcheckbox" class="HOQcheckbox" onclick="toggleshow('HOQ')" autocomplete="off"><a href="javascript:sidebarclick('HOQ')">Plauen</a><br>
@@ -939,11 +946,13 @@ function togglesidebar() {
 <input type="checkbox" id="PZ_checkbox" class="PZ_checkbox" onclick="toggleshow('PZ_')" autocomplete="off"><a href="javascript:sidebarclick('PZ_')">Plzeň</a><br>
 <input type="checkbox" class="PDXcheckbox" onclick="toggleshow('PDX')" autocomplete="off" checked><a href="javascript:sidebarclick('PDX')">Portland</a><br>
 <input type="checkbox" id="OPOcheckbox" class="OPOcheckbox" onclick="toggleshow('OPO')" autocomplete="off"><a href="javascript:sidebarclick('OPO')">Porto</a><br>
-<input type="checkbox" id="PD_checkbox" class="PD_checkbox" onclick="toggleshow('PD_')" autocomplete="off"><a href="javascript:sidebarclick('PD_')">Potsdam</a><br>
 <input type="checkbox" id="POZcheckbox" class="POZcheckbox" onclick="toggleshow('POZ')" autocomplete="off"><a href="javascript:sidebarclick('POZ')">Poznań</a><br>
 <input type="checkbox" id="PRGcheckbox" class="PRGcheckbox" onclick="toggleshow('PRG')" autocomplete="off"><a href="javascript:sidebarclick('PRG')">Praha</a><br>
+<input type="checkbox" id="PK_checkbox" class="PK_checkbox" onclick="toggleshow('PK_')" autocomplete="off"><a href="javascript:sidebarclick('PK_')">Prokopyevsk</a><br>
+<input type="checkbox" id="PY_checkbox" class="PY_checkbox" onclick="toggleshow('PY_')" autocomplete="off"><a href="javascript:sidebarclick('PY_')">Pyatigorsk</a><br>
 <input type="checkbox" id="FNJcheckbox" class="FNJcheckbox" onclick="toggleshow('FNJ')" autocomplete="off"><a href="javascript:sidebarclick('FNJ')">Pyongyang</a><br>
 <input type="checkbox" id="TAOcheckbox" class="TAOcheckbox" onclick="toggleshow('TAO')" autocomplete="off"><a href="javascript:sidebarclick('TAO')">Qingdao</a><br>
+<input type="checkbox" id="QB_checkbox" class="QB_checkbox" onclick="toggleshow('QB_')" autocomplete="off"><a href="javascript:sidebarclick('QB_')">Qiubei</a><br>
 <input type="checkbox" id="RBAcheckbox" class="RBAcheckbox" onclick="toggleshow('RBA')" autocomplete="off"><a href="javascript:sidebarclick('RBA')">Rabat</a><br>
 <input type="checkbox" id="RHEcheckbox" class="RHEcheckbox" onclick="toggleshow('RHE')" autocomplete="off"><a href="javascript:sidebarclick('RHE')">Reims</a><br>
 <input type="checkbox" id="RIXcheckbox" class="RIXcheckbox" onclick="toggleshow('RIX')" autocomplete="off"><a href="javascript:sidebarclick('RIX')">Riga</a><br>

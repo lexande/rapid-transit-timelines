@@ -8,8 +8,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg2"
    height="1425"
-   width="3150"
-   viewBox="0 0 3150 1425"
+   width="2825"
+   viewBox="0 0 2825 1425"
    version="1.1">
   <metadata
      id="metadata3085">
@@ -27,12 +27,12 @@
      id="defs6" />
   <image
      xlink:href="../timelines/streetmap/phlosm.png"
-     style="display:none"
-     x="368.00031"
-     y="-2166.7061"
-     width="4398"
+     id="image12"
      height="4656.7061"
-     id="image12" />
+     width="4398"
+     y="-2166.7061"
+     x="368.00031"
+     style="display:none" />
   <path
      style="fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path2860"
@@ -102,10 +102,6 @@
      id="path3003"
      d="m 2942.4533,498.28155 -27.9049,2.6161 -19.1847,-3.4881 -3.9242,1.526 -9.2037,6.8351" />
   <path
-     style="fill:none;stroke:#fdd700;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path4433"
-     d="m 2573.5003,210.50005 -2.5,19.5 15.5,1.5" />
-  <path
      style="fill:none;stroke:#e3467c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3002"
      d="m 1316.0003,1070.5 -57,-95.5 -1,-6 7.5,-15 -2,-6 -27,-17.5 -2.5,-5" />
@@ -129,8 +125,4 @@
      style="fill:none;stroke:#e3467c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3775"
      d="m 1405.3618,1245.7566 -32.2697,-54.7698 -34.9856,-60.6343 -10.0483,-19.6781 -9.211,-33.4945 -4.6055,-10.0484" />
-  <path
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#fdd700;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1861.7706,271.69014 -21.3279,0.80483 -47.2837,-6.43864 3.0181,-24.34607 34.6076,5.6338 31.3883,24.34608 156.7405,-22.73642 88.1288,-24.34608 6.7649,-0.62766 6.8682,5.34072 3.2824,0.22051 125.0425,-18.54116 180.5,-26 156,27.5 1,19 18.5,5 65,-11.5 224,38 60,2.5 94,15.5 40.5,10.5 8.0123,2.40104 L 3096,349"
-     id="path838" />
 </svg>
