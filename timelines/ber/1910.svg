@@ -31,12 +31,12 @@
      id="path1623" />
   <image
      xlink:href="../streetmap/berosm.png"
-     style="display:none"
-     x="-1282.8571"
-     y="-2537.8569"
-     width="7397.1431"
+     id="image12"
      height="7191.667"
-     id="image12" />
+     width="7397.1431"
+     y="-2537.8569"
+     x="-1282.8571"
+     style="display:none" />
   <path
      style="fill:none;stroke:#f1471d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3627-2"
@@ -124,13 +124,9 @@
        y="-2293.0391"
        x="-1160.5469">1910</tspan></text>
   <path
-     style="fill:none;stroke:#fcd205;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     id="path3623"
-     d="m 1447.8172,1840.093 -16.7497,-71.5086 -18.0383,-78.5951 1.9327,-16.1056 5.1538,-9.6633 10.9518,-14.1729 -2.5769,-65.7107 4.5095,-7.7306 38.0091,-19.3267 51.7265,-27.7407 14.991,-9.8341 9.0696,3.056" />
-  <path
      style="fill:none;stroke:#3a9fd7;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3843"
-     d="m 774.60399,1359.5029 25.7688,7.7307 86.3258,-9.0191 253.66371,-22.0985" />
+     d="m 774.60399,1359.5029 25.7688,7.7307 86.3258,-9.0191 258.67972,-22.6077" />
   <path
      style="fill:none;stroke:#008940;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path8905"
@@ -183,4 +179,8 @@
      style="opacity:0.99918;fill:none;stroke:#bc90c1;stroke-linejoin:round"
      d="m 2686.9779,1698.7298 6.1891,8.5912 143.9323,262.6684 0.1298,3.4109 -22.7199,31.2685 v 3.0381 l 11.3431,12.9479 2.5908,0.2692 15.267,-13.0731 h 2.7776 l 59.6549,67.6461 36.3911,39.2109 3.8744,-0.1256 16.9197,-14.6784 14.5345,-22.4629 8.677,-6.4937 4.9917,0.067 114.8617,43.5215 53.7499,38.3873 14.9486,20.0235 6.0354,2.6047 93.4039,-12.0009 45.1215,1.2596 18.0722,5.995 21.0462,0.056 16.5166,5.8189 11.4506,7.1511 38.47,9.2471 16.1915,-0.3807 18.8723,-3.6438 35.2857,-8.5454 h 12.0209 l 9.7708,2.4738 13.7967,12.5047 35.8787,53.3177 12.3941,13.4988"
      id="path3380" />
+  <path
+     style="fill:none;stroke:#fcd205;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3623-9"
+     d="m 1447.8172,1840.093 -16.7497,-71.5086 -18.0383,-78.5951 1.9327,-16.1056 5.1538,-9.6633 10.9518,-14.1729 -2.5769,-65.7107 4.5095,-7.7306 38.0091,-19.3267 51.7265,-27.7407 14.991,-9.8341 27.1681,-12.8517" />
 </svg>
