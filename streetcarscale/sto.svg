@@ -26,14 +26,14 @@
   <defs
      id="defs6" />
   <image
-     width="5509"
-     height="8435.6553"
-     preserveAspectRatio="none"
-     id="image10"
-     x="-2259"
+     xlink:href="../timelines/streetmap/stoosm.png"
+     style="display:none;stroke:#f2f2f2;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none"
      y="-4635.6553"
-     xlink:href="file:///home/lexande/timelines/experiments/alonbracket/../../timelines/streetmap/../streetmap/stoosm.png"
-     style="display:none;stroke:#f2f2f2;stroke-width:8;stroke-miterlimit:4;stroke-dasharray:none" />
+     x="-2259"
+     id="image10"
+     preserveAspectRatio="none"
+     height="8435.6562"
+     width="5509" />
   <path
      id="path4506"
      d="M 1275.25,565.25 1250,552 l -31.5,-8.5 -35.5,-1 -31.5,4.5 -27.25,8.25 -35.75,16 -46.25,6 -19.25,-3 -74.5,-28.5 L 881,507.5 855.5,488.75 813,448.25 801.25,423 791.75,393.25 760.5,346.75 731.25,308.5 723.5,271 l -15,-102.75 -20.25,-44 -27.5,-36.5 -92,-73.75 -69.25,-61 -32,-70 -4.5,-235.25 -4,-22.25 -14.25,-23 -47.5,-66.25 -20.5,-15.75 -28,-7 -55.25,-15 -18.5,-12.75 -44.75,-60 -12.75,-9.5 -23.5,-11 L 142.25,-626 87,-691 62,-704.25 17.25,-742.75"
@@ -198,4 +198,8 @@
      id="path860"
      d="m 1495.2612,897.30736 c -9.0755,16.65564 -20.0052,28.29447 -29.2131,18.20201"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#d67c1e;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 392.09273,230.95902 -6.2287,-9.06169 -13.7489,-7.18693 -25.95894,-10.52283 -12.6868,-9.4053 -12.52864,-8.3848 -11.51356,-4.56432 -17.40243,-6.43267 -1.43403,-1.97443 -2.25222,-10.22163"
+     id="path895" />
 </svg>
