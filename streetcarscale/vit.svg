@@ -6,9 +6,9 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 500 625"
-   height="625"
-   width="500"
+   viewBox="0 0 550 725"
+   height="725"
+   width="550"
    id="svg2"
    version="1.1">
   <metadata
@@ -27,19 +27,19 @@
      id="defs6" />
   <image
      xlink:href="streetmap/vitosm.png"
-     width="742.29999"
-     height="989.73334"
-     preserveAspectRatio="none"
-     id="image10"
-     x="-200"
+     style="display:none"
      y="-189.73334"
-     style="display:none" />
+     x="-200"
+     id="image10"
+     preserveAspectRatio="none"
+     height="989.73334"
+     width="742.29999" />
   <path
      id="path836"
-     d="m 54.07905,229.32887 49.28174,-26.84609 5.36922,0.76703 3.83516,2.49286 2.87636,3.83515 71.71741,138.64087 4.21867,3.25988 5.56098,0.76703 7.47855,-2.49285 67.49874,-27.42136 4.60218,1.15055 5.36922,3.45164 2.49285,2.68461 14.19008,42.95374 5.75273,5.94449 0.38351,4.79394 -10.54667,74.78553 0.76703,6.32801 14.19007,40.84441 13.23129,11.3137 6.32801,3.25989 5.36921,1.15054 8.43735,0.76703 4.02691,2.10934 5.36922,0.19176 13.23128,5.17746 21.09336,4.41043 25.69554,2.87636 6.13625,-2.10933 16.10765,15.34062 v 2.68461 l 6.90328,5.56097"
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#006f2b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     d="m 54.07905,229.32887 49.28174,-26.84609 5.36922,0.76703 3.83516,2.49286 2.87636,3.83515 71.71741,138.64087 4.21867,3.25988 5.56098,0.76703 7.47855,-2.49285 67.49874,-27.42136 4.60218,1.15055 5.36922,3.45164 2.49285,2.68461 14.19008,42.95374 5.75273,5.94449 0.38351,4.79394 -10.54667,74.78553 0.76703,6.32801 14.19007,40.84441 13.23129,11.3137 6.32801,3.25989 5.36921,1.15054 8.43735,0.76703 4.02691,2.10934 5.36922,0.19176 13.23128,5.17746 21.09336,4.41043 25.69554,2.87636 6.13625,-2.10933 16.10765,15.34062 v 2.68461 l 6.90328,5.56097 14.07657,16.45778 26.57504,5.59177 6.58604,30.83103 -13.05115,10.10494 -30.62463,11.55345 -53.49413,0.79439 -4.77524,24.81944"
+     style="opacity:1;fill:none;fill-opacity:0.396078;fill-rule:nonzero;stroke:#006f2b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path838"
      d="m 276.51806,323.48194 -3.6434,-5.17746 0.38352,-4.60219 1.53406,-8.24558 -2.10933,-6.90328 -22.81918,-44.67956 1.91758,-4.79395 68.84104,-33.94112 1.15055,-4.41043 -1.15055,-4.60219 -18.02523,-44.4878 -16.87468,-27.99664 -2.49286,-10.35492 -0.95878,-11.69722 1.3423,-16.49117 6.71152,-5.75273 3.6434,-1.15055 9.9714,7.09504 9.77965,1.91758 13.23129,2.68461 h 7.67031 l 2.49285,-1.91758 -0.76703,-4.79395 -32.21531,-33.94112"
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#006f2b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="opacity:1;fill:none;fill-opacity:0.396078;fill-rule:nonzero;stroke:#006f2b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>

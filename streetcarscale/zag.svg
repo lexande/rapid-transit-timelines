@@ -27,13 +27,13 @@
      id="defs6" />
   <image
      xlink:href="streetmap/zagosm.png"
-     width="2118"
-     height="1647.3334"
-     preserveAspectRatio="none"
-     id="image10"
-     x="-10"
+     style="display:none"
      y="-162.33337"
-     style="display:none" />
+     x="-10"
+     id="image10"
+     preserveAspectRatio="none"
+     height="1647.3334"
+     width="2118" />
   <path
      id="path817"
      d="m 57.620939,1075.348 26.612108,-7.8528 22.065923,1.0496 14.80729,3.3934 47.19826,23.7534 9.25456,2.4678 128.0214,18.8176 19.12609,7.7121 17.27518,10.4885 21.28549,13.5734 10.18001,4.9358 76.81285,17.2751 30.54005,11.1055 10.18001,0.617 14.8073,-7.0952 20.05155,-6.7867 17.27517,-2.1593 83.90801,0.9254 3.70182,3.0849 5.86123,8.9461 13.57334,9.8715 17.58367,7.0951 h 8.94608 l 19.74306,-5.5527 12.95638,-4.9357 8.3291,-5.8613 158.25297,-337.1745 8.02062,-61.697 84.52499,6.1697 15.73277,7.4037 47.19818,4.3187 32.391,26.8382 0.1278,15.1159 17.1474,-0.6171 -0.2181,-14.7698 -17.0571,0.271"
@@ -64,7 +64,7 @@
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#1264ab;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path831"
-     d="m 699.14734,1217.1339 15.70551,-34.2468"
+     d="m 699.14734,1217.1339 18.56953,-36.9174"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#1264ab;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path833"
@@ -84,7 +84,7 @@
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#1264ab;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path841"
-     d="m 1160.0603,969.9902 54.5331,101.6496 33.5924,62.6039 4.5807,15.7054 1.745,15.0512 -1.3087,13.5242 -5.8896,18.1049 -22.9038,56.7144 -1.9632,16.3598 1.745,21.5951 6.7621,26.394 -4.5807,5.2352 -188.248,6.544"
+     d="m 1160.0603,969.9902 54.5331,101.6496 33.5924,62.6039 4.5807,15.7054 1.745,15.0512 -1.3087,13.5242 -5.8896,18.1049 -22.9038,56.7144 -1.9632,16.3598 1.745,21.5951 6.7621,26.394 -4.5807,5.2352 -188.248,6.544 -196.52513,7.7542"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#1264ab;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path843"
@@ -102,4 +102,8 @@
      id="path849"
      d="m 922.51458,158.10261 -1.09071,-46.02586 3.92639,-14.83298 8.72535,-11.12474 12.43351,-8.28902 48.64338,-11.77913 8.7254,-4.79891 7.6345,-6.54396"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#1264ab;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#1264ab;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 692.65901,1192.7974 -2.32587,6.1249 12.20458,102.2023 0.71212,28.7226 2.00859,4.13 3.07078,1.3314 6.07785,1.7459 82.95407,0.6474 44.23834,-0.4758"
+     id="path848" />
 </svg>
