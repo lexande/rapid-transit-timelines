@@ -28,11 +28,11 @@
   <image
      xlink:href="../timelines/streetmap/ytoosm.png"
      style="display:none"
-     x="-3384"
-     y="-1686.9728"
-     width="6105"
+     id="image12"
      height="4639.7998"
-     id="image12" />
+     width="6105"
+     y="-1686.9728"
+     x="-3384" />
   <path
      style="fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3592"
@@ -84,7 +84,7 @@
   <path
      style="fill:none;stroke:#ef404a;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4601"
-     d="m 2189.2042,296.17074 -614.9509,187.015 -248.081,76.8097 -60.9543,18.06019 13.3962,44.68222" />
+     d="m 2189.2042,296.17074 -348.1236,102.42661 -266.8273,84.58839 -248.081,76.8097 -60.9543,18.06019 13.3962,44.68222" />
   <path
      style="fill:none;stroke:#ef404a;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4618"
@@ -117,4 +117,8 @@
      style="fill:none;stroke:#ef404a;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
      d="m 918.8309,713.2235 15.7896,-4.69412 5.8694,20.13796"
      id="path857" />
+  <path
+     style="fill:none;stroke:#ef404a;stroke-linejoin:round;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1841.4893,398.38266 27.3486,-72.44342 57.736,-71.05859 12.1465,-7.96077 36.8821,-20.3955 89.6332,-27.35795 34.9896,-2.62131 57.4124,-7.35004 -3.6927,-12.19561 -10.7233,3.23953 3.6602,10.68891"
+     id="path852" />
 </svg>
