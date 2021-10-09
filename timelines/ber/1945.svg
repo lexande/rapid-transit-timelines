@@ -28,11 +28,11 @@
   <image
      xlink:href="../streetmap/berosm.png"
      style="display:none"
-     x="-1282.8571"
-     y="-2537.8569"
-     width="7397.1431"
+     id="image12"
      height="7191.667"
-     id="image12" />
+     width="7397.1431"
+     y="-2537.8569"
+     x="-1282.8571" />
   <path
      style="fill:none;stroke:#1b5ea4;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3592"
@@ -102,9 +102,9 @@
      id="path3629-4"
      d="m 2370.3427,1496.0782 7.0864,0 14.1729,3.2211 7.7307,-7.7307 16.7497,-23.8362 18.6825,-37.3649" />
   <path
-     style="fill:none;stroke:#008940;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     style="fill:none;stroke:#008940;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path6413"
-     d="m 1952.8955,658.43923 3.1451,20.44318 4.3653,30.9564 -4.9422,20.2593 -8.5143,11.1344 -17.4709,9.8797 -12.0147,2.2402 -62.2872,5.2405 -20.5046,9.19219 -16.7497,12.8844 -31.889,35.7544 -6.1201,22.2256 3.2211,39.9418 10.3075,53.7927 8.697,21.2593 67.3212,66.677" />
+     d="m 1952.8955,658.43923 3.1451,20.44318 4.3653,30.9564 -4.9422,20.2593 -8.5143,11.1344 -17.4709,9.8797 -12.0147,2.2402 -62.2872,5.2405 -25.3798,8.90555 -18.8706,15.00643 -27.8763,33.78355 -6.2636,24.2374 4.7383,42.49759 10.3353,56.56108 12.8133,20.68682 41.108,38.10177" />
   <text
      style="font-size:144px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
