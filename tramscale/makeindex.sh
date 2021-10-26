@@ -1,10 +1,10 @@
 cat <<HEREDOC
 <!DOCTYPE HTML>
 <html>
-<head><title>Streetcar Scale Comparison</title>
+<head><title>Tram (Streetcar & Light Rail) Scale Comparison</title>
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Streetcar Scale Comparison" />
-<meta property="og:image" content="https://alexander.co.tz/streetcarscale/preview.png" />
+<meta property="og:title" content="Tram (Streetcar & Light Rail) Scale Comparison" />
+<meta property="og:image" content="https://alexander.co.tz/tramscale/preview.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <style type="text/css">
 span {
@@ -130,7 +130,7 @@ function togglesidebar() {
   })();
 </script>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<h3>Streetcar Scale Comparison</h3>
+<h3>Tram (Streetcar & Light Rail) Scale Comparison</h3>
 <div id="maps" style="padding-left: calc(10.5em + 22px);">
 HEREDOC
 CITIES=$(for file in $@; do grep -P "^`basename $file .svg`@?\t" names | sed -e's/<br>/ /; s/ (.*//; s/\(.*\)@*\t\(.*\)/\2 \1/; s/\(.*\) \([0-9]*\) \(.*\)/\2 \1 \3/;'; done | sort -n | sed -e's/.* //; s/@//;')
