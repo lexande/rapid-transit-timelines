@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="4000"
    height="11550"
    viewBox="0 -2000 4000 11550"
-   id="svg2">
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -27,12 +26,12 @@
      id="defs6" />
   <image
      xlink:href="../../timelines/streetmap/seaosm.png"
-     style="display:none"
      id="image10"
      height="11597.4"
      width="4320.6001"
      y="-2097.4004"
-     x="-150" />
+     x="-150"
+     style="display:none" />
   <path
      d="m 923.09996,3581.8999 16.5,1.5 6.5,7 1,27 6,10 99.50004,88 6.1464,11.0858"
      id="path2987"
@@ -41,10 +40,6 @@
      d="m 1471.6,4334.8999 v 87 l 4.5,15 37.5,87 34.5,87 51.5,160 35.5,100.5 4.5,19 0.5,108 9.5,29 9,24 -0.5,17 -10.5,63 1,24.5 6.5,41.5 4.5,43.5"
      id="path3759"
      style="fill:none;stroke:#6abf4a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     d="m 1658.6,5235.8999 3.5,43.5 -1,25 -1.5,13 -9.5,9.5 -12,3.5 -70,4 -15.5,4 -10.5,12.5 -1.5,14.5 11,41 6.5,22 7.5,36 13,16.5 26,22.5 9,11 8,17 6.5,64.5 11.5,19.5 64,66 12,15 4.5,22.5 -2.5,32.5 4.5,16 22.5,56 10,33 5,36 4,40.5 -3.5,27 -10,11.5 -15.5,5 -19,-3.5 -29.5,-10 -19,1 -19,11 -29.5,23.5 -18.5,7 h -16 l -31.5,-19.5 -9.5,-2 -11.5,4.5 -15,10 -34,39 -31.5,37.5 -14.5,26.5 -1.5,65.5 5,20.5 22,29 7.5,19 1.5,55.5 6.1144,82.1208 -4.6478,16.5254 -8.7791,28.9195 -5.6806,73.848 3.6149,92.4391 0.3254,42.7124 0.9119,15.9559"
-     id="path3761"
-     style="fill:none;stroke:#6abf4a;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
      x="89.453133"
      y="-1793.0391"
@@ -67,4 +62,8 @@
      style="fill:none;stroke:#6abf4a;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3757-7"
      d="m 1472.1,4337.9 0.5,-48 -8.5,-20 -9.5,-18 -9.5,-3 -24,-5.5 -41.0018,-18.8071 -21.336,-7.8363 -23.0031,2.9477 -23.1591,10.2656 -45.3129,25.0419 -18.6871,2.8882 h -34.5 l -51,-6.0001 -4.5858,-6.6464 -0.4142,-94.8536 -0.5,-61.5 2,-41 -0.5,-33 -10,-42.5 1,-35 -1.5,-20.5 -7,-16 -16,-22 -80,-127 1,-7.5 14.5,-10 57.4604,-35.1833 10.9549,-2.191 17.1627,4.7472 17.5278,2.1909 12.0504,-1.4606 17.1627,-6.9381 16.0672,-9.4943 9.8595,-12.0504 6.9381,-13.1459 3.6516,-14.6065 v -56.6004 l 4.0168,-18.2582 8.7639,-20.084 58.4262,-108.0885 61.3475,-106.2626 21.1795,-52.5836 9.8595,-40.8983 8.0336,-42.7242 -0.3652,-45.2803 -1.4607,-16.4323" />
+  <path
+     style="fill:none;stroke:#6abf4a;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path3761-5"
+     d="m 1658.6,5235.8999 5.8782,43.7623 -0.1487,24.9976 -4.7295,12.7401 -9.5,9.5 -12,3.5 -70,4 -15.5,4 -10.5,12.5 -1.5,14.5 11,41 6.5,22 7.5,36 13,16.5 26,22.5 9,11 6.4045,18.4821 8.0955,63.0179 11.5,19.5 64.5089,63.4755 11.0636,14.5104 4.638,14.1856 0.2895,11.3285 -2.5,32.5 4.5,16 22.5,56 10,33 5,36 4,40.5 -3.5,27 -10,11.5 -9.9498,3.9141 -10.9892,0.221 -12.4848,-3.8788 -18.898,-7.2012 -11.6782,-1.5551 -19,1 -19,11 -29.5,23.5 -18.5,7 h -16 l -31.8316,-18.4043 -9.5623,-2.3777 -11.1061,3.782 -15,10 -34,39 -32.5688,37.8159 -9.1417,14.859 -4.2895,11.3251 -1.5,65.5 5,20.5 10.4184,13.0629 13.3628,11.604 6.5173,10.5861 0.7897,13.6581 0.1435,45.2057 3.4675,88.9064 -0.5305,8.3589 -1.3462,12.0164 -6.7964,27.2531 -4.3502,62.1392 0.345,158.5443" />
 </svg>
