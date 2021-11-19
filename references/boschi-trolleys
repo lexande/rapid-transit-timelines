@@ -103,8 +103,8 @@ dep n hoosick	19:25w				20:43s
 dep hoosick jn						22:01s	(1.2 miles from n hoosick)
 arr greenwich	00:45w	
 arr lansingburg						22:43s
-dep lansingburg 					22:45?	(lansingburg-troy 5¢)
-arr troy					21:25s	23:05?
+dep lansingburg 					22:55?	(lansingburg-troy 5¢)
+arr troy					21:25s	23:15?
 arr niverville				18:02s
 dep niverville				18:55e			(niverville-albany 30¢)
 arr albany				20:00e
@@ -118,10 +118,10 @@ dep greenwich	06:38	09:38
 arr thomson	06:52	09:52		
 dep thomson	06:58	09:58		
 arr troy	08:52	11:52		
-dep troy	09:15	12:15			21:45	23:15
-arr schenectady	10:23	13:23			22:53	00:23
-dep schenectady	11:00	14:00		21:00	23:25	00:50
-arr johnstown	12:11	15:11		22:11	00:36	02:01
+dep troy	09:15	12:15			21:45	07:45
+arr schenectady	10:23	13:23			22:53	08:53
+dep schenectady	11:00	14:00		21:00	23:25	09:00
+arr johnstown	12:11	15:11		22:11	00:36	10:11
 
 
 SECOND GAP:
