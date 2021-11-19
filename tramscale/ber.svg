@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="8250"
    height="4100"
    viewBox="-1250 -2500 8250 4100"
-   id="svg2">
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata37">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -27,12 +26,12 @@
      id="defs6" />
   <image
      xlink:href="../timelines/streetmap/berosm.png"
-     style="display:none"
      id="image12"
      height="7191.667"
      width="7397.1431"
      y="-4687.8569"
-     x="-807.85657" />
+     x="-807.85657"
+     style="display:none" />
   <path
      d="m 1703.7816,29.919941 36.0874,-60.9117 37.343,-60.9282 2.6206,-110.718801 1.3103,-118.5806 v -14.4131 l 23.585,-55.6869 -2.6205,-121.8563 -0.6551,-70.1001 0.6551,-60.9282 5.8963,-72.7207 28.171,-51.7561 9.172,-19.6542 8.5168,-14.4131 18.344,-14.4131 16.3785,-18.344 15.0682,-24.8953 5.2412,-16.3786 v -26.8608 l -3.2757,-43.2393 -3.9309,-93.68524 -1.3102,-98.2711 2.6205,-36.688 7.8617,-24.8953 7.2065,-20.3094 11.7926,-16.3786 48.4805,-48.4805 25.5506,-12.4477 30.1364,-20.3093 109.4086,-109.4085 35.3776,-36.688 6.5514,-15.7233 17.0337,-41.2739"
      id="path2818"
@@ -401,4 +400,8 @@
      id="path941-3"
      d="m -640.15121,863.9069 58.7522,-93.5063 103.2343,-73.6659"
      style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#e2001a;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#e2001a;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 3463.7084,88.3469 7.3976,12.7429 4.0744,12.9438 33.826,59.4402 95.1993,108.3516 19.4426,21.3294 13.905,16.7469 -14.1312,14.54768 -1.8723,5.4998 -0.3527,47.94532 4.6506,4.5841"
+     id="path949" />
 </svg>
