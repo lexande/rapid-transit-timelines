@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    viewBox="0 0 525 1200"
    height="1200"
    width="525"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,4 +40,8 @@
        d="m 472.2378,1041.0799 -8.87842,4.4019 -2.55971,4.8211 1.79878,27.1182 -3.02643,5.2928 -14.32758,13.2156 -5.98331,3.5403 -24.6762,8.1234 -17.56503,11.7522 -13.64205,9.8806 -2.49719,3.9154 -4.95877,2.0967 -56.59447,1.4919 -11.38814,-6.3327 -39.65578,-36.5208 -14.44132,-2.736 -2.37245,-4.0882 3.97612,-47.741 0.77073,-5.9266 -20.09344,-12.5314 -14.27524,-27.4737 -20.45841,-19.2384 -15.37923,-43.29778 3.83411,-9.43749 35.10962,13.83657 14.31983,3.44602 13.88865,-1.21432 53.11529,-21.14678 1.31344,-5.9572 -6.73811,-4.96269 -41.48577,-41.21564 -91.08336,-91.80588 -28.46149,-48.2127 -57.89014,-69.92533 -0.7675,-7.68425 2.32256,-67.71278 3.51972,-151.15357 -0.9381,-61.73035 -15.25847,-96.56589 -11.69798,-66.75233 0.95621,-9.56426 9.28338,-38.437 4.36185,-17.42485 20.49506,-11.30511 11.18405,-3.08826 20.83567,-20.34267 71.02785,-45.74129"
        style="fill:none;stroke:#dc2b18;stroke-width:5;stroke-linejoin:round" />
   </g>
+  <path
+     style="fill:none;stroke:#dc2b18;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 307.5912,910.37022 7.27578,-1.13832 19.34625,-7.67886 65.58802,-34.66775 4.19089,-5.53422 10.1279,-7.83838"
+     id="path858" />
 </svg>

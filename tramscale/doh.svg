@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
-   width="250"
-   height="200"
-   viewBox="0 0 250 200">
+   width="500"
+   height="275"
+   viewBox="0 0 500 275"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -30,7 +29,7 @@
      width="4272"
      height="4272"
      preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/dohosm.png"
+     xlink:href="../timelines/streetmap/dohosm.png"
      id="image10"
      x="-1275"
      y="-2177" />
@@ -54,4 +53,8 @@
      id="path1442"
      d="m 56.2235,136.8465 24.8908,-8.9413 6.0414,17.641 3.3832,1.45 23.1992,-8.9414 -17.641,-45.4317 2.1749,-4.8331 39.8735,-14.9828 12.8079,14.4995 29.9656,-10.3913 9.4246,27.549 -1.9332,6.0414 -74.6723,27.549"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#3e5aae;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#3e5aae;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 180.919,76.9154 7.19559,-1.59626 20.32606,0.518945 10.54708,3.472076 26.63361,-0.201224 3.14339,-3.097222 0.84958,-7.76942 2.96884,-2.948731 30.77287,-0.240426 2.98948,5.888609 v 3.553524 l 2.61084,3.722323 31.15887,1.04346 12.81908,-6.565379 10.49243,-1.660601 22.07132,9.072556 53.82542,105.19368 13.99772,11.78866 7.31203,14.28219"
+     id="path861" />
 </svg>

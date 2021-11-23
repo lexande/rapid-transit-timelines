@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    viewBox="0 0 1175 2475"
    height="2475"
    width="1175"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -27,13 +26,13 @@
      id="defs6" />
   <image
      xlink:href="streetmap/csoosm.png"
-     style="display:none"
      y="-225"
      x="-40"
      id="image10"
      preserveAspectRatio="none"
      height="2900"
-     width="1450" />
+     width="1450"
+     style="display:none" />
   <path
      id="path836"
      d="m 672.42806,723.625 3.69134,15.1009 -1.00673,11.7452 59.06139,255.3734 v 19.799 l 3.02019,81.8805 -2.01346,20.1346 -4.69806,31.2086 -12.41632,53.6922 -16.44323,49.6652 -21.14129,53.3566 -38.59125,74.8335 -14.0942,23.4903 -7.71825,9.0606 -51.34314,16.4432 -23.49033,20.8057 -54.02775,28.1884 -34.89992,32.5509 -20.47014,15.7721 -5.36922,-7.0471 -6.71152,-27.8528 -0.67115,-74.8335 -13.42305,-144.9689 31.87973,-5.7048 64.09504,-2.0134 37.24895,-3.0202 16.44323,-0.6712 12.62164,-27.2048 -36.11197,-20.447 -6.71152,-11.074 -9.39613,-14.4298 -72.14887,-11.4096 -12.41631,-0.6711 -24.17566,-12.9159 -23.81172,-17.9571 -41.27586,-31.8797 -22.14803,-9.3962 -12.41631,-0.3355 -52.34987,11.7451 -13.42305,-1.0067 -15.10092,-6.7115 -13.75862,-6.376 -16.10766,-1.6779 -8.05382,-3.6913 -8.3894,-35.5711 -2.34904,-33.5576 4.02692,-16.7788 12.08074,-16.1076 27.85281,-33.8932 3.02019,-14.7654 -5.36922,-55.37 -5.36922,-12.0808 -9.73171,-8.0538 -11.40958,-2.0134 -14.42978,1.6778"
@@ -87,11 +86,15 @@
      d="m 686.52226,802.4854 22.81917,-5.3693 51.34315,-20.8057 13.75862,5.0337 13.75862,-5.3693 14.42977,-12.7518 12.08074,-17.1144 24.16148,-7.3827 61.41042,-4.0269 27.51724,-6.0404 7.38268,-10.0673 32.88645,-76.1757 24.4971,-108.3911 9.0605,-11.7452 25.8394,-121.8141 -0.3356,-17.1144 10.4029,-28.1884 5.7048,-26.8461 -1.0068,-8.7249 3.0202,-19.799 17.45,-79.196 2.0134,-31.8797 -6.7115,-40.2692 -6.0404,-22.148 -11.074,-21.8124 -14.0942,-23.8259 -20.8057,-24.4971"
      style="opacity:1;fill:none;fill-opacity:0.5254902;fill-rule:nonzero;stroke:#e30613;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     id="path866"
-     d="m 814.71233,746.1086 21.14129,9.0605 2.68461,-10.0673 -2.01345,-5.537"
-     style="opacity:1;fill:none;fill-opacity:0.5254902;fill-rule:nonzero;stroke:#e30613;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      style="fill:none;stroke:#e30613;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
      d="m 571.96056,1243.4092 18.54112,2.4688 11.50083,-0.1928 31.29965,7.8526 -7.49752,38.2847 23.16927,8.1046"
      id="path847" />
+  <path
+     style="fill:none;stroke:#e30613;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 566.04793,590.88485 16.21932,8.94773 3.46605,4.02341 1.30056,7.57796 2.51919,84.94462 0.68267,21.95394 26.05422,-0.15564 56.13812,5.44813"
+     id="path871" />
+  <path
+     style="fill:none;stroke:#e30613;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 685.51553,1574.3104 -8.18779,-5.7899 -44.97761,-63.3666 -1.32188,-20.3143 -15.8838,-17.8679 4.54676,-37.8119 0.38698,-6.1942"
+     id="path1142" />
 </svg>
