@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg2"
    height="6000"
    width="8400"
    viewBox="0 0 8400 6000"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -31,12 +30,12 @@
      style="fill:none;stroke:#114681;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <image
      xlink:href="../streetmap/bcnosm.png"
-     style="display:none"
      id="image10"
      height="6076.3638"
-     width="8608.182"
+     width="8608.1816"
      y="-26.36377"
-     x="-100" />
+     x="-100"
+     style="display:none" />
   <path
      style="fill:none;stroke:#f3b913;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3842"
@@ -115,4 +114,8 @@
      d="m 4740.0455,3576.227 -35,46 -21,18 -7.3002,3.6501"
      id="path3865-7"
      style="fill:none;stroke:#e22739;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     d="m 4909.0453,3548.727 -104.6835,106.6494 -25.4868,16.7468 -72.8042,27.6633 -36.8348,7.8948 -13.3677,0.1626 -22.2442,-10.4251 -9.3462,-2.0883 -9.9804,0.605 -153.7522,73.7915 -130.5,68 -44.5,22 -49.8076,15.0711 -55.6924,6.9289 -49.5,8.5 -97.5,15.5 -90,-10 h -25.5 l -50.5,8 -34.5,8.5 -39,6.5 -14,7.5 -38.5,22 -21.5,10.5 h -17 l -7.9884,-4.1757"
+     id="path3792"
+     style="fill:none;stroke:#114681;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
