@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="8050"
    viewBox="650, -75, 8050, 8500"
    height="8500"
-   id="svg2">
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata44">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,10 +37,10 @@
     </linearGradient>
   </defs>
   <image
-     xlink:href=".././../streetmap/parosm.png"
+     xlink:href="../streetmap/parosm.png"
      id="image12"
      height="6886.769"
-     width="7997.5381"
+     width="7997.5382"
      y="263.23096"
      x="666.13562"
      style="display:none" />
@@ -88,7 +87,7 @@
      id="path3619-5"
      style="fill:none;stroke:#7082c0;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 3849.5083,3182.9488 -136.9882,1.2052 -26,5 -22.5,12 -58,62 -6.5,15.5 -6,21.5 -34.5,37 -73,78.5 -21.5,24.5 -40.5,68 -9.732,19.3495 -0.2411,14.5924 3.9416,8.1448 11.2213,11.4202"
+     d="m 3849.5083,3182.9488 -136.9882,1.2052 -26,5 -22.5,12 -58,62 -6.5,15.5 -6,21.5 -30.5,33"
      id="path3617"
      style="fill:none;stroke:#7082c0;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
