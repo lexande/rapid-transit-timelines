@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
    width="4600"
    height="3600"
-   viewBox="0 0 4600 3600">
+   viewBox="0 0 4600 3600"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -32,7 +31,7 @@
      id="image10"
      preserveAspectRatio="none"
      height="3686.6667"
-     width="4740.0001"
+     width="4740"
      style="display:none" />
   <path
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#4e84c4;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -40,7 +39,7 @@
      id="path4533" />
   <path
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#4e84c4;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 3083.4637,1048.0986 3.0574,6.7262 23.6881,37.8302 13.435,6.0104 78.1353,18.7383 17.3241,6.364 18.0312,7.0711 89.0955,132.2289 0.8839,7.6014 -13.9654,29.1682 2.4749,18.3848 97.9343,143.1891 7.8198,16.3695 17.1222,8.4693 9.2216,-2.7665 10.5406,-3.1622"
+     d="m 3083.4637,1048.0986 3.0574,6.7262 23.6881,37.8302 13.435,6.0104 78.1353,18.7383 17.3241,6.364 18.0312,7.0711 89.0955,132.2289 0.8839,7.6014 -13.9654,29.1682 2.4749,18.3848 97.9343,143.1891 2.6687,5.5865"
      id="path4563" />
   <text
      style="font-style:normal;font-weight:normal;font-size:143.99990845px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
