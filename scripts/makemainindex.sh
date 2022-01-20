@@ -27,7 +27,7 @@ div#sidebar {
 	float: left;
 	background: #ffffff;
 	border: 1px solid;
-	width: 11.2em;
+	width: 10.5em;
 	max-height: calc(100% - 22px);
 	top: 0;
 	left: 0;
@@ -61,8 +61,8 @@ span {
 	margin-right: 10px;
 }
 .headerfooter {
-	padding-left: calc(11.2em + 22px);
-	padding-right: calc(11.2em + 22px);
+	padding-left: calc(10.5em + 22px);
+	padding-right: calc(10.5em + 22px);
 	white-space: nowrap;
 }
 body {
@@ -334,6 +334,7 @@ for city in $@; do
     $upper =~ tr/a-z/A-Z/;
     $name = `cat $city/name`;
     $name =~ s/<br>/ /;
+    $name =~ s/Naberezhnye/Nab./;
     chomp $name;
     foreach ( split(/ \/ /, $name) ) {
       if (-e "$city/s") {
