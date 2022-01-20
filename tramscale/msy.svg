@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   width="1150"
+   width="1075"
    height="1025"
-   viewBox="0 0 1150 1025"
-   id="svg2">
+   viewBox="0 0 1075 1025"
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -27,31 +26,23 @@
      id="defs6" />
   <image
      xlink:href="streetmap/msyosm.png"
-     style="display:none"
      width="3216.3999"
      height="1754.4"
      preserveAspectRatio="none"
      id="image845"
      x="-1949.4"
-     y="-659.40002" />
+     y="-659.40002"
+     style="display:none" />
   <path
      d="m 245.99992,497.5 -178.999994,192 1.5,5.5 68.499994,64 130,106.50002 38.5,26.5 100,54.5 14.5,6.5 54,-4 102.5,-9.5 21.5,-5.5 53,-21.5 32,-17.5 72,-47.00002 63.5,-50 66.5,-102 7,-1.5 3.5,-6 -4,-6.5 -5.5,-0.5 -3.5,1.5 -10,-5 35.5,-136 10.56856,-8.07958 10.81195,8.80975 -6.38051,8.26983 -32.5,130.5 -8,2.5 -2,5.5 3,8"
      id="path3006"
      style="fill:none;stroke:#00713b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 380.36898,74.077984 -0.30975,18.275 -9.29237,2.78771 v 3.09746 l 6.79502,6.014036 497.44476,389.35628 -3.01552,4.09276"
+     d="m 380.36898,74.077984 -0.30975,18.275 -9.29237,2.78771 v 3.09746 l 6.79502,6.014036 497.44476,389.35628 46.03232,36.11405 76.45074,60.07742"
      id="path3780"
      style="fill:none;stroke:#c9222c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;stroke:#8bc546;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path818"
-     d="m 854.21059,470.89445 -335.44732,-262.47858 -0.30975,-5.09514 117.7964,-127.570756 11.25,-5.25 5.75,-5.75" />
-  <path
-     d="m 812.74992,656 12.75,-6.25 3.25,-5 0.25,-11.5 15.75,-59.5 -0.25,-20.25 9.75,-34.5 17.7412,-21.29877"
-     id="path3778"
-     style="fill:none;stroke:#c9222c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     style="fill:none;stroke:#0578bb;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-     d="m 921.03896,529.72252 76.45074,60.07742 8.4001,-3.20851 -1.8929,-38.30205 3.909,-29.86102 4.2696,-13.94276 41.7221,-55.49136 14.15,-12.37075 28.9776,-21.4452"
-     id="path835" />
+     d="m 653.24992,64.749974 -5.75,5.75 -11.25,5.25 -117.7964,127.570756 0.30975,5.09514 335.44732,262.47858 146.16511,114.69463" />
 </svg>

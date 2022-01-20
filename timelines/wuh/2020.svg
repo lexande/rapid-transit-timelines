@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
    width="8550"
    height="7200"
-   viewBox="-1750 -900 8550 7200">
+   viewBox="-1750 -900 8550 7200"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
   <metadata
      id="metadata8">
     <rdf:RDF>
       <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
+         rdf:about="" />
     </rdf:RDF>
   </metadata>
   <defs
@@ -30,13 +24,13 @@
      d="m 2356.9122,4477.7768 10.7863,-48.5387 58.6509,-174.6044 4.7191,-52.5836 6.0673,-22.921 53.2577,-51.2353 69.4373,-53.9319 10.1123,-20.2244 7.4156,-28.3143 7.4156,-8.0897 101.7964,-63.37"
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#98acab;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <image
-     xlink:href="../../timelines/wuh/./../streetmap/wuhosm.png"
-     y="-167.46642"
-     x="-100"
+     xlink:href="../streetmap/wuhosm.png"
+     y="-1039.066"
+     x="-1843.2"
      id="image10"
      preserveAspectRatio="none"
-     height="4067.4666"
-     width="4358"
+     height="7553.8672"
+     width="9297.0674"
      style="display:none" />
   <path
      id="path896"

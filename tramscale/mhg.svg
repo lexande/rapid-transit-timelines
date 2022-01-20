@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
    width="5350"
    height="3325"
-   viewBox="-1950 -50 5350 3325">
+   viewBox="-1950 -50 5350 3325"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -27,13 +26,13 @@
      id="defs6" />
   <image
      xlink:href="../timelines/streetmap/mhgosm.png"
-     style="display:none"
      width="2630"
      height="2191.6667"
      preserveAspectRatio="none"
      id="image10"
      x="-99.999565"
-     y="-6.6672664" />
+     y="-6.6672664"
+     style="display:none" />
   <path
      id="path847"
      d="m 739.89945,1168.923 73.82674,11.5055 26.6039,-0.8329 13.9802,-0.1473 12.62868,-3.0947 13.96913,-6.6418 14.07545,-8.4591 32.58886,-20.5267 22.4666,-16.2538 34.0819,-23.5745 18.08779,-6.0318 16.5354,0.077 20.2975,7.3445 43.1455,29.243 18.8185,13.6862"
@@ -204,7 +203,7 @@
      id="path876" />
   <path
      style="fill:none;stroke:#ee7100;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-     d="m 1136.8648,1101.6097 74.7245,93.6365 5.036,10.0155"
+     d="m 1136.8648,1101.6097 74.7245,93.6365 5.036,10.0155 7.3597,12.5175 20.5749,29.3707 -4.6575,47.0204 2.6707,10.3979 28.8063,51.1375 33.7824,66.0187 29.7542,51.952 16.1516,58.3319 10.4057,13.7174 9.5879,19.4266 5.2169,6.2231 8.7004,4.5384 21.7153,5.1955 191.0694,140.9181 21.1343,16.294 6.8815,9.7655 7.3715,14.9352 63.0884,123.71 28.4967,59.7064 27.1542,38.2565"
      id="path878" />
   <path
      style="fill:none;stroke:#ee7100;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
