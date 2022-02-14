@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg2"
-   viewBox="0 0 2400 2550"
-   height="2550"
-   width="2400"
-   version="1.1">
+   viewBox="-2100 -1250 5500 4000"
+   height="4000"
+   width="5500"
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata14">
     <rdf:RDF>
@@ -19,19 +19,18 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
   <image
-     xlink:href="../streetmap/ymqosm.png"
+     xlink:href="../../timelines/streetmap/ymqosm.png"
      id="image12"
-     height="6624.8"
+     height="6624.7998"
      width="10647"
      y="-2765.2"
-     x="-4595.4"
+     x="-4595.3999"
      style="display:none" />
   <path
      style="fill:none;stroke:#fddd04;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -46,12 +45,12 @@
      id="path3590"
      d="M 1918.2221,1082.484 1943.5,1097 l 11,11.5 8.5,16 0.5,12 -2,15 -51.5,80.5 -99.5,152 -32,52.5 -13.727,8.7047 -7.7547,7.8078 -10.1281,26.6678 -8.4664,13.578 L 1670.5,1595 l -38.5,58 -11,22 -65.3009,78.0847" />
   <text
-     style="font-style:normal;font-weight:normal;font-size:143.99990845px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
+     style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
      id="text3592"
-     y="206.96094"
-     x="89.453133"><tspan
+     y="-1043.0389"
+     x="-2010.5474"><tspan
        id="tspan1"
-       y="206.96094"
-       x="89.453133">1975</tspan></text>
+       y="-1043.0389"
+       x="-2010.5474">1970</tspan></text>
 </svg>
