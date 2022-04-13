@@ -20,7 +20,7 @@ $(1)/small/%.svg: $(1)/%.svg
 	mkdir -p $(1)/small
 	~/timelines/scripts/hideyear.pl $$< > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
-	svgo --disable=cleanupNumericValues $$@
+	svgo --config ~/timelines/scripts/svgo.config.js $$@
 
 $(1)/preview.gif: $(wildcard $(1)/*.svg) ~/timelines/scripts/previewgif.sh
 	~/timelines/scripts/previewgif.sh $(1)
