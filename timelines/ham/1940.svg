@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    viewBox="0 -2000 6000 6100"
    height="6100"
    width="6000"
    version="1.1"
-   id="svg2">
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,21 +19,20 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
   <image
-     style="display:none"
      y="-110.83887"
      x="-250"
      id="image10"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/hamosm.png"
+     xlink:href="../streetmap/hamosm.png"
      preserveAspectRatio="none"
      height="4210.8389"
-     width="6216" />
+     width="6216"
+     style="display:none" />
   <path
      id="path4228"
      d="m 2992.1347,578.33731 27.7052,-4.12631 19.7137,0 47.9699,15.44237 40.413,34.82747 9.1997,11.8282 4.2713,10.18539 21.0279,80.16891 2.3,12.15676 -0.6572,17.08518 -2.957,17.74229 -26.942,89.36862 -3.9427,23.32784 -1.3143,17.08517 2.9571,26.2848 6.2426,74.2549 -4.9284,190.8939 1.9714,13.1425 3.6141,7.5569 5.9141,8.214 9.5283,6.8998 93.6399,63.4123 22.0136,38.606 12.4854,12.4852 2.673,11.7537 0.284,20.281 -11.9925,38.2774 -8.5426,62.5909 -10.5139,22.5064 -18.2352,83.6188 -9.1997,22.0136 -9.5283,9.5283 -19.7136,13.1424 -194.5082,90.0258 -55.5268,27.9277 -9.1997,7.8854 -5.9141,8.8712 -2.3,11.8282 2.6285,30.2276 12.1568,58.1553 0.3286,13.1425 -3.6142,21.0279 -17.0852,26.2849 -26.942,24.3135 -13.1424,12.8139 -37.1274,61.7694 0,9.8569 3.9427,8.8711 17.4137,12.8139 8.8712,16.0995 2.6285,43.6986 0,87.0687 -4.2713,79.1832 8.5426,58.1553 -9.5283,38.7703 0,14.4566 9.1997,25.6278 16.0995,70.9692 27.3431,30.0548"
@@ -48,7 +47,7 @@
      style="fill:none;fill-rule:evenodd;stroke:#0072bc;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path11127"
-     d="m 3058.9844,2517.982 11.401,-1.9002 37.4602,-2.1716 16.0156,5.429 59.1764,128.9394 21.7161,23.0734 20.6303,12.7582 24.9735,12.4867 42.8893,-9.2293 16.0157,-1.0858 16.287,2.7145 21.7161,14.6584 42.075,22.259"
+     d="m 3058.9844,2517.982 11.401,-1.9002 24.6553,-1.6913 16.5319,9.2828 17.0278,18.7476 17.8749,26.1921 36.5623,79.6656 21.7161,23.0734 20.6303,12.7582 24.9735,12.4867 42.8893,-9.2293 16.0157,-1.0858 16.287,2.7145 21.7161,14.6584 42.075,22.259"
      style="fill:none;fill-rule:evenodd;stroke:#00aaad;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path4159"
@@ -69,7 +68,7 @@
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:143.99993896px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="89.453133"
-       y="-1793.03906"
+       y="-1793.0391"
        id="tspan1">1940</tspan></text>
   <text
      x="89.453133"
