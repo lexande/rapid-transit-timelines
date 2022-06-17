@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    viewBox="0 -70 2350 650"
    height="650"
    width="2350"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,7 +37,7 @@
      y="-432.5"
      x="-235.5"
      id="image10"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/mrsosm.png"
+     xlink:href="../timelines/streetmap/mrsosm.png"
      preserveAspectRatio="none"
      height="1227.5"
      width="2700.5" />
@@ -58,4 +57,8 @@
      id="path818"
      d="m 2130.5524,521.29146 0.206,-7.62162 3.2959,-8.85756 -2.0599,-7.41564 -20.805,-27.19065 -6.7977,-15.44923 -10.0935,-7.00366 -5.9737,-5.76771 v -3.70782 l 3.7078,-2.26589 6.1797,-2.26588 60.1491,-7.82762 18.1271,-11.74141 7.0036,-11.74142 11.7414,-30.07451 5.5618,-8.23959 8.4455,-4.32579 11.9474,-4.73776 28.2206,-36.25421 8.2396,-8.85756 8.4456,-7.62162 9.4756,-23.27685 1.0299,-8.0336 2.4719,-3.50183 17.7151,-3.70781"
      style="opacity:1;fill:none;fill-opacity:0.34901961;fill-rule:nonzero;stroke:#ee1d23;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#00ffff;stroke-width:3;stroke-linejoin:round"
+     d="m 111.81881,263.09585 c 0.91389,18.4431 5.15383,24.92014 7.22135,37.02614"
+     id="path181" />
 </svg>
