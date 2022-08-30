@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
    width="1350"
    height="2100"
-   viewBox="0 0 1350 2100">
+   viewBox="0 0 1350 2100"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -29,13 +28,13 @@
      width="1239"
      height="2065"
      preserveAspectRatio="none"
-     xlink:href="file:///home/lexande/timelines/timelines/streetmap/../streetmap/bweosm.png"
+     xlink:href="../streetmap/bweosm.png"
      id="image10"
      x="50"
      y="-15"
      style="display:none" />
   <path
-     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#dc003c;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#dc003c;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 516.44068,306.94915 40,15.9322 12.37288,14.0678 7.28814,9.83051 2.20339,7.79661 -1.18644,4.57627 -3.05085,2.71186 -5.76271,2.20339 -3.22034,6.1017 -5.08475,12.71186 -1.52542,10.84746 2.88135,19.49152"
      id="path836" />
   <path
@@ -63,4 +62,8 @@
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#dc003c;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 516.44068,306.94915 -8.81356,-5.59322 -6.77966,-7.45763 -1.69492,-12.0339 7.62712,-22.0339 4.57627,-5.08474 9.32204,-5.76272 4.06779,-8.13559 v -11.35593 l -1.69491,-25.76271 -3.72881,-46.61017 -3.22034,-16.44068 -0.50848,-19.32203"
      id="path1424" />
+  <path
+     style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#dc003c;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 667.79644,1025.9168 2.03743,-4.1947 87.12993,-38.35158 3.47561,-4.43439 2.03743,-15.70017 4.31455,-5.87258 18.33684,-12.46426 36.91337,-28.76366 26.36669,-14.98108 16.17956,-6.47182 42.42641,-15.70017 68.7931,-22.89109 8.98865,0.7191 49.37759,5.99243 9.5879,-1.19849 11.2658,-3.35576 22.6514,-7.67031 147.2939,-78.74054 1.3184,-3.35576 -5.8726,-17.61774"
+     id="path1582" />
 </svg>
