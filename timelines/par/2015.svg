@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg2"
    height="8500"
    width="8050"
    viewBox="650, -75, 8050, 8500"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata44">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -42,7 +41,7 @@
      style="display:none"
      x="666.13562"
      y="263.23096"
-     width="7997.5382"
+     width="7997.5381"
      height="6886.769"
      id="image12" />
   <path
@@ -108,7 +107,7 @@
   <path
      style="fill:none;stroke:#00824e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3637"
-     d="m 3430.0206,3773.6538 39,-24.5 48.5,-38 84.5,-85 60.5,-48 47.5,-37 60.5,-26.5 128.5,-60 15,-2 57,31 6.5,-3.5 16,-31 -30,-157 -13.5,-25.5 -44,-69.5 0,-11 23.5,-39 29.5,-61 -2,-27.5 20,-43.5 -3,-25.5 4,-6 53.5,-11 69,7 4,-2.5 0.5,-4.5 -17,-23 -10.5,-19 7.5,-28 -4.5,-21 14,-32.5 0,-81 9,-22 21,-23 7.5,-2 20,5 53,20 29,3.5 37,8.5 31.501,0.4257 6.999,-7.9257 -4,-59.5 -2,-50 -4.0877,-78.367 0,-11.1094 6.3483,-8.4643 62.4242,-37.5603" />
+     d="m 3430.0206,3773.6538 39,-24.5 48.5,-38 84.5,-85 60.5,-48 47.5,-37 60.5,-26.5 128.5,-60 15,-2 57,31 6.5,-3.5 16,-31 -30,-157 -13.5,-25.5 -44,-69.5 v -11 l 23.5,-39 29.5,-61 -2,-27.5 20,-43.5 -3,-25.5 4,-6 53.5,-11 69,7 4,-2.5 0.5,-4.5 -17,-23 -10.5,-19 7.5,-28 -4.5,-21 14,-32.5 v -81 l 9,-22 21,-23 7.5,-2 20,5 53,20 29,3.5 37,8.5 31.501,0.4257 6.999,-7.9257 -4,-59.5 -2,-50 -4.0877,-78.367 v -11.1094 l 3.8088,-15.9752 7.4003,-12.1318 11.1065,-7.076 18.1707,-4.221 37.0008,-3.0111" />
   <path
      style="fill:none;stroke:#74cede;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3614"
