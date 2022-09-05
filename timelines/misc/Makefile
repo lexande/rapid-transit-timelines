@@ -1,4 +1,4 @@
-all: hsr bymode regrail sandy nyctrolleys nycflights ivytunnels
+all: hsr bymode regrail sandy nyctrolleys nycflights ivytunnels brc
 
 bymode = nycbymode bosbymode sfobymode
 bymode: $(bymode)
