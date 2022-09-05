@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
    width="1425"
-   height="1075"
-   viewBox="0 0 1425 1075">
+   height="1275"
+   viewBox="0 0 1425 1275"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -106,4 +105,12 @@
      id="path853"
      d="m 1212.5733,974.732 19.5737,7.535 0.433,7.535 1.2992,1.2126 51.3593,10.2199 18.2746,1.4723 11.2592,-7.968 4.3305,-1.4724 7.7948,1.7322 7.0074,3.65039 20.188,-1.86279 9.9314,0.10667"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#80cde6;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#b7dd79;stroke-linejoin:round;stroke-opacity:1"
+     d="m 746.58109,970.48873 -6.24712,24.80526 0.96774,2.96083 3.59229,1.23294 45.95912,-26.3493 8.50201,-0.80486 50.93237,14.2102 5.30136,3.68728 76.76587,141.33222"
+     id="path4501" />
+  <path
+     style="fill:none;stroke:#b7dd79;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 932.35473,1131.5633 31.50801,57.5669 5.07102,2.5338 4.75656,-0.8873 69.56458,-37.3801 5.4519,-2.3667 6.5568,0.3094 39.0728,16.614 70.2828,18.4565 16.953,7.3156 33.4342,8.643 22.7621,6.4437 3.6794,-3.4883 0.693,-3.4902 2.6878,-1.5858 10.5786,2.2199"
+     id="path5229" />
 </svg>

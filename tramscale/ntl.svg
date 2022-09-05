@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 475 175"
-   height="175"
+   viewBox="0 0 475 250"
+   height="250"
    width="475"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -32,10 +31,14 @@
      preserveAspectRatio="none"
      id="image10"
      x="-145"
-     y="-58.299988"
+     y="16.700001"
      style="display:none" />
   <path
      id="path4539"
-     d="m 58.9322,59.3051 40.40678,18.44067 24.40678,11.11865 23.32204,7.32203 23.32203,3.52542 10.84746,9.22034 62.91525,-7.8644 66.98305,-8.94916 18.71187,1.08475 19.25424,-1.89831 67.7596,20.98595"
+     d="m 58.9322,134.30509 40.40678,18.44067 24.40678,11.11865 23.32204,7.32203 23.32203,3.52542 10.84746,9.22034 62.91525,-7.8644 66.98305,-8.94916 18.71187,1.08475 19.25424,-1.89831 67.7596,20.98595"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ed1a3b;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#00ffff;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none"
+     d="m 334.00678,152.09084 c 1.30352,-31.71758 11.89988,-59.573824 27.59759,-85.591833"
+     id="path1643" />
 </svg>
