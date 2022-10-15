@@ -5,7 +5,7 @@ all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
 
 NYC="../../subtimeline/uncropped/small/1890.svg nyc1891.svg ../../subtimeline/uncropped/small/1935.svg nyc1939.svg ../../subtimeline/uncropped/small/1965.svg nyc1968.svg ../../subtimeline/uncropped/small/2020.svg"
 CHI="achi1975.svg chi1976.svg achi2020.svg"
-BOS="bos1892.svg abos1915.svg bos1917.svg abos1945.svg bos1945.svg abos2020.svg"
+BOS="bos1892.svg abos1915.svg bos1917.svg abos1945.svg bos1945.svg abos2022.svg"
 PIT="apit1965.svg pit1967.svg pit1970.svg apit2020.svg"
 SFO="sfo1961.svg sfo1966.svg asfo2022.svg"
 SEA="sea1970.svg asea2000.svg sea2002.svg asea2020.svg sea2024.svg sea2041.svg"
