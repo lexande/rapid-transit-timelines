@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg2"
    viewBox="-50 16 5400 5350"
    height="5350"
    width="5400"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata9281">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -303,18 +302,6 @@
      style="fill:none;stroke:#6c6e70;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path10731"
      d="m 3079.5,1299.5 20.5,-35.5 47,-9.5 68,29 12,-5.5 39,-88" />
-  <path
-     id="path956"
-     d="m 762.13054,5482.5703 -3.38046,3.6795 -22.75,20.25 -30.5,20.75 -36,17 -55,10.25 -14,6.25 -18.4091,11.0429"
-     style="fill:none;stroke:#0c3d91;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="path954"
-     d="m 1154.9984,5066.0749 -114.9985,109.925 -92.50012,88.5 -38,53.5 -26.5,34 -22.5,23.5 -98.36924,107.0704"
-     style="fill:none;stroke:#0c3d91;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="path73"
-     d="m 1504.9999,4149.9999 -15.5,12 -9,23.5 -8,28 0.5,19.5 11,73 -4.5,22 -8,20.5 3.5,62 7,20.5 11.5,19.5 18.5,33 8,16.5 v 20 l -9,15.5 -23,17.5 -16,23.5 -33,77 -16,31.5 -19,34 -28,45 -19.5,32.5 -7,23 -17,52 -11,23.5 -20,29 -47,45.5 -78.5,76.5 -21.0015,20.075"
-     style="fill:none;stroke:#0c3d91;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="m 3115.5,3342 8,-8.5 248,-32.5 18,-5 10,-11 37.5,-48.5 163,-54.5 8.5,-4.5 22.5,-31.5 3,-9 9.5,-36.5"
      id="path4557"
