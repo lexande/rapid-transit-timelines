@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 1750 1900"
-   height="1900"
-   width="1750"
+   viewBox="-2950 -2850 4700 4750"
+   height="4750"
+   width="4700"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,22 +19,25 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
+  <path
+     style="fill:none;stroke:#004c66;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 887.98022,1296.5549 2.58571,-31.2477 0.482,-42.1539 -1.3751,-20.302 -6.75611,-21.9801 -13.2623,-23.3867 -83.9499,-118.1386 -14.4154,-11.2199 -33.69966,-20.2402 -172.87699,-102.15276 -23.96911,-16.3795 -32.4315,-26.3531 -44.6532,-45.4989 -71.74401,-72.3679 -23.87054,-27.446 -77.20317,-102.516 -15.62964,-33.1067 -23.55173,-65.1438 -16.68245,-85.8616 -30.68891,-176.5417 -27.83977,-154.4319 -21.841,-112.518895 -20.34885,-99.064305 -18.10445,-48.49177 -32.92445,-85.22561 -6.99425,-31.42315 -6.06301,-43.91162 2.83155,-28.90097 16.52511,-62.02455 1.36074,-20.78512 -4.36669,-30.16409 -11.10392,-31.26909 -47.35204,-86.94465 -61.96411,-121.62956 -9.78451,-32.22697 -34.922745,-141.36208 -9.3906,-38.69587 -0.69907,-26.95872 4.85368,-109.85572 2.34239,-96.3992 -2.38673,-24.7364 -7.37414,-21.5422 -13.708695,-22.0666 -14.74299,-19.1744 -10.00513,-10.2867 -30.92349,-22.4908 -75.57437,-56.1501 -20.13882,-15.8858 -39.67654,-17.4668 -29.43874,-16.4345 -43.28946,-32.0221 -76.7929,-54.3262 -116.33257,-83.0761 -28.11763,-16.7866 -67.40341,-36.0871 -74.71507,-36.296"
+     id="path320" />
   <g
      id="g10">
     <image
        xlink:href="../streetmap/gdnosm.png"
-       width="1770"
-       height="1770"
+       width="4720"
+       height="4523.333"
        preserveAspectRatio="none"
        id="image12"
-       x="0"
-       y="125"
+       x="-2950"
+       y="-2628.333"
        style="display:none" />
     <path
        id="path837"
@@ -73,13 +76,13 @@
        d="m 883.3354,1223.4267 15.17803,23.2374 5.46107,12.2052 1.104,4.2929"
        style="fill:none;stroke:#b90707;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
-       x="89.453186"
-       y="206.96089"
+       x="-2860.5469"
+       y="-2643.0391"
        id="text3784"
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
-         x="89.453186"
-         y="206.96089"
+         x="-2860.5469"
+         y="-2643.0391"
          id="tspan1">1980</tspan></text>
     <path
        id="path1617"
@@ -98,4 +101,14 @@
        d="m 898.80145,1414.0952 2.42523,3.7145 21.15061,2.1891 7.4043,2.8861 40.1179,17.7305 75.69251,21.8742 11.763,2.5824 3.7649,-2.4103 4.7699,-19.6879 -8.3655,-21.8991 0.9573,-2.7801 58.4629,-15.3737 1.3232,-2.4291 2.0676,-17.9776 3.9148,-15.6056 7.4734,-16.0841 14.059,-19.4711 28.5143,-18.7244 27.264,-26.064 21.2344,-9.6062 9.9575,-9.6939 4.6423,-0.8771 3.5897,1.1223"
        id="path877-5" />
   </g>
+
+  <text
+     x="-2860.5469"
+     y="1797.9611"
+     id="text3652-1"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="-2860.5469"
+       y="1797.9611"
+       id="tspan2">1980</tspan></text>
 </svg>
