@@ -39,18 +39,27 @@ for file in $@; do
   if [ -f $file ]; then
     city=`basename $file .svg`
     NAME=`grep ^$city names | awk -F"\t" '{print $3}'`
-    SNAME=`echo $NAME | sed -e's/<br>.*//'`
-    URL=`grep ^$city names | awk -F"\t" '{print $4}'`
+    NOTE=`grep ^$city names | awk -F"\t" '{print $4}'`
+    URL=`grep ^$city names | awk -F"\t" '{print $5}'`
     UPPER=$(echo $city | tr 'a-z' 'A-Z')
     NATIVEW=$(grep '^   width="' $file | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
     W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/138)}")
     H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $file | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
     echo -n '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'
     if [ ! -z "$URL" ]; then
-      echo -n '<a href="'$URL'">'
+      if [ ! -z "$NOTE" ]; then
+        echo '<a href="'$URL'">'$NAME'</a><br><small>'$NOTE'</small><br><a href="'$URL'">'
+      else
+        echo '<a href="'$URL'">'$NAME'<br>'
+      fi
+    else
+      if [ ! -z "$NOTE" ]; then
+        echo $NAME'<br><small>'$NOTE'</small><br>'
+      else
+        echo $NAME'<br>'
+      fi
     fi
-    echo $NAME'<br>'
-    echo -n '  <img class="map" src="'$file'" title="'$SNAME'" alt="'$SNAME' map" width="'$W'" height="'$H'">'
+    echo -n '  <img class="map" src="'$file'" title="'$NAME'" alt="'$NAME' map" width="'$W'" height="'$H'">'
     if [ ! -z "$URL" ]; then
       echo '</a></span>'
     else
