@@ -1,3 +1,4 @@
+#!/bin/bash
 SCALE=$1
 shift
 cat <<HEREDOC
@@ -77,6 +78,7 @@ document.onkeydown=function(keypress) {
 <h3>Unrealised Rapid Transit Plans</h3>
 HEREDOC
 oldcity=""
+br=true
 for file in $@ '<p>'; do
   if [ -f $file ]; then
     city=`grep ^$file names | awk -F"\t" '{print $2}'`
@@ -89,6 +91,7 @@ for file in $@ '<p>'; do
       W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/138)}")
       H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $altfile | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
       index=0
+      br=true
       if [ ! -z $oldcity ]; then
         if [ -d ../../timelines/$oldcity ]; then
           echo -n '<br>(<a href="../../timelines/'$oldcity'">timeline</a>)'
@@ -99,11 +102,26 @@ for file in $@ '<p>'; do
       echo '<a href="javascript:next('\'$city\'');">'
       echo '<img class="map" src="'$file'" id="'$city'map" title="'$NAME'" alt="'$SNAME' map" width="'$W'" height="'$H'"></a><small>'
     fi
-    echo -n '<br><a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'','$index');">'$SUBNAME'</a>'
+    if $br; then echo -n '<br>'; fi
+    echo -n '<a class="setsrc" href="javascript:setsrc('\'$city\'','\'$file\'','$index');">'$SUBNAME'</a>'
     if [ ! -z "$URL" ]; then
-      echo ' (<a href="'$URL'">info</a>)'
+      if [ "$URL" == "nobreak" ]; then
+        if [ $br == true ]; then
+          echo -n ' ('
+          br=false
+        else
+          echo -n ', '
+        fi
+      else
+        echo ' (<a href="'$URL'">info</a>)'
+      fi
     else
-      echo ''
+      if [ ! $br == true ]; then
+        echo ')'
+        br=true
+      else
+        echo ''
+      fi
     fi
     oldcity=$city
     index=$(expr $index + 1)
