@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg2"
+   width="2150"
+   height="1400"
+   viewBox="0 0 2150 1400"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     id="g856"
+     transform="translate(-120.00012,200.00017)"
+     style="display:none">
+    <image
+       xlink:href="osm.png"
+       y="-350"
+       x="-50"
+       id="image10"
+       preserveAspectRatio="none"
+       height="2488.8889"
+       width="2737.7781" />
+    <image
+       xlink:href="raillayerosm.png"
+       y="-350"
+       x="-50"
+       id="image5"
+       preserveAspectRatio="none"
+       height="2488.8889"
+       width="2737.7781"
+       style="opacity:0.5" />
+  </g>
+  <path
+     style="fill:none;stroke:#999999;stroke-width:3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 2543.2285,1407.1866 -565.7768,-250.2459 -56.8582,-25.4823 -22.403,-13.8928 -176.9896,-155.50609 -281.0037,-251.10439 -172.8799,-152.15834 -220.1148,-195.91373 -60.30932,-53.40787 -22.72131,-16.77647 -29.80753,-17.11356 -37.51825,-14.9474 -25.44234,-7.19554 -40.81202,-5.43619 -343.8942,-8.77252 -16.18453,0.96603 -28.95729,4.89797 -150.25446,38.16021 -14.6662,6.66911"
+     id="path13175-3" />
+  <text
+     x="84.179688"
+     y="206.961"
+     id="text4834-3"
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+       x="84.179688"
+       y="206.961"
+       id="tspan1">1865</tspan></text>
+  <path
+     style="opacity:1;fill:none;stroke:#999999;stroke-width:3;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="M 600.38449,242.13356 567.58921,234.01678 547.48987,223.87543 531.34582,211.85911 471.74775,150.57418 461.75423,134.00986 453.18399,113.7222 448.3499,97.128315 412.51891,-149.99983"
+     id="path14072" />
+</svg>
