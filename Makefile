@@ -1,4 +1,4 @@
-targets = timelines tramscale walledcityscale timelines/misc experiments/oneoffs experiments/subplans experiments/mashup
+targets = timelines tramscale walledcityscale timelines/misc experiments/oneoffs experiments/subplans
 
 all: $(targets)
 

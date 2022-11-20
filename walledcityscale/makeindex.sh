@@ -71,6 +71,8 @@ for city in $sortedcities; do
   echo '  <img class="map" src="'${city}'.svg" title="'$SNAME'" alt="'$SNAME' map" width="'$W'" height="'$H'"></span>'
 done
 echo '<p>'
+echo '<a href="rtoverlay">versions with modern rapid transit lines overlaid (where applicable)</a>'
+echo '<p>'
 echo '<form action="">Cities to show:'
 for city in $sortedcities; do
   NAME=`grep ^$city names | sed -e's/.*\t//; s/<br>.*//; s/,//;'`
