@@ -1,6 +1,6 @@
 all: hsr bymode regrail sandy nyctrolleys nycflights ivytunnels brc
 
-bymode = nycbymode bosbymode sfobymode alobymode
+bymode = nycbymode bosbymode sfobymode alobymode cbgbymode
 bymode: $(bymode)
 
 regrail = nerail carail gbrail
