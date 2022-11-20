@@ -2,17 +2,17 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="2550"
    height="3650"
    viewBox="25, -25, 2550, 3650"
-   id="svg2">
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -21,14 +21,13 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
   <image
-     xlink:href="file:///home/alexander/timelines/timelines/ath/../streetmap/athosm.png"
+     xlink:href="../streetmap/athosm.png"
      x="-100"
      y="-50"
      width="2660"
@@ -36,9 +35,9 @@
      id="image10"
      style="display:none" />
   <path
-     d="m 1890.757,1228.7522 -6.257,5.2478 -87.5,77.5 -32,29 -25,9.5 -21,0.5 -49.5,-25 -23,-2 -19,4 -18.5,7.5 -24.5,16.5 -12,16 -13,57.5 -18.5,65 -13,22.5 -56.5,60.5 -31,11 -56,16 -35.5,6.5 -61,-9.5"
-     id="path3776"
-     style="fill:none;stroke:#2888d2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     d="m 1890.757,1228.7522 -6.257,5.2478 -87.5,77.5 -32,29 -25,9.5 -21,0.5 -49.5,-25 -23,-2 -19,4 -18.5,7.5 -24.5,16.5 -12,16 -13,57.5 -18.5,65 -13,22.5 -56.5,60.5 -31,11 -56,16 -34.1936,11.4539 -37.6533,-1.0389 -28.3095,-5.0617"
+     id="path3776-3"
+     style="fill:none;stroke:#2888d2;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="m 1023.5,1178.5 41.5,8.5 16,-6.5 19.5,-1 17,9 14.5,17 1.5,17.5 -3.5,51.5 -27.5,122 5,17.5 22,38 11,6.5 38.5,10 23,-4.5 22,5 71,105 -8,56 -31,37 -32.5,25.5 -17,49 -71.5,73 0,9.5 12.5,20 16,19 56,10 67,12.5 6,5.5 11.5,33.5 9.5,72.5"
      id="path3006"
