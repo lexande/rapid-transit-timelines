@@ -63,7 +63,7 @@ for city in $sortedcities; do
   NATIVEW=$(grep '^   width="' ${city}.svg | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*0.6)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' ${city}.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
-  if ( grep ^$city! names >/dev/null ); then 
+  if ( grep ^$city~ names >/dev/null ); then 
     echo '<span id="'$UPPER'" style="display: none; vertical-align: middle">'$NAME'<br>'
   else
     echo '<span id="'$UPPER'" style="display: inline-block; vertical-align: middle">'$NAME'<br>'
@@ -77,7 +77,7 @@ echo '<form action="">Cities to show:'
 for city in $sortedcities; do
   NAME=`grep ^$city names | sed -e's/.*\t//; s/<br>.*//; s/,//;'`
   UPPER=$(echo $city | tr 'a-z' 'A-Z')
-  if ( grep ^$city! names >/dev/null ); then 
+  if ( grep ^$city~ names >/dev/null ); then 
     echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" autocomplete=\"off\">$NAME</div>"
   else
     echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${UPPER}checkbox\" onclick=\"toggleshow('$UPPER')\" autocomplete=\"off\" checked>$NAME</div>"
