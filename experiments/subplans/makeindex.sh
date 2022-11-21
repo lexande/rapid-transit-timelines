@@ -140,7 +140,7 @@ if [ $SCALE = 10 ]; then
   cat <<HEREDOC
 <a href="large.html">larger versions</a>
 <p>
-Based on planned frequent midday service (<a href="notes.html">notes</a>).<br>
+Based on planned frequent midday service (<a href="/timelines/notes.html">notes</a>).<br>
 Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (10 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
@@ -151,7 +151,7 @@ elif [ $SCALE = 30 ]; then
   cat <<HEREDOC
 <a href=".">smaller versions</a>
 <p>
-Based on planned frequent midday service (<a href="notes.html">notes</a>).<br>
+Based on planned frequent midday service (<a href="/timelines/notes.html">notes</a>).<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
