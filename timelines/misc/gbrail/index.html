@@ -36,7 +36,6 @@ function update() {
 	map.src=(start+step*index) + ".svg";
 	map.title=start+step*index;
 	map.alt=start+step*index + " map";
-	document.getElementById("link").href="large.html#" + (start+step*index);
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -96,8 +95,8 @@ smaller version --- <a href="large.html">larger version</a>
 <br>
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
-<a id="link" href="large.html">
-<img id="map" src="2010.svg" title="2010" alt="2010 map" width="770" height="1070">
+<a href="javascript:" onclick="nextmap()">
+<img id="map" src="2010.svg" title="2010" alt="2010 map" width="1026" height="1426">
 </a>
 <p>
 <a href="#1935" onclick="gotoyear(1935)">1935</a>
@@ -110,7 +109,7 @@ smaller version --- <a href="large.html">larger version</a>
 <p>
 Showing rail lines with at least three trains each weekday.  Lines coloured by operator (<a href="colours.html">key</a>).<br>
 Local and interurban tramways (without priority at road crossings) and horse-drawn lines not shown.<br>
-Scale: <svg width="150.0px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> ≈ 100 km (approximately 1.5 CSS pixels per km)
+Scale: <svg width="200px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> ≈ 100 km (approximately 2 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>

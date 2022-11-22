@@ -55,11 +55,6 @@ function update() {
 	map.src=(start+step*index) + ".svg";
 	map.title=start+step*index;
 	map.alt=start+step*index + " map";
-HEREDOC
-if [ $SCALE = 1.5 ]; then
-  echo '	document.getElementById("link").href="large.html#" + (start+step*index);'
-fi
-cat << HEREDOC
 	location.replace("#" + (start+step*index));
 }
 function nextmap() {
@@ -113,7 +108,7 @@ window.onhashchange=function() {
 </script>
 </head><body>
 HEREDOC
-if [ $SCALE = 1.5 ]; then
+if [ $SCALE = 2 ]; then
   echo 'smaller version --- <a href="large.html">larger version</a>'
 else
   echo '<a href=".">smaller version</a> --- larger version'
@@ -125,12 +120,8 @@ cat <<HEREDOC
 <br>
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
+<a href="javascript:" onclick="nextmap()">
 HEREDOC
-if [ $SCALE = 1.5 ]; then
-  echo '<a id="link" href="large.html">'
-else
-  echo '<a href="javascript:" onclick="nextmap()">'
-fi 
 echo '<img id="map" src="2010.svg" title="2010" alt="2010 map" width="'${W}'" height="'${H}'">'
 echo '</a>'
 echo '<p>'

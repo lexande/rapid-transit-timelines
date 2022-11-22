@@ -4,7 +4,7 @@ all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg)) preview.
 	svgo --config ~/timelines/scripts/svgo.config.js $< -o - | gzip > $@
 
 index.html: name cities ~/timelines/scripts/makerailindex.sh ~/timelines/scripts/template/part4 $(wildcard *.svg)
-	~/timelines/scripts/makerailindex.sh . 1.5 > $@
+	~/timelines/scripts/makerailindex.sh . 2 > $@
 
 large.html: name cities ~/timelines/scripts/makerailindex.sh ~/timelines/scripts/template/part4 $(wildcard *.svg)
 	~/timelines/scripts/makerailindex.sh . 5 > $@
