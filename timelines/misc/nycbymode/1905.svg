@@ -46,8 +46,12 @@
        y="0" />
   </g>
   <path
+     style="fill:none;stroke:#006600;stroke-width:3;stroke-linejoin:round;stroke-opacity:1"
+     d="m 2815,4966.9993 -16.5913,-5.5317 -12.901,1.7094 -11.5077,5.8224"
+     id="path1571" />
+  <path
      style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1832.7275,3154.239 5.5205,15.5579 -14.805,54.2015 -17.5653,25.8461 -26.348,37.1381 -32.8722,44.4151 -15.5579,27.6027 -19.8237,45.9207 -41.4039,56.7109 -12.2958,25.5951 -4.7677,26.8499 5.2696,35.3815 28.249,70.8242 -6.4711,51.236 1.1825,13.5691 35.0486,171.4803 12.1268,61.0091 -1.7565,16.9381 -6.1479,20.7019 -14.0522,18.82 -54.4525,47.6773 -114.1745,97.1111 -13.0486,13.0485 -86.8228,90.5868 -85.5681,59.7221 -71.0141,47.4263 -33.3741,11.0411 -34.1269,6.0223 -180.4208,25.0933 -10.4137,5.0815 -6.0827,6.3862 -4.6652,7.5657 -1.2321,12.4616 3.8873,27.1606 11.5282,78.2797 8.5474,13.6201 27.5413,170.8013 12.0995,17.4041 42.5823,288.0006 -1.13,10.3567 -22.3572,27.7686 -8.517,16.1465 -1.7292,7.9915 -0.8437,36.1902 -0.2661,8.7831 9.031,51.9653 3.2982,8.3074 8.8468,7.2017 10.2357,0.9483 L 1150,5169"
+     d="m 1679.856,3671.5187 1.1825,13.5691 35.0486,171.4803 12.1268,61.0091"
      id="path1232" />
   <path
      style="fill:none;stroke:#999999;stroke-width:3;stroke-linejoin:round"
@@ -942,10 +946,6 @@
      d="m 624.0633,3566.4144 276.7121,141.3282"
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     id="path14034"
-     d="m 526.73942,5224.1144 15.08209,4.4359 36.0196,-0.3549 62.98994,-8.5169 24.48623,-4.7908 58.90885,-24.6637 24.30879,-3.7261 13.48518,1.0646 19.1632,1.5969 27.68006,4.6134 13.30773,-0.1775 22.35699,-8.3395 14.19492,-19.3406"
-     style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      id="path14038"
      d="m 750.8416,3945.1525 25.196,19.6955 -6.5379,9.4581"
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
@@ -1375,10 +1375,6 @@
      d="m 1309.4116,2888.1637 -44.9116,37.8365 -74.5205,58.2659"
      id="1939-04-17 29 - Meeker and Marcy Ave"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 449.49999,5127.5002 0.5,7.5 -9.5,24 v 16 l 7,13.5 11,7.5 66.25093,27.7453 1.9885,0.3689"
-     id="1935-09-26_83_-_Norton_s_Pt_Shuttle" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2969.8833,3188.1262 67.1167,-22.126 40,-1.5 68.5,-14.5 16,-1.5 59,-21 13.5,-11.5 19,-20 19,-13.5 139.5,-4.5 114.5,-38 59,22.5"
