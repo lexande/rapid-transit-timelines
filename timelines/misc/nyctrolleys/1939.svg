@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg2"
    height="5350"
    viewBox="-1842, 16, 5400, 5350"
    width="5400"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -930,7 +929,7 @@
   <path
      style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="1941-08-05 S - Harlem Shuttle"
-     d="m 1307.4405,1688.0846 13.0814,-24.0417 8.8389,-3.889 4.9497,-10.2531 -3.5355,-8.1317 1.7677,-3.5355 28.2843,-15.2028 42.5729,-41.1587" />
+     d="m 1320.5219,1664.0429 8.8389,-3.889 4.9497,-10.2531 -3.5355,-8.1317 1.7677,-3.5355 28.2843,-15.2028 42.5729,-41.1587" />
   <path
      style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="1941-08-05 W - Willis Ave"
@@ -1008,7 +1007,6 @@
      style="opacity:1;fill:none;fill-opacity:0.14117647;fill-rule:nonzero;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1348.2373,679.86415 c -82.9572,-52.00129 -106.7966,-64.8021 -166.8686,-95.86841"
      id="path1214" />
-
   <path
      style="fill:#ffffff;stroke:none;stroke-width:5;stroke-linejoin:round"
      d="m 1720.4732,1761.6819 -0.3465,-22.2848 9.2345,-11.1138 0.5964,-9.4545 8.2415,-4.4523 10.6106,0.6579 11.0519,9.3011 1.0186,6.7676 -3.7222,13.7202 -6.9487,7.576 -18.082,7.1563 -4.0058,3.0413 z"
@@ -1021,9 +1019,4 @@
      style="fill:#ffffff;fill-opacity:1;stroke:none"
      d="m 1490.8884,1933.5186 -23.1157,31.3983 -9.1924,31.8198 -15.5564,21.2132 -19.799,4.9497 -21.9203,21.2132 -38.8908,-23.3345 -45.962,-10.6066 -11.3137,-12.7279 -0.7071,-23.3345 52.3259,-80.6102 14.1421,-12.0208 21.9203,10.6066 69.3551,10.4456 23.392,13.2876 5.2327,5.6417 0.9916,5.6256 -0.9023,6.4332"
      id="path6925" />
-
-  <path
-     d="M 1327.4962,1648.5065 1302,1696 658,2862 l -16,57.5 -19,69.5 -16,42 -23,42.5 -12.5,9 L 463,3109"
-     id="path13908"
-     style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
