@@ -24,6 +24,31 @@
   </metadata>
   <defs
      id="defs6" />
+  <g
+     id="g1301"
+     style="display:none">
+    <image
+       xlink:href="../../streetmap/nycosm.png"
+       x="-2304"
+       y="0"
+       width="5888"
+       height="5376"
+       id="image10"
+       style="fill:#330000" />
+    <image
+       xlink:href="railosm.png"
+       y="0"
+       x="-2304"
+       id="image1296"
+       preserveAspectRatio="none"
+       height="5376"
+       width="5888"
+       style="opacity:0.5;stroke:none" />
+  </g>
+  <path
+     style="fill:none;stroke:#999999;stroke-width:3;stroke-linejoin:round;stroke-opacity:1"
+     d="m 862.564,3546.672 10.8721,10.1326 8.5012,4.2675 8.4883,1.3264 4.4235,0.1212 10.3099,-4.1312"
+     id="path5374" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1832.7275,3154.239 5.5205,15.5579 -14.805,54.2015 -17.5653,25.8461 -26.348,37.1381 -32.8722,44.4151 -15.5579,27.6027 -19.8237,45.9207 -41.4039,56.7109 -12.2958,25.5951 -4.7677,26.8499 5.2696,35.3815 28.249,70.8242 -6.4711,51.236 1.1825,13.5691 35.0486,171.4803 12.1268,61.0091 -1.7565,16.9381 -6.1479,20.7019 -14.0522,18.82 -54.4525,47.6773 -114.1745,97.1111 -13.0486,13.0485 -86.8228,90.5868 -85.5681,59.7221 -71.0141,47.4263 -33.3741,11.0411 -34.1269,6.0223 -180.4209,25.0933 -10.4137,5.0815 -6.0827,6.3862 -4.6652,7.5657 -1.2321,12.4616 3.8874,27.1606 11.5282,78.2797 8.5474,13.6201 27.5413,170.8013 12.0995,17.4041 42.5823,288.0006 -1.13,10.3567 -22.3572,27.7686 -8.517,16.1465 -1.7292,7.9915 -0.8437,36.1902 -0.2661,8.7831 9.031,51.9653 3.2982,8.3074 8.8468,7.2017 10.2357,0.9483 L 1150,5169"
@@ -116,27 +141,6 @@
      id="path926"
      d="m 822.824,3528.088 8.99477,9.8175 12.53183,3.7566 226.2941,62.2462 35.6023,9.7927 17.034,3.194 526.986,36.1972 54.2955,7.4523 h 34.4227 l 40.1006,-3.9036 45.0689,-8.517 39.3909,-9.5815 143.0137,-52.5212 588.0244,-220.731 303.4163,-114.269 171.0487,-55.0053 515.6303,-163.5964"
      style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#999999;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <g
-     id="g1301"
-     style="display:none">
-    <image
-       xlink:href="../../streetmap/nycosm.png"
-       x="-2304"
-       y="0"
-       width="5888"
-       height="5376"
-       id="image10"
-       style="fill:#330000" />
-    <image
-       xlink:href="railosm.png"
-       y="0"
-       x="-2304"
-       id="image1296"
-       preserveAspectRatio="none"
-       height="5376"
-       width="5888"
-       style="opacity:0.5;stroke:none" />
-  </g>
   <path
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 425.3177,3249.5631 1.3476,6.7812 -17.74371,3.9035 -1.41949,-6.3876"
