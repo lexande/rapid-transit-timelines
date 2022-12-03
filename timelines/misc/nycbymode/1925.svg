@@ -86,17 +86,13 @@
      id="path6283-3"
      d="m 531.90111,4012.4651 -1.36173,9.5791 1.4889,4.1578 41.4477,33.2607 9.0444,14.9435 v 0 l 3.1206,13.9885" />
   <path
-     id="path6638"
-     d="m 672.36481,3323.3749 -1.89552,17.1527 -7.45979,-0.3221 -1.82799,4.1552"
-     style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path6281"
      d="m 687.92288,3323.9117 -0.1733,-33.0573 -21.71826,-0.5 -2.75456,2.0982 0.0887,4.1698 3.37129,1.7743 20.76006,0.2661" />
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path5126"
-     d="m 715.50032,3381.9996 -28.89225,-0.7938 1.31481,-57.2941 -15.55807,-0.5368 0.74764,-45.2711 -25.33984,-26.8334 -138.76103,-146.3962 -7.51183,-8.3737" />
+     d="m 715.50032,3381.9996 -28.89225,-0.7938 1.31481,-57.2941"
+     id="path5126" />
   <path
      d="m 969.4433,3384.6259 7.49456,5.2204 7.5618,51.1533 6.5,28.5 3.616,21.6962 5.91764,3.7937 206.4664,-30.9899 169.5,-25.5 62.2749,-9.7421"
      id="path4559"
@@ -2119,4 +2115,12 @@
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linejoin:round"
      d="M 118.9225,2450.5277 48.5571,2416.4523"
      id="path72578" />
+  <path
+     id="path6638"
+     d="m 672.36481,3323.3749 -1.89552,17.1527 -7.45979,-0.3221 -1.82799,4.1552"
+     style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 687.92288,3323.9117 -15.55807,-0.5368 0.74764,-45.2711 -25.33984,-26.8334 -138.76103,-146.3962 -7.51183,-8.3737"
+     id="path8034" />
 </svg>
