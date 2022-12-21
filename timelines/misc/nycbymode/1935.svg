@@ -198,11 +198,11 @@
      id="path3629"
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 1285.0004,1682.9996 27,-47 29,-50 35,-48 9,-17 28,-87 3,-11 -11,-64 7,-20 31,-67 36,-81 7,-19 13,-11.9999 72,-132 33,-62.00003 54,-74.00001 18,-37 20,-48 47,-79 35,-62 39,-29 23,-20 13,-20 15,-37 47,-53 25,-31 35,-62"
+     d="m 1287.0004,1680.9996 25,-45 13.6279,-24.2211 27.624,-38.7272 22.1873,-31.1895 9.5608,-20.8622 28,-87 3,-11 -11,-64 7,-20 31,-67 36,-81 7,-19 13,-11.9999 72,-132 33,-62.00003 54,-74.00001 18,-37 20,-48 47,-79 35,-62 39,-29 23,-20 13,-20 15,-37 47,-53 25,-31 35,-62"
      id="path3633"
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 1368.0004,1550.9996 9,-1 34,34 117,63 45,27 13,-4 39,-24 9,-31 4,-21 31,-27 14,-8 49,-19 77,-95 22,-18 36,-26 15,-44 1,-30 11,-11 61,-6 36,-5 53,-21 122,-46 144,-22 85,-91.9999 58,-39 61,-63 15,-23.00003 13,-44 29,-20"
+     d="m 1358.3981,1565.8177 8.2936,-5.7562 7.195,-3.0942 6.2845,0.024 7.0321,3.2116 23.7971,23.7971 117,63 45,27 13,-4 39,-24 9,-31 4,-21 31,-27 14,-8 49,-19 77,-95 12.1016,-12.2114 15.0493,-6.9862 18.3099,-12.6204 15.3136,-14.161 6.472,-13.2388 5.7536,-28.7822 1,-30 11,-11 61,-6 36,-5 53,-21 122,-46 144,-22 85,-91.9999 58,-39 61,-63 15,-23.00003 13,-44 29,-20"
      id="path3639"
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -492,7 +492,7 @@
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path9814"
-     d="m 585.49975,3069.5005 9.31786,-12.4673 26.0047,-61.7583 17.67746,-59.2744 20.56462,-73.6774 39.96769,-72.4354 99.70975,-179.2098 91.5323,-166.0323 79.29026,-144.6451 90.43541,-164.5 100,-181.5 144.5646,-260 22.9185,-42.3983 14.9891,8.0608 14.5975,7.2988 22.6514,-11.5774 23.6581,9.3122 8.5572,-6.5437" />
+     d="m 585.49975,3069.5005 9.31786,-12.4673 26.0047,-61.7583 17.67746,-59.2744 20.56462,-73.6774 39.96769,-72.4354 99.70975,-179.2098 91.5323,-166.0323 79.29026,-144.6451 90.43541,-164.5 100,-181.5 144.5646,-260 21.0326,-39.1283 4.5014,-1.615 12.3736,6.4058 13.4833,7.4977 23.7656,-11.7763 23.6581,9.3122 5.1203,-3.1965" />
   <path
      style="fill:none;stroke:#006600;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3688-4"
@@ -534,7 +534,7 @@
      id="1952-10-26 8 - Riverdale Ave"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 2487.9997,26.000426 -8,-2 -14.5,1.5 -22.8708,9.756531 -30.6292,12.743469 -30.9707,6.63659 -5.5293,-3.63659 -1,-6 -63.5,-38.9999998 -13.5,-9.5"
+     d="m 2479.9997,24.000426 -14.5,1.5 -22.8708,9.756531 -30.6292,12.743469 -30.9707,6.63659 -5.5293,-3.63659 -1,-6 -63.5,-38.9999998 -13.5,-9.5"
      id="1952-11-09 7 - Yonkers Ave"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -1024,7 +1024,7 @@
   <path
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="1947-05-28 T - Third-Amsterdam"
-     d="m 1411.7352,918.61349 -154.7351,283.88691 -189.8838,340.146 1.8839,2.854 16,23.5 218.9999,121.5 4.3988,2.7397 -146.5506,263.489 -360.99977,656.1501 -93.45117,168.1971 -45.50774,82.4297 -14.8708,53.1087 -23.39133,79.9137 -26.16278,62.0746 -15.34655,17.7831 -10.618,6.1143 -108.5,26.5" />
+     d="m 463.00016,3109.0004 108.5,-26.5 10.618,-6.1143 15.34655,-17.7831 26.16278,-62.0746 23.39133,-79.9137 14.8708,-53.1087 45.50774,-82.4297 93.45117,-168.1971 360.99977,-656.1501 146.5506,-263.489 -4.3988,-2.7397 -218.9999,-121.5 -16,-23.5 -1.8839,-2.854 189.8838,-340.146 154.7351,-283.88691 23.5144,-41.84257" />
   <path
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1539.517,974.51879 42.4832,-57.0184 11.5,-14 11,-18 5.5,-20 51.5,-78 23,-44 25.2421,-46.16155"
@@ -1048,7 +1048,7 @@
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path6185-6"
-     d="m 972.00006,2355.4995 96.00004,-172.4991 132.5,-239.5 120.5,-218.5 17.5185,-32.8961 12.5905,-23.1064 5.9604,-2.0361" />
+     d="m 972.00006,2355.4995 96.00004,-172.4991 132.5,-239.5 120.5,-218.5 17.5185,-32.8961 12.5905,-23.1064 4.8462,-1.8372" />
   <path
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="1948-07-10 X - 138th St Crosstown"
@@ -1660,10 +1660,6 @@
      id="1951-04-16 44 - Nostrand Ave"
      d="m 1234,4811.4995 -61.4925,-433.8633 -1.8113,-54.7941 -5.8123,-77.0935 -11.1768,-144.1562 -19.9438,-232.7345 -1.8776,-37.9204 4.683,-79.9909 8.4313,-162.4471 -3.5,-28 -22.5,-141.5 -19,-128 -91.5,-111 1,-14 5.1308,-21.5666 3.8767,-8.6862 -5.5919,-2.1889 -2.3954,-0.7985" />
   <path
-     id="path13270"
-     d="m 1262.9232,1351.3866 50.5694,-32.8257"
-     style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m -1069.9176,2790.595 9.9179,0.4051"
      id="path24530" />
@@ -1735,4 +1731,12 @@
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 687.92288,3323.9117 -15.55807,-0.5368 0.74764,-45.2711 -25.33984,-26.8334 -138.76103,-146.3962 -7.51183,-8.3737"
      id="path10231" />
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linejoin:round"
+     d="m 1636.0002,1714.5004 13.5091,10.1568"
+     id="path2501" />
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linejoin:round;stroke-dasharray:none"
+     d="m 1332.0066,1661.9897 14.9014,7.7448 1.4169,4.3729"
+     id="path2087" />
 </svg>

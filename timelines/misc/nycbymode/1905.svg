@@ -454,7 +454,7 @@
      id="path13467"
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 585.49975,3069.5005 9.31786,-12.4673 26.0047,-61.7583 17.67746,-59.2744 20.56462,-73.6774 39.96769,-72.4354 99.70975,-179.2098 91.5323,-166.0323 79.29026,-144.6451 90.43541,-164.5 100,-181.5 144.5646,-260 22.9185,-42.3983 14.9891,8.0608 14.5975,7.2988 22.6514,-11.5774 23.6581,9.3122 8.5572,-6.5437"
+     d="m 585.49975,3069.5005 9.31786,-12.4673 26.0047,-61.7583 17.67746,-59.2744 20.56462,-73.6774 39.96769,-72.4354 99.70975,-179.2098 91.5323,-166.0323 79.29026,-144.6451 90.43541,-164.5 100,-181.5 144.5646,-260 21.0326,-39.1283 4.5014,-1.615 12.3736,6.4058 13.4833,7.4977 23.7656,-11.7763 23.6581,9.3122 5.1203,-3.1965"
      id="path9814"
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -487,7 +487,7 @@
      d="m 1693.4997,7.0004262 2,-12.5" />
   <path
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 2487.9997,26.000426 -8,-2 -14.5,1.5 -22.8708,9.756531 -30.6292,12.743469 -30.9707,6.63659 -5.5293,-3.63659 -1,-6 -55.8744,-34.316604 -3.2098,5.126108"
+     d="m 2465.4997,25.500426 -22.8708,9.756531 -30.6292,12.743469 -30.9707,6.63659 -5.5293,-3.63659 -1,-6 -55.8744,-34.316604 -3.2098,5.126108"
      id="path4237" />
   <path
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -958,11 +958,11 @@
      d="m -1149.9877,2633.5529 176.52801,-16.8135 63.1131,-7.025 110.4105,-2.2585 259.08832,-23.8386 57.7146,-1.3801 25.9716,4.0149 244.45266,67.9083"
      id="path927" />
   <path
-     d="m 1529.0002,1494.5004 29.7967,6.3007 61.7767,5.0301 39.0995,-29.0509 30.1886,-18.0368 125.7393,-85.6958 70.4556,-50.0714 9.0882,-3.8949 96.4282,-10.9841 54.2212,-21.4503 121.1419,-45.7271 144.4272,-22.0887"
+     d="m 1529.0002,1494.5004 29.7967,6.3007 61.7767,5.0301 39.0995,-29.0509 30.1886,-18.0368 125.7393,-85.6958"
      id="1948-07-10 A - Westchester Ave"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 1792.7099,794.37989 -37.3789,-8.16975 -22.5625,4.49859 -8.6478,-1.07142 -13.1205,-7.63692 -93.5487,-0.64513 0.2584,-21.09851 10.7903,-57.75636 19,-59 20,-43.5 7.5323,-27.07283 -21.8459,-10.79739"
+     d="m 1792.7099,794.37989 -37.3789,-8.16975 -22.5625,4.49859 -8.6478,-1.07142 -13.1205,-7.63692 -93.5487,-0.64513 0.2584,-21.09851 10.7903,-57.75636 19,-59 20,-43.5 7.5323,-27.07283"
      id="1948-06-26 B - Bailey Ave"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -985,10 +985,6 @@
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1792.7099,794.37989 24.5339,0.91075 9.2564,3.20975 8.9208,6.44277 1.3324,2.51853"
      id="path76253" />
-  <path
-     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1682.3406,677.72708 7.1596,7.77331 8.5,5.5 18.5,8.5 39.5,10.5 18.6508,11.79389"
-     id="path76251" />
   <path
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1761.5002,34.000358 2.5,128.500002 -7.5,50 8.5,93.50003 -19.3533,62.36758 -46.3564,111.67347 -51.1211,89.16102 -16.661,11.57229 -17.5323,18.20975"
@@ -1023,11 +1019,7 @@
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path3284"
-     d="m 1539.517,974.51879 42.4832,-57.0184 11.5,-14 11,-18 5.5,-20 51.5,-78 23,-44 25.2421,-46.16155"
-     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="1947-10-25 U - University Ave"
-     d="m 1682.3406,677.72708 -0.7366,-3.7332 10.3962,-12.99349 10,-48.5 12,-28 29,-39.5 -3,-6.5 -11,-3.5 -1,-5.5 5.5,-36 14.5,-17.5 2,-17.5 -14,-13 -19.2306,-6.05384"
+     d="m 1539.517,974.51879 42.4832,-57.0184 11.5,-14 11,-18 5.5,-20 51.5,-78 2.7698,-5.2988"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="m 2114.6518,557.88612 -42.7267,-12.9888 -15.5354,-3.2752 -16.161,43.94731 -23.3502,42.07322 -20.7472,26.9944 -17.1017,11.88991 -42.7815,33.20479 -57.9932,44.40903 -51.8386,52.14676 -22.4161,25.71285 -32,62.5 -59,124.50001 -51.5,122 -71.5,168.5 -74,197.5"
@@ -1038,7 +1030,7 @@
      id="1946-11-17 X - 42nd St Crosstown"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 972.00006,2355.4995 96.00004,-172.4991 132.5,-239.5 120.5,-218.5 17.5185,-32.8961 12.5905,-23.1064 5.9604,-2.0361"
+     d="m 972.00006,2355.4995 96.00004,-172.4991 132.5,-239.5 120.5,-218.5 17.5185,-32.8961 12.5905,-23.1064 4.8462,-1.8372"
      id="path6185-6"
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -1050,12 +1042,12 @@
      id="1948-06-26 X - 149th St Crosstown"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 1336.499,1303.6609 17.0011,-9.1605 6.5,-4 10.2333,-0.782 35.8959,29.0405 40.5887,14.0183 134.2822,51.7232 L 1617,1397"
+     d="m 1353.5001,1294.5004 6.5,-4 10.2333,-0.782 35.8959,29.0405 40.5887,14.0183 134.2822,51.7232 L 1617,1397"
      id="1948-06-26 X - 163rd St Crosstown"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path3625"
-     d="m 1332.026,989.919 32.6467,19.0237 83.3274,48.5577 91.5169,-82.98161 8.4832,-1.5184 10,8 15,-4 7,-7 5.5,-11.5 13,-10 19,3 36.5,37 32,10.5 10.5,2.50001 12.5,8 4.5,-2.5 28,-58.50001 10.5,-3.5 28,14.5 129.5,83.50001 63.5,46.5 5.8472,3.3385 -7.797,16.5414 -13.9856,21.217"
+     d="m 1332.026,989.919 32.6467,19.0237 83.3274,48.5577 91.5169,-82.98161 8.4832,-1.5184 10,8 15,-4 7,-7 5.5,-11.5 13,-10 19,3 36.5,37 32,10.5 10.5,2.50001 12.5,8 4.5,-2.5 28,-58.50001 10.5,-3.5 28,14.5 14.5504,9.38189"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="m 546.50016,2335.0004 58.5,32 5.23974,2.6423 156.88946,-284.5112"
@@ -1094,10 +1086,6 @@
      d="m 1593.0004,904.50045 12.9998,5.99994 6.5,7.5 28,2.5 40.5,20.5 32,32.5 -3,35.00001 v 0 l 5.5,5.5 54.25,17 31.75,2 152.3231,99.4923"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 1571.5001,795.99973 25,4.5 16.1605,-17.37077 4.7909,-1.7737"
-     id="1948-01-24 X - 207th St Crosstown"
-     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      d="m 1407.4557,1575.7608 46.0441,-83.7611 27,-78 12,-22.5 14.949,-35.7626"
      id="path4732"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
@@ -1106,7 +1094,7 @@
      d="m 1447.9997,1057.5 7,18 1.5,14 17,42.5 -3,19 -8,24 1.5,18"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 1904.6629,1038.7883 -9.1626,13.7117 -11,77 -19.3017,51.3943 -10.894,22.0344 -33.8766,78.9662 -1.2101,80.2223 0.2824,64.3828 -0.4454,4.0567 -11.6833,12.0474 -77.3154,95.638 -21.6062,7.9277 -27.3846,10.6281 -13.5947,7.792 -32.0755,27.9906 -4.4099,22.2698 -8.3804,29.222 -38.6352,23.642 -44.6387,29.827 -34.8239,0.5334 -74.778,-39.1456 -67.0866,-37.6616"
+     d="m 1904.6629,1038.7883 -9.1626,13.7117 -11,77 -19.3017,51.3943 -10.894,22.0344 -33.8766,78.9662 -1.2101,80.2223 0.2824,64.3828 -0.4454,4.0567 -11.6833,12.0474 -77.3154,95.638 -21.6062,7.9277 -27.3846,10.6281 -13.5947,7.792 -32.0755,27.9906 -4.4099,22.2698 -8.3804,29.222 -38.6352,23.642"
      id="1948-08-21 S - Southern Blvd"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -1580,10 +1568,6 @@
      d="m 835.82347,2278.6751 -33.76971,61.9951 -57.11193,103.9608 -89.82488,164.3071 -86.95812,155.3638 -19.14716,36.2683 -4.35117,8.1907 42.22987,25.9057 -80.57532,124.366"
      id="1936-03-12_Sixth_Ave" />
   <path
-     d="m 1308.3989,1693.2401 15.6722,-29.2864 13.4403,-24.4785 23.3161,-16.4449 46.6282,-47.2695"
-     id="1941-08-05 S - Harlem Shuttle"
-     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      style="opacity:1;fill:none;fill-opacity:0.14901961;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 548.20922,2801.3972 42.31864,27.2365 -3.63746,6.0329"
      id="path25311" />
@@ -2009,7 +1993,7 @@
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path7049"
-     d="m 826.737,2940.1932 11.7939,6.7751 -14.0523,39.6475"
+     d="m 836.79384,2921.8449 9.22757,5.1087 -21.54283,59.6621"
      style="opacity:1;fill:none;fill-opacity:0.39607843;fill-rule:nonzero;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path8725"
@@ -2224,14 +2208,6 @@
      id="1948-07-10 X - 138th St Crosstown-2"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     id="path14232"
-     d="m 1378.7892,1630.0714 29.1082,-49.6848 0.7786,-3.0518"
-     style="opacity:1;fill:none;fill-opacity:0.396078;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="1948-07-10 A - Westchester Ave-5"
-     d="m 2311.3633,1218.8312 70.0406,-75.9256 2.1476,-11.5035 -0.1602,-18.0109 -5.3911,-11.8908"
-     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      style="opacity:1;fill:none;fill-opacity:0.14902;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 2817.7547,265.38949 58.295,76.31649 3.5664,2.20056"
      id="path33879-9" />
@@ -2379,4 +2355,29 @@
      style="fill:none;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 658.55099,3345.0603 1.2172,-2.3336 10.4709,0.1419 1.8331,-4.8551 0.2925,-14.6385"
      id="path2243" />
+  <path
+     d="m 1308.3989,1693.2401 15.6722,-29.2864 5.2902,-3.8004 4.9497,-10.253 -3.5355,-8.1317 1.7677,-3.5355 28.2843,-15.2028 46.6282,-47.2695"
+     id="1941-08-05 S - Harlem Shuttle-6"
+     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     d="m 1290.2291,1301.306 26.771,15.1944 30.5,-4.5 6,-17.5"
+     id="1948-06-26 X - 163rd St Crosstown-6"
+     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linejoin:round"
+     d="m 1636.0002,1714.5004 13.5091,10.1568"
+     id="path2501" />
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 2264.4553,1226.0053 46.908,-7.1741 70.0406,-75.9256 2.1476,-11.5035 -0.1602,-18.0109 -5.3911,-11.8908"
+     id="1948-07-10 A - Westchester Ave-3" />
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="1948-08-21 S - Southern Blvd-3"
+     d="m 1583.9697,1667.7143 -44.6387,29.827 -34.8239,0.5334 -74.778,-39.1456 -50.94,-28.8577 16.9991,-29.0158 -8.3756,-4.9761" />
+
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linejoin:round;stroke-dasharray:none"
+     d="m 1332.0066,1661.9897 14.9014,7.7448 1.4169,4.3729"
+     id="path2087" />
 </svg>

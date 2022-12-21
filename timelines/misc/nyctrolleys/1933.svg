@@ -753,7 +753,7 @@
   <path
      style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="1947-05-28 T - Third-Amsterdam"
-     d="M 1411.7351,918.61313 1257,1202.5 1069.5,1537 l -0.5,8.5 16,23.5 219,121.5 -2,5.5 -644,1166 -16,57.5 -19,69.5 -16,42 -23,42.5 -12.5,9 L 463,3109" />
+     d="M 1434.0804,878.80653 1257,1202.5 1069.5,1537 l -0.5,8.5 16,23.5 219,121.5 -2,5.5 -644,1166 -16,57.5 -19,69.5 -16,42 -23,42.5 -12.5,9 L 463,3109" />
   <path
      style="fill:none;stroke:#800080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="1939-09-29 Jackson Avenue"
@@ -781,7 +781,7 @@
   <path
      style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="1946-11-10 X - 59th St Crosstown"
-     d="m 1000,2370.5 -297,-166" />
+     d="m 1000,2370.5 -298.92505,-167.5464 -26.87049,49.4382" />
   <path
      style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="1947-06-29 X - 125th X Crosstown"
@@ -1156,10 +1156,6 @@
      id="1940-12-24 L - Grand St Shuttle"
      d="m 956,3038.5 15.5,6.5 37,19.5 64.5,34" />
   <path
-     style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     id="1938-06-28 Dyre Ave"
-     d="m 2523.5,439 -0.5,-68.5 3.5,-38.5" />
-  <path
      style="fill:none;stroke:#008000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="1941 - Fulton Ferry route"
      d="m 658.5,3309 2,-13.5 4,-17.5 -34,-33 -10.5,-4.5" />
@@ -1181,7 +1177,7 @@
      style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 739,2674 1236.4257,1773.4066 1232,1765 l -84,-45 0,-8.5 158.5,-287.5"
+     d="M 1306.5,1424 1148,1711.5 v 8.5 l 84,45 4.4257,8.4066 L 735.97487,2678.7648 686.5,2651.5 l -5.63094,1.6327 -9.36906,61.3673 -16.13013,27.7797"
      id="1936-03-25_Lexington" />
   <path
      id="1936-02-12_Broadway-Columbus"
@@ -1408,4 +1404,20 @@
      style="fill:none;fill-rule:evenodd;stroke:#008080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m -346.49989,-4.500015 125,101 190.5,158.250015 -0.75,16.5 39,30 V 307 l -41.25,96.5 1.5,4.5 23.5,16.25 45.25,23.5 19,8.5 17,8.25 6.25,-2 2.25,-7.5 2.25,-0.5 40.5,12 26.5,25 6,34 6,6 98,28.5 149,73.5 h 6.5 l 14,-25.5 10.5,-12 10.93059,-5.3468 19.56941,2.8468 20,6.5 31.5,12 30,13 95.50005,68 78.5,48.5 1,6 -96,171.50005 -89.00005,166.00005 1,7 29,25 28.99995,-1.5 22.5001,-1.5 16.5,12 10,20 2,37.5 12,11.5 41,17.5 63.5,46 29,8.5 31.5,28.5 3.5,8 -17,45.5 -3.5,1.5 1.5,7.5 5.5,-2 -0.5,-4 17.1884,-35.9094 11.9818,-10.6394 6.0671,1.6253 23.1615,9.91 -7.2709,15.8125 -19.2161,-13.8872 3.3778,-6.622 -0.052,-5.2133"
      id="path4300-6" />
+  <path
+     style="fill:none;stroke:#008080;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 402.507,2173.8667 -12.7279,-6.3639 -1.4142,-4.2427 9.8995,-26.5165 3.87,-23.4109 1.4333,-15.4799 -6.0105,-8.1318 -33.02,-20.8615 -6.2914,2.429 -44.0443,73.617 -13.5908,36.1164 -18.6245,32.2153 2.7685,18.6245 -0.6292,17.9952 -8.6831,29.6985 -22.148,46.3095 -19.1278,34.858 -22.0222,92.4932 -61.94905,270.1811 30.76485,7.3154 11.9305,0.738 L 228,2733"
+     id="path1195" />
+  <path
+     style="fill:none;stroke:#008080;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 142.5553,2711.4792 50.6403,-222.7483 10.4159,2.1877"
+     id="path12028" />
+  <path
+     style="fill:none;stroke:#008080;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 228,2733 -35.10927,-1.5494 -11.93053,-0.738 -30.7648,-7.3154 -29.2062,-7.0026"
+     id="path1874" />
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none"
+     d="m 1636,1714.5 12.9745,10.001"
+     id="path1395" />
 </svg>
