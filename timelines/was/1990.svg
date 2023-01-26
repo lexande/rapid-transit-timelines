@@ -2,18 +2,18 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="6050"
    height="5650"
    viewBox="0, 30, 6050, 5650"
-   id="svg2">
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs6" />
   <image
-     xlink:href="../../streetmap/wasosm.png"
+     xlink:href="../streetmap/wasosm.png"
      style="display:none"
      id="image12"
      height="5780.5"
@@ -70,9 +70,8 @@
        x="89.453125"
        y="5577.9609"
        id="tspan2">1990</tspan></text>
-
   <path
-     id="path4151"
-     d="m 4022.4822,3680.7665 5.1417,0 7.5774,-20.5671 33.8273,0"
+     id="path4151-6"
+     d="m 4023.9935,3684.8903 3.6304,-4.1238 7.1012,-18.2479 3.5453,-2.3192 h 30.7582 l 2.4049,-2.4252 1.4585,-2.8956 0.1095,-6.4237"
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
