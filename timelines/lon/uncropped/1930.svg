@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="14600"
    height="20500"
    viewBox="-1200, -7450, 14600, 20500"
-   id="svg2">
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -351,10 +350,6 @@
      d="m 4179.3275,2671.0245 59.5356,41.5964 24.8901,21.9179 9.9969,11.9614 22.75,40.0001 24.5033,67.8431 13.5444,31.8351 13.0604,35.6825 17.8393,41.8543 10.0228,43.979 1.3275,37.1198 -0.2279,40.1724 -14.1391,64.917 -18.4351,71.8454 -22.8138,46.5535 -30.5947,50.7464 -45.7654,96.2845 -15.0078,38.5512 -7.4352,48.3192 7.0147,73.0923 -4.0841,37.7235 -11.0593,38.9808 -23.5817,79.3963 -31.1127,58.3363 -51.9723,86.6205 -6.7175,10.9602 -38.8909,104.2983 -29.3449,89.0954 -12.9891,35.5834 -14.2335,38.9948 -25.1023,55.5079"
      id="path3055-3-7"
      style="fill:none;stroke:#88ac95;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     style="fill:none;stroke:#88ac95;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path4718-6"
-     d="m 3220.1709,4173.0184 30.83,13.981 17.5,16 7,20.5 -8.5,170.5 -5.5,23.5 -9,25 -13,25.5 -29.5,33 -28,29.5 -19.5,12 -41.0001,17.5 -24,26 -19.5,33 -22,21.5 -24.5,12.5 -29.5,9 -14.5,1 -21.5,7" />
   <path
      style="fill:none;stroke:#88ac95;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 3353,2600.0001 -35.5,73.5 -3,25.5 8,31 1.797,30.8948 -1.297,38.1052"
