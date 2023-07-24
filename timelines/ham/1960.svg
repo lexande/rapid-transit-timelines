@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg2"
    version="1.1"
    width="6000"
    height="6100"
-   viewBox="0 -2000 6000 6100">
+   viewBox="0 -2000 6000 6100"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -27,10 +26,10 @@
      id="defs6" />
   <image
      style="display:none"
-     width="6216"
+     width="6216.0002"
      height="4210.8389"
      preserveAspectRatio="none"
-     xlink:href="file:///home/alexander/timelines/timelines/streetmap/../streetmap/hamosm.png"
+     xlink:href="../streetmap/hamosm.png"
      id="image10"
      x="-250"
      y="-110.83887" />
@@ -47,7 +46,7 @@
      d="m 3070.6935,2510.9065 -44.1681,9.0573 -53.3411,17.0711 -36.4703,1.6428 -14.1282,4.9284 -10.8425,10.8425 -15.4423,0.3286"
      id="path4234" />
   <path
-     style="fill:none;fill-rule:evenodd;stroke:#0072bc;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;fill-rule:evenodd;stroke:#ffdc01;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 4475.037,972.7556 10.5139,-23.6564 13.1425,-11.8282 20.3708,-7.557 11.8282,0.6572 101.8539,30.2276 35.156,4.2713 28.5848,-0.6571 19.0566,-3.6142 20.6993,-12.1568 19.7137,-18.728 88.0544,-111.38212 21.685,-16.75661 37.1274,-24.64208 22.9993,-5.25698 19.3851,1.31424 259.2347,65.0551 19.0565,9.52827 12.4854,8.54259 181.3657,153.76659 13.7995,6.2426 29.8991,4.2713 23.3278,-5.9141 21.6851,-11.8282 21.685,-24.6421 19.0565,-26.942 53.2269,-143.9097"
      id="path4230" />
   <path
@@ -103,9 +102,9 @@
   <path
      id="path9647"
      d="m 3613.5211,1905.1406 13.1712,2.0427 23.6563,-4.2713 68.6693,-24.9707 188.9226,-69.6549 29.5705,-14.7853 35.4846,-19.3851 14.1282,-15.4423 52.2412,-62.4266 18.3994,-29.8991 45.3414,-87.3972 157.0522,-218.8217 23.3279,-32.8561 124.1961,-147.1954 17.7423,-28.5848 8.214,-19.3851 0,-55.8554 2.6285,-11.1711 5.9141,-11.1711 23.3278,-41.3987 4.5999,-16.7566 6.2426,-25.6277 0,-16.0995 -4.2713,-12.1568 -21.0279,-40.413 -48.627,-110.39649 -6.5712,-22.01359 -11.8282,-83.78308 -3.2857,-8.54259 -139.967,-250.03498 -4.2713,-15.77093 -1.3142,-12.48533 -3.2856,-81.48315"
-     style="fill:none;fill-rule:evenodd;stroke:#0072bc;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-rule:evenodd;stroke:#ffdc01;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     id="path9649"
-     d="m 3401.9847,1987.0379 -11.2779,-4.5425 -42.413,-12.0782 -16.3208,-15.5926 -4.9285,-15.1138 -0.3285,-15.7709 8.214,-14.1281 11.4996,-11.1711 13.7996,-5.9141 104.811,-16.0995 76.8833,6.8998 71.9549,21.685"
-     style="fill:none;fill-rule:evenodd;stroke:#0072bc;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+     style="fill:none;fill-rule:evenodd;stroke:#ffdc01;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 3350.0438,1965.6672 -18.0708,-10.8426 -4.9285,-15.1138 -0.3285,-15.7709 8.214,-14.1281 11.4996,-11.1711 13.7996,-5.9141 104.811,-16.0995 76.8833,6.8998 71.9549,21.685"
+     id="path9649-6" />
 </svg>
