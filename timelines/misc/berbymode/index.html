@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html>
-<head><title>Berlin Rail Timeline</title>
+<head><title>Berlin Rail and Trolleybus Timeline</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Berlin Rail Timeline" />
+<meta property="og:title" content="Berlin Rail and Trolleybus Timeline" />
 <meta property="og:image" content="https://alexander.co.tz/timelines/misc/berbymode/preview.gif" />
 <meta property="og:image:width" content="600" />
 <meta property="og:image:height" content="534" />
 <meta property="og:url" content="https://alexander.co.tz/timelines/misc/berbymode/preview.gif" />
-<meta property="og:description" content="Maps every 5 years, 1840-2020" />
+<meta property="og:description" content="Maps every 5 years, 1840-2025" />
 <meta name="twitter:card" content="summary_large_image" />
 <style type="text/css">
 div#preloader {
@@ -28,9 +28,9 @@ body {
 </style>
 <script type="text/javascript">
 start=1840;
-count=37;
+count=38;
 step=5;
-index=count-1;
+index=count-2;
 function update() {
 	map = document.getElementById("map");
 	map.src=(start+step*index) + ".svg";
@@ -134,11 +134,25 @@ window.onhashchange=function() {
 <a href="#2010" onclick="gotoyear(2010)">2010</a>
 <a href="#2015" onclick="gotoyear(2015)">2015</a>
 <a href="#2020" onclick="gotoyear(2020)">2020</a>
+<a href="#2025" onclick="gotoyear(2025)">2025</a>
 <p>
 <a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
-Based on frequent midday service at the end of the year in question (<a href="../notes.html">notes</a>).<br>
+<table style="margin-left:auto; margin-right:auto; text-align:left;"><tr>
+<td rowspan="2">Key:&nbsp;</td><td></td>
+<td width="16" bgcolor="#eebb00"></td><td>horsecars</td><td></td>
+<td width="16" bgcolor="#ff0000"></td><td>electric trolleys</td><td></td>
+<td width="16" bgcolor="#ff00ff"></td><td>tunnel/elevated electric trolleys</td><td></td>
+<td width="16" bgcolor="#999999"></td><td>steam/diesel trains</td><td></td>
+</tr><tr><td></td>
+<td width="16" bgcolor="#330000"></td><td>cablecars</td><td></td>
+<td width="16" bgcolor="#00dd00"></td><td>trolleybuses</td><td></td>
+<td Width="16" bgcolor="#0000ff"></td><td>electric metro trains</td><td></td>
+<td width="16" bgcolor="#006600"></td><td>electric mainline trains</td><td></td>
+</tr></table>
+<p>
+Based on scheduled weekday service at the end of the year in question.<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
@@ -181,6 +195,7 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="2010.svg" width="1" height="1" alt="">
 <img src="2015.svg" width="1" height="1" alt="">
 <img src="2020.svg" width="1" height="1" alt="">
+<img src="2025.svg" width="1" height="1" alt="">
 </div>
 See also:
 <a href="/timelines/ber">Berlin rapid transit timeline</a><br>
