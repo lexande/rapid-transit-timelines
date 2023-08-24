@@ -17,7 +17,7 @@ HAV="hav1921.svg"
 MSY="msy1959.svg"
 MAN="aman1970.svg man1971.svg aman2020.svg"
 CRL="crl2009.svg ../../timelines/crl/small/2020.svg"
-BER="../../timelines/ber/small/1955.svg ber1955.svg aber1989.svg aberw1989.svg abere1989.svg ber1995.svg ../../timelines/ber/small/2020.svg"
+BER="../../timelines/ber/small/1955.svg ber1955.svg aber1989.svg aberw1989.svg abere1989.svg ../../timelines/ber/small/1995.svg ber1996.svg ../../timelines/ber/small/2020.svg"
 YMQ="ymq1961.svg aymq1970.svg aymq2020.svg ymq2029.svg"
 
 index.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4 Makefile
