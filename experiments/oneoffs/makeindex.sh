@@ -35,6 +35,11 @@ function toggleshow(x) {
 <center>
 <h3>One-off Rapid Transit Maps for Scale Comparison with <a href="/timelines">Timelines</a></h3>
 HEREDOC
+if [ $SCALE = 10 ]; then
+  echo 'smaller versions --- <a href="large.html">larger versions</a><p>'
+else
+  echo '<a href=".">smaller versions</a> --- larger versions<p>'
+fi
 for file in $@; do
   if [ -f $file ]; then
     city=`basename $file .svg`
@@ -82,8 +87,6 @@ done
 if [ $SCALE = 10 ]; then
   cat <<HEREDOC
 </form>-->
-<a href="large.html">larger versions</a>
-<p>
 Based on frequent midday service at the end of the year in question (<a href="/timelines/notes.html">notes</a>).<br>
 Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (10 CSS pixels per km)
 <p>
@@ -94,8 +97,6 @@ HEREDOC
 elif [ $SCALE = 30 ]; then
   cat <<HEREDOC
 </form>-->
-<a href=".">smaller versions</a>
-<p>
 Based on frequent midday service at the end of the year in question (<a href="/timelines/notes.html">notes</a>).<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
 <p>

@@ -30,6 +30,26 @@ function next(x) {
 		links[posdict[x]+1].click();
 	}
 }
+function toggleshow(x) {
+        if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
+        else document.getElementById(x).style.display = 'inline-block';
+}
+function selectall() {
+        spans = document.getElementsByTagName("span");
+        for (var i=0; i < spans.length; i++) {
+                if (spans[i].style.display == 'none') {
+                        document.getElementById(spans[i].id + "checkbox").click();
+                }
+        }
+}
+function deselectall() {
+        spans = document.getElementsByTagName("span");
+        for (var i=0; i < spans.length; i++) {
+                if (spans[i].style.display == 'inline-block') {
+                        document.getElementById(spans[i].id + "checkbox").click();
+                }
+        }
+}
 window.onload=function() {
 	var spans = document.getElementsByTagName('span');
 	for (var i=0; i<spans.length; i++) {
@@ -72,6 +92,7 @@ document.onkeydown=function(keypress) {
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 </head><body>
 <h3>Unrealised Rapid Transit Plans</h3>
+<a href=".">smaller versions</a> --- larger versions<p>
 <span id="nyc" style="display: inline-block; vertical-align: middle">New York<br>
 <a href="javascript:next('nyc');">
 <img class="map" src="../../subtimeline/uncropped/small/1935.svg" id="nycmap" title="New York" alt=" map" width="1620" height="1783"></a><small>
@@ -186,7 +207,26 @@ document.onkeydown=function(keypress) {
 <br><a class="setsrc" href="javascript:setsrc('msy','msy1959.svg',0);">1959 proposal</a> (<a href="https://babel.hathitrust.org/cgi/pt?id=uiug.30112117747748">info</a>)
 </small></span>
 <p>
-<a href=".">smaller versions</a>
+<form action="">Cities to show:
+<div style="display: inline-block"><input type="checkbox" id="nyccheckbox" onclick="toggleshow('nyc')" autocomplete="off" checked>New York</div>
+<div style="display: inline-block"><input type="checkbox" id="boscheckbox" onclick="toggleshow('bos')" autocomplete="off" checked>Boston</div>
+<div style="display: inline-block"><input type="checkbox" id="pitcheckbox" onclick="toggleshow('pit')" autocomplete="off" checked>Pittsburgh</div>
+<div style="display: inline-block"><input type="checkbox" id="chicheckbox" onclick="toggleshow('chi')" autocomplete="off" checked>Chicago</div>
+<div style="display: inline-block"><input type="checkbox" id="sfocheckbox" onclick="toggleshow('sfo')" autocomplete="off" checked>San Francisco</div>
+<div style="display: inline-block"><input type="checkbox" id="seacheckbox" onclick="toggleshow('sea')" autocomplete="off" checked>Seattle</div>
+<div style="display: inline-block"><input type="checkbox" id="ymqcheckbox" onclick="toggleshow('ymq')" autocomplete="off" checked>Montréal</div>
+<div style="display: inline-block"><input type="checkbox" id="bercheckbox" onclick="toggleshow('ber')" autocomplete="off" checked>Berlin</div>
+<div style="display: inline-block"><input type="checkbox" id="mancheckbox" onclick="toggleshow('man')" autocomplete="off" checked>Manchester</div>
+<div style="display: inline-block"><input type="checkbox" id="zrhcheckbox" onclick="toggleshow('zrh')" autocomplete="off" checked>Zürich</div>
+<div style="display: inline-block"><input type="checkbox" id="crlcheckbox" onclick="toggleshow('crl')" autocomplete="off" checked>Charleroi</div>
+<div style="display: inline-block"><input type="checkbox" id="hnlcheckbox" onclick="toggleshow('hnl')" autocomplete="off" checked>Honolulu</div>
+<div style="display: inline-block"><input type="checkbox" id="pvdcheckbox" onclick="toggleshow('pvd')" autocomplete="off" checked>Providence</div>
+<div style="display: inline-block"><input type="checkbox" id="cvgcheckbox" onclick="toggleshow('cvg')" autocomplete="off" checked>Cincinnati</div>
+<div style="display: inline-block"><input type="checkbox" id="havcheckbox" onclick="toggleshow('hav')" autocomplete="off" checked>Habana</div>
+<div style="display: inline-block"><input type="checkbox" id="msycheckbox" onclick="toggleshow('msy')" autocomplete="off" checked>New Orleans</div>
+</form>
+<a href="javascript:selectall()">show all</a>
+<a href="javascript:deselectall()">hide all</a>
 <p>
 Based on planned frequent midday service (<a href="/timelines/notes.html">notes</a>).<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
