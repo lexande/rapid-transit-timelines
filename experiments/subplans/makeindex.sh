@@ -111,7 +111,7 @@ for file in $@ '<p>'; do
     SUBNAME=`grep ^$file names | awk -F"\t" '{print $4}'`
     URL=`grep ^$file names | awk -F"\t" '{print $5}'`
     if [ c$city != c$oldcity ]; then
-      echo $city >> tmp_citylist
+      cities+=" "$city
       altfile=$(echo $file | sed -e's!small/!!')
       NATIVEW=$(grep '^   width="' $altfile | head -n1 | sed -e's/.* width="\([0-9\.]*\)".*/\1/;')
       W=$(awk "BEGIN{print int(0.5+$NATIVEW*$SCALE/138)}")
@@ -161,13 +161,12 @@ for file in $@ '<p>'; do
     fi
     echo $file
   fi
-done | sed -e's!timelines/nyc!subtimeline!g; s!timelines/bos!ttimeline!g;'
+done
 echo '<form action="">Cities to show:'
-for city in `cat tmp_citylist`; do
+for city in $cities; do
   NAME=`grep ^$city names | awk -F"\t" '{print $3}' | head -n1`
   echo "<div style=\"display: inline-block\"><input type=\"checkbox\" id=\"${city}checkbox\" onclick=\"toggleshow('$city')\" autocomplete=\"off\" checked>$NAME</div>"
 done
-rm tmp_citylist
 cat <<HEREDOC
 </form>
 <a href="javascript:selectall()">show all</a>

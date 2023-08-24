@@ -3,7 +3,7 @@ all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
 %.svg.gz : %.svg
 	gzip -f --keep $<
 
-NYC="../../subtimeline/uncropped/small/1935.svg nyc1939.svg ../../subtimeline/uncropped/small/1965.svg nyc1968.svg ../../subtimeline/uncropped/small/2020.svg"
+NYC="../../timelines/nyc/uncropped/small/1935.svg nyc1939.svg ../../timelines/nyc/uncropped/small/1965.svg nyc1968.svg ../../timelines/nyc/uncropped/small/2020.svg"
 CHI="achi1975.svg chi1976.svg achi2020.svg"
 BOS="bos1892.svg abos1915.svg bos1917.svg abos1945.svg bos1945.svg abos2022.svg"
 PIT="apit1965.svg pit1967.svg pit1970.svg apit2020.svg"

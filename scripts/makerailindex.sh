@@ -171,15 +171,7 @@ for city in `cat $1/cities`; do
   else
     echo " - "
   fi
-  echo -n '<a href="'
-  if [ $city = nyc ]; then
-    echo -n "/subtimeline"
-  elif [ $city = bos ]; then
-    echo -n "/ttimeline"
-  else
-    echo -n "../../${city}"
-  fi
-  echo -n '">'$(cat ~/timelines/timelines/${city}/name)"</a>"
+  echo -n '<a href="../../'${city}'">'$(cat ~/timelines/timelines/${city}/name)"</a>"
 done
 cat <<HEREDOC
 

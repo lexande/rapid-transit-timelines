@@ -305,13 +305,11 @@ for city in $@; do
   W=$(awk "BEGIN{print int(0.5+$NATIVEW*10/138)}")
   H=$(awk "BEGIN{print int(0.5+$(grep ' height=' $city/small/2020.svg | head -n1 | sed -e's/.* height="\([0-9\.]*\)".*/\1/;')*$W/$NATIVEW)}")
   if [ -f $city/s ]; then
-    echo '<span id="'$UPPER'" style="display: inline-block;"><a href="'$city'">'$NAME'</a><br>' \
-    | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
-    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="'$city'/small/2020.svg" title="2020" alt="2020 map" width="'${W}'" height="'${H}'"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
+    echo '<span id="'$UPPER'" style="display: inline-block;"><a href="'$city'">'$NAME'</a><br>'
+    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="'$city'/small/2020.svg" title="2020" alt="2020 map" width="'${W}'" height="'${H}'"></a></span>'
   else
-    echo '<span id="'$UPPER'" style="display: none;"><a href="'$city'">'$NAME'</a><br>' \
-    | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
-    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="/0" title="2020" alt="2020 map" width="'${W}'" height="'${H}'"></a></span>' | sed -e's!href="nyc"!href="../subtimeline/"!; s!href="bos"!href="../ttimeline"!;'
+    echo '<span id="'$UPPER'" style="display: none;"><a href="'$city'">'$NAME'</a><br>'
+    echo '  <a href="'$city'" class="map-wrap"><img class="map" id="'$UPPER'map" src="/0" title="2020" alt="2020 map" width="'${W}'" height="'${H}'"></a></span>'
   fi
 done
 

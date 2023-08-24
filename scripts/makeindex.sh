@@ -27,16 +27,8 @@ NATIVEW=$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
 W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*30/138)}")
 H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*$W/$NATIVEW)}")
 
-if [ $(basename ${PWD}) == 'nyc' ]; then
-	URL="subtimeline"
-elif [ $(basename ${PWD}) == 'bos' ]; then
-	URL="ttimeline"
-elif [ $(basename ${PWD}) == 'uncropped' ]; then
-	if [ $(basename ${PWD%/*}) == 'nyc' ]; then
-		URL="subtimeline/uncropped"
-	else
-		URL=timelines/$(basename ${PWD%/*})/uncropped
-	fi
+if [ $(basename ${PWD}) == 'uncropped' ]; then
+	URL=timelines/$(basename ${PWD%/*})/uncropped
 else
 	URL=timelines/$(basename ${PWD})
 fi
@@ -74,9 +66,7 @@ elif [ $(basename ${PWD}) == 'uncropped' ] && [ -f ../seealso ]; then
 	cat ../seealso >> index.html
 fi
 cat ~/timelines/scripts/template/part4 >> index.html
-if [ $(basename ${PWD}) == 'nyc' -o $(basename ${PWD}) == 'bos' -o $(basename ${PWD%/*}) == 'nyc' ]; then
-	sed -e's!\.\./\.\.!!; s!\.\.!/timelines!' -i index.html
-elif [ $(basename ${PWD}) == 'uncropped' ]; then
+if [ $(basename ${PWD}) == 'uncropped' ]; then
 	sed -e's!\.\.!\.\./\.\.!' -i index.html
 fi
 popd
