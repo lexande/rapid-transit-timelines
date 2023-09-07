@@ -13,7 +13,7 @@ $(1)/preview.gif: $(wildcard $(1)/*.svg) ~/timelines/scripts/previewgif.sh
 	~/timelines/scripts/previewgif.sh $(1)
 
 
-$(1): $(1)/uncropped $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg)) $(wildcard $(1)/uncropped/*.svg)) $(1)/index.html ;
+$(1): $(1)/uncropped $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg)) $(wildcard $(1)/uncropped/*.svg)) $(1)/index.html $(1)/preview.gif;
 
 else
 $(1)/small/%.svg: $(1)/%.svg $1/%.svg.gz
@@ -28,7 +28,7 @@ $(1)/preview.gif: $(wildcard $(1)/*.svg) ~/timelines/scripts/previewgif.sh
 $(1)/index.html: $(wildcard $(1)/name $(1)/../name $(1)/seealso $(1)/../seealso) $(1)/preview.gif $(wildcard $(1)/*.svg) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/template/*)
 	~/timelines/scripts/makeindex.sh $(1)
 
-$(1): $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) $(subst $(1),$(1)/small, $(wildcard $(1)/*.svg) $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg))) $(1)/index.html ;
+$(1): $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) $(subst $(1),$(1)/small, $(wildcard $(1)/*.svg) $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg))) $(1)/index.html $(1)/preview.gif;
 
 endif
 endef
