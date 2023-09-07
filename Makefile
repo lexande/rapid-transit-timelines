@@ -6,6 +6,6 @@ $(targets):
 	$(MAKE) --directory=$@
 
 rsync: all
-	rsync -4Pav ~/timelines/timelines ~/timelines/experiments ~/timelines/tramscale ~/timelines/walledcityscale --exclude '*streetmap*' --exclude '*osm*.png' --exclude '*azimuth*' arapp_arapp@ssh.nyc1.nearlyfreespeech.net:.
+	rsync -4Pav timelines experiments *scale --include 'preview.png' --include 'fantasy/*.png' --include 'experiments/*.png' --include 'experiments**/*.svg' --exclude '*.tiff' --exclude '*.png' --exclude '*.svg' --exclude '*azimuth*' arapp_arapp@ssh.nyc1.nearlyfreespeech.net:.
 
 .PHONY: all $(targets) rsync
