@@ -1,6 +1,8 @@
 all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
 
 %.svg.gz : %.svg
+	~/timelines/scripts/round.py < $< > $<.tmp
+	mv $<.tmp $<
 	gzip -f --keep $<
 
 maps = Past: mkc.svg sux.svg lou.svg roc.svg ct_.svg vcp.svg hl_.svg ind.svg txg.svg Special-Purpose: dws.svg qca.svg mgw.svg

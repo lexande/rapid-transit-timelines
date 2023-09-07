@@ -1,6 +1,8 @@
 all: index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg)) preview.gif
 
 %.svg.gz : %.svg
+	~/timelines/scripts/round.py < $< > $<.tmp
+	mv $<.tmp $<
 	perl -wpe'BEGIN { $$i=0; } if (/<image/) { $$i=1; } if ($$i) { if (/>/) { $$i=0; } s/.*\n//; }' $< | gzip > $@
 
 preview.gif: $(wildcard *.svg)

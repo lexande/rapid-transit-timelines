@@ -1,6 +1,8 @@
 all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
 
 %.svg.gz : %.svg
+	~/timelines/scripts/round.py < $< > $<.tmp
+	mv $<.tmp $<
 	gzip -f --keep $<
 
 NYC="../../timelines/nyc/uncropped/small/1935.svg nyc1939.svg ../../timelines/nyc/uncropped/small/1965.svg nyc1968.svg ../../timelines/nyc/uncropped/small/2020.svg"
