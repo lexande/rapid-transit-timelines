@@ -28,9 +28,9 @@
   <image
      xlink:href="../streetmap/dalosm.png"
      x="100"
-     y="0.0034960937"
+     y="0.0"
      width="4256"
-     height="5674.6665"
+     height="5674.67"
      id="image10"
      style="display:none" />
   <path
@@ -44,7 +44,7 @@
   <path
      style="fill:none;stroke:#0093d0;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3757"
-     d="m 3319.25,3990.67 24.25,-25.25 7.5,-22.75 -9.7602,-216.7395 -1.7398,-55.2605 6.5,-34.75 99,-219.25 61.3266,-118.864 29.6958,-51.6234 20.4776,-28.7626 40,-37.25 25,-10 371,-103 21,-10 94.5,-76.5 12,-18 2.5,-20 -3,-19.5 -16.5,-77 2,-54.5 5,-64.5 25.5,-60.5 10.5,-36 -0.5,-42 1.5,-21 9,-42.5 -1,-18 -13.5,-42 -1,-22 7,-22 14.5,-17.5 26,-14.5 18,-13 34.5,-34.5 19.5,-20 30,-15.5 91.5,-32.5 266.5,-100 179,-64.5 175,-62 20,-1.5 100,-5.5 158,-30.5 109.5,-21.5" />
+     d="m 3319.25,3990.67 24.25,-25.25 7.5,-22.75 -9.76,-216.74 -1.74,-55.26 6.5,-34.75 99,-219.25 61.33,-118.86 29.7,-51.62 20.48,-28.76 40,-37.25 25,-10 371,-103 21,-10 94.5,-76.5 12,-18 2.5,-20 -3,-19.5 -16.5,-77 2,-54.5 5,-64.5 25.5,-60.5 10.5,-36 -0.5,-42 1.5,-21 9,-42.5 -1,-18 -13.5,-42 -1,-22 7,-22 14.5,-17.5 26,-14.5 18,-13 34.5,-34.5 19.5,-20 30,-15.5 91.5,-32.5 266.5,-100 179,-64.5 175,-62 20,-1.5 100,-5.5 158,-30.5 109.5,-21.5" />
   <path
      style="fill:none;stroke:#00a950;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3765"
@@ -56,7 +56,7 @@
   <path
      style="fill:none;stroke:#0093d0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
      id="path3771"
-     d="m 3194,5047.17 v 74.5 l 3.5,13.5 123.5,217 7.5,18.5 51,142 13.6759,32.9222 4.3241,26.5778" />
+     d="m 3194,5047.17 v 74.5 l 3.5,13.5 123.5,217 7.5,18.5 51,142 13.68,32.92 4.32,26.58" />
   <path
      style="fill:none;stroke:#ee3a43;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path3773"
@@ -65,34 +65,34 @@
      style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
      id="text2993"
-     y="6047.9609"
-     x="89.453125"><tspan
+     y="6047.96"
+     x="89.45"><tspan
        id="tspan2"
-       y="6047.9609"
-       x="89.453125">2010</tspan></text>
+       y="6047.96"
+       x="89.45">2010</tspan></text>
   <text
-     style="font-size:143.99989319px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+     style="font-size:144.0px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
      id="text2997"
-     y="206.96083"
-     x="89.453171"><tspan
+     y="206.96"
+     x="89.45"><tspan
        id="tspan1"
-       y="206.96083"
-       x="89.453171">2010</tspan></text>
+       y="206.96"
+       x="89.45">2010</tspan></text>
   <path
-     d="m 3316.7501,3985.6705 -6.171,10.9486 -55.282,53.9461 -106.6685,25.481 -11.8785,-2.1257"
+     d="m 3316.75,3985.67 -6.17,10.95 -55.28,53.95 -106.67,25.48 -11.88,-2.13"
      id="path3759"
      style="fill:none;stroke:#ee3a43;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
-     d="m 3320.7501,3988.6705 -8.8534,8.1698 -56.1466,54.5802 -107.0313,25.7343 -11.2187,0.2657"
+     d="m 3320.75,3988.67 -8.85,8.17 -56.15,54.58 -107.03,25.73 -11.22,0.27"
      id="path3761"
      style="fill:none;stroke:#0093d0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
-     d="m 3321.5226,3992.5063 -9.7725,5.9017 -55.4775,53.8483 -107.2224,25.8359 -11.5508,3.3283"
+     d="m 3321.52,3992.51 -9.77,5.9 -55.48,53.85 -107.22,25.84 -11.55,3.33"
      id="path3763"
      style="fill:none;stroke:#00a950;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
-     d="m 3422.2494,4010.6705 -8,-2.5 -46,-44.5 -9.5,-0.5 -13.4612,4.7888 -23.7656,24.547"
+     d="m 3422.25,4010.67 -8,-2.5 -46,-44.5 -9.5,-0.5 -13.46,4.79 -23.77,24.55"
      id="path2997"
      style="fill:none;stroke:#00a950;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>

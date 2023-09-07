@@ -16,7 +16,7 @@ $(1)/preview.gif: $(wildcard $(1)/*.svg) ~/timelines/scripts/previewgif.sh
 $(1): $(1)/uncropped $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg)) $(wildcard $(1)/uncropped/*.svg)) $(1)/index.html ;
 
 else
-$(1)/small/%.svg: $(1)/%.svg
+$(1)/small/%.svg: $(1)/%.svg $1/%.svg.gz
 	mkdir -p $(1)/small
 	~/timelines/scripts/hideyear.pl $$< > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
@@ -34,6 +34,8 @@ endif
 endef
 
 %.svg.gz : %.svg
+	~/timelines/scripts/round.py < $< > $<.tmp
+	mv $<.tmp $<
 	gzip -f --keep $<
 
 .PHONY: all $(wildcard ???) $(wildcard ???/small) $(wildcard ???/uncropped) $(wildcard ???/uncropped/small)
