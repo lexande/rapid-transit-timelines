@@ -3,7 +3,7 @@ all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg)) preview.
 %.svg.gz : %.svg
 	~/timelines/scripts/round.py < $< > $<.tmp
 	mv $<.tmp $<
-	svgo --config ~/timelines/scripts/svgo.config.js $< -o - | gzip > $@
+	gzip -f --keep $<
 
 index.html: name cities ~/timelines/scripts/makerailindex.sh ~/timelines/scripts/template/part4 $(wildcard *.svg)
 	~/timelines/scripts/makerailindex.sh . 2 > $@
