@@ -26,7 +26,7 @@
   <defs
      id="defs6" />
   <image
-     xlink:href="../../streetmap/osa2osm.png"
+     xlink:href="../../basemap/osa2osm.png"
      style="display:none"
      width="9158.5"
      height="15819.23"
@@ -39,7 +39,7 @@
      d="m 14876.5,2543.5 4.51,87.89 2.81,14.96 7.66,12.26 97.81,78.11 13.25,19.42 5.89,34.52 -0.28,42.02 -0.15,16.44 -10.49,28.64 1.0,33.91 -4.12,23.86 -0.85,43.37 -3.54,13.5 1.95,11.65 18.76,49.28 23.95,102.95 69.47,123.92 100.97,149.36 7.37,26.6 1.44,24.27 -71.34,324.59 -65.41,343.58 -2.58,19.78 31.45,334.76 -17.41,138.87"
      id="path2781" />
   <image
-     xlink:href="../../streetmap/osa1osm.png"
+     xlink:href="../../basemap/osa1osm.png"
      style="display:none"
      y="-1919.23"
      x="50"
@@ -208,19 +208,19 @@
      xml:space="preserve"
      id="text2828"
      y="13697.96"
-     x="4789.45"><tspan
+     x="89.45"><tspan
        id="tspan2"
        y="13697.96"
-       x="4789.45">1990</tspan></text>
+       x="89.45">1990</tspan></text>
   <text
      style="font-style:normal;font-weight:normal;font-size:144.0px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
      id="text2828-6"
      y="206.96"
-     x="4789.45"><tspan
+     x="89.45"><tspan
        id="tspan1"
        y="206.96"
-       x="4789.45">1990</tspan></text>
+       x="89.45">1990</tspan></text>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#009768;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 10775,9142.5 17,-26.5 10,-4 16,1 27,7.5 11.5,-1 23.5,-21"
