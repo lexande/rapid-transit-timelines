@@ -1,4 +1,4 @@
-all: hsr bymode regrail sandy nyctrolleys nycflights ivytunnels brc
+all: hsr bymode regrail sandy nyctrolleys nycflights ivytunnels 88nv
 
 bymode = nycbymode bosbymode sfobymode berbymode alobymode cbgbymode
 bymode: $(bymode)
@@ -27,4 +27,4 @@ $(regrail) nycflights:
 	mv $<.tmp $<
 	gzip -f --keep $<
 
-.PHONY: all bymode $(bymode) regrail $(regrail) hsr ivytunnels nyctrolleys nycflights brc
+.PHONY: all bymode $(bymode) regrail $(regrail) hsr ivytunnels nyctrolleys nycflights 88nv
