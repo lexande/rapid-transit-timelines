@@ -62,7 +62,7 @@
      transform="matrix(1.02,0,0,1.2,-20,-70.0)"
      style="display:none">
     <image
-       xlink:href="osm/osm.png"
+       xlink:href="basemap/osm.png"
        y="-4.67"
        x="0"
        id="image10"
@@ -70,7 +70,7 @@
        height="10294.67"
        width="8824" />
     <image
-       xlink:href="osm/raillayerosm.png"
+       xlink:href="basemap/railosm.png"
        style="opacity:0.8"
        width="8824"
        height="10294.67"
