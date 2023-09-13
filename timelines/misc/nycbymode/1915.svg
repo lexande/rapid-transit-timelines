@@ -244,7 +244,7 @@
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3629"
-     d="m 471.0,3107.0 -16,9 -29.5,46.5 -31.5,54.5 -4.57,14.48 1.9,9.4 10.63,20.47 24.08,22.77 47.96,33.88 79,59 31,8 90.43,19.38 14.69,1.62" />
+     d="m 466,3110 -11,6 -29.5,46.5 -31.5,54.5 -4.57,14.48 1.9,9.4 10.63,20.47 24.08,22.77 47.96,33.88 79,59 31,8 90.43,19.38 14.69,1.62" />
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3604-8"
@@ -503,7 +503,7 @@
      style="fill:none;stroke:#ff00ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="1956-10-31 8 - Church Ave"
-     d="m 860.87,4131.37 151.13,-79.87 356,-23 33.5,-10 86,-4.5 75.24,-61.51 16.26,18.01 L 1637,3958"
+     d="m 860.87,4131.37 151.13,-79.87 356,-23 33.5,-10 86,-4.5 75.24,-61.51 53.26,10.51 21,-5"
      style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="1951-05-27 9 - Rockaway Pkwy"
@@ -828,10 +828,6 @@
   <path
      id="path13982"
      d="m 1142.44,3565.44 393.73,-59.62 10.74,-2.28 115.3,-155.2 -12.17,-9.41 24.09,-34.38 -24.84,-20.07"
-     style="opacity:1;fill:none;fill-opacity:0.15;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     id="path13984"
-     d="M 588.35,4096.74 383.59,4356.46"
      style="opacity:1;fill:none;fill-opacity:0.15;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path13986"
@@ -1511,6 +1507,10 @@
      style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 485.28,2680.19 -5.56,0.72 -16.06,0.04 -0.31,4.06 -6.35,86.5 -0.5,16.5 -24,167.5 -20.5,128 -4.8,30.25"
      id="path24028" />
+  <path
+     id="path10988"
+     d="m 574.01,3156.59 9.39,-4.86 -3.59,-19.07 -32.06,-24.13 -143.67,-85.0 1.53,-7.58 34.88,5.86 72.61,44.88 9.7,27.71"
+     style="fill:none;fill-opacity:0.4;fill-rule:nonzero;stroke:#eebb00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.4;fill-rule:nonzero;stroke:#ff8822;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 782.57,3098.28 -2.19,-20.44 -230.68,28.47 -142.78,-84.31"
@@ -2403,4 +2403,8 @@
      id="path9487"
      d="m 2106.13,3612.06 -64.12,11.66 -281.29,57.1 -41.53,8.03 -123.46,26.22 -8.72,1.43"
      style="opacity:1;fill:none;fill-opacity:0.15;fill-rule:nonzero;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linejoin:round;stroke-opacity:1"
+     d="m 832.23,2730.02 -31.43,58.96 -15.7,32.19"
+     id="path101537" />
 </svg>

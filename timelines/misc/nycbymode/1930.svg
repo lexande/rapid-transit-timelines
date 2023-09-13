@@ -136,7 +136,7 @@
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3600"
-     d="m 539.0,2983.0 -80,124 -8,2 -10.24,-5.06 -4.51,2.81 -20.25,41.25 -17,32 2,34.5 3.5,20.5 6.13,27.78 18.94,17.34 96.43,45.88 55,24 90,35 11,16 14,5 62,2" />
+     d="m 539,2983 -80,124 -2.88,2.08 L 451,3109 l -10.24,-5.06 -4.51,2.81 -20.25,41.25 -17,32 2,34.5 3.5,20.5 6.13,27.78 18.94,17.34 96.43,45.88 55,24 90,35 11,16 14,5 62,2" />
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3602"
@@ -160,7 +160,7 @@
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3629"
-     d="m 471.0,3107.0 -16,9 -29.5,46.5 -31.5,54.5 -4.57,14.48 1.9,9.4 10.63,20.47 24.08,22.77 47.96,33.88 79,59 31,8 90.43,19.38 14.69,1.62" />
+     d="m 466,3110 -11,6 -29.5,46.5 -31.5,54.5 -4.57,14.48 1.9,9.4 10.63,20.47 24.08,22.77 47.96,33.88 79,59 31,8 90.43,19.38 14.69,1.62" />
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3633"
@@ -180,11 +180,11 @@
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3653"
-     d="m 1133.75,3748.75 228.75,14.25 62.5,8.5 12,22 3.5,13 21.5,24 39.5,46.5 10,5.5 95,-17 101.5,-21 170,-33 47.5,-9" />
+     d="m 1133.75,3748.75 283.77,20.78 8.66,5.71 7.8,11.83 4.16,15.89 23.86,27.53 39.5,46.5 4.51,3.88 5.49,1.62 95,-17 101.5,-21 170,-33 47.5,-9" />
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3655"
-     d="m 1133.75,3748.75 -4.75,82.25 1.75,36.25 19.76,232.25 17.24,223.75" />
+     d="m 1124.46,3748.25 5.78,3.18 2.59,3.58 0.28,4.71 L 1129,3831 l 1.75,36.25 19.76,232.25 17.24,223.75" />
   <path
      style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3619"
@@ -1605,7 +1605,11 @@
      id="1933-06-25_First_Ave" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 835.82,2278.68 -33.77,62.0 -57.11,103.96 -89.82,164.31 -86.96,155.36 -19.15,36.27 -4.35,8.19 42.23,25.91 -80.58,124.37"
+     d="m 586.89,2834.68 -80.58,124.37"
+     id="path800" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 835.82,2278.68 -33.77,62 -57.11,103.96 -89.82,164.31 -86.96,155.36 -19.15,36.27"
      id="1936-03-12_Sixth_Ave" />
   <path
      d="m 1324.07,1663.95 5.29,-3.8 4.95,-10.25 -3.54,-8.13 1.77,-3.54 28.28,-15.2 46.63,-47.27"
