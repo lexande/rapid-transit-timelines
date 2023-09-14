@@ -150,6 +150,10 @@
        id="path3904"
        style="fill:#ffffff;fill-opacity:1;stroke:none" />
   </g>
+  <path
+     d="m -287,4150 -15.5,12 -9,23.5 -8,28 0.5,19.5 11,73 -4.5,22 -8,20.5 3.5,62 7,20.5 11.5,19.5 18.5,33 8,16.5 v 20 l -9,15.5 -23,17.5 -16,23.5 -33,77 -16,31.5 -19,34 -28,45 -19.5,32.5 -7,23 -17,52 -11,23.5 -20,29 -47,45.5 -78.5,76.5 -135.99996,130 -92.5,88.5 -38,53.5 -26.5,34 -22.5,23.5"
+     id="path3670-3"
+     style="fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <g
      transform="translate(0.01,0)"
      id="g6488">
@@ -458,10 +462,6 @@
      style="fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3823"
      d="m 126.0,3006.5 -8.25,5.6 -61.77,-25.76" />
-  <path
-     style="fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path3670"
-     d="m -287.0,4150 -15.5,12 -9,23.5 -8,28 0.5,19.5 11,73 -4.5,22 -8,20.5 3.5,62 7,20.5 11.5,19.5 18.5,33 8,16.5 0,20 -9,15.5" />
   <path
      style="fill:none;stroke:#f2f2f2;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path3688-4"
@@ -917,7 +917,7 @@
   <path
      style="fill:none;stroke:#008000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="1949-02-20 32 - Fifth Ave"
-     d="m 553.5,3410.5 88.5,33.5 176.5,87 14.5,25.5 -61.5,118 -105,165 L 512,4035 321.5,4278 309,4318 258,4483.5 198.5,4574 166,4623" />
+     d="m 553.5,3410.5 88.5,33.5 176.5,87 4,7 15.55787,4.5637 -5.05787,13.9363 -61.5,118 -105,165 L 512,4035 321.5,4278 309,4318 258,4483.5 198.5,4574 166,4623" />
   <path
      style="fill:none;stroke:#008000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="1949-05-15 34 - Bay Ridge Ave"
@@ -1110,7 +1110,7 @@
   <path
      style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="1948-08-21 T - Tremont Ave"
-     d="m 1593,904.5 13,6 6.5,7.5 28,2.5 40.5,20.5 32,32.5 -3,35 0,0 5.5,5.5 54.25,17 31.75,2 147,95.5 14.25,0.25 65,6.25 48.25,6 25,-13 36.5,-13.5 204.5,-31.5 10.5,5.5 25.5,13 19,21.5 9.5,1 25,-4.5 13.5,5 11.5,11.5 25.5,27.5 14.5,25.5 6.5,12 11,6 25.5,6.5 10.5,9 6.5,11" />
+     d="m 1593,904.5 13,6 6.5,7.5 28,2.5 40.5,20.5 32,32.5 -3,35 0,0 5.5,5.5 54.25,17 31.75,2 147,95.5 14.25,0.25 65,6.25 48.25,6 25,-13 36.5,-13.5 204.5,-31.5 10.5,5.5 25.5,13 19,21.5 9.5,1 25,-4.5 13.5,5 11.5,11.5 25.5,27.5 4,7 15.55787,4.5637 -5.05787,13.9363 6.5,12 11,6 25.5,6.5 10.5,9 6.5,11" />
   <path
      style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="1939-08-01 J - Drake Ave"
@@ -1337,10 +1337,6 @@
      d="m -1528.28,2920.28 -22.57,-10.32 -6.02,-10.29 -5.52,-2.13 -9.13,5.19"
      style="opacity:1;fill:none;fill-opacity:0.15;fill-rule:nonzero;stroke:#008080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 304,4191 -42,54.5 -7.5,25.5 2,4 53,31.5 1.5,6.5 -52.5,169 -5.5,8.5 v 4 l 33,23.5 53,43 82.08,65.74 -40.76,51.92 L 488,4765 l 52,34.5 81.5,74.5 23.5,21 16.5,12.5 -1,4 -14.5,19.5 -0.5,3 104,84 26.5,175"
-     id="1948-08-12 31 - 86th St-3"
-     style="fill:none;stroke:#008000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
      d="m 2728.22,167.12 29.2,-67.43 -1.97,-19.99 10.13,-24.08"
      id="path1228" />
@@ -1408,4 +1404,8 @@
      style="fill:none;stroke:#0000ff;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
      d="m 413.33,3109.61 -7.06,-4.26 L 404,3114 l -12,-6 18.89,10.14 4.61,-15.89 15,-20.25 9.0,-16 L 502.5,2958.5"
      id="path4708" />
+  <path
+     style="fill:none;stroke:#008000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="BMT_31_-_86th_St"
+     d="m 776,5193 -28.80999,-177.28 -30.69,-16.73 -49.58,-41.83 -24.55,-30.41 -14.24001,-45.725 -88.13,-81.525 -52,-34.5 -107.68,-86.34 40.76,-51.92 -82.08,-65.74 -53,-43 -33,-23.5 v -4 l 5.5,-8.5 63,-204 196.15642,-250.1575" />
 </svg>
