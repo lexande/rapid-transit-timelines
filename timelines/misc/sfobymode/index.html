@@ -6,7 +6,7 @@
 <meta property="og:title" content="San Francisco Rail and Trolleybus Timeline" />
 <meta property="og:image" content="https://alexander.co.tz/timelines/misc/sfobymode/preview.gif" />
 <meta property="og:image:width" content="600" />
-<meta property="og:image:height" content="600" />
+<meta property="og:image:height" content="594" />
 <meta property="og:url" content="https://alexander.co.tz/timelines/misc/sfobymode/preview.gif" />
 <meta property="og:description" content="Maps every 5 years, 1860-2025" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -26,11 +26,11 @@ body {
 	text-align: center;
 }
 </style>
-<script language="JavaScript" type="text/javascript">
+<script type="text/javascript">
 start=1860;
 count=34;
 step=5;
-index=count-2;
+index=count-1;
 function update() {
 	map = document.getElementById("map");
 	map.src=(start+step*index) + ".svg";
@@ -94,7 +94,7 @@ window.onhashchange=function() {
 <a id="animbutton" href="javascript:" onclick="startanim()">click here to animate</a>
 <p>
 <a href="javascript:" onclick="nextmap()">
-<img id="map" src="2020.svg" title="2020" alt="2020 map" width="1174" height="1163">
+<img id="map" src="2025.svg" title="2025" alt="2025 map" width="1174" height="1163">
 </a>
 <p>
 <a href="#1860" onclick="gotoyear(1860)">1860</a>
@@ -132,7 +132,7 @@ window.onhashchange=function() {
 <a href="#2020" onclick="gotoyear(2020)">2020</a>
 <a href="#2025" onclick="gotoyear(2025)">2025</a>
 <p>
-<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> --- 
+<a href="javascript:" onclick="prevmap()">five years earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">five years later (or press s)</a>
 <p>
 <table style="margin-left:auto; margin-right:auto; text-align:left;"><tr>
@@ -145,6 +145,7 @@ window.onhashchange=function() {
 </tr><tr><td></td>
 <td width="16" bgcolor="#330000"></td><td>cablecars</td><td></td>
 <td width="16" bgcolor="#00dd00"></td><td>trolleybuses</td><td></td>
+See also:
 <TD Width="16" bgcolor="#0000ff"></td><td>electric metro trains</td><td></td>
 <td width="16" bgcolor="#006600"></td><td>electric mainline trains</td><td></td>
 </tr></table>

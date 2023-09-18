@@ -356,10 +356,6 @@ Scale: <svg width="100px" height="3px" style="vertical-align: middle; stroke-wid
 Please send any corrections or questions to threestationsquare at gmail dot com.
 <p>
 See also: <a href="misc">miscellaneous timelines and maps</a>
-<div style="font-size: x-small;">By <a href="/">Alexander Rapp</a> based on map data 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>
-by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors and historical sources.</div>
-</div>
 <div id=preloader>
 HEREDOC
 for city in $@; do if [ -f $city/s ]; then
@@ -372,4 +368,5 @@ for city in $@; do if [ -f $city/s ]; then
   done
   echo '</div>'
 fi; done
-echo '</div></body></html>'
+echo '</div>'
+cat ~/timelines/scripts/template/part4

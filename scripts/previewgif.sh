@@ -2,7 +2,7 @@
 pushd $1
 mkdir -p anim
 nonempty=false
-for i in *.svg; do
+for i in [0-9]*.svg; do
   if grep 'stroke-width:[2-5]' $i | grep -v 'stroke:none' >/dev/null; then nonempty=true; fi
   if $nonempty; then ~/timelines/scripts/hideyear.pl $i > anim/`basename $i`; fi
 done
