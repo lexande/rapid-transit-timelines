@@ -94,11 +94,6 @@ for city in $@; do
   echo -n "${city}: "$(ls $city/small/????.svg | sed -e's!^.../small/\(....\).svg!\1!' | sort | head -n 1)", "
 done
 echo "};"
-echo -n "svgviewboxes = { "
-for city in $@; do
-  echo -n "${city}: \""$(if [ -d $city/uncropped ]; then grep viewBox $city/uncropped/2020.svg; else grep viewBox $city/2020.svg; fi | perl -wpe's/.*viewBox=".* .* ([0-9]*),? ([0-9]*)".*/$1 $2/')"\", "
-done
-echo "};"
 cat <<HEREDOC
 step=5;
 index=count-1;
@@ -106,50 +101,12 @@ function update(city) {
 	yr = start+step*index;
 	mapimg = document.getElementById(city + "map");
 	if (yr < citystartyears[city.toLowerCase()]) {
-		if (mapimg.tagName.toUpperCase() == "IMG") {
-			svgelt = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-			textelt = document.createElementNS("http://www.w3.org/2000/svg", "text");
-			tspanelt = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
-			yearcontent = document.createTextNode(yr);
-			tspanelt.appendChild(yearcontent);
-			textelt.appendChild(tspanelt);
-			textelt.setAttribute("x", "89.4531");
-			textelt.setAttribute("y", "206.9609");
-			textelt.setAttribute("style", "-inkscape-font-specification:Sans");
-			textelt.setAttribute("font-family", "Sans");
-			textelt.setAttribute("font-weight", "400");
-			textelt.setAttribute("font-size", "144px");
-			svgelt.appendChild(textelt);
-			svgelt.setAttribute("id", mapimg.id);
-			svgelt.setAttribute("viewBox","0 0 " + svgviewboxes[city.toLowerCase()]);
-			svgelt.setAttribute("width", mapimg.width);
-			svgelt.setAttribute("height", mapimg.height);
-			svgelt.setAttribute("class", "map");
-			svgelt.setAttribute("title", yr);
-			svgelt.setAttribute("alt", yr + " map");
-			mapimg.parentNode.replaceChild(svgelt, mapimg);
-		} else {
-			mapimg.getElementsByTagName("text")[0].getElementsByTagName("tspan")[0].innerHTML = yr;
-			mapimg.setAttribute("title", yr);
-			mapimg.setAttribute("alt", yr + " map");
-		}
-	} else {
-		if (mapimg.tagName.toUpperCase() == "SVG") {
-			imgelt = document.createElement("img");
-			imgelt.setAttribute("class", "map");
-			imgelt.id = mapimg.getAttribute("id");
-			imgelt.width = mapimg.getAttribute("width");
-			imgelt.height = mapimg.getAttribute("height");
-			imgelt.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
-			imgelt.title = yr;
-			imgelt.alt = yr + " map";
-			mapimg.parentNode.replaceChild(imgelt, mapimg);
-		} else {
-			mapimg.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
-			mapimg.title = yr;
-			mapimg.alt = yr + " map";
-		}
-	}
+                mapimg.src = encodeURI('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + mapimg.width + ' ' + mapimg.height + '"><text style="font-size:10.435;font-family:Sans;fill:%23000000" x="6.482" y="14.997"><tspan>' + yr + '</tspan></text></svg>');
+        } else {
+                mapimg.src = (city.toLowerCase() + "/small/" + (yr) + ".svg");
+        }
+        mapimg.setAttribute("title", yr);
+        mapimg.setAttribute("alt", yr + " map");
 }
 function updateall() {
 	citylist.forEach(function (city) {
