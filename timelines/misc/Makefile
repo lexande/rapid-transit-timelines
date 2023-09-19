@@ -9,11 +9,22 @@ regrail: $(regrail)
 define bymoderule
 $(1): $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) $(1)/preview.gif $(1)/index.html
 
-$(1)/index.html: $(1)/name $(1)/seealso $(1)/preview.gif  $(1)/preview.gif $(wildcard $(1)/*.svg) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/template/*)
+$(1)/index.html: $(1)/name $(1)/seealso $(1)/preview.gif $(wildcard $(1)/*.svg) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/template/*)
 	~/timelines/scripts/makeindex.sh $(1) > $$@
 endef
 
+define regrailrule
+$(1): $(patsubst %.svg,%.svg.gz,$(wildcard $(1)/*.svg)) $(1)/preview.gif $(1)/index.html $(1)/large.html
+
+$(1)/index.html: $(1)/name $(1)/cities $(1)/preview.gif $(wildcard $(1)/*.svg) ~/timelines/scripts/makerailindex.sh ~/timelines/scripts/template/part4
+	~/timelines/scripts/makerailindex.sh $(1) 2 > $$@
+
+$(1)/large.html: $(1)/name $(1)/cities $(1)/preview.gif $(wildcard $(1)/*.svg) ~/timelines/scripts/makerailindex.sh ~/timelines/scripts/template/part4
+	~/timelines/scripts/makerailindex.sh $(1) 5 > $$@
+endef
+
 $(foreach dir, $(bymode), $(eval $(call bymoderule, $(dir))))
+$(foreach dir, $(regrail), $(eval $(call regrailrule, $(dir))))
 
 hsr: $(patsubst %.svg,%.svg.gz,$(wildcard hsr/?/*.svg))
 
@@ -25,7 +36,7 @@ sandy: $(patsubst %.svg,%.svg.gz,$(wildcard sandy/*.svg))
 
 nyctrolleys: $(patsubst %.svg,%.svg.gz,$(wildcard nyctrolleys/*.svg))
 
-$(regrail) nycflights:
+nycflights:
 	$(MAKE) --directory=$@
 
 %.svg.gz : %.svg

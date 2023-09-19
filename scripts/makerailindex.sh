@@ -1,12 +1,14 @@
 #!/bin/bash
-START=$(basename $(grep 'stroke-width:5' $1/1*.svg $1/2*.svg | head -n1 | sed -e's/:.*//') .svg)
+pushd $1 >/dev/null
+
+START=$(basename $(grep 'stroke-width:5' 1*.svg 2*.svg | head -n1 | sed -e's/:.*//') .svg)
 END=2010
 COUNT=$(expr 1 + \( $END - $START \) / 25)
-NAME=`cat $1/name | sed -e's/<br>/ /'`
+NAME=`cat name | sed -e's/<br>/ /'`
 SCALE=$2
-NATIVEW=$(grep '^   width=' $1/${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
-W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' $1/${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*${SCALE}/17.25)}")
-H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' $1/${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*$W/$NATIVEW)}")
+NATIVEW=$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')
+W=$(awk "BEGIN{print int(0.5+$(grep '^   width=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*${SCALE}/17.25)}")
+H=$(awk "BEGIN{print int(0.5+$(grep '^   height=' ${END}.svg | head -n1 | sed -e's/"$//; s/.*"//;')*$W/$NATIVEW)}")
 DIRNAME=$(basename $(realpath $1))
 PREVDIM=$(file preview.gif | sed -e's/.* \([0-9]* x [0-9]*\).*/\1/')
 cat <<HEREDOC | sed -e"s/START/${START}/g;
@@ -164,7 +166,7 @@ if [ -f seealso ]; then
 fi
 echo '<br>'
 first=1
-for city in `cat $1/cities`; do
+for city in `cat cities`; do
   if [ $first = 1 ]; then
     echo -n "rapid transit timelines for "
     first=0
@@ -180,3 +182,5 @@ cat <<HEREDOC
 <a href="..">miscellaneous timelines and maps</a>
 HEREDOC
 cat ~/timelines/scripts/template/part4
+
+popd >/dev/null
