@@ -2,8 +2,8 @@
 pushd $1 >/dev/null
 
 SCRIPTDIR=$(dirname $0)
-START=$(basename $(ls *.svg | grep '^1\|^2' | head -n 1) .svg)
-END=$(basename $(ls *.svg | grep '^1\|^2' | tail -n 1) .svg)
+START=$(basename $(grep -l 'stroke-width:[3-7]' [0-9]*.svg | sort -g | head -n1) .svg)
+END=$(basename $(ls [0-9]*.svg | sort -g | tail -n1) .svg)
 if [ -f $(expr $START + 1).svg ]; then
 	STEP=1
 	COUNT=$(expr 1 + \( $END - $START \))

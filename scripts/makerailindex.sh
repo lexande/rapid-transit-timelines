@@ -1,8 +1,8 @@
 #!/bin/bash
 pushd $1 >/dev/null
 
-START=$(basename $(grep 'stroke-width:5' 1*.svg 2*.svg | head -n1 | sed -e's/:.*//') .svg)
-END=2010
+START=$(basename $(grep -l 'stroke-width:5' [0-9]*.svg | sort -g | head -n1) .svg)
+END=$(basename $(grep -l 'stroke-width:5' [0-9]*.svg | sort -g | tail -n1) .svg)
 COUNT=$(expr 1 + \( $END - $START \) / 25)
 NAME=`cat name | sed -e's/<br>/ /'`
 SCALE=$2
