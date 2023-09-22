@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="0 0 1200 1000"
-   height="1000"
-   width="1200"
+   viewBox="0 0 1350 1950"
+   height="1950"
+   width="1350"
    version="1.1"
-   id="svg2">
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -27,16 +26,16 @@
      id="defs6" />
   <image
      xlink:href="../../timelines/basemap/pvdosm.png"
-     width="1258"
-     height="2012.8"
+     width="2264.4"
+     height="3270.8"
      preserveAspectRatio="none"
      id="image10"
-     x="-125"
-     y="-312.8"
+     x="-526.6"
+     y="-234.4"
      style="display:none" />
   <path
      id="path4176"
-     d="m 967.95,576.32 -78.99,-19.05 -48.5,12.82 -90.47,12.4 -78.81,8.53 -11.24,4.07 -16.26,9.3 -82.45,78.64 -72.41,58.55 -161.09,22.17 -16.28,-1.04 -26.33,-9.01"
+     d="m 817.95,906.32 -78.99,-19.05 -48.5,12.82 -90.47,12.4 -78.81,8.53 -11.24,4.07 -16.26,9.3 -82.45,78.64 -72.41,58.55 -161.09,22.17 -16.28,-1.04 -26.33,-9.01"
      style="fill:none;fill-rule:evenodd;stroke:#0482c3;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <text
      x="89.45"
@@ -50,6 +49,6 @@
        style="font-size:144px">1914 proposal</tspan></text>
   <path
      id="path826"
-     d="m 668.28,364.65 -13.86,27.71 -8.31,52.31 -4.16,33.26 -9.01,28.06 4.5,24.25 15.59,54.74 -0.69,8.66 -11.61,6.58 -26.33,25.29 0.52,10.05 14.38,16.11 0.52,3.46 -23.73,36.38 -14.03,8.66 -27.37,39.84 -39.32,24.25 -19.23,45.04"
+     d="m 518.28,694.65 -13.86,27.71 -8.31,52.31 -4.16,33.26 -9.01,28.06 4.5,24.25 15.59,54.74 -0.69,8.66 -11.61,6.58 -26.33,25.29 0.52,10.05 14.38,16.11 0.52,3.46 -23.73,36.38 -14.03,8.66 -27.37,39.84 -39.32,24.25 -19.23,45.04"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#008445;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
