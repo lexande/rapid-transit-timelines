@@ -30,13 +30,19 @@ body {
 start=1920;
 count=22;
 step=5;
+end=2025;
 index=count-1;
 function update() {
+	if (index == count - 1) {
+		year = end;
+	} else {
+		year = start+step*index;
+	}
 	map = document.getElementById("map");
-	map.src=(start+step*index) + ".svg";
-	map.title=start+step*index;
-	map.alt=start+step*index + " map";
-	location.replace("#" + (start+step*index));
+	map.src=year + ".svg";
+	map.title=year;
+	map.alt=year + " map";
+	location.replace("#" + (year));
 }
 function nextmap() {
 	index=(index+1)%count;
@@ -52,10 +58,12 @@ document.onkeydown=function(keypress) {
 }
 function gotoyear(x) {
 	inyear = parseInt(x);
-	if( start <= inyear & inyear <= start+step*count & !(inyear % step) ) {
+	if( start <= inyear & inyear < end & !(inyear % step) ) {
 		index = (inyear-start)/step;
-		update();
+	} else if (inyear == end) {
+		index = count - 1;
 	}
+	update();
 }
 intervalID=0;
 function startanim() {
@@ -164,7 +172,6 @@ Please send any corrections or questions to threestationsquare at gmail dot com.
 <img src="2010.svg" width="1" height="1" alt="">
 <img src="2015.svg" width="1" height="1" alt="">
 <img src="2020.svg" width="1" height="1" alt="">
-<img src="2025.svg" width="1" height="1" alt="">
 </div>
 See also:
 <a href="/timelines/ber">Berlin rapid transit timeline</a><br>

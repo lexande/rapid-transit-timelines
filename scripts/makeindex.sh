@@ -4,18 +4,13 @@ pushd $1 >/dev/null
 SCRIPTDIR=$(dirname $0)
 START=$(basename $(grep -l 'stroke-width:[3-7]' [0-9]*.svg | sort -g | head -n1) .svg)
 END=$(basename $(ls [0-9]*.svg | sort -g | tail -n1) .svg)
-if [ -f $(expr $START + 1).svg ]; then
-	STEP=1
-	COUNT=$(expr 1 + \( $END - $START \))
-	SNAME="one year"
-elif [ -f $(expr $START + 10).svg ] && [ ! -f $(expr $START + 5).svg ]; then
-	STEP=10
-	COUNT=$(expr 1 + \( $END - $START \) / 10)
-	SNAME="ten years"
+STEP=5
+SNAME="five years"
+FINALSTEP=$(($END % 5))
+if [ $FINALSTEP -gt 0 ]; then
+	COUNT=$((2 + ( $END - $FINALSTEP - $START ) / 5))
 else
-	STEP=5
-	COUNT=$(expr 1 + \( $END - $START \) / 5)
-	SNAME="five years"
+	COUNT=$((1 + ( $END - $START ) / 5))
 fi
 INDEX="count-1"
 DISPLAY=$END
@@ -66,6 +61,9 @@ s/MODE/${MODE}/g;" ${SCRIPTDIR}/template/part1
 for year in $(seq $START $STEP $END); do
 	echo \<a href=\"#${year}\" onclick=\"gotoyear\(${year}\)\"\>${year}\</a\>
 done
+if [ $FINALSTEP -gt 0 ]; then
+	echo \<a href=\"#${END}\" onclick=\"gotoEND\(${END}\)\"\>${END}\</a\>
+fi
 echo '<p>'
 grep earlier ${SCRIPTDIR}/template/part1 | sed -e"s/SNAME/${SNAME}/g"
 grep later ${SCRIPTDIR}/template/part1 | sed -e"s/SNAME/${SNAME}/g"
@@ -81,7 +79,7 @@ elif [ $(basename ${PWD}) == 'uncropped' ]; then
 else
 	cat ${SCRIPTDIR}/template/part2
 fi
-for year in $(seq $START $STEP $END); do
+for year in $(seq $START $STEP $(($END - 1))); do
 	echo \<img src=\"${year}.svg\" width=\"1\" height=\"1\" alt=\"\"\>
 done
 echo '</div>'
