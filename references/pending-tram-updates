@@ -1,7 +1,368 @@
 check gradesep: Jiaxing, Kraków, Qiubei
 
-check construction status: Boston, Brandenburg, Częstochowa, Dresden, El Paso, Galaţi, Katowice, Kolkata, Leipzig, Liberec, Łodź, Lviv, Magdeburg, Mannheim, München, New Orleans, Nizhny Tagil, Olomouc, Oryol, Philadelphia, Poznan, Szczecin, Taganrog, Toronto, Toruń, Wrocław
+check construction status: Antwerpen, Boston, Brandenburg, Częstochowa, Dresden, El Paso, Galaţi, Katowice, Kolkata, Leipzig, Liberec, Łodź, Lviv, Magdeburg, Mannheim, München, Napoli, New Orleans, Nizhny Tagil, Olomouc, Oryol, Philadelphia, Poznan, Szczecin, Taganrog, Toronto, Toruń, Wrocław
 
 check war status: Dnipro, Donetsk, Kamianske, Kharkiv, Konotop, Kryvyi Rih, Kyiv, Lviv, Mariupol, Mykolaiv, Odesa, Vinnytsia, Yenakiyevo, Yevpatoriya, Zaporizhia, Zhytomyr
 
 Mengzi IATA code?
+Guadalajara gates removed?
+
+
+To update for 2024:
+bwi	Baltimore
+bcn	Barcelona
+bax	Barnaul
+bsl	Basel
+bjs	Beijing
+beg	Beograd
+ber	Berlin
+bgy	Bergamo
+bgo	Bergen
+brn	Bern
+qbq	Besançon
+bfe	Bielefeld
+bio	Bilbao
+bhx	Birmingham
+bi_	Biysk
+blk	Blackpool
+bod	Bordeaux
+bos	Boston
+gl_	Brăila / Galaţi
+bd_	Brandenburg
+bts	Bratislava
+bwe	Braunschweig
+bre	Bremen
+bes	Brest FR
+brq	Brno
+bru	Bruxelles
+buh	București
+bud	Budapest
+bue	Buenos Aires
+btz	Bursa
+bzg	Bydgoszcz
+cfr	Caen
+cag	Cagliari
+yyc	Calgary
+cbr	Canberra
+cmn	Casablanca
+cgq	Changchun
+crl	Charleroi
+clt	Charlotte
+cek	Chelyabinsk
+cz_	Chemnitz
+ctu	Chengdu
+cee	Cherepovets
+chc	Christchurch
+cvg	Cincinnati
+cfe	Clermont-Ferrand
+clj	Cluj-Napoca
+cbb	Cochabamba
+czl	Constantine
+cbu	Cottbus
+cra	Craiova
+cue	Cuenca
+czw	Częstochowa
+dlc	Dalian
+dal	Dallas
+zcs	Darmstadt
+dgp	Daugavpils
+deb	Debrecen
+rtm	Den Haag / Rotterdam
+den	Denver
+ds_	Dessau
+dtt	Detroit
+dij	Dijon
+dnk	Dnipro / Kamianske
+doh	Doha
+dok	Donetsk
+dtm	Dortmund
+drs	Dresden
+dxb	Dubai
+dub	Dublin
+dus	Düsseldorf / Ruhr
+edi	Edinburgh
+eb_	Elbląg
+erf	Erfurt
+esk	Eskişehir
+flr	Firenze
+fra	Frankfurt
+fo_	Frankfurt Oder
+qfb	Freiburg
+fuo	Gaoming
+gzt	Gaziantep
+gdn	Gdańsk
+gva	Genève
+gne	Gent
+gr_	Gera
+gm_	Gmunden
+gz_	Görlitz
+got	Göteborg
+gw_	Gorzów
+ool	Gold Coast
+gt_	Gotha
+grx	Granada
+grz	Graz
+gnb	Grenoble
+gd_	Grudziądz
+can	Guangzhou
+hkd	Hakodate
+hs_	Halberstadt
+hl_	Halle
+haj	Hannover
+hb_	Heilbronn
+hel	Helsinki
+hij	Hiroshima
+hkg	Hong Kong
+hou	Houston
+hia	Huai'an
+ias	Iaşi
+inn	Innsbruck
+ikt	Irkutsk
+aly	Iskandariyya
+ist	İstanbul
+ijk	Izhevsk
+izm	İzmir
+kco	İzmit
+jn_	Jena
+jx_	Jiaxing
+koj	Kagoshima
+kgd	Kaliningrad
+mkc	Kansas City
+khh	Kaohsiung
+fkb	Karlsruhe
+ksf	Kassel
+ktw	Katowice
+asr	Kayseri
+kzn	Kazan
+kej	Kemerovo
+hrk	Kharkiv
+khv	Khabarovsk
+kcz	Kochi JP
+ccu	Kolkata
+cgn	Köln / Bonn
+km_	Kolomna
+kp_	Konotop
+kya	Konya
+ksc	Košice
+krk	Kraków
+krr	Krasnodar
+kja	Krasnoyarsk
+kwg	Kryvyi Rih
+kmj	Kumamoto
+urs	Kursk
+kbp	Kyiv
+qls	Lausanne
+leh	Le Havre
+lej	Leipzig
+lme	Le Mans
+lb_	Liberec
+lpx	Liepāja
+lil	Lille
+lnz	Linz
+lis	Lisboa
+lit	Little Rock
+lcj	Łódź
+lon	London
+lax	Los Angeles
+ld_	Lund
+lux	Luxembourg
+lwo	Lviv
+lyn	Lyon
+mad	Madrid
+cso	Magdeburg
+mqf	Magnitogorsk
+qmz	Mainz
+agp	Málaga
+man	Manchester
+mhg	Mannheim / Heidelberg
+mrs	Marseille
+myj	Matsuyama
+mru	Maurice
+mde	Medellín
+mel	Melbourne
+mem	Memphis
+mdz	Mendoza
+mz_	Mengzi
+qme	Messina
+mex	México
+mil	Milano
+mke	Milwaukee
+msp	Minneapolis
+msq	Minsk
+mcq	Miskolc
+mpl	Montpellier
+mow	Moskva
+mo_	Most
+mlh	Mulhouse
+muc	München
+rmu	Murcia
+nlv	Mykolaiv
+nbc	Naberezhnye Chelny
+ngs	Nagasaki
+nkg	Nanjing
+nte	Nantes
+ntl	Newcastle AU
+ncl	Newcastle UK
+msy	New Orleans
+nyc	New York
+nce	Nice
+nk_	Nizhenekamsk
+goj	Nizhny Novgorod
+nt_	Nizhny Tagil
+nh_	Nordhausen
+orf	Norfolk
+nrk	Norrköping
+nqt	Nottingham
+nc_	Novocherkassk
+noz	Novokuznetsk
+np_	Novopolotsk
+ovb	Novosibirsk
+nue	Nürnberg
+ode	Odense
+ods	Odesa
+okj	Okayama
+okc	Oklahoma City
+olo	Olomouc
+oz_	Olsztyn
+ost	Oostende
+omr	Oradea
+orn	Oran
+ore	Orléans
+oms	Omsk
+osw	Orsk
+oel	Oryol
+osa	Osaka
+osi	Osijek
+ok_	Osinniki
+ukk	Óskemen
+osl	Oslo
+osr	Ostrava
+ogx	Ouargla
+qpa	Padova
+pmo	Palermo
+par	Paris
+pwq	Pavlodar
+pee	Perm
+phl	Philadelphia
+phx	Phoenix
+pit	Pittsburgh
+hoq	Plauen
+qpl	Ploieşti
+pz_	Plzeň
+pdx	Portland
+opo	Porto
+poz	Poznań
+prg	Praha
+pk_	Prokopyevsk
+py_	Pyatigorsk
+fnj	Pyongyang
+tao	Qingdao
+qb_	Qiubei
+rba	Rabat
+rhe	Reims
+rix	Riga
+rio	Rio de Janeiro
+rom	Roma
+rlg	Rostock
+rov	Rostov-na-Donu
+uro	Rouen
+scn	Saarbrücken
+sac	Sacramento
+ebu	Saint-Étienne
+sv_	Salavat
+slc	Salt Lake City
+kuf	Samara
+skd	Samarkand
+szf	Samsun
+san	San Diego
+sfo	San Francisco
+sjc	San Jose
+led	Sankt-Peterburg
+ssz	Santos
+syx	Sanya
+spk	Sapporo
+sjj	Sarajevo
+gsv	Saratov
+szw	Schwerin
+sea	Seattle
+qsf	Sétif
+svq	Sevilla
+sha	Shanghai
+szd	Sheffield
+she	Shenyang
+szx	Shenzhen
+bfw	Sidi Bel Abbès
+lnx	Smolensk
+sof	Sofiya
+so_	Stary Oskol
+sto	Stockholm
+sxb	Strasbourg
+str	Stuttgart
+szv	Suzhou
+syd	Sydney
+szz	Szczecin
+sz_	Szeged
+tcm	Tacoma
+tgk	Taganrog
+tpe	Taipei
+tll	Tallinn
+tpa	Tampa
+tmp	Tampere
+kgf	Temirtaý
+tci	Tenerife
+tsn	Tianjin
+tsr	Timişoara
+tyo	Tokyo
+tof	Tomsk
+trn	Torino
+yto	Toronto
+tn_	Toruń
+tls	Toulouse
+tuf	Tours
+toy	Toyama
+ty_	Toyohashi
+trd	Trondheim
+tus	Tucson
+tya	Tula
+tun	Tunis
+ufa	Ufa
+uud	Ulan-Ude
+qul	Ulm
+uly	Ulyanovsk
+us_	Usolye Sibirskoye
+utc	Utrecht
+vlc	Valéncia ES
+xvs	Valenciennes
+vce	Venezia
+vin	Vinnytsia
+vtb	Vitebsk
+vit	Vitoria-Gasteiz
+ogz	Vladikavkaz
+vvo	Vladivostok
+vog	Volgograd
+waw	Warszawa
+was	Washington
+ykf	Waterloo CA
+vie	Wien
+wro	Wrocław
+wuh	Wuhan
+wz_	Würzburg
+iar	Yaroslavl
+svx	Yekaterinburg
+yk_	Yenakiyevo
+jrs	Yerushalayim
+yp_	Yevpatoriya
+zag	Zagreb
+ozh	Zaporizhia
+zaz	Zaragoza
+zuh	Zhuhai
+ztr	Zhytomyr
+zl_	Zlatoust
+zrh	Zürich
+zw_	Zwickau
+???	Cadiz
+???	Dujiangyan
+???	Huangshi
+???	Mostaganem
+tlv	Tel Aviv
+???	Utsonomiya
