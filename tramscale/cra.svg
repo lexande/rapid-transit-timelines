@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
-   width="1500"
-   height="1625"
-   viewBox="0 0 1500 1625">
+   width="875"
+   height="500"
+   viewBox="0 0 875 500"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,30 +19,22 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs6" />
-  <g
-     id="g10">
-    <image
-       xlink:href="basemap/craosm.png"
-       style="display:none"
-       y="-120"
-       x="-85"
-       id="image12"
-       preserveAspectRatio="none"
-       height="1931.43"
-       width="1690" />
-    <path
-       style="fill:none;stroke:#00b3fe;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-       d="m 60.4,59.53 49.24,111.22 14.9,24.12 220.54,300.63 29.46,40.46 10.71,25.01 24.21,67.42 17.14,35.61 57.77,116.4 44.78,71.13 6.39,10.84 0.59,5.96 20.42,30.58 9.23,13.52 15.21,13.23 16.71,9.71 63.71,77.29 14.79,11.41 19.17,6.46 29,12.5 37.82,1.87 37.21,19.77 25.74,19.28 11.49,10.55 4.23,8.63 6.82,12.5 10.91,11.36 10.51,4.26 19.22,3.24 30.43,12.18 94.67,22.26 139.4,38.68 38.58,14.37 67.23,12.7 25.8,4.48 5.2,7.34 14.12,5.52 2.46,16.51 -2.59,16.26 -31.79,172.13 1.09,4.46 6.73,4.5 17.18,6.63 10.76,7.45 79.73,54.87 23.38,16.19 28.72,19.91"
-       id="path855" />
-    <path
-       style="fill:none;stroke:#00b3fe;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-       d="m 1303.76,1251.98 -3.5,-19.17 -8.32,0.63 -7.5,5.68"
-       id="path857" />
-  </g>
+  <image
+     xlink:href="basemap/craosm.png"
+     style="display:none"
+     y="-935"
+     x="-570"
+     id="image12"
+     preserveAspectRatio="none"
+     height="1931.43"
+     width="1690" />
+  <path
+     style="fill:none;stroke:#00b3fe;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 61.28,68.53 10.27,15.38 9.23,13.52 15.21,13.23 16.71,9.71 63.71,77.29 14.79,11.41 19.17,6.46 29,12.5 37.82,1.87 37.21,19.77 25.74,19.28 11.49,10.55 4.23,8.63 6.82,12.5 10.91,11.36 10.51,4.26 19.22,3.24 30.43,12.18 94.67,22.26 139.4,38.68 38.58,14.37 67.23,12.7 25.8,4.48 5.2,7.34 14.12,5.52 -3.49,-19.21 -8.32,0.63 -7.51,5.72"
+     id="path855" />
 </svg>
