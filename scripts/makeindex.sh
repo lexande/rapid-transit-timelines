@@ -7,7 +7,7 @@ END=$(basename $(ls [0-9]*.svg | sort -g | tail -n1) .svg)
 STEP=5
 SNAME="five years"
 FINALSTEP=$(($END % 5))
-if [ $FINALSTEP -gt 0 ]; then
+if [ $FINALSTEP -gt 0 ] && [ $END != $START ]; then
 	COUNT=$((2 + ( $END - $FINALSTEP - $START ) / 5))
 else
 	COUNT=$((1 + ( $END - $START ) / 5))
@@ -61,7 +61,7 @@ s/MODE/${MODE}/g;" ${SCRIPTDIR}/template/part1
 for year in $(seq $START $STEP $END); do
 	echo \<a href=\"#${year}\" onclick=\"gotoyear\(${year}\)\"\>${year}\</a\>
 done
-if [ $FINALSTEP -gt 0 ]; then
+if [ $FINALSTEP -gt 0 ] && [ $END != $START ]; then
 	echo \<a href=\"#${END}\" onclick=\"gotoEND\(${END}\)\"\>${END}\</a\>
 fi
 echo '<p>'

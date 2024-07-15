@@ -5,7 +5,7 @@ all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
 	mv $<.tmp $<
 	gzip -f --keep $<
 
-maps = Past: mkc.svg sux.svg lou.svg roc.svg ct_.svg vcp.svg hl_.svg ind.svg txg.svg Special-Purpose: dws.svg qca.svg mgw.svg
+maps = Past: mkc.svg sux.svg lou.svg roc.svg ct_.svg vcp.svg hl_.svg ind.svg Special-Purpose: dws.svg qca.svg mgw.svg
 
 index.html: names makeindex.sh $(wildcard *.svg) ~/timelines/scripts/template/part4 Makefile
 	./makeindex.sh 10 $(maps) > $@
