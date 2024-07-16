@@ -13,12 +13,12 @@ SFO=sfo1961plan.svg sfo1966plan.svg sfo2024a.svg
 SEA=sea1970plan.svg sea2000a.svg sea2002plan.svg sea2015a.svg sea2016plan.svg sea2024a.svg sea2026proj.svg
 ZRH=zrh1973plan.svg ../../timelines/zrh/small/2020.svg
 HNL=hnl2024a.svg hnl2031proj.svg
-PVD=pvd1914real.svg pvd1914plan.svg pvd2020real.svg
+PVD=pvd1914.svg pvd1914plan.svg pvd2020.svg
 CVG=cvg1920plan.svg
 MSY=msy1959plan.svg
 MAN=man1970a.svg man1971plan.svg man2020a.svg
 CRL=crl2009plan.svg ../../timelines/crl/small/2020.svg
-BER=../../timelines/ber/small/1955.svg ber1955plan.svg ber1989both.svg ber1989west.svg ber1989east.svg ../../timelines/ber/small/1995.svg ber1996plan.svg ../../timelines/ber/small/2024.svg
+BER=../../timelines/ber/small/1955.svg ber1955plan.svg ber1989.svg ber1989west.svg ber1989east.svg ../../timelines/ber/small/1995.svg ber1996plan.svg ../../timelines/ber/small/2024.svg
 YMQ=ymq1961plan.svg ymq1970a.svg ymq2020a.svg ymq2027proj.svg
 
 SVGS=$(NYC) $(BER) $(BOS) $(CHI) $(PIT) $(MAN) $(SFO) $(YMQ) $(SEA) $(ZRH) $(CRL) $(HNL) $(PVD) $(CVG) $(MSY)
