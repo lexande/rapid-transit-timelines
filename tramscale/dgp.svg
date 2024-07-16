@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
-   width="900"
-   height="725"
-   viewBox="0 0 900 725">
+   width="550"
+   height="600"
+   viewBox="0 0 550 600"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -32,22 +31,10 @@
      height="946.5"
      preserveAspectRatio="none"
      id="image12"
-     x="30"
-     y="-50" />
+     x="-60"
+     y="-185" />
   <path
      style="fill:none;stroke:#a22821;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-     d="m 570.28,196.71 -37.77,56.35 -19.92,21.59 -21.36,22.88 5.59,44.6 -21.11,24.19 61.9,57.62 -0.27,6.82 -14.05,8.44 -92.91,99.09 -45.2,48.78 -7.09,5.65 -14.43,14.31 -25.81,10.87 -21.46,7.15 -98.35,40.02 -53.59,-85.67 30.6,-21.68 13.59,-8.48 24.15,-22.73 26.35,-18.24 -4.37,-8.83 -3.7,1.81 -2.66,14.28"
+     d="m 480.28,61.71 -37.77,56.35 -19.92,21.59 -21.36,22.88 5.59,44.6 -21.11,24.19 61.9,57.62 -0.27,6.82 -14.05,8.44 -92.91,99.09 -45.2,48.78 -7.09,5.65 -14.43,14.31 -25.81,10.87 -21.46,7.15 -98.35,40.02 -53.59,-85.67 30.6,-21.68 13.59,-8.48 24.15,-22.73 26.35,-18.24 -4.37,-8.83 -3.7,1.81 -2.66,14.28"
      id="path855" />
-  <path
-     style="fill:none;stroke:#a22821;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-     d="m 195.04,556.89 -39.02,-65.3 -43.29,-19.43 -42.02,-3.25 -8.76,-8.87"
-     id="path857" />
-  <path
-     style="fill:none;stroke:#a22821;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-     d="M 431.15,538.17 384.64,496.42 372.81,361.08 l -36.66,2.84 -11.25,-129.7 -11.84,-4.67 -5.83,4.15 0.84,6.15 17.96,10.21"
-     id="path859" />
-  <path
-     style="fill:none;stroke:#a22821;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-     d="M 537.35,430.76 725.19,320.68 839.98,268.9 820.6,220.01 802.29,158.43 754.12,164.17 769.07,74.64 768.37,57.98"
-     id="path861" />
 </svg>
