@@ -19,7 +19,7 @@ MSY=msy1959plan.svg
 MAN=man1970a.svg man1971plan.svg man2020a.svg
 CRL=crl2009plan.svg ../../timelines/crl/small/2020.svg
 BER=../../timelines/ber/small/1955.svg ber1955plan.svg ber1989.svg ber1989west.svg ber1989east.svg ../../timelines/ber/small/1995.svg ber1996plan.svg ../../timelines/ber/small/2024.svg
-YMQ=ymq1961plan.svg ymq1970a.svg ymq2020a.svg ymq2027proj.svg
+YMQ=ymq1961plan.svg ymq1970a.svg ymq2015a.svg ymq2016plan.svg ymq2024a.svg
 
 SVGS=$(NYC) $(BER) $(BOS) $(CHI) $(PIT) $(MAN) $(SFO) $(YMQ) $(SEA) $(ZRH) $(CRL) $(HNL) $(PVD) $(CVG) $(MSY)
 
@@ -44,7 +44,7 @@ sea%a.svg : ../../timelines/sea/small/%.svg Makefile
 	sed -e's/2050/4000/; s/5350/11550/; s/"0 0/"-670 -3915/; s/"89.45/"-580.55/; s/"206.96/"-3708.04/;' $< > $@
 
 ymq%a.svg : ../../timelines/ymq/small/%.svg Makefile
-	sed -e's/2400/5500/; s/2550/2750/; s/"0 0/"-2100 0/; s/"89.45/"-2010.55/;' $< > $@
+	sed -e's/2400/5500/; s/2550/2850/; s/"0 0/"-2100 -100/; s/"89.45/"-2010.55/; s/206.96/106.96/;' $< > $@
 
 man%a.svg : ../../timelines/man/small/%.svg Makefile
 	sed -e's/2650/3350/; s/4150/5700/; s/"-50 /"-750 /; s/"39.45/"-660.55/;' $< > $@
