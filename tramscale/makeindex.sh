@@ -133,7 +133,7 @@ function togglesidebar() {
 <h3>Tramway (Streetcar & Light Rail) Scale Comparison</h3>
 <div id="maps" style="padding-left: calc(10.5em + 22px);">
 HEREDOC
-CITIES=$(for file in $@; do grep -P "^`basename $file .svg`@?\t" names | sed -e's/<br>/ /; s/ (.*//; s/\(.*\)@*\t\(.*\)/\2 \1/; s/\(.*\) \([0-9]*\) \(.*\)/\2 \1 \3/;'; done | sort -n | sed -e's/.* //; s/@//;')
+CITIES=$(for file in $@; do grep -P "^`basename $file .svg`@?\t" names | sed -e's/<br>/ /; s/ (.*//; s/\(.*\)@*\t\(.*\)/\2 \1/; s/\(.*\) \([0-9]*\) \(.*\)/\2 \1 \3/;'; done | sort -d | sed -e's/.* //; s/@//;')
 for city in $CITIES; do
   NAME=`grep -P "^$city@?\t" names | sed -e's/.*\t//'`
   SNAME=`echo $NAME | sed -e's/<br>/ /; s/ (.*//;'`
@@ -175,7 +175,7 @@ for city in $CITIES; do
         print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       }
     }' $city
-done | sort -n | sed -e's/.* <input/<input/;'
+done | sort -d | sed -e's/.* <input/<input/;'
 cat <<HEREDOC
 </div>
 <div id="showall" style="display: block;"><a href="javascript:selectall()">show all</a></div>
@@ -184,7 +184,7 @@ cat <<HEREDOC
 <br>
 <div class="headerfooter">
 <div style="white-space: normal;">
-Thick lines represent running in streets or with uncontrolled or light-controlled grade crossings; thin lines represent thru-running onto sections with grade-separations or crossing gates.  Other frequent rail lines are shown in light gray, ferries in cyan.<br>All lines shown run at least every 20 minutes during the day on weekdays as of late 2022.<br>
+Thick lines represent running in streets or with uncontrolled or light-controlled grade crossings; thin lines represent thru-running onto sections with grade-separations or crossing gates.  Other frequent local rail lines are shown in light gray, ferries in cyan.<br>All lines shown run at least every 20 minutes during the day on weekdays as of 2024.<br>
 Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)</div>
 <p>
 Please send any corrections or questions to threestationsquare at gmail dot com.
