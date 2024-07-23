@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    viewBox="0 0 1450 1925"
    height="1925"
    width="1450"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,10 +63,6 @@
      style="opacity:1;fill:none;fill-opacity:0.4;fill-rule:nonzero;stroke:#cf3126;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.4;fill-rule:nonzero;stroke:#cf3126;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 568.96,434.65 -8.19,-20.54 -44.79,23.04"
+     d="m 568.96,434.65 -8.98,-22.84 -42.1,22.71"
      id="path825" />
-  <path
-     id="path823"
-     d="m 327.47,223.96 8.01,13.98 v 4.34 l -2.04,4.89 -11.13,6.38 -4.89,5.84 -5.84,16.42 -8.28,14.52 -0.68,9.37 2.58,8.14 10.72,12.89 0.81,4.07 -2.44,5.43 -6.24,10.04 0.27,3.94 2.99,3.12 9.64,2.04 5.84,8.55 1.9,9.64 9.23,10.45 2.44,6.65 7.87,9.77 19.68,13.3 2.99,9.91 10.86,6.24 9.77,14.12 3.39,1.22 21.44,1.49 4.21,1.63 5.56,8.01 5.7,1.36 7.19,-3.12 14.52,0.54 20.36,-6.38 13.17,3.66 6.51,-0.27 20.73,-13.39 46.25,-24.03 4.15,2.03 9.12,22.84 34.93,74.67"
-     style="opacity:1;fill:none;fill-opacity:0.4;fill-rule:nonzero;stroke:#56a929;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
