@@ -51,17 +51,6 @@ div#button a:visited {
 body {
 	text-align: center;
 }
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	/* styles for IE since flex is broken */
-	div#sidebar {
-		line-height: 1.2em;
-		display: block;
-		max-height: calc(100% - 22px);
-	}
-	div#form {
-		height: calc(100vh - 22px - 3.6em);
-	}
-}
 </style>
 <script language="JavaScript" type="text/javascript">
 function toggleshow(x) {
@@ -118,6 +107,12 @@ function togglesidebar() {
 		m.style.paddingLeft = "calc(10.5em + 22px)";
 	}
 }
+window.onload=function() {
+	sidebarclick(location.hash.substring(1,4));
+}
+window.onhashchange=function() {
+	sidebarclick(location.hash.substring(1,4));
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -170,9 +165,9 @@ for city in $CITIES; do
     foreach ( split(/ \/ /, $name) ) {
       $sortname = $_ =~ s/(.*) ([0-9]*)/$2 $1/r;
       if ($show) {
-        print "$sortname <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
+        print "$sortname <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\" checked><a href=\"#${upper}\" onclick=\"sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       } else {
-        print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
+        print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\"><a href=\"#${upper}\" onclick=\"sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       }
     }' $city
 done | sort | sed -e's/.* <input/<input/;'
