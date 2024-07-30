@@ -64,14 +64,20 @@ function toggleshow(x) {
 		for (var i=0; i < checkboxes.length; i++ ) { checkboxes[i].checked = true; }
 	}
 }
+function checkboxclick(x) {
+	location.replace("#");
+	toggleshow(x);
+}
 function sidebarclick(x) {
 	span = document.getElementById(x);
 	if (span.style.display == 'none') {
 		toggleshow(x);
 	}
 	span.scrollIntoView();
+	location.replace("#" + (x));
 }
 function selectall() {
+	location.replace("#showall");
 	spans = document.getElementsByTagName("span");
 	for (var i=0; i < spans.length; i++) {
 		if (spans[i].style.display == 'none') {
@@ -80,6 +86,7 @@ function selectall() {
 	}
 }
 function deselectall() {
+	location.replace("#hideall");
 	spans = document.getElementsByTagName("span");
 	for (var i=0; i < spans.length; i++) {
 		if (spans[i].style.display == 'inline-block') {
@@ -107,12 +114,18 @@ function togglesidebar() {
 		m.style.paddingLeft = "calc(10.5em + 22px)";
 	}
 }
-window.onload=function() {
-	sidebarclick(location.hash.substring(1,4));
-}
 window.onhashchange=function() {
-	sidebarclick(location.hash.substring(1,4));
+	location.hash.split("#").forEach(function(x) {
+		if (x == "showall") {
+			selectall();
+		} else if (x == "hideall") {
+			deselectall();
+		} else if (x.length == 3) {
+			sidebarclick(x);
+		}
+	});
 }
+window.onload=window.onhashchange;
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -165,9 +178,9 @@ for city in $CITIES; do
     foreach ( split(/ \/ /, $name) ) {
       $sortname = $_ =~ s/(.*) ([0-9]*)/$2 $1/r;
       if ($show) {
-        print "$sortname <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\" checked><a href=\"#${upper}\" onclick=\"sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
+        print "$sortname <input type=\"checkbox\" class=\"${upper}checkbox\" onclick=\"checkboxclick(\x27${upper}\x27)\" autocomplete=\"off\" checked><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       } else {
-        print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"toggleshow(\x27${upper}\x27)\" autocomplete=\"off\"><a href=\"#${upper}\" onclick=\"sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
+        print "$sortname <input type=\"checkbox\" id=\"${upper}checkbox${id}\" class=\"${upper}checkbox\" onclick=\"checkboxclick(\x27${upper}\x27)\" autocomplete=\"off\"><a href=\"javascript:sidebarclick(\x27${upper}\x27)\">$_</a><br>\n";
       }
     }' $city
 done | sort | sed -e's/.* <input/<input/;'
