@@ -86,7 +86,7 @@ Serfaus	1300m	hoverfunicular	4	1985-12-14	never*
 QAR	1300m	mainline trunk	2	1970-05-31	2008-12-14*
 PEN	1313m	funicular	2	1923-10-21	never*		connected with 907m line above
 ZCS	1314m	tram gradesepm	3	1966-__-__?	never*
-RIX	1320m	tram gradesep	4	1979-__-__	never*
+RIX	1320m	tram gradesep	4	1979-__-__	never*		infreq?
 ZRH	1328m	rack		4	1971-09-29	1976-09-25*	replaced 800m line above
 AMS	1340m	tram gradesep	3	1927-07-15	1970-05-31
 FKJ	1340m	mainline trunk	3	1929-10-01	never*
@@ -149,6 +149,7 @@ BWE	2550m	tram gradesep	5	1970-08-24*	never
 FSZ	2560m	tram ROW	5	1925-04-01*	1930-03-31	thru-routed with two 2km+ lines
 KCO	2720m	tram ROW	5	2019-02-11*	never
 UIO	2860m	tbus gradesep	5	1996-21-21*	never
+QB_	2930m	tram gradesep	2	2021-05-15*	never		+1330m thru
 BFE	2950m	tram gradesep	5	1978-04-01	1991-04-28	thru with 1050m above
 
 tramscale under 3km:
