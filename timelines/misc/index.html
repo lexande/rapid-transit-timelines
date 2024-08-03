@@ -49,10 +49,10 @@ a:link.map-wrap {
 }
 </style>
 <script>
-mapyr = { "hsr/a": 2020, "hsr/e": 2020, "nerail": 1910, "carail": 1910, "nycbymode": 1945, "bosbymode": 1945, "sfobymode": 1945, "nyctrolleys": 1945, "sandy": 8, "nycflights": 2020 };
-minyr = { "hsr/a": 1965, "hsr/e": 1965, "nerail": 1835, "carail": 1835, "nycbymode": 1835, "bosbymode": 1835, "sfobymode": 1835, "nyctrolleys": 1932, "sandy": 1, "nycflights": 1930 };
-maxyr = { "hsr/a": 2020, "hsr/e": 2020, "nerail": 2010, "carail": 2010, "nycbymode": 2020, "bosbymode": 2020, "sfobymode": 2020, "nyctrolleys": 1957, "sandy": 32, "nycflights": 2020 };
-step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "nycbymode": 5, "bosbymode": 5, "sfobymode": 5, "nyctrolleys": 1, "sandy": 1, "nycflights": 5 }
+mapyr = { "hsr/a": 2020, "hsr/e": 2020, "nerail": 1910, "carail": 1910, "nycbymode": 1925, "bosbymode": 1925, "sfobymode": 1925, "berbymode":1925, "nyctrolleys": 1945, "sandy": 8, "nycflights": 2020 };
+minyr = { "hsr/a": 1965, "hsr/e": 1965, "nerail": 1835, "carail": 1835, "nycbymode": 1835, "bosbymode": 1835, "sfobymode": 1835, "berbymode": 1835, "nyctrolleys": 1932, "sandy": 1, "nycflights": 1930 };
+maxyr = { "hsr/a": 2020, "hsr/e": 2020, "nerail": 2010, "carail": 2010, "nycbymode": 2020, "bosbymode": 2020, "sfobymode": 2020, "berbymode": 2020, "nyctrolleys": 1957, "sandy": 32, "nycflights": 2020 };
+step = { "hsr/a": 5, "hsr/e": 5, "nerail": 25, "carail": 25, "nycbymode": 5, "bosbymode": 5, "sfobymode": 5, "berbymode": 5, "nyctrolleys": 1, "sandy": 1, "nycflights": 5 }
 function nextmap() {
 	for (map in mapyr) {
 		if (mapyr[map] == maxyr[map]) {
@@ -114,13 +114,16 @@ document.onkeydown=function(keypress) {
   City rail (including streetcar) and trolleybus timelines, 1835-2020:<br>
   <span class="innercell">
     <a href="nycbymode">New York<br>
-    <img id="nycbymodemap" src="nycbymode/1945.svg" width="391" height="387" alt="sample New York rail & trolleybus map"></a></span>
+    <img id="nycbymodemap" src="nycbymode/1925.svg" width="391" height="387" alt="sample New York rail & trolleybus map"></a></span>
   <span class="innercell">
     <a href="bosbymode">Boston<br>
-    <img id="bosbymodemap" src="bosbymode/1945.svg" width="290" height="323" alt="sample Boston rail & trolleybus map"></a></span>
+    <img id="bosbymodemap" src="bosbymode/1925.svg" width="290" height="323" alt="sample Boston rail & trolleybus map"></a></span>
   <span class="innercell">
     <a href="sfobymode">San Francisco<br>
-    <img id="sfobymodemap" src="sfobymode/1945.svg" width=391" height="387" alt="sample San Francisco rail & trolleybus map"></a></span></span><br>
+    <img id="sfobymodemap" src="sfobymode/1925.svg" width="391" height="387" alt="sample San Francisco rail & trolleybus map"></a></span></span><br>
+  <span class="innercell">
+    <a href="berbymode">Berlin<br>
+    <img id="berbymodemap" src="berbymode/1925.svg" width="591" height="529" alt="sample Berlin rail & trolleybus map"></a></span></span><br>
 <span class="supercell">
   <span class="medcell">
     <a href="nyctrolleys">New York trolley abandonment,<br>1932-1957<br>
