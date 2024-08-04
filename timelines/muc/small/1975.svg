@@ -28,13 +28,13 @@
   <image
      xlink:href="./../basemap/mucosm.png"
      id="image10"
-     height="5629.54"
-     width="7656.18"
-     y="20.46"
-     x="0"
+     height="8331.73"
+     width="9457.63"
+     y="-880.27"
+     x="-1801.45"
      style="display:none" />
   <path
-     d="m 3396.27,3697.52 17.89,-0.33 23.23,8.94 17.46,10.43 12.37,4.07 8.58,-0.98 11.48,-4.81 9.58,-8.78 7.82,-17.74 v -32.88 l -1.77,-53.03 10.61,-23.69 29.7,-25.1 95.81,-68.59 59.4,-42.78 21.57,-3.54 18.38,-15.56 30.76,-15.91 9.4,-11.79 10.89,-15.54 7.85,-25.49 5.8,-43.35 48.79,-155.56 38.68,-125.24 9.19,-37.98 1.22,-9.34 -8.21,-15.73 -9.94,-9.25 -48.65,-15.56 -24,-4.5 -27,-6.5 -10.99,-6.75 -7.1,-9.46 -4.27,-12.67 0.74,-26.23 -2.38,-29.38 -6.13,-21.87 -20.0,-17.87 -22.37,-5.26 -30.5,-5.5 -55.5,-2 -12,-5 -18,-27 -10.96,-24.85"
+     d="m 3396.27,3697.52 17.89,-0.33 23.23,8.94 17.46,10.43 12.37,4.07 8.58,-0.98 11.48,-4.81 9.58,-8.78 7.82,-17.74 v -32.88 l -1.77,-53.03 10.61,-23.69 29.7,-25.1 95.81,-68.59 59.4,-42.78 21.57,-3.54 18.38,-15.56 30.76,-15.91 9.4,-11.79 10.89,-15.54 7.85,-25.49 5.8,-43.35 48.79,-155.56 38.68,-125.24 9.19,-37.98 1.22,-9.34 -8.21,-15.73 -9.94,-9.25 -48.65,-15.56 -24,-4.5 -27,-6.5 -10.99,-6.75 -7.1,-9.46 -4.27,-12.67 0.74,-26.23 -2.38,-29.38 -6.13,-21.87 -20,-17.87 -22.37,-5.26 -30.5,-5.5 -55.5,-2 -12,-5 -18,-27 -10.96,-24.85"
      id="path2987-0"
      style="fill:none;stroke:#ff6600;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -42,7 +42,7 @@
      id="path2987"
      style="fill:none;stroke:#0071bc;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 2521.82,3160.13 7.86,1.78 84,32.5 87,38.5 17.5,7.5 65,10 133,9.5 132.5,20.5 73,12 82.5,2.5 111.5,3 74,8 135,14.5 30,-5.5 41.5,6.5 45,13.5 47,24 84,29.5 73.5,30.5 7.5,8.5 30.04,27.17 47.46,22.56 17.01,20.27 64,61 19.5,8 15,0.5 18.5,-4.5 27.5,-19.5 55,-60 37,-35 48,-10 65,-5 65,6 92,12 41,7"
+     d="m 2521.82,3160.13 7.86,1.78 84,32.5 87,38.5 17.5,7.5 65,10 133,9.5 132.5,20.5 73,12 82.5,2.5 112.46,10.89 73.04,0.11 135,14.5 30,-5.5 41.5,6.5 45,13.5 47,24 84,29.5 73.5,30.5 7.5,8.5 30.04,27.17 47.46,22.56 17.01,20.27 64,61 19.5,8 15,0.5 18.5,-4.5 27.5,-19.5 55,-60 37,-35 48,-10 65,-5 65,6 92,12 41,7"
      id="path3856"
      style="fill:none;stroke:#4fae35;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -57,10 +57,6 @@
      d="m 4070.68,3560.41 -51,49 -17.5,26.5 -4,17.5 -9.5,59 0.5,37.5 18,68 44.5,138 21.57,49.69 4.14,6.91"
      id="path3864"
      style="fill:none;stroke:#4fae35;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     d="m 4075.18,4012.91 20,22 20.5,10.5 34.5,4.5 258.5,19.5 38,12.5 23.5,18 15.5,21 27.5,35.5 33.5,41 74.5,102.5"
-     id="path3866"
-     style="fill:none;stroke:#4fae30;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0" />
   <path
      d="m 4490.68,3455.91 54,20.5 39.5,29 59,39 41,12.5 6.96,2.73"
      id="path3868"
@@ -87,7 +83,7 @@
      y="106.96"
      id="text3878"
      xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:144.0px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
+     style="font-style:normal;font-weight:normal;font-size:144px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><tspan
        x="139.45"
        y="106.96"
        id="tspan1">1975</tspan></text>
