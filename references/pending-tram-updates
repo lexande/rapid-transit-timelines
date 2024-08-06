@@ -1,46 +1,60 @@
-check gradesep: Huangshi, Leipzig Zeppelinbrucke temp track
+check gradesep:
+Huangshi
+Leipzig Zeppelinbrucke temp track
 
-check construction status: Antwerpen 2/4 11 12, Brandenburg 1, Berlin U6, Brno 4 9, Bruxelles 3 44 82/97, Bydgoszcz 6, Cagliari 1, Cottbus 1, Częstochowa 1/2/3, Denver E H L, Dresden 4 4/10/12 11, Frankfurt 15/16/18, Gent T4, Halle 1, Heilbronn S4, Katowice 6/19 11 14/26, Kemerovo 1, Kraków 1/2 9/14/16, Krasnoyarsk 4Kursk 2 3 4 8, Kyiv 11/12/16/19, Łodź 6/7 9/13 etc, Magdeburg 3/9, Mannheim all, Milano 2, Montpellier 4, München 17, Nizhny Novgorod 2 6/7 11, Norrköping 3, Oradea Decebal, Orsk 4/5, Osijek all, Ostrava 1/2/8 4/8/9/12 7, Perm 2/11/12, Plauen 5, Poznan 10/11/12/19, Praha 1/6/14/25 19 etc, Rostock 2/3/4, Samara Galaktionovskaya, Sankt-Peterburg headways 10 16 40 41 61, Saratov 2 4 6 9 10, Szczecin Pomorzany, Toronto 501, Timişoara 5 6, Wrocław
+check construction status:
+Antwerpen 2/4 11 12
+Brandenburg 1
+Berlin U6
+Brno 4 9
+Bruxelles 3 44 82/97
+Bydgoszcz 6
+Cagliari 1
+Cottbus 1
+Częstochowa 1/2/3
+Denver E H L
+Dresden 4 4/10/12 11
+Frankfurt 15/16/18
+Gent T4
+Halle 1
+Heilbronn S4
+Katowice 6/19 11 14/26
+Kemerovo 1
+Kraków 1/2 9/14/16
+Krasnoyarsk 4
+Kursk 2 3 4 8
+Kyiv 11/12/16/19
+Łodź 6/7 9/13 etc
+Magdeburg 3/9
+Mannheim all
+Milano 2
+Montpellier 4
+München 17
+Nizhny Novgorod 2 6/7 11
+Norrköping 3
+Novopolotsk freq
+Oradea Decebal
+Orsk 4/5
+Osijek all
+Ostrava 1/2/8 4/8/9/12 7
+Perm 2/11/12
+Plauen 5
+Poznan 10/11/12/19
+Praha 1/6/14/25 19 etc
+Rostock 2/3/4
+Samara Galaktionovskaya
+Sankt-Peterburg headways 10 16 40 41 61
+Saratov 2 4 6 9 10
+Szczecin Pomorzany
+Toronto 501
+Timişoara 5 6
+Venezia 3 4
+Vladikavkaz freq
+Volgograd ST 1/2/4/10
+Warszawa 1/22/24 4/10/11/14/18
+Würzburg all
+Yaroslavl 5/7 6
+Yenakiyevo freq
+Zagreb 7/14 8/14/15
 
-check war status: Vinnytsia, Yenakiyevo, Yevpatoriya, Zaporizhia, Zhytomyr
-
-Mengzi IATA code?
-
-
-To update for 2024:
-ufa	Ufa
-uud	Ulan-Ude
-qul	Ulm
-uly	Ulyanovsk
-us_	Usolye Sibirskoye
-utc	Utrecht
-???	Utsonomiya
-vlc	Valéncia ES
-xvs	Valenciennes
-vce	Venezia
-vin	Vinnytsia
-vtb	Vitebsk
-vit	Vitoria-Gasteiz
-ogz	Vladikavkaz
-vvo	Vladivostok
-vog	Volgograd
-waw	Warszawa
-was	Washington
-ykf	Waterloo CA
-vie	Wien
-wro	Wrocław
-wuh	Wuhan
-wz_	Würzburg
-iar	Yaroslavl
-svx	Yekaterinburg
-yk_	Yenakiyevo
-jrs	Yerushalayim
-yp_	Yevpatoriya
-zag	Zagreb
-ozh	Zaporizhia
-zaz	Zaragoza
-zuh	Zhuhai
-ztr	Zhytomyr
-zl_	Zlatoust
-zrh	Zürich
-zw_	Zwickau
+use Mengzi IATA code when assigned

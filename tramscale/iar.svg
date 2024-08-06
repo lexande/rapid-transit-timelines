@@ -4,32 +4,33 @@
 <svg
    version="1.1"
    id="svg2"
-   width="1050"
-   height="1100"
-   viewBox="0 0 1050 1100"
+   width="600"
+   height="800"
+   viewBox="0 0 600 800"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs6" />
-  <g
-     id="g8">
-    <image
-       width="1084"
-       height="1445.33"
-       preserveAspectRatio="none"
-       style="display:none;image-rendering:optimizeSpeed"
-       xlink:href="iarosm.png"
-       id="image10"
-       x="-10"
-       y="-275" />
-    <path
-       style="fill:none;stroke:#cc0000;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-       d="m 508.26,929.71 20.02,-9.33 363.51,12.57 63.99,24.95 2.85,5.33 -11.89,48.03 2.96,3.33 38.72,6.73 2.06,3.75 -3.93,18.5"
-       id="path860" />
-    <path
-       style="fill:none;stroke:#cc0000;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
-       d="m 891.8,932.95 4.72,-6.1 L 783.95,691.27 760.58,506.64 755.1,495.2 740.96,484.09 730.11,475.95 722.85,466.9 718.52,453.94 707.23,436.57 668.93,401.59 640.38,384.12 614.33,370.78 583.2,357.5 543,345.83 427.71,327.4 409.4,325.94 395.92,311.12 H 387.4 l -61.39,43.69 -5.57,-0.18 -9.15,-13.68 -16.19,-10.55 -8.81,-8.78 -2.93,-6.73 1.33,-16.6 -3.19,-4.42 -90.42,-49.95 L 180.84,235.36 61.34,105.9 v -4.45 L 112.03,54.5"
-       id="path862" />
-  </g>
+  <image
+     width="1084"
+     height="1445.33"
+     preserveAspectRatio="none"
+     style="display:none;image-rendering:optimizeSpeed"
+     xlink:href="basemap/iarosm.png"
+     id="image10"
+     x="-460"
+     y="-585" />
+  <path
+     style="fill:none;stroke:#cc0000;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 58.26,619.71 20.02,-9.33 363.51,12.57 63.99,24.95 2.85,5.33 -11.89,48.03 2.96,3.33 38.72,6.73 2.06,3.75 -3.93,18.5"
+     id="path860" />
+  <path
+     style="fill:none;stroke:#cc0000;stroke-width:5;stroke-linejoin:round;stroke-opacity:1"
+     d="m 441.8,622.95 4.72,-6.1 -112.57,-235.58 -23.37,-184.63 -5.48,-11.44 -14.14,-11.11 -10.85,-8.14 -7.26,-9.05 -4.33,-12.96 -11.29,-17.37 -38.3,-34.98 -28.55,-17.47 -23.75,-12.47"
+     id="path862" />
+  <path
+     style="fill:none;stroke:#cc0000;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 446.52,616.85 4.3,9.62"
+     id="path317" />
 </svg>

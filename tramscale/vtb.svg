@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
-   width="1175"
-   height="700"
-   viewBox="0 0 1175 700">
+   width="1350"
+   height="600"
+   viewBox="0 0 1350 600"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -27,19 +26,15 @@
      id="defs6" />
   <image
      xlink:href="basemap/vtbosm.png"
-     y="-80"
+     y="-242.62"
      x="-125"
      id="image12"
      preserveAspectRatio="none"
-     height="963.12"
+     height="1155.75"
      width="1541"
      style="display:none" />
   <path
      style="fill:none;stroke:#507299;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 59.88,511.56 205.49,-126.38 132.56,25.58 h 9.78 l 25.67,9 28.06,-28.89 16.09,-11.9 44.52,-57.58 6.6,-1.38 25.28,18.04 25.22,0.24 20.29,-14.36 22.02,-6.98 16.03,-1.29 2.8,-3.81 -0.81,-18.39 -9.49,-88.61 4.3,-1.51 122.04,41.81 222.19,71.98 35.89,-153.31 12.27,-66.46 -1.89,-19.34 -1.34,-5.35"
+     d="m 59.88,541.56 205.49,-126.38 132.56,25.58 h 9.78 l 25.67,9 28.06,-28.89 16.09,-11.9 44.52,-57.58 6.6,-1.38 25.28,18.04 25.22,0.24 20.29,-14.36 22.02,-6.98 16.03,-1.29 2.8,-3.81 -0.81,-18.39 -9.49,-88.61 4.3,-1.51 122.04,41.81 222.19,71.98 35.89,-153.31 12.27,-66.46 -1.89,-19.34 -2.15,-8.46 257.43,-42.88"
      id="path837" />
-  <path
-     style="fill:none;stroke:#507299;stroke-width:5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 978.51,317.13 137.89,30.77 4.46,5.22 -30.03,132.66 -6.92,16.92 -48.45,106.64 -18.14,27.69"
-     id="path871" />
 </svg>

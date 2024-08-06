@@ -5,31 +5,24 @@
    version="1.1"
    id="svg2"
    width="525"
-   height="675"
-   viewBox="0 0 525 675"
+   height="575"
+   viewBox="0 0 525 575"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs6" />
-  <g
-     id="g8">
-    <image
-       width="816.9"
-       height="1021.12"
-       preserveAspectRatio="none"
-       style="display:none;image-rendering:optimizeSpeed"
-       xlink:href="basemap/us_osm.png"
-       id="image10"
-       x="-180"
-       y="-310" />
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linejoin:round"
-       d="m 285,607.39 80.8,-53.12 80.91,-68.99 6.45,-7.95 1.63,-8.56 -1.1,-10.05 -4.63,-24.1 0.47,-39.4 -33.33,-93.75 -7.76,-7 -58.19,-31.62 -13.29,-9.1 -70.51,-82.24 -67.16,12.84 -24.47,6.12 -59.53,48.94 -5.32,1.28 -15.13,0.3 -25.48,19.1 -1.8,4.51 2.64,5.59 49.85,58.01"
-       id="path1020" />
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linejoin:round"
-       d="M 266.46,171.53 231.16,129.21 227.69,119.98 179.24,62.85"
-       id="path1022" />
-  </g>
+  <image
+     width="816.9"
+     height="1021.12"
+     preserveAspectRatio="none"
+     style="display:none;image-rendering:optimizeSpeed"
+     xlink:href="basemap/us_osm.png"
+     id="image10"
+     x="-180"
+     y="-410" />
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:5;stroke-linejoin:round"
+     d="m 285,507.39 80.8,-53.12 80.91,-68.99 6.45,-7.95 1.63,-8.56 -1.1,-10.05 -4.63,-24.1 0.47,-39.4 -33.33,-93.75 -7.76,-7 -58.19,-31.62 -13.29,-9.1 -70.51,-82.24 -67.16,12.84 -24.47,6.12 -59.53,48.94 -5.32,1.28 -15.13,0.3 -25.48,19.1 -1.8,4.51 2.64,5.59 49.85,58.01"
+     id="path1020" />
 </svg>

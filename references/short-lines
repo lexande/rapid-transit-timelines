@@ -40,7 +40,7 @@ TPA	 760m	hoverfunicular	2	1985-06-27	never*		closed 1995-01-16
 LYN	 783m	funicular	3	1878-08-08	1978-05-02*	connected to later 427m line
 ZRH	 800m	funicular	3?	1899-07-05	1976-09-25*
 PIT	 806m	funicular	2	1890-08-15	1904-12-09*	near earlier 490m line above
-UFA	 807m	tram gradesep	2	2007-06-17	never*
+UFA	 807m	tram gradesep	2	2007-06-17	never*		infreq in 2024
 NAP	 824m	funicular	3	1891-05-30	1945-09-15*	near earlier & later lines
 INN	 839m	funicular	3	1906-09-12	never*		replaced by 1838m line
 BGO	 844m	funicular	5	1918-01-15	2010-06-22
@@ -154,6 +154,6 @@ QB_	2930m	tram gradesep	2	2021-05-15*	never		+1330m thru
 BFE	2950m	tram gradesep	5	1978-04-01	1991-04-28	thru with 1050m above
 
 tramscale under 3km:
-TCM 2520m, EB_ 2580m+, NTL 2680m, MEM 2990m
+EB_ 2580m+, NTL 2680m, MEM 2990m
 disqualified from tramscale for under 2km:
-Neuchâtel 356m, Enoshima 467m, Fukui 594m, Lugano 1400m, Kyoto 1550m, Buffalo 1610m, Tianshui 1750m
+Neuchâtel 356m, Enoshima 467m, Fukui 594m, Lugano 1400m, Vladikavkaz 1150m, Kyoto 1550m, Buffalo 1610m, Tianshui 1750m
