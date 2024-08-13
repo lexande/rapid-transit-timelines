@@ -11,9 +11,9 @@ for line in sys.stdin:
         print(line, end='')
         continue
     nl = ''
-    for item in re.split('(\d+\.\d+)', line):
+    for item in re.split(r'(\d+\.\d+)', line):
         try:
-            nl += re.sub('\.0$','',str(round(float(item), 2)))
+            nl += re.sub(r'\.0$','',str(round(float(item), 2)))
         except ValueError:
             nl += item
     print(nl, end='')
