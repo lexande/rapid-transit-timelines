@@ -503,10 +503,6 @@ image/svg+xml</dc:format>
      id="Paulus_Hook_Ferry"
      style="fill:none;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     id="Electric_Ferry"
-     d="m 327.93,2316.76 c 127.53,64.64 4.07,171.38 120.31,212.49"
-     style="fill:none;fill-rule:evenodd;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
      d="m 289.64,2476.7 c 66.38,3.4 88.95,46.84 156.67,52.13"
      id="Upper_Ferry"
      style="fill:none;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
@@ -827,7 +823,7 @@ image/svg+xml</dc:format>
      id="BMT_49:_Ocean_Ave"
      style="fill:none;stroke:#00bf4d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
-     d="m 1259.58,3180.23 -2.54,-22.25 -125.04,14.52 -90,-42 -5.67,11.81 -7.02,-3.01 -3.81,8.7 94,42 10.28,7.64 129.8,-17.41 4.31,31.51 19.87,21.57 24.23,66.19 37.5,28.5 249.01,-35.5 55.5,-9.5 23,19 47.49,39.13 30.35,33.33 33.91,25.83 68.54,25.75 70.24,-20.14"
+     d="m 1259.58,3180.23 -2.54,-22.25 -125.04,14.52 -90,-42 -5.67,11.81 -7.02,-3.01 -3.81,8.7 94,42 10.28,7.64 129.8,-17.41 4.31,31.51 19.87,21.57 24.23,66.19 37.5,28.5 249.01,-35.5"
      id="BMT_50:_Bushwick_Ave"
      style="fill:none;stroke:#00bf4d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
@@ -885,10 +881,6 @@ image/svg+xml</dc:format>
   <path
      d="m 779,5186 -30.5,-0.5 -25,4 -18.04,5.65 L 665,5213.5 l -62,9 -60,8 -14,-4.5"
      id="BMT_73:_Norton's_Point"
-     style="fill:none;stroke:#00bf4d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  <path
-     d="m 1606,3278 13.5,9.5 30.5,-4.5 23,19 47.49,39.13 30.35,33.33 33.91,25.83 68.54,25.75 70.24,-20.14"
-     id="BMT_51:_Cypress_Hills_Cemetery"
      style="fill:none;stroke:#00bf4d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="M 2100.71,2633.78 2102,2627 l -14,-74 -5,-14 -65,-154.5 1.5,-5 29,-15 -5.5,-35 -29.5,-48 -11,-17.5 -5.5,-38 4,-11.5 -7,-34.5"
@@ -1075,10 +1067,6 @@ image/svg+xml</dc:format>
      d="m 404.81,3277.42 c 81.65,142.46 28.41,162.04 61.22,219.25" />
   <path
      style="fill:none;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="East_34th_St_Ferry"
-     d="m 885.25,2625.22 c 49.65,24.23 96.43,3.2 134.63,13.39" />
-  <path
-     style="fill:none;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="Astoria_Ferry"
      d="m 1212.12,2060.16 c 36.85,19.08 46.34,72.28 73.97,85.42" />
   <path
@@ -1124,10 +1112,6 @@ image/svg+xml</dc:format>
    y="222.96"
    id="tspan1">1934</tspan>
 </text>
-  <path
-     style="fill:none;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="Atlantic_Annex_Ferry"
-     d="m 178.16,3033.03 c 79.6,22.25 192.84,378.99 362.89,374.42" />
   <path
      style="opacity:1;fill:none;fill-opacity:0.14;fill-rule:nonzero;stroke:#00ffff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="m 1348.24,679.86 c -82.96,-52 -106.8,-64.8 -166.87,-95.87"
