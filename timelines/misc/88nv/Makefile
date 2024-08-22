@@ -10,3 +10,5 @@ preview.gif: $(wildcard *.svg)
 
 index.html: makeindex.sh $(wildcard *.svg)
 	./makeindex.sh > $@
+
+.PHONY: all
