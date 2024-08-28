@@ -5,25 +5,28 @@ all: large.html index.html $(patsubst %.svg,%.svg.gz,$(wildcard *.svg))
 	mv $<.tmp $<
 	gzip -f --keep $<
 
-NYC=../../timelines/nyc/uncropped/small/1935.svg nyc1939plan.svg ../../timelines/nyc/uncropped/small/1965.svg nyc1968plan.svg ../../timelines/nyc/uncropped/small/2024.svg
+NYC=nyc1935a.svg nyc1939plan.svg nyc1965a.svg nyc1968plan.svg nyc2024a.svg
 CHI=chi1975a.svg chi1976plan.svg chi2024a.svg
 BOS=bos1892plan.svg bos1915a.svg bos1917plan.svg bos1945a.svg bos1945plan.svg bos2024a.svg
 PIT=pit1965a.svg pit1967plan.svg pit1970plan.svg pit2024a.svg
 SFO=sfo1960a.svg sfo1961plan.svg sfo1966plan.svg sfo2024a.svg
 SEA=sea1970plan.svg sea2000a.svg sea2002plan.svg sea2015a.svg sea2016plan.svg sea2024a.svg sea2026proj.svg
-ZRH=zrh1973plan.svg ../../timelines/zrh/small/2020.svg
+ZRH=zrh1973plan.svg ../../timelines/zrh/small/2024.svg
 HNL=hnl2006plan.svg hnl2024a.svg
 PVD=pvd1914.svg pvd1914plan.svg pvd2020.svg
 CVG=cvg1920plan.svg
 MSY=msy1959plan.svg
-MAN=man1970a.svg man1971plan.svg man2020a.svg
-CRL=crl2009plan.svg ../../timelines/crl/small/2020.svg
+MAN=man1970a.svg man1971plan.svg man2024a.svg
+CRL=crl2009plan.svg ../../timelines/crl/small/2024.svg
 BER=../../timelines/ber/small/1955.svg ber1955plan.svg ber1989.svg ber1989west.svg ber1989east.svg ../../timelines/ber/small/1995.svg ber1996plan.svg ../../timelines/ber/small/2024.svg
 YMQ=ymq1961plan.svg ymq1970a.svg ymq2015a.svg ymq2016plan.svg ymq2024a.svg
 
 SVGS=$(NYC) $(BER) $(BOS) $(CHI) $(PIT) $(MAN) $(SFO) $(YMQ) $(SEA) $(ZRH) $(CRL) $(HNL) $(PVD) $(CVG) $(MSY)
 
 RECROPPED=chi1975a.svg chi2024a.svg bos1915a.svg bos1945a.svg bos2024a.svg pit1965a.svg pit2024a.svg sfo2024a.svg sea2000a.svg sea2015a.svg hnl2024a.svg
+
+nyc%a.svg : ../../timelines/nyc/small/%.svg Makefile
+	sed -e's/6400/6850/' $< > $@
 
 chi%a.svg : ../../timelines/chi/small/%.svg Makefile
 	sed -e's/4300/3900/; s/6200/5650/' $< > $@
