@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    width="11000"
    viewBox="0 10 11000 8850"
    height="8850"
-   id="svg2">
+   id="svg2"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -522,13 +521,13 @@
      id="path5542"
      style="fill:none;stroke:#800080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
-     d="m 10169,1040.5 -9,-11 -13,-5 -16,-14.5 -5,-9.5 -19,-9 -21.5,-38 -35.5,-40 -4,-12.5 4.5,-12.5 4,-9.5 3,-13.5 16,-47 -1,-10 -7.5,-12 -2,-16.5 -9.5,-26 -17.5,-38 -27.5,-31.5 -2.5,-12.5 7,-63.5 7.5,-63.5 5.5,-13.5 -0.5,-21 5,-17.5 14,-26 7.5,-28 -6,-13.5 -20.5,-33 -4,-6 3.5,-13.5 14,-3.5 17,-3 9.5,-4.5 -2.5,-21 9,-18.5 19.5,-22 6.5,-23 7.5,-14.5 24.5,-20.5 4,-7 -1.5,-4"
-     id="path5544"
-     style="fill:none;stroke:#800080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#800080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 10169,1040.5 -9,-11 -13,-5 -16,-14.5 -5,-9.5 -19,-9 -21.5,-38 -35.5,-40 -4,-12.5 4.5,-12.5 4,-9.5 3,-13.5 16,-47 -1,-10 -7.5,-12 -2,-16.5 -9.5,-26 -17.5,-38 -27.5,-31.5"
+     id="path5544" />
   <path
-     d="m 10158.5,1029 -8,-18.5 -0.5,-48 1.5,-34.5 8.5,-24.5 1.5,-37.5 -1.5,-24.5 7.5,-26 -6,-16.5 -1.5,-18.5 -25,-35 -46.5,-27.5 -20,-20.5 -29.5,-49.5 -25,-39"
+     d="m 10158.5,1029 -8,-18.5 -0.5,-48 1.5,-34.5 8.5,-24.5 1.5,-37.5 -1.5,-24.5 7.5,-26 -6,-16.5 -1.5,-18.5 -25,-35 -46.5,-27.5 -20,-20.5 -29.5,-49.5 -19.32,-30.14 -1.68,-10.36 7.5,-63.5 5.5,-13.5 -0.5,-21 5,-17.5 14,-26 7.5,-28 -6,-13.5 -20.5,-33 -4,-6 2.5,-8.5 14.5,-4.5 16.5,-1.5 10.5,-10 -2.5,-21 9,-15.5 17.5,-20 8.5,-28 8.5,-12.5 22.5,-19 4.5,-8 -1.48,-5.39"
      id="path5546"
-     style="fill:none;stroke:#800080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+     style="fill:none;stroke:#800080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      d="m 10009,685 -28,-36 -92.5,-52 -14,2 -12,0 -7,-7 -14.5,-48.5 -30.5,-28 -7,-10.5"
      id="path5548"
@@ -575,10 +574,6 @@
        x="10577.45"
        y="216.96"
        id="tspan4996-9">1985</tspan></text>
-  <path
-     d="m 9105.5,614 -14,-9 -20,3.5 -26,17 -10,16 -2.5,17.5 -7.5,8 -5,0.5 -37,-15 -22.5,-22 -21,-19 -27,-13 -3.5,-17.5 -11.5,-22.5 -8.5,3 7.5,20.5 -17,48 -22,18.5 -13.5,0 -22.5,-12.5 -7.01,3.84"
-     id="path5554-9"
-     style="fill:none;stroke:#800080;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
   <path
      d="m 3838.5,5790 -22,14 -29.5,16.5 -7.5,-7.5 -33.5,-19.5 -11,-15.5 -9.5,-5 -14.5,-24.5 -30,-1 -12,8 -33.5,-8 -12,-15.5 -21.5,-6.5 -13.5,-19 -20.5,-9 -6.5,-8.5"
      id="path3830-6"
