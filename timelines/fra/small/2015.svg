@@ -6,7 +6,7 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   viewBox="-25 0 4650 4050"
+   viewBox="-25 -25 4650 4050"
    height="4050"
    width="4650"
    id="svg2"
@@ -68,7 +68,7 @@
      id="path4602" />
   <path
      id="path4604"
-     d="m 2752.77,1675.09 -4.07,-5.3 -4.6,-3.01 -5.3,0.18 -35.89,5.83 -6.01,-1.24 -17.5,-12.37 -32.0,-35.0 -5.83,-9.02 -95.99,-165.82"
+     d="m 2752.77,1675.09 -4.07,-5.3 -4.6,-3.01 -5.3,0.18 -35.89,5.83 -6.01,-1.24 -17.5,-12.37 -32,-35 -5.83,-9.02 -95.99,-165.82"
      style="fill:none;fill-rule:evenodd;stroke:#007ec5;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
      id="path4637"
@@ -76,7 +76,7 @@
      style="fill:none;fill-rule:evenodd;stroke:#e3a023;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
      id="path4673"
-     d="m 3687.3,1706.2 17.1,-10.08 14.01,-7.34 13.08,-12.33 14.23,-18.08 15.56,-11.31 13.52,-3.45 35.0,-2.47 19.0,-2.47 12.02,-6.58 8.18,-9.28 10.83,-24.09 25.28,-53.92 11.84,-14.89 64.35,-50.51 23.16,-12.73"
+     d="m 3687.3,1706.2 17.1,-10.08 14.01,-7.34 13.08,-12.33 14.23,-18.08 15.56,-11.31 13.52,-3.45 35,-2.47 19,-2.47 12.02,-6.58 8.18,-9.28 10.83,-24.09 25.28,-53.92 11.84,-14.89 64.35,-50.51 23.16,-12.73"
      style="fill:none;fill-rule:evenodd;stroke:#e3a023;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#ef59a1;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
@@ -120,16 +120,16 @@
      style="fill:none;fill-rule:evenodd;stroke:#b7282e;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#ffdc01;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 2925.31,1507.72 -20.06,-15.57 -13.44,-16.26 -17.32,-29.88 -31.74,-67.76 -7.5,-20.75 -3,-25.88 5.12,-22.88 0.12,-12.25 -5.5,-23.25 -13.25,-17.25 -11.25,-13.5 -5,-17 -3.12,-23.25 3.25,-48.25 3.62,-15.5 0.5,-22.25 -9.72,-5.0 -21.41,-1.17 -13.52,-6.05 -23.72,-21.79"
+     d="m 2925.31,1507.72 -20.06,-15.57 -13.44,-16.26 -17.32,-29.88 -31.74,-67.76 -7.5,-20.75 -3,-25.88 5.12,-22.88 0.12,-12.25 -5.5,-23.25 -13.25,-17.25 -11.25,-13.5 -5,-17 -3.12,-23.25 3.25,-48.25 3.62,-15.5 0.5,-22.25 -9.72,-5 -21.41,-1.17 -13.52,-6.05 -23.72,-21.79"
      id="path4973" />
   <text
      style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
      id="text2819"
-     y="206.96"
+     y="181.96"
      x="64.45"><tspan
        id="tspan1"
-       y="206.96"
+       y="181.96"
        x="64.45">2015</tspan></text>
   <path
      id="path5178"
@@ -137,7 +137,7 @@
      style="fill:none;fill-rule:evenodd;stroke:#4a5da9;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#c77db4;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
-     d="m 3162.79,1528.8 -3.51,-9.76 -15.99,-47.73 0.12,-17.37 -18.8,-61.0 -33.27,-49.17 -11.56,-19.59 -47.46,-65.8 -9.97,-6.51 -3.98,-5.81"
+     d="m 3162.79,1528.8 -3.51,-9.76 -15.99,-47.73 0.12,-17.37 -18.8,-61 -33.27,-49.17 -11.56,-19.59 -47.46,-65.8 -9.97,-6.51 -3.98,-5.81"
      id="path5180" />
   <path
      id="path5182"
@@ -161,7 +161,7 @@
      style="fill:none;fill-rule:evenodd;stroke:#c77db4;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      style="fill:none;fill-rule:evenodd;stroke:#00a54f;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 3021.66,1242.49 -10.25,-7.04 -10.45,-25.4 -23.8,-19.69 -13.75,-16.75 -8.44,-13.37 -17.69,-12.81 -15.62,-8.09 -3.97,-5.15 -32.0,-124.1 v -11.67 l 5.66,-19.8"
+     d="m 3021.66,1242.49 -10.25,-7.04 -10.45,-25.4 -23.8,-19.69 -13.75,-16.75 -8.44,-13.37 -17.69,-12.81 -15.62,-8.09 -3.97,-5.15 -32,-124.1 v -11.67 l 5.66,-19.8"
      id="path5194" />
   <path
      id="path5196"
