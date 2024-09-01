@@ -96,6 +96,7 @@ window.onhashchange=function() {
   })();
 </script>
 </head><body>
+<h3>CITYNAME MODE Timeline</h3>
 <a href="javascript:" onclick="prevmap()">SNAME earlier (or press a)</a> ---
 <a href="javascript:" onclick="nextmap()">SNAME later (or press s)</a>
 <br>

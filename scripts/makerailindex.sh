@@ -109,6 +109,7 @@ window.onhashchange=function() {
   })();
 </script>
 </head><body>
+<h3>NAME Passenger Rail Timeline</h3>
 HEREDOC
 if [ $SCALE = 2 ]; then
   echo 'smaller version --- <a href="large.html">larger version</a>'
