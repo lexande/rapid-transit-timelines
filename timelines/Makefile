@@ -1,10 +1,10 @@
 all: $(wildcard ???) index.html
 
 define WriteRules
-ifeq ($(wildcard $(1)/cropscript.pl),$(1)/cropscript.pl)
+ifeq ($(wildcard $(1)/crop.pl),$(1)/crop.pl)
 $(1)/small/%.svg: ;
-$(1)/%.svg:: $(1)/uncropped/%.svg $(1)/cropscript.pl
-	$(1)/cropscript.pl $$< > $$@
+$(1)/%.svg:: $(1)/uncropped/%.svg $(1)/crop.pl
+	$(1)/crop.pl $$< > $$@
 
 $(1)/index.html: $(1)/name $(subst uncropped/,,$(wildcard $(1)/uncropped/*.svg)) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/template/*) $(wildcard $(1)/seealso) $(1)/preview.gif
 	~/timelines/scripts/makeindex.sh $(1) > $$@
@@ -13,9 +13,9 @@ $(1)/index.html: $(1)/name $(subst uncropped/,,$(wildcard $(1)/uncropped/*.svg))
 $(1): $(1)/uncropped $(subst uncropped/,,$(patsubst %.svg,%.svg.gz,$(wildcard $(1)/uncropped/*.svg)) $(wildcard $(1)/uncropped/*.svg)) $(1)/index.html $(1)/preview.gif;
 
 else
-$(1)/small/%.svg: $(1)/%.svg $1/%.svg.gz
+$(1)/small/%.svg: $(1)/%.svg $1/%.svg.gz $(wildcard $(1)/cropsmall.pl)
 	mkdir -p $(1)/small
-	~/timelines/scripts/hideyear.pl $$< > $$@
+	if [ -f $(1)/cropsmall.pl ]; then $(1)/cropsmall.pl $$<; else cat $$<; fi | ~/timelines/scripts/hideyear.pl > $$@
 	~/timelines/scripts/from-year-range.sh $(1)
 
 $(1)/index.html: $(wildcard $(1)/name $(1)/../name $(1)/seealso $(1)/../seealso) $(1)/preview.gif $(wildcard $(1)/*.svg) ~/timelines/scripts/makeindex.sh $(wildcard ~/timelines/scripts/template/*)
