@@ -137,7 +137,7 @@ cat <<HEREDOC
 <a href="javascript:" onclick="nextmap()">25 years later (or press s)</a>
 <p>
 Showing rail lines with at least three trains each weekday.  Lines coloured by operator (<a href="colours.html">key</a>).<br>
-Local and interurban tramways (without priority at road crossings) and horse-drawn lines not shown.<br>
+Local tramways (without priority at road crossings) and horse-drawn lines not shown.<br>
 HEREDOC
 echo 'Scale: <svg width="'`echo 100*${SCALE} | bc`'px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> ≈ 100 km (approximately '${SCALE}' CSS pixels per km)'
 cat <<HEREDOC
