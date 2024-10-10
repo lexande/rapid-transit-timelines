@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    id="svg2"
-   viewBox="50, -590, 3950, 5000"
+   viewBox="-150, -590, 4150, 5000"
    height="5000"
-   width="3950"
+   width="4150"
    version="1.1"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
@@ -28,9 +28,9 @@
      xlink:href="../basemap/mexosm.png"
      id="image10"
      height="5092.92"
-     width="4138"
+     width="4456.3"
      y="-642.92"
-     x="0"
+     x="-318.31"
      style="display:none" />
   <path
      style="fill:none;stroke:#8a2495;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -97,19 +97,19 @@
      xml:space="preserve"
      id="text3790"
      y="4307.96"
-     x="139.45"><tspan
+     x="-60.55"><tspan
        id="tspan2"
        y="4307.96"
-       x="139.45">2024</tspan></text>
+       x="-60.55">2024</tspan></text>
   <text
      style="font-size:144px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
      xml:space="preserve"
      id="text3790-8"
      y="-383.04"
-     x="139.45"><tspan
+     x="-60.55"><tspan
        id="tspan1"
        y="-383.04"
-       x="139.45">2024</tspan></text>
+       x="-60.55">2024</tspan></text>
   <path
      style="fill:none;stroke:#aa9848;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
      id="path2999"
@@ -158,4 +158,16 @@
      style="fill:none;stroke:#a83439;stroke-width:1;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
      d="m 1086.3,1734.82 55.91,2.78 3.91,-2.08 3.71,-21.63"
      id="path10991" />
+  <path
+     style="fill:none;stroke:#58c0e2;stroke-linejoin:round;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
+     d="m 3397.23,2751.1 65.75,246.76 -270.39,41.02 -154.92,73.72"
+     id="path329" />
+  <path
+     style="fill:none;stroke:#58c0e2;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m 3036.6,3108.12 -168.98,67.42 -187.62,63.39 -276.78,-262.31"
+     id="path885" />
+  <path
+     style="fill:none;stroke:#58c0e2;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     d="m -47.42,2375.84 36.78,-109.16 102.14,-89.15 116.01,-34.03 192.9,-126.13 135.66,-86.6"
+     id="path6542" />
 </svg>
