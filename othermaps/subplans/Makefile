@@ -26,7 +26,7 @@ SVGS=$(NYC) $(BER) $(BOS) $(CHI) $(PIT) $(MAN) $(SFO) $(YMQ) $(SEA) $(ZRH) $(CRL
 RECROPPED=chi1975a.svg chi2024a.svg bos1915a.svg bos1945a.svg bos2024a.svg pit1965a.svg pit2024a.svg sfo2024a.svg sea2000a.svg sea2015a.svg hnl2024a.svg
 
 nyc%a.svg : ../../timelines/nyc/small/%.svg Makefile
-	sed -e's/6400/6850/' $< > $@
+	sed -e's/6400/6850/; s/8200/6250/; s/ -1934 / 16 /; s/"-1727.04/"222.96/;' $< > $@
 
 chi%a.svg : ../../timelines/chi/small/%.svg Makefile
 	sed -e's/4300/3900/; s/6200/5650/' $< > $@
