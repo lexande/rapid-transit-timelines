@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import xml.etree.ElementTree as ET
-from bs4 import BeautifulSoup
 import sys, subprocess, re
 
 ET.register_namespace('', "http://www.w3.org/2000/svg")
