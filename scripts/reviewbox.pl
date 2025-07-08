@@ -2,8 +2,8 @@
 
 BEGIN {
     $dleft = shift;
-    $dright = shift;
     $dtop = shift;
+    $dright = shift;
     $dbottom = shift;
     $left = $top = $width = $height = $tspanl = $tspanr = $tspant = $tspanb = $viewboxseen = 0;
     $newleft = $newtop = $newwidth = $newheight = $newtspanl = $newtspanr = $newtspant = $newtspanb = 0;
