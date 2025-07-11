@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg2"
    viewBox="0, -1200, 5600, 7150"
    height="7150"
    width="5600"
-   version="1.1">
+   version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -19,7 +19,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -129,7 +128,7 @@
      id="path926" />
   <path
      id="path873"
-     d="m 4387.8,3947.58 -2.46,-0.96 -15.73,-10.38 -20.75,-7.7 -40.84,-34.64 -25.61,-14.9 -6.86,-8.54 -16.9,-45.36 -8.84,-18.75 -13.42,-26.18 -5.87,-6.73 -28.75,-18.99 -4.64,-6.4 -0.91,-2.78 4.52,-7.36 16.4,-16.07 7.7,-32.8 1.76,-11.21 -0.68,-14.94 -1.19,-4.01 3.4,-3.07 9.57,0.33 6.27,-2.64 1.32,-2.31 0.49,-5.45 -2.81,-3.47 -3.47,-1.32 -10.23,1.49 -7.26,-2.48 -0.83,-7.1 0.3,-2.93 8.12,-2.68 18.98,-1.65 1.67,-0.51"
+     d="m 4387.8,3947.58 -2.46,-0.96 -15.73,-10.38 -20.75,-7.7 -40.84,-34.64 -25.61,-14.9 -6.86,-8.54 -16.9,-45.36 -8.84,-18.75 -13.42,-26.18 -5.87,-6.73 -28.75,-18.99 -4.64,-6.4 -0.91,-2.78 4.52,-7.36 16.4,-16.07 7.7,-32.8 1.76,-11.21 -0.68,-14.94 -1.19,-4.01 3.4,-3.07 9.57,0.33 6.27,-2.64 1.32,-2.31 0.49,-5.45 -2.81,-3.47 -3.47,-1.32 -10.23,1.49 -7.26,-2.48 -0.83,-7.1 1.82,-3.47 6.6,-2.14 18.98,-1.65 1.67,-0.51"
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#f79422;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path830-6"
