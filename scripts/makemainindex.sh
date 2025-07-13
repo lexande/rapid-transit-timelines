@@ -289,6 +289,7 @@ for city in $@; do
     $upper =~ tr/a-z/A-Z/;
     $name = `cat $city/name`;
     $name =~ s/<br>/ /;
+    $name =~ s/Naberezhnye/Nab./;
     chomp $name;
     foreach ( split(/ \/ /, $name) ) {
       if (-e "$city/s") {
