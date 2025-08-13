@@ -40,8 +40,8 @@ if (/viewBox="(-?[0-9]+),? (-?[0-9]+),? ([0-9]+),? ([0-9]+),?"/) {
 }
 
 s/viewBox=".*"/viewBox="$newleft $newtop $newwidth $newheight"/;
-s/"$width"/"$newwidth"/;
-s/"$height"/"$newheight"/;
+s/width="$width"/width="$newwidth"/;
+s/height="$height"/height="$newheight"/;
 s/x="$tspanl"/x="$newtspanl"/;
 s/x="$tspanr"/x="$newtspanr"/;
 s/y="$tspant"/y="$newtspant"/;
