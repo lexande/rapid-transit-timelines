@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
    id="svg2"
-   width="1900"
-   height="2300"
-   viewBox="0 0 1900 2300">
+   width="2050"
+   height="2200"
+   viewBox="15 100 2050 2200">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -27,26 +27,26 @@
      id="defs6" />
   <image
      style="display:none"
-     width="1136.0"
-     height="2272.0"
+     width="1988"
+     height="2272"
      preserveAspectRatio="none"
      xlink:href="../basemap/ifnosm.png"
      id="image10"
-     x="325.0"
-     y="28.0" />
+     x="41"
+     y="28" />
   <path
      style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#fd0608;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 471.44,288.34 90.58,4.88 160.0,-5.42 39.05,-3.25 212.61,-17.36 26.03,2.17 249.49,27.66 10.85,11.93 33.08,104.68 9.76,61.29 12.47,22.24 16.81,14.1 54.78,40.68 4.34,15.73 2.17,13.56 -42.85,373.69"
+     d="m 471.44,288.34 90.58,4.88 160,-5.42 39.05,-3.25 212.61,-17.36 26.03,2.17 249.49,27.66 10.85,11.93 33.08,104.68 9.76,61.29 12.47,22.24 16.81,14.1 54.78,40.68 4.34,15.73 2.17,13.56 -42.85,373.69"
      id="path836" />
   <text
      style="font-style:normal;font-weight:normal;font-size:144px;font-family:Sans;-inkscape-font-specification:Sans;fill:#000000;fill-opacity:1;stroke:none"
      xml:space="preserve"
      id="text3652"
-     y="206.96"
-     x="89.45"><tspan
+     y="306.96"
+     x="104.45"><tspan
        id="tspan1"
-       y="206.96"
-       x="89.45">2015</tspan></text>
+       y="306.96"
+       x="104.45">2015</tspan></text>
   <path
      id="path841"
      d="m 152.66,2036.43 -1.65,16.89 -7.83,12.36 -4.12,-0.82 -13.6,-10.71 0.82,-4.53 7.83,-7.83 18.54,-5.36 48.2,-53.15 44.08,-48.61 53.15,-39.55 60.15,-36.67"
@@ -65,6 +65,6 @@
      style="opacity:1;fill:none;fill-opacity:0.4;fill-rule:nonzero;stroke:#3c45cd;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   <path
      id="path904"
-     d="m 1744.55,998.24 -9.89,-17.3 -25.95,-40.37 -106.7,-77.86 -23.48,-7.42 -5.77,-4.94 7.83,-46.55 7.0,-19.78 12.77,-15.24 h 6.59 l 11.54,11.12"
+     d="m 1744.55,998.24 -9.89,-17.3 -25.95,-40.37 -106.7,-77.86 -23.48,-7.42 -5.77,-4.94 7.83,-46.55 7,-19.78 12.77,-15.24 h 6.59 l 11.54,11.12"
      style="opacity:1;fill:none;fill-opacity:0.4;fill-rule:nonzero;stroke:#3c45cd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 </svg>
