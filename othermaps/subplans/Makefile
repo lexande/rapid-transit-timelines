@@ -16,22 +16,22 @@ SVGS=$(NYC) $(BER) $(BOS) $(PIT) $(SFO) $(MAN) $(SEA) $(ZRH) $(PVD) $(CVG) $(MSY
 
 RECROPPED=bos1915a.svg bos1945a.svg bos2025a.svg pit1965a.svg pit2025a.svg sfo2025a.svg sea2000a.svg sea2015a.svg
 
-nyc%a.svg : ../../timelines/nyc/small/%.svg Makefile
+nyc%a.svg : ../../nyc/small/%.svg Makefile
 	~/timelines/scripts/reviewbox.pl 0 1950 500 0 $< > $@
 
-bos%a.svg : ../../timelines/bos/small/%.svg Makefile
+bos%a.svg : ../../bos/small/%.svg Makefile
 	~/timelines/scripts/reviewbox.pl 0 -600 0 0 $< > $@
 
-sfo%a.svg : ../../timelines/sfo/small/%.svg Makefile
+sfo%a.svg : ../../sfo/small/%.svg Makefile
 	~/timelines/scripts/reviewbox.pl -435 -150 -2235 -2350 $< > $@
 
-pit%a.svg : ../../timelines/pit/small/%.svg Makefile
+pit%a.svg : ../../pit/small/%.svg Makefile
 	~/timelines/scripts/reviewbox.pl 1000 -1400 1350 0 $< > $@
 
-sea%a.svg : ../../timelines/sea/small/%.svg Makefile
+sea%a.svg : ../../sea/small/%.svg Makefile
 	~/timelines/scripts/reviewbox.pl -720 -2465 430 2235 $< > $@
 
-man%a.svg : ../../timelines/man/small/%.svg Makefile
+man%a.svg : ../../man/small/%.svg Makefile
 	~/timelines/scripts/reviewbox.pl 2565 2350 15 1550 $< > $@
 
 
