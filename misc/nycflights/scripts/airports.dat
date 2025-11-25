@@ -1,27 +1,29 @@
 # from airline route mapper http://arm.64hosts.com/
 # airport-id	latitude	longitude	airport-name
+WBW	41.2973	-75.8522	Wilkes-Barre Wyoming Valley
+_JAX	30.42	-81.64	Jacksonville Igeson
+_ZZX	41.480	-75.772	Scranton Municipal
 BER	52.3667	13.5033	Berlin Brandenburg
 NLU	19.7567	-99.0153	Mexico City AIFA
 TQO	20.1722	-87.6606	Tulum
 DSS	14.6708	-17.0728	Dakar Diagne
 CZG	42.0785	-76.0963	Bingamton Tri-Cities
-ITHM	42.459	-76.517	Ithaca Municipal
-SYRM	43.0747	-76.2681	Syracuse Municipal
-UCAM	43.171	-75.314	Utica Municipal
-BMUNI	39.2475	-76.5297	Baltimore Municipal
-CAMDEN	39.930	-75.078	Philadelphia Camden
-STAPLETON	39.7743	-104.8792	Denver Stapleton
-WAS	38.87	-77.05	Washington Hoover	
-MSV	41.701639	-74.795027	Catskills Sullivan County
-5CT8	41.043986	-73.531788	Stamford
-PCT	40.399083	-74.658999	Princeton
-HZL	40.986778	-75.994888	Hazleton
-BLM	40.186750	-74.124555	Asbury Park
-EEN	42.898389	-72.270777	Keene
-ONH	42.524778	-75.064471	Oneonta
-FBU	59.893333	10.633056	Fornebu
-AIY	39.360028	-74.456082	Atlantic City Old
-HTO	40.959417	-72.251666	Hamptons
+_UPM	43.171	-75.314	Utica Municipal
+_BMX	39.2475	-76.5297	Baltimore Municipal
+_KM	39.930	-75.078	Philadelphia Camden
+_SRX	43.0747	-76.2681	Syracuse Municipal
+_WA	38.87	-77.05	Washington Hoover	
+MSV	41.7016	-74.795	Catskills Sullivan County
+_SCC	41.044	-73.5318	Stamford Canal St
+_DEN	39.7743	-104.8792	Denver Stapleton
+PCT	40.3991	-74.659	Princeton
+HZL	40.9868	-75.9949	Hazleton
+BLM	40.1868	-74.1246	Asbury Park
+EEN	42.8984	-72.2708	Keene
+ONH	42.5248	-75.0645	Oneonta
+FBU	59.8933	10.6331	Fornebu
+AIY	39.3600	-74.4561	Atlantic City Old
+HTO	40.9594	-72.2517	Hamptons
 JHC	40.7444	-73.6083	Garden City?
 AAA	-17.3542	-145.4961	Anaa
 AAC	31.0733	33.8358	EL-ARISH
@@ -4171,7 +4173,6 @@ SMX	34.8989	-120.4574	Santa Maria
 SNA	33.6756	-117.8682	Santa Ana John Wayne Apt                
 SNB	-11.4197	130.6472	SNAKE BAY
 SNC	-2.2078	-80.9858	SALINAS/GNRAL.ULPIANO PAEZ
-SNDT	-18.2333	-43.6511	Diamantina (SNDT)
 SNE	16.5881	-24.2839	Sao Nicolau Island
 SNF	10.2833	-68.7333	SAN FELIPE
 SNG	-16.3836	-60.9628	SAN IGNACIO DE VELASCO
@@ -4300,10 +4301,8 @@ SWE	-6.2830	147.5670	  Siwea
 SWF	41.5041	-74.1048	Newburgh
 SWH	-35.3772	143.5322	SWAN HILL
 SWJ	-16.4950	167.4380	  Southwest Bay
-SWOB	-2.5336	-66.0672	Fonte Boa (SWOB)
 SWP	-22.6583	14.5667	SWAKOPMUND
 SWS	51.6053	-4.0678	SWANSEA
-SWTP	-0.4169	-65.0338	Tapuruquara/Santa Isabel do Rio Negro (SWTP)
 SWX	-18.3667	21.8167	SHAKAWE
 SWY	4.2167	100.7000	SITIAWAN
 SXB	48.5419	7.6344	Strasbourg
