@@ -33,7 +33,7 @@ endef
 
 $(foreach dir, $(wildcard ??? ???/uncropped), $(eval $(call WriteRules, $(dir))))
 
-misc tramscale walledcityscale othermaps/oneoffs othermaps/subplans:
+misc tramscale walledcityscale othermaps/oneoffs othermaps/subplans othermaps/fantasy:
 	$(MAKE) --directory=$@
 
 index.html: $(wildcard ???/small/2025.svg) $(wildcard ???/s) $(wildcard ???/name) scripts/makemainindex.sh scripts/template/part4 opening-dates

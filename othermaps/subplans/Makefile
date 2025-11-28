@@ -1,4 +1,4 @@
-all: large.html index.html
+all: index.html large.html
 
 NYC=nyc1935a.svg nyc1939plan.svg nyc1965a.svg nyc1968plan.svg nyc2025a.svg
 BOS=bos1892plan.svg bos1915a.svg bos1917plan.svg bos1945a.svg bos1945plan.svg bos2025a.svg

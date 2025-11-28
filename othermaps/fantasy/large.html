@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Rapid Transit Fantasy Maps</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.3, minimum-scale=0.3" />
+<style type="text/css">
+* {
+    max-height: 999999px;
+}
+body {
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p, form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.map, .bgmap {
+    border: 1px solid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+</style>
+<script language="JavaScript" type="text/javascript">
+posdict = {};
+function setsrc(x, url, pos) {
+    document.getElementById(x + "map").src = url;
+    posdict[x] = pos;
+}
+function next(x) {
+    if (!(x in posdict)) { posdict[x] = 0; }
+    var links = document.getElementById(x).getElementsByClassName('setsrc');
+    if (posdict[x] + 1 >= links.length) {
+        links[0].click();
+    } else {
+        links[posdict[x]+1].click();
+    }
+}
+function toggleshow(x) {
+    if(document.getElementById(x).style.display=='inline-block') document.getElementById(x).style.display = 'none';
+    else document.getElementById(x).style.display = 'inline-block';
+}
+function selectall() {
+    spans = document.getElementsByTagName("span");
+    for (var i=0; i < spans.length; i++) {
+        if (spans[i].style.display == 'none') {
+            document.getElementById(spans[i].id + "checkbox").click();
+        }
+    }
+}
+function deselectall() {
+    spans = document.getElementsByTagName("span");
+    for (var i=0; i < spans.length; i++) {
+        if (spans[i].style.display == 'inline-block') {
+            document.getElementById(spans[i].id + "checkbox").click();
+        }
+    }
+}
+function showbg() {
+    for (bgimg of document.getElementsByClassName("bgmap")) {
+        bgimg.style.display = 'inline-block';
+    }
+    bgbutton = document.getElementById("bgbutton");
+    bgbutton.onclick = hidebg;
+    bgbutton.innerText = "click here to hide present-day labels and waterlines";
+}
+function hidebg() {
+    for (bgimg of document.getElementsByClassName("bgmap")) {
+        bgimg.style.display = 'none';
+    }
+    bgbutton = document.getElementById("bgbutton");
+    bgbutton.onclick = showbg;
+    bgbutton.innerText = "click here to show present-day labels and waterlines";
+}
+
+window.onload=function() {
+    var spans = document.getElementsByTagName('span');
+    for (var i=0; i<spans.length; i++) {
+        if (document.getElementById(spans[i].id).getElementsByClassName('setsrc')[0].innerHTML.match(/actual/)) {
+            next(spans[i].id);
+        }
+    }
+}
+document.onkeydown=function(keypress) {
+    if(keypress.which == 65) {
+        var spans = document.getElementsByTagName('span');
+        for (var i=0; i<spans.length; i++) {
+            var links = document.getElementById(spans[i].id).getElementsByClassName('setsrc');
+            if (!(spans[i].id in posdict)) { posdict[spans[i].id] = 0; }
+            if (posdict[spans[i].id] - 1 < 0) {
+                links[posdict[spans[i].id] - 1 + links.length].click();
+            } else {
+                links[posdict[spans[i].id] - 1].click();
+            }
+        }
+    }
+    if(keypress.which == 83) {
+        var spans = document.getElementsByTagName('span');
+        for (var i=0; i<spans.length; i++) {
+            next(spans[i].id);
+        }
+    }
+}
+</script>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+</head><body>
+<h3>Rapid Transit Fantasy Maps</h3>
+<a href=".">smaller versions</a> --- larger versions<p>
+<span id="nyc" style="display: inline-block; vertical-align: middle">New York<br>
+<a href="javascript:next('nyc');">
+<img class="bgmap" src="nyc-bg.png" style="position:absolute; z-index: -1; display:none" width="1435" height="1783">
+<img class="map" src="nyc2025a.svg" id="nycmap" title="New York" alt=" map" width="1435" height="1783"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('nyc','nyc2025a.svg',0);">2025 actual</a>
+<br><a class="setsrc" href="javascript:setsrc('nyc','nyc.svg',1);">Fantasy map</a>
+<br><a class="setsrc" href="javascript:setsrc('nyc','nyc-anachron.svg',2);">Anachronistic/AU fantasy map</a>
+<br>(<a href="../../nyc">timeline</a>)</small></span>
+<span id="bos" style="display: inline-block; vertical-align: middle">Boston<br>
+<a href="javascript:next('bos');">
+<img class="bgmap" src="bos-bg.png" style="position:absolute; z-index: -1; display:none" width="957" height="1164">
+<img class="map" src="bos2025a.svg" id="bosmap" title="Boston" alt=" map" width="957" height="1164"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('bos','bos2025a.svg',0);">2025 actual</a>
+<br><a class="setsrc" href="javascript:setsrc('bos','bos.svg',1);">Fantasy map</a>
+<br>(<a href="../../bos">timeline</a>)</small></span>
+<span id="pit" style="display: inline-block; vertical-align: middle">Pittsburgh<br>
+<a href="javascript:next('pit');">
+<img class="bgmap" src="pit-bg.png" style="position:absolute; z-index: -1; display:none" width="587" height="641">
+<img class="map" src="pit2025a.svg" id="pitmap" title="Pittsburgh" alt=" map" width="587" height="641"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('pit','pit2025a.svg',0);">2025 actual</a>
+<br><a class="setsrc" href="javascript:setsrc('pit','pit.svg',1);">Fantasy map</a>
+<br>(<a href="../../pit">timeline</a>)</small></span>
+<span id="was" style="display: inline-block; vertical-align: middle">Washington<br>
+<a href="javascript:next('was');">
+<img class="bgmap" src="was-bg.png" style="position:absolute; z-index: -1; display:none" width="1739" height="1239">
+<img class="map" src="../../was/small/2025.svg" id="wasmap" title="Washington" alt=" map" width="1739" height="1239"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('was','../../was/small/2025.svg',0);">2025 actual</a>
+<br><a class="setsrc" href="javascript:setsrc('was','was.svg',1);">Fantasy map</a>
+<br>(<a href="../../was">timeline</a>)</small></span>
+<span id="sfo" style="display: inline-block; vertical-align: middle">San Francisco<br>
+<a href="javascript:next('sfo');">
+<img class="bgmap" src="sfo-bg.png" style="position:absolute; z-index: -1; display:none" width="1689" height="1587">
+<img class="map" src="sfo2025a.svg" id="sfomap" title="San Francisco" alt=" map" width="1689" height="1587"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('sfo','sfo2025a.svg',0);">2025 actual</a>
+<br><a class="setsrc" href="javascript:setsrc('sfo','sfo.svg',1);">Fantasy map</a>
+<br>(<a href="../../sfo">timeline</a>)</small></span>
+<span id="hkg" style="display: inline-block; vertical-align: middle">Hong Kong<br>
+<a href="javascript:next('hkg');">
+<img class="bgmap" src="hkg-bg.png" style="position:absolute; z-index: -1; display:none" width="1022" height="1022">
+<img class="map" src="hkg1995a.svg" id="hkgmap" title="Hong Kong" alt=" map" width="1022" height="1022"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('hkg','hkg1995a.svg',0);">1995 actual</a>
+<br><a class="setsrc" href="javascript:setsrc('hkg','hkg-nohandover.svg',1);">1997 no-handhover AU</a>
+<br><a class="setsrc" href="javascript:setsrc('hkg','hkg2025a.svg',2);">2025 actual</a>
+<br>(<a href="../../hkg">timeline</a>)</small></span>
+<p>
+<form action="">Cities to show:
+<div style="display: inline-block"><input type="checkbox" id="nyccheckbox" onclick="toggleshow('nyc')" autocomplete="off" checked>New York</div>
+<div style="display: inline-block"><input type="checkbox" id="boscheckbox" onclick="toggleshow('bos')" autocomplete="off" checked>Boston</div>
+<div style="display: inline-block"><input type="checkbox" id="pitcheckbox" onclick="toggleshow('pit')" autocomplete="off" checked>Pittsburgh</div>
+<div style="display: inline-block"><input type="checkbox" id="wascheckbox" onclick="toggleshow('was')" autocomplete="off" checked>Washington</div>
+<div style="display: inline-block"><input type="checkbox" id="sfocheckbox" onclick="toggleshow('sfo')" autocomplete="off" checked>San Francisco</div>
+<div style="display: inline-block"><input type="checkbox" id="hkgcheckbox" onclick="toggleshow('hkg')" autocomplete="off" checked>Hong Kong</div>
+</form>
+<a href="javascript:selectall()">show all</a>
+<a href="javascript:deselectall()">hide all</a>
+<p>
+<a id="bgbutton" href="javascript:" onclick="showbg()">click here to show present-day labels and waterlines</a><p>
+Depicting frequent midday service (<a href="../notes.html">notes</a>).<br>
+Scale: <svg width="300px" height="3px" style="vertical-align: middle; stroke-width: 0px; background-color: black;"/> = 10 km (30 CSS pixels per km)
+<p>
+Please send any corrections or questions to threestationsquare at gmail dot com.
+<p>
+See also: <a href="../..">rapid transit timelines</a> - <a href="../../misc/">miscellaneous timelines and maps</a>
+<p>
+<div style="font-size: x-small;">By <a href="https://alexander.co.tz">Alexander Rapp</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>) based on map data by <a href="http://www.openstreetmap.org">OpenStreetMap</a> contributors and historical sources. Background map images <a href="https://www.maptiler.com/copyright/">copyright MapTiler</a>.</div>
+</body></html>
