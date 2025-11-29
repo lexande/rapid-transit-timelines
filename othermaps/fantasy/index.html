@@ -112,21 +112,21 @@ document.onkeydown=function(keypress) {
 smaller versions --- <a href="large.html">larger versions</a><p>
 <span id="nyc" style="display: inline-block; vertical-align: middle">New York<br>
 <a href="javascript:next('nyc');">
-<img class="map" src="nyc2025a.svg" id="nycmap" title="New York" alt=" map" width="478" height="594"></a><small>
-<br><a class="setsrc" href="javascript:setsrc('nyc','nyc2025a.svg',0);">2025 actual</a>
+<img class="map" src="nyc-a.svg" id="nycmap" title="New York" alt=" map" width="478" height="594"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('nyc','nyc-a.svg',0);">2025 actual</a>
 <br><a class="setsrc" href="javascript:setsrc('nyc','nyc.svg',1);">Fantasy map</a>
-<br><a class="setsrc" href="javascript:setsrc('nyc','nyc-anachron.svg',2);">Anachronistic/AU fantasy map</a>
+<br><a class="setsrc" href="javascript:setsrc('nyc','nycanachron.svg',2);">Anachronistic/AU fantasy map</a>
 <br>(<a href="../../nyc">timeline</a>)</small></span>
 <span id="bos" style="display: inline-block; vertical-align: middle">Boston<br>
 <a href="javascript:next('bos');">
-<img class="map" src="bos2025a.svg" id="bosmap" title="Boston" alt=" map" width="319" height="388"></a><small>
-<br><a class="setsrc" href="javascript:setsrc('bos','bos2025a.svg',0);">2025 actual</a>
+<img class="map" src="bos-a.svg" id="bosmap" title="Boston" alt=" map" width="319" height="388"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('bos','bos-a.svg',0);">2025 actual</a>
 <br><a class="setsrc" href="javascript:setsrc('bos','bos.svg',1);">Fantasy map</a>
 <br>(<a href="../../bos">timeline</a>)</small></span>
 <span id="pit" style="display: inline-block; vertical-align: middle">Pittsburgh<br>
 <a href="javascript:next('pit');">
-<img class="map" src="pit2025a.svg" id="pitmap" title="Pittsburgh" alt=" map" width="196" height="214"></a><small>
-<br><a class="setsrc" href="javascript:setsrc('pit','pit2025a.svg',0);">2025 actual</a>
+<img class="map" src="pit-a.svg" id="pitmap" title="Pittsburgh" alt=" map" width="196" height="214"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('pit','pit-a.svg',0);">2025 actual</a>
 <br><a class="setsrc" href="javascript:setsrc('pit','pit.svg',1);">Fantasy map</a>
 <br>(<a href="../../pit">timeline</a>)</small></span>
 <span id="was" style="display: inline-block; vertical-align: middle">Washington<br>
@@ -137,17 +137,10 @@ smaller versions --- <a href="large.html">larger versions</a><p>
 <br>(<a href="../../was">timeline</a>)</small></span>
 <span id="sfo" style="display: inline-block; vertical-align: middle">San Francisco<br>
 <a href="javascript:next('sfo');">
-<img class="map" src="sfo2025a.svg" id="sfomap" title="San Francisco" alt=" map" width="563" height="529"></a><small>
-<br><a class="setsrc" href="javascript:setsrc('sfo','sfo2025a.svg',0);">2025 actual</a>
+<img class="map" src="sfo-a.svg" id="sfomap" title="San Francisco" alt=" map" width="563" height="529"></a><small>
+<br><a class="setsrc" href="javascript:setsrc('sfo','sfo-a.svg',0);">2025 actual</a>
 <br><a class="setsrc" href="javascript:setsrc('sfo','sfo.svg',1);">Fantasy map</a>
 <br>(<a href="../../sfo">timeline</a>)</small></span>
-<span id="hkg" style="display: inline-block; vertical-align: middle">Hong Kong<br>
-<a href="javascript:next('hkg');">
-<img class="map" src="hkg1995a.svg" id="hkgmap" title="Hong Kong" alt=" map" width="341" height="341"></a><small>
-<br><a class="setsrc" href="javascript:setsrc('hkg','hkg1995a.svg',0);">1995 actual</a>
-<br><a class="setsrc" href="javascript:setsrc('hkg','hkg-nohandover.svg',1);">1997 no-handhover AU</a>
-<br><a class="setsrc" href="javascript:setsrc('hkg','hkg2025a.svg',2);">2025 actual</a>
-<br>(<a href="../../hkg">timeline</a>)</small></span>
 <p>
 <form action="">Cities to show:
 <div style="display: inline-block"><input type="checkbox" id="nyccheckbox" onclick="toggleshow('nyc')" autocomplete="off" checked>New York</div>
@@ -155,7 +148,6 @@ smaller versions --- <a href="large.html">larger versions</a><p>
 <div style="display: inline-block"><input type="checkbox" id="pitcheckbox" onclick="toggleshow('pit')" autocomplete="off" checked>Pittsburgh</div>
 <div style="display: inline-block"><input type="checkbox" id="wascheckbox" onclick="toggleshow('was')" autocomplete="off" checked>Washington</div>
 <div style="display: inline-block"><input type="checkbox" id="sfocheckbox" onclick="toggleshow('sfo')" autocomplete="off" checked>San Francisco</div>
-<div style="display: inline-block"><input type="checkbox" id="hkgcheckbox" onclick="toggleshow('hkg')" autocomplete="off" checked>Hong Kong</div>
 </form>
 <a href="javascript:selectall()">show all</a>
 <a href="javascript:deselectall()">hide all</a>
