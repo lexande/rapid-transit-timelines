@@ -1,4 +1,4 @@
-all: index.html large.html
+all: $(SVGS) index.html large.html
 
 rsync: all
 	rsync -4Pav *.png *.svg arapp_arapp@ssh.nyc1.nearlyfreespeech.net:fantasymaps/
